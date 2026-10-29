@@ -1,0 +1,3480 @@
+{
+  "date": "2026-10-29",
+  "scope": "A01 only: exact mechanical land/numbering comparison for U3,J1,Y1; no full electrical/RF audit",
+  "status": "EXTERNAL CONFIRMATION",
+  "git_head": "b17f1457de876ecb27e94dc514c9a4844be44bc0",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "board_modified": false,
+  "native_kicad_version": "10.0.7",
+  "unit": "mm",
+  "footprints": {
+    "U3": {
+      "native_library_id": "Raytac_MDBT50Q",
+      "position_mm": [
+        64.0,
+        59.0
+      ],
+      "rotation_deg": 0.0,
+      "value": "MDBT50Q-P1MV2",
+      "library_file": "hardware/footprints/AnkleSensor.pretty/Raytac_MDBT50Q.kicad_mod",
+      "library_sha256": "93b03eabab519bb6d234bef52a0f9e9ec200adb4296d201dac002efaef980e9f",
+      "native_instance_vs_local_library_pad_geometry_equal": true,
+      "native_only_pad_geometry": [],
+      "library_only_pad_geometry": [],
+      "pad_objects": 61,
+      "pad_attributes": {
+        "SMD": 61
+      },
+      "fab_line_bbox_local_mm": [
+        -5.25,
+        -7.75,
+        5.25,
+        7.75
+      ],
+      "courtyard_line_bbox_local_mm": [
+        -5.75,
+        -8.25,
+        5.75,
+        8.25
+      ],
+      "local_footprint_description": "Multiprotocol radio SoC module https://www.raytac.com/download/index.php?index_id=43",
+      "pads": [
+        {
+          "number": "1",
+          "local_center_mm": [
+            -4.65,
+            -3.75
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            55.25
+          ],
+          "net": "GND",
+          "uuid": "f6b52a8a-75a6-4552-b1a8-bd3915ba5eac"
+        },
+        {
+          "number": "2",
+          "local_center_mm": [
+            -4.65,
+            -2.65
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            56.35
+          ],
+          "net": "GND",
+          "uuid": "65f8cc2c-b877-4faa-bb6b-5c2c51300652"
+        },
+        {
+          "number": "3",
+          "local_center_mm": [
+            -4.65,
+            -1.85
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            57.15
+          ],
+          "net": "LED_K",
+          "uuid": "ef335e9d-dac2-453a-a603-6ac2f0b39cd2"
+        },
+        {
+          "number": "4",
+          "local_center_mm": [
+            -4.65,
+            -0.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            58.75
+          ],
+          "net": "USER_BTN_N",
+          "uuid": "4299a54d-0fa3-48f1-b61c-60505d0c8a80"
+        },
+        {
+          "number": "5",
+          "local_center_mm": [
+            -3.75,
+            0.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.25,
+            59.15
+          ],
+          "net": "CHG_STAT1_N",
+          "uuid": "f1147576-4494-4f9e-92e2-6e5daad71bf9"
+        },
+        {
+          "number": "6",
+          "local_center_mm": [
+            -4.65,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            59.55
+          ],
+          "net": "CHG_STAT2_N",
+          "uuid": "1cd9a4c6-da57-4494-ac8e-a09243408552"
+        },
+        {
+          "number": "7",
+          "local_center_mm": [
+            -3.75,
+            0.95
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.25,
+            59.95
+          ],
+          "net": "CHG_INHIBIT",
+          "uuid": "5b9b9278-8f26-429a-bf70-318c3fca5dc7"
+        },
+        {
+          "number": "8",
+          "local_center_mm": [
+            -4.65,
+            1.35
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            60.35
+          ],
+          "net": "unconnected-(U3-P1.15-Pad8)",
+          "uuid": "8c7aeff6-19dd-4f4a-9a5c-a48fd402f5a4"
+        },
+        {
+          "number": "9",
+          "local_center_mm": [
+            -3.75,
+            1.75
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.25,
+            60.75
+          ],
+          "net": "unconnected-(U3-P0.03-Pad9)",
+          "uuid": "59b467de-09c8-4728-ad86-08b5e05e3fd4"
+        },
+        {
+          "number": "10",
+          "local_center_mm": [
+            -4.65,
+            2.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            61.15
+          ],
+          "net": "unconnected-(U3-P0.29-Pad10)",
+          "uuid": "b9dc8fe6-4b6b-4c46-b4db-13411016b2a1"
+        },
+        {
+          "number": "11",
+          "local_center_mm": [
+            -3.75,
+            2.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.25,
+            61.55
+          ],
+          "net": "VBAT_ADC",
+          "uuid": "10b6196f-c916-4f74-8a3c-693e9aa95904"
+        },
+        {
+          "number": "12",
+          "local_center_mm": [
+            -4.65,
+            2.95
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            61.95
+          ],
+          "net": "unconnected-(U3-P0.31-Pad12)",
+          "uuid": "be23ff48-454a-463a-a7b0-b23478fbc860"
+        },
+        {
+          "number": "13",
+          "local_center_mm": [
+            -3.75,
+            3.35
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.25,
+            62.35
+          ],
+          "net": "unconnected-(U3-P0.28-Pad13)",
+          "uuid": "8d6ca4ab-61a0-4b96-b38f-2c33dc17cee5"
+        },
+        {
+          "number": "14",
+          "local_center_mm": [
+            -4.65,
+            3.75
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.35,
+            62.75
+          ],
+          "net": "unconnected-(U3-P0.30-Pad14)",
+          "uuid": "bb304046-acfc-41dc-81e8-96d50242d2d2"
+        },
+        {
+          "number": "15",
+          "local_center_mm": [
+            -4.8,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.2,
+            66.15
+          ],
+          "net": "GND",
+          "uuid": "c6349e68-ac40-4c60-a930-5e63292feaa3"
+        },
+        {
+          "number": "16",
+          "local_center_mm": [
+            -4.0,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.0,
+            66.15
+          ],
+          "net": "unconnected-(U3-P0.27-Pad16)",
+          "uuid": "beb13518-d296-4fa8-995f-c9238c6cde8b"
+        },
+        {
+          "number": "17",
+          "local_center_mm": [
+            -3.2,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.8,
+            66.15
+          ],
+          "net": "LF_XL1",
+          "uuid": "272c920d-e65f-40c2-9ab3-c7871872fc5f"
+        },
+        {
+          "number": "18",
+          "local_center_mm": [
+            -2.4,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            61.6,
+            66.15
+          ],
+          "net": "LF_XL2",
+          "uuid": "845c40b4-343d-48f6-ac1d-7265b82ac7f2"
+        },
+        {
+          "number": "19",
+          "local_center_mm": [
+            -2.0,
+            6.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.0,
+            65.25
+          ],
+          "net": "unconnected-(U3-P0.26-Pad19)",
+          "uuid": "6bf5b0c4-975e-4da5-9331-a5ac60218458"
+        },
+        {
+          "number": "20",
+          "local_center_mm": [
+            -1.6,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.4,
+            66.15
+          ],
+          "net": "unconnected-(U3-P0.04-Pad20)",
+          "uuid": "a4464b7a-bb91-473c-8e4e-b26aa498c44a"
+        },
+        {
+          "number": "21",
+          "local_center_mm": [
+            -1.2,
+            6.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.8,
+            65.25
+          ],
+          "net": "unconnected-(U3-P0.05-Pad21)",
+          "uuid": "52677efe-19ab-4c67-90f5-b280a66ff4c2"
+        },
+        {
+          "number": "22",
+          "local_center_mm": [
+            -0.8,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            63.2,
+            66.15
+          ],
+          "net": "unconnected-(U3-P0.06-Pad22)",
+          "uuid": "b54915f8-1f71-4b19-88ca-8ce4716a6638"
+        },
+        {
+          "number": "23",
+          "local_center_mm": [
+            -0.4,
+            6.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            63.6,
+            65.25
+          ],
+          "net": "unconnected-(U3-P0.07-Pad23)",
+          "uuid": "7ec7f4be-d3dd-4b55-b922-a17e8a1f1000"
+        },
+        {
+          "number": "24",
+          "local_center_mm": [
+            0.0,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            64.0,
+            66.15
+          ],
+          "net": "unconnected-(U3-P0.08-Pad24)",
+          "uuid": "305c3fdf-594e-4e0e-922c-89d86ea9bb42"
+        },
+        {
+          "number": "25",
+          "local_center_mm": [
+            0.4,
+            6.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            64.4,
+            65.25
+          ],
+          "net": "unconnected-(U3-P1.08-Pad25)",
+          "uuid": "10b20b27-22b6-4010-9f78-2d651b5b322c"
+        },
+        {
+          "number": "26",
+          "local_center_mm": [
+            0.8,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            64.8,
+            66.15
+          ],
+          "net": "unconnected-(U3-P1.09-Pad26)",
+          "uuid": "ebb94a5b-eefb-427f-aa63-3f5793dac777"
+        },
+        {
+          "number": "27",
+          "local_center_mm": [
+            1.2,
+            6.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            65.2,
+            65.25
+          ],
+          "net": "IMU_INT1",
+          "uuid": "05f41225-0323-4005-a65d-aabba2441a84"
+        },
+        {
+          "number": "28",
+          "local_center_mm": [
+            1.6,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            65.6,
+            66.15
+          ],
+          "net": "+3V0",
+          "uuid": "368538d1-4f90-441b-997b-f73ae2aeef2a"
+        },
+        {
+          "number": "29",
+          "local_center_mm": [
+            2.0,
+            6.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            66.0,
+            65.25
+          ],
+          "net": "IMU_INT2",
+          "uuid": "dd7819b4-428f-4190-a3e8-2cbc3a5ff2e6"
+        },
+        {
+          "number": "30",
+          "local_center_mm": [
+            2.4,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            66.4,
+            66.15
+          ],
+          "net": "+3V0",
+          "uuid": "21a599fe-e4e8-4fd6-9b59-d2af29ce9501"
+        },
+        {
+          "number": "31",
+          "local_center_mm": [
+            3.2,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.2,
+            66.15
+          ],
+          "net": "unconnected-(U3-DCCH-Pad31)",
+          "uuid": "703ad7b7-1b32-40f4-9f9c-bd8345892d6d"
+        },
+        {
+          "number": "32",
+          "local_center_mm": [
+            4.0,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.0,
+            66.15
+          ],
+          "net": "VBUS",
+          "uuid": "af6aedd5-6030-4932-81b7-1739dfe7805a"
+        },
+        {
+          "number": "33",
+          "local_center_mm": [
+            4.8,
+            7.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.8,
+            66.15
+          ],
+          "net": "GND",
+          "uuid": "60c38c3b-836e-4b52-bdcf-a2d87b205736"
+        },
+        {
+          "number": "34",
+          "local_center_mm": [
+            4.65,
+            6.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            65.15
+          ],
+          "net": "USB_DN",
+          "uuid": "b2225726-1e3a-446e-a43a-d264fe7749a2"
+        },
+        {
+          "number": "35",
+          "local_center_mm": [
+            4.65,
+            5.35
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            64.35
+          ],
+          "net": "USB_DP",
+          "uuid": "b648a8dd-46f3-4ff0-9c1e-cae41a3046e7"
+        },
+        {
+          "number": "36",
+          "local_center_mm": [
+            3.75,
+            4.95
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            63.95
+          ],
+          "net": "IMU_MOSI",
+          "uuid": "55b2e04f-0c9e-493a-9ada-5a53b5a3944c"
+        },
+        {
+          "number": "37",
+          "local_center_mm": [
+            4.65,
+            4.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            63.55
+          ],
+          "net": "IMU_SCK",
+          "uuid": "939b5d49-e6f8-4447-935d-278ca94eaf0a"
+        },
+        {
+          "number": "38",
+          "local_center_mm": [
+            3.75,
+            4.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            63.15
+          ],
+          "net": "IMU_CS_N",
+          "uuid": "9cc6cea0-6a25-481f-a7b2-e240d69a7cf1"
+        },
+        {
+          "number": "39",
+          "local_center_mm": [
+            4.65,
+            3.75
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            62.75
+          ],
+          "net": "IMU_MISO",
+          "uuid": "d8e748f1-d2ca-48d0-8da5-936ccd06d935"
+        },
+        {
+          "number": "40",
+          "local_center_mm": [
+            3.75,
+            3.35
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            62.35
+          ],
+          "net": "RESET_N",
+          "uuid": "ccf1f8ac-f92c-451a-81d7-8ceffe837e8e"
+        },
+        {
+          "number": "41",
+          "local_center_mm": [
+            4.65,
+            2.95
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            61.95
+          ],
+          "net": "FLASH_CS_N",
+          "uuid": "ac4d4a85-7953-4dc5-92ae-b328ddb4c7fa"
+        },
+        {
+          "number": "42",
+          "local_center_mm": [
+            3.75,
+            2.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            61.55
+          ],
+          "net": "QSPI_SCK",
+          "uuid": "738c31c0-f83c-4be4-8ab7-68fd1af53547"
+        },
+        {
+          "number": "43",
+          "local_center_mm": [
+            3.75,
+            1.75
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            60.75
+          ],
+          "net": "QSPI_IO1",
+          "uuid": "3aab6f6d-dbfe-42a2-bb80-01e239b97c55"
+        },
+        {
+          "number": "44",
+          "local_center_mm": [
+            4.65,
+            1.35
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            60.35
+          ],
+          "net": "QSPI_IO0",
+          "uuid": "f3849f78-a474-49d6-abd4-ae057834b973"
+        },
+        {
+          "number": "45",
+          "local_center_mm": [
+            3.75,
+            0.95
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            59.95
+          ],
+          "net": "QSPI_IO3",
+          "uuid": "b744ebc1-a461-4ee2-9e9c-adcc68d73bde"
+        },
+        {
+          "number": "46",
+          "local_center_mm": [
+            4.65,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            59.55
+          ],
+          "net": "QSPI_IO2",
+          "uuid": "a58a72c8-54a9-44d6-8638-a146a81ca2c0"
+        },
+        {
+          "number": "47",
+          "local_center_mm": [
+            3.75,
+            0.15
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            59.15
+          ],
+          "net": "unconnected-(U3-P1.00-Pad47)",
+          "uuid": "9656a7ce-1894-45ee-bc60-f381a41cea37"
+        },
+        {
+          "number": "48",
+          "local_center_mm": [
+            4.65,
+            -0.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            58.75
+          ],
+          "net": "unconnected-(U3-P0.24-Pad48)",
+          "uuid": "51c1fdd9-4539-4d6a-b41a-84dfb41f2096"
+        },
+        {
+          "number": "49",
+          "local_center_mm": [
+            3.75,
+            -0.65
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            58.35
+          ],
+          "net": "unconnected-(U3-P0.25-Pad49)",
+          "uuid": "782feae4-8e5b-41a1-8c2f-10b856c5b589"
+        },
+        {
+          "number": "50",
+          "local_center_mm": [
+            3.75,
+            -1.45
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            57.55
+          ],
+          "net": "unconnected-(U3-P1.02-Pad50)",
+          "uuid": "200fa7e1-7301-4e3a-91a2-fa57df3fad54"
+        },
+        {
+          "number": "51",
+          "local_center_mm": [
+            4.65,
+            -1.85
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            57.15
+          ],
+          "net": "SWDIO",
+          "uuid": "cced2a5c-422b-447a-9622-54a3b502bff6"
+        },
+        {
+          "number": "52",
+          "local_center_mm": [
+            3.75,
+            -2.25
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            56.75
+          ],
+          "net": "unconnected-(U3-P0.09_NFC1-Pad52)",
+          "uuid": "f5b64986-593d-4832-ad51-2f47ba73854d"
+        },
+        {
+          "number": "53",
+          "local_center_mm": [
+            4.65,
+            -2.65
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            56.35
+          ],
+          "net": "SWCLK",
+          "uuid": "841c523e-2d5f-4bfc-9ce4-caf760996f12"
+        },
+        {
+          "number": "54",
+          "local_center_mm": [
+            3.75,
+            -3.05
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.75,
+            55.95
+          ],
+          "net": "unconnected-(U3-P0.10_NFC2-Pad54)",
+          "uuid": "013db433-bc48-40d9-8529-83f06c027a6e"
+        },
+        {
+          "number": "55",
+          "local_center_mm": [
+            4.65,
+            -3.75
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.65,
+            55.25
+          ],
+          "net": "GND",
+          "uuid": "838120de-1c8b-40b9-a683-1e9d696c0ecf"
+        },
+        {
+          "number": "56",
+          "local_center_mm": [
+            -2.0,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.0,
+            59.55
+          ],
+          "net": "unconnected-(U3-P1.04-Pad56)",
+          "uuid": "a663ee7c-fc88-449c-a682-01539444f557"
+        },
+        {
+          "number": "57",
+          "local_center_mm": [
+            -1.2,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.8,
+            59.55
+          ],
+          "net": "unconnected-(U3-P1.06-Pad57)",
+          "uuid": "5e1c4163-8584-4259-9ce8-a0dc76e9a948"
+        },
+        {
+          "number": "58",
+          "local_center_mm": [
+            -0.4,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            63.6,
+            59.55
+          ],
+          "net": "unconnected-(U3-P1.07-Pad58)",
+          "uuid": "215952d3-62ec-4373-8abc-a5771596fe46"
+        },
+        {
+          "number": "59",
+          "local_center_mm": [
+            0.4,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            64.4,
+            59.55
+          ],
+          "net": "unconnected-(U3-P1.05-Pad59)",
+          "uuid": "b628dcc8-5c27-4fe5-b1e8-49c47ee3108c"
+        },
+        {
+          "number": "60",
+          "local_center_mm": [
+            1.2,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            65.2,
+            59.55
+          ],
+          "net": "unconnected-(U3-P1.03-Pad60)",
+          "uuid": "b2508b7d-c408-473c-a2ac-c18a15b4039c"
+        },
+        {
+          "number": "61",
+          "local_center_mm": [
+            2.0,
+            0.55
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            0.4
+          ],
+          "local_rotation_deg": 90.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            66.0,
+            59.55
+          ],
+          "net": "unconnected-(U3-P1.01-Pad61)",
+          "uuid": "3d376d3b-f8e0-48c9-8e84-7d091e028c8e"
+        }
+      ],
+      "primary_manufacturer": "Raytac",
+      "exact_mpn": "MDBT50Q-P1MV2",
+      "source_status": "OPEN: exact VerL drawing and230606 vendorCAD are not read as pixels/nativeCAD; KiCad geometry identity alone does not close supplier comparison",
+      "origin_mapping_for_external_comparison": {
+        "project_origin": "body centre, +x right, +y down at rotation0",
+        "proposed_manufacturer_bottom_left_frame": "x_source=x_local+5.25; y_source=7.75-y_local; coordinate transformation only, not independently approved drawing registration"
+      },
+      "pin_position_source_frame": [
+        {
+          "pad": "1",
+          "x_mm": 0.6,
+          "y_mm": 11.5
+        },
+        {
+          "pad": "2",
+          "x_mm": 0.6,
+          "y_mm": 10.4
+        },
+        {
+          "pad": "3",
+          "x_mm": 0.6,
+          "y_mm": 9.6
+        },
+        {
+          "pad": "4",
+          "x_mm": 0.6,
+          "y_mm": 8.0
+        },
+        {
+          "pad": "5",
+          "x_mm": 1.5,
+          "y_mm": 7.6
+        },
+        {
+          "pad": "6",
+          "x_mm": 0.6,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "7",
+          "x_mm": 1.5,
+          "y_mm": 6.8
+        },
+        {
+          "pad": "8",
+          "x_mm": 0.6,
+          "y_mm": 6.4
+        },
+        {
+          "pad": "9",
+          "x_mm": 1.5,
+          "y_mm": 6.0
+        },
+        {
+          "pad": "10",
+          "x_mm": 0.6,
+          "y_mm": 5.6
+        },
+        {
+          "pad": "11",
+          "x_mm": 1.5,
+          "y_mm": 5.2
+        },
+        {
+          "pad": "12",
+          "x_mm": 0.6,
+          "y_mm": 4.8
+        },
+        {
+          "pad": "13",
+          "x_mm": 1.5,
+          "y_mm": 4.4
+        },
+        {
+          "pad": "14",
+          "x_mm": 0.6,
+          "y_mm": 4.0
+        },
+        {
+          "pad": "15",
+          "x_mm": 0.45,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "16",
+          "x_mm": 1.25,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "17",
+          "x_mm": 2.05,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "18",
+          "x_mm": 2.85,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "19",
+          "x_mm": 3.25,
+          "y_mm": 1.5
+        },
+        {
+          "pad": "20",
+          "x_mm": 3.65,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "21",
+          "x_mm": 4.05,
+          "y_mm": 1.5
+        },
+        {
+          "pad": "22",
+          "x_mm": 4.45,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "23",
+          "x_mm": 4.85,
+          "y_mm": 1.5
+        },
+        {
+          "pad": "24",
+          "x_mm": 5.25,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "25",
+          "x_mm": 5.65,
+          "y_mm": 1.5
+        },
+        {
+          "pad": "26",
+          "x_mm": 6.05,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "27",
+          "x_mm": 6.45,
+          "y_mm": 1.5
+        },
+        {
+          "pad": "28",
+          "x_mm": 6.85,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "29",
+          "x_mm": 7.25,
+          "y_mm": 1.5
+        },
+        {
+          "pad": "30",
+          "x_mm": 7.65,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "31",
+          "x_mm": 8.45,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "32",
+          "x_mm": 9.25,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "33",
+          "x_mm": 10.05,
+          "y_mm": 0.6
+        },
+        {
+          "pad": "34",
+          "x_mm": 9.9,
+          "y_mm": 1.6
+        },
+        {
+          "pad": "35",
+          "x_mm": 9.9,
+          "y_mm": 2.4
+        },
+        {
+          "pad": "36",
+          "x_mm": 9.0,
+          "y_mm": 2.8
+        },
+        {
+          "pad": "37",
+          "x_mm": 9.9,
+          "y_mm": 3.2
+        },
+        {
+          "pad": "38",
+          "x_mm": 9.0,
+          "y_mm": 3.6
+        },
+        {
+          "pad": "39",
+          "x_mm": 9.9,
+          "y_mm": 4.0
+        },
+        {
+          "pad": "40",
+          "x_mm": 9.0,
+          "y_mm": 4.4
+        },
+        {
+          "pad": "41",
+          "x_mm": 9.9,
+          "y_mm": 4.8
+        },
+        {
+          "pad": "42",
+          "x_mm": 9.0,
+          "y_mm": 5.2
+        },
+        {
+          "pad": "43",
+          "x_mm": 9.0,
+          "y_mm": 6.0
+        },
+        {
+          "pad": "44",
+          "x_mm": 9.9,
+          "y_mm": 6.4
+        },
+        {
+          "pad": "45",
+          "x_mm": 9.0,
+          "y_mm": 6.8
+        },
+        {
+          "pad": "46",
+          "x_mm": 9.9,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "47",
+          "x_mm": 9.0,
+          "y_mm": 7.6
+        },
+        {
+          "pad": "48",
+          "x_mm": 9.9,
+          "y_mm": 8.0
+        },
+        {
+          "pad": "49",
+          "x_mm": 9.0,
+          "y_mm": 8.4
+        },
+        {
+          "pad": "50",
+          "x_mm": 9.0,
+          "y_mm": 9.2
+        },
+        {
+          "pad": "51",
+          "x_mm": 9.9,
+          "y_mm": 9.6
+        },
+        {
+          "pad": "52",
+          "x_mm": 9.0,
+          "y_mm": 10.0
+        },
+        {
+          "pad": "53",
+          "x_mm": 9.9,
+          "y_mm": 10.4
+        },
+        {
+          "pad": "54",
+          "x_mm": 9.0,
+          "y_mm": 10.8
+        },
+        {
+          "pad": "55",
+          "x_mm": 9.9,
+          "y_mm": 11.5
+        },
+        {
+          "pad": "56",
+          "x_mm": 3.25,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "57",
+          "x_mm": 4.05,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "58",
+          "x_mm": 4.85,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "59",
+          "x_mm": 5.65,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "60",
+          "x_mm": 6.45,
+          "y_mm": 7.2
+        },
+        {
+          "pad": "61",
+          "x_mm": 7.25,
+          "y_mm": 7.2
+        }
+      ],
+      "exact_variant_3d_required_for_pcb_approval": false
+    },
+    "J1": {
+      "native_library_id": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "position_mm": [
+        64.0,
+        99.0
+      ],
+      "rotation_deg": 0.0,
+      "value": "TYPE-C-31-M-12",
+      "library_file": "hardware/footprints/AnkleSensor.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "library_sha256": "6a47842cd8459930217dc4c0ebf041e682f2451ac191da7015562089ff06ea7f",
+      "native_instance_vs_local_library_pad_geometry_equal": true,
+      "native_only_pad_geometry": [],
+      "library_only_pad_geometry": [],
+      "pad_objects": 22,
+      "pad_attributes": {
+        "NPTH": 2,
+        "SMD": 16,
+        "PTH": 4
+      },
+      "fab_line_bbox_local_mm": [
+        -4.47,
+        -3.65,
+        4.47,
+        3.65
+      ],
+      "courtyard_line_bbox_local_mm": [
+        -5.32,
+        -5.27,
+        5.32,
+        4.15
+      ],
+      "local_footprint_description": "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf",
+      "pads": [
+        {
+          "number": "",
+          "local_center_mm": [
+            -2.89,
+            -2.6
+          ],
+          "size_in_pad_axes_mm": [
+            0.65,
+            0.65
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "circle",
+          "attribute": "NPTH",
+          "drill_mm": [
+            0.65,
+            0.65
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "B.Cu",
+            "B.Mask",
+            "In1.Cu",
+            "In2.Cu"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            61.11,
+            96.4
+          ],
+          "net": "",
+          "uuid": "d4ac8b0b-3dc4-41ea-8b44-61052fa9114b"
+        },
+        {
+          "number": "",
+          "local_center_mm": [
+            2.89,
+            -2.6
+          ],
+          "size_in_pad_axes_mm": [
+            0.65,
+            0.65
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "circle",
+          "attribute": "NPTH",
+          "drill_mm": [
+            0.65,
+            0.65
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "B.Cu",
+            "B.Mask",
+            "In1.Cu",
+            "In2.Cu"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            66.89,
+            96.4
+          ],
+          "net": "",
+          "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+        },
+        {
+          "number": "A1",
+          "local_center_mm": [
+            -3.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.75,
+            94.955
+          ],
+          "net": "GND",
+          "uuid": "9f2c3799-8147-48a0-b365-a777d085a923"
+        },
+        {
+          "number": "A4",
+          "local_center_mm": [
+            -2.45,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            61.55,
+            94.955
+          ],
+          "net": "VBUS",
+          "uuid": "f8dc6373-1e0a-4e92-840b-8f56e2d35276"
+        },
+        {
+          "number": "A5",
+          "local_center_mm": [
+            -1.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.75,
+            94.955
+          ],
+          "net": "USB_CC1",
+          "uuid": "3b90f520-109a-4b80-a8fc-5aff187a4dbe"
+        },
+        {
+          "number": "A6",
+          "local_center_mm": [
+            -0.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            63.75,
+            94.955
+          ],
+          "net": "USB_DP_CONN",
+          "uuid": "9446162b-93e0-485f-b7a6-a6bcb93e2dec"
+        },
+        {
+          "number": "A7",
+          "local_center_mm": [
+            0.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            64.25,
+            94.955
+          ],
+          "net": "USB_DN_CONN",
+          "uuid": "d449618c-7254-43e3-ba89-8d5d5ee15b62"
+        },
+        {
+          "number": "A8",
+          "local_center_mm": [
+            1.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            65.25,
+            94.955
+          ],
+          "net": "unconnected-(J1-SBU1-PadA8)",
+          "uuid": "d86add38-8047-4c7a-bd68-90d7861b779d"
+        },
+        {
+          "number": "A9",
+          "local_center_mm": [
+            2.45,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            66.45,
+            94.955
+          ],
+          "net": "VBUS",
+          "uuid": "71deb125-a0b1-453b-b2db-dc48061d8b16"
+        },
+        {
+          "number": "A12",
+          "local_center_mm": [
+            3.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.25,
+            94.955
+          ],
+          "net": "GND",
+          "uuid": "dba5c2c7-2d74-457e-8c4c-59f76b2d037e"
+        },
+        {
+          "number": "B1",
+          "local_center_mm": [
+            3.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            67.25,
+            94.955
+          ],
+          "net": "GND",
+          "uuid": "c8d4c4a9-f319-4f71-a67f-ff0e3afc9818"
+        },
+        {
+          "number": "B4",
+          "local_center_mm": [
+            2.45,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            66.45,
+            94.955
+          ],
+          "net": "VBUS",
+          "uuid": "98e95658-9696-419d-ad67-40a6372035ef"
+        },
+        {
+          "number": "B5",
+          "local_center_mm": [
+            1.75,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            65.75,
+            94.955
+          ],
+          "net": "USB_CC2",
+          "uuid": "a8af09e4-c397-43e5-90f8-02a5e6005546"
+        },
+        {
+          "number": "B6",
+          "local_center_mm": [
+            0.75,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            64.75,
+            94.955
+          ],
+          "net": "USB_DP_CONN",
+          "uuid": "3a224982-13ea-4955-842d-e3773171b2d8"
+        },
+        {
+          "number": "B7",
+          "local_center_mm": [
+            -0.75,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            63.25,
+            94.955
+          ],
+          "net": "USB_DN_CONN",
+          "uuid": "8104b73f-9747-4ebd-bf20-853cc10483e4"
+        },
+        {
+          "number": "B8",
+          "local_center_mm": [
+            -1.75,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.3,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.25,
+            94.955
+          ],
+          "net": "unconnected-(J1-SBU2-PadB8)",
+          "uuid": "85e5623f-1b89-414b-9602-6a685c81987d"
+        },
+        {
+          "number": "B9",
+          "local_center_mm": [
+            -2.45,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            61.55,
+            94.955
+          ],
+          "net": "VBUS",
+          "uuid": "70805a96-66fb-4f12-be2d-f5a759ff6459"
+        },
+        {
+          "number": "B12",
+          "local_center_mm": [
+            -3.25,
+            -4.045
+          ],
+          "size_in_pad_axes_mm": [
+            0.6,
+            1.45
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "roundrect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": 0.25,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            60.75,
+            94.955
+          ],
+          "net": "GND",
+          "uuid": "df0881f0-7cba-4275-9182-3e5bfb40d9d9"
+        },
+        {
+          "number": "SH",
+          "local_center_mm": [
+            -4.32,
+            -3.13
+          ],
+          "size_in_pad_axes_mm": [
+            1.0,
+            2.1
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "oval",
+          "attribute": "PTH",
+          "drill_mm": [
+            0.6,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "B.Cu",
+            "B.Mask",
+            "In1.Cu",
+            "In2.Cu"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.68,
+            95.87
+          ],
+          "net": "GND",
+          "uuid": "100089e1-1878-4188-9907-76d5cfe3ce0d"
+        },
+        {
+          "number": "SH",
+          "local_center_mm": [
+            -4.32,
+            1.05
+          ],
+          "size_in_pad_axes_mm": [
+            1.0,
+            1.6
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "oval",
+          "attribute": "PTH",
+          "drill_mm": [
+            0.6,
+            1.2
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "B.Cu",
+            "B.Mask",
+            "In1.Cu",
+            "In2.Cu"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.68,
+            100.05
+          ],
+          "net": "GND",
+          "uuid": "2da91667-7487-467b-a471-e1088047896f"
+        },
+        {
+          "number": "SH",
+          "local_center_mm": [
+            4.32,
+            -3.13
+          ],
+          "size_in_pad_axes_mm": [
+            1.0,
+            2.1
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "oval",
+          "attribute": "PTH",
+          "drill_mm": [
+            0.6,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "B.Cu",
+            "B.Mask",
+            "In1.Cu",
+            "In2.Cu"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.32,
+            95.87
+          ],
+          "net": "GND",
+          "uuid": "cdd95a38-1495-4f41-82f1-d80e2376bc8d"
+        },
+        {
+          "number": "SH",
+          "local_center_mm": [
+            4.32,
+            1.05
+          ],
+          "size_in_pad_axes_mm": [
+            1.0,
+            1.6
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "oval",
+          "attribute": "PTH",
+          "drill_mm": [
+            0.6,
+            1.2
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "B.Cu",
+            "B.Mask",
+            "In1.Cu",
+            "In2.Cu"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            68.32,
+            100.05
+          ],
+          "net": "GND",
+          "uuid": "6137a56c-f24e-4129-b84e-954455b86c6d"
+        }
+      ],
+      "primary_manufacturer": "HRO / Korean Hroparts",
+      "exact_mpn": "TYPE-C-31-M-12",
+      "jlc_part": "C165948",
+      "source_status": "OPEN: full current supplier pin/slot/NPTH/PCB_EDGE drawing comparison not completed",
+      "nominal_body_from_hro_product_mm": [
+        8.94,
+        7.35,
+        3.16
+      ],
+      "project_fab_body_mm": [
+        8.94,
+        7.3
+      ],
+      "body_length_graphic_difference_mm": 0.05,
+      "actual_edge_datum": {
+        "nearest_bottom_board_edge_y_mm": 101.6,
+        "footprint_origin_to_edge_delta_y_mm": 2.6,
+        "project_fab_front_at_board_y_mm": 102.65,
+        "project_fab_overhang_beyond_edge_mm": 1.05,
+        "classification": "Project geometry, not verified HRO recommendedPCB_EDGE registration"
+      },
+      "missing_3d_is_pcb_blocker": false,
+      "coincident_pad_groups": [
+        {
+          "numbers": [
+            "A1",
+            "B12"
+          ],
+          "local_center_mm": [
+            -3.25,
+            -4.045
+          ],
+          "nets": [
+            "GND"
+          ]
+        },
+        {
+          "numbers": [
+            "A4",
+            "B9"
+          ],
+          "local_center_mm": [
+            -2.45,
+            -4.045
+          ],
+          "nets": [
+            "VBUS"
+          ]
+        },
+        {
+          "numbers": [
+            "A9",
+            "B4"
+          ],
+          "local_center_mm": [
+            2.45,
+            -4.045
+          ],
+          "nets": [
+            "VBUS"
+          ]
+        },
+        {
+          "numbers": [
+            "A12",
+            "B1"
+          ],
+          "local_center_mm": [
+            3.25,
+            -4.045
+          ],
+          "nets": [
+            "GND"
+          ]
+        }
+      ]
+    },
+    "Y1": {
+      "native_library_id": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+      "position_mm": [
+        61.0,
+        68.5
+      ],
+      "rotation_deg": 180.0,
+      "value": "32.768kHz CL7pF",
+      "library_file": "hardware/footprints/AnkleSensor.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+      "library_sha256": "28faa27d46d1b7a410aabf99849dabafa77b0426265c9b8f9dcbe904eafdc905",
+      "native_instance_vs_local_library_pad_geometry_equal": true,
+      "native_only_pad_geometry": [],
+      "library_only_pad_geometry": [],
+      "pad_objects": 2,
+      "pad_attributes": {
+        "SMD": 2
+      },
+      "fab_line_bbox_local_mm": [
+        -1.6,
+        -0.75,
+        1.6,
+        0.75
+      ],
+      "courtyard_line_bbox_local_mm": [
+        -2.0,
+        -1.15,
+        2.0,
+        1.15
+      ],
+      "local_footprint_description": "SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135R_en.pdf",
+      "pads": [
+        {
+          "number": "1",
+          "local_center_mm": [
+            1.25,
+            0.0
+          ],
+          "size_in_pad_axes_mm": [
+            1.0,
+            1.8
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            59.75,
+            68.5
+          ],
+          "net": "LF_XL1",
+          "uuid": "23c986fd-89e4-4394-932a-08fb47815677"
+        },
+        {
+          "number": "2",
+          "local_center_mm": [
+            -1.25,
+            0.0
+          ],
+          "size_in_pad_axes_mm": [
+            1.0,
+            1.8
+          ],
+          "local_rotation_deg": 0.0,
+          "shape": "rect",
+          "attribute": "SMD",
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ],
+          "roundrect_ratio": null,
+          "effective_front_paste_margin_mm": [
+            0.0,
+            0.0
+          ],
+          "board_center_mm": [
+            62.25,
+            68.5
+          ],
+          "net": "LF_XL2",
+          "uuid": "64042af8-3e28-46d4-91db-c6996c38a9d1"
+        }
+      ],
+      "primary_manufacturer": "Abracon",
+      "exact_mpn": "ABS07-32.768KHZ-7-T",
+      "jlc_part": "C276424",
+      "native_centre_separation_mm": 2.5,
+      "native_copper_inner_gap_mm": 1.5,
+      "native_copper_outer_span_mm": 3.5,
+      "source_status": "OPEN: exactABS07 datasheet mechanical figure not visually delivered; numeric indexed text exists but axis/gap association only from generatedvisualcaption, not sufficient to close or mutate",
+      "possible_recommended_pattern_unverified": {
+        "candidate_pad_mm": [
+          1.1,
+          1.9
+        ],
+        "candidate_gap_mm": 1.4,
+        "candidate_centre_separation_mm": 2.5,
+        "candidate_vs_native_size_delta_mm": [
+          0.1,
+          0.1
+        ],
+        "not_approved_for_mutation": true
+      },
+      "rejected_source": "ABS07-LR is a separate LowESR family; its drawing is not used to approve exactABS07 footprint"
+    }
+  },
+  "primary_sources": {
+    "raytac_verL": "https://www.raytac.com/download/index.php?index_id=43",
+    "raytac_verL_manufacturer_doc_distributor_mirror": "https://www.mouser.com/datasheet/3/1361/1/nRF52840_MDBT50Q_1MV2_MDBT50Q_P1MV2_Ver.L_spec.pdf",
+    "raytac_vendor_designguide_listing": "https://www.raytac.com/document/index.php?index_m_id=12",
+    "hro_product": "https://en.krhro.com/Product-Details/726.html",
+    "hro_manufacturer_drawing_C165948": "https://datasheet.lcsc.com/lcsc/1903211732_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf",
+    "hro_drawing_current_lcsc_link": "https://datasheet.lcsc.com/datasheet/pdf/9e56b777c022540fcce7c7f67825f55e.pdf?productCode=C165948",
+    "abracon_abs07_datasheet": "https://abracon.com/Resonators/ABS07.pdf",
+    "abracon_abs07_package_drawing": "https://abracon.com/Support/PackageDrawing/Resonators/ABS07.PDF"
+  },
+  "evidence_limits": {
+    "literal_native_geometry": "All pad dimensions/coordinates/rotations/nets/drills below are actual pcbnew readback, not web descriptions.",
+    "manufacturer_pdf_access": "Official document identities and ordinary text retrieved. Web and rawMCP screenshots return text references/ImageDisplayed only, no image contentblocks or localPDF. Curl failsDNS.",
+    "automatic_visual_descriptions": "Search supplies generatedvisual_element descriptions for some figures. They are not literalPDF text and are not accepted as independent visual inspection or a complete geometric approval.",
+    "abracon_indexed_numeric_text": "Exact ABS07 package drawing search index includes RecommendedLandPattern,2X0.043/1.1,0.075/1.9,0.055/1.4. Without viewable drawing, coordinate/axis association is not independently established.",
+    "raytac_zip": "Manufacturer support lists MDBT50Q &P &U Footprint_DesignGuide230606. Rendered page does not expose directZIPURL; no vendorCAD archive was obtained or inspected.",
+    "threeD": "MissingJ1 model and approximateU3 model do not by themselves blockPCB manufacturing; enclosure envelope review is separate."
+  },
+  "existing_rf_keepout_evidence_reference": {
+    "file": "reports/rf_filled_copper_review.json",
+    "source_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "rectangle_mm": [
+      57.8,
+      49.8,
+      70.2,
+      55.0
+    ],
+    "all_filled_layer_intersections_zero": true,
+    "scope": "Existing geometric evidence only; no repeatfullRF qualification and no claim that it closes manufacturer footprint geometry."
+  },
+  "questions_for_JLC_not_sent": [
+    {
+      "ref": "U3",
+      "question": "For exact RaytacMDBT50Q-P1MV2, confirm all61 recommendedTOP-view lands with attached project local-coordinate table and pin1/antenna orientation against VerL§2.1/2.2 or manufacturer230606 CAD. Confirm0.60×0.40mm with90deg rotation on bottom/internal rows; report any coordinate/number difference."
+    },
+    {
+      "ref": "J1",
+      "question": "For supplied C165948/TYPE-C-31-M-12 revision, compare four platedslots0.60×1.70 and0.60×1.20 atx±4.32,y−3.13/+1.05; NPTH2×Ø0.65 atx±2.89,y−2.60; SMTrow y−4.045. Confirm recommendedPCB_EDGE against projectlocal y+2.60 and current manufacturingTHT/reflow process for shieldanchors. Return approved drawingrevision and differences."
+    },
+    {
+      "ref": "Y1",
+      "question": "For C276424 ABS07-32.768KHZ-7-T withoutLR, confirm recommendedland width/height/gap and whether current1.00×1.80mm lands with2.50mm centres andzero pasteoffset are accepted; otherwise supply exact1.10/1.90/1.40 dimensionassociation from manufacturerdrawing. Do not substituteABS07-LR."
+    }
+  ],
+  "native_geometry_readback_status": "CLOSED",
+  "manufacturer_full_drawing_comparison_status": "EXTERNAL CONFIRMATION",
+  "geometry_equivalence_report": "reports/production_geometry_equivalence_A1.json"
+}

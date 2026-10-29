@@ -1,0 +1,24 @@
+{
+  "status": "PASS_NATIVE_CAD_GEOMETRY_IDENTICAL_EXCEPT_C9_PROPERTY_TEXT",
+  "before_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "after_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "same_net_table": true,
+  "all_copper_uuid_geometry_layer_width_net_unchanged": true,
+  "all_pads_footprint_positions_layers_and_models_unchanged": true,
+  "all_other_root_blocks_including_filled_zones_unchanged": true,
+  "changed_footprints": [
+    "C9"
+  ],
+  "allowed_C9_property_changes": [
+    "Value",
+    "MPN",
+    "JLCPCB",
+    "Note"
+  ],
+  "copper_items_checked": 1822,
+  "footprints_checked": 69,
+  "method": "Parse complete native S-expressions; decimal-normalised UUID blocks and full footprint nodes; only four C9 text properties excluded. Not a PDN simulation or hardware test.",
+  "before_archive": "reports/baselines/A1_before_production_closure_2026-10-29.zip",
+  "before_archive_sha256": "a85df6927cfefe5edade8a9e62d28f63f0dec3ec996cc8163a5bcc9e5d3c90dc",
+  "hardware_tested": false
+}

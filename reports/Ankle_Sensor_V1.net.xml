@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_sch</source>
-    <date>2026-10-29T17:55:19</date>
+    <date>2026-10-29T22:00:16</date>
     <tool>Eeschema 10.0.7</tool>
     <textvar name="DESIGN_STATUS">A1 AUDIT REVIEW - NOT FOR FABRICATION</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -852,22 +852,22 @@
       </units>
     </comp>
     <comp ref="C9">
-      <value>4.7u 10V X5R</value>
+      <value>10u 10V X5R</value>
       <footprint>AnkleSensor:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">CL10A475KP8NNNC</field>
-        <field name="JLCPCB">C1705</field>
+        <field name="MPN">CL10A106KP8NNNC</field>
+        <field name="JLCPCB">C19702</field>
         <field name="ReviewStatus">REVIEW</field>
-        <field name="Note"/>
+        <field name="Note">10uF nominal aligns supply reference; Ceff is not10uF guaranteed; see docs/production_caps_A1.md</field>
         <field name="Footprint">AnkleSensor:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="AnkleSensor" part="C" description=""/>
-      <property name="MPN" value="CL10A475KP8NNNC"/>
-      <property name="JLCPCB" value="C1705"/>
+      <property name="MPN" value="CL10A106KP8NNNC"/>
+      <property name="JLCPCB" value="C19702"/>
       <property name="ReviewStatus" value="REVIEW"/>
-      <property name="Note" value=""/>
+      <property name="Note" value="10uF nominal aligns supply reference; Ceff is not10uF guaranteed; see docs/production_caps_A1.md"/>
       <property name="Sheetname" value="MCU / RADIO / CLOCK"/>
       <property name="Sheetfile" value="mcu.kicad_sch"/>
       <sheetpath names="/MCU / RADIO / CLOCK/" tstamps="/5bcf7938-8e5c-591a-bfa7-c80f1ac4f6a2/"/>

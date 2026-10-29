@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-29",
+  "status": "EXTERNAL CONFIRMATION",
+  "scope": "A02 narrow closure; no new routing or FVM run",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "native_kicad_version": "10.0.7",
+  "native_readback_performed": true,
+  "board_modified": false,
+  "selected_stackup": {
+    "name": "JLC7628, 4-layer, nominal1.0mm, outer1oz, inner0.5oz",
+    "selection_scope": "Selected for this engineering analysis and recommended order confirmation. No order or board stackup was modified.",
+    "current_order_template_id_verified": false,
+    "explicit_stackup_in_native_pcb": false,
+    "layers_top_to_bottom": [
+      {
+        "name": "F.Cu",
+        "cu_mm": 0.035
+      },
+      {
+        "name": "prepreg7628x1",
+        "dielectric_mm": 0.2104,
+        "er": 4.4
+      },
+      {
+        "name": "In1.Cu GND",
+        "cu_mm": 0.0152
+      },
+      {
+        "name": "core",
+        "dielectric_mm": 0.4,
+        "er": 4.6
+      },
+      {
+        "name": "In2.Cu signals/+3V0",
+        "cu_mm": 0.0152
+      },
+      {
+        "name": "prepreg7628x1",
+        "dielectric_mm": 0.2104,
+        "er": 4.4
+      },
+      {
+        "name": "B.Cu signals",
+        "cu_mm": 0.035
+      }
+    ],
+    "sum_without_mask_mm": 1.0212,
+    "older_table_pp_er": 4.6,
+    "current_jlc_pp_er": 4.4,
+    "source_uncertainty": "Official legacy static table exposes1.0mm geometry. Current page exposes material parameters but only SSR1.6mm geometry; live1mm POST API could not be fetched. Exact current order stack/template/material must be confirmed by JLC before production.",
+    "mask_above_substrate_mm": 0.03048,
+    "mask_above_trace_mm": 0.01524,
+    "mask_er": 3.8
+  },
+  "public_source_rechecked": [
+    "https://cart.jlcpcb.com/client/template/placeOrder/impedance.html",
+    "https://jlcpcb.com/impedance"
+  ],
+  "public_listing_confirms_nominal_1mm_7628_option": true,
+  "current_order_template_or_factory_acceptance_confirmed": false,
+  "native_usb_nets": {
+    "USB_DP": {
+      "trace_length_mm": 31.231504885042447,
+      "width_segment_counts_mm": {
+        "0.150": 14,
+        "0.170": 9
+      },
+      "via_count": 2,
+      "actual_pad_connections": [
+        {
+          "ref": "U6",
+          "pad": "6"
+        },
+        {
+          "ref": "U3",
+          "pad": "35"
+        }
+      ],
+      "ground_reference_geometry": {
+        "native_projection_gnd_coverage_pct": 95.25077742013241,
+        "max_missing_component_trace_length_sum_mm": 0.8254608091291198
+      }
+    },
+    "USB_DN": {
+      "trace_length_mm": 32.957220528161045,
+      "width_segment_counts_mm": {
+        "0.150": 23,
+        "0.170": 9
+      },
+      "via_count": 2,
+      "actual_pad_connections": [
+        {
+          "ref": "U6",
+          "pad": "4"
+        },
+        {
+          "ref": "U3",
+          "pad": "34"
+        }
+      ],
+      "ground_reference_geometry": {
+        "native_projection_gnd_coverage_pct": 95.44187188976457,
+        "max_missing_component_trace_length_sum_mm": 0.8564134339433862
+      }
+    },
+    "USB_DP_CONN": {
+      "trace_length_mm": 12.996637802864846,
+      "width_segment_counts_mm": {
+        "0.150": 45
+      },
+      "via_count": 2,
+      "actual_pad_connections": [
+        {
+          "ref": "J1",
+          "pad": "A6"
+        },
+        {
+          "ref": "J1",
+          "pad": "B6"
+        },
+        {
+          "ref": "U6",
+          "pad": "1"
+        }
+      ],
+      "ground_reference_geometry": {
+        "native_projection_gnd_coverage_pct": 83.99836028903381,
+        "max_missing_component_trace_length_sum_mm": 1.4328427124746188
+      }
+    },
+    "USB_DN_CONN": {
+      "trace_length_mm": 15.55212120245875,
+      "width_segment_counts_mm": {
+        "0.150": 48
+      },
+      "via_count": 2,
+      "actual_pad_connections": [
+        {
+          "ref": "J1",
+          "pad": "A7"
+        },
+        {
+          "ref": "J1",
+          "pad": "B7"
+        },
+        {
+          "ref": "U6",
+          "pad": "3"
+        }
+      ],
+      "ground_reference_geometry": {
+        "native_projection_gnd_coverage_pct": 89.78817549731818,
+        "max_missing_component_trace_length_sum_mm": 0.8521320343559645
+      }
+    }
+  },
+  "native_raytac_power_and_usb_pads": {
+    "28": "+3V0",
+    "30": "+3V0",
+    "31": "unconnected-(U3-DCCH-Pad31)",
+    "32": "VBUS",
+    "34": "USB_DN",
+    "35": "USB_DP"
+  },
+  "return_path_report": "reports/return_path_review.json",
+  "return_path_report_sha256": "33d10f25666fda276cce6c2dc927784b9a601a22e87b139b690a0e42ee1f969d",
+  "all_gnd_pads_one_native_component": true,
+  "reused_model_with_verified_identical_geometry": {
+    "computed_on_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "calculation_source": "reports/usb_stackup_final_A1.json",
+    "calculation_source_sha256": "4b579b8a8edaa51279a2eb4aab74d4fd7ff13cd8e2697a9932c25c8f2840f8fc",
+    "geometry_proof": "reports/production_geometry_equivalence_A1.json",
+    "geometry_proof_sha256": "5e4e50058a8191f6f09e5e18923d0cb1b31bd970f183bed578f07acc8baf5939",
+    "new_field_solver_run_performed": false,
+    "model": {
+      "solver": "scripts/usb_cross_section_fd.cpp, finite-volume electrostatics with harmonic dielectric interfaces; PCG residual<1e-9",
+      "equations": [
+        "div(epsilon grad V)=0",
+        "odd mode Vplus=+1V,Vminus=-1V; symmetry plane0V",
+        "Codd=Qplus/1V; repeat same geometry in vacuum to obtain Codd0",
+        "Zdiff=2/(c*sqrt(Codd*Codd0))"
+      ],
+      "geometry": "Perfect rectangular copper; In1 idealGND. In2 trace thickness rounds to0.015mm at grids5/2.5um. Air above B and0.03048mm mask on unplated substrate; F mask0.03048mm between traces/0.01524mm over trace. No actual B signal conductors in base model.",
+      "coplanar_case": "Ideal equipotential AC0 conductor outside both pair edges by0.15mm on In2. Conditional lower estimate: real+3V0 is not automaticallyGND, especially common mode or asymmetric gaps.",
+      "b_ground_case": "Hypothetical continuous grounded B strip/plane0.2104mm from In2 copper. Not present in canonical.",
+      "tails": "Not continuously parallel. front model is hypothetical paired F geometry; single cases estimate isolated traceZ0, not a Zdiff for separately routed tails.",
+      "not_modelled": [
+        "frequency-dependentEr/loss/copperroughness/trapezoid",
+        "full3D bends/vias/antipads/module/ESD/pins/connector/cable",
+        "nonuniform+3V0 return impedance",
+        "manufacturing dimensional distributions",
+        "transienteye/ESD/EMC"
+      ],
+      "validation_scope": "Analytic parallel-plate sanity check, mesh and box convergence. Not independently calibrated against a commercial field solver or impedance coupon."
+    },
+    "calculations": [
+      {
+        "mode": "in2",
+        "pitch_mm": 0.0025,
+        "half_box_width_mm": 2.5,
+        "box_height_mm": 1.8,
+        "b_ground_half_width_mm": 2.5,
+        "er_pp": 4.4,
+        "er_core": 4.6,
+        "width_mm": 0.17,
+        "gap_mm": 0.13,
+        "C_odd_F_per_m": 1.47773765652e-10,
+        "C_odd_vacuum_F_per_m": 3.39846116722e-11,
+        "Z_diff_ohm": 94.1389752853,
+        "iterations": [
+          2782,
+          2859
+        ],
+        "relative_residual": [
+          9.99985670479e-10,
+          9.93713080458e-10
+        ],
+        "nx": 1000,
+        "ny": 720
+      },
+      {
+        "mode": "in2_coplanar",
+        "pitch_mm": 0.0025,
+        "half_box_width_mm": 2.5,
+        "box_height_mm": 1.8,
+        "b_ground_half_width_mm": 2.5,
+        "er_pp": 4.4,
+        "er_core": 4.6,
+        "width_mm": 0.17,
+        "gap_mm": 0.13,
+        "C_odd_F_per_m": 1.60864853813e-10,
+        "C_odd_vacuum_F_per_m": 3.64169114157e-11,
+        "Z_diff_ohm": 87.161993306,
+        "iterations": [
+          2306,
+          2518
+        ],
+        "relative_residual": [
+          9.99128401276e-10,
+          9.97812857386e-10
+        ],
+        "nx": 1000,
+        "ny": 720
+      }
+    ],
+    "scope": "Nominal idealised 2D cross sections only; no full-path bound, factory guarantee or physical measurement"
+  },
+  "closed_subchecks": [
+    "Exactly eighteen unchanged-centreline In2 trunk segments have width0.17mm/gap0.13mm",
+    "Fresh native track/via/pad and stored ground-fill readback; no changed routing",
+    "VDD/VDDH=3V0, VBUS=USB5V, DCCH unconnected; USB pin nets remain consistent",
+    "No external USB series resistor addition: Nordic documents integrated PHY resistors"
+  ],
+  "manufacturer_questions_not_sent": [
+    "Return current 4-layer1.0mm JLC7628 order template ID and pressed stack, not the default1.6mm table.",
+    "Confirm 35/15.2/15.2/35um copper, 0.2104/0.400/0.2104mm dielectric spacings and whether 0.45mm core-with-Cu note is a separate convention.",
+    "Confirm Er7628=4.4 or4.6, ErCore=4.6, actual mask profile and laminate thickness tolerance.",
+    "For current 0.17/0.13mm In2 pair and surrounding mixed3V0/B signals, confirm fab acceptance and state if90ohm controlled impedance is offered on this geometry.",
+    "Report any proposed CAM trace/space or stack modification before applying it; do not silently rescale USB geometry."
+  ],
+  "prototype_tests_not_run": [
+    "USB FullSpeed12Mb/s transfer/CRC/reconnect and both connector orientations",
+    "Actual USB edges/eye using proper FS fixture and cable",
+    "System ESD immunity; data-line and clamp return-path behaviour"
+  ],
+  "decision": "Retain existing routing for first prototypes; confirm order stack externally before production release. Native plane voids and nonuniform tails are documented, not treated as a proven continuous90ohm line."
+}

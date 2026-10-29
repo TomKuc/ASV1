@@ -7879,7 +7879,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7u 10V X5R"
+		(property "Value" "10u 10V X5R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7925,7 +7925,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7937,7 +7937,7 @@
 				)
 			)
 		)
-		(property "JLCPCB" "C1705"
+		(property "JLCPCB" "C19702"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7961,7 +7961,7 @@
 				)
 			)
 		)
-		(property "Note" ""
+		(property "Note" "10uF nominal aligns supply reference; Ceff is not10uF guaranteed; see docs/production_caps_A1.md"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)

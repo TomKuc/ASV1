@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "read_date": "2026-10-29",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "A03_status": "EXTERNAL CONFIRMATION",
+  "A04_status": "EXTERNAL CONFIRMATION",
+  "hardware_changed_by_this_check": false,
+  "hardware_tests_performed": false,
+  "manufacturer_CAM_approval_obtained": false,
+  "order_stock_or_placement_approval_obtained": false,
+  "assembly": {
+    "footprints": 69,
+    "BOM_groups": 33,
+    "CPL_parts": 59,
+    "all_TOP": true,
+    "BOM_CPL_native_metadata_origins_rotations_match": true,
+    "BOM_sha256": "e7bddf27ad1072ab590747f4a792bfdf99087280b8e7bbc91b29b1812b11a374",
+    "CPL_sha256": "370c53111027d9b301d5be0047553b6641a8e59f43e3155610b15fd936c17238",
+    "component_status_csv_sha256": "46b0f54f594bf0801fdcc4543e75ec1d126640819b6b320b73b1861da75d3a91",
+    "excluded_bare_copper": [
+      "J3",
+      "TP1",
+      "TP2",
+      "TP3",
+      "TP4",
+      "TP5",
+      "TP6",
+      "TP7",
+      "TP8",
+      "TP9"
+    ],
+    "orientation_scope": "Native placement and pin1 coordinates only, no tape-convention conversion or JLC preview acceptance."
+  },
+  "catalog": {
+    "historical_30of33_identity_service_evidence": "reports/pcba_testability_final_A1.json",
+    "historical_evidence_sha256": "5bd83c4612c6d02c51e2e2313a7d82b791801f3da533abb6abddc6e432d06991",
+    "exact_MPN_C_reuse": true,
+    "critical_cards_reread_in_this_closure": [
+      "J1",
+      "J2",
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5",
+      "U6",
+      "U8",
+      "Y1"
+    ],
+    "U7_R1_R20_fresh_search_and_direct_read": "Exact JLC cards not retrieved; no inference of unavailability.",
+    "all_59_fitted_status": "wymaga potwierdzenia",
+    "no_part_marked_unavailable_without_evidence": true
+  },
+  "CAM_scope": "Literal Gerber aperture flashes checked locally at three tied minima; not independent full-board CAM or tolerance approval.",
+  "hole_pad_minima": [
+    {
+      "ref": "U6",
+      "pin": "2",
+      "net": "GND",
+      "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
+      "side": "front",
+      "pad_center_mm": [
+        70.4625,
+        93.3
+      ],
+      "via_uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+      "via_net": "GND",
+      "via_xy_mm": [
+        71.4,
+        93.3
+      ],
+      "hole_diameter_mm": 0.25,
+      "hole_to_shape_edge_mm": 0.150001,
+      "same_net": true,
+      "via_diameter_mm": 0.5,
+      "plot_via_xy_mm": [
+        21.400000000000006,
+        8.299999999999997
+      ],
+      "exported_openings": {
+        "F_Mask": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-F_Mask.gbr",
+          "sha256": "fa4dfe5dd9f9425b71a0b763dbd6bbd31b8c9146123ba2d1a7d5329a04541c7a",
+          "flash_count": 246,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "U6",
+          "nearest_aperture": 18,
+          "hole_edge_to_opening_mm": 0.15,
+          "annulus_edge_to_opening_mm": 0.025
+        },
+        "B_Mask": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-B_Mask.gbr",
+          "sha256": "2a6560b6e213883e9d1eee29c658ed254fc348d3772d504d137524ad8fe37c9f",
+          "flash_count": 21,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "J1",
+          "nearest_aperture": 11,
+          "hole_edge_to_opening_mm": 3.058314,
+          "annulus_edge_to_opening_mm": 2.933314
+        },
+        "F_Paste": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-F_Paste.gbr",
+          "sha256": "60a029b4f6272a929e8c392467133d5bc3a4ff73b69ed831800d3f95c6188e59",
+          "flash_count": 243,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "U6",
+          "nearest_aperture": 15,
+          "hole_edge_to_opening_mm": 0.15,
+          "annulus_edge_to_opening_mm": 0.025
+        },
+        "B_Paste": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-B_Paste.gbr",
+          "sha256": "677b72c5422420ca9da448747ed5181d9c4d6e85fc3cb1c4ca0082ffa9c2a0d1",
+          "flash_count": 0,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": null,
+          "nearest_aperture": null,
+          "hole_edge_to_opening_mm": null,
+          "annulus_edge_to_opening_mm": null
+        }
+      }
+    },
+    {
+      "ref": "C5",
+      "pin": "2",
+      "net": "GND",
+      "pad_uuid": "a27d31e3-d685-4ad7-9427-6b39a1ff535b",
+      "side": "front",
+      "pad_center_mm": [
+        71.45,
+        79.025
+      ],
+      "via_uuid": "c33d0a5e-877f-4174-8489-0b7f8e8987d2",
+      "via_net": "GND",
+      "via_xy_mm": [
+        71.45,
+        78.3
+      ],
+      "hole_diameter_mm": 0.25,
+      "hole_to_shape_edge_mm": 0.150001,
+      "same_net": true,
+      "via_diameter_mm": 0.5,
+      "plot_via_xy_mm": [
+        21.450000000000003,
+        23.299999999999997
+      ],
+      "exported_openings": {
+        "F_Mask": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-F_Mask.gbr",
+          "sha256": "fa4dfe5dd9f9425b71a0b763dbd6bbd31b8c9146123ba2d1a7d5329a04541c7a",
+          "flash_count": 246,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "C5",
+          "nearest_aperture": 16,
+          "hole_edge_to_opening_mm": 0.15,
+          "annulus_edge_to_opening_mm": 0.025
+        },
+        "B_Mask": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-B_Mask.gbr",
+          "sha256": "2a6560b6e213883e9d1eee29c658ed254fc348d3772d504d137524ad8fe37c9f",
+          "flash_count": 21,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "TP2",
+          "nearest_aperture": 13,
+          "hole_edge_to_opening_mm": 5.281987,
+          "annulus_edge_to_opening_mm": 5.156987
+        },
+        "F_Paste": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-F_Paste.gbr",
+          "sha256": "60a029b4f6272a929e8c392467133d5bc3a4ff73b69ed831800d3f95c6188e59",
+          "flash_count": 243,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "C5",
+          "nearest_aperture": 13,
+          "hole_edge_to_opening_mm": 0.15,
+          "annulus_edge_to_opening_mm": 0.025
+        },
+        "B_Paste": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-B_Paste.gbr",
+          "sha256": "677b72c5422420ca9da448747ed5181d9c4d6e85fc3cb1c4ca0082ffa9c2a0d1",
+          "flash_count": 0,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": null,
+          "nearest_aperture": null,
+          "hole_edge_to_opening_mm": null,
+          "annulus_edge_to_opening_mm": null
+        }
+      }
+    },
+    {
+      "ref": "C4",
+      "pin": "2",
+      "net": "GND",
+      "pad_uuid": "3ff4b1c1-9f05-40de-9fc0-075716399c78",
+      "side": "front",
+      "pad_center_mm": [
+        69.15,
+        79.025
+      ],
+      "via_uuid": "f66c258b-1003-4c4d-a48e-ab8594dec65a",
+      "via_net": "GND",
+      "via_xy_mm": [
+        69.15,
+        78.3
+      ],
+      "hole_diameter_mm": 0.25,
+      "hole_to_shape_edge_mm": 0.150001,
+      "same_net": true,
+      "via_diameter_mm": 0.5,
+      "plot_via_xy_mm": [
+        19.150000000000006,
+        23.299999999999997
+      ],
+      "exported_openings": {
+        "F_Mask": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-F_Mask.gbr",
+          "sha256": "fa4dfe5dd9f9425b71a0b763dbd6bbd31b8c9146123ba2d1a7d5329a04541c7a",
+          "flash_count": 246,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "C4",
+          "nearest_aperture": 16,
+          "hole_edge_to_opening_mm": 0.15,
+          "annulus_edge_to_opening_mm": 0.025
+        },
+        "B_Mask": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-B_Mask.gbr",
+          "sha256": "2a6560b6e213883e9d1eee29c658ed254fc348d3772d504d137524ad8fe37c9f",
+          "flash_count": 21,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "TP2",
+          "nearest_aperture": 13,
+          "hole_edge_to_opening_mm": 6.253408,
+          "annulus_edge_to_opening_mm": 6.128408
+        },
+        "F_Paste": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-F_Paste.gbr",
+          "sha256": "60a029b4f6272a929e8c392467133d5bc3a4ff73b69ed831800d3f95c6188e59",
+          "flash_count": 243,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": "C4",
+          "nearest_aperture": 13,
+          "hole_edge_to_opening_mm": 0.15,
+          "annulus_edge_to_opening_mm": 0.025
+        },
+        "B_Paste": {
+          "file": "manufacturing/review/gerbers/Ankle_Sensor_V1-B_Paste.gbr",
+          "sha256": "677b72c5422420ca9da448747ed5181d9c4d6e85fc3cb1c4ca0082ffa9c2a0d1",
+          "flash_count": 0,
+          "via_center_inside_any_opening": false,
+          "via_hole_overlaps_any_opening": false,
+          "nearest_opening_ref": null,
+          "nearest_aperture": null,
+          "hole_edge_to_opening_mm": null,
+          "annulus_edge_to_opening_mm": null
+        }
+      }
+    }
+  ],
+  "sources": {
+    "via_covering": "https://jlcpcb.com/help/article/pcb-via-covering",
+    "capabilities": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "rails": "https://jlcpcb.com/help/article/how-to-add-edge-rails-fiducials-for-pcb-assembly-order",
+    "matching": "https://jlcpcb.com/help/article/component-matching-guidelines-for-pcba-orders"
+  },
+  "open_JLC_acceptance": [
+    "Exact stock/procurement/attrition for all33groups, especially U7/R1/R20.",
+    "All59 component orientations and pin1/polarity in actual placement preview.",
+    "Three0.150001mm hole-to-pad/paste minima and0.025mm annulus-to-mask-opening nominal margin with actual drill/registration/mask process.",
+    "WSON/LGA stencils and EP paste, reflow/MSL, U3/U4 Xray.",
+    "Manufacturer-created rails/fiducials/panel; preserve RF keepout and avoid IMU depanel stress."
+  ]
+}

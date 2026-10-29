@@ -1,3 +1,5 @@
+> **Etap historyczny sprzed zmiany C9.** Aktualny stan określa [production_readiness_A1.md](production_readiness_A1.md). Oryginalne wyniki i hashe obliczeń zachowano; ich zastosowanie do nowego PCB opisują raporty produkcyjne i dowód identyczności geometrii.
+
 # Końcowy przegląd PCBA i dostępu testowego A1
 
 Stan: **2026-10-29**, commit `28d88f22a6a9c0c0e1feb639546009518a6b5f8e`, PCB SHA256:

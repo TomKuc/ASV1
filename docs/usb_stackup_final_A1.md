@@ -1,3 +1,5 @@
+> **Etap historyczny sprzed zmiany C9.** Aktualny stan określa [production_readiness_A1.md](production_readiness_A1.md). Oryginalne wyniki i hashe obliczeń zachowano; ich zastosowanie do nowego PCB opisują raporty produkcyjne i dowód identyczności geometrii.
+
 # USB / wybrany przekrój JLCPCB — audyt A1
 
 Odczyt 29.10.2026. Aktualny natywny PCB ma SHA-256 `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`, po przyjęciu przez root lokalnego poszerzenia 18 odcinków USB. Ten audyt nie zmienia PCB. Dane źródłowe, rzeczywiste przekroje miedzi oraz wszystkie obliczenia zapisuje [usb_stackup_final_A1.json](../reports/usb_stackup_final_A1.json); powtarzalne narzędzia to [review_usb_stackup.py](../scripts/review_usb_stackup.py) i [usb_cross_section_fd.cpp](../scripts/usb_cross_section_fd.cpp). Dane 0,15/0,15 w porównaniu poniżej opisują poprzedni trunk, a nie aktualną szerokość przyjętych 18 odcinków.

@@ -37,6 +37,13 @@ REPORTS=(
     'github_verification_final_A1.json','final_verification_A1.json','current_A1_manifest.json',
     'package_native_validation_A1.json',
     'final_changed_files_A1.txt',
+    'production_changes_A1.json','production_geometry_equivalence_A1.json',
+    'production_caps_A1.json','production_footprints_A1.json','production_usb_A1.json',
+    'production_pcba_dfm_A1.json','production_component_status_A1.csv',
+    'production_readiness_A1.json','production_provenance_A1.json',
+    'github_verification_production_A1.json','production_changed_files_A1.txt',
+    'baselines/A1_before_production_closure_2026-10-29.zip',
+    'baselines/A1_before_production_closure_manifest.json',
 )
 
 
@@ -46,10 +53,10 @@ def sha(p):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--archive', default='Ankle_Sensor_V1_A1_FINAL_REVIEW.zip')
+    parser.add_argument('--archive', default='Ankle_Sensor_V1_A1_PRODUCTION_REVIEW.zip')
     args=parser.parse_args()
     archive=ROOT/args.archive
-    preserved={'Ankle_Sensor_V1_A0_REVIEW.zip','Ankle_Sensor_V1_A1_REVIEW.zip','Ankle_Sensor_V1_A1_AUDIT_REVIEW.zip'}
+    preserved={'Ankle_Sensor_V1_A0_REVIEW.zip','Ankle_Sensor_V1_A1_REVIEW.zip','Ankle_Sensor_V1_A1_AUDIT_REVIEW.zip','Ankle_Sensor_V1_A1_FINAL_REVIEW.zip'}
     if archive.name in preserved:
         raise SystemExit('Refusing to overwrite a preserved A0/A1 baseline archive')
     validation=json.loads((ROOT/'reports/validation_status.json').read_text())
@@ -65,11 +72,9 @@ def main():
         assert sha(ROOT/rel)==expected,rel
     for filename,key in (
         ('rf_filled_copper_review.json','board_sha256_at_read'),
-        ('signal_geometry_review.json','board_sha256'),
         ('return_path_review.json','board_sha256'),
         ('usb_routing_review.json','canonical_board_sha256'),
         ('manufacturing_geometry_review.json','board_sha256'),
-        ('power_routing_review.json','source_sha256'),
         ('via_pad_audit.json','source_sha256'),
     ):
         data=json.loads((ROOT/'reports'/filename).read_text())
@@ -89,7 +94,7 @@ def main():
         assert p.is_file(),str(p)
         files.add(p)
     metadata={
-        'status':'A1_FINAL_REVIEW_CONDITIONAL_READY_NOT_ORDER_RELEASE',
+        'status':'A1_PRODUCTION_REVIEW_CONDITIONAL_READY_NOT_ORDER_RELEASE',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
         'kicad_version':validation['kicad_version'],'board_sha256':board_hash,
         'native_drc':{'violations':0,'unconnected_items':0,'schematic_parity':0},
@@ -102,12 +107,12 @@ def main():
         'step_limitations':'Missing USB-C model, generic Raytac, Flash envelope, IMU height limit; no battery/case',
         'assembly_limitations':'Native footprint anchors/rotations, JLC translations and procurement unconfirmed',
         'physical_qualification':'Firmware and physical prototype tests are outstanding',
-        'audit_report':'docs/final_verification_A1.md',
+        'audit_report':'docs/production_readiness_A1.md',
         'ignored_check_classes':{'erc':validation['erc_ignored_checks'],
                                  'drc':validation['drc_ignored_checks']},
         'preserved_baseline':'reports/baselines/A1_routed_before_audit_2026-10-29.zip',
         'current_source_manifest':'reports/current_A1_manifest.json',
-        'commit_delivery':'Final Git bundle and final_commit_delivery_A1.json are delivered beside this archive after committing; not recursively included',
+        'commit_delivery':'Production Git bundle and production_commit_delivery_A1.json are delivered beside this archive after committing; not recursively included',
         'files_without_manifest_or_checksum_list':len(files)
     }
     manifest=ROOT/'reports/review_package_manifest.json'

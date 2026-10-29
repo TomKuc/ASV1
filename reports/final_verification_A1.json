@@ -51,5 +51,7 @@
   "firmware_implemented": false,
   "order_placed": false,
   "fabrication_release": false,
-  "github_current_commit_verified": false
+  "github_current_commit_verified": false,
+  "provenance_role": "HISTORICAL_PRE_C9_PRODUCTION_CLOSURE",
+  "superseded_by": "reports/production_readiness_A1.json"
 }

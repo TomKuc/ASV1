@@ -5925,5 +5925,19 @@
     "PDN_impedance_or_noise_tested": false
   },
   "input_project_sha256": "b13938ac04f08e4c3a4d19e5a498f7d05a37e9c54622fbafd04f8b3624df1346",
-  "input_custom_rules_sha256": "000b24e75b73068c5c85957ba071bc6e26098209cd6f7cb3cfee39cbdb7284ae"
+  "input_custom_rules_sha256": "000b24e75b73068c5c85957ba071bc6e26098209cd6f7cb3cfee39cbdb7284ae",
+  "current_source_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "current_applicability": {
+    "status": "APPLICABLE_WITH_VERIFIED_IDENTICAL_GEOMETRY_AND_CHECKED_POWER_COMPONENTS",
+    "current_source_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+    "schematic_netlist_sha256": "8af1170655c902ace84254e22a1fff9b28c2ed7ed2f942fbc59ff4f60ab2eaef",
+    "geometry_proof_path": "reports/production_geometry_equivalence_A1.json",
+    "geometry_proof_sha256": "5e4e50058a8191f6f09e5e18923d0cb1b31bd970f183bed578f07acc8baf5939",
+    "fresh_native_refs_checked": [],
+    "fresh_native_components": {},
+    "netlist_and_previous_power_component_mismatches": [],
+    "C9_change": "Only C9 value/MPN/JLC/note changed; see production_caps_A1.json for current capacitance conclusions. No old current/startup estimate is claimed newly measured or simulated.",
+    "computation_rerun": false,
+    "method": "Fresh native readback versus current XML and previous component nets/values, plus complete CAD geometry equivalence. Original computation hashes retained."
+  }
 }

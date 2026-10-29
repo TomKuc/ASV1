@@ -1,3 +1,5 @@
+> **Etap historyczny sprzed zmiany C9.** Aktualny stan określa [production_readiness_A1.md](production_readiness_A1.md). Oryginalne wyniki i hashe obliczeń zachowano; ich zastosowanie do nowego PCB opisują raporty produkcyjne i dowód identyczności geometrii.
+
 # Audyt A1: Raytac, USB, IMU, RF i mechanika
 
 Data: **29.10.2026**. Aktualne PCB: SHA-256 `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`; schemat główny: `2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d`. Odczyt wykonano po przyjęciu przez root poszerzenia 18 odcinków wspólnego trunku USB. Sam audyt nie zmienił PCB, schematu, wartości ani tras. Świeży natywny [eksport netlisty](../reports/usb_audit_netlist_A1.xml) porównano z rzeczywistymi padami U3/U4/U6/J1: **zero rozbieżności sieci**. Dane pomiarowe i źródła: [usb_raytac_audit_A1.json](../reports/usb_raytac_audit_A1.json). Przydział wszystkich 61 padów modułu jest w [pin_assignment_A1.md](pin_assignment_A1.md); korekta szerokości nie zmienia pinmapu.

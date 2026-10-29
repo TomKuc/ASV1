@@ -1,9 +1,9 @@
 {
-  "archive": "Ankle_Sensor_V1_A1_FINAL_REVIEW.zip",
-  "sha256": "7d8750e5595b1d46f21c1b5d8a2707cf074128bd315fed48112cc564b859483b",
-  "bytes": 3237849,
-  "file_count": 211,
+  "archive": "Ankle_Sensor_V1_A1_PRODUCTION_REVIEW.zip",
+  "sha256": "9a4566e02f83ab8d30418308a319b410c41218e3764f9de32c94b46a51abe2eb",
+  "bytes": 3754099,
+  "file_count": 236,
   "crc_check": "PASS",
-  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
   "fabrication_release": false
 }

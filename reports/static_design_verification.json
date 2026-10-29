@@ -25,7 +25,7 @@
   "schematic_sources_sha256": {
     "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_sch": "2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d",
     "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/power.kicad_sch": "ce5ceb0873ef98f1d9e39f209bac262d1f518d0ce3e85cbe88cc1f8cbdee4f3a",
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/mcu.kicad_sch": "6eae1d86edbd75923d2cdd866f55f62c45e9d96627e1b84cf7cb32c0d95baf08",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/mcu.kicad_sch": "51f0ca4fa3a421ef0ba4288549483f5f0534e34be6f025dbd0ffbf390f5edf98",
     "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/sensors.kicad_sch": "70bb1dad3b54466debf7525c5ad7328d7e8abdb34ae568c528a25dfb03a58736",
     "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/io.kicad_sch": "4b8bf8c423e7a9c4f42c575419ad87159e8ac2fe70c78fbcf4287e5850217ea0",
     "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/temperature.kicad_sch": "03d02986db171a22f57094ce84d75739af78391f52a57f316fffa8e29c8ec63b"
@@ -101,9 +101,9 @@
   "issues": [],
   "inputs": {
     "design": "hardware/design.json",
-    "design_sha256": "0ddf06dc25c816a0e1abe627489c19fa6fd5ea9597cbe5be74579baac34a0203",
+    "design_sha256": "5c8f2f63e631a1d0a6543f29cf962cbbe68d45658b982536029f7b7c4d83ed26",
     "schematic": "hardware/Ankle_Sensor_V1.kicad_sch",
     "schematic_sha256": "2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d"
   },
-  "generated_at_utc": "2026-10-29T16:55:19.832701+00:00"
+  "generated_at_utc": "2026-10-29T21:00:16.459637+00:00"
 }

@@ -1,15 +1,15 @@
 {
-  "board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
   "nets": {
     "USB_DP": {
       "length_mm": 31.231504885042447,
-      "gnd_coverage_pct": 94.77714756163083,
+      "gnd_coverage_pct": 95.25077742013241,
       "missing_centerline_mm": 1.6461714872477748,
       "max_component_trace_mm": 0.8254608091291198
     },
     "USB_DN": {
       "length_mm": 32.957220528161045,
-      "gnd_coverage_pct": 95.02004037465275,
+      "gnd_coverage_pct": 95.44187188976457,
       "missing_centerline_mm": 1.6564134339433862,
       "max_component_trace_mm": 0.8564134339433862
     },

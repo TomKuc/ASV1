@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--remote', default='https://github.com/TomKuc/ASV1.git')
-    parser.add_argument('--branch', default='final/a1-prototype-2026-10-29')
+    parser.add_argument('--branch', default='production/a1-conditions-2026-10-29')
     parser.add_argument('--expected-commit', required=True)
     parser.add_argument('--output', type=Path,
                         default=ROOT/'reports/github_verification_after_import.json')

@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-29",
+  "condition": "A01_CAPACITORS",
+  "status": "EXTERNAL CONFIRMATION",
+  "current_source_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "schematic_netlist_sha256": "8af1170655c902ace84254e22a1fff9b28c2ed7ed2f942fbc59ff4f60ab2eaef",
+  "method": "Read-only KiCad pcbnew: current values/MPN/JLC/pads/nets/coordinates compared to fresh native schematic netlist. Engineering reference arithmetic is not measurement or guaranteed Ceff.",
+  "native": {
+    "version": "10.0.7",
+    "components": {
+      "C1": {
+        "value": "2.2u 25V X5R",
+        "mpn": "CL10A225KA8NNNC",
+        "jlcpcb": "C57895",
+        "footprint": "C_0603_1608Metric",
+        "xy_mm": [
+          65.5,
+          90.0
+        ],
+        "rotation_deg": 90.0,
+        "pads": {
+          "1": {
+            "pcb_net": "VBUS",
+            "schematic_net": "VBUS",
+            "xy_mm": [
+              65.5,
+              90.775
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              65.5,
+              89.225
+            ]
+          }
+        }
+      },
+      "C5": {
+        "value": "10u 10V X5R",
+        "mpn": "CL10A106KP8NNNC",
+        "jlcpcb": "C19702",
+        "footprint": "C_0603_1608Metric",
+        "xy_mm": [
+          71.45,
+          79.8
+        ],
+        "rotation_deg": 90.0,
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              71.45,
+              80.575
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              71.45,
+              79.025
+            ]
+          }
+        }
+      },
+      "C9": {
+        "value": "10u 10V X5R",
+        "mpn": "CL10A106KP8NNNC",
+        "jlcpcb": "C19702",
+        "footprint": "C_0603_1608Metric",
+        "xy_mm": [
+          68.6,
+          68.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              67.825,
+              68.0
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              69.375,
+              68.0
+            ]
+          }
+        }
+      },
+      "C10": {
+        "value": "100n 16V X7R",
+        "mpn": "CL05B104KO5NNNC",
+        "jlcpcb": "C1525",
+        "footprint": "C_0402_1005Metric",
+        "xy_mm": [
+          66.0,
+          68.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              65.52,
+              68.0
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              66.48,
+              68.0
+            ]
+          }
+        }
+      },
+      "C11": {
+        "value": "4.7u 10V X5R",
+        "mpn": "CL10A475KP8NNNC",
+        "jlcpcb": "C1705",
+        "footprint": "C_0603_1608Metric",
+        "xy_mm": [
+          70.9,
+          66.8
+        ],
+        "rotation_deg": 90.0,
+        "pads": {
+          "1": {
+            "pcb_net": "VBUS",
+            "schematic_net": "VBUS",
+            "xy_mm": [
+              70.9,
+              67.575
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              70.9,
+              66.025
+            ]
+          }
+        }
+      }
+    },
+    "netlist_mismatches": []
+  },
+  "geometry_proof": {
+    "path": "reports/production_geometry_equivalence_A1.json",
+    "sha256": "5e4e50058a8191f6f09e5e18923d0cb1b31bd970f183bed578f07acc8baf5939",
+    "status": "PASS_NATIVE_CAD_GEOMETRY_IDENTICAL_EXCEPT_C9_PROPERTY_TEXT"
+  },
+  "C9": {
+    "status": "CLOSED",
+    "scope": "nominal correction, exact MPN, same footprint only",
+    "before_uF": 4.7,
+    "after_uF": 10.0,
+    "effective_10uF_guaranteed": false,
+    "Ceff_minimum_status": "EXTERNAL CONFIRMATION"
+  },
+  "C11": {
+    "status": "EXTERNAL CONFIRMATION",
+    "changed": false,
+    "nominal_uF": 4.7,
+    "initial_tolerance_fraction": 0.1,
+    "initial_capacitance_range_uF": [
+      4.23,
+      5.17
+    ],
+    "exact_5V_or_5p5V_bias_curve_read": false,
+    "guaranteed_Ceff_uF": null,
+    "DECUSB_capacitance_limit_applied_to_VBUS": false,
+    "decision": "Keep current component pending Raytac VBUS application clarification; lack of bias data is not a demonstrated hardware defect."
+  },
+  "C9_bias_reference": {
+    "mpn": "CL10A106KP8NNNC",
+    "reference": "TI LM3281 Table6 printed page16",
+    "voltage_V": 3.3,
+    "effective_uF": 5.2,
+    "guaranteed_minimum_for_this_board": false,
+    "tolerance_already_included": "NOT_SPECIFIED",
+    "conditional_arithmetic_uF": 3.978,
+    "conditional_arithmetic": "5.2 * 0.90 * 0.85; only if those deratings are independent and not already included; not a guaranteed lower bound."
+  },
+  "direct_VBUS_capacitance": {
+    "current": {
+      "C1_uF": 2.2,
+      "C11_uF": 4.7,
+      "nominal_sum_uF": 6.9,
+      "initial_10pct_range_uF": [
+        6.21,
+        7.59
+      ]
+    },
+    "rejected_automatic_C11_10uF": {
+      "nominal_sum_uF": 12.2,
+      "initial_10pct_range_uF": [
+        10.98,
+        13.42
+      ]
+    },
+    "scope": "Only C1+C11 directly on VBUS, excluding other input capacitance and startup loads. These sums do not certify the complete USB port or inrush charge.",
+    "C9_is_behind_BQ_and_LDO": true,
+    "inrush_measured": false
+  },
+  "manufacturer_questions": {
+    "Raytac": [
+      "Are the section8.3 10uF figures nominal examples or effective minima?",
+      "What effective capacitance/ESR limits apply separately to VDD/VDDH and VBUS?",
+      "Is C11 CL10A475KP8NNNC 4.7uF/10V acceptable on VBUS with the separate C1=2.2uF USB input load?",
+      "Is C9 CL10A106KP8NNNC 10uF plus100nF appropriate at3.0V?"
+    ],
+    "Samsung": [
+      "Provide exact C(V,T), Bias TCC, aging and guaranteed versus typical limits for both MPNs."
+    ],
+    "JLCPCB": [
+      "Confirm exact MPN procurement and assembly; ordinary CAM approval does not certify Raytac application or inrush."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Raytac official document index VerL",
+      "url": "https://www.raytac.com/download/index.php?index_id=43",
+      "limitation": "No readable bitmap obtained;10uF reference value is supplied by the user, not a claimed visual read."
+    },
+    {
+      "title": "Samsung CL10A106KP8NNN",
+      "url": "https://product.samsungsem.com/mlcc/CL10A106KP8NNN.do"
+    },
+    {
+      "title": "Samsung CL10A475KP8NNN",
+      "url": "https://product.samsungsem.com/mlcc/CL10A475KP8NNN.do"
+    },
+    {
+      "title": "TI LM3281 Table6",
+      "url": "https://www.ti.com/lit/ds/symlink/lm3281.pdf"
+    },
+    {
+      "title": "TI SLVA129 input capacitance and inrush",
+      "url": "https://www.ti.com/lit/pdf/slva129"
+    },
+    {
+      "title": "Nordic nRF52840 power VBUS versus DECUSB",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/power.html"
+    },
+    {
+      "title": "Nordic nRF52840 PS v1.9 section5.3.8.6 page156",
+      "url": "https://docs-be.nordicsemi.com/bundle/nRF52840_PS_v1.9/raw/resource/enus/nRF52840_PS_v1.9.pdf"
+    }
+  ],
+  "hardware_tested": false,
+  "simulation_run": false,
+  "manufacturer_contacted": false,
+  "manufacturer_approval_received": false,
+  "source_unchanged_during_read": true
+}

@@ -609,7 +609,7 @@
     {
       "ref": "C9",
       "symbol": "C",
-      "value": "4.7u 10V X5R",
+      "value": "10u 10V X5R",
       "pins": {
         "1": "+3V0",
         "2": "GND"
@@ -617,11 +617,11 @@
       "sheet": "mcu",
       "x": 204.47,
       "y": 124.46,
-      "mpn": "CL10A475KP8NNNC",
-      "jlcpcb": "C1705",
+      "mpn": "CL10A106KP8NNNC",
+      "jlcpcb": "C19702",
       "footprint": "AnkleSensor:C_0603_1608Metric",
       "status": "REVIEW",
-      "note": "",
+      "note": "10uF nominal aligns supply reference; Ceff is not10uF guaranteed; see docs/production_caps_A1.md",
       "populate": true,
       "uuid": "2074b108-c4e8-5dac-8f16-82894520cf18",
       "datasheet": ""

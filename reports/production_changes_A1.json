@@ -1,0 +1,21 @@
+{
+  "stage": "A01_MINIMAL_C9_NOMINAL_CAPACITANCE_CORRECTION",
+  "board_before_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "board_after_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "C9_before": {
+    "value": "4.7u 10V X5R",
+    "mpn": "CL10A475KP8NNNC",
+    "jlcpcb": "C1705"
+  },
+  "C9_after": {
+    "value": "10u 10V X5R",
+    "mpn": "CL10A106KP8NNNC",
+    "jlcpcb": "C19702"
+  },
+  "footprint": "same0603",
+  "C11_unchanged": true,
+  "Y1_unchanged_pending_exact_drawing": true,
+  "tracks_vias_pads_nets_positions_unchanged": true,
+  "effective_C_guarantee_not_claimed": true,
+  "hardware_tested": false
+}

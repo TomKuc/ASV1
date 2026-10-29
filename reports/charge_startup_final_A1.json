@@ -812,5 +812,1239 @@
     "opens": 0,
     "R24_Q2_Q1_CE_or_startup_topology_changed": false,
     "dynamic_startup_retested": false
+  },
+  "current_source_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "current_applicability": {
+    "status": "APPLICABLE_WITH_VERIFIED_IDENTICAL_GEOMETRY_AND_CHECKED_POWER_COMPONENTS",
+    "current_source_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+    "schematic_netlist_sha256": "8af1170655c902ace84254e22a1fff9b28c2ed7ed2f942fbc59ff4f60ab2eaef",
+    "geometry_proof_path": "reports/production_geometry_equivalence_A1.json",
+    "geometry_proof_sha256": "5e4e50058a8191f6f09e5e18923d0cb1b31bd970f183bed578f07acc8baf5939",
+    "fresh_native_refs_checked": [
+      "Q2",
+      "U7",
+      "Q1",
+      "U3",
+      "U1",
+      "R19",
+      "U8",
+      "R1",
+      "J2",
+      "R18",
+      "R23",
+      "R3",
+      "R22",
+      "U2",
+      "R20",
+      "R21",
+      "SW1",
+      "R24",
+      "R2"
+    ],
+    "fresh_native_components": {
+      "Q2": {
+        "value": "AO3400A",
+        "mpn": "AO3400A",
+        "jlcpcb": "C20917",
+        "footprint": "SOT-23",
+        "xy_mm": [
+          52.5,
+          80.4
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_INHIBIT",
+            "schematic_net": "CHG_INHIBIT",
+            "xy_mm": [
+              51.5625,
+              79.45
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              51.5625,
+              81.35
+            ]
+          },
+          "3": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              53.4375,
+              80.4
+            ]
+          }
+        }
+      },
+      "U7": {
+        "value": "TLV7042DGKR",
+        "mpn": "TLV7042DGKR",
+        "jlcpcb": "C2760466",
+        "footprint": "VSSOP-8_3x3mm_P0.65mm",
+        "xy_mm": [
+          55.9,
+          84.2
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              53.7875,
+              83.225
+            ]
+          },
+          "2": {
+            "pcb_net": "NTC_REF_HOT",
+            "schematic_net": "NTC_REF_HOT",
+            "xy_mm": [
+              53.7875,
+              83.875
+            ]
+          },
+          "3": {
+            "pcb_net": "NTC_TS",
+            "schematic_net": "NTC_TS",
+            "xy_mm": [
+              53.7875,
+              84.525
+            ]
+          },
+          "4": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              53.7875,
+              85.175
+            ]
+          },
+          "5": {
+            "pcb_net": "NTC_REF_COLD",
+            "schematic_net": "NTC_REF_COLD",
+            "xy_mm": [
+              58.0125,
+              85.175
+            ]
+          },
+          "6": {
+            "pcb_net": "NTC_TS",
+            "schematic_net": "NTC_TS",
+            "xy_mm": [
+              58.0125,
+              84.525
+            ]
+          },
+          "7": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              58.0125,
+              83.875
+            ]
+          },
+          "8": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              58.0125,
+              83.225
+            ]
+          }
+        }
+      },
+      "Q1": {
+        "value": "AO3400A",
+        "mpn": "AO3400A",
+        "jlcpcb": "C20917",
+        "footprint": "SOT-23",
+        "xy_mm": [
+          58.55,
+          88.3
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              57.6125,
+              87.35
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              57.6125,
+              89.25
+            ]
+          },
+          "3": {
+            "pcb_net": "CHG_CE_N",
+            "schematic_net": "CHG_CE_N",
+            "xy_mm": [
+              59.4875,
+              88.3
+            ]
+          }
+        }
+      },
+      "U3": {
+        "value": "MDBT50Q-P1MV2",
+        "mpn": "MDBT50Q-P1MV2",
+        "jlcpcb": "C5119772",
+        "footprint": "Raytac_MDBT50Q",
+        "xy_mm": [
+          64.0,
+          59.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              59.35,
+              55.25
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              59.35,
+              56.35
+            ]
+          },
+          "3": {
+            "pcb_net": "LED_K",
+            "schematic_net": "LED_K",
+            "xy_mm": [
+              59.35,
+              57.15
+            ]
+          },
+          "4": {
+            "pcb_net": "USER_BTN_N",
+            "schematic_net": "USER_BTN_N",
+            "xy_mm": [
+              59.35,
+              58.75
+            ]
+          },
+          "5": {
+            "pcb_net": "CHG_STAT1_N",
+            "schematic_net": "CHG_STAT1_N",
+            "xy_mm": [
+              60.25,
+              59.15
+            ]
+          },
+          "6": {
+            "pcb_net": "CHG_STAT2_N",
+            "schematic_net": "CHG_STAT2_N",
+            "xy_mm": [
+              59.35,
+              59.55
+            ]
+          },
+          "7": {
+            "pcb_net": "CHG_INHIBIT",
+            "schematic_net": "CHG_INHIBIT",
+            "xy_mm": [
+              60.25,
+              59.95
+            ]
+          },
+          "8": {
+            "pcb_net": "unconnected-(U3-P1.15-Pad8)",
+            "schematic_net": "unconnected-(U3-P1.15-Pad8)",
+            "xy_mm": [
+              59.35,
+              60.35
+            ]
+          },
+          "9": {
+            "pcb_net": "unconnected-(U3-P0.03-Pad9)",
+            "schematic_net": "unconnected-(U3-P0.03-Pad9)",
+            "xy_mm": [
+              60.25,
+              60.75
+            ]
+          },
+          "10": {
+            "pcb_net": "unconnected-(U3-P0.29-Pad10)",
+            "schematic_net": "unconnected-(U3-P0.29-Pad10)",
+            "xy_mm": [
+              59.35,
+              61.15
+            ]
+          },
+          "11": {
+            "pcb_net": "VBAT_ADC",
+            "schematic_net": "VBAT_ADC",
+            "xy_mm": [
+              60.25,
+              61.55
+            ]
+          },
+          "12": {
+            "pcb_net": "unconnected-(U3-P0.31-Pad12)",
+            "schematic_net": "unconnected-(U3-P0.31-Pad12)",
+            "xy_mm": [
+              59.35,
+              61.95
+            ]
+          },
+          "13": {
+            "pcb_net": "unconnected-(U3-P0.28-Pad13)",
+            "schematic_net": "unconnected-(U3-P0.28-Pad13)",
+            "xy_mm": [
+              60.25,
+              62.35
+            ]
+          },
+          "14": {
+            "pcb_net": "unconnected-(U3-P0.30-Pad14)",
+            "schematic_net": "unconnected-(U3-P0.30-Pad14)",
+            "xy_mm": [
+              59.35,
+              62.75
+            ]
+          },
+          "15": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              59.2,
+              66.15
+            ]
+          },
+          "16": {
+            "pcb_net": "unconnected-(U3-P0.27-Pad16)",
+            "schematic_net": "unconnected-(U3-P0.27-Pad16)",
+            "xy_mm": [
+              60.0,
+              66.15
+            ]
+          },
+          "17": {
+            "pcb_net": "LF_XL1",
+            "schematic_net": "LF_XL1",
+            "xy_mm": [
+              60.8,
+              66.15
+            ]
+          },
+          "18": {
+            "pcb_net": "LF_XL2",
+            "schematic_net": "LF_XL2",
+            "xy_mm": [
+              61.6,
+              66.15
+            ]
+          },
+          "19": {
+            "pcb_net": "unconnected-(U3-P0.26-Pad19)",
+            "schematic_net": "unconnected-(U3-P0.26-Pad19)",
+            "xy_mm": [
+              62.0,
+              65.25
+            ]
+          },
+          "20": {
+            "pcb_net": "unconnected-(U3-P0.04-Pad20)",
+            "schematic_net": "unconnected-(U3-P0.04-Pad20)",
+            "xy_mm": [
+              62.4,
+              66.15
+            ]
+          },
+          "21": {
+            "pcb_net": "unconnected-(U3-P0.05-Pad21)",
+            "schematic_net": "unconnected-(U3-P0.05-Pad21)",
+            "xy_mm": [
+              62.8,
+              65.25
+            ]
+          },
+          "22": {
+            "pcb_net": "unconnected-(U3-P0.06-Pad22)",
+            "schematic_net": "unconnected-(U3-P0.06-Pad22)",
+            "xy_mm": [
+              63.2,
+              66.15
+            ]
+          },
+          "23": {
+            "pcb_net": "unconnected-(U3-P0.07-Pad23)",
+            "schematic_net": "unconnected-(U3-P0.07-Pad23)",
+            "xy_mm": [
+              63.6,
+              65.25
+            ]
+          },
+          "24": {
+            "pcb_net": "unconnected-(U3-P0.08-Pad24)",
+            "schematic_net": "unconnected-(U3-P0.08-Pad24)",
+            "xy_mm": [
+              64.0,
+              66.15
+            ]
+          },
+          "25": {
+            "pcb_net": "unconnected-(U3-P1.08-Pad25)",
+            "schematic_net": "unconnected-(U3-P1.08-Pad25)",
+            "xy_mm": [
+              64.4,
+              65.25
+            ]
+          },
+          "26": {
+            "pcb_net": "unconnected-(U3-P1.09-Pad26)",
+            "schematic_net": "unconnected-(U3-P1.09-Pad26)",
+            "xy_mm": [
+              64.8,
+              66.15
+            ]
+          },
+          "27": {
+            "pcb_net": "IMU_INT1",
+            "schematic_net": "IMU_INT1",
+            "xy_mm": [
+              65.2,
+              65.25
+            ]
+          },
+          "28": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              65.6,
+              66.15
+            ]
+          },
+          "29": {
+            "pcb_net": "IMU_INT2",
+            "schematic_net": "IMU_INT2",
+            "xy_mm": [
+              66.0,
+              65.25
+            ]
+          },
+          "30": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              66.4,
+              66.15
+            ]
+          },
+          "31": {
+            "pcb_net": "unconnected-(U3-DCCH-Pad31)",
+            "schematic_net": "unconnected-(U3-DCCH-Pad31)",
+            "xy_mm": [
+              67.2,
+              66.15
+            ]
+          },
+          "32": {
+            "pcb_net": "VBUS",
+            "schematic_net": "VBUS",
+            "xy_mm": [
+              68.0,
+              66.15
+            ]
+          },
+          "33": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              68.8,
+              66.15
+            ]
+          },
+          "34": {
+            "pcb_net": "USB_DN",
+            "schematic_net": "USB_DN",
+            "xy_mm": [
+              68.65,
+              65.15
+            ]
+          },
+          "35": {
+            "pcb_net": "USB_DP",
+            "schematic_net": "USB_DP",
+            "xy_mm": [
+              68.65,
+              64.35
+            ]
+          },
+          "36": {
+            "pcb_net": "IMU_MOSI",
+            "schematic_net": "IMU_MOSI",
+            "xy_mm": [
+              67.75,
+              63.95
+            ]
+          },
+          "37": {
+            "pcb_net": "IMU_SCK",
+            "schematic_net": "IMU_SCK",
+            "xy_mm": [
+              68.65,
+              63.55
+            ]
+          },
+          "38": {
+            "pcb_net": "IMU_CS_N",
+            "schematic_net": "IMU_CS_N",
+            "xy_mm": [
+              67.75,
+              63.15
+            ]
+          },
+          "39": {
+            "pcb_net": "IMU_MISO",
+            "schematic_net": "IMU_MISO",
+            "xy_mm": [
+              68.65,
+              62.75
+            ]
+          },
+          "40": {
+            "pcb_net": "RESET_N",
+            "schematic_net": "RESET_N",
+            "xy_mm": [
+              67.75,
+              62.35
+            ]
+          },
+          "41": {
+            "pcb_net": "FLASH_CS_N",
+            "schematic_net": "FLASH_CS_N",
+            "xy_mm": [
+              68.65,
+              61.95
+            ]
+          },
+          "42": {
+            "pcb_net": "QSPI_SCK",
+            "schematic_net": "QSPI_SCK",
+            "xy_mm": [
+              67.75,
+              61.55
+            ]
+          },
+          "43": {
+            "pcb_net": "QSPI_IO1",
+            "schematic_net": "QSPI_IO1",
+            "xy_mm": [
+              67.75,
+              60.75
+            ]
+          },
+          "44": {
+            "pcb_net": "QSPI_IO0",
+            "schematic_net": "QSPI_IO0",
+            "xy_mm": [
+              68.65,
+              60.35
+            ]
+          },
+          "45": {
+            "pcb_net": "QSPI_IO3",
+            "schematic_net": "QSPI_IO3",
+            "xy_mm": [
+              67.75,
+              59.95
+            ]
+          },
+          "46": {
+            "pcb_net": "QSPI_IO2",
+            "schematic_net": "QSPI_IO2",
+            "xy_mm": [
+              68.65,
+              59.55
+            ]
+          },
+          "47": {
+            "pcb_net": "unconnected-(U3-P1.00-Pad47)",
+            "schematic_net": "unconnected-(U3-P1.00-Pad47)",
+            "xy_mm": [
+              67.75,
+              59.15
+            ]
+          },
+          "48": {
+            "pcb_net": "unconnected-(U3-P0.24-Pad48)",
+            "schematic_net": "unconnected-(U3-P0.24-Pad48)",
+            "xy_mm": [
+              68.65,
+              58.75
+            ]
+          },
+          "49": {
+            "pcb_net": "unconnected-(U3-P0.25-Pad49)",
+            "schematic_net": "unconnected-(U3-P0.25-Pad49)",
+            "xy_mm": [
+              67.75,
+              58.35
+            ]
+          },
+          "50": {
+            "pcb_net": "unconnected-(U3-P1.02-Pad50)",
+            "schematic_net": "unconnected-(U3-P1.02-Pad50)",
+            "xy_mm": [
+              67.75,
+              57.55
+            ]
+          },
+          "51": {
+            "pcb_net": "SWDIO",
+            "schematic_net": "SWDIO",
+            "xy_mm": [
+              68.65,
+              57.15
+            ]
+          },
+          "52": {
+            "pcb_net": "unconnected-(U3-P0.09_NFC1-Pad52)",
+            "schematic_net": "unconnected-(U3-P0.09_NFC1-Pad52)",
+            "xy_mm": [
+              67.75,
+              56.75
+            ]
+          },
+          "53": {
+            "pcb_net": "SWCLK",
+            "schematic_net": "SWCLK",
+            "xy_mm": [
+              68.65,
+              56.35
+            ]
+          },
+          "54": {
+            "pcb_net": "unconnected-(U3-P0.10_NFC2-Pad54)",
+            "schematic_net": "unconnected-(U3-P0.10_NFC2-Pad54)",
+            "xy_mm": [
+              67.75,
+              55.95
+            ]
+          },
+          "55": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              68.65,
+              55.25
+            ]
+          },
+          "56": {
+            "pcb_net": "unconnected-(U3-P1.04-Pad56)",
+            "schematic_net": "unconnected-(U3-P1.04-Pad56)",
+            "xy_mm": [
+              62.0,
+              59.55
+            ]
+          },
+          "57": {
+            "pcb_net": "unconnected-(U3-P1.06-Pad57)",
+            "schematic_net": "unconnected-(U3-P1.06-Pad57)",
+            "xy_mm": [
+              62.8,
+              59.55
+            ]
+          },
+          "58": {
+            "pcb_net": "unconnected-(U3-P1.07-Pad58)",
+            "schematic_net": "unconnected-(U3-P1.07-Pad58)",
+            "xy_mm": [
+              63.6,
+              59.55
+            ]
+          },
+          "59": {
+            "pcb_net": "unconnected-(U3-P1.05-Pad59)",
+            "schematic_net": "unconnected-(U3-P1.05-Pad59)",
+            "xy_mm": [
+              64.4,
+              59.55
+            ]
+          },
+          "60": {
+            "pcb_net": "unconnected-(U3-P1.03-Pad60)",
+            "schematic_net": "unconnected-(U3-P1.03-Pad60)",
+            "xy_mm": [
+              65.2,
+              59.55
+            ]
+          },
+          "61": {
+            "pcb_net": "unconnected-(U3-P1.01-Pad61)",
+            "schematic_net": "unconnected-(U3-P1.01-Pad61)",
+            "xy_mm": [
+              66.0,
+              59.55
+            ]
+          }
+        }
+      },
+      "U1": {
+        "value": "BQ25185DLHR",
+        "mpn": "BQ25185DLHR",
+        "jlcpcb": "C19725033",
+        "footprint": "BQ25185DLHR_DLH0010A_TILandPattern",
+        "xy_mm": [
+          63.0,
+          92.2
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "VSYS",
+            "schematic_net": "VSYS",
+            "xy_mm": [
+              61.95,
+              91.4
+            ]
+          },
+          "2": {
+            "pcb_net": "VBAT",
+            "schematic_net": "VBAT",
+            "xy_mm": [
+              61.95,
+              91.8
+            ]
+          },
+          "3": {
+            "pcb_net": "CHG_STAT2_N",
+            "schematic_net": "CHG_STAT2_N",
+            "xy_mm": [
+              61.95,
+              92.2
+            ]
+          },
+          "4": {
+            "pcb_net": "CHG_CE_N",
+            "schematic_net": "CHG_CE_N",
+            "xy_mm": [
+              61.95,
+              92.6
+            ]
+          },
+          "5": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              61.95,
+              93.0
+            ]
+          },
+          "6": {
+            "pcb_net": "NTC_TS",
+            "schematic_net": "NTC_TS",
+            "xy_mm": [
+              64.05,
+              93.0
+            ]
+          },
+          "7": {
+            "pcb_net": "CHG_ILIM",
+            "schematic_net": "CHG_ILIM",
+            "xy_mm": [
+              64.05,
+              92.6
+            ]
+          },
+          "8": {
+            "pcb_net": "CHG_ISET",
+            "schematic_net": "CHG_ISET",
+            "xy_mm": [
+              64.05,
+              92.2
+            ]
+          },
+          "9": {
+            "pcb_net": "CHG_STAT1_N",
+            "schematic_net": "CHG_STAT1_N",
+            "xy_mm": [
+              64.05,
+              91.8
+            ]
+          },
+          "10": {
+            "pcb_net": "VBUS",
+            "schematic_net": "VBUS",
+            "xy_mm": [
+              64.05,
+              91.4
+            ]
+          },
+          "11": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              63.0,
+              92.2
+            ]
+          }
+        }
+      },
+      "R19": {
+        "value": "10k 0.1%",
+        "mpn": "RT0402BRD0710KL",
+        "jlcpcb": "C190095",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          51.5,
+          84.4
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "NTC_REF_HOT",
+            "schematic_net": "NTC_REF_HOT",
+            "xy_mm": [
+              50.99,
+              84.4
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              52.01,
+              84.4
+            ]
+          }
+        }
+      },
+      "U8": {
+        "value": "TLV803EA26DBZR",
+        "mpn": "TLV803EA26DBZR",
+        "jlcpcb": "C1852119",
+        "footprint": "SOT-23",
+        "xy_mm": [
+          64.0,
+          84.5
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              63.0625,
+              83.55
+            ]
+          },
+          "2": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              63.0625,
+              85.45
+            ]
+          },
+          "3": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              64.9375,
+              84.5
+            ]
+          }
+        }
+      },
+      "R1": {
+        "value": "24k 1%",
+        "mpn": "0402WGF2402TCE",
+        "jlcpcb": "C25769",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          65.9,
+          93.2
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ILIM",
+            "schematic_net": "CHG_ILIM",
+            "xy_mm": [
+              65.39,
+              93.2
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              66.41,
+              93.2
+            ]
+          }
+        }
+      },
+      "J2": {
+        "value": "JST_SH_3P_PACK_NTC",
+        "mpn": "SM03B-SRSS-TB(LF)(SN)",
+        "jlcpcb": "C160403",
+        "footprint": "JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal",
+        "xy_mm": [
+          53.3,
+          91.0
+        ],
+        "rotation_deg": 90.0,
+        "pads": {
+          "1": {
+            "pcb_net": "VBAT",
+            "schematic_net": "VBAT",
+            "xy_mm": [
+              51.3,
+              92.0
+            ]
+          },
+          "2": {
+            "pcb_net": "NTC_TS",
+            "schematic_net": "NTC_TS",
+            "xy_mm": [
+              51.3,
+              91.0
+            ]
+          },
+          "3": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              51.3,
+              90.0
+            ]
+          }
+        }
+      },
+      "R18": {
+        "value": "100k 0.1%",
+        "mpn": "ERA2AEB104X",
+        "jlcpcb": "C445619",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          51.5,
+          82.7
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              50.99,
+              82.7
+            ]
+          },
+          "2": {
+            "pcb_net": "NTC_REF_HOT",
+            "schematic_net": "NTC_REF_HOT",
+            "xy_mm": [
+              52.01,
+              82.7
+            ]
+          }
+        }
+      },
+      "R23": {
+        "value": "1M 1%",
+        "mpn": "0402WGF1004TCE",
+        "jlcpcb": "C26083",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          66.9,
+          86.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              66.39,
+              86.0
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              67.41,
+              86.0
+            ]
+          }
+        }
+      },
+      "R3": {
+        "value": "100k 1%",
+        "mpn": "0402WGF1003TCE",
+        "jlcpcb": "C25741",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          63.5,
+          89.7
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "VSYS",
+            "schematic_net": "VSYS",
+            "xy_mm": [
+              62.99,
+              89.7
+            ]
+          },
+          "2": {
+            "pcb_net": "CHG_CE_N",
+            "schematic_net": "CHG_CE_N",
+            "xy_mm": [
+              64.01,
+              89.7
+            ]
+          }
+        }
+      },
+      "R22": {
+        "value": "100k 1%",
+        "mpn": "0402WGF1003TCE",
+        "jlcpcb": "C25741",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          61.5,
+          87.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              60.99,
+              87.0
+            ]
+          },
+          "2": {
+            "pcb_net": "CHG_ALLOW_H",
+            "schematic_net": "CHG_ALLOW_H",
+            "xy_mm": [
+              62.01,
+              87.0
+            ]
+          }
+        }
+      },
+      "U2": {
+        "value": "TPS7A2030PDBVR",
+        "mpn": "TPS7A2030PDBVR",
+        "jlcpcb": "C963429",
+        "footprint": "SOT-23-5",
+        "xy_mm": [
+          70.3,
+          83.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "VSYS",
+            "schematic_net": "VSYS",
+            "xy_mm": [
+              69.1625,
+              82.05
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              69.1625,
+              83.0
+            ]
+          },
+          "3": {
+            "pcb_net": "VSYS",
+            "schematic_net": "VSYS",
+            "xy_mm": [
+              69.1625,
+              83.95
+            ]
+          },
+          "4": {
+            "pcb_net": "unconnected-(U2-NC-Pad4)",
+            "schematic_net": "unconnected-(U2-NC-Pad4)",
+            "xy_mm": [
+              71.4375,
+              83.95
+            ]
+          },
+          "5": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              71.4375,
+              82.05
+            ]
+          }
+        }
+      },
+      "R20": {
+        "value": "27.4k 0.1%",
+        "mpn": "RT0402BRD0727K4L",
+        "jlcpcb": "C852679",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          60.5,
+          84.2
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              59.99,
+              84.2
+            ]
+          },
+          "2": {
+            "pcb_net": "NTC_REF_COLD",
+            "schematic_net": "NTC_REF_COLD",
+            "xy_mm": [
+              61.01,
+              84.2
+            ]
+          }
+        }
+      },
+      "R21": {
+        "value": "10k 0.1%",
+        "mpn": "RT0402BRD0710KL",
+        "jlcpcb": "C190095",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          60.5,
+          85.8
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "NTC_REF_COLD",
+            "schematic_net": "NTC_REF_COLD",
+            "xy_mm": [
+              59.99,
+              85.8
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              61.01,
+              85.8
+            ]
+          }
+        }
+      },
+      "SW1": {
+        "value": "SKQGABE010",
+        "mpn": "SKQGABE010",
+        "jlcpcb": "C115351",
+        "footprint": "SW_SPST_SKQG_WithStem",
+        "xy_mm": [
+          74.0,
+          88.6
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "USER_BTN_N",
+            "schematic_net": "USER_BTN_N",
+            "xy_mm": [
+              77.1,
+              86.75
+            ]
+          },
+          "2": {
+            "pcb_net": "SW_RETURN",
+            "schematic_net": "SW_RETURN",
+            "xy_mm": [
+              77.1,
+              90.45
+            ]
+          }
+        }
+      },
+      "R24": {
+        "value": "100k 1%",
+        "mpn": "0402WGF1003TCE",
+        "jlcpcb": "C25741",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          73.4,
+          85.0
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_INHIBIT",
+            "schematic_net": "CHG_INHIBIT",
+            "xy_mm": [
+              72.89,
+              85.0
+            ]
+          },
+          "2": {
+            "pcb_net": "+3V0",
+            "schematic_net": "+3V0",
+            "xy_mm": [
+              73.91,
+              85.0
+            ]
+          }
+        }
+      },
+      "R2": {
+        "value": "2k 1%",
+        "mpn": "RC0402FR-072KL",
+        "jlcpcb": "C60488",
+        "footprint": "R_0402_1005Metric",
+        "xy_mm": [
+          66.0,
+          92.2
+        ],
+        "rotation_deg": 0.0,
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ISET",
+            "schematic_net": "CHG_ISET",
+            "xy_mm": [
+              65.49,
+              92.2
+            ]
+          },
+          "2": {
+            "pcb_net": "GND",
+            "schematic_net": "GND",
+            "xy_mm": [
+              66.51,
+              92.2
+            ]
+          }
+        }
+      }
+    },
+    "netlist_and_previous_power_component_mismatches": [],
+    "C9_change": "Only C9 value/MPN/JLC/note changed; see production_caps_A1.json for current capacitance conclusions. No old current/startup estimate is claimed newly measured or simulated.",
+    "computation_rerun": false,
+    "method": "Fresh native readback versus current XML and previous component nets/values, plus complete CAD geometry equivalence. Original computation hashes retained."
   }
 }

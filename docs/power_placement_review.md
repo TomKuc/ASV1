@@ -1,5 +1,7 @@
 # Przegląd rozmieszczenia zasilania i propozycja korekty
 
+**Archiwum etapu rozmieszczenia.** Ten dokument opisuje wcześniejszą propozycję i nie jest aktualnym stanem PCB ani instrukcją reroutingu. Aktualny routing pozostaje zachowany; bieżący zakres kondensatorów opisuje [production_caps_A1.md](production_caps_A1.md).
+
 Data: 2026-10-28. Weryfikacja geometrii przez rzeczywisty KiCad 10.0.7, bibliotekę `pcbnew` i `kicad-cli pcb drc`. Nie zmieniono głównego PCB ani `hardware/placement.json`. Propozycja do nałożenia przez prowadzącego: `hardware/power_placement_proposal.json` (mapa `ref: [x_mm, y_mm, angle_deg]`).
 
 ## Stan wejściowy i ograniczenie kontroli

@@ -1,0 +1,74 @@
+{
+  "revision": "A1_PRODUCTION_REVIEW",
+  "status": "CONDITIONAL READY",
+  "date": "2026-10-29",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "source_base_commit": "b17f1457de876ecb27e94dc514c9a4844be44bc0",
+  "quantity": [
+    3,
+    5
+  ],
+  "report": "docs/production_readiness_A1.md",
+  "gate_A": [
+    {
+      "id": "A01",
+      "status": "EXTERNAL CONFIRMATION",
+      "closed": [
+        "C9 nominal10u same0603 exactMPN",
+        "Native footprint-library equality and current keepout"
+      ],
+      "remaining": "Raytac C11/VDD/VBUS Ceff and exact U3/J1/Y1 mechanical drawings accepted"
+    },
+    {
+      "id": "A02",
+      "status": "EXTERNAL CONFIRMATION",
+      "closed": [
+        "Published nominal1mmJLC7628 option",
+        "Current geometry equals original model geometry"
+      ],
+      "remaining": "JLC current pressed-stack/template/Dk/Cu/tolerance and actual USB geometry acceptance"
+    },
+    {
+      "id": "A03",
+      "status": "EXTERNAL CONFIRMATION",
+      "closed": [
+        "59TOP33groups exactMPN/C/source/CPL parity"
+      ],
+      "remaining": "Order procurement allparts incl U7/R1/R20; orientation preview; Standard/Xray"
+    },
+    {
+      "id": "A04",
+      "status": "EXTERNAL CONFIRMATION",
+      "closed": [
+        "Native export/drill consistency and actual local mask/paste inspection"
+      ],
+      "remaining": "JLC actual CAM/tenting/registration/stencil/panel/rails/fiducials approval"
+    }
+  ],
+  "confirmed_corrections": [
+    "C9 nominal4.7to10u, SamsungCL10A106KP8NNNC/C19702, same0603; no routing change",
+    "Current manifest/package/provenance updated; earlier stage labelled historical"
+  ],
+  "confirmed_unresolved_hardware_errors": [],
+  "can_start_quotation_import_and_DFM_workflow": true,
+  "can_release_production_before_gate_answers": false,
+  "native_checks": {
+    "erc_errors": 0,
+    "erc_warnings": 2,
+    "drc_geometry_errors": 0,
+    "drc_warnings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_findings": 0,
+    "erc_ignored_checks": [],
+    "drc_ignored_checks": []
+  },
+  "B": "20 Flash tests and USB/IMU/BLE/power/battery qualification after prototype; all hardware tests NOT_RUN",
+  "C": "Existing optional next-revision improvements only",
+  "current_package": "Ankle_Sensor_V1_A1_PRODUCTION_REVIEW.zip",
+  "hardware_tests_performed": false,
+  "fabrication_release": false,
+  "order_placed": false,
+  "manufacturer_approval_obtained": false,
+  "correspondence_sent": false,
+  "github_current_commit_verified": false
+}

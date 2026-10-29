@@ -1,5 +1,7 @@
 # Weryfikacja zasilania — 27.10.2026
 
+**Zakres historyczny:** poniższe analizy geometrii obliczono dla PCB `cdcbd234…`. Aktualny PCB `1d3bb700…` zmienia wyłącznie nominalną wartość i metadane C9 na 10 µF. [Bieżąca weryfikacja kondensatorów](production_caps_A1.md) podaje skutki tej zmiany; pole `current_applicability` w raportach JSON dokumentuje ponowny natywny odczyt komponentów oraz dowód identycznej geometrii. Zachowano oryginalne hashe obliczeń. Nie wykonywano nowej symulacji PDN ani testów sprzętowych.
+
 Status: dane do schematu; **dodatkowy sprzętowy komparator temperatury i nadzór napięcia wdrożono w roboczym schemacie**. Dobór pakietu i próby są wymagane przed zwolnieniem do produkcji. Nie przeprowadzono prób sprzętowych.
 
 **Aktualizacja audytu A1, 29.10.2026:** zaakceptowano zmianę R24 100 kΩ z pull-down do GND na **pull-up do +3V0**. Reset/HiZ MCU ma odtąd blokować ładowanie, a jawny LOW jedynie zwalniać inhibit przy poprawnym sprzętowym oknie. Poprzednia wersja umożliwiała ładowanie przy HiZ. Jest to świadoma zmiana: urządzenie bez działającego firmware nie ładuje akumulatora, choć USB nadal zasila SYS i umożliwia programowanie. Nie zmniejsza ochrony U7/U8. Ślad końcowej weryfikacji i findings: `docs/power_audit_A1.md`, `reports/power_audit_A1.json`.

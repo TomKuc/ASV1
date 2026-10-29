@@ -115,7 +115,7 @@ add('U3','MDBT50Q_P1MV2_VerL','MDBT50Q-P1MV2',mp,'mcu',85,110,'MDBT50Q-P1MV2','C
 add('Y1','Crystal','32.768kHz CL7pF',{1:'LF_XL1',2:'LF_XL2'},'mcu',255,50,'ABS07-32.768KHZ-7-T',note='Candidate MPN; verify ESR and LFXO load before production')
 cap('10p C0G DRAFT','LF_XL1','GND','mcu',205,85,note='CL=7pF with assumed2pF stray; tune after parasitic review')
 cap('10p C0G DRAFT','LF_XL2','GND','mcu',305,85,note='Provisional load capacitor; not a verified oscillator design')
-cap('4.7u 10V X5R','+3V0','GND','mcu',205,125,size='0603')
+cap('10u 10V X5R','+3V0','GND','mcu',205,125,size='0603',note='10uF nominal supply reference; effective capacitance requires qualification')
 cap('100n 10V X7R','+3V0','GND','mcu',305,125)
 cap('4.7u 10V X5R','VBUS','GND','mcu',205,165,size='0603',note='Confirm against Raytac USB reference before release')
 resistor('10k 1%','+3V0','RESET_N','mcu',305,165)

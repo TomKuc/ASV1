@@ -23,7 +23,7 @@ U3,MDBT50Q-P1MV2,MDBT50Q-P1MV2,C5119772,AnkleSensor:Raytac_MDBT50Q,REVIEW,DCCH31
 Y1,32.768kHz CL7pF,ABS07-32.768KHZ-7-T,C276424,AnkleSensor:Crystal_SMD_3215-2Pin_3.2x1.5mm,REVIEW,JLC catalog verified C276424; CL7pF ESR70k max; land pattern and oscillator qualification pending
 C7,10p 50V C0G DRAFT,CL05C100JB5NNNC,C32949,AnkleSensor:C_0402_1005Metric,REVIEW,CL=7pF with assumed2pF stray; tune after parasitic review
 C8,10p 50V C0G DRAFT,CL05C100JB5NNNC,C32949,AnkleSensor:C_0402_1005Metric,REVIEW,Provisional load capacitor; not a verified oscillator design
-C9,4.7u 10V X5R,CL10A475KP8NNNC,C1705,AnkleSensor:C_0603_1608Metric,REVIEW,
+C9,10u 10V X5R,CL10A106KP8NNNC,C19702,AnkleSensor:C_0603_1608Metric,REVIEW,10uF nominal aligns supply reference; Ceff is not10uF guaranteed; see docs/production_caps_A1.md
 C10,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,
 C11,4.7u 10V X5R,CL10A475KP8NNNC,C1705,AnkleSensor:C_0603_1608Metric,REVIEW,Confirm against Raytac USB reference before release
 R8,10k 1%,0402WGF1002TCE,C25744,AnkleSensor:R_0402_1005Metric,REVIEW,

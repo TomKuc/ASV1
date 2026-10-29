@@ -1,0 +1,15 @@
+{
+  "checked_commit": "ce616878e294f008d29dcf12a0448222a8181249",
+  "public_commit_url": "https://github.com/TomKuc/ASV1/commit/ce616878e294f008d29dcf12a0448222a8181249",
+  "public_result": "404_NOT_FOUND_OBSERVED",
+  "git_ls_remote_result": "FAILED_DNS_GITHUB",
+  "local_HEAD": "b17f1457de876ecb27e94dc514c9a4844be44bc0",
+  "github_presence": "NOT_VERIFIED",
+  "pushed_by_this_session": false,
+  "checked_utc": "2026-10-29",
+  "scope": "Prior ce616878 public commit URL and read-only advertised master ref",
+  "public_recheck": "404_NOT_FOUND_OBSERVED_AGAIN",
+  "remote_git_recheck": "DNS_FAILURE_GITHUB",
+  "presence_conclusion": "NOT_VERIFIED: 404 observation is not proof of absence in every remote ref",
+  "main_dot_git_modified": false
+}

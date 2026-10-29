@@ -1,8 +1,8 @@
 # Przegląd geometrii QSPI, SPI, LFXO i odniesienia GND
 
-Stan odczytu: **2026-10-29T16:55:12.700093+00:00**, KiCad 10.0.7. Plik: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA256:
+Stan odczytu: **2026-10-29T21:08:24.081851+00:00**, KiCad 10.0.7. Plik: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA256:
 
-`cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`
+`1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134`
 
 Raport przeliczono z rzeczywistych obiektów i zapisanych wypełnień PCB, bez zmiany pliku ani ponownego fill. **QSPI 32 MHz, SPI IMU 8 MHz i LFXO wymagają fizycznej kwalifikacji.** Z geometrii ani DRC nie wyznaczono maksymalnej działającej częstotliwości.
 
@@ -78,16 +78,14 @@ C7/C8=10 pF to wartości początkowe. Kryształ ABS07 w wybranej opcji ma CL=7 p
 
 ## Porównanie z bazą
 
-Bazowy PCB SHA256: `b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678`. Zmienione metryki sieci: **IMU_CS_N, IMU_MOSI, QSPI_IO3**. Wszystkie wartości bieżące przeliczono ponownie; nie podmieniono jedynie hasha.
+Bazowy PCB SHA256: `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`. Zmienione metryki sieci: **brak zmian dostępnych metryk**. Wszystkie wartości bieżące przeliczono ponownie; nie podmieniono jedynie hasha.
 
-Pełna identyczność geometrii według fingerprints: **nie**.
-
-Bazową PCB i bieżącą PCB odczytano natywnie tym samym audytorem; porównano geometrie wszystkich badanych ścieżek, przelotek i padów. Nie korzystano wyłącznie z historycznych sum długości.
+Pełna identyczność geometrii według fingerprints: **tak**.
 
 Metoda v2 dodatkowo usuwa wnętrza otworów z kształtów miedzi padów/przelotek; może to zmienić wyniki projekcji względem historycznej metody v1.
 
 ## Kontrole i kwalifikacja
 
-Dostarczony [DRC](../reports/drc_final.json) (`2302169c712377678652945ecb0fae17b8ff5bb997d69eba0bc678dcf7d1a629`): **0 naruszeń / 0 niepołączonych / 0 parity**, 0 ignorowanych kontroli. Skrypt nie uruchamia DRC i nie potwierdza niezależnie związania tego JSON z hashem PCB; źródło DRC musi wskazać prowadzący audyt.
+Dostarczony [DRC](../reports/drc_final.json) (`325aec55a4b6d8bc69605e075fcf4571fbde8ca3e7c59fbaed1c19a9a933d7a2`): **0 naruszeń / 0 niepołączonych / 0 parity**, 0 ignorowanych kontroli. Skrypt nie uruchamia DRC i nie potwierdza niezależnie związania tego JSON z hashem PCB; źródło DRC musi wskazać prowadzący audyt.
 
 Wymagane pozostają pomiary QSPI/SPI, strojenie zboczy i R11, testy CRC pełnych 128 MiB i obu dies po resetach/zanikach oraz kwalifikacja LFXO. [Plan prób Flash A1](flash_firmware_test_plan_A1.md). Poprawny DRC i długości ścieżek nie są certyfikacją SI ani dokładności/synchronizacji zegarów.

@@ -1,8 +1,8 @@
 {
-  "status": "A1_FINAL_REVIEW_CONDITIONAL_READY_NOT_ORDER_RELEASE",
-  "generated_utc": "2026-10-29T17:22:58.001364+00:00",
+  "status": "A1_PRODUCTION_REVIEW_CONDITIONAL_READY_NOT_ORDER_RELEASE",
+  "generated_utc": "2026-10-29T21:13:46.176331+00:00",
   "kicad_version": "10.0.7",
-  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
   "native_drc": {
     "violations": 0,
     "unconnected_items": 0,
@@ -26,13 +26,13 @@
   "step_limitations": "Missing USB-C model, generic Raytac, Flash envelope, IMU height limit; no battery/case",
   "assembly_limitations": "Native footprint anchors/rotations, JLC translations and procurement unconfirmed",
   "physical_qualification": "Firmware and physical prototype tests are outstanding",
-  "audit_report": "docs/final_verification_A1.md",
+  "audit_report": "docs/production_readiness_A1.md",
   "ignored_check_classes": {
     "erc": [],
     "drc": []
   },
   "preserved_baseline": "reports/baselines/A1_routed_before_audit_2026-10-29.zip",
   "current_source_manifest": "reports/current_A1_manifest.json",
-  "commit_delivery": "Final Git bundle and final_commit_delivery_A1.json are delivered beside this archive after committing; not recursively included",
-  "files_without_manifest_or_checksum_list": 209
+  "commit_delivery": "Production Git bundle and production_commit_delivery_A1.json are delivered beside this archive after committing; not recursively included",
+  "files_without_manifest_or_checksum_list": 234
 }

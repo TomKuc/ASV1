@@ -1,9 +1,9 @@
 {
   "status": "GEOMETRY_REVIEW_ONLY_PHYSICAL_SI_AND_LFXO_QUALIFICATION_REQUIRED",
-  "as_of_utc": "2026-10-29T16:55:12.700093+00:00",
+  "as_of_utc": "2026-10-29T21:08:24.081851+00:00",
   "board_file": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
-  "board_bytes": 865022,
+  "board_sha256": "1d3bb700a2b686ef68589bf3295488d2144a1d51a857cec7651e45be175a6134",
+  "board_bytes": 865118,
   "board_unchanged_after_read": true,
   "kicad_version": "10.0.7",
   "auditor": {
@@ -32,8 +32,8 @@
   "stackup_not_fabricator_qualified": true,
   "drc": {
     "file": "reports/drc_final.json",
-    "sha256": "2302169c712377678652945ecb0fae17b8ff5bb997d69eba0bc678dcf7d1a629",
-    "date": "2026-10-29T17:52:55",
+    "sha256": "325aec55a4b6d8bc69605e075fcf4571fbde8ca3e7c59fbaed1c19a9a933d7a2",
+    "date": "2026-10-29T21:58:22",
     "violations": 0,
     "unconnected": 0,
     "schematic_parity": 0,
@@ -2248,123 +2248,18 @@
     "Abracon_ABS07": "https://abracon.com/Resonators/ABS07.pdf"
   },
   "baseline_comparison": {
-    "file": ".work/audit_baseline/Ankle_Sensor_V1.kicad_pcb",
-    "file_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
-    "source_kind": "native_board_read",
-    "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
-    "net_metric_changes": {
-      "IMU_CS_N": {
-        "total_trace_copper_mm": {
-          "before": 18.124509,
-          "after": 18.19522
-        },
-        "trace_mm_by_layer": {
-          "before": {
-            "B.Cu": 11.253048,
-            "F.Cu": 6.871461
-          },
-          "after": {
-            "B.Cu": 11.323759,
-            "F.Cu": 6.871461
-          }
-        }
-      },
-      "IMU_MOSI": {
-        "total_trace_copper_mm": {
-          "before": 17.766032,
-          "after": 17.907453
-        },
-        "trace_mm_by_layer": {
-          "before": {
-            "B.Cu": 15.828532,
-            "F.Cu": 1.9375
-          },
-          "after": {
-            "B.Cu": 15.969953,
-            "F.Cu": 1.9375
-          }
-        }
-      },
-      "QSPI_IO3": {
-        "total_trace_copper_mm": {
-          "before": 25.241905,
-          "after": 25.3403
-        },
-        "trace_mm_by_layer": {
-          "before": {
-            "B.Cu": 6.45,
-            "F.Cu": 4.258452,
-            "In2.Cu": 14.533452
-          },
-          "after": {
-            "B.Cu": 6.45,
-            "F.Cu": 4.398452,
-            "In2.Cu": 14.491848
-          }
-        },
-        "via_geometry": {
-          "before": [
-            {
-              "xy_mm": [
-                71.85,
-                73.9
-              ],
-              "diameter_mm": 0.5,
-              "drill_mm": 0.25
-            },
-            {
-              "xy_mm": [
-                67.1,
-                60.0
-              ],
-              "diameter_mm": 0.5,
-              "drill_mm": 0.25
-            },
-            {
-              "xy_mm": [
-                73.55,
-                60.0
-              ],
-              "diameter_mm": 0.5,
-              "drill_mm": 0.25
-            }
-          ],
-          "after": [
-            {
-              "xy_mm": [
-                71.85,
-                73.76
-              ],
-              "diameter_mm": 0.5,
-              "drill_mm": 0.25
-            },
-            {
-              "xy_mm": [
-                67.1,
-                60.0
-              ],
-              "diameter_mm": 0.5,
-              "drill_mm": 0.25
-            },
-            {
-              "xy_mm": [
-                73.55,
-                60.0
-              ],
-              "diameter_mm": 0.5,
-              "drill_mm": 0.25
-            }
-          ]
-        }
-      }
-    },
+    "file": "reports/signal_geometry_review.json",
+    "file_sha256": "81f7dd0641ce6ab124fbf17432b371e7f7dbef19af43618136725499f16510fc",
+    "source_kind": "previous_json_report",
+    "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "net_metric_changes": {},
     "geometry_identical_per_net": {
       "FLASH_CS_N": true,
-      "IMU_CS_N": false,
+      "IMU_CS_N": true,
       "IMU_INT1": true,
       "IMU_INT2": true,
       "IMU_MISO": true,
-      "IMU_MOSI": false,
+      "IMU_MOSI": true,
       "IMU_SCK": true,
       "LF_XL1": true,
       "LF_XL2": true,
@@ -2372,10 +2267,10 @@
       "QSPI_IO0": true,
       "QSPI_IO1": true,
       "QSPI_IO2": true,
-      "QSPI_IO3": false,
+      "QSPI_IO3": true,
       "QSPI_SCK": true
     },
-    "all_signal_geometry_identical": false,
+    "all_signal_geometry_identical": true,
     "limitation": "Legacy reports lack full fingerprints; equal listed metrics do not prove identical routes. Projection differences can also reflect fill or method changes."
   }
 }

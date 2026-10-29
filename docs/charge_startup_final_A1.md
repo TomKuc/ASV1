@@ -1,5 +1,7 @@
 # Ładowanie i rozruch A1 — niezależny przegląd P1/P4
 
+**Pochodzenie wyników:** tabela stanów i oryginalne hashe poniżej dotyczą etapu `cdcbd234…`. Aktualny PCB `1d3bb700…` zmienia wyłącznie C9 na 10 µF. W [raporcie JSON](../reports/charge_startup_final_A1.json), pole `current_applicability`, ponownie odczytano 19 referencji toru ładowania i rozruchu względem bieżącej netlisty: bez zmian wartości/netów. Geometria całego PCB jest identyczna. [Wpływ C9 i otwarte pytania C11](production_caps_A1.md) pozostają osobnym zakresem; nie wykonano nowej próby dynamicznego rozruchu.
+
 Stan: **29.10.2026**, HEAD `28d88f22a6a9c0c0e1feb639546009518a6b5f8e`, PCB `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`. Bieżący odczyt KiCad 10.0.7 porównał 19 referencji z eksportem netlisty: 0 rozbieżności i 0 opens. Nie edytowano PCB/schematu ani dokumentów współdzielonych; nie wykonano prób sprzętowych. Szczegóły i hashe: [charge_startup_final_A1.json](../reports/charge_startup_final_A1.json).
 
 Po końcowym poszerzeniu 18 istniejących odcinków USB na In2 ponowiono ten 19-elementowy odczyt padów/netów. R24/Q2/Q1/CE i ścieżka rozruchu są niezmienione; poniższa tabela oraz decyzja P1/P4 pozostają aktualne. Nie jest to nowy test dynamicznego rozruchu.

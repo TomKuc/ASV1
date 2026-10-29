@@ -1,3 +1,5 @@
+> **Raport historyczny etapu cdcbd234.** Aktualną decyzję A01–A04, zmianę C9 i paczkę określa [production_readiness_A1.md](production_readiness_A1.md). Wartości, hashe i otwarte warunki zapisane niżej opisują poprzedni etap.
+
 # Ankle Sensor V1 A1 — końcowa weryfikacja prototypów, 29.10.2026
 
 **Decyzja: CONDITIONAL READY dla 3–5 prototypowych PCBA.** Nie wykryto pozostawionego błędu połączeń wymagającego przeprojektowania A1. Przed zamówieniem trzeba zamknąć cztery konkretne pozycje A poniżej. Testy wymagające gotowej płytki są klasą B, a nie warunkiem wykonania prototypów. Nie złożono zamówienia, rezerwacji ani zlecenia montażu.

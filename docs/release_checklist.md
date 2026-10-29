@@ -1,17 +1,19 @@
 # A1 — warunki zamówienia prototypów
 
-Stan: **CONDITIONAL READY**, 29.10.2026. Obowiązuje [raport końcowy](final_verification_A1.md) i [manifest bieżących plików](../reports/current_A1_manifest.json). Dawne raporty bazowe i paczki A0/A1/AUDIT zachowano jako historię.
+Stan: **CONDITIONAL READY**, 29.10.2026. Obowiązuje [raport warunków produkcyjnych](production_readiness_A1.md) i [manifest bieżących plików](../reports/current_A1_manifest.json). Dawne raporty bazowe i paczki A0/A1/AUDIT/FINAL zachowano jako historię.
 
 ## A — zamknąć przed zamówieniem 3–5 PCBA
 
-- [ ] **A01 — rysunki producentów:** literalne porównanie Raytac VerL§8.3 i kondensatorów/zasilania; akceptacja wymiarowanych rysunków footprintów Raytac, USB-C J1 i ABS07 Y1 wskazanych w przeglądzie PCBA. Brak bitmap w narzędziach nie oznacza wykonanego przeglądu.
-- [ ] **A02 — laminacja i USB:** JLC potwierdza wybrany JLC7628 4L/1.0mm, Dk/Cu/grubości oraz geometrię0.17/0.13mm. Własny model nominalny94.14/87.16Ω dotyczy przekrojów trunku, nie pełnego toru/padów/vias/ESD. Nie zamawiać na podstawie ogólnego Gerber Job KiCad; znajduje się w reference/, poza ZIP do uploadu.
-- [ ] **A03 — Standard PCBA:** wszystkie33 grupy/59TOP zaakceptowane w BOM/CPL, szczególnie U7 C2760466, R1 C25769 i R20 C852679; exact MPN, procurement, rotacje/pin1 i przesunięcia zatwierdzone. X-ray U3 Raytac i U4 IMU; IMU Standard Only.
-- [ ] **A04 — CAM/DFM:** maska/pasta LGA/WSON, tenting i nominalne minimum otwór→Cu/pasta0.150mm, panel/szyny/fiducjale oraz oddzielenie bez naruszenia RF i naprężeń IMU. Akceptacja pliku w formularzu nie jest tym przeglądem.
+- [ ] **A01 — EXTERNAL CONFIRMATION:** C9 nominalnie poprawiony na10µF, ten sam0603; Raytac C11/Ceff VDD/VBUS i dokładne rysunki U3/J1/Y1 do zatwierdzenia. Nie stosować limitu DECUSB do VBUS. [Kondensatory](production_caps_A1.md), [footprinty](production_footprints_A1.md).
+- [ ] **A02 — EXTERNAL CONFIRMATION:** JLC aktualny JLC7628 4L/1mm, pressed stack/Dk/Cu/tolerancje i USB0.17/0.13. Model nominalny94.139/87.162Ω jawnie ponownie użyty na identycznej geometrii; nie gwarantuje całego USB. [USB](production_usb_A1.md).
+- [ ] **A03 — EXTERNAL CONFIRMATION:** wszystkie33grupy/59TOP zakupione i dopasowane exactMPN, szczególnie U7/R1/R20; preview rotacji/pin1, Standard i X-ray U3/U4. [Pełna tabela](../reports/production_component_status_A1.csv).
+- [ ] **A04 — EXTERNAL CONFIRMATION:** trzy minima U6.2/C4.2/C5.2 otwór→pad/pasta0.150001mm, annulus→otwarcie0.025mm; JLC CAM/tenting/tolerancje/stencil/kotwy/panel/fiducjale. [Opis do producenta](JLCPCB_A1_confirmation_request.md).
+
+Można rozpocząć wycenę/import/DFM; przed zwolnieniem wykonania zapisać odpowiedzi i akceptację właściciela. Żadnej korespondencji ani zamówienia nie wysłano.
 
 ## Kontrole wykonane na obecnej A1
 
-- [x] Routing zachowany. Tylko18 szerokości USB In2 zmieniono0.15→0.17mm; centra, warstwy, UUID, nety, vias, footprinty i pady bez zmian względem poprzedniej A1.
+- [x] W tym etapie tylko C9 nominalnie4.7→10µF. 1822obiekty Cu,69footprintów oraz wypełnienia/warstwy/pozycje/pady identyczne z poprzednią A1; dowód strukturalny zapisany. Poprzednia szerokość USB0.17mm zachowana.
 - [x] Natywne KiCad10.0.7: ERC0errors/2 widoczne uzasadnione ostrzeżenia U4.2/3; DRC0 naruszeń/ostrzeżeń,0opens,0schematic-parity. Brak ignorowanych klas.
 - [x] Jawna reguła USB minclearance/diffgap0.125mm, optimumgap0.13mm; poza parą pozostaje0.15mm. Plik.kicad_dru jest częścią źródeł i paczki.
 - [x] Spójne BOM/CPL/PCB:59 pozycji TOP,33 grupy,69 footprintów; SWD i9TP nie są brakującymi częściami do montażu.
