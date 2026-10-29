@@ -1,0 +1,235 @@
+{
+  "U1": {
+    "footprint": "AnkleSensor:BQ25185DLHR_DLH0010A_TILandPattern"
+  },
+  "U3": {
+    "footprint": "AnkleSensor:Raytac_MDBT50Q"
+  },
+  "U4": {
+    "footprint": "AnkleSensor:ST_LSM6DSV32X_LGA14_3x2.5mm_P0.5mm"
+  },
+  "U5": {
+    "footprint": "AnkleSensor:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+  },
+  "J1": {
+    "footprint": "AnkleSensor:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+  },
+  "J2": {
+    "footprint": "AnkleSensor:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal",
+    "mpn": "SM03B-SRSS-TB(LF)(SN)",
+    "jlcpcb": "C160403",
+    "value": "JST_SH_3P_PACK_NTC",
+    "status": "LCSC_ONLY_PROCUREMENT_REVIEW",
+    "note": "Project cable:1PACK+,2NTC,3PACK-. Never assume off-the-shelf LiPo cable polarity",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+  },
+  "J3": {
+    "footprint": "AnkleSensor:SWD_Pogo_2x03_P2.54mm",
+    "note": "Project-specific2x3pogo pinout; no TagConnect compatibility claim. VTref sense only"
+  },
+  "Y1": {
+    "footprint": "AnkleSensor:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+    "jlcpcb": "C276424",
+    "datasheet": "https://abracon.com/Resonators/ABS07.pdf",
+    "note": "JLC catalog verified C276424; CL7pF ESR70k max; land pattern and oscillator qualification pending"
+  },
+  "SW1": {
+    "footprint": "AnkleSensor:SW_SPST_SKQG_WithStem",
+    "mpn": "SKQGABE010",
+    "jlcpcb": "C115351",
+    "value": "SKQGABE010",
+    "note": "ALPS withstem1.5mm, min10uA; R25 limitsC17 contact discharge"
+  },
+  "D1": {
+    "footprint": "AnkleSensor:LED_0603_1608Metric",
+    "mpn": "19-217/G7C-AN1P2/6T",
+    "jlcpcb": "C2986030",
+    "value": "GREEN_AlGaInP",
+    "note": "Everlight lowVf green; R17=2.2k givesabout0.3-0.6mA"
+  },
+  "C1": {
+    "mpn": "CL10A225KA8NNNC",
+    "jlcpcb": "C57895",
+    "value": "2.2u 25V X5R",
+    "note": "Increased from1u to allow tolerance and bias margin; verify Ceff>=1u atVBUSmax5.5V",
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "C3": {
+    "mpn": "CL10A225KA8NNNC",
+    "jlcpcb": "C57895",
+    "value": "2.2u 25V X5R",
+    "note": "Increased from1u; verify Ceff>=1u at4.2V including temperature/aging",
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "U2": {
+    "footprint": "AnkleSensor:SOT-23-5"
+  },
+  "R1": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R2": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R3": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R4": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R5": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "C2": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "C4": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "C5": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "R6": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R7": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "C6": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "TP1": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "TP2": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "TP3": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "TP4": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "C7": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "C8": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "C9": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "C10": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "C11": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "R8": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "TP5": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "C12": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "C13": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "C14": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "C15": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "C16": {
+    "footprint": "AnkleSensor:C_0603_1608Metric"
+  },
+  "R9": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R10": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R11": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R12": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R13": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "TP6": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "TP7": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "U6": {
+    "footprint": "AnkleSensor:SOT-23-6"
+  },
+  "R14": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R15": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R16": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "C17": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "R17": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "TP8": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "TP9": {
+    "footprint": "AnkleSensor:TestPoint_Pad_D1.0mm"
+  },
+  "U7": {
+    "footprint": "AnkleSensor:VSSOP-8_3x3mm_P0.65mm"
+  },
+  "Q1": {
+    "footprint": "AnkleSensor:SOT-23"
+  },
+  "R18": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R19": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R20": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R21": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R22": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "R23": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "C18": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "U8": {
+    "footprint": "AnkleSensor:SOT-23"
+  },
+  "Q2": {
+    "footprint": "AnkleSensor:SOT-23"
+  },
+  "R24": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  },
+  "C19": {
+    "footprint": "AnkleSensor:C_0402_1005Metric"
+  },
+  "R25": {
+    "footprint": "AnkleSensor:R_0402_1005Metric"
+  }
+}

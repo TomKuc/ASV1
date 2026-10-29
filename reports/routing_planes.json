@@ -1,0 +1,954 @@
+{
+  "status": "PARTIAL_REQUIRES_KICAD_DRC_AND_REVIEW",
+  "kicad_version": "10.0.7",
+  "settings_mm": {
+    "grid": 0.05,
+    "clearance": 0.15,
+    "width": 0.15,
+    "via_diameter": 0.5,
+    "via_drill": 0.25,
+    "hole_clearance": 0.25,
+    "edge_clearance": 0.5,
+    "via_cost": 2.0,
+    "max_expansions": 720000,
+    "max_seconds": 120.0
+  },
+  "routing_layers": [
+    "F.Cu",
+    "B.Cu",
+    "In2.Cu"
+  ],
+  "reserved_plane_layer": "In1.Cu",
+  "tracks_added": 198,
+  "vias_added": 80,
+  "connections": [],
+  "preferred_widths_mm": {
+    "VBUS": 0.3,
+    "VSYS": 0.3,
+    "VBAT": 0.3
+  },
+  "connected_via_anchor_uses": [],
+  "new_via_tenting": "front_and_back",
+  "neckdown_length_mm": 0.5,
+  "power_width_fallbacks": [],
+  "track_length_by_net_and_width_mm": {
+    "+3V0": {
+      "0.150": 22.17441104079516
+    },
+    "GND": {
+      "0.150": 35.56399412389956
+    }
+  },
+  "plane_stubs": [
+    {
+      "net": "+3V0",
+      "pad": "R8.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        71.4,
+        59.25
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U7.8",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        58.0,
+        82.6
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.5",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        54.9,
+        77.9
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.8",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        56.95,
+        77.8
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.10",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        57.6,
+        76.25
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R16.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        77.55,
+        84.8
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U3.28",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        65.6,
+        66.8
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U3.30",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        66.4,
+        66.8
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R9.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        54.85,
+        72.7
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C16.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        73.45,
+        76.35
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C10.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        64.9,
+        68.0
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R17.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        74.35,
+        80.3
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U5.8",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        71.75,
+        72.5
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U8.3",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        64.95,
+        83.85
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C9.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        67.85,
+        67.15
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C18.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        59.1,
+        81.9
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R13.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        74.35,
+        61.5
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C15.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        72.9,
+        73.0
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R12.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        73.65,
+        68.7
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R18.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        51.2,
+        83.35
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C5.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        70.6,
+        80.55
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C13.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        55.0,
+        79.2
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C14.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        57.0,
+        80.2
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R22.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        60.35,
+        87.0
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C19.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        66.4,
+        83.85
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "U2.5",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R20.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        59.35,
+        84.2
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R4.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        55.2,
+        68.35
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R10.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        73.65,
+        70.5
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "R5.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        52.05,
+        69.0
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "C12.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        58.1,
+        77.7
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "TP2.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        72.75,
+        83.2
+      ]
+    },
+    {
+      "net": "+3V0",
+      "pad": "J3.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        73.25,
+        57.5
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "J1.A1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        60.1,
+        94.55
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "J1.A12",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        67.9,
+        94.55
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "J1.B1",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.B12",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "Q2.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        51.55,
+        80.7
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C2.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        60.75,
+        88.65
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R25.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        72.35,
+        92.2
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U6.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        73.65,
+        94.2
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R14.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        71.65,
+        96.4
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U7.4",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        53.8,
+        85.8
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U4.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        54.0,
+        76.25
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U4.3",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        54.0,
+        76.75
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U4.6",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        55.8,
+        78.05
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U4.7",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        56.3,
+        78.05
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "Q1.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        57.6,
+        88.6
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R15.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        71.65,
+        98.2
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U3.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        59.35,
+        55.8
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U3.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        59.35,
+        55.8
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U3.15",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        58.65,
+        66.15
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U3.33",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        69.35,
+        66.15
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U3.55",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        68.0,
+        55.3
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C8.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        63.3,
+        70.6
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U1.5",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "U1.11",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "C16.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        73.45,
+        74.85
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C10.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        66.5,
+        68.65
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R19.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        51.8,
+        83.75
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C3.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        58.15,
+        92.1
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U5.4",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        64.25,
+        77.5
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U5.9",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        65.95,
+        75.0
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C17.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        79.2,
+        82.25
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U8.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        63.05,
+        82.9
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R1.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        67.05,
+        93.2
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C9.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        69.35,
+        67.15
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C18.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        56.9,
+        81.9
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C11.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        70.05,
+        66.05
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C15.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        75.1,
+        73.0
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "J2.3",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        51.3,
+        89.35
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R23.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        68.05,
+        86.0
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C5.2",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "C13.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        57.2,
+        79.2
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C14.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        59.35,
+        79.35
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C7.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        60.9,
+        70.6
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C4.2",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "C19.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        68.0,
+        84.55
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R7.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        53.15,
+        73.7
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "U2.2",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "R21.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        61.65,
+        85.8
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C6.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        53.1,
+        75.4
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R24.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        74.55,
+        85.0
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C1.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        65.5,
+        88.4
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "C12.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        60.3,
+        77.7
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "R2.2",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        67.15,
+        92.2
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "J3.3",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        72.45,
+        60.55
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "J3.6",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        71.2,
+        64.35
+      ]
+    },
+    {
+      "net": "GND",
+      "pad": "TP4.1",
+      "plane_fill_required": true,
+      "result": "stub_and_via_added",
+      "via_xy_mm": [
+        52.2,
+        95.05
+      ]
+    }
+  ],
+  "warnings": [
+    "No impedance, differential-pair, RF, timing or mechanical qualification.",
+    "GND/other plane stubs require real zones and zone fill before connectivity/DRC.",
+    "Grid router is conservative and incomplete; use KiCad DRC as authority."
+  ],
+  "board_minimums_mm": {
+    "track_width": 0.15,
+    "via_diameter": 0.5,
+    "via_drill": 0.25,
+    "clearance": 0.15,
+    "edge_clearance": 0.5
+  },
+  "net_filter": [
+    "+3V0",
+    "GND"
+  ],
+  "effective_hole_to_hole_mm": 0.25,
+  "native_unconnected_before": 161,
+  "native_unconnected_after_before_zone_refill": 81,
+  "remaining_signal_components": {},
+  "unrouted_plane_pads": [],
+  "plane_zone_presence": {
+    "+3V0": true,
+    "GND": true
+  },
+  "input": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_pcb",
+  "output": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/.work/routing/Ankle_Sensor_V1_planes.kicad_pcb",
+  "elapsed_seconds": 5.566
+}

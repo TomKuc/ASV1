@@ -1,0 +1,2863 @@
+{
+  "status": "PARTIAL_REQUIRES_KICAD_DRC_AND_REVIEW",
+  "kicad_version": "10.0.7",
+  "settings_mm": {
+    "grid": 0.05,
+    "clearance": 0.15,
+    "width": 0.15,
+    "via_diameter": 0.5,
+    "via_drill": 0.25,
+    "hole_clearance": 0.25,
+    "edge_clearance": 0.5,
+    "via_cost": 2.0,
+    "max_expansions": 720000,
+    "max_seconds": 300.0
+  },
+  "routing_layers": [
+    "F.Cu",
+    "B.Cu",
+    "In2.Cu"
+  ],
+  "reserved_plane_layer": "In1.Cu",
+  "tracks_added": 1102,
+  "vias_added": 67,
+  "connections": [
+    {
+      "net": "USB_DN",
+      "from": "U6.4",
+      "to": "U3.34",
+      "reason": "path_found",
+      "expanded": 28758,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_DP",
+      "from": "U6.6",
+      "to": "U3.35",
+      "reason": "path_found",
+      "expanded": 32703,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_DN_CONN",
+      "from": "J1.B7",
+      "to": "J1.A7",
+      "reason": "path_found",
+      "expanded": 305,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_DN_CONN",
+      "from": "U6.3",
+      "to": "J1.A7",
+      "reason": "path_found",
+      "expanded": 7283,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_DP_CONN",
+      "from": "J1.B6",
+      "to": "J1.A6",
+      "reason": "path_found",
+      "expanded": 226,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_DP_CONN",
+      "from": "U6.1",
+      "to": "J1.B6",
+      "reason": "path_found",
+      "expanded": 30362,
+      "result": "tracks_added"
+    },
+    {
+      "net": "IMU_MISO",
+      "from": "U4.1",
+      "to": "U3.39",
+      "reason": "path_found",
+      "expanded": 95261,
+      "result": "tracks_added"
+    },
+    {
+      "net": "IMU_MOSI",
+      "from": "U4.14",
+      "to": "U3.36",
+      "reason": "no_path",
+      "expanded": 50,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "IMU_SCK",
+      "from": "U4.13",
+      "to": "U3.37",
+      "reason": "path_found",
+      "expanded": 57103,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_CLK_FLASH",
+      "from": "U5.6",
+      "to": "R11.2",
+      "reason": "path_found",
+      "expanded": 8336,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_IO0",
+      "from": "U5.5",
+      "to": "U3.44",
+      "reason": "path_found",
+      "expanded": 23273,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_IO1",
+      "from": "U5.2",
+      "to": "U3.43",
+      "reason": "path_found",
+      "expanded": 35917,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_SCK",
+      "from": "U3.42",
+      "to": "R11.1",
+      "reason": "path_found",
+      "expanded": 1075,
+      "result": "tracks_added"
+    },
+    {
+      "net": "FLASH_CS_N",
+      "from": "R10.2",
+      "to": "U3.41",
+      "reason": "path_found",
+      "expanded": 21762,
+      "result": "tracks_added"
+    },
+    {
+      "net": "FLASH_CS_N",
+      "from": "R10.2",
+      "to": "U5.1",
+      "reason": "path_found",
+      "expanded": 56913,
+      "result": "tracks_added"
+    },
+    {
+      "net": "IMU_CS_N",
+      "from": "R9.2",
+      "to": "U4.12",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "IMU_CS_N",
+      "from": "R9.2",
+      "to": "U3.38",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "IMU_CS_N",
+      "from": "U4.12",
+      "to": "U3.38",
+      "reason": "no_path",
+      "expanded": 44,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "IMU_INT1",
+      "from": "TP6.1",
+      "to": "U4.4",
+      "reason": "path_found",
+      "expanded": 6646,
+      "result": "tracks_added"
+    },
+    {
+      "net": "IMU_INT1",
+      "from": "TP6.1",
+      "to": "U3.27",
+      "reason": "path_found",
+      "expanded": 25778,
+      "result": "tracks_added"
+    },
+    {
+      "net": "IMU_INT2",
+      "from": "TP7.1",
+      "to": "U4.9",
+      "reason": "path_found",
+      "expanded": 636,
+      "result": "tracks_added"
+    },
+    {
+      "net": "IMU_INT2",
+      "from": "TP7.1",
+      "to": "U3.29",
+      "reason": "path_found",
+      "expanded": 78316,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_IO2",
+      "from": "R12.2",
+      "to": "U3.46",
+      "reason": "path_found",
+      "expanded": 9737,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_IO2",
+      "from": "R12.2",
+      "to": "U5.3",
+      "reason": "path_found",
+      "expanded": 42029,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_IO3",
+      "from": "R13.2",
+      "to": "U3.45",
+      "reason": "path_found",
+      "expanded": 33406,
+      "result": "tracks_added"
+    },
+    {
+      "net": "QSPI_IO3",
+      "from": "R13.2",
+      "to": "U5.7",
+      "reason": "path_found",
+      "expanded": 77170,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ILIM",
+      "from": "U1.7",
+      "to": "R1.1",
+      "reason": "path_found",
+      "expanded": 116,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ISET",
+      "from": "U1.8",
+      "to": "R2.1",
+      "reason": "path_found",
+      "expanded": 25,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LED_A",
+      "from": "R17.2",
+      "to": "D1.2",
+      "reason": "path_found",
+      "expanded": 145,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LED_K",
+      "from": "D1.1",
+      "to": "U3.3",
+      "reason": "path_found",
+      "expanded": 114031,
+      "result": "tracks_added"
+    },
+    {
+      "net": "SWCLK",
+      "from": "J3.4",
+      "to": "U3.53",
+      "reason": "no_path",
+      "expanded": 13192,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "SWDIO",
+      "from": "J3.2",
+      "to": "U3.51",
+      "reason": "path_found",
+      "expanded": 702,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_CC1",
+      "from": "R14.1",
+      "to": "J1.A5",
+      "reason": "path_found",
+      "expanded": 3321,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USB_CC2",
+      "from": "R15.1",
+      "to": "J1.B5",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "CHG_CE_N",
+      "from": "U1.4",
+      "to": "R3.2",
+      "reason": "path_found",
+      "expanded": 378,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_CE_N",
+      "from": "R3.2",
+      "to": "Q1.3",
+      "reason": "path_found",
+      "expanded": 896,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_INHIBIT",
+      "from": "R24.1",
+      "to": "Q2.1",
+      "reason": "path_found",
+      "expanded": 9646,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_INHIBIT",
+      "from": "Q2.1",
+      "to": "U3.7",
+      "reason": "path_found",
+      "expanded": 180455,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_STAT1_N",
+      "from": "R4.2",
+      "to": "U3.5",
+      "reason": "path_found",
+      "expanded": 14764,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_STAT1_N",
+      "from": "U1.9",
+      "to": "R4.2",
+      "reason": "path_found",
+      "expanded": 19492,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_STAT2_N",
+      "from": "R5.2",
+      "to": "U3.6",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "CHG_STAT2_N",
+      "from": "R5.2",
+      "to": "U1.3",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "CHG_STAT2_N",
+      "from": "U1.3",
+      "to": "U3.6",
+      "reason": "no_path",
+      "expanded": 13,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "LF_XL1",
+      "from": "Y1.1",
+      "to": "U3.17",
+      "reason": "path_found",
+      "expanded": 518,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LF_XL1",
+      "from": "Y1.1",
+      "to": "C7.1",
+      "reason": "path_found",
+      "expanded": 540,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LF_XL2",
+      "from": "C8.1",
+      "to": "Y1.2",
+      "reason": "path_found",
+      "expanded": 98355,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LF_XL2",
+      "from": "Y1.2",
+      "to": "U3.18",
+      "reason": "path_found",
+      "expanded": 4202,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_REF_COLD",
+      "from": "R20.2",
+      "to": "R21.1",
+      "reason": "path_found",
+      "expanded": 3973,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_REF_COLD",
+      "from": "R21.1",
+      "to": "U7.5",
+      "reason": "path_found",
+      "expanded": 355,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_REF_HOT",
+      "from": "R18.2",
+      "to": "R19.1",
+      "reason": "path_found",
+      "expanded": 282,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_REF_HOT",
+      "from": "R18.2",
+      "to": "U7.2",
+      "reason": "path_found",
+      "expanded": 252,
+      "result": "tracks_added"
+    },
+    {
+      "net": "SW_RETURN",
+      "from": "SW1.2",
+      "to": "R25.1",
+      "reason": "path_found",
+      "expanded": 125,
+      "result": "tracks_added"
+    },
+    {
+      "net": "SW_RETURN",
+      "from": "SW1.2",
+      "to": "SW1.2",
+      "reason": "path_found",
+      "expanded": 2881,
+      "result": "tracks_added"
+    },
+    {
+      "net": "RESET_N",
+      "from": "J3.5",
+      "to": "TP5.1",
+      "reason": "no_path",
+      "expanded": 13262,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "RESET_N",
+      "from": "TP5.1",
+      "to": "U3.40",
+      "reason": "no_path",
+      "expanded": 11113,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "RESET_N",
+      "from": "J3.5",
+      "to": "R8.2",
+      "reason": "no_path",
+      "expanded": 13262,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "RESET_N",
+      "from": "J3.5",
+      "to": "U3.40",
+      "reason": "no_path",
+      "expanded": 13262,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "RESET_N",
+      "from": "R8.2",
+      "to": "U3.40",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "RESET_N",
+      "from": "TP5.1",
+      "to": "R8.2",
+      "reason": "no_path",
+      "expanded": 11113,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT_ADC",
+      "from": "C6.1",
+      "to": "R7.1",
+      "reason": "path_found",
+      "expanded": 32,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBAT_ADC",
+      "from": "R7.1",
+      "to": "R6.2",
+      "reason": "path_found",
+      "expanded": 282,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBAT_ADC",
+      "from": "R6.2",
+      "to": "U3.11",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT_ADC",
+      "from": "R7.1",
+      "to": "U3.11",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT_ADC",
+      "from": "C6.1",
+      "to": "U3.11",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "NTC_TS",
+      "from": "U7.6",
+      "to": "U7.3",
+      "reason": "path_found",
+      "expanded": 82,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_TS",
+      "from": "TP8.1",
+      "to": "J2.2",
+      "reason": "path_found",
+      "expanded": 2840,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_TS",
+      "from": "TP8.1",
+      "to": "U7.6",
+      "reason": "path_found",
+      "expanded": 8138,
+      "result": "tracks_added"
+    },
+    {
+      "net": "NTC_TS",
+      "from": "TP8.1",
+      "to": "U1.6",
+      "reason": "path_found",
+      "expanded": 17287,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USER_BTN_N",
+      "from": "R16.2",
+      "to": "C17.1",
+      "reason": "path_found",
+      "expanded": 363,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USER_BTN_N",
+      "from": "SW1.1",
+      "to": "R16.2",
+      "reason": "path_found",
+      "expanded": 107,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USER_BTN_N",
+      "from": "SW1.1",
+      "to": "SW1.1",
+      "reason": "path_found",
+      "expanded": 5161,
+      "result": "tracks_added"
+    },
+    {
+      "net": "USER_BTN_N",
+      "from": "SW1.1",
+      "to": "U3.4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "USER_BTN_N",
+      "from": "C17.1",
+      "to": "U3.4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "USER_BTN_N",
+      "from": "R16.2",
+      "to": "U3.4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT",
+      "from": "C3.1",
+      "to": "U1.2",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT",
+      "from": "TP3.1",
+      "to": "C3.1",
+      "reason": "path_found",
+      "expanded": 2366,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBAT",
+      "from": "TP3.1",
+      "to": "J2.1",
+      "reason": "path_found",
+      "expanded": 3541,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBAT",
+      "from": "TP3.1",
+      "to": "U1.2",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT",
+      "from": "J2.1",
+      "to": "U1.2",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBAT",
+      "from": "J2.1",
+      "to": "R6.1",
+      "reason": "path_found",
+      "expanded": 18401,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBAT",
+      "from": "R6.1",
+      "to": "U1.2",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VSYS",
+      "from": "U1.1",
+      "to": "C2.1",
+      "reason": "no_path",
+      "expanded": 58,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VSYS",
+      "from": "C2.1",
+      "to": "R3.1",
+      "reason": "path_found",
+      "expanded": 176,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VSYS",
+      "from": "C4.1",
+      "to": "U2.1",
+      "reason": "path_found",
+      "expanded": 28,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VSYS",
+      "from": "TP1.1",
+      "to": "C2.1",
+      "reason": "path_found",
+      "expanded": 504,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VSYS",
+      "from": "U2.1",
+      "to": "U2.3",
+      "reason": "path_found",
+      "expanded": 741,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VSYS",
+      "from": "R3.1",
+      "to": "U1.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VSYS",
+      "from": "TP1.1",
+      "to": "U1.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VSYS",
+      "from": "R3.1",
+      "to": "U2.3",
+      "reason": "path_found",
+      "expanded": 7522,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VSYS",
+      "from": "U2.3",
+      "to": "U1.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VSYS",
+      "from": "U2.1",
+      "to": "U1.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VSYS",
+      "from": "C4.1",
+      "to": "U1.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "TP9.1",
+      "to": "U8.2",
+      "reason": "path_found",
+      "expanded": 536,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "U8.2",
+      "to": "R22.2",
+      "reason": "path_found",
+      "expanded": 4068,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "TP9.1",
+      "to": "R23.1",
+      "reason": "path_found",
+      "expanded": 470,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "R23.1",
+      "to": "Q2.3",
+      "reason": "path_found",
+      "expanded": 4841,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "Q1.1",
+      "to": "U7.7",
+      "reason": "path_found",
+      "expanded": 10062,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "U7.7",
+      "to": "U7.1",
+      "reason": "path_found",
+      "expanded": 637,
+      "result": "tracks_added"
+    },
+    {
+      "net": "CHG_ALLOW_H",
+      "from": "R22.2",
+      "to": "Q1.1",
+      "reason": "path_found",
+      "expanded": 516,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBUS",
+      "from": "C1.1",
+      "to": "U1.10",
+      "reason": "path_found",
+      "expanded": 2474,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBUS",
+      "from": "C11.1",
+      "to": "U3.32",
+      "reason": "no_path",
+      "expanded": 11134,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "C1.1",
+      "to": "J1.B4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "C1.1",
+      "to": "J1.A9",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "U1.10",
+      "to": "J1.B4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "U1.10",
+      "to": "J1.A9",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "U1.10",
+      "to": "J1.B9",
+      "reason": "path_found",
+      "expanded": 6523,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBUS",
+      "from": "J1.B9",
+      "to": "J1.B4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "J1.B9",
+      "to": "J1.A9",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "J1.A4",
+      "to": "J1.B4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "J1.A4",
+      "to": "J1.A9",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "U6.5",
+      "to": "J1.B4",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "U6.5",
+      "to": "J1.A9",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "C1.1",
+      "to": "U6.5",
+      "reason": "path_found",
+      "expanded": 45702,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBUS",
+      "from": "C1.1",
+      "to": "C11.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "U1.10",
+      "to": "C11.1",
+      "reason": "search_expansion_limit",
+      "expanded": 720001,
+      "result": "UNROUTED"
+    },
+    {
+      "net": "VBUS",
+      "from": "C1.1",
+      "to": "U3.32",
+      "reason": "path_found",
+      "expanded": 53275,
+      "result": "tracks_added"
+    },
+    {
+      "net": "VBUS",
+      "from": "U6.5",
+      "to": "C11.1",
+      "reason": "time_limit",
+      "expanded": 499968,
+      "result": "UNROUTED"
+    }
+  ],
+  "preferred_widths_mm": {
+    "VBUS": 0.3,
+    "VSYS": 0.3,
+    "VBAT": 0.3
+  },
+  "neckdown_length_mm": 0.5,
+  "power_width_fallbacks": [
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865472,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.09999999999999998,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.10000000000000009,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865483,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865483,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.10000000000000009,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 0.8,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VSYS",
+      "layer": "F.Cu",
+      "length_mm": 1.6263455967290594,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.21213203435596473,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.25,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.21213203435596384,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.3000000000000007,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.4500000000000002,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.14142135623730923,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.04999999999999982,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "B.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.05000000000000071,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.05000000000000071,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 1.5,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.05000000000000071,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    },
+    {
+      "net": "VBUS",
+      "layer": "F.Cu",
+      "length_mm": 0.07071067811865461,
+      "preferred_width_mm": 0.3,
+      "actual_width_mm": 0.15,
+      "reason": "widening_geometry_or_edge_clearance_blocked"
+    }
+  ],
+  "track_length_by_net_and_width_mm": {
+    "USB_DN": {
+      "0.150": 33.71836578651014
+    },
+    "USB_DP": {
+      "0.150": 33.39392697574534
+    },
+    "USB_DN_CONN": {
+      "0.150": 14.485216446627538
+    },
+    "USB_DP_CONN": {
+      "0.150": 14.78866882454314
+    },
+    "IMU_MISO": {
+      "0.150": 20.891340384339873
+    },
+    "IMU_SCK": {
+      "0.150": 19.333798679765216
+    },
+    "QSPI_CLK_FLASH": {
+      "0.150": 14.40522901067844
+    },
+    "QSPI_IO0": {
+      "0.150": 17.839062043356595
+    },
+    "QSPI_IO1": {
+      "0.150": 15.483986283848349
+    },
+    "QSPI_SCK": {
+      "0.150": 3.9234523779156065
+    },
+    "FLASH_CS_N": {
+      "0.150": 28.518762469630985
+    },
+    "IMU_INT1": {
+      "0.150": 19.064385122169828
+    },
+    "IMU_INT2": {
+      "0.150": 18.89765510839149
+    },
+    "QSPI_IO2": {
+      "0.150": 31.039210765360828
+    },
+    "QSPI_IO3": {
+      "0.150": 28.620655642613855
+    },
+    "CHG_ILIM": {
+      "0.150": 1.5885281374238571
+    },
+    "CHG_ISET": {
+      "0.150": 1.34
+    },
+    "LED_A": {
+      "0.150": 2.7230844122715716
+    },
+    "LED_K": {
+      "0.150": 34.037429859999776
+    },
+    "SWDIO": {
+      "0.150": 2.6201004076867074
+    },
+    "USB_CC1": {
+      "0.150": 8.966980515339465
+    },
+    "CHG_CE_N": {
+      "0.150": 10.373668824543142
+    },
+    "CHG_INHIBIT": {
+      "0.150": 45.30442276647841
+    },
+    "CHG_STAT1_N": {
+      "0.150": 44.54386348230866
+    },
+    "LF_XL1": {
+      "0.150": 6.750458146424487
+    },
+    "LF_XL2": {
+      "0.150": 29.906394911887958
+    },
+    "NTC_REF_COLD": {
+      "0.150": 5.914005043385202
+    },
+    "NTC_REF_HOT": {
+      "0.150": 4.476467101097273
+    },
+    "SW_RETURN": {
+      "0.150": 8.033832907610547
+    },
+    "VBAT_ADC": {
+      "0.150": 3.8210357958522247
+    },
+    "NTC_TS": {
+      "0.150": 26.183671663912843
+    },
+    "USER_BTN_N": {
+      "0.150": 11.436771852207903
+    },
+    "VBAT": {
+      "0.300": 31.67781919145889
+    },
+    "VSYS": {
+      "0.300": 18.604474958671723,
+      "0.150": 2.938477631085024
+    },
+    "CHG_ALLOW_H": {
+      "0.150": 25.789024056161566
+    },
+    "VBUS": {
+      "0.300": 47.17339428477598,
+      "0.150": 5.9470562748477125
+    }
+  },
+  "plane_stubs": [
+    {
+      "net": "+3V0",
+      "pad": "U7.8",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C10.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U2.5",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R22.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C13.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U3.28",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U3.30",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R8.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R4.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R20.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C12.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.5",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.8",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.10",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C14.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C5.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C9.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C18.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R16.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R9.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U5.8",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C19.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R12.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R17.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C15.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R13.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C16.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R18.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U8.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R10.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R5.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "TP2.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "J3.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U7.4",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C10.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R21.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "Q2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C17.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R19.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C13.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "Q1.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.A1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.A12",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.B1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.B12",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.SH",
+      "plane_fill_required": true,
+      "result": "plated_pad_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "R2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.15",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.33",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.55",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C12.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R7.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U6.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R1.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.6",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.7",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C14.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C5.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C9.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C18.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U5.4",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U5.9",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C19.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R25.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C7.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C11.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R23.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J2.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U1.5",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U1.11",
+      "plane_fill_required": true,
+      "result": "existing_connected_via_can_contact_plane"
+    },
+    {
+      "net": "GND",
+      "pad": "R24.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R14.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C15.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C4.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R15.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C6.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C1.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C16.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C8.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C3.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U8.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "TP4.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J3.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J3.6",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    }
+  ],
+  "warnings": [
+    "No impedance, differential-pair, RF, timing or mechanical qualification.",
+    "GND/other plane stubs require real zones and zone fill before connectivity/DRC.",
+    "Grid router is conservative and incomplete; use KiCad DRC as authority."
+  ],
+  "board_minimums_mm": {
+    "track_width": 0.15,
+    "via_diameter": 0.5,
+    "via_drill": 0.25,
+    "clearance": 0.15,
+    "edge_clearance": 0.5
+  },
+  "net_filter": [],
+  "effective_hole_to_hole_mm": 0.25,
+  "native_unconnected_before": 173,
+  "native_unconnected_after_before_zone_refill": 101,
+  "remaining_signal_components": {
+    "IMU_MOSI": [
+      [
+        "U4.14"
+      ],
+      [
+        "U3.36"
+      ]
+    ],
+    "IMU_CS_N": [
+      [
+        "R9.2"
+      ],
+      [
+        "U4.12"
+      ],
+      [
+        "U3.38"
+      ]
+    ],
+    "SWCLK": [
+      [
+        "J3.4"
+      ],
+      [
+        "U3.53"
+      ]
+    ],
+    "USB_CC2": [
+      [
+        "R15.1"
+      ],
+      [
+        "J1.B5"
+      ]
+    ],
+    "CHG_STAT2_N": [
+      [
+        "R5.2"
+      ],
+      [
+        "U1.3"
+      ],
+      [
+        "U3.6"
+      ]
+    ],
+    "RESET_N": [
+      [
+        "J3.5"
+      ],
+      [
+        "TP5.1"
+      ],
+      [
+        "R8.2"
+      ],
+      [
+        "U3.40"
+      ]
+    ],
+    "VBAT_ADC": [
+      [
+        "C6.1",
+        "R7.1",
+        "R6.2"
+      ],
+      [
+        "U3.11"
+      ]
+    ],
+    "USER_BTN_N": [
+      [
+        "SW1.1",
+        "R16.2",
+        "C17.1",
+        "SW1.1"
+      ],
+      [
+        "U3.4"
+      ]
+    ],
+    "VBAT": [
+      [
+        "TP3.1",
+        "C3.1",
+        "J2.1",
+        "R6.1"
+      ],
+      [
+        "U1.2"
+      ]
+    ],
+    "VSYS": [
+      [
+        "TP1.1",
+        "C2.1",
+        "R3.1",
+        "C4.1",
+        "U2.1",
+        "U2.3"
+      ],
+      [
+        "U1.1"
+      ]
+    ],
+    "VBUS": [
+      [
+        "C1.1",
+        "U1.10",
+        "J1.B9",
+        "J1.A4",
+        "U6.5",
+        "U3.32"
+      ],
+      [
+        "C11.1"
+      ],
+      [
+        "J1.B4",
+        "J1.A9"
+      ]
+    ]
+  },
+  "unrouted_plane_pads": [
+    {
+      "net": "+3V0",
+      "pad": "U7.8",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C10.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U2.5",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R22.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C13.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U3.28",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U3.30",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R8.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R4.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R20.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C12.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.5",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.8",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U4.10",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C14.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C5.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C9.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C18.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R16.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R9.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U5.8",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C19.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R12.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R17.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C15.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R13.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "C16.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R18.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "U8.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R10.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "R5.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "TP2.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "+3V0",
+      "pad": "J3.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U7.4",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C10.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R21.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "Q2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C17.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R19.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C13.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "Q1.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.A1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.A12",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.B1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J1.B12",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R2.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.15",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.33",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U3.55",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C12.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R7.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U6.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R1.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.6",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U4.7",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C14.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C5.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C9.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C18.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U5.4",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U5.9",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C19.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R25.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C7.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C11.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R23.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J2.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U1.5",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R24.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R14.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C15.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C4.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "R15.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C6.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C1.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C16.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C8.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "C3.2",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "U8.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "TP4.1",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J3.3",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    },
+    {
+      "net": "GND",
+      "pad": "J3.6",
+      "plane_fill_required": true,
+      "result": "UNROUTED_plane_stub",
+      "reason": "time_limit"
+    }
+  ],
+  "plane_zone_presence": {
+    "+3V0": true,
+    "GND": true
+  },
+  "input": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_pcb",
+  "output": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/.work/routing/Ankle_Sensor_V1_pass2.kicad_pcb",
+  "elapsed_seconds": 304.549
+}

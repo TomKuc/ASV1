@@ -1,0 +1,13 @@
+{
+  "kicad_version": "10.0.7",
+  "status": "PLACEMENT_UNROUTED_NOT_FOR_FABRICATION",
+  "footprints": 69,
+  "net_count": 76,
+  "source": "KiCad exportedXMLnetlist",
+  "outline_mm": [
+    50,
+    50,
+    80,
+    101.6
+  ]
+}

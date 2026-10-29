@@ -1,0 +1,2240 @@
+{
+  "status": "GEOMETRY_REVIEW_ONLY_PHYSICAL_SI_AND_LFXO_QUALIFICATION_REQUIRED",
+  "as_of_utc": "2026-10-28T14:41:32.784683+00:00",
+  "board_file": "hardware/Ankle_Sensor_V1.kicad_pcb",
+  "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "board_bytes": 851762,
+  "kicad_version": "10.0.7",
+  "method": {
+    "length": "Sum native GetLength of every trace object by net/layer, including trace portions overlapping pads and pullup/testpoint branches. Pad geometry is not counted as a separate length. Package/module routes and via barrel length are not added. Not an electrical path-delay/skew calculation.",
+    "reference_projection": "Straight track centreline samples no more than0.05mm apart; check filled In1 GND polygons plus GND pad/via copper. Holes within0.6mm used only for classification. Bottom In2 +3V projection reported separately. Not a return-current or field simulation.",
+    "no_board_mutation": true
+  },
+  "nominal_board_thickness_mm": 1.0,
+  "copper_layers_top_to_bottom": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "B.Cu"
+  ],
+  "explicit_dielectric_stackup_present_in_PCB": false,
+  "stackup_not_fabricator_qualified": true,
+  "drc": {
+    "file": "reports/drc_final.json",
+    "sha256": "58a0449fbf50c539c30c4f639e6bf479221979b314338b6b5014c3cf05cef894",
+    "date": "2026-10-28T15:40:47",
+    "violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "ignored_checks": [
+      "missing_courtyard",
+      "track_not_centered_on_via",
+      "tuning_profile_track_geometries",
+      "footprint_filters_mismatch",
+      "footprint_type_mismatch"
+    ]
+  },
+  "GND_reference": {
+    "In1_GND_zone_count": 1,
+    "filled_polygon_count": 1,
+    "filled_area_mm2": 1355.1702364265534,
+    "non_via_tracks_on_In1": 0,
+    "GND_through_via_count": 53
+  },
+  "nets": [
+    {
+      "net": "FLASH_CS_N",
+      "total_trace_copper_mm": 22.335004,
+      "trace_mm_by_layer": {
+        "F.Cu": 8.499722,
+        "B.Cu": 13.835281
+      },
+      "trace_segment_count": 53,
+      "via_count": 3,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "41",
+          "xy_mm": [
+            68.65,
+            61.95
+          ]
+        },
+        {
+          "reference": "U5",
+          "number": "1",
+          "xy_mm": [
+            64.25,
+            73.095
+          ]
+        },
+        {
+          "reference": "R10",
+          "number": "2",
+          "xy_mm": [
+            75.31,
+            70.5
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "5c2b8887-639e-4a6b-9dd0-bbcbee964b38",
+          "xy_mm": [
+            72.55,
+            68.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 3.431108,
+            "position_mm": [
+              70.05,
+              66.05
+            ],
+            "uuid": "73578a7c-6df8-49f8-9990-1b633b612032"
+          }
+        },
+        {
+          "uuid": "62110dda-23fa-47c2-8f14-8d156f801357",
+          "xy_mm": [
+            70.1,
+            64.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 1.101136,
+            "position_mm": [
+              71.2,
+              64.35
+            ],
+            "uuid": "1e22030e-8a43-49f0-bb07-acdb21fb668a"
+          }
+        },
+        {
+          "uuid": "b7872ac1-a766-4bf4-a040-42ed2eafc8e3",
+          "xy_mm": [
+            65.15,
+            72.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.320022,
+            "position_mm": [
+              63.3,
+              70.6
+            ],
+            "uuid": "a40af12d-87b8-446d-817e-1b2198fee2e3"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 178,
+          "total_mm": 8.499722,
+          "In1_GND_uncovered_mm": 1.229416,
+          "uncovered_near_hole_mm": 1.229416,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 85.535811
+        },
+        "B.Cu": {
+          "sample_count": 283,
+          "total_mm": 13.835281,
+          "In1_GND_uncovered_mm": 1.557419,
+          "uncovered_near_hole_mm": 1.557419,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.399307,
+          "In2_power_uncovered_mm_for_bottom": 4.745812,
+          "In1_GND_projected_copper_coverage_percent": 88.743133
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            72.805682,
+            68.655682
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.771591,
+            68.621591
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.7375,
+            68.5875
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.703409,
+            68.553409
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.669318,
+            68.519318
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.635227,
+            68.485227
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.601136,
+            68.451136
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        },
+        {
+          "xy_mm": [
+            72.567045,
+            68.417045
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0b1fa7c2-fa59-42f4-8982-4600c189b614"
+        }
+      ]
+    },
+    {
+      "net": "IMU_CS_N",
+      "total_trace_copper_mm": 18.124509,
+      "trace_mm_by_layer": {
+        "F.Cu": 6.871461,
+        "B.Cu": 11.253048
+      },
+      "trace_segment_count": 19,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U4",
+          "number": "12",
+          "xy_mm": [
+            56.3,
+            75.5875
+          ]
+        },
+        {
+          "reference": "U3",
+          "number": "38",
+          "xy_mm": [
+            67.75,
+            63.15
+          ]
+        },
+        {
+          "reference": "R9",
+          "number": "2",
+          "xy_mm": [
+            56.51,
+            72.7
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "77db3e23-48bc-4570-a74c-ffee96588c1e",
+          "xy_mm": [
+            58.6,
+            70.45
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.304886,
+            "position_mm": [
+              60.9,
+              70.6
+            ],
+            "uuid": "e7e71dee-b001-482b-8998-f1d6aec1ee87"
+          }
+        },
+        {
+          "uuid": "85cf903f-15fb-4f7b-92af-28841d4636bd",
+          "xy_mm": [
+            66.9,
+            63.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 3.873306,
+            "position_mm": [
+              69.35,
+              66.15
+            ],
+            "uuid": "c1f31cb3-4161-411e-83a2-ffda5356b818"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 141,
+          "total_mm": 6.871461,
+          "In1_GND_uncovered_mm": 0.846482,
+          "uncovered_near_hole_mm": 0.846482,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 87.681188
+        },
+        "B.Cu": {
+          "sample_count": 228,
+          "total_mm": 11.253048,
+          "In1_GND_uncovered_mm": 0.73467,
+          "uncovered_near_hole_mm": 0.73467,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.385695,
+          "In2_power_uncovered_mm_for_bottom": 0.73467,
+          "In1_GND_projected_copper_coverage_percent": 93.471372
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            67.275,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            67.225,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            67.175,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            67.125,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            67.075,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            67.025,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            66.975,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        },
+        {
+          "xy_mm": [
+            66.925,
+            63.15
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0a06233f-2fcb-49c2-9d04-75166d90739a"
+        }
+      ]
+    },
+    {
+      "net": "IMU_INT1",
+      "total_trace_copper_mm": 20.414995,
+      "trace_mm_by_layer": {
+        "F.Cu": 4.99357,
+        "B.Cu": 15.421425
+      },
+      "trace_segment_count": 25,
+      "via_count": 4,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U4",
+          "number": "4",
+          "xy_mm": [
+            54.6375,
+            77.25
+          ]
+        },
+        {
+          "reference": "U3",
+          "number": "27",
+          "xy_mm": [
+            65.2,
+            65.25
+          ]
+        },
+        {
+          "reference": "TP6",
+          "number": "1",
+          "xy_mm": [
+            59.0,
+            74.0
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "3efed99c-3a7d-4a3c-8a84-7ca958f03b3e",
+          "xy_mm": [
+            64.6,
+            64.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 4.564263,
+            "position_mm": [
+              66.5,
+              68.65
+            ],
+            "uuid": "4c34107c-4aa2-469f-82e8-b335b64b217e"
+          }
+        },
+        {
+          "uuid": "76e505e6-e251-4f44-87a9-425e477c9a99",
+          "xy_mm": [
+            62.4,
+            66.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 3.807887,
+            "position_mm": [
+              63.3,
+              70.6
+            ],
+            "uuid": "a40af12d-87b8-446d-817e-1b2198fee2e3"
+          }
+        },
+        {
+          "uuid": "c23dda66-b733-4ff3-bd4d-c06f7b1573c5",
+          "xy_mm": [
+            54.2,
+            77.7
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 0.970824,
+            "position_mm": [
+              54.0,
+              76.75
+            ],
+            "uuid": "9f6e353d-cfb8-4815-b021-83f2aa3e0090"
+          }
+        },
+        {
+          "uuid": "e50bd339-988c-4ff9-aee7-25424fbbe123",
+          "xy_mm": [
+            63.05,
+            69.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 0.743303,
+            "position_mm": [
+              63.3,
+              70.6
+            ],
+            "uuid": "a40af12d-87b8-446d-817e-1b2198fee2e3"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 105,
+          "total_mm": 4.99357,
+          "In1_GND_uncovered_mm": 1.557801,
+          "uncovered_near_hole_mm": 1.557801,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 68.803868
+        },
+        "B.Cu": {
+          "sample_count": 310,
+          "total_mm": 15.421425,
+          "In1_GND_uncovered_mm": 1.636427,
+          "uncovered_near_hole_mm": 1.636427,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.398439,
+          "In2_power_uncovered_mm_for_bottom": 1.636427,
+          "In1_GND_projected_copper_coverage_percent": 89.388613
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            54.216667,
+            77.683333
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.25,
+            77.65
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.283333,
+            77.616667
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.316667,
+            77.583333
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.35,
+            77.55
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.383333,
+            77.516667
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.416667,
+            77.483333
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        },
+        {
+          "xy_mm": [
+            54.45,
+            77.45
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "16ae8b50-a74b-49a1-a98b-d969e36c888b"
+        }
+      ]
+    },
+    {
+      "net": "IMU_INT2",
+      "total_trace_copper_mm": 29.238778,
+      "trace_mm_by_layer": {
+        "F.Cu": 3.315317,
+        "B.Cu": 25.923461
+      },
+      "trace_segment_count": 69,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U4",
+          "number": "9",
+          "xy_mm": [
+            56.9625,
+            76.75
+          ]
+        },
+        {
+          "reference": "U3",
+          "number": "29",
+          "xy_mm": [
+            66.0,
+            65.25
+          ]
+        },
+        {
+          "reference": "TP7",
+          "number": "1",
+          "xy_mm": [
+            59.0,
+            76.0
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "147e008a-e9af-457d-a981-a9e35712a1ba",
+          "xy_mm": [
+            58.3,
+            76.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.332381,
+            "position_mm": [
+              60.3,
+              77.7
+            ],
+            "uuid": "f79b7776-d2df-46ec-9c7c-696c4e71534a"
+          }
+        },
+        {
+          "uuid": "3766f5fa-bb8a-4a88-8726-203fe385197f",
+          "xy_mm": [
+            65.8,
+            63.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 4.430011,
+            "position_mm": [
+              69.35,
+              66.15
+            ],
+            "uuid": "c1f31cb3-4161-411e-83a2-ffda5356b818"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 70,
+          "total_mm": 3.315317,
+          "In1_GND_uncovered_mm": 0.832843,
+          "uncovered_near_hole_mm": 0.832843,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 74.878945
+        },
+        "B.Cu": {
+          "sample_count": 533,
+          "total_mm": 25.923461,
+          "In1_GND_uncovered_mm": 0.800538,
+          "uncovered_near_hole_mm": 0.800538,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.388909,
+          "In2_power_uncovered_mm_for_bottom": 3.910841,
+          "In1_GND_projected_copper_coverage_percent": 96.911916
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            58.2875,
+            76.5125
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "401dc7a6-ce23-4a99-88cd-621cd3445efe"
+        },
+        {
+          "xy_mm": [
+            58.2625,
+            76.5375
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "401dc7a6-ce23-4a99-88cd-621cd3445efe"
+        },
+        {
+          "xy_mm": [
+            58.225,
+            76.55
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "44b9daae-d50e-4ecb-8f69-08e34a90e094"
+        },
+        {
+          "xy_mm": [
+            58.175,
+            76.55
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "44b9daae-d50e-4ecb-8f69-08e34a90e094"
+        },
+        {
+          "xy_mm": [
+            58.125,
+            76.55
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "44b9daae-d50e-4ecb-8f69-08e34a90e094"
+        },
+        {
+          "xy_mm": [
+            65.8,
+            63.525
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "7373cf56-437f-41d4-a11b-4910d25b15c9"
+        },
+        {
+          "xy_mm": [
+            65.8,
+            63.575
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "7373cf56-437f-41d4-a11b-4910d25b15c9"
+        },
+        {
+          "xy_mm": [
+            65.8,
+            63.625
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "7373cf56-437f-41d4-a11b-4910d25b15c9"
+        }
+      ]
+    },
+    {
+      "net": "IMU_MISO",
+      "total_trace_copper_mm": 21.389259,
+      "trace_mm_by_layer": {
+        "F.Cu": 1.24296,
+        "B.Cu": 20.146299
+      },
+      "trace_segment_count": 30,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U4",
+          "number": "1",
+          "xy_mm": [
+            54.6375,
+            75.75
+          ]
+        },
+        {
+          "reference": "U3",
+          "number": "39",
+          "xy_mm": [
+            68.65,
+            62.75
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "2f5a0c82-eff6-4104-a97e-e1f65b59aa9d",
+          "xy_mm": [
+            54.7,
+            75.2
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 1.261943,
+            "position_mm": [
+              54.0,
+              76.25
+            ],
+            "uuid": "1fa27fb2-f2a5-403b-a4b5-e1a31dcc3830"
+          }
+        },
+        {
+          "uuid": "a9533396-21d5-4b7c-a16a-68ed1f5e6927",
+          "xy_mm": [
+            69.3,
+            62.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.45204,
+            "position_mm": [
+              71.2,
+              64.35
+            ],
+            "uuid": "1e22030e-8a43-49f0-bb07-acdb21fb668a"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 27,
+          "total_mm": 1.24296,
+          "In1_GND_uncovered_mm": 0.820711,
+          "uncovered_near_hole_mm": 0.820711,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 33.971281
+        },
+        "B.Cu": {
+          "sample_count": 409,
+          "total_mm": 20.146299,
+          "In1_GND_uncovered_mm": 0.79837,
+          "uncovered_near_hole_mm": 0.79837,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 7.03316,
+          "In1_GND_projected_copper_coverage_percent": 96.037138
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            68.925,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            68.975,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            69.025,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            69.075,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            69.125,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            69.175,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            69.225,
+            62.75
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "320c04e2-e12b-42a1-bda9-14def66b1b51"
+        },
+        {
+          "xy_mm": [
+            69.2625,
+            62.7625
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cc69d2c-f281-41eb-bbc9-18761a778a4e"
+        }
+      ]
+    },
+    {
+      "net": "IMU_MOSI",
+      "total_trace_copper_mm": 17.766032,
+      "trace_mm_by_layer": {
+        "F.Cu": 1.9375,
+        "B.Cu": 15.828532
+      },
+      "trace_segment_count": 9,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U4",
+          "number": "14",
+          "xy_mm": [
+            55.3,
+            75.5875
+          ]
+        },
+        {
+          "reference": "U3",
+          "number": "36",
+          "xy_mm": [
+            67.75,
+            63.95
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "12fe63e0-2b2f-45c7-b842-4ab199d7f2ed",
+          "xy_mm": [
+            55.3,
+            74.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.180023,
+            "position_mm": [
+              54.0,
+              76.25
+            ],
+            "uuid": "1fa27fb2-f2a5-403b-a4b5-e1a31dcc3830"
+          }
+        },
+        {
+          "uuid": "f17d42a5-3b30-4121-9d12-076569e6d550",
+          "xy_mm": [
+            66.9,
+            63.95
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 3.292795,
+            "position_mm": [
+              69.35,
+              66.15
+            ],
+            "uuid": "c1f31cb3-4161-411e-83a2-ffda5356b818"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 39,
+          "total_mm": 1.9375,
+          "In1_GND_uncovered_mm": 0.795455,
+          "uncovered_near_hole_mm": 0.795455,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 58.944282
+        },
+        "B.Cu": {
+          "sample_count": 318,
+          "total_mm": 15.828532,
+          "In1_GND_uncovered_mm": 0.696889,
+          "uncovered_near_hole_mm": 0.696889,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.348574,
+          "In2_power_uncovered_mm_for_bottom": 1.294444,
+          "In1_GND_projected_copper_coverage_percent": 95.597259
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            55.3,
+            74.870739
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.821307
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.771875
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.722443
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.673011
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.62358
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.574148
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        },
+        {
+          "xy_mm": [
+            55.3,
+            74.524716
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "1a320829-d25f-4a46-870f-793baf02f2c4"
+        }
+      ]
+    },
+    {
+      "net": "IMU_SCK",
+      "total_trace_copper_mm": 22.033147,
+      "trace_mm_by_layer": {
+        "F.Cu": 5.030099,
+        "In2.Cu": 17.003048
+      },
+      "trace_segment_count": 26,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U4",
+          "number": "13",
+          "xy_mm": [
+            55.8,
+            75.5875
+          ]
+        },
+        {
+          "reference": "U3",
+          "number": "37",
+          "xy_mm": [
+            68.65,
+            63.55
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "6fb98274-64bc-416c-b64b-492d6e75e631",
+          "xy_mm": [
+            69.6,
+            63.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 1.691892,
+            "position_mm": [
+              71.2,
+              64.35
+            ],
+            "uuid": "1e22030e-8a43-49f0-bb07-acdb21fb668a"
+          }
+        },
+        {
+          "uuid": "b78963d6-ef2e-461a-aa1b-961ce2eba4e8",
+          "xy_mm": [
+            56.5,
+            71.95
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 3.77955,
+            "position_mm": [
+              53.15,
+              73.7
+            ],
+            "uuid": "9790bc7e-b512-4434-8ef2-933dce830f95"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 105,
+          "total_mm": 5.030099,
+          "In1_GND_uncovered_mm": 0.839383,
+          "uncovered_near_hole_mm": 0.839383,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.421185,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 83.312795
+        },
+        "In2.Cu": {
+          "sample_count": 342,
+          "total_mm": 17.003048,
+          "In1_GND_uncovered_mm": 0.8,
+          "uncovered_near_hole_mm": 0.8,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 95.294961
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            56.1875,
+            72.1625
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "2ae38b00-a7fc-4f7d-964d-ed79ba503c94"
+        },
+        {
+          "xy_mm": [
+            69.252273,
+            63.606818
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        },
+        {
+          "xy_mm": [
+            69.293182,
+            63.629545
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        },
+        {
+          "xy_mm": [
+            69.334091,
+            63.652273
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        },
+        {
+          "xy_mm": [
+            69.375,
+            63.675
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        },
+        {
+          "xy_mm": [
+            69.415909,
+            63.697727
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        },
+        {
+          "xy_mm": [
+            69.456818,
+            63.720455
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        },
+        {
+          "xy_mm": [
+            69.497727,
+            63.743182
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "5cf3cb8d-0352-4286-8366-97db5d1dbb2b"
+        }
+      ]
+    },
+    {
+      "net": "LF_XL1",
+      "total_trace_copper_mm": 5.075172,
+      "trace_mm_by_layer": {
+        "F.Cu": 5.075172
+      },
+      "trace_segment_count": 18,
+      "via_count": 0,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "17",
+          "xy_mm": [
+            60.8,
+            66.15
+          ]
+        },
+        {
+          "reference": "Y1",
+          "number": "1",
+          "xy_mm": [
+            59.75,
+            68.5
+          ]
+        },
+        {
+          "reference": "C7",
+          "number": "1",
+          "xy_mm": [
+            59.32,
+            70.6
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 104,
+          "total_mm": 5.075172,
+          "In1_GND_uncovered_mm": 0.0,
+          "uncovered_near_hole_mm": 0.0,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.0,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 100.0
+        }
+      },
+      "projection_uncovered_examples": []
+    },
+    {
+      "net": "LF_XL2",
+      "total_trace_copper_mm": 4.950908,
+      "trace_mm_by_layer": {
+        "F.Cu": 4.950908
+      },
+      "trace_segment_count": 15,
+      "via_count": 0,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "18",
+          "xy_mm": [
+            61.6,
+            66.15
+          ]
+        },
+        {
+          "reference": "C8",
+          "number": "1",
+          "xy_mm": [
+            61.72,
+            70.6
+          ]
+        },
+        {
+          "reference": "Y1",
+          "number": "2",
+          "xy_mm": [
+            62.25,
+            68.5
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 102,
+          "total_mm": 4.950908,
+          "In1_GND_uncovered_mm": 0.0,
+          "uncovered_near_hole_mm": 0.0,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.0,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 100.0
+        }
+      },
+      "projection_uncovered_examples": []
+    },
+    {
+      "net": "QSPI_CLK_FLASH",
+      "total_trace_copper_mm": 14.529493,
+      "trace_mm_by_layer": {
+        "F.Cu": 14.529493
+      },
+      "trace_segment_count": 12,
+      "via_count": 0,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U5",
+          "number": "6",
+          "xy_mm": [
+            71.75,
+            75.635
+          ]
+        },
+        {
+          "reference": "R11",
+          "number": "2",
+          "xy_mm": [
+            72.01,
+            61.5
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 294,
+          "total_mm": 14.529493,
+          "In1_GND_uncovered_mm": 0.0,
+          "uncovered_near_hole_mm": 0.0,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.0,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 100.0
+        }
+      },
+      "projection_uncovered_examples": []
+    },
+    {
+      "net": "QSPI_IO0",
+      "total_trace_copper_mm": 18.282565,
+      "trace_mm_by_layer": {
+        "F.Cu": 18.282565
+      },
+      "trace_segment_count": 21,
+      "via_count": 0,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "44",
+          "xy_mm": [
+            68.65,
+            60.35
+          ]
+        },
+        {
+          "reference": "U5",
+          "number": "5",
+          "xy_mm": [
+            71.75,
+            76.905
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 372,
+          "total_mm": 18.282565,
+          "In1_GND_uncovered_mm": 0.0,
+          "uncovered_near_hole_mm": 0.0,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.0,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 100.0
+        }
+      },
+      "projection_uncovered_examples": []
+    },
+    {
+      "net": "QSPI_IO1",
+      "total_trace_copper_mm": 16.063885,
+      "trace_mm_by_layer": {
+        "F.Cu": 12.560332,
+        "B.Cu": 3.503553
+      },
+      "trace_segment_count": 30,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "43",
+          "xy_mm": [
+            67.75,
+            60.75
+          ]
+        },
+        {
+          "reference": "U5",
+          "number": "2",
+          "xy_mm": [
+            64.25,
+            74.365
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "44f7c295-1343-4151-bffb-b32ccf9f7704",
+          "xy_mm": [
+            67.2,
+            68.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 0.715891,
+            "position_mm": [
+              66.5,
+              68.65
+            ],
+            "uuid": "4c34107c-4aa2-469f-82e8-b335b64b217e"
+          }
+        },
+        {
+          "uuid": "ca469306-cf5c-4bc4-b549-2d865ad89955",
+          "xy_mm": [
+            67.45,
+            65.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.04267,
+            "position_mm": [
+              69.35,
+              66.15
+            ],
+            "uuid": "c1f31cb3-4161-411e-83a2-ffda5356b818"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 258,
+          "total_mm": 12.560332,
+          "In1_GND_uncovered_mm": 0.874205,
+          "uncovered_near_hole_mm": 0.874205,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.341362,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 93.039956
+        },
+        "B.Cu": {
+          "sample_count": 71,
+          "total_mm": 3.503553,
+          "In1_GND_uncovered_mm": 0.832843,
+          "uncovered_near_hole_mm": 0.832843,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 1.332843,
+          "In1_GND_projected_copper_coverage_percent": 76.228628
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            67.432759,
+            65.282759
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.398276,
+            65.248276
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.363793,
+            65.213793
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.32931,
+            65.17931
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.294828,
+            65.144828
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.260345,
+            65.110345
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.225862,
+            65.075862
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "416b0782-ef86-431d-8909-32077d08fe72"
+        },
+        {
+          "xy_mm": [
+            67.016667,
+            69.133333
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "4255be1d-5f16-4e26-9398-4f3b724340c7"
+        }
+      ]
+    },
+    {
+      "net": "QSPI_IO2",
+      "total_trace_copper_mm": 28.034186,
+      "trace_mm_by_layer": {
+        "F.Cu": 16.621696,
+        "B.Cu": 11.412489
+      },
+      "trace_segment_count": 37,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "46",
+          "xy_mm": [
+            68.65,
+            59.55
+          ]
+        },
+        {
+          "reference": "U5",
+          "number": "3",
+          "xy_mm": [
+            64.25,
+            75.635
+          ]
+        },
+        {
+          "reference": "R12",
+          "number": "2",
+          "xy_mm": [
+            75.31,
+            68.7
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "68098233-19be-49ca-a2bf-12a5fdba00e2",
+          "xy_mm": [
+            65.55,
+            74.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 0.72111,
+            "position_mm": [
+              65.95,
+              75.0
+            ],
+            "uuid": "95500dd8-2405-4e60-a4f1-ec7c25a6c519"
+          }
+        },
+        {
+          "uuid": "9c607543-4e89-4f25-aa8f-727501104f10",
+          "xy_mm": [
+            74.85,
+            69.3
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 3.708436,
+            "position_mm": [
+              75.1,
+              73.0
+            ],
+            "uuid": "d2dd4c51-d8b9-4109-ab3d-691b98d4e857"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 342,
+          "total_mm": 16.621696,
+          "In1_GND_uncovered_mm": 0.835512,
+          "uncovered_near_hole_mm": 0.835512,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.392837,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 94.973365
+        },
+        "B.Cu": {
+          "sample_count": 230,
+          "total_mm": 11.412489,
+          "In1_GND_uncovered_mm": 0.785539,
+          "uncovered_near_hole_mm": 0.785539,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.39663,
+          "In2_power_uncovered_mm_for_bottom": 2.281179,
+          "In1_GND_projected_copper_coverage_percent": 93.11685
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            65.532639,
+            74.417361
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.497917,
+            74.452083
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.463194,
+            74.486806
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.428472,
+            74.521528
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.39375,
+            74.55625
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.359028,
+            74.590972
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.324306,
+            74.625694
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        },
+        {
+          "xy_mm": [
+            65.289583,
+            74.660417
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "0912b32c-da6c-44f5-a6b3-2bd85746a029"
+        }
+      ]
+    },
+    {
+      "net": "QSPI_IO3",
+      "total_trace_copper_mm": 25.241905,
+      "trace_mm_by_layer": {
+        "F.Cu": 4.258452,
+        "B.Cu": 6.45,
+        "In2.Cu": 14.533452
+      },
+      "trace_segment_count": 27,
+      "via_count": 3,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "45",
+          "xy_mm": [
+            67.75,
+            59.95
+          ]
+        },
+        {
+          "reference": "U5",
+          "number": "7",
+          "xy_mm": [
+            71.75,
+            74.365
+          ]
+        },
+        {
+          "reference": "R13",
+          "number": "2",
+          "xy_mm": [
+            76.01,
+            61.5
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
+          "xy_mm": [
+            71.85,
+            73.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 1.860779,
+            "position_mm": [
+              73.45,
+              74.85
+            ],
+            "uuid": "d665e56f-fcd8-4136-8cf9-2ad3bd44be18"
+          }
+        },
+        {
+          "uuid": "78644b6c-d081-48e2-af94-d1de239ce255",
+          "xy_mm": [
+            67.1,
+            60.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 4.785394,
+            "position_mm": [
+              68.0,
+              55.3
+            ],
+            "uuid": "7e587fd5-5a5a-4970-9cbb-cde2570f647b"
+          }
+        },
+        {
+          "uuid": "fb1cc1db-a9fd-4695-ad9f-341fff2b2013",
+          "xy_mm": [
+            73.55,
+            60.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 1.229837,
+            "position_mm": [
+              72.45,
+              60.55
+            ],
+            "uuid": "1668a7b8-af62-49b3-9bbd-88beaa8f7732"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 90,
+          "total_mm": 4.258452,
+          "In1_GND_uncovered_mm": 1.271231,
+          "uncovered_near_hole_mm": 1.271231,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 70.14805
+        },
+        "B.Cu": {
+          "sample_count": 129,
+          "total_mm": 6.45,
+          "In1_GND_uncovered_mm": 0.8,
+          "uncovered_near_hole_mm": 0.8,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.4,
+          "In2_power_uncovered_mm_for_bottom": 0.8,
+          "In1_GND_projected_copper_coverage_percent": 87.596899
+        },
+        "In2.Cu": {
+          "sample_count": 293,
+          "total_mm": 14.533452,
+          "In1_GND_uncovered_mm": 0.738909,
+          "uncovered_near_hole_mm": 0.738909,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.388909,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 94.915807
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            73.633333,
+            60.083333
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "2b7f7476-6c5f-48f3-9b33-2ad412fdbb0f"
+        },
+        {
+          "xy_mm": [
+            73.6,
+            60.05
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "2b7f7476-6c5f-48f3-9b33-2ad412fdbb0f"
+        },
+        {
+          "xy_mm": [
+            73.566667,
+            60.016667
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "2b7f7476-6c5f-48f3-9b33-2ad412fdbb0f"
+        },
+        {
+          "xy_mm": [
+            71.833333,
+            74.216667
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "72c6fc5b-403e-4f4a-9fa3-11f7132d4a03"
+        },
+        {
+          "xy_mm": [
+            71.8,
+            74.25
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "72c6fc5b-403e-4f4a-9fa3-11f7132d4a03"
+        },
+        {
+          "xy_mm": [
+            71.766667,
+            74.283333
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "72c6fc5b-403e-4f4a-9fa3-11f7132d4a03"
+        },
+        {
+          "xy_mm": [
+            71.85,
+            73.925
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "7e9fe4da-2c9b-4bc1-901e-47d8b3929bf2"
+        },
+        {
+          "xy_mm": [
+            71.85,
+            73.975
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "7e9fe4da-2c9b-4bc1-901e-47d8b3929bf2"
+        }
+      ]
+    },
+    {
+      "net": "QSPI_SCK",
+      "total_trace_copper_mm": 3.923452,
+      "trace_mm_by_layer": {
+        "F.Cu": 2.395635,
+        "B.Cu": 1.527817
+      },
+      "trace_segment_count": 11,
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ],
+      "pads": [
+        {
+          "reference": "U3",
+          "number": "42",
+          "xy_mm": [
+            67.75,
+            61.55
+          ]
+        },
+        {
+          "reference": "R11",
+          "number": "1",
+          "xy_mm": [
+            70.99,
+            61.5
+          ]
+        }
+      ],
+      "all_pads_one_native_component": true,
+      "vias": [
+        {
+          "uuid": "9e5ae991-40d2-4895-9225-e131306ac226",
+          "xy_mm": [
+            68.4,
+            61.25
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 4.110049,
+            "position_mm": [
+              72.45,
+              60.55
+            ],
+            "uuid": "1668a7b8-af62-49b3-9bbd-88beaa8f7732"
+          }
+        },
+        {
+          "uuid": "c5d1c666-24c9-4a26-8a66-98d9643ea11c",
+          "xy_mm": [
+            69.7,
+            60.7
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "nearest_GND_via": {
+            "distance_mm": 2.754088,
+            "position_mm": [
+              72.45,
+              60.55
+            ],
+            "uuid": "1668a7b8-af62-49b3-9bbd-88beaa8f7732"
+          }
+        }
+      ],
+      "projection_sampling": {
+        "F.Cu": {
+          "sample_count": 49,
+          "total_mm": 2.395635,
+          "In1_GND_uncovered_mm": 0.834942,
+          "uncovered_near_hole_mm": 0.834942,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.39352,
+          "In2_power_uncovered_mm_for_bottom": 0.0,
+          "In1_GND_projected_copper_coverage_percent": 65.147375
+        },
+        "B.Cu": {
+          "sample_count": 32,
+          "total_mm": 1.527817,
+          "In1_GND_uncovered_mm": 0.812339,
+          "uncovered_near_hole_mm": 0.812339,
+          "uncovered_away_from_hole_mm": 0.0,
+          "max_uncovered_run_one_segment_mm": 0.391628,
+          "In2_power_uncovered_mm_for_bottom": 0.812339,
+          "In1_GND_projected_copper_coverage_percent": 46.830098
+        }
+      },
+      "projection_uncovered_examples": [
+        {
+          "xy_mm": [
+            69.96087,
+            60.96087
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.926087,
+            60.926087
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.891304,
+            60.891304
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.856522,
+            60.856522
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.821739,
+            60.821739
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.786957,
+            60.786957
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.752174,
+            60.752174
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        },
+        {
+          "xy_mm": [
+            69.717391,
+            60.717391
+          ],
+          "layer": "F.Cu",
+          "within_0p6mm_of_hole": true,
+          "track_uuid": "93ce8799-487d-4914-b2bc-88aef508665b"
+        }
+      ]
+    }
+  ],
+  "clock_path": {
+    "module_to_R11_QSPI_SCK_total_trace_mm": 3.923452,
+    "module_to_R11_vias": 2,
+    "R11_to_flash_total_trace_mm": 14.529493,
+    "R11_to_flash_vias": 0,
+    "combined_clock_trace_mm": 18.452945,
+    "R11_nominal_ohm": 22,
+    "termination_not_measured": true
+  },
+  "LFXO_geometry": [
+    {
+      "net": "LF_XL1",
+      "MCU_to_Y1_pad_straight_distance_mm": 2.573908,
+      "Y1_to_cap_pad_straight_distance_mm": 2.143572,
+      "cap_GND_pad_nearest_GND_via": {
+        "distance_mm": 0.62,
+        "position_mm": [
+          60.9,
+          70.6
+        ],
+        "uuid": "e7e71dee-b001-482b-8998-f1d6aec1ee87"
+      }
+    },
+    {
+      "net": "LF_XL2",
+      "MCU_to_Y1_pad_straight_distance_mm": 2.438237,
+      "Y1_to_cap_pad_straight_distance_mm": 2.165849,
+      "cap_GND_pad_nearest_GND_via": {
+        "distance_mm": 0.62,
+        "position_mm": [
+          63.3,
+          70.6
+        ],
+        "uuid": "a40af12d-87b8-446d-817e-1b2198fee2e3"
+      }
+    }
+  ],
+  "physical_qualification": {
+    "QSPI_32MHz": "NOT_QUALIFIED",
+    "IMU_SPI_8MHz": "NOT_QUALIFIED",
+    "LSM6DSV32X_manufacturer_SPI_limit_MHz": 10,
+    "NRF52840_manufacturer_QSPI_limit_MHz": 32,
+    "LFXO_load_ESR_startup_drive_temperature": "NOT_QUALIFIED",
+    "max_board_supported_frequency_from_geometry": null
+  },
+  "sources": {
+    "Nordic_QSPI": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/qspi.html",
+    "Nordic_CLOCK": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/clock.html",
+    "ST_IMU": "https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf",
+    "Winbond_flash": "https://www.mouser.com/datasheet/2/949/Winbond_Electronics_Corporation_09_06_2024_W25Q01J-3501286.pdf",
+    "TI_return_paths": "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+    "Abracon_ABS07": "https://abracon.com/Resonators/ABS07.pdf"
+  },
+  "comparison_with_previous_review": {
+    "previous_board_sha256": "3fb59a5a94875917a6bd976945d85ee06e029f0998ae18f1ae40f5c054e153a7",
+    "signal_geometries_identical": true,
+    "nets_compared": 15,
+    "fields_compared": [
+      "total_trace_copper_mm",
+      "trace_mm_by_layer",
+      "trace_segment_count",
+      "via_count",
+      "widths_mm",
+      "pads",
+      "vias"
+    ]
+  }
+}

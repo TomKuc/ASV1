@@ -1,0 +1,6 @@
+{
+  "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "source": "reports/mechanical_placement_review.json",
+  "map": "simplified component geometry at native XY positions; leader lines are labels, not PCB tracks",
+  "hardware_changed": false
+}

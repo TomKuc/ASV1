@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="855" viewBox="0 0 1200 855" role="img" aria-label="Mapa elementów Ankle Sensor V1, widok z góry z portem USB na dole">
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#d3a732" stroke-width="1"/></pattern></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}.card{cursor:pointer}.card:hover .cardbox,.card.selected .cardbox{stroke:#216db4;stroke-width:3}.part.selected .body{stroke:#126bc0;stroke-width:4}.card:focus{outline:none}.card:focus .cardbox{stroke:#216db4;stroke-width:3}</style>
+<rect width="1200" height="855" fill="#f7f9fc"/>
+<text x="34" y="41" font-size="29" fill="#172d3d" text-anchor="start" font-weight="700">Ankle Sensor V1 — mapa elementów</text>
+<text x="34" y="69" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">Pozycje z PCB A1 • widok od strony części • USB na dole • obrysy uproszczone, bez ścieżek</text>
+<rect x="420" y="100" width="360" height="619.2" rx="2" fill="#e2eee7" stroke="#35614d" stroke-width="2"/>
+<path d="M354 160H400L588.0 208.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M354 385H400L489.59999999999997 418.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M846 315H800L636.0 400.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M846 445H800L663.5999999999999 496.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M354 720H400L576.0 606.4000000000001" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M846 720H800L588.0 688.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M354 600H400L459.59999999999997 592.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M846 575H800L708.0 563.1999999999999" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<path d="M846 160H800L684.0 232.0" fill="none" stroke="#8899a8" stroke-width="1.5"/>
+<g class="part" data-key="J1"><rect class="body" x="533.76" y="643.5999999999999" width="108.48000000000002" height="88.80000000000018" rx="1.2" fill="#547082" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="Q2"><rect class="body" x="441.59999999999997" y="446.80000000000007" width="16.800000000000068" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C2"><rect class="body" x="553.8" y="562.5999999999999" width="10.799999999999955" height="20.40000000000009" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R8"><rect class="body" x="671.0999999999999" y="198.16" width="13.800000000000182" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R25"><rect class="body" x="667.5" y="602.56" width="13.800000000000068" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U6"><rect class="body" x="719.4000000000001" y="612.4000000000001" width="20.399999999999977" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R14"><rect class="body" x="659.0999999999999" y="652.96" width="13.800000000000182" height="7.67999999999995" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U7"><rect class="body" x="472.20000000000005" y="491.80000000000007" width="37.19999999999999" height="37.19999999999993" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<text x="490.80000000000007" y="487.80000000000007" font-size="12" fill="#172d3d" text-anchor="middle" font-weight="400">U7</text>
+<g class="part" data-key="U4"><rect class="body" x="471.0" y="402.40000000000003" width="37.200000000000045" height="31.199999999999932" rx="1.2" fill="#bc4565" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="Q1"><rect class="body" x="514.2" y="541.5999999999999" width="16.799999999999955" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R16"><rect class="body" x="757.5" y="513.76" width="13.800000000000068" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R15"><rect class="body" x="659.0999999999999" y="674.56" width="13.800000000000182" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U3"><rect class="body" x="524.4000000000001" y="114.40000000000003" width="127.19999999999982" height="187.19999999999993" rx="1.2" fill="#2563a6" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C8"><rect class="body" x="559.8" y="343.59999999999997" width="13.200000000000045" height="7.200000000000102" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R9"><rect class="body" x="485.09999999999997" y="368.55999999999995" width="13.800000000000068" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U1"><rect class="body" x="562.2" y="593.8000000000001" width="27.600000000000023" height="25.199999999999932" rx="1.2" fill="#bc7727" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C16"><rect class="body" x="706.1999999999999" y="397.0" width="10.800000000000068" height="20.400000000000034" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C10"><rect class="body" x="605.4000000000001" y="312.40000000000003" width="13.199999999999818" height="7.199999999999932" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R19"><rect class="body" x="431.09999999999997" y="508.96" width="13.800000000000068" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C3"><rect class="body" x="522.0" y="599.8000000000001" width="20.40000000000009" height="10.79999999999984" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R17"><rect class="body" x="719.0999999999999" y="459.76000000000005" width="13.800000000000182" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U5"><rect class="body" x="587.4000000000001" y="363.40000000000003" width="97.19999999999982" height="73.19999999999993" rx="1.2" fill="#7957a8" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C17"><rect class="body" x="757.8000000000001" y="491.19999999999993" width="13.199999999999932" height="7.200000000000102" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U8"><rect class="body" x="579.5999999999999" y="496.0" width="16.800000000000182" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<text x="588.0" y="492.0" font-size="12" fill="#172d3d" text-anchor="middle" font-weight="400">U8</text>
+<g class="part" data-key="Y1"><rect class="body" x="532.2" y="312.40000000000003" width="39.59999999999991" height="19.199999999999932" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<text x="552.0" y="308.40000000000003" font-size="12" fill="#172d3d" text-anchor="middle" font-weight="400">Y1</text>
+<g class="part" data-key="R1"><rect class="body" x="603.9000000000001" y="614.56" width="13.79999999999984" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C9"><rect class="body" x="633.0" y="310.59999999999997" width="20.40000000000009" height="10.800000000000068" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C18"><rect class="body" x="509.40000000000003" y="479.19999999999993" width="13.199999999999875" height="7.200000000000102" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C11"><rect class="body" x="665.4000000000001" y="291.40000000000003" width="10.79999999999984" height="20.400000000000034" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R13"><rect class="body" x="719.0999999999999" y="234.16" width="13.800000000000182" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C15"><rect class="body" x="701.4000000000001" y="372.40000000000003" width="13.199999999999818" height="7.199999999999932" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R12"><rect class="body" x="710.6999999999999" y="320.55999999999995" width="13.800000000000068" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="J2"><rect class="body" x="438.90000000000003" y="561.4000000000001" width="52.19999999999993" height="61.19999999999982" rx="1.2" fill="#547082" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R18"><rect class="body" x="431.09999999999997" y="488.55999999999995" width="13.800000000000068" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R6"><rect class="body" x="437.09999999999997" y="360.1600000000001" width="13.800000000000068" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R23"><rect class="body" x="615.9000000000001" y="528.1600000000001" width="13.79999999999984" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C5"><rect class="body" x="672.0" y="447.40000000000003" width="10.800000000000068" height="20.400000000000034" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C13"><rect class="body" x="486.59999999999997" y="446.80000000000007" width="13.199999999999989" height="7.199999999999932" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C14"><rect class="body" x="513.0" y="457.0" width="20.40000000000009" height="10.800000000000068" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R3"><rect class="body" x="575.0999999999999" y="572.56" width="13.800000000000182" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="D1"><rect class="body" x="736.1999999999999" y="436.59999999999997" width="20.399999999999977" height="10.800000000000068" rx="1.2" fill="#dcb834" stroke="#65776c" stroke-width="0.7"/></g>
+<text x="746.3999999999999" y="432.59999999999997" font-size="12" fill="#172d3d" text-anchor="middle" font-weight="400">D1</text>
+<g class="part" data-key="C7"><rect class="body" x="531.0" y="343.59999999999997" width="13.200000000000045" height="7.200000000000102" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R22"><rect class="body" x="551.0999999999999" y="540.1600000000001" width="13.800000000000182" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C4"><rect class="body" x="644.4000000000001" y="447.40000000000003" width="10.79999999999984" height="20.400000000000034" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C19"><rect class="body" x="616.1999999999999" y="510.40000000000003" width="13.20000000000016" height="7.199999999999875" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R7"><rect class="body" x="437.09999999999997" y="380.55999999999995" width="13.800000000000068" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U2"><rect class="body" x="653.4000000000001" y="478.0" width="20.399999999999977" height="36.0" rx="1.2" fill="#168777" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R20"><rect class="body" x="539.0999999999999" y="506.55999999999995" width="13.800000000000182" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R21"><rect class="body" x="539.0999999999999" y="525.76" width="13.800000000000182" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R4"><rect class="body" x="479.09999999999997" y="324.1600000000001" width="13.800000000000068" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="SW1"><rect class="body" x="676.1999999999999" y="531.4000000000001" width="63.600000000000136" height="63.59999999999991" rx="1.2" fill="#39799b" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R10"><rect class="body" x="710.6999999999999" y="342.1600000000001" width="13.800000000000068" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C6"><rect class="body" x="437.40000000000003" y="401.19999999999993" width="13.199999999999932" height="7.200000000000102" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R24"><rect class="body" x="693.9000000000001" y="516.1600000000001" width="13.79999999999984" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C1"><rect class="body" x="600.5999999999999" y="569.8000000000001" width="10.800000000000182" height="20.399999999999864" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R11"><rect class="body" x="671.0999999999999" y="234.16" width="13.800000000000182" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R5"><rect class="body" x="451.5" y="324.1600000000001" width="13.799999999999955" height="7.679999999999836" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="C12"><rect class="body" x="523.8" y="428.80000000000007" width="13.200000000000045" height="7.199999999999932" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R2"><rect class="body" x="605.0999999999999" y="602.56" width="13.800000000000182" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="J3"><rect class="body" x="660.0" y="190.0" width="48" height="84" rx="3" fill="#f3ecdc" fill-opacity="0.75" stroke="#7a6b50" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="668.76" cy="201.52" r="7.2" fill="#c5a96d"/>
+<circle cx="668.76" cy="232.0" r="7.2" fill="#c5a96d"/>
+<circle cx="668.76" cy="262.48" r="7.2" fill="#c5a96d"/>
+<circle cx="699.24" cy="201.52" r="7.2" fill="#c5a96d"/>
+<circle cx="699.24" cy="232.0" r="7.2" fill="#c5a96d"/>
+<circle cx="699.24" cy="262.48" r="7.2" fill="#c5a96d"/>
+</g>
+<rect x="513.5999999999999" y="100" width="148.8" height="60" fill="#fff0b6" fill-opacity="0.8" stroke="#b7942b" stroke-width="1.3" stroke-dasharray="5 4"/>
+<rect x="513.5999999999999" y="100" width="148.8" height="60" fill="url(#hatch)"/>
+<text x="587.9999999999999" y="126" font-size="13" fill="#172d3d" text-anchor="middle" font-weight="700">OBSZAR ANTENY</text>
+<text x="587.9999999999999" y="147" font-size="12" fill="#172d3d" text-anchor="middle" font-weight="400">bez baterii i metalu</text>
+<g class="card" data-key="U3" tabindex="0" role="button" aria-label="Procesor + Bluetooth"><rect class="cardbox" x="34" y="115" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="58" cy="142" r="15" fill="#2563a6"/>
+<text x="58" y="148" font-size="18" fill="white" text-anchor="middle" font-weight="700">1</text>
+<text x="83" y="146" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Procesor + Bluetooth</text>
+<text x="52" y="171" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">MDBT50Q-P1MV2</text>
+<text x="52" y="193" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Steruje pomiarami i łącznością BLE.</text>
+</g>
+<circle cx="588.0" cy="208.0" r="11" fill="white" stroke="#2563a6" stroke-width="2.5"/>
+<text x="588.0" y="212.0" font-size="13" fill="#2563a6" text-anchor="middle" font-weight="700">1</text>
+<g class="card" data-key="U4" tabindex="0" role="button" aria-label="Czujnik ruchu — IMU"><rect class="cardbox" x="34" y="340" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="58" cy="367" r="15" fill="#bc4565"/>
+<text x="58" y="373" font-size="18" fill="white" text-anchor="middle" font-weight="700">2</text>
+<text x="83" y="371" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Czujnik ruchu — IMU</text>
+<text x="52" y="396" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">LSM6DSV32X</text>
+<text x="52" y="418" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Akcelerometr + żyroskop.</text>
+</g>
+<circle cx="489.59999999999997" cy="418.0" r="11" fill="white" stroke="#bc4565" stroke-width="2.5"/>
+<text x="489.59999999999997" y="422.0" font-size="13" fill="#bc4565" text-anchor="middle" font-weight="700">2</text>
+<g class="card" data-key="U5" tabindex="0" role="button" aria-label="Pamięć pomiarów"><rect class="cardbox" x="846" y="270" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="870" cy="297" r="15" fill="#7957a8"/>
+<text x="870" y="303" font-size="18" fill="white" text-anchor="middle" font-weight="700">3</text>
+<text x="895" y="301" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Pamięć pomiarów</text>
+<text x="864" y="326" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">W25Q01JV — 128 MiB</text>
+<text x="864" y="348" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Przechowuje sesje po treningu.</text>
+</g>
+<circle cx="636.0" cy="400.0" r="11" fill="white" stroke="#7957a8" stroke-width="2.5"/>
+<text x="636.0" y="404.0" font-size="13" fill="#7957a8" text-anchor="middle" font-weight="700">3</text>
+<g class="card" data-key="U2" tabindex="0" role="button" aria-label="Stabilizator napięcia"><rect class="cardbox" x="846" y="400" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="870" cy="427" r="15" fill="#168777"/>
+<text x="870" y="433" font-size="18" fill="white" text-anchor="middle" font-weight="700">4</text>
+<text x="895" y="431" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Stabilizator napięcia</text>
+<text x="864" y="456" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">TPS7A20 — 3,0 V</text>
+<text x="864" y="478" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Zasila układy stabilnym napięciem.</text>
+</g>
+<circle cx="663.5999999999999" cy="496.0" r="11" fill="white" stroke="#168777" stroke-width="2.5"/>
+<text x="663.5999999999999" y="500.0" font-size="13" fill="#168777" text-anchor="middle" font-weight="700">4</text>
+<g class="card" data-key="U1" tabindex="0" role="button" aria-label="Ładowarka akumulatora"><rect class="cardbox" x="34" y="675" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="58" cy="702" r="15" fill="#bc7727"/>
+<text x="58" y="708" font-size="18" fill="white" text-anchor="middle" font-weight="700">5</text>
+<text x="83" y="706" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Ładowarka akumulatora</text>
+<text x="52" y="731" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">BQ25185</text>
+<text x="52" y="753" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Ładuje LiPo i zarządza zasilaniem.</text>
+</g>
+<circle cx="576.0" cy="606.4000000000001" r="11" fill="white" stroke="#bc7727" stroke-width="2.5"/>
+<text x="576.0" y="610.4000000000001" font-size="13" fill="#bc7727" text-anchor="middle" font-weight="700">5</text>
+<g class="card" data-key="J1" tabindex="0" role="button" aria-label="Port USB-C"><rect class="cardbox" x="846" y="675" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="870" cy="702" r="15" fill="#547082"/>
+<text x="870" y="708" font-size="18" fill="white" text-anchor="middle" font-weight="700">6</text>
+<text x="895" y="706" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Port USB-C</text>
+<text x="864" y="731" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">Dolna krawędź PCB</text>
+<text x="864" y="753" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Ładowanie; przewidziane dane USB.</text>
+</g>
+<circle cx="588.0" cy="688.0" r="11" fill="white" stroke="#547082" stroke-width="2.5"/>
+<text x="588.0" y="692.0" font-size="13" fill="#547082" text-anchor="middle" font-weight="700">6</text>
+<g class="card" data-key="J2" tabindex="0" role="button" aria-label="Złącze akumulatora"><rect class="cardbox" x="34" y="555" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="58" cy="582" r="15" fill="#547082"/>
+<text x="58" y="588" font-size="18" fill="white" text-anchor="middle" font-weight="700">7</text>
+<text x="83" y="586" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Złącze akumulatora</text>
+<text x="52" y="611" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">JST — 3 przewody</text>
+<text x="52" y="633" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Plus, temperatura NTC i minus.</text>
+</g>
+<circle cx="459.59999999999997" cy="592.0" r="11" fill="white" stroke="#547082" stroke-width="2.5"/>
+<text x="459.59999999999997" y="596.0" font-size="13" fill="#547082" text-anchor="middle" font-weight="700">7</text>
+<g class="card" data-key="SW1" tabindex="0" role="button" aria-label="Przycisk i sygnalizacja"><rect class="cardbox" x="846" y="530" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="870" cy="557" r="15" fill="#39799b"/>
+<text x="870" y="563" font-size="18" fill="white" text-anchor="middle" font-weight="700">8</text>
+<text x="895" y="561" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Przycisk i sygnalizacja</text>
+<text x="864" y="586" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">SW1 + dioda D1</text>
+<text x="864" y="608" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Funkcje ustali program urządzenia.</text>
+</g>
+<circle cx="708.0" cy="563.1999999999999" r="11" fill="white" stroke="#39799b" stroke-width="2.5"/>
+<text x="708.0" y="567.1999999999999" font-size="13" fill="#39799b" text-anchor="middle" font-weight="700">8</text>
+<g class="card" data-key="J3" tabindex="0" role="button" aria-label="Programowanie — SWD"><rect class="cardbox" x="846" y="115" width="320" height="90" rx="10" fill="white" stroke="#d0dbe3" stroke-width="1"/>
+<circle cx="870" cy="142" r="15" fill="#71624d"/>
+<text x="870" y="148" font-size="18" fill="white" text-anchor="middle" font-weight="700">9</text>
+<text x="895" y="146" font-size="18" fill="#172d3d" text-anchor="start" font-weight="700">Programowanie — SWD</text>
+<text x="864" y="171" font-size="16" fill="#172d3d" text-anchor="start" font-weight="400">Pola po drugiej stronie płytki</text>
+<text x="864" y="193" font-size="14" fill="#516575" text-anchor="start" font-weight="400">Do wgrania programu i diagnostyki.</text>
+</g>
+<circle cx="684.0" cy="232.0" r="11" fill="white" stroke="#71624d" stroke-width="2.5"/>
+<text x="684.0" y="236.0" font-size="13" fill="#71624d" text-anchor="middle" font-weight="700">9</text>
+<path d="M420 754H780M420 748V760M780 748V760" stroke="#6c8090" fill="none"/>
+<text x="600" y="777" font-size="17" fill="#172d3d" text-anchor="middle" font-weight="400">30 mm</text>
+<path d="M405 100V719.2M399 100H411M399 719.2H411" stroke="#6c8090" fill="none"/>
+<text x="392" y="410" transform="rotate(-90 392 410)" text-anchor="middle" font-family="Arial" font-size="16" fill="#536778">51,6 mm</text>
+<text x="34" y="815" font-size="15" fill="#172d3d" text-anchor="start" font-weight="400">Szare elementy to m.in. rezystory, kondensatory i pomocnicze układy. Linie prowadzą do opisów — nie pokazują połączeń.</text>
+<text x="34" y="839" font-size="14" fill="#516575" text-anchor="start" font-weight="400">J3 pokazano przez płytkę; fizycznie znajduje się na spodzie. Mapa nie zastępuje CAD ani rysunku do wykonania obudowy.</text>
+</svg>

@@ -1,0 +1,780 @@
+[
+  {
+    "ref": "U1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/BQ25185DLHR_DLH0010A_TILandPattern.kicad_mod",
+    "source_sha256": "82c6bda83be7696ab94bda2a3e3ae547531606585d0d7d31323e7187660d331f",
+    "target": "hardware/footprints/AnkleSensor.pretty/BQ25185DLHR_DLH0010A_TILandPattern.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "U2",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SOT-23-5.kicad_mod",
+    "source_sha256": "8ef34d6b0092dce5135d1180c66213ba389f8b455c44f2a9c0cf3d02ce9e0699",
+    "target": "hardware/footprints/AnkleSensor.pretty/SOT-23-5.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Package_TO_SOT_SMD.3dshapes_SOT-23-5.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "J2",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal.kicad_mod",
+    "source_sha256": "993e4b286c438e92fc6c0841fdd11eceaa6cde3c3fe830cd78ca71716c24f784",
+    "target": "hardware/footprints/AnkleSensor.pretty/JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Connector_JST.3dshapes_JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R2",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R3",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R4",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R5",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C2",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C3",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C4",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C5",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R6",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R7",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C6",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "TP1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "TP2",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "TP3",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "TP4",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "U3",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/Raytac_MDBT50Q.kicad_mod",
+    "source_sha256": "93b03eabab519bb6d234bef52a0f9e9ec200adb4296d201dac002efaef980e9f",
+    "target": "hardware/footprints/AnkleSensor.pretty/Raytac_MDBT50Q.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Raytac_MDBT50Q.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "Y1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+    "source_sha256": "28faa27d46d1b7a410aabf99849dabafa77b0426265c9b8f9dcbe904eafdc905",
+    "target": "hardware/footprints/AnkleSensor.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C7",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C8",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C9",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C10",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C11",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R8",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "TP5",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "U4",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/ST_LSM6DSV32X_LGA14_3x2.5mm_P0.5mm.kicad_mod",
+    "source_sha256": "b57344539823fc7b38283e7547e778688406c4739ad1e1f215adda0d8e48bbde",
+    "target": "hardware/footprints/AnkleSensor.pretty/ST_LSM6DSV32X_LGA14_3x2.5mm_P0.5mm.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "U5",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.kicad_mod",
+    "source_sha256": "8b99375bfaffe07291c7ca63d8963ca0c7e99143cab6e7af61167f4b4f1c9a20",
+    "target": "hardware/footprints/AnkleSensor.pretty/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/W25Q01JVZEIQ_ENVELOPE_MAX.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C12",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C13",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C14",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C15",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C16",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "7fde131e187fcafb4c6c49f5d7d357c5e13e910f2e5dab9f276c4de2159d4308",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R9",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R10",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R11",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R12",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R13",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "TP6",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "TP7",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "J1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+    "source_sha256": "6a47842cd8459930217dc4c0ebf041e682f2451ac191da7015562089ff06ea7f",
+    "target": "hardware/footprints/AnkleSensor.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+    "models": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step",
+        "available": false
+      }
+    ]
+  },
+  {
+    "ref": "U6",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SOT-23-6.kicad_mod",
+    "source_sha256": "dba4b12a4fb66526a255742d79322bd88a2ab6ce0a0c46650ed4dea21b5f9a7d",
+    "target": "hardware/footprints/AnkleSensor.pretty/SOT-23-6.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Package_TO_SOT_SMD.3dshapes_SOT-23-6.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R14",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R15",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "J3",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SWD_Pogo_2x03_P2.54mm.kicad_mod",
+    "source_sha256": "abee1b34f9fd6127356226fbb1855203151c35b7870fd63b09081b0181fa3472",
+    "target": "hardware/footprints/AnkleSensor.pretty/SWD_Pogo_2x03_P2.54mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "SW1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SW_SPST_SKQG_WithStem.kicad_mod",
+    "source_sha256": "fcccbc308475aca61696115c5ab69dc2c91e32c2ee6c42b1c931e8f5df03d069",
+    "target": "hardware/footprints/AnkleSensor.pretty/SW_SPST_SKQG_WithStem.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Button_Switch_SMD.3dshapes_SW_SPST_SKQG_WithStem.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R16",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C17",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "D1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/LED_0603_1608Metric.kicad_mod",
+    "source_sha256": "71cb594d6bfb0d83d9918ed7a2be616b8f2acdfb203addae004a08c879a5dddc",
+    "target": "hardware/footprints/AnkleSensor.pretty/LED_0603_1608Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/LED_SMD.3dshapes_LED_0603_1608Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R17",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "TP8",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "TP9",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+    "target": "hardware/footprints/AnkleSensor.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+    "models": []
+  },
+  {
+    "ref": "U7",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/VSSOP-8_3x3mm_P0.65mm.kicad_mod",
+    "source_sha256": "f0eb0201e7e6f730e45e3682687149acc3884cbd1749f9af3f9896b381f0ffb7",
+    "target": "hardware/footprints/AnkleSensor.pretty/VSSOP-8_3x3mm_P0.65mm.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Package_SO.3dshapes_VSSOP-8_3x3mm_P0.65mm.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "Q1",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SOT-23.kicad_mod",
+    "source_sha256": "5bafe890514cb074a97823ecb2f45c44256562fdd82b9789aa68b08b766075a4",
+    "target": "hardware/footprints/AnkleSensor.pretty/SOT-23.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Package_TO_SOT_SMD.3dshapes_SOT-23.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R18",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R19",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R20",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R21",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R22",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R23",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C18",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "U8",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SOT-23.kicad_mod",
+    "source_sha256": "5bafe890514cb074a97823ecb2f45c44256562fdd82b9789aa68b08b766075a4",
+    "target": "hardware/footprints/AnkleSensor.pretty/SOT-23.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Package_TO_SOT_SMD.3dshapes_SOT-23.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "Q2",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/SOT-23.kicad_mod",
+    "source_sha256": "5bafe890514cb074a97823ecb2f45c44256562fdd82b9789aa68b08b766075a4",
+    "target": "hardware/footprints/AnkleSensor.pretty/SOT-23.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Package_TO_SOT_SMD.3dshapes_SOT-23.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R24",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "C19",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "8c64934a27471ea2a4c287ae862e19d17345e581cc2cc0a61d97485bdbbd1820",
+    "target": "hardware/footprints/AnkleSensor.pretty/C_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes_C_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  },
+  {
+    "ref": "R25",
+    "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "2304e336cd80ba422eec288e1803ccda195fc64efd332e5bfa2c105aef882ffb",
+    "target": "hardware/footprints/AnkleSensor.pretty/R_0402_1005Metric.kicad_mod",
+    "models": [
+      {
+        "path": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes_R_0402_1005Metric.step",
+        "available": true
+      }
+    ]
+  }
+]

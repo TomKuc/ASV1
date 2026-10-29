@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1188" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<g font-family="Arial, sans-serif">
+<text x="10" y="10" font-size="1.5" text-anchor="start" fill="#a32121">A0 REVIEW / custom SVG renderer / NOT a KiCad export / NOT FOR FABRICATION</text>
+<text x="25.0" y="17.0" font-size="1.05" text-anchor="start" fill="#222">INDEPENDENT BATTERY NTC WINDOW - REVIEW DRAFT</text>
+<text x="25.0" y="25.0" font-size="1.05" text-anchor="start" fill="#222">NTC103AT-2 /10k B3435 must be on CELL. No10k bypass resistor is permitted.</text>
+<text x="25.0" y="33.0" font-size="1.05" text-anchor="start" fill="#222">Firmware P1.14 HIGH=inhibit viaQ2; LOW/HiZ permits hardware control.</text>
+<text x="25.0" y="281.0" font-size="1.05" text-anchor="start" fill="#222">U8 holdsALLOWlow during reference startup. See tolerance calculation and tests.</text>
+<text x="25.0" y="289.0" font-size="1.05" text-anchor="start" fill="#222">Pack acceptance: R0C&gt;=24k, R45C&lt;=5.20k, monotonic. Physical qualification required.</text>
+<path d="M61.03,58.65 L53.41,58.65" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M61.03,61.19 L53.41,61.19" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M61.03,63.73 L53.41,63.73" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M61.03,66.27 L53.41,66.27" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M61.03,68.81 L53.41,68.81" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M61.03,71.35 L53.41,71.35" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M88.97,63.73 L96.59,63.73" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M88.97,66.27 L96.59,66.27" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M267.38,65.0 L259.76,65.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M282.62,63.73 L290.24,63.73" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M282.62,66.27 L290.24,66.27" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M59.92,125.0 L52.3,125.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M70.08,125.0 L77.7,125.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M159.92,125.0 L152.3,125.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M170.08,125.0 L177.7,125.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M59.92,165.0 L52.3,165.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M70.08,165.0 L77.7,165.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M159.92,165.0 L152.3,165.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M170.08,165.0 L177.7,165.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M269.92,125.0 L262.3,125.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M280.08,125.0 L287.7,125.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M269.92,165.0 L262.3,165.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M280.08,165.0 L287.7,165.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M269.92,210.0 L262.3,210.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M280.08,210.0 L287.7,210.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M62.3,208.73 L54.68,208.73" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M62.3,211.27 L54.68,211.27" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M87.7,210.0 L95.32,210.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M357.38,65.0 L349.76,65.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M372.62,63.73 L380.24,63.73" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M372.62,66.27 L380.24,66.27" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M159.92,250.0 L152.3,250.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M170.08,250.0 L177.7,250.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M159.92,210.0 L152.3,210.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M170.08,210.0 L177.7,210.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<rect x="63.57" y="56.11" width="22.860000000000007" height="17.78" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M61.03,58.65 L63.57,58.65" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.07" y="58.9" font-size="0.8" text-anchor="start" fill="#2b6b69">VCC</text>
+<text x="62.300000000000004" y="58.35" font-size="0.75" text-anchor="middle" fill="#8b1919">8</text>
+<path d="M61.03,61.19 L63.57,61.19" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.07" y="61.44" font-size="0.8" text-anchor="start" fill="#2b6b69">INA+</text>
+<text x="62.300000000000004" y="60.89" font-size="0.75" text-anchor="middle" fill="#8b1919">3</text>
+<path d="M61.03,63.73 L63.57,63.73" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.07" y="63.98" font-size="0.8" text-anchor="start" fill="#2b6b69">INA-</text>
+<text x="62.300000000000004" y="63.43" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<path d="M61.03,66.27 L63.57,66.27" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.07" y="66.52" font-size="0.8" text-anchor="start" fill="#2b6b69">INB+</text>
+<text x="62.300000000000004" y="65.97" font-size="0.75" text-anchor="middle" fill="#8b1919">5</text>
+<path d="M61.03,68.81 L63.57,68.81" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.07" y="69.06" font-size="0.8" text-anchor="start" fill="#2b6b69">INB-</text>
+<text x="62.300000000000004" y="68.51" font-size="0.75" text-anchor="middle" fill="#8b1919">6</text>
+<path d="M61.03,71.35 L63.57,71.35" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.07" y="71.6" font-size="0.8" text-anchor="start" fill="#2b6b69">GND</text>
+<text x="62.300000000000004" y="71.05" font-size="0.75" text-anchor="middle" fill="#8b1919">4</text>
+<path d="M88.97,63.73 L86.42999999999999,63.73" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="85.92999999999999" y="63.98" font-size="0.8" text-anchor="end" fill="#2b6b69">OUTA</text>
+<text x="87.7" y="63.43" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M88.97,66.27 L86.42999999999999,66.27" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="85.92999999999999" y="66.52" font-size="0.8" text-anchor="end" fill="#2b6b69">OUTB</text>
+<text x="87.7" y="65.97" font-size="0.75" text-anchor="middle" fill="#8b1919">7</text>
+<text x="75.0" y="51.91" font-size="0.95" text-anchor="middle" fill="#222">U7</text>
+<text x="75.0" y="54.31" font-size="0.95" text-anchor="middle" fill="#222">TLV7042DGKR</text>
+<rect x="269.92" y="61.19" width="10.159999999999968" height="7.6200000000000045" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M267.38,65.0 L269.92,65.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="270.42" y="65.25" font-size="0.8" text-anchor="start" fill="#2b6b69">G</text>
+<text x="268.65" y="64.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M282.62,63.73 L280.08,63.73" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="279.58" y="63.98" font-size="0.8" text-anchor="end" fill="#2b6b69">D</text>
+<text x="281.35" y="63.43" font-size="0.75" text-anchor="middle" fill="#8b1919">3</text>
+<path d="M282.62,66.27 L280.08,66.27" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="279.58" y="66.52" font-size="0.8" text-anchor="end" fill="#2b6b69">S</text>
+<text x="281.35" y="65.97" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="275.0" y="56.989999999999995" font-size="0.95" text-anchor="middle" fill="#222">Q1</text>
+<text x="275.0" y="59.39" font-size="0.95" text-anchor="middle" fill="#222">AO3400A</text>
+<rect x="62.46" y="123.73" width="5.080000000000005" height="2.539999999999992" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M59.92,125.0 L62.46,125.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="62.96" y="125.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="61.190000000000005" y="124.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M70.08,125.0 L67.53999999999999,125.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="67.03999999999999" y="125.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="68.81" y="124.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="65.0" y="119.53" font-size="0.95" text-anchor="middle" fill="#222">R18</text>
+<text x="65.0" y="121.93" font-size="0.95" text-anchor="middle" fill="#222">100k 0.1%</text>
+<rect x="162.46" y="123.73" width="5.079999999999984" height="2.539999999999992" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M159.92,125.0 L162.45999999999998,125.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="162.95999999999998" y="125.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="161.19" y="124.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M170.08,125.0 L167.54000000000002,125.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="167.04000000000002" y="125.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="168.81" y="124.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="165.0" y="119.53" font-size="0.95" text-anchor="middle" fill="#222">R19</text>
+<text x="165.0" y="121.93" font-size="0.95" text-anchor="middle" fill="#222">10k 0.1%</text>
+<rect x="62.46" y="163.73" width="5.080000000000005" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M59.92,165.0 L62.46,165.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="62.96" y="165.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="61.190000000000005" y="164.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M70.08,165.0 L67.53999999999999,165.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="67.03999999999999" y="165.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="68.81" y="164.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="65.0" y="159.53" font-size="0.95" text-anchor="middle" fill="#222">R20</text>
+<text x="65.0" y="161.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">27.4k 0.1%</text>
+<rect x="162.46" y="163.73" width="5.079999999999984" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M159.92,165.0 L162.45999999999998,165.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="162.95999999999998" y="165.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="161.19" y="164.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M170.08,165.0 L167.54000000000002,165.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="167.04000000000002" y="165.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="168.81" y="164.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="165.0" y="159.53" font-size="0.95" text-anchor="middle" fill="#222">R21</text>
+<text x="165.0" y="161.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">10k 0.1%</text>
+<rect x="272.46" y="123.73" width="5.080000000000041" height="2.539999999999992" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M269.92,125.0 L272.46000000000004,125.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.96000000000004" y="125.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="271.19" y="124.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M280.08,125.0 L277.53999999999996,125.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="277.03999999999996" y="125.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="278.81" y="124.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="275.0" y="119.53" font-size="0.95" text-anchor="middle" fill="#222">R22</text>
+<text x="275.0" y="121.93" font-size="0.95" text-anchor="middle" fill="#222">100k 1%</text>
+<rect x="272.46" y="163.73" width="5.080000000000041" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M269.92,165.0 L272.46000000000004,165.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.96000000000004" y="165.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="271.19" y="164.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M280.08,165.0 L277.53999999999996,165.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="277.03999999999996" y="165.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="278.81" y="164.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="275.0" y="159.53" font-size="0.95" text-anchor="middle" fill="#222">R23</text>
+<text x="275.0" y="161.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">1M 1%</text>
+<path d="M272.46,210.0 L274.492,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M275.508,210.0 L277.54,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M274.492,211.524 L274.492,208.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M275.508,211.524 L275.508,208.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M269.92,210.0 L272.46000000000004,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.96000000000004" y="210.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="271.19" y="209.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M280.08,210.0 L277.53999999999996,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="277.03999999999996" y="210.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="278.81" y="209.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="275.0" y="203.895" font-size="0.95" text-anchor="middle" fill="#222">C18</text>
+<text x="275.0" y="206.295" font-size="0.95" text-anchor="middle" fill="#222">100n 16V X7R</text>
+<rect x="64.84" y="206.19" width="20.319999999999993" height="7.6200000000000045" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M62.3,208.73 L64.84,208.73" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="65.34" y="208.98" font-size="0.8" text-anchor="start" fill="#2b6b69">VDD</text>
+<text x="63.57" y="208.42999999999998" font-size="0.75" text-anchor="middle" fill="#8b1919">3</text>
+<path d="M62.3,211.27 L64.84,211.27" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="65.34" y="211.52" font-size="0.8" text-anchor="start" fill="#2b6b69">GND</text>
+<text x="63.57" y="210.97" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M87.7,210.0 L85.16,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="84.66" y="210.25" font-size="0.8" text-anchor="end" fill="#2b6b69">nRESET</text>
+<text x="86.43" y="209.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="75.0" y="201.99" font-size="0.95" text-anchor="middle" fill="#222">U8</text>
+<text x="75.0" y="204.39" font-size="0.95" text-anchor="middle" fill="#222">TLV803EA26DBZR</text>
+<rect x="359.92" y="61.19" width="10.159999999999968" height="7.6200000000000045" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M357.38,65.0 L359.92,65.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="360.42" y="65.25" font-size="0.8" text-anchor="start" fill="#2b6b69">G</text>
+<text x="358.65" y="64.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M372.62,63.73 L370.08,63.73" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="369.58" y="63.98" font-size="0.8" text-anchor="end" fill="#2b6b69">D</text>
+<text x="371.35" y="63.43" font-size="0.75" text-anchor="middle" fill="#8b1919">3</text>
+<path d="M372.62,66.27 L370.08,66.27" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="369.58" y="66.52" font-size="0.8" text-anchor="end" fill="#2b6b69">S</text>
+<text x="371.35" y="65.97" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="365.0" y="56.989999999999995" font-size="0.95" text-anchor="middle" fill="#222">Q2</text>
+<text x="365.0" y="59.39" font-size="0.95" text-anchor="middle" fill="#222">AO3400A</text>
+<rect x="162.46" y="248.73" width="5.079999999999984" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M159.92,250.0 L162.45999999999998,250.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="162.95999999999998" y="250.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="161.19" y="249.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M170.08,250.0 L167.54000000000002,250.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="167.04000000000002" y="250.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="168.81" y="249.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="165.0" y="244.53" font-size="0.95" text-anchor="middle" fill="#222">R24</text>
+<text x="165.0" y="246.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">100k 1%</text>
+<path d="M162.46,210.0 L164.492,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M165.508,210.0 L167.54,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M164.492,211.524 L164.492,208.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M165.508,211.524 L165.508,208.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M159.92,210.0 L162.45999999999998,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="162.95999999999998" y="210.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="161.19" y="209.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M170.08,210.0 L167.54000000000002,210.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="167.04000000000002" y="210.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="168.81" y="209.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="165.0" y="203.895" font-size="0.95" text-anchor="middle" fill="#222">C19</text>
+<text x="165.0" y="206.295" font-size="0.95" text-anchor="middle" fill="#222">100n 16V X7R</text>
+<text x="53.41" y="58.3" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="53.41" y="60.839999999999996" font-size="0.9" text-anchor="end" fill="#13663a">NTC_TS</text>
+<text x="53.41" y="63.379999999999995" font-size="0.9" text-anchor="end" fill="#13663a">NTC_REF_HOT</text>
+<text x="53.41" y="65.92" font-size="0.9" text-anchor="end" fill="#13663a">NTC_REF_COLD</text>
+<text x="53.41" y="68.46000000000001" font-size="0.9" text-anchor="end" fill="#13663a">NTC_TS</text>
+<text x="53.41" y="71.0" font-size="0.9" text-anchor="end" fill="#13663a">GND</text>
+<text x="96.59" y="63.379999999999995" font-size="0.9" text-anchor="start" fill="#13663a">CHG_ALLOW_H</text>
+<text x="96.59" y="65.92" font-size="0.9" text-anchor="start" fill="#13663a">CHG_ALLOW_H</text>
+<text x="259.76" y="64.65" font-size="0.9" text-anchor="end" fill="#13663a">CHG_ALLOW_H</text>
+<text x="290.24" y="63.379999999999995" font-size="0.9" text-anchor="start" fill="#13663a">CHG_CE_N</text>
+<text x="290.24" y="65.92" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="52.3" y="124.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="77.7" y="124.65" font-size="0.9" text-anchor="start" fill="#13663a">NTC_REF_HOT</text>
+<text x="152.3" y="124.65" font-size="0.9" text-anchor="end" fill="#13663a">NTC_REF_HOT</text>
+<text x="177.7" y="124.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="52.3" y="164.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="77.7" y="164.65" font-size="0.9" text-anchor="start" fill="#13663a">NTC_REF_COLD</text>
+<text x="152.3" y="164.65" font-size="0.9" text-anchor="end" fill="#13663a">NTC_REF_COLD</text>
+<text x="177.7" y="164.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="262.3" y="124.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="287.7" y="124.65" font-size="0.9" text-anchor="start" fill="#13663a">CHG_ALLOW_H</text>
+<text x="262.3" y="164.65" font-size="0.9" text-anchor="end" fill="#13663a">CHG_ALLOW_H</text>
+<text x="287.7" y="164.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="262.3" y="209.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="287.7" y="209.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="54.68" y="208.38" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="54.68" y="210.92000000000002" font-size="0.9" text-anchor="end" fill="#13663a">GND</text>
+<text x="95.32" y="209.65" font-size="0.9" text-anchor="start" fill="#13663a">CHG_ALLOW_H</text>
+<text x="349.76" y="64.65" font-size="0.9" text-anchor="end" fill="#13663a">CHG_INHIBIT</text>
+<text x="380.24" y="63.379999999999995" font-size="0.9" text-anchor="start" fill="#13663a">CHG_ALLOW_H</text>
+<text x="380.24" y="65.92" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="152.3" y="249.65" font-size="0.9" text-anchor="end" fill="#13663a">CHG_INHIBIT</text>
+<text x="177.7" y="249.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="152.3" y="209.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="177.7" y="209.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="10" y="295" font-size="1.1" text-anchor="start" fill="#222">temperature.kicad_sch / coordinates and pin labels read from .kicad_sch / review only</text>
+</g></svg>

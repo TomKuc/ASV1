@@ -1,0 +1,964 @@
+{
+  "date": "2026-10-28",
+  "board_sha256_at_read": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "board_size_mm": [
+    30,
+    51.6
+  ],
+  "method": "Native KiCad footprint positions and same-side courtyard polygon collision; nominal FAB AABB distances.",
+  "limitations": "No 3D solid interference test; battery, housing, screws, cables and connector plug absent.",
+  "imu_distances": {
+    "SW1": {
+      "center_distance_mm": 21.855205,
+      "fab_aabb_min_gap_mm": 16.19946
+    },
+    "J1": {
+      "center_distance_mm": 23.947651,
+      "fab_aabb_min_gap_mm": 17.629149
+    },
+    "J2": {
+      "center_distance_mm": 14.713939,
+      "fab_aabb_min_gap_mm": 10.65
+    },
+    "U1": {
+      "center_distance_mm": 17.272232,
+      "fab_aabb_min_gap_mm": 14.088027
+    },
+    "U2": {
+      "center_distance_mm": 15.890249,
+      "fab_aabb_min_gap_mm": 12.653063
+    }
+  },
+  "same_side_populated_courtyard_overlaps": [],
+  "missing_linked_model_files": [
+    {
+      "reference": "J1",
+      "model": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+    }
+  ],
+  "mandatory_rf_keepout_board_coordinates_mm": [
+    57.8,
+    49.8,
+    70.2,
+    55.0
+  ],
+  "rf_note": "Extend all-Cu antenna keepout to the actual PCB edge; native refill/DRC required after integration.",
+  "footprints": {
+    "J1": {
+      "position_mm": [
+        64.0,
+        99.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        59.48,
+        95.3,
+        68.52,
+        102.7
+      ]
+    },
+    "Q2": {
+      "position_mm": [
+        52.5,
+        80.4
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        51.8,
+        78.9,
+        53.2,
+        81.9
+      ]
+    },
+    "C2": {
+      "position_mm": [
+        61.6,
+        89.4
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        61.15,
+        88.55,
+        62.05,
+        90.25
+      ]
+    },
+    "R8": {
+      "position_mm": [
+        71.5,
+        58.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        70.925,
+        58.18,
+        72.075,
+        58.82
+      ]
+    },
+    "R25": {
+      "position_mm": [
+        71.2,
+        92.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        70.625,
+        91.88,
+        71.775,
+        92.52
+      ]
+    },
+    "U6": {
+      "position_mm": [
+        75.8,
+        94.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        74.95,
+        92.7,
+        76.65,
+        95.7
+      ]
+    },
+    "R14": {
+      "position_mm": [
+        70.5,
+        96.4
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        69.925,
+        96.08,
+        71.075,
+        96.72
+      ]
+    },
+    "U7": {
+      "position_mm": [
+        55.9,
+        84.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        54.35,
+        82.65,
+        57.45,
+        85.75
+      ]
+    },
+    "U4": {
+      "position_mm": [
+        55.8,
+        76.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        54.25,
+        75.2,
+        57.35,
+        77.8
+      ]
+    },
+    "Q1": {
+      "position_mm": [
+        58.55,
+        88.3
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        57.85,
+        86.8,
+        59.25,
+        89.8
+      ]
+    },
+    "R16": {
+      "position_mm": [
+        78.7,
+        84.8
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        78.125,
+        84.48,
+        79.275,
+        85.12
+      ]
+    },
+    "R15": {
+      "position_mm": [
+        70.5,
+        98.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        69.925,
+        97.88,
+        71.075,
+        98.52
+      ]
+    },
+    "U3": {
+      "position_mm": [
+        64.0,
+        59.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        58.7,
+        51.2,
+        69.3,
+        66.8
+      ]
+    },
+    "C8": {
+      "position_mm": [
+        62.2,
+        70.6
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        61.65,
+        70.3,
+        62.75,
+        70.9
+      ]
+    },
+    "R9": {
+      "position_mm": [
+        56.0,
+        72.7
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        55.425,
+        72.38,
+        56.575,
+        73.02
+      ]
+    },
+    "U1": {
+      "position_mm": [
+        63.0,
+        92.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        61.85,
+        91.15,
+        64.15,
+        93.25
+      ]
+    },
+    "C16": {
+      "position_mm": [
+        74.3,
+        75.6
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        73.85,
+        74.75,
+        74.75,
+        76.45
+      ]
+    },
+    "C10": {
+      "position_mm": [
+        66.0,
+        68.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        65.45,
+        67.7,
+        66.55,
+        68.3
+      ]
+    },
+    "R19": {
+      "position_mm": [
+        51.5,
+        84.4
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        50.925,
+        84.08,
+        52.075,
+        84.72
+      ]
+    },
+    "C3": {
+      "position_mm": [
+        59.35,
+        92.1
+      ],
+      "angle_deg": 180.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        58.5,
+        91.65,
+        60.2,
+        92.55
+      ]
+    },
+    "R17": {
+      "position_mm": [
+        75.5,
+        80.3
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        74.925,
+        79.98,
+        76.075,
+        80.62
+      ]
+    },
+    "U5": {
+      "position_mm": [
+        68.0,
+        75.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        63.95,
+        71.95,
+        72.05,
+        78.05
+      ]
+    },
+    "C17": {
+      "position_mm": [
+        78.7,
+        82.9
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        78.15,
+        82.6,
+        79.25,
+        83.2
+      ]
+    },
+    "U8": {
+      "position_mm": [
+        64.0,
+        84.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        63.3,
+        83.0,
+        64.7,
+        86.0
+      ]
+    },
+    "Y1": {
+      "position_mm": [
+        61.0,
+        68.5
+      ],
+      "angle_deg": 180.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        59.35,
+        67.7,
+        62.65,
+        69.3
+      ]
+    },
+    "R1": {
+      "position_mm": [
+        65.9,
+        93.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        65.325,
+        92.88,
+        66.475,
+        93.52
+      ]
+    },
+    "C9": {
+      "position_mm": [
+        68.6,
+        68.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        67.75,
+        67.55,
+        69.45,
+        68.45
+      ]
+    },
+    "C18": {
+      "position_mm": [
+        58.0,
+        81.9
+      ],
+      "angle_deg": 180.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        57.45,
+        81.6,
+        58.55,
+        82.2
+      ]
+    },
+    "C11": {
+      "position_mm": [
+        70.9,
+        66.8
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        70.45,
+        65.95,
+        71.35,
+        67.65
+      ]
+    },
+    "R13": {
+      "position_mm": [
+        75.5,
+        61.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        74.925,
+        61.18,
+        76.075,
+        61.82
+      ]
+    },
+    "C15": {
+      "position_mm": [
+        74.0,
+        73.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        73.45,
+        72.7,
+        74.55,
+        73.3
+      ]
+    },
+    "R12": {
+      "position_mm": [
+        74.8,
+        68.7
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        74.225,
+        68.38,
+        75.375,
+        69.02
+      ]
+    },
+    "J2": {
+      "position_mm": [
+        53.3,
+        91.0
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        51.575,
+        88.45,
+        55.925,
+        93.55
+      ]
+    },
+    "R18": {
+      "position_mm": [
+        51.5,
+        82.7
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        50.925,
+        82.38,
+        52.075,
+        83.02
+      ]
+    },
+    "R6": {
+      "position_mm": [
+        52.0,
+        72.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        51.425,
+        71.68,
+        52.575,
+        72.32
+      ]
+    },
+    "R23": {
+      "position_mm": [
+        66.9,
+        86.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        66.325,
+        85.68,
+        67.475,
+        86.32
+      ]
+    },
+    "C5": {
+      "position_mm": [
+        71.45,
+        79.8
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        71.0,
+        78.95,
+        71.9,
+        80.65
+      ]
+    },
+    "C13": {
+      "position_mm": [
+        56.1,
+        79.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        55.55,
+        78.9,
+        56.65,
+        79.5
+      ]
+    },
+    "C14": {
+      "position_mm": [
+        58.6,
+        80.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        57.75,
+        79.75,
+        59.45,
+        80.65
+      ]
+    },
+    "R3": {
+      "position_mm": [
+        63.5,
+        89.7
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        62.925,
+        89.38,
+        64.075,
+        90.02
+      ]
+    },
+    "D1": {
+      "position_mm": [
+        77.2,
+        78.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        76.35,
+        78.05,
+        78.05,
+        78.95
+      ]
+    },
+    "C7": {
+      "position_mm": [
+        59.8,
+        70.6
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        59.25,
+        70.3,
+        60.35,
+        70.9
+      ]
+    },
+    "R22": {
+      "position_mm": [
+        61.5,
+        87.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        60.925,
+        86.68,
+        62.075,
+        87.32
+      ]
+    },
+    "C4": {
+      "position_mm": [
+        69.15,
+        79.8
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        68.7,
+        78.95,
+        69.6,
+        80.65
+      ]
+    },
+    "C19": {
+      "position_mm": [
+        66.9,
+        84.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        66.35,
+        84.2,
+        67.45,
+        84.8
+      ]
+    },
+    "R7": {
+      "position_mm": [
+        52.0,
+        73.7
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        51.425,
+        73.38,
+        52.575,
+        74.02
+      ]
+    },
+    "U2": {
+      "position_mm": [
+        70.3,
+        83.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        69.45,
+        81.5,
+        71.15,
+        84.5
+      ]
+    },
+    "R20": {
+      "position_mm": [
+        60.5,
+        84.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        59.925,
+        83.88,
+        61.075,
+        84.52
+      ]
+    },
+    "R21": {
+      "position_mm": [
+        60.5,
+        85.8
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        59.925,
+        85.48,
+        61.075,
+        86.12
+      ]
+    },
+    "R4": {
+      "position_mm": [
+        55.5,
+        69.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        54.925,
+        68.68,
+        56.075,
+        69.32
+      ]
+    },
+    "SW1": {
+      "position_mm": [
+        74.0,
+        88.6
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        71.35,
+        85.95,
+        76.65,
+        91.25
+      ]
+    },
+    "R10": {
+      "position_mm": [
+        74.8,
+        70.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        74.225,
+        70.18,
+        75.375,
+        70.82
+      ]
+    },
+    "C6": {
+      "position_mm": [
+        52.0,
+        75.4
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        51.45,
+        75.1,
+        52.55,
+        75.7
+      ]
+    },
+    "R24": {
+      "position_mm": [
+        73.4,
+        85.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        72.825,
+        84.68,
+        73.975,
+        85.32
+      ]
+    },
+    "C1": {
+      "position_mm": [
+        65.5,
+        90.0
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        65.05,
+        89.15,
+        65.95,
+        90.85
+      ]
+    },
+    "R11": {
+      "position_mm": [
+        71.5,
+        61.5
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        70.925,
+        61.18,
+        72.075,
+        61.82
+      ]
+    },
+    "R5": {
+      "position_mm": [
+        53.2,
+        69.0
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        52.625,
+        68.68,
+        53.775,
+        69.32
+      ]
+    },
+    "C12": {
+      "position_mm": [
+        59.2,
+        77.7
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        58.65,
+        77.4,
+        59.75,
+        78.0
+      ]
+    },
+    "R2": {
+      "position_mm": [
+        66.0,
+        92.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Cu",
+      "fab_aabb_including_stroke_mm": [
+        65.425,
+        91.88,
+        66.575,
+        92.52
+      ]
+    },
+    "TP5": {
+      "position_mm": [
+        71.5,
+        65.8
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP8": {
+      "position_mm": [
+        56.0,
+        90.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP1": {
+      "position_mm": [
+        60.0,
+        90.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP7": {
+      "position_mm": [
+        59.0,
+        76.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP9": {
+      "position_mm": [
+        64.0,
+        86.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP2": {
+      "position_mm": [
+        73.0,
+        84.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP6": {
+      "position_mm": [
+        59.0,
+        74.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "J3": {
+      "position_mm": [
+        72.0,
+        61.0
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP4": {
+      "position_mm": [
+        53.0,
+        95.3
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    },
+    "TP3": {
+      "position_mm": [
+        56.5,
+        93.5
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Cu",
+      "fab_aabb_including_stroke_mm": null
+    }
+  }
+}

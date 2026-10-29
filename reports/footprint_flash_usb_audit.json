@@ -1,0 +1,1018 @@
+{
+  "checked_at_utc": "2026-10-28T12:22:32.542166+00:00",
+  "scope": "Library copy integrity, manifest pad numbers, coincident pad net names, and model-file existence. Not board DRC or full mechanical validation.",
+  "footprints": [
+    {
+      "ref": "U5",
+      "project_library_id": "AnkleSensor:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Package_SON.pretty/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.kicad_mod",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.kicad_mod",
+      "sha256": "e2f247a30fb0641050d1e5bf0563b48484511721768db90c8491c09c544ba755",
+      "byte_identical_to_kicad": true,
+      "manifest_pin_set_match": true,
+      "coincident_pad_net_match": true,
+      "pads": [
+        {
+          "number": "",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-0.85",
+            "-1.075"
+          ],
+          "size": [
+            "1.37",
+            "1.73"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-0.85",
+            "1.075"
+          ],
+          "size": [
+            "1.37",
+            "1.73"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "0.85",
+            "-1.075"
+          ],
+          "size": [
+            "1.37",
+            "1.73"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "0.85",
+            "1.075"
+          ],
+          "size": [
+            "1.37",
+            "1.73"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "1",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-3.75",
+            "-1.905"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-3.75",
+            "-0.635"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-3.75",
+            "0.635"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-3.75",
+            "1.905"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "3.75",
+            "1.905"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "3.75",
+            "0.635"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "3.75",
+            "-0.635"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "3.75",
+            "-1.905"
+          ],
+          "size": [
+            "0.65",
+            "0.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "9",
+          "kind": "smd",
+          "shape": "rect",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "3.4",
+            "4.3"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        }
+      ],
+      "models": [
+        {
+          "source_model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.step",
+          "resolved_path": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_SON.3dshapes/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.step",
+          "exists": false
+        }
+      ],
+      "mechanical_release": false,
+      "kicad_native_load": {
+        "pass": true,
+        "numbered_pad_set_match": true,
+        "pad_count": 13,
+        "version": "10.0.7"
+      }
+    },
+    {
+      "ref": "U1",
+      "project_library_id": "AnkleSensor:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Package_DFN_QFN.pretty/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "sha256": "a8999e50824e26d5c7422c6c70039b9608f3c2156a652189e2668c9f058ab62a",
+      "byte_identical_to_kicad": true,
+      "manifest_pin_set_match": true,
+      "coincident_pad_net_match": true,
+      "pads": [
+        {
+          "number": "",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "0.84",
+            "1.41"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "1",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.1",
+            "-0.8"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.1",
+            "-0.4"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.1",
+            "0"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.1",
+            "0.4"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.1",
+            "0.8"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.1",
+            "0.8"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.1",
+            "0.4"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.1",
+            "0"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "9",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.1",
+            "-0.4"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "10",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.1",
+            "-0.8"
+          ],
+          "size": [
+            "0.75",
+            "0.2"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "11",
+          "kind": "smd",
+          "shape": "rect",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "0.9",
+            "1.5"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        }
+      ],
+      "models": [
+        {
+          "source_model": "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.step",
+          "resolved_path": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_DFN_QFN.3dshapes/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.step",
+          "exists": true
+        }
+      ],
+      "mechanical_release": false,
+      "kicad_native_load": {
+        "pass": true,
+        "numbered_pad_set_match": true,
+        "pad_count": 12,
+        "version": "10.0.7"
+      }
+    },
+    {
+      "ref": "J1",
+      "project_library_id": "AnkleSensor:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Connector_USB.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "sha256": "c562a7f9713a8b754c4d2305a2ea15453469a1c8c48a9b17973383e8993fc750",
+      "byte_identical_to_kicad": true,
+      "manifest_pin_set_match": true,
+      "coincident_pad_net_match": true,
+      "pads": [
+        {
+          "number": "",
+          "kind": "np_thru_hole",
+          "shape": "circle",
+          "at": [
+            "-2.89",
+            "-2.6"
+          ],
+          "size": [
+            "0.65",
+            "0.65"
+          ],
+          "drill": [
+            "0.65"
+          ],
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
+        },
+        {
+          "number": "",
+          "kind": "np_thru_hole",
+          "shape": "circle",
+          "at": [
+            "2.89",
+            "-2.6"
+          ],
+          "size": [
+            "0.65",
+            "0.65"
+          ],
+          "drill": [
+            "0.65"
+          ],
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
+        },
+        {
+          "number": "A1",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-3.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A4",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-2.45",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A5",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A6",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-0.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A7",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "0.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A8",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A9",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "2.45",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "A12",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "3.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B1",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "3.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B4",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "2.45",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B5",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "1.75",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B6",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "0.75",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B7",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-0.75",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B8",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-1.75",
+            "-4.045"
+          ],
+          "size": [
+            "0.3",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B9",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-2.45",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "B12",
+          "kind": "smd",
+          "shape": "roundrect",
+          "at": [
+            "-3.25",
+            "-4.045"
+          ],
+          "size": [
+            "0.6",
+            "1.45"
+          ],
+          "drill": [],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "SH",
+          "kind": "thru_hole",
+          "shape": "oval",
+          "at": [
+            "-4.32",
+            "-3.13"
+          ],
+          "size": [
+            "1",
+            "2.1"
+          ],
+          "drill": [
+            "oval",
+            "0.6",
+            "1.7"
+          ],
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
+        },
+        {
+          "number": "SH",
+          "kind": "thru_hole",
+          "shape": "oval",
+          "at": [
+            "-4.32",
+            "1.05"
+          ],
+          "size": [
+            "1",
+            "1.6"
+          ],
+          "drill": [
+            "oval",
+            "0.6",
+            "1.2"
+          ],
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
+        },
+        {
+          "number": "SH",
+          "kind": "thru_hole",
+          "shape": "oval",
+          "at": [
+            "4.32",
+            "-3.13"
+          ],
+          "size": [
+            "1",
+            "2.1"
+          ],
+          "drill": [
+            "oval",
+            "0.6",
+            "1.7"
+          ],
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
+        },
+        {
+          "number": "SH",
+          "kind": "thru_hole",
+          "shape": "oval",
+          "at": [
+            "4.32",
+            "1.05"
+          ],
+          "size": [
+            "1",
+            "1.6"
+          ],
+          "drill": [
+            "oval",
+            "0.6",
+            "1.2"
+          ],
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
+        }
+      ],
+      "models": [
+        {
+          "source_model": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step",
+          "resolved_path": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step",
+          "exists": false
+        }
+      ],
+      "mechanical_release": false,
+      "kicad_native_load": {
+        "pass": true,
+        "numbered_pad_set_match": true,
+        "pad_count": 22,
+        "version": "10.0.7"
+      }
+    }
+  ],
+  "project_derivatives": [
+    {
+      "ref": "U1",
+      "project_library_id": "AnkleSensor:BQ25185DLHR_DLH0010A_TILandPattern",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/BQ25185DLHR_DLH0010A_TILandPattern.kicad_mod",
+      "derived_from": "hardware/footprints/AnkleSensor.pretty/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.kicad_mod",
+      "source_unchanged_copy_retained": true,
+      "basis": "TI DLH0010A 4226298/A 10/2020 example board and stencil layouts; BQ25185 Rev B PDF pages 30-31",
+      "sha256": "82c6bda83be7696ab94bda2a3e3ae547531606585d0d7d31323e7187660d331f",
+      "signal_pads_mm": {
+        "size": [
+          0.5,
+          0.2
+        ],
+        "row_x": [
+          -1.05,
+          1.05
+        ],
+        "pitch": 0.4
+      },
+      "ep_mm": [
+        0.9,
+        1.5
+      ],
+      "ep_paste_mm": [
+        0.85,
+        1.38
+      ],
+      "ep_paste_corner_radius_mm": 0.05,
+      "project_step": "hardware/3dmodels/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.step",
+      "step_sha256": "34747b1d75b2d7b89e73cb59f90728014a11068ca31a1051b13fdfcc717942d2",
+      "mechanical_release": false,
+      "kicad_native_load": {
+        "pass": true,
+        "pad_count": 12,
+        "version": "10.0.7"
+      }
+    }
+  ]
+}

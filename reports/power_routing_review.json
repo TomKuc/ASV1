@@ -1,0 +1,5660 @@
+{
+  "date": "2026-10-28",
+  "source": "hardware/Ankle_Sensor_V1.kicad_pcb",
+  "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "source_unchanged_during_read": true,
+  "kicad_version": "10.0.7",
+  "native_unconnected_count": 0,
+  "method": "Read-only native connectivity adjacency on F.Cu with no zone shortcuts; records explicit track coordinates. F_connectivity_track_weight is a topology search weight, NOT physical centreline length: native copper can touch at pad interiors or overlapping track edges. Pad/via centre distances are exact geometry. Rail continuity on In2 separately checked by saved filled polygon and a local 0.05mm grid search. No PDN or thermal simulation.",
+  "zones": [
+    {
+      "net": "GND",
+      "layers": [
+        "In1.Cu"
+      ],
+      "filled": true,
+      "filled_area_mm2": 1355.17024
+    },
+    {
+      "net": "+3V0",
+      "layers": [
+        "In2.Cu"
+      ],
+      "filled": true,
+      "filled_area_mm2": 1278.117
+    }
+  ],
+  "loops": [
+    {
+      "ic": "U1",
+      "pin": "10",
+      "cap": "C1",
+      "net": "VBUS",
+      "ic_pad_mm": [
+        64.05,
+        91.4
+      ],
+      "cap_signal_mm": [
+        65.5,
+        90.775
+      ],
+      "straight_pad_distance_mm": 1.57896,
+      "F_only_native_connected": true,
+      "F_connectivity_track_weight_mm": 0.58284,
+      "F_only_path": [
+        {
+          "uuid": "20a4e3c3-df1d-4e49-85a2-54beea4036ec",
+          "class": "PAD",
+          "net": "VBUS",
+          "ref": "U1",
+          "pin": "10",
+          "xy_mm": [
+            64.05,
+            91.4
+          ]
+        },
+        {
+          "uuid": "3cc6c90b-dba4-4d59-886e-6088cd99e5e8",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            64.25,
+            91.4
+          ],
+          "end_mm": [
+            64.45,
+            91.2
+          ],
+          "width_mm": 0.15,
+          "segment_length_mm": 0.28284,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "c301da3e-71f0-4a36-b1ae-da1fba92f8b7",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            64.65,
+            91.1
+          ],
+          "end_mm": [
+            64.95,
+            91.1
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.3,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "facbc291-103d-4610-aa25-467442a8c9db",
+          "class": "PAD",
+          "net": "VBUS",
+          "ref": "C1",
+          "pin": "1",
+          "xy_mm": [
+            65.5,
+            90.775
+          ]
+        }
+      ],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "c550749a-4ce7-4aa6-9a56-ebdb88083205",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            65.5,
+            88.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.825,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "1f4da8a3-2770-4a4a-b433-9a62e3533fdc",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C1",
+            "pin": "2",
+            "xy_mm": [
+              65.5,
+              89.225
+            ]
+          },
+          {
+            "uuid": "e0ca815a-a3df-495d-b2fc-57c3ac14d2e3",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              65.5,
+              89.2
+            ],
+            "end_mm": [
+              65.5,
+              88.4
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "c550749a-4ce7-4aa6-9a56-ebdb88083205",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              65.5,
+              88.4
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "0c824095-5c66-4cea-aaa7-b1d94ec68ef0",
+          "class": "PCB_VIA",
+          "net": "VBUS",
+          "xy_mm": [
+            66.0,
+            91.55
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 0.92229,
+        "F_native_track_weight_mm": 0.99497,
+        "path": [
+          {
+            "uuid": "facbc291-103d-4610-aa25-467442a8c9db",
+            "class": "PAD",
+            "net": "VBUS",
+            "ref": "C1",
+            "pin": "1",
+            "xy_mm": [
+              65.5,
+              90.775
+            ]
+          },
+          {
+            "uuid": "91299961-4249-4c4a-a460-14d40a45c04c",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              65.15,
+              91.2
+            ],
+            "end_mm": [
+              65.5,
+              91.55
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.49497,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ad30fcac-988c-4b30-8f18-af7e78f444a9",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              65.5,
+              91.55
+            ],
+            "end_mm": [
+              66.0,
+              91.55
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "0c824095-5c66-4cea-aaa7-b1d94ec68ef0",
+            "class": "PCB_VIA",
+            "net": "VBUS",
+            "xy_mm": [
+              66.0,
+              91.55
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "0c824095-5c66-4cea-aaa7-b1d94ec68ef0",
+          "class": "PCB_VIA",
+          "net": "VBUS",
+          "xy_mm": [
+            66.0,
+            91.55
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 1.95576,
+        "F_native_track_weight_mm": 1.57782,
+        "path": [
+          {
+            "uuid": "20a4e3c3-df1d-4e49-85a2-54beea4036ec",
+            "class": "PAD",
+            "net": "VBUS",
+            "ref": "U1",
+            "pin": "10",
+            "xy_mm": [
+              64.05,
+              91.4
+            ]
+          },
+          {
+            "uuid": "3cc6c90b-dba4-4d59-886e-6088cd99e5e8",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              64.25,
+              91.4
+            ],
+            "end_mm": [
+              64.45,
+              91.2
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.28284,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "c301da3e-71f0-4a36-b1ae-da1fba92f8b7",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              64.65,
+              91.1
+            ],
+            "end_mm": [
+              64.95,
+              91.1
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "91299961-4249-4c4a-a460-14d40a45c04c",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              65.15,
+              91.2
+            ],
+            "end_mm": [
+              65.5,
+              91.55
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.49497,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ad30fcac-988c-4b30-8f18-af7e78f444a9",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              65.5,
+              91.55
+            ],
+            "end_mm": [
+              66.0,
+              91.55
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "0c824095-5c66-4cea-aaa7-b1d94ec68ef0",
+            "class": "PCB_VIA",
+            "net": "VBUS",
+            "xy_mm": [
+              66.0,
+              91.55
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U1",
+      "pin": "1",
+      "cap": "C2",
+      "net": "VSYS",
+      "ic_pad_mm": [
+        61.95,
+        91.4
+      ],
+      "cap_signal_mm": [
+        61.6,
+        90.175
+      ],
+      "straight_pad_distance_mm": 1.27402,
+      "F_only_native_connected": true,
+      "F_connectivity_track_weight_mm": 1.575,
+      "F_only_path": [
+        {
+          "uuid": "1bda738f-7573-4e90-b7c6-b202e764b0f8",
+          "class": "PAD",
+          "net": "VSYS",
+          "ref": "U1",
+          "pin": "1",
+          "xy_mm": [
+            61.95,
+            91.4
+          ]
+        },
+        {
+          "uuid": "91b349c2-fda7-4255-a704-0e8b6c5a4c25",
+          "class": "PCB_TRACK",
+          "net": "VSYS",
+          "start_mm": [
+            61.95,
+            91.4
+          ],
+          "end_mm": [
+            61.3,
+            91.4
+          ],
+          "width_mm": 0.15,
+          "segment_length_mm": 0.65,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "854b414e-5a71-4a4d-aaaa-6452d53f9142",
+          "class": "PCB_TRACK",
+          "net": "VSYS",
+          "start_mm": [
+            61.3,
+            91.4
+          ],
+          "end_mm": [
+            61.3,
+            90.475
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.925,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "e44af72f-85a6-4ddc-93e9-d4aa416d37c2",
+          "class": "PAD",
+          "net": "VSYS",
+          "ref": "C2",
+          "pin": "1",
+          "xy_mm": [
+            61.6,
+            90.175
+          ]
+        }
+      ],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "ce24c939-5942-4c42-beed-c7f4903dd5d0",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            60.75,
+            88.65
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "36e1db2d-cf64-4287-9d6a-e601dcd63869",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C2",
+            "pin": "2",
+            "xy_mm": [
+              61.6,
+              88.625
+            ]
+          },
+          {
+            "uuid": "22b1b336-5dd9-4ff5-b284-3f488bbd69be",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              61.55,
+              88.65
+            ],
+            "end_mm": [
+              60.75,
+              88.65
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ce24c939-5942-4c42-beed-c7f4903dd5d0",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              60.75,
+              88.65
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "1204379d-1319-43c4-8bb4-27c67e2e7f10",
+          "class": "PCB_VIA",
+          "net": "VSYS",
+          "xy_mm": [
+            60.75,
+            90.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 0.87928,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "e44af72f-85a6-4ddc-93e9-d4aa416d37c2",
+            "class": "PAD",
+            "net": "VSYS",
+            "ref": "C2",
+            "pin": "1",
+            "xy_mm": [
+              61.6,
+              90.175
+            ]
+          },
+          {
+            "uuid": "4ff765b4-6510-430f-ad4b-8d7e2d57ac68",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              60.85,
+              90.3
+            ],
+            "end_mm": [
+              61.4,
+              90.3
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "1204379d-1319-43c4-8bb4-27c67e2e7f10",
+            "class": "PCB_VIA",
+            "net": "VSYS",
+            "xy_mm": [
+              60.75,
+              90.4
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "1204379d-1319-43c4-8bb4-27c67e2e7f10",
+          "class": "PCB_VIA",
+          "net": "VSYS",
+          "xy_mm": [
+            60.75,
+            90.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 1.56205,
+        "F_native_track_weight_mm": 2.125,
+        "path": [
+          {
+            "uuid": "1bda738f-7573-4e90-b7c6-b202e764b0f8",
+            "class": "PAD",
+            "net": "VSYS",
+            "ref": "U1",
+            "pin": "1",
+            "xy_mm": [
+              61.95,
+              91.4
+            ]
+          },
+          {
+            "uuid": "91b349c2-fda7-4255-a704-0e8b6c5a4c25",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              61.95,
+              91.4
+            ],
+            "end_mm": [
+              61.3,
+              91.4
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.65,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "854b414e-5a71-4a4d-aaaa-6452d53f9142",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              61.3,
+              91.4
+            ],
+            "end_mm": [
+              61.3,
+              90.475
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.925,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4ff765b4-6510-430f-ad4b-8d7e2d57ac68",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              60.85,
+              90.3
+            ],
+            "end_mm": [
+              61.4,
+              90.3
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "1204379d-1319-43c4-8bb4-27c67e2e7f10",
+            "class": "PCB_VIA",
+            "net": "VSYS",
+            "xy_mm": [
+              60.75,
+              90.4
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U1",
+      "pin": "2",
+      "cap": "C3",
+      "net": "VBAT",
+      "ic_pad_mm": [
+        61.95,
+        91.8
+      ],
+      "cap_signal_mm": [
+        60.125,
+        92.1
+      ],
+      "straight_pad_distance_mm": 1.84949,
+      "F_only_native_connected": true,
+      "F_connectivity_track_weight_mm": 1.525,
+      "F_only_path": [
+        {
+          "uuid": "744e93b9-6f73-406e-9355-addac5c63311",
+          "class": "PAD",
+          "net": "VBAT",
+          "ref": "U1",
+          "pin": "2",
+          "xy_mm": [
+            61.95,
+            91.8
+          ]
+        },
+        {
+          "uuid": "e0efec91-32b1-4049-ad31-64f924894ccc",
+          "class": "PCB_TRACK",
+          "net": "VBAT",
+          "start_mm": [
+            61.95,
+            91.8
+          ],
+          "end_mm": [
+            60.425,
+            91.8
+          ],
+          "width_mm": 0.15,
+          "segment_length_mm": 1.525,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "d2ee252f-95e6-490c-b6c4-febefc8c4ef4",
+          "class": "PAD",
+          "net": "VBAT",
+          "ref": "C3",
+          "pin": "1",
+          "xy_mm": [
+            60.125,
+            92.1
+          ]
+        }
+      ],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "a45774fe-ffbf-490f-ad48-a472f429e3ca",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            57.8,
+            92.1
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.775,
+        "F_native_track_weight_mm": 1.1,
+        "path": [
+          {
+            "uuid": "bd8df531-f71f-4c21-9f6a-f5fb7daa4c80",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C3",
+            "pin": "2",
+            "xy_mm": [
+              58.575,
+              92.1
+            ]
+          },
+          {
+            "uuid": "6cb3aefd-efb7-4454-9482-584dd6496644",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              58.9,
+              92.1
+            ],
+            "end_mm": [
+              57.8,
+              92.1
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 1.1,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "a45774fe-ffbf-490f-ad48-a472f429e3ca",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              57.8,
+              92.1
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "f24d7e8d-9635-4959-a445-f206f34897ff",
+          "class": "PCB_VIA",
+          "net": "VBAT",
+          "xy_mm": [
+            58.15,
+            92.95
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 2.15015,
+        "F_native_track_weight_mm": 1.62009,
+        "path": [
+          {
+            "uuid": "d2ee252f-95e6-490c-b6c4-febefc8c4ef4",
+            "class": "PAD",
+            "net": "VBAT",
+            "ref": "C3",
+            "pin": "1",
+            "xy_mm": [
+              60.125,
+              92.1
+            ]
+          },
+          {
+            "uuid": "05ca882c-4cfb-4955-a0f0-778e22601a2c",
+            "class": "PCB_TRACK",
+            "net": "VBAT",
+            "start_mm": [
+              59.4,
+              92.9
+            ],
+            "end_mm": [
+              59.55,
+              92.35
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.57009,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ef0dc85e-8d26-4e48-ae0b-e6ec147ec70a",
+            "class": "PCB_TRACK",
+            "net": "VBAT",
+            "start_mm": [
+              58.15,
+              92.95
+            ],
+            "end_mm": [
+              59.2,
+              92.95
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.05,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "f24d7e8d-9635-4959-a445-f206f34897ff",
+            "class": "PCB_VIA",
+            "net": "VBAT",
+            "xy_mm": [
+              58.15,
+              92.95
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "f24d7e8d-9635-4959-a445-f206f34897ff",
+          "class": "PCB_VIA",
+          "net": "VBAT",
+          "xy_mm": [
+            58.15,
+            92.95
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 3.9702,
+        "F_native_track_weight_mm": 3.14509,
+        "path": [
+          {
+            "uuid": "744e93b9-6f73-406e-9355-addac5c63311",
+            "class": "PAD",
+            "net": "VBAT",
+            "ref": "U1",
+            "pin": "2",
+            "xy_mm": [
+              61.95,
+              91.8
+            ]
+          },
+          {
+            "uuid": "e0efec91-32b1-4049-ad31-64f924894ccc",
+            "class": "PCB_TRACK",
+            "net": "VBAT",
+            "start_mm": [
+              61.95,
+              91.8
+            ],
+            "end_mm": [
+              60.425,
+              91.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 1.525,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "d2ee252f-95e6-490c-b6c4-febefc8c4ef4",
+            "class": "PAD",
+            "net": "VBAT",
+            "ref": "C3",
+            "pin": "1",
+            "xy_mm": [
+              60.125,
+              92.1
+            ]
+          },
+          {
+            "uuid": "05ca882c-4cfb-4955-a0f0-778e22601a2c",
+            "class": "PCB_TRACK",
+            "net": "VBAT",
+            "start_mm": [
+              59.4,
+              92.9
+            ],
+            "end_mm": [
+              59.55,
+              92.35
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.57009,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ef0dc85e-8d26-4e48-ae0b-e6ec147ec70a",
+            "class": "PCB_TRACK",
+            "net": "VBAT",
+            "start_mm": [
+              58.15,
+              92.95
+            ],
+            "end_mm": [
+              59.2,
+              92.95
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.05,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "f24d7e8d-9635-4959-a445-f206f34897ff",
+            "class": "PCB_VIA",
+            "net": "VBAT",
+            "xy_mm": [
+              58.15,
+              92.95
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U2",
+      "pin": "1",
+      "cap": "C4",
+      "net": "VSYS",
+      "ic_pad_mm": [
+        69.1625,
+        82.05
+      ],
+      "cap_signal_mm": [
+        69.15,
+        80.575
+      ],
+      "straight_pad_distance_mm": 1.47505,
+      "F_only_native_connected": true,
+      "F_connectivity_track_weight_mm": 1.47505,
+      "F_only_path": [
+        {
+          "uuid": "2f2af1d2-b1fb-491c-95ba-b8d20fbdd83d",
+          "class": "PAD",
+          "net": "VSYS",
+          "ref": "U2",
+          "pin": "1",
+          "xy_mm": [
+            69.1625,
+            82.05
+          ]
+        },
+        {
+          "uuid": "0e38c555-a331-4798-840b-2524071e048a",
+          "class": "PCB_TRACK",
+          "net": "VSYS",
+          "start_mm": [
+            69.1625,
+            82.05
+          ],
+          "end_mm": [
+            69.15,
+            80.575
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 1.47505,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "0eb72926-be3f-46dc-ba40-d589bff66fca",
+          "class": "PAD",
+          "net": "VSYS",
+          "ref": "C4",
+          "pin": "1",
+          "xy_mm": [
+            69.15,
+            80.575
+          ]
+        }
+      ],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "f66c258b-1003-4c4d-a48e-ab8594dec65a",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            69.15,
+            78.3
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.725,
+        "F_native_track_weight_mm": 0.725,
+        "path": [
+          {
+            "uuid": "3ff4b1c1-9f05-40de-9fc0-075716399c78",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C4",
+            "pin": "2",
+            "xy_mm": [
+              69.15,
+              79.025
+            ]
+          },
+          {
+            "uuid": "920623c0-1690-4037-bf89-a668d7d4e79b",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              69.15,
+              79.025
+            ],
+            "end_mm": [
+              69.15,
+              78.3
+            ],
+            "width_mm": 0.2,
+            "segment_length_mm": 0.725,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "f66c258b-1003-4c4d-a48e-ab8594dec65a",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              69.15,
+              78.3
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "9e0676fa-c666-43db-bcd4-048f80a8e089",
+          "class": "PCB_VIA",
+          "net": "VSYS",
+          "xy_mm": [
+            68.15,
+            83.85
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 3.42427,
+        "F_native_track_weight_mm": 4.58755,
+        "path": [
+          {
+            "uuid": "0eb72926-be3f-46dc-ba40-d589bff66fca",
+            "class": "PAD",
+            "net": "VSYS",
+            "ref": "C4",
+            "pin": "1",
+            "xy_mm": [
+              69.15,
+              80.575
+            ]
+          },
+          {
+            "uuid": "0e38c555-a331-4798-840b-2524071e048a",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              69.1625,
+              82.05
+            ],
+            "end_mm": [
+              69.15,
+              80.575
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.47505,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "41c41d4b-d7fe-491c-ba62-260dbdbe3b41",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              69.1625,
+              82.05
+            ],
+            "end_mm": [
+              67.95,
+              82.05
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.2125,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "48ecf341-3fbe-4519-8275-372176e7c78a",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              67.95,
+              82.05
+            ],
+            "end_mm": [
+              67.95,
+              83.95
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.9,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "9e0676fa-c666-43db-bcd4-048f80a8e089",
+            "class": "PCB_VIA",
+            "net": "VSYS",
+            "xy_mm": [
+              68.15,
+              83.85
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "9e0676fa-c666-43db-bcd4-048f80a8e089",
+          "class": "PCB_VIA",
+          "net": "VSYS",
+          "xy_mm": [
+            68.15,
+            83.85
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 2.06522,
+        "F_native_track_weight_mm": 3.1125,
+        "path": [
+          {
+            "uuid": "2f2af1d2-b1fb-491c-95ba-b8d20fbdd83d",
+            "class": "PAD",
+            "net": "VSYS",
+            "ref": "U2",
+            "pin": "1",
+            "xy_mm": [
+              69.1625,
+              82.05
+            ]
+          },
+          {
+            "uuid": "41c41d4b-d7fe-491c-ba62-260dbdbe3b41",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              69.1625,
+              82.05
+            ],
+            "end_mm": [
+              67.95,
+              82.05
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.2125,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "48ecf341-3fbe-4519-8275-372176e7c78a",
+            "class": "PCB_TRACK",
+            "net": "VSYS",
+            "start_mm": [
+              67.95,
+              82.05
+            ],
+            "end_mm": [
+              67.95,
+              83.95
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.9,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "9e0676fa-c666-43db-bcd4-048f80a8e089",
+            "class": "PCB_VIA",
+            "net": "VSYS",
+            "xy_mm": [
+              68.15,
+              83.85
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U2",
+      "pin": "5",
+      "cap": "C5",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        71.4375,
+        82.05
+      ],
+      "cap_signal_mm": [
+        71.45,
+        80.575
+      ],
+      "straight_pad_distance_mm": 1.47505,
+      "F_only_native_connected": true,
+      "F_connectivity_track_weight_mm": 1.47505,
+      "F_only_path": [
+        {
+          "uuid": "cd5babfa-4c31-4e04-badd-c84f85502281",
+          "class": "PAD",
+          "net": "+3V0",
+          "ref": "U2",
+          "pin": "5",
+          "xy_mm": [
+            71.4375,
+            82.05
+          ]
+        },
+        {
+          "uuid": "fed75fb4-5a11-4216-98d1-da8f4b2c19d1",
+          "class": "PCB_TRACK",
+          "net": "+3V0",
+          "start_mm": [
+            71.4375,
+            82.05
+          ],
+          "end_mm": [
+            71.45,
+            80.575
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 1.47505,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "bcf1d6ff-302b-48fe-a8b8-644f7e0aa89f",
+          "class": "PAD",
+          "net": "+3V0",
+          "ref": "C5",
+          "pin": "1",
+          "xy_mm": [
+            71.45,
+            80.575
+          ]
+        }
+      ],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "c33d0a5e-877f-4174-8489-0b7f8e8987d2",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            71.45,
+            78.3
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.725,
+        "F_native_track_weight_mm": 0.725,
+        "path": [
+          {
+            "uuid": "a27d31e3-d685-4ad7-9427-6b39a1ff535b",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C5",
+            "pin": "2",
+            "xy_mm": [
+              71.45,
+              79.025
+            ]
+          },
+          {
+            "uuid": "20138217-efed-42b0-9d5d-1bbe9d447c8b",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              71.45,
+              79.025
+            ],
+            "end_mm": [
+              71.45,
+              78.3
+            ],
+            "width_mm": 0.2,
+            "segment_length_mm": 0.725,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "c33d0a5e-877f-4174-8489-0b7f8e8987d2",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              71.45,
+              78.3
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "266ef579-fdeb-4e73-9435-a22f451e1270",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            70.6,
+            80.55
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "bcf1d6ff-302b-48fe-a8b8-644f7e0aa89f",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C5",
+            "pin": "1",
+            "xy_mm": [
+              71.45,
+              80.575
+            ]
+          },
+          {
+            "uuid": "34e31e44-15a6-46fc-aca1-b405ba5d6de7",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              71.4,
+              80.55
+            ],
+            "end_mm": [
+              70.6,
+              80.55
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "266ef579-fdeb-4e73-9435-a22f451e1270",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              70.6,
+              80.55
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "266ef579-fdeb-4e73-9435-a22f451e1270",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            70.6,
+            80.55
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 1.71797,
+        "F_native_track_weight_mm": 2.27505,
+        "path": [
+          {
+            "uuid": "cd5babfa-4c31-4e04-badd-c84f85502281",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U2",
+            "pin": "5",
+            "xy_mm": [
+              71.4375,
+              82.05
+            ]
+          },
+          {
+            "uuid": "fed75fb4-5a11-4216-98d1-da8f4b2c19d1",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              71.4375,
+              82.05
+            ],
+            "end_mm": [
+              71.45,
+              80.575
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.47505,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "34e31e44-15a6-46fc-aca1-b405ba5d6de7",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              71.4,
+              80.55
+            ],
+            "end_mm": [
+              70.6,
+              80.55
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "266ef579-fdeb-4e73-9435-a22f451e1270",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              70.6,
+              80.55
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 0.0,
+        "local_native_filled_polygon_grid_path_mm": 0.0,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "28",
+      "cap": "C10",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        65.6,
+        66.15
+      ],
+      "cap_signal_mm": [
+        65.52,
+        68.0
+      ],
+      "straight_pad_distance_mm": 1.85173,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "4c34107c-4aa2-469f-82e8-b335b64b217e",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            66.5,
+            68.65
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.65031,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "75c65346-80f8-412c-952c-e70bba8966f2",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C10",
+            "pin": "2",
+            "xy_mm": [
+              66.48,
+              68.0
+            ]
+          },
+          {
+            "uuid": "8eab3228-4c37-42c3-a72e-c7c0564c9c02",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              66.5,
+              68.05
+            ],
+            "end_mm": [
+              66.5,
+              68.65
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4c34107c-4aa2-469f-82e8-b335b64b217e",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              66.5,
+              68.65
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "54f17a50-08b7-4c06-b44d-db65296dbbce",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            64.9,
+            68.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "946aec8c-e457-4534-aa8b-034efe565541",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C10",
+            "pin": "1",
+            "xy_mm": [
+              65.52,
+              68.0
+            ]
+          },
+          {
+            "uuid": "09c37a01-71c0-48f4-b75e-099a9c9d76b0",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              65.45,
+              68.0
+            ],
+            "end_mm": [
+              64.9,
+              68.0
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "54f17a50-08b7-4c06-b44d-db65296dbbce",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              64.9,
+              68.0
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "4f1c6049-6171-4f3e-8e0b-b7384134ecb4",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            65.6,
+            66.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.65,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "368538d1-4f90-441b-997b-f73ae2aeef2a",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U3",
+            "pin": "28",
+            "xy_mm": [
+              65.6,
+              66.15
+            ]
+          },
+          {
+            "uuid": "046424a4-23a1-465f-9dc3-ace9d7498587",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              65.6,
+              66.2
+            ],
+            "end_mm": [
+              65.6,
+              66.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4f1c6049-6171-4f3e-8e0b-b7384134ecb4",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              65.6,
+              66.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.38924,
+        "local_native_filled_polygon_grid_path_mm": 1.48995,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "28",
+      "cap": "C9",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        65.6,
+        66.15
+      ],
+      "cap_signal_mm": [
+        67.825,
+        68.0
+      ],
+      "straight_pad_distance_mm": 2.89364,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "40eb3f91-3beb-4328-88d4-d0abb576390a",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            69.35,
+            67.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "d72959e6-b1c0-4aca-81d1-f99ecfe4b74e",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C9",
+            "pin": "2",
+            "xy_mm": [
+              69.375,
+              68.0
+            ]
+          },
+          {
+            "uuid": "6c879a5a-5169-4bf2-a74f-57c9f3a3b64d",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              69.35,
+              67.95
+            ],
+            "end_mm": [
+              69.35,
+              67.15
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "40eb3f91-3beb-4328-88d4-d0abb576390a",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              69.35,
+              67.15
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "4d7e5cc9-de47-4eca-aef8-3f2eea04aa37",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            67.85,
+            67.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "e2b39e33-c71c-4a4d-bccc-85a49632b587",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C9",
+            "pin": "1",
+            "xy_mm": [
+              67.825,
+              68.0
+            ]
+          },
+          {
+            "uuid": "bbd22d7e-5063-4fc1-9c9d-54e83f2452a2",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              67.85,
+              67.95
+            ],
+            "end_mm": [
+              67.85,
+              67.15
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4d7e5cc9-de47-4eca-aef8-3f2eea04aa37",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              67.85,
+              67.15
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "4f1c6049-6171-4f3e-8e0b-b7384134ecb4",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            65.6,
+            66.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.65,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "368538d1-4f90-441b-997b-f73ae2aeef2a",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U3",
+            "pin": "28",
+            "xy_mm": [
+              65.6,
+              66.15
+            ]
+          },
+          {
+            "uuid": "046424a4-23a1-465f-9dc3-ace9d7498587",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              65.6,
+              66.2
+            ],
+            "end_mm": [
+              65.6,
+              66.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4f1c6049-6171-4f3e-8e0b-b7384134ecb4",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              65.6,
+              66.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 2.27706,
+        "local_native_filled_polygon_grid_path_mm": 2.39497,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "30",
+      "cap": "C10",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        66.4,
+        66.15
+      ],
+      "cap_signal_mm": [
+        65.52,
+        68.0
+      ],
+      "straight_pad_distance_mm": 2.04863,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "4c34107c-4aa2-469f-82e8-b335b64b217e",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            66.5,
+            68.65
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.65031,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "75c65346-80f8-412c-952c-e70bba8966f2",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C10",
+            "pin": "2",
+            "xy_mm": [
+              66.48,
+              68.0
+            ]
+          },
+          {
+            "uuid": "8eab3228-4c37-42c3-a72e-c7c0564c9c02",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              66.5,
+              68.05
+            ],
+            "end_mm": [
+              66.5,
+              68.65
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4c34107c-4aa2-469f-82e8-b335b64b217e",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              66.5,
+              68.65
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "54f17a50-08b7-4c06-b44d-db65296dbbce",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            64.9,
+            68.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "946aec8c-e457-4534-aa8b-034efe565541",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C10",
+            "pin": "1",
+            "xy_mm": [
+              65.52,
+              68.0
+            ]
+          },
+          {
+            "uuid": "09c37a01-71c0-48f4-b75e-099a9c9d76b0",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              65.45,
+              68.0
+            ],
+            "end_mm": [
+              64.9,
+              68.0
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "54f17a50-08b7-4c06-b44d-db65296dbbce",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              64.9,
+              68.0
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "6b2edbdf-c764-4757-a007-9a1e142277d6",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            66.4,
+            66.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.65,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "21a599fe-e4e8-4fd6-9b59-d2af29ce9501",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U3",
+            "pin": "30",
+            "xy_mm": [
+              66.4,
+              66.15
+            ]
+          },
+          {
+            "uuid": "451ddbbb-afb7-44cb-9798-9c20099fad77",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              66.4,
+              66.2
+            ],
+            "end_mm": [
+              66.4,
+              66.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "6b2edbdf-c764-4757-a007-9a1e142277d6",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              66.4,
+              66.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.92094,
+        "local_native_filled_polygon_grid_path_mm": 1.99706,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "30",
+      "cap": "C9",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        66.4,
+        66.15
+      ],
+      "cap_signal_mm": [
+        67.825,
+        68.0
+      ],
+      "straight_pad_distance_mm": 2.33519,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "40eb3f91-3beb-4328-88d4-d0abb576390a",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            69.35,
+            67.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "d72959e6-b1c0-4aca-81d1-f99ecfe4b74e",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C9",
+            "pin": "2",
+            "xy_mm": [
+              69.375,
+              68.0
+            ]
+          },
+          {
+            "uuid": "6c879a5a-5169-4bf2-a74f-57c9f3a3b64d",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              69.35,
+              67.95
+            ],
+            "end_mm": [
+              69.35,
+              67.15
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "40eb3f91-3beb-4328-88d4-d0abb576390a",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              69.35,
+              67.15
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "4d7e5cc9-de47-4eca-aef8-3f2eea04aa37",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            67.85,
+            67.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "e2b39e33-c71c-4a4d-bccc-85a49632b587",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C9",
+            "pin": "1",
+            "xy_mm": [
+              67.825,
+              68.0
+            ]
+          },
+          {
+            "uuid": "bbd22d7e-5063-4fc1-9c9d-54e83f2452a2",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              67.85,
+              67.95
+            ],
+            "end_mm": [
+              67.85,
+              67.15
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4d7e5cc9-de47-4eca-aef8-3f2eea04aa37",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              67.85,
+              67.15
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "6b2edbdf-c764-4757-a007-9a1e142277d6",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            66.4,
+            66.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.65,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "21a599fe-e4e8-4fd6-9b59-d2af29ce9501",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U3",
+            "pin": "30",
+            "xy_mm": [
+              66.4,
+              66.15
+            ]
+          },
+          {
+            "uuid": "451ddbbb-afb7-44cb-9798-9c20099fad77",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              66.4,
+              66.2
+            ],
+            "end_mm": [
+              66.4,
+              66.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "6b2edbdf-c764-4757-a007-9a1e142277d6",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              66.4,
+              66.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.49164,
+        "local_native_filled_polygon_grid_path_mm": 1.59497,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "32",
+      "cap": "C11",
+      "net": "VBUS",
+      "ic_pad_mm": [
+        68.0,
+        66.15
+      ],
+      "cap_signal_mm": [
+        70.9,
+        67.575
+      ],
+      "straight_pad_distance_mm": 3.2312,
+      "F_only_native_connected": true,
+      "F_connectivity_track_weight_mm": 4.69203,
+      "F_only_path": [
+        {
+          "uuid": "af6aedd5-6030-4932-81b7-1739dfe7805a",
+          "class": "PAD",
+          "net": "VBUS",
+          "ref": "U3",
+          "pin": "32",
+          "xy_mm": [
+            68.0,
+            66.15
+          ]
+        },
+        {
+          "uuid": "9e505ccd-b4b9-4a3e-b173-7e0125194e65",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            68.15,
+            66.65
+          ],
+          "end_mm": [
+            68.15,
+            66.35
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.3,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "8dd1440b-9e05-4e81-95d2-b8ac056de5ca",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            68.45,
+            66.95
+          ],
+          "end_mm": [
+            68.15,
+            66.65
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.42426,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "d0b2db26-a6cd-4eb2-8cce-d2ba5c0f1307",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            68.45,
+            67.4
+          ],
+          "end_mm": [
+            68.45,
+            66.95
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.45,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "30f502d9-8b0a-4402-8868-392f8f3058ef",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            68.6,
+            68.45
+          ],
+          "end_mm": [
+            68.6,
+            67.55
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.9,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "c429d636-b8af-4951-ad20-d9d128ac5aac",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            68.85,
+            68.7
+          ],
+          "end_mm": [
+            68.6,
+            68.45
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.35355,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "bfc84aaa-ca96-479f-b1a8-d8a0d1ab1ca5",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            69.8,
+            68.75
+          ],
+          "end_mm": [
+            68.95,
+            68.75
+          ],
+          "width_mm": 0.15,
+          "segment_length_mm": 0.85,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "6330469f-f579-462c-9fcb-2b377e5663d8",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            69.75,
+            68.85
+          ],
+          "end_mm": [
+            70.05,
+            68.55
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.42426,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "834e9147-c7fa-418f-9467-9d08f901e0b5",
+          "class": "PCB_TRACK",
+          "net": "VBUS",
+          "start_mm": [
+            70.9,
+            67.6
+          ],
+          "end_mm": [
+            70.2,
+            68.3
+          ],
+          "width_mm": 0.3,
+          "segment_length_mm": 0.98995,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "397b44fe-8b96-42c1-b673-730d58bb2409",
+          "class": "PAD",
+          "net": "VBUS",
+          "ref": "C11",
+          "pin": "1",
+          "xy_mm": [
+            70.9,
+            67.575
+          ]
+        }
+      ],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "73578a7c-6df8-49f8-9990-1b633b612032",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            70.05,
+            66.05
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "5915b88e-10ff-4731-8f85-2907699dcd07",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C11",
+            "pin": "2",
+            "xy_mm": [
+              70.9,
+              66.025
+            ]
+          },
+          {
+            "uuid": "d6b1576e-f686-47eb-91f6-d2359cea5eb1",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              70.85,
+              66.05
+            ],
+            "end_mm": [
+              70.05,
+              66.05
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "73578a7c-6df8-49f8-9990-1b633b612032",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              70.05,
+              66.05
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "b0c1a585-1766-470b-8f32-aa2e0820ee95",
+          "class": "PCB_VIA",
+          "net": "VBUS",
+          "xy_mm": [
+            69.7,
+            71.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 4.48839,
+        "F_native_track_weight_mm": 4.41421,
+        "path": [
+          {
+            "uuid": "397b44fe-8b96-42c1-b673-730d58bb2409",
+            "class": "PAD",
+            "net": "VBUS",
+            "ref": "C11",
+            "pin": "1",
+            "xy_mm": [
+              70.9,
+              67.575
+            ]
+          },
+          {
+            "uuid": "834e9147-c7fa-418f-9467-9d08f901e0b5",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              70.9,
+              67.6
+            ],
+            "end_mm": [
+              70.2,
+              68.3
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.98995,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "6330469f-f579-462c-9fcb-2b377e5663d8",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              69.75,
+              68.85
+            ],
+            "end_mm": [
+              70.05,
+              68.55
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.42426,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "e2128bdb-dfee-4cdd-aa3a-2b6d99c6ecd2",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              69.75,
+              69.4
+            ],
+            "end_mm": [
+              69.75,
+              68.85
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "21a56c40-f3bb-4645-89f9-442e1a2cda9a",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              69.7,
+              71.9
+            ],
+            "end_mm": [
+              69.7,
+              69.45
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 2.45,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b0c1a585-1766-470b-8f32-aa2e0820ee95",
+            "class": "PCB_VIA",
+            "net": "VBUS",
+            "xy_mm": [
+              69.7,
+              71.9
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "b0c1a585-1766-470b-8f32-aa2e0820ee95",
+          "class": "PCB_VIA",
+          "net": "VBUS",
+          "xy_mm": [
+            69.7,
+            71.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 5.99604,
+        "F_native_track_weight_mm": 6.27782,
+        "path": [
+          {
+            "uuid": "af6aedd5-6030-4932-81b7-1739dfe7805a",
+            "class": "PAD",
+            "net": "VBUS",
+            "ref": "U3",
+            "pin": "32",
+            "xy_mm": [
+              68.0,
+              66.15
+            ]
+          },
+          {
+            "uuid": "9e505ccd-b4b9-4a3e-b173-7e0125194e65",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              68.15,
+              66.65
+            ],
+            "end_mm": [
+              68.15,
+              66.35
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "8dd1440b-9e05-4e81-95d2-b8ac056de5ca",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              68.45,
+              66.95
+            ],
+            "end_mm": [
+              68.15,
+              66.65
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.42426,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "d0b2db26-a6cd-4eb2-8cce-d2ba5c0f1307",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              68.45,
+              67.4
+            ],
+            "end_mm": [
+              68.45,
+              66.95
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.45,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "30f502d9-8b0a-4402-8868-392f8f3058ef",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              68.6,
+              68.45
+            ],
+            "end_mm": [
+              68.6,
+              67.55
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.9,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "c429d636-b8af-4951-ad20-d9d128ac5aac",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              68.85,
+              68.7
+            ],
+            "end_mm": [
+              68.6,
+              68.45
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.35355,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "bfc84aaa-ca96-479f-b1a8-d8a0d1ab1ca5",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              69.8,
+              68.75
+            ],
+            "end_mm": [
+              68.95,
+              68.75
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.85,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "e2128bdb-dfee-4cdd-aa3a-2b6d99c6ecd2",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              69.75,
+              69.4
+            ],
+            "end_mm": [
+              69.75,
+              68.85
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "21a56c40-f3bb-4645-89f9-442e1a2cda9a",
+            "class": "PCB_TRACK",
+            "net": "VBUS",
+            "start_mm": [
+              69.7,
+              71.9
+            ],
+            "end_mm": [
+              69.7,
+              69.45
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 2.45,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b0c1a585-1766-470b-8f32-aa2e0820ee95",
+            "class": "PCB_VIA",
+            "net": "VBUS",
+            "xy_mm": [
+              69.7,
+              71.9
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": false
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "8",
+      "cap": "C12",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        56.9625,
+        77.25
+      ],
+      "cap_signal_mm": [
+        58.72,
+        77.7
+      ],
+      "straight_pad_distance_mm": 1.8142,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "f79b7776-d2df-46ec-9c7c-696c4e71534a",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            60.3,
+            77.7
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "629b13ec-73b7-49c2-96ec-98ec46eb56fc",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C12",
+            "pin": "2",
+            "xy_mm": [
+              59.68,
+              77.7
+            ]
+          },
+          {
+            "uuid": "7ff6915f-039a-4f65-aed2-ef1f187bc991",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              59.75,
+              77.7
+            ],
+            "end_mm": [
+              60.3,
+              77.7
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "f79b7776-d2df-46ec-9c7c-696c4e71534a",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              60.3,
+              77.7
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "0c0d9959-72f9-4485-a9f1-1fd4f5fdcac2",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            58.1,
+            77.7
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "207f17ea-f3e2-4f22-8a15-dcadd2c78f8b",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C12",
+            "pin": "1",
+            "xy_mm": [
+              58.72,
+              77.7
+            ]
+          },
+          {
+            "uuid": "cb70c9f7-ab81-431a-b832-758e52f594c4",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              58.65,
+              77.7
+            ],
+            "end_mm": [
+              58.1,
+              77.7
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "0c0d9959-72f9-4485-a9f1-1fd4f5fdcac2",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              58.1,
+              77.7
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "d16329aa-131a-4715-946a-7c146bebdbb9",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            56.95,
+            77.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.55014,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "b5748eea-24d2-4fec-bc48-6b0ac3a50951",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U4",
+            "pin": "8",
+            "xy_mm": [
+              56.9625,
+              77.25
+            ]
+          },
+          {
+            "uuid": "c933574f-a1ca-43cf-b943-ac4be0f4d3bf",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              56.95,
+              77.3
+            ],
+            "end_mm": [
+              56.95,
+              77.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "d16329aa-131a-4715-946a-7c146bebdbb9",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              56.95,
+              77.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.15434,
+        "local_native_filled_polygon_grid_path_mm": 1.19142,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "5",
+      "cap": "C13",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        55.3,
+        77.4125
+      ],
+      "cap_signal_mm": [
+        55.62,
+        79.2
+      ],
+      "straight_pad_distance_mm": 1.81592,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "4c26abb9-57c3-4c7d-bb93-2f09daa6b731",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            57.2,
+            79.2
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "169a6fe0-1a07-4097-b4ec-6ceab18d203b",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C13",
+            "pin": "2",
+            "xy_mm": [
+              56.58,
+              79.2
+            ]
+          },
+          {
+            "uuid": "c27f1a98-4483-4997-b9a1-b65640d447e6",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              56.65,
+              79.2
+            ],
+            "end_mm": [
+              57.2,
+              79.2
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "4c26abb9-57c3-4c7d-bb93-2f09daa6b731",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              57.2,
+              79.2
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "0fd2325c-60b6-42ce-b25b-d3e9bd70634f",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            55.0,
+            79.2
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "ca48c228-bb4d-4ec6-b804-d12a845bf2c6",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C13",
+            "pin": "1",
+            "xy_mm": [
+              55.62,
+              79.2
+            ]
+          },
+          {
+            "uuid": "7970a788-38e6-4e3c-9e12-aff61171f118",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              55.55,
+              79.2
+            ],
+            "end_mm": [
+              55.0,
+              79.2
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "0fd2325c-60b6-42ce-b25b-d3e9bd70634f",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              55.0,
+              79.2
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "416f741e-bb5a-4329-9fd5-6c57eb03d8f5",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            54.9,
+            77.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.6306,
+        "F_native_track_weight_mm": 0.42426,
+        "path": [
+          {
+            "uuid": "9ad5998a-8492-4393-9897-079a65bb63eb",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U4",
+            "pin": "5",
+            "xy_mm": [
+              55.3,
+              77.4125
+            ]
+          },
+          {
+            "uuid": "b2ecc711-76b9-47ff-b4dd-1e549593a917",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              55.2,
+              77.6
+            ],
+            "end_mm": [
+              54.9,
+              77.9
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.42426,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "416f741e-bb5a-4329-9fd5-6c57eb03d8f5",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              54.9,
+              77.9
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.30384,
+        "local_native_filled_polygon_grid_path_mm": 1.34142,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "8",
+      "cap": "C14",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        56.9625,
+        77.25
+      ],
+      "cap_signal_mm": [
+        57.825,
+        80.2
+      ],
+      "straight_pad_distance_mm": 3.0735,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "b6794656-6754-4e7a-8249-8c14c17c878c",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            59.35,
+            79.35
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "1df13ac1-2167-454d-b3f6-b59bc3dc6a58",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C14",
+            "pin": "2",
+            "xy_mm": [
+              59.375,
+              80.2
+            ]
+          },
+          {
+            "uuid": "b22bd032-675b-4553-8bc9-108aa0ee0278",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              59.35,
+              80.15
+            ],
+            "end_mm": [
+              59.35,
+              79.35
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b6794656-6754-4e7a-8249-8c14c17c878c",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              59.35,
+              79.35
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "b9aa94a4-face-4ccd-ae18-5bbeee428b24",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            57.0,
+            80.2
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.825,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "3391f801-3ba8-450c-b97e-6567773e9e1f",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C14",
+            "pin": "1",
+            "xy_mm": [
+              57.825,
+              80.2
+            ]
+          },
+          {
+            "uuid": "46ea69e4-3070-4eff-96a2-10cde01db14e",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              57.8,
+              80.2
+            ],
+            "end_mm": [
+              57.0,
+              80.2
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b9aa94a4-face-4ccd-ae18-5bbeee428b24",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              57.0,
+              80.2
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "d16329aa-131a-4715-946a-7c146bebdbb9",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            56.95,
+            77.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.55014,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "b5748eea-24d2-4fec-bc48-6b0ac3a50951",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U4",
+            "pin": "8",
+            "xy_mm": [
+              56.9625,
+              77.25
+            ]
+          },
+          {
+            "uuid": "c933574f-a1ca-43cf-b943-ac4be0f4d3bf",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              56.95,
+              77.3
+            ],
+            "end_mm": [
+              56.95,
+              77.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "d16329aa-131a-4715-946a-7c146bebdbb9",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              56.95,
+              77.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 2.40052,
+        "local_native_filled_polygon_grid_path_mm": 2.5864,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U5",
+      "pin": "8",
+      "cap": "C15",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        71.75,
+        73.095
+      ],
+      "cap_signal_mm": [
+        73.52,
+        73.0
+      ],
+      "straight_pad_distance_mm": 1.77255,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "d2dd4c51-d8b9-4109-ab3d-691b98d4e857",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            75.1,
+            73.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "bb29e7e9-8a69-41b7-9885-7160bb2c6e82",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C15",
+            "pin": "2",
+            "xy_mm": [
+              74.48,
+              73.0
+            ]
+          },
+          {
+            "uuid": "8d20267b-705e-424e-bb46-dee7428554f0",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              74.55,
+              73.0
+            ],
+            "end_mm": [
+              75.1,
+              73.0
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "d2dd4c51-d8b9-4109-ab3d-691b98d4e857",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              75.1,
+              73.0
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "1afbadae-5ba5-41b1-b300-8904242412d9",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            72.9,
+            73.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "e6f40056-81ce-4542-a7e9-6970265d1d85",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C15",
+            "pin": "1",
+            "xy_mm": [
+              73.52,
+              73.0
+            ]
+          },
+          {
+            "uuid": "ef1511b1-7d4c-4451-91b8-ccb667f845ce",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              73.45,
+              73.0
+            ],
+            "end_mm": [
+              72.9,
+              73.0
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "1afbadae-5ba5-41b1-b300-8904242412d9",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              72.9,
+              73.0
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "b6b00e9a-60ba-4cee-a6a6-53797ac87c37",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            71.75,
+            72.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.595,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "072891a7-8a07-4aac-98fb-6c8a15b878ed",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U5",
+            "pin": "8",
+            "xy_mm": [
+              71.75,
+              73.095
+            ]
+          },
+          {
+            "uuid": "676063c9-80ce-4dd6-b214-15c53d587c3f",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              71.75,
+              73.05
+            ],
+            "end_mm": [
+              71.75,
+              72.5
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b6b00e9a-60ba-4cee-a6a6-53797ac87c37",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              71.75,
+              72.5
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.25399,
+        "local_native_filled_polygon_grid_path_mm": null,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "The In2-only source-via detour remains in the polygons, but accepted B.Cu bridge shunts it locally. The original plane-only path must not be described as local."
+      },
+      "pre_fix_plane_only_route_mm": 28.02193,
+      "pre_fix_status": "FIXED_WITH_LOCAL_B_CU_BRIDGE",
+      "status": "LOCAL_BYPASS_VERIFIED_AFTER_REPAIR",
+      "local_bypass": {
+        "source_via_mm": [
+          71.75,
+          72.5
+        ],
+        "bridge_B_Cu_to_C15_via_mm": [
+          72.9,
+          73.0
+        ],
+        "bridge_width_mm": 0.3,
+        "bridge_length_mm": 1.25399,
+        "C15_primary_XY_path_mm": 2.46899,
+        "existing_vias_in_C15_path": 2,
+        "C16_local_In2_path_from_C15_via_mm": 3.57782,
+        "XY_lengths_exclude_vertical_via_barrels": true
+      }
+    },
+    {
+      "ic": "U5",
+      "pin": "8",
+      "cap": "C16",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        71.75,
+        73.095
+      ],
+      "cap_signal_mm": [
+        74.3,
+        76.375
+      ],
+      "straight_pad_distance_mm": 4.15462,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "d665e56f-fcd8-4136-8cf9-2ad3bd44be18",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            73.45,
+            74.85
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "237c3667-add8-4cad-92c1-aa27072d8cc6",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C16",
+            "pin": "2",
+            "xy_mm": [
+              74.3,
+              74.825
+            ]
+          },
+          {
+            "uuid": "f1d3ebc4-dc94-45e9-a89b-49983cc9ae2d",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              74.25,
+              74.85
+            ],
+            "end_mm": [
+              73.45,
+              74.85
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "d665e56f-fcd8-4136-8cf9-2ad3bd44be18",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              73.45,
+              74.85
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "fa0ae71b-d944-494e-9d15-48c8bf904201",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            73.45,
+            76.35
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.85037,
+        "F_native_track_weight_mm": 0.8,
+        "path": [
+          {
+            "uuid": "c16a83ef-ffdc-453b-a368-92cc9a63c544",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C16",
+            "pin": "1",
+            "xy_mm": [
+              74.3,
+              76.375
+            ]
+          },
+          {
+            "uuid": "922efab5-7424-4952-9c16-f919c4c83324",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              74.25,
+              76.35
+            ],
+            "end_mm": [
+              73.45,
+              76.35
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.8,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "fa0ae71b-d944-494e-9d15-48c8bf904201",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              73.45,
+              76.35
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "b6b00e9a-60ba-4cee-a6a6-53797ac87c37",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            71.75,
+            72.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.595,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "072891a7-8a07-4aac-98fb-6c8a15b878ed",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U5",
+            "pin": "8",
+            "xy_mm": [
+              71.75,
+              73.095
+            ]
+          },
+          {
+            "uuid": "676063c9-80ce-4dd6-b214-15c53d587c3f",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              71.75,
+              73.05
+            ],
+            "end_mm": [
+              71.75,
+              72.5
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b6b00e9a-60ba-4cee-a6a6-53797ac87c37",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              71.75,
+              72.5
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 4.20862,
+        "local_native_filled_polygon_grid_path_mm": null,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "The In2-only source-via detour remains in the polygons, but accepted B.Cu bridge shunts it locally. The original plane-only path must not be described as local."
+      },
+      "pre_fix_plane_only_route_mm": 31.14411,
+      "pre_fix_status": "FIXED_WITH_LOCAL_B_CU_BRIDGE",
+      "status": "LOCAL_BYPASS_VERIFIED_AFTER_REPAIR",
+      "local_bypass": {
+        "source_via_mm": [
+          71.75,
+          72.5
+        ],
+        "bridge_B_Cu_to_C15_via_mm": [
+          72.9,
+          73.0
+        ],
+        "bridge_width_mm": 0.3,
+        "bridge_length_mm": 1.25399,
+        "C15_primary_XY_path_mm": 2.46899,
+        "existing_vias_in_C15_path": 2,
+        "C16_local_In2_path_from_C15_via_mm": 3.57782,
+        "XY_lengths_exclude_vertical_via_barrels": true
+      }
+    },
+    {
+      "ic": "U7",
+      "pin": "8",
+      "cap": "C18",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        58.0125,
+        83.225
+      ],
+      "cap_signal_mm": [
+        58.48,
+        81.9
+      ],
+      "straight_pad_distance_mm": 1.40506,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "65d56a7e-d4f3-48ff-a13e-45da08c5ceb2",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            56.9,
+            81.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "23ab16ae-b1eb-462e-a5e1-80ac11f4cc13",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C18",
+            "pin": "2",
+            "xy_mm": [
+              57.52,
+              81.9
+            ]
+          },
+          {
+            "uuid": "bda10a12-fb15-479a-a208-becf0171432b",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              57.45,
+              81.9
+            ],
+            "end_mm": [
+              56.9,
+              81.9
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "65d56a7e-d4f3-48ff-a13e-45da08c5ceb2",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              56.9,
+              81.9
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "287af0fe-a628-4e86-a865-2692b1af28bc",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            59.1,
+            81.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "46a8f593-f7b3-4b6f-9ba2-8072cf59b83b",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C18",
+            "pin": "1",
+            "xy_mm": [
+              58.48,
+              81.9
+            ]
+          },
+          {
+            "uuid": "0d741a88-a5e2-42c0-99ce-86952276820c",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              58.55,
+              81.9
+            ],
+            "end_mm": [
+              59.1,
+              81.9
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "287af0fe-a628-4e86-a865-2692b1af28bc",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              59.1,
+              81.9
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "ea751bbe-a566-407d-9c78-d5d595fd240c",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            58.0,
+            82.6
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.62513,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "d4a2de69-0f63-4685-a6c5-44dcaecea31a",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U7",
+            "pin": "8",
+            "xy_mm": [
+              58.0125,
+              83.225
+            ]
+          },
+          {
+            "uuid": "006242bd-f428-48fa-8f33-0d72731f18e6",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              58.0,
+              83.2
+            ],
+            "end_mm": [
+              58.0,
+              82.6
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ea751bbe-a566-407d-9c78-d5d595fd240c",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              58.0,
+              82.6
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.30384,
+        "local_native_filled_polygon_grid_path_mm": 1.38995,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    },
+    {
+      "ic": "U8",
+      "pin": "3",
+      "cap": "C19",
+      "net": "+3V0",
+      "ic_pad_mm": [
+        64.9375,
+        84.5
+      ],
+      "cap_signal_mm": [
+        66.42,
+        84.5
+      ],
+      "straight_pad_distance_mm": 1.4825,
+      "F_only_native_connected": false,
+      "F_connectivity_track_weight_mm": null,
+      "F_only_path": [],
+      "cap_ground_return": {
+        "via": {
+          "uuid": "e291bac8-e906-422d-8c67-d31a2f6dbd7b",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            68.0,
+            84.55
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.62201,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "bccbf34c-c55b-4280-90d2-df6c0dc12fee",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "C19",
+            "pin": "2",
+            "xy_mm": [
+              67.38,
+              84.5
+            ]
+          },
+          {
+            "uuid": "aacca6a9-4bb9-4f28-87ea-477c3da4ee9e",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              67.45,
+              84.5
+            ],
+            "end_mm": [
+              67.95,
+              84.5
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "e291bac8-e906-422d-8c67-d31a2f6dbd7b",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              68.0,
+              84.55
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      },
+      "cap_signal_to_via": {
+        "via": {
+          "uuid": "56ea4d31-6367-40a8-83e7-8e3515afa223",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            66.4,
+            83.85
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.65031,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "f1c8af42-b0f4-4469-94a7-a99d19f0eba2",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "C19",
+            "pin": "1",
+            "xy_mm": [
+              66.42,
+              84.5
+            ]
+          },
+          {
+            "uuid": "af03b71c-7ef4-4df7-a909-406e354d7d1a",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              66.4,
+              84.45
+            ],
+            "end_mm": [
+              66.4,
+              83.85
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "56ea4d31-6367-40a8-83e7-8e3515afa223",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              66.4,
+              83.85
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "ic_supply_to_via": {
+        "via": {
+          "uuid": "93f7123f-41aa-40e7-8ef6-457bcff539bf",
+          "class": "PCB_VIA",
+          "net": "+3V0",
+          "xy_mm": [
+            64.95,
+            83.85
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": false,
+          "In2_connected": true
+        },
+        "pad_to_via_centre_mm": 0.65012,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "aa1085c0-7e6d-4a11-9832-d8a424699340",
+            "class": "PAD",
+            "net": "+3V0",
+            "ref": "U8",
+            "pin": "3",
+            "xy_mm": [
+              64.9375,
+              84.5
+            ]
+          },
+          {
+            "uuid": "fcc3ae22-7d0b-438e-b568-08f4ceb96b69",
+            "class": "PCB_TRACK",
+            "net": "+3V0",
+            "start_mm": [
+              64.95,
+              84.45
+            ],
+            "end_mm": [
+              64.95,
+              83.85
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "93f7123f-41aa-40e7-8ef6-457bcff539bf",
+            "class": "PCB_VIA",
+            "net": "+3V0",
+            "xy_mm": [
+              64.95,
+              83.85
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": false,
+            "In2_connected": true
+          }
+        ]
+      },
+      "plane_join": {
+        "layer": "In2.Cu",
+        "same_single_filled_island": true,
+        "via_centre_separation_mm": 1.45,
+        "local_native_filled_polygon_grid_path_mm": 1.45,
+        "grid_mm": 0.05,
+        "search_bbox_extra_mm": 1.0,
+        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+      }
+    }
+  ],
+  "ic_ground_returns": [
+    {
+      "ic": "U1",
+      "pin": "5",
+      "xy_mm": [
+        61.95,
+        93.0
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "50716e6b-0cf9-4019-b0a3-b7888e39e9c7",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            63.0,
+            93.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 1.12361,
+        "F_native_track_weight_mm": 1.01569,
+        "path": [
+          {
+            "uuid": "ae2bb1ee-dc20-4fa9-be12-8776ff18f731",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U1",
+            "pin": "5",
+            "xy_mm": [
+              61.95,
+              93.0
+            ]
+          },
+          {
+            "uuid": "15e25815-058c-4adc-9018-61f6c1bbc7c7",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              61.95,
+              93.0
+            ],
+            "end_mm": [
+              62.4,
+              93.0
+            ],
+            "width_mm": 0.2,
+            "segment_length_mm": 0.45,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "9641d3ac-339e-4338-bd26-723ced452830",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              62.4,
+              93.0
+            ],
+            "end_mm": [
+              62.8,
+              93.4
+            ],
+            "width_mm": 0.2,
+            "segment_length_mm": 0.56569,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "50716e6b-0cf9-4019-b0a3-b7888e39e9c7",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              63.0,
+              93.4
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U1",
+      "pin": "11",
+      "xy_mm": [
+        63.0,
+        92.2
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "50716e6b-0cf9-4019-b0a3-b7888e39e9c7",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            63.0,
+            93.4
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 1.2,
+        "F_native_track_weight_mm": 1.2,
+        "path": [
+          {
+            "uuid": "0704b8ee-93a7-4eea-9099-874d8ac62574",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U1",
+            "pin": "11",
+            "xy_mm": [
+              63.0,
+              92.2
+            ]
+          },
+          {
+            "uuid": "950a3ae1-eb88-4352-a474-3036ef0f0c20",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              63.0,
+              92.2
+            ],
+            "end_mm": [
+              63.0,
+              93.4
+            ],
+            "width_mm": 0.3,
+            "segment_length_mm": 1.2,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "50716e6b-0cf9-4019-b0a3-b7888e39e9c7",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              63.0,
+              93.4
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U2",
+      "pin": "2",
+      "xy_mm": [
+        69.1625,
+        83.0
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "ee467e3a-3b95-487d-989e-146b12846084",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            70.3,
+            83.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 1.1375,
+        "F_native_track_weight_mm": 1.1375,
+        "path": [
+          {
+            "uuid": "b096997b-8f3f-461b-a7ba-56d092272a4a",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U2",
+            "pin": "2",
+            "xy_mm": [
+              69.1625,
+              83.0
+            ]
+          },
+          {
+            "uuid": "6bc06c3f-d974-4e6a-a6f0-ae4d8f567c26",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              69.1625,
+              83.0
+            ],
+            "end_mm": [
+              70.3,
+              83.0
+            ],
+            "width_mm": 0.2,
+            "segment_length_mm": 1.1375,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "ee467e3a-3b95-487d-989e-146b12846084",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              70.3,
+              83.0
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "1",
+      "xy_mm": [
+        59.35,
+        55.25
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "e821250f-7b59-46b5-be22-5a3be63f6cc8",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            59.35,
+            55.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.55,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "f6b52a8a-75a6-4552-b1a8-bd3915ba5eac",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U3",
+            "pin": "1",
+            "xy_mm": [
+              59.35,
+              55.25
+            ]
+          },
+          {
+            "uuid": "48bca83a-434a-416e-bc4b-7ab582dee008",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              59.35,
+              55.3
+            ],
+            "end_mm": [
+              59.35,
+              55.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "e821250f-7b59-46b5-be22-5a3be63f6cc8",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              59.35,
+              55.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "2",
+      "xy_mm": [
+        59.35,
+        56.35
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "e821250f-7b59-46b5-be22-5a3be63f6cc8",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            59.35,
+            55.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.55,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "65f8cc2c-b877-4faa-bb6b-5c2c51300652",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U3",
+            "pin": "2",
+            "xy_mm": [
+              59.35,
+              56.35
+            ]
+          },
+          {
+            "uuid": "fe9d1547-865c-41e9-8669-bfbd90aef2d6",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              59.35,
+              56.3
+            ],
+            "end_mm": [
+              59.35,
+              55.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "e821250f-7b59-46b5-be22-5a3be63f6cc8",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              59.35,
+              55.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "15",
+      "xy_mm": [
+        59.2,
+        66.15
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "c1daa9ea-9781-47e9-b238-92787057080c",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            58.65,
+            66.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.55,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "c6349e68-ac40-4c60-a930-5e63292feaa3",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U3",
+            "pin": "15",
+            "xy_mm": [
+              59.2,
+              66.15
+            ]
+          },
+          {
+            "uuid": "f1bda74f-62b3-4930-96d4-4a75e1cd4aea",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              59.15,
+              66.15
+            ],
+            "end_mm": [
+              58.65,
+              66.15
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "c1daa9ea-9781-47e9-b238-92787057080c",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              58.65,
+              66.15
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "33",
+      "xy_mm": [
+        68.8,
+        66.15
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "c1f31cb3-4161-411e-83a2-ffda5356b818",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            69.35,
+            66.15
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.55,
+        "F_native_track_weight_mm": 0.5,
+        "path": [
+          {
+            "uuid": "60c38c3b-836e-4b52-bdcf-a2d87b205736",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U3",
+            "pin": "33",
+            "xy_mm": [
+              68.8,
+              66.15
+            ]
+          },
+          {
+            "uuid": "836b1f6e-5082-48ef-ade3-3425782f792a",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              68.85,
+              66.15
+            ],
+            "end_mm": [
+              69.35,
+              66.15
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "c1f31cb3-4161-411e-83a2-ffda5356b818",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              69.35,
+              66.15
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U3",
+      "pin": "55",
+      "xy_mm": [
+        68.65,
+        55.25
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "7e587fd5-5a5a-4970-9cbb-cde2570f647b",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            68.0,
+            55.3
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.65192,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "838120de-1c8b-40b9-a683-1e9d696c0ecf",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U3",
+            "pin": "55",
+            "xy_mm": [
+              68.65,
+              55.25
+            ]
+          },
+          {
+            "uuid": "832c70ec-856a-4ec1-a30f-9457d3226937",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              68.6,
+              55.25
+            ],
+            "end_mm": [
+              68.05,
+              55.25
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "7e587fd5-5a5a-4970-9cbb-cde2570f647b",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              68.0,
+              55.3
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "2",
+      "xy_mm": [
+        54.6375,
+        76.25
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "1fa27fb2-f2a5-403b-a4b5-e1a31dcc3830",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            54.0,
+            76.25
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.6375,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "1c11c15a-2e18-418a-9b63-f3872f59122f",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U4",
+            "pin": "2",
+            "xy_mm": [
+              54.6375,
+              76.25
+            ]
+          },
+          {
+            "uuid": "1859fc1f-3987-4f97-ab73-5282ecd3a8d0",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              54.6,
+              76.25
+            ],
+            "end_mm": [
+              54.0,
+              76.25
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "1fa27fb2-f2a5-403b-a4b5-e1a31dcc3830",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              54.0,
+              76.25
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "3",
+      "xy_mm": [
+        54.6375,
+        76.75
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "9f6e353d-cfb8-4815-b021-83f2aa3e0090",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            54.0,
+            76.75
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.6375,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "9ac3216c-599e-4ebd-931a-9090fd405dda",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U4",
+            "pin": "3",
+            "xy_mm": [
+              54.6375,
+              76.75
+            ]
+          },
+          {
+            "uuid": "47b26bbb-1997-45f1-a0b8-7b7ca7429657",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              54.6,
+              76.75
+            ],
+            "end_mm": [
+              54.0,
+              76.75
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "9f6e353d-cfb8-4815-b021-83f2aa3e0090",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              54.0,
+              76.75
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "6",
+      "xy_mm": [
+        55.8,
+        77.4125
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "85176c0b-9e29-449c-ad60-4a03f9d2130f",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            55.8,
+            78.05
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.6375,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "ed97e796-9ab7-4027-97f1-8cbb1481ab6b",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U4",
+            "pin": "6",
+            "xy_mm": [
+              55.8,
+              77.4125
+            ]
+          },
+          {
+            "uuid": "07335191-17a3-4d31-a2db-b72de7d60abe",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              55.8,
+              77.45
+            ],
+            "end_mm": [
+              55.8,
+              78.05
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "85176c0b-9e29-449c-ad60-4a03f9d2130f",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              55.8,
+              78.05
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U4",
+      "pin": "7",
+      "xy_mm": [
+        56.3,
+        77.4125
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "6965b865-d2b2-4624-a3b3-2cb429e3a70b",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            56.3,
+            78.05
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.6375,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "c5768bc9-13a6-459b-bbc4-911cb9667cc8",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U4",
+            "pin": "7",
+            "xy_mm": [
+              56.3,
+              77.4125
+            ]
+          },
+          {
+            "uuid": "5a0a94e6-b421-4513-8b09-b090ec000fc4",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              56.3,
+              77.45
+            ],
+            "end_mm": [
+              56.3,
+              78.05
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "6965b865-d2b2-4624-a3b3-2cb429e3a70b",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              56.3,
+              78.05
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U5",
+      "pin": "4",
+      "xy_mm": [
+        64.25,
+        76.905
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "a289de61-c435-4c95-bd4c-2dc5dd4abdf2",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            64.25,
+            77.5
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.595,
+        "F_native_track_weight_mm": 0.55,
+        "path": [
+          {
+            "uuid": "111ac513-0cec-4e91-b910-c83c511d203b",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U5",
+            "pin": "4",
+            "xy_mm": [
+              64.25,
+              76.905
+            ]
+          },
+          {
+            "uuid": "950148bd-a57b-4e62-803c-d5e36565a890",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              64.25,
+              76.95
+            ],
+            "end_mm": [
+              64.25,
+              77.5
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.55,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "a289de61-c435-4c95-bd4c-2dc5dd4abdf2",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              64.25,
+              77.5
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U5",
+      "pin": "9",
+      "xy_mm": [
+        68.0,
+        75.0
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "95500dd8-2405-4e60-a4f1-ec7c25a6c519",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            65.95,
+            75.0
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 2.05,
+        "F_native_track_weight_mm": 2.0,
+        "path": [
+          {
+            "uuid": "3441b9b9-da42-4075-9de6-252812319555",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U5",
+            "pin": "9",
+            "xy_mm": [
+              68.0,
+              75.0
+            ]
+          },
+          {
+            "uuid": "ca07de4a-5ee3-4a0e-8ed5-72c41c17f0c7",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              67.95,
+              75.0
+            ],
+            "end_mm": [
+              65.95,
+              75.0
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 2.0,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "95500dd8-2405-4e60-a4f1-ec7c25a6c519",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              65.95,
+              75.0
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U7",
+      "pin": "4",
+      "xy_mm": [
+        53.7875,
+        85.175
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "b1751cc9-17df-4482-998b-c9911de05a68",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            53.8,
+            85.8
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.62513,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "b1a9ebcf-6cc9-42cc-ae48-90c373c3cb55",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U7",
+            "pin": "4",
+            "xy_mm": [
+              53.7875,
+              85.175
+            ]
+          },
+          {
+            "uuid": "61cf5343-c1c6-4573-954e-bfa818733ecb",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              53.8,
+              85.2
+            ],
+            "end_mm": [
+              53.8,
+              85.8
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "b1751cc9-17df-4482-998b-c9911de05a68",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              53.8,
+              85.8
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U8",
+      "pin": "1",
+      "xy_mm": [
+        63.0625,
+        83.55
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "22fa2e03-4800-4150-b30a-71cc895ba3a7",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            63.05,
+            82.9
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In2_connected": false,
+          "In1_annulus_samples_in_fill": 8
+        },
+        "pad_to_via_centre_mm": 0.65012,
+        "F_native_track_weight_mm": 0.6,
+        "path": [
+          {
+            "uuid": "0fd50187-473e-4896-a52f-657d50f3758c",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U8",
+            "pin": "1",
+            "xy_mm": [
+              63.0625,
+              83.55
+            ]
+          },
+          {
+            "uuid": "d44446dd-109c-41bc-8aad-20dd4af97cf2",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              63.05,
+              83.5
+            ],
+            "end_mm": [
+              63.05,
+              82.9
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.6,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "22fa2e03-4800-4150-b30a-71cc895ba3a7",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              63.05,
+              82.9
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In2_connected": false,
+            "In1_annulus_samples_in_fill": 8
+          }
+        ]
+      }
+    }
+  ],
+  "U1_thermal_EP": {
+    "size_mm": [
+      0.9,
+      1.5
+    ],
+    "net": "GND",
+    "direct_vias_and_tracks": [
+      {
+        "uuid": "770cb923-cc13-4582-9a1a-f5fd964932af",
+        "class": "PCB_TRACK",
+        "net": "GND",
+        "start_mm": [
+          63.0,
+          92.2
+        ],
+        "end_mm": [
+          63.0,
+          91.0
+        ],
+        "width_mm": 0.3,
+        "segment_length_mm": 1.2,
+        "layer": "F.Cu"
+      },
+      {
+        "uuid": "950a3ae1-eb88-4352-a474-3036ef0f0c20",
+        "class": "PCB_TRACK",
+        "net": "GND",
+        "start_mm": [
+          63.0,
+          92.2
+        ],
+        "end_mm": [
+          63.0,
+          93.4
+        ],
+        "width_mm": 0.3,
+        "segment_length_mm": 1.2,
+        "layer": "F.Cu"
+      },
+      {
+        "uuid": "50716e6b-0cf9-4019-b0a3-b7888e39e9c7",
+        "class": "PCB_VIA",
+        "net": "GND",
+        "xy_mm": [
+          63.0,
+          93.4
+        ],
+        "diameter_mm": 0.5,
+        "drill_mm": 0.25,
+        "In1_connected": true,
+        "In2_connected": false,
+        "In1_annulus_samples_in_fill": 8
+      },
+      {
+        "uuid": "f997792a-30b4-4f9f-9fef-8eeb88e93ee3",
+        "class": "PCB_VIA",
+        "net": "GND",
+        "xy_mm": [
+          63.0,
+          91.0
+        ],
+        "diameter_mm": 0.5,
+        "drill_mm": 0.25,
+        "In1_connected": true,
+        "In2_connected": false,
+        "In1_annulus_samples_in_fill": 8
+      }
+    ],
+    "F_Cu_ground_pour_count": 0,
+    "assessment": "Two external tented GND vias and 0.30mm F.Cu links contact filled In1 plane. No local F.Cu GND pour exists. Electrical ground continuity confirmed; narrow thermal paths and enclosure temperature require physical qualification, no datasheet JEDEC thermal resistance is assumed."
+  },
+  "via_smd_paste_audit": {
+    "report": "reports/via_pad_audit.json",
+    "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+    "C3_fixed_via_xy_mm": [
+      57.8,
+      92.1
+    ],
+    "C3_hole_to_copper_paste_mm": 0.2,
+    "global_min_hole_to_copper_paste_mm": 0.09,
+    "global_min_location": "U5.7 / QSPI_IO3 via (71.85,73.9)",
+    "copper_overlaps": 0,
+    "paste_overlaps": 0,
+    "nominal_geometry_only": true,
+    "audit_method": "Native Collide with actual drill radius, same-net included, native paste margins, no SHAPE.Distance",
+    "auditor": "scripts/audit_vias.py"
+  },
+  "findings": [
+    {
+      "id": "PWR-01",
+      "status": "FIXED_AND_NATIVE_DRC_CHECKED",
+      "detail": "C3 relocation had placed its GND drill hole over its SMD copper/paste. Moved only GND via to(57.8,92.1) and extended one existing F.Cu track; native DRC/parity/opens zero."
+    },
+    {
+      "id": "PWR-02",
+      "status": "FIXED_IN_CANONICAL_AND_NATIVE_DRC_CHECKED",
+      "detail": "Original U5 via\u2192C15/C16 In2-only routes were28.02193/31.14411mm via y59.55 despite sharing one plane island. Accepted one0.30mm B.Cu bridge between existing power vias closes a local U5\u2013C15 bypass in2.469mm XY plus two existing vias. C15\u2013C16 has a3.57782mm local In2 route. U3/U4/U7/U8 local saved-copper routes separately verified."
+    },
+    {
+      "id": "PWR-03",
+      "status": "PHYSICAL_THERMAL_QUALIFICATION_OPEN",
+      "detail": "U1 EP has working external thermal vias and In1 plane, but no F.Cu thermal pour. Do not apply JEDEC board thermal numbers or declare safe enclosure temperature without test."
+    },
+    {
+      "id": "PWR-04",
+      "status": "JLC_DFM_ACCEPTANCE_OPEN",
+      "detail": "Minimum nominal drill-edge gap to SMD copper and paste is0.090mm at U5.7. Hole lies outside both; fabrication/mask/stencil registration tolerances require JLC DFM acceptance."
+    }
+  ],
+  "flash_decoupling_repair": {
+    "source_before_fix_sha256": "3fb59a5a94875917a6bd976945d85ee06e029f0998ae18f1ae40f5c054e153a7",
+    "candidate_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+    "original_In2_only_U5via_to_C15via_mm": 28.02193,
+    "original_In2_only_U5via_to_C16via_mm": 31.14411,
+    "original_detour_min_y_mm": 59.55,
+    "B_bridge_length_mm": 1.25399,
+    "U5_pin_to_C15_signal_local_centre_path_mm": 2.46899,
+    "C15via_to_C16via_local_In2_grid_path_mm": 3.57782,
+    "grid_mm": 0.05,
+    "via_or_placement_changes": false,
+    "native_drc": "0 violations,0 opens,0 schematic parity findings",
+    "status": "ACCEPTED_IN_CANONICAL",
+    "final_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+    "native_drc_report": ".work/flash_decoupling_repair/drc.json",
+    "XY_lengths_exclude_vertical_via_barrels": true,
+    "bridge_track_uuid": "699315a4-e5c7-49d0-b342-712824bf66c2",
+    "C16_effective_XY_path_via_local_C15_junction_mm": 6.27718,
+    "other_nets_changed": false
+  },
+  "revision": "A1_REVIEW_NOT_FOR_FABRICATION",
+  "explicit_primary_connections": [
+    {
+      "ic": "U1",
+      "pin": "10",
+      "cap": "C1",
+      "layer": "F.Cu",
+      "native_existing_centreline_points_mm": [
+        [
+          64.05,
+          91.4
+        ],
+        [
+          64.05,
+          90.775
+        ],
+        [
+          65.5,
+          90.775
+        ]
+      ],
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "sum_centreline_length_mm": 2.075
+    },
+    {
+      "ic": "U1",
+      "pin": "1",
+      "cap": "C2",
+      "layer": "F.Cu",
+      "native_existing_centreline_points_mm": [
+        [
+          61.95,
+          91.4
+        ],
+        [
+          61.3,
+          91.4
+        ],
+        [
+          61.3,
+          90.475
+        ],
+        [
+          61.6,
+          90.175
+        ]
+      ],
+      "widths_mm": [
+        0.15,
+        0.3,
+        0.3
+      ],
+      "sum_centreline_length_mm": 1.99926
+    },
+    {
+      "ic": "U1",
+      "pin": "2",
+      "cap": "C3",
+      "layer": "F.Cu",
+      "native_existing_centreline_points_mm": [
+        [
+          61.95,
+          91.8
+        ],
+        [
+          60.425,
+          91.8
+        ],
+        [
+          60.125,
+          92.1
+        ]
+      ],
+      "widths_mm": [
+        0.15,
+        0.3
+      ],
+      "sum_centreline_length_mm": 1.94926
+    },
+    {
+      "ic": "U2",
+      "pin": "1",
+      "cap": "C4",
+      "layer": "F.Cu",
+      "native_existing_centreline_points_mm": [
+        [
+          69.1625,
+          82.05
+        ],
+        [
+          69.15,
+          80.575
+        ]
+      ],
+      "widths_mm": [
+        0.3
+      ],
+      "sum_centreline_length_mm": 1.47505
+    },
+    {
+      "ic": "U2",
+      "pin": "5",
+      "cap": "C5",
+      "layer": "F.Cu",
+      "native_existing_centreline_points_mm": [
+        [
+          71.4375,
+          82.05
+        ],
+        [
+          71.45,
+          80.575
+        ]
+      ],
+      "widths_mm": [
+        0.3
+      ],
+      "sum_centreline_length_mm": 1.47505
+    }
+  ],
+  "thermal_and_DFM_release_gates": [
+    "Qualify U1/LDO/battery temperatures in the real enclosure; no F.Cu ground heat-spreader pour exists.",
+    "Obtain JLC DFM acceptance for minimum nominal0.090mm drill-edge gap to U5.7 copper/paste, including manufacturing and mask/stencil registration tolerance.",
+    "Electrical connectivity and local copper paths do not qualify PDN impedance, noise, effective capacitance or lifetime."
+  ]
+}

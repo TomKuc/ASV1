@@ -1,0 +1,18 @@
+{
+  "status": "MERGED_REQUIRES_NATIVE_DRC",
+  "repairs": [
+    {
+      "repair": ".work/lfxo_repair/Ankle_Sensor_V1.kicad_pcb",
+      "removed": 76,
+      "modified": 0,
+      "added": 33,
+      "moved_footprints": {
+        "Y1": [
+          61.0,
+          68.5,
+          180.0
+        ]
+      }
+    }
+  ]
+}

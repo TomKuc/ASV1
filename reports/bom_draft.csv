@@ -1,0 +1,70 @@
+ref,value,mpn,jlcpcb,footprint,status,note
+U1,BQ25185DLHR,BQ25185DLHR,C19725033,AnkleSensor:BQ25185DLHR_DLH0010A_TILandPattern,REVIEW,Independent TLV7042 NTC window controls CE; qualify actual battery and startup
+U2,TPS7A2030PDBVR,TPS7A2030PDBVR,C963429,AnkleSensor:SOT-23-5,REVIEW,
+J2,JST_SH_3P_PACK_NTC,SM03B-SRSS-TB(LF)(SN),C160403,AnkleSensor:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal,LCSC_ONLY_PROCUREMENT_REVIEW,"Project cable:1PACK+,2NTC,3PACK-. Never assume off-the-shelf LiPo cable polarity"
+R1,24k 1%,0402WGF2402TCE,C25769,AnkleSensor:R_0402_1005Metric,LCSC_ONLY_PROCUREMENT_REVIEW,BQ25185: 4.2V / 100mA input limit
+R2,2k 1%,RC0402FR-072KL,C60488,AnkleSensor:R_0402_1005Metric,REVIEW,150mA programmed; actual current constrained by 100mA input and load
+R3,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,CE defaults HIGH without a valid3V-powered temperature window
+R4,10k 1%,0402WGF1002TCE,C25744,AnkleSensor:R_0402_1005Metric,REVIEW,
+R5,10k 1%,0402WGF1002TCE,C25744,AnkleSensor:R_0402_1005Metric,REVIEW,
+C1,2.2u 25V X5R,CL10A225KA8NNNC,C57895,AnkleSensor:C_0603_1608Metric,REVIEW,Increased from1u to allow tolerance and bias margin; verify Ceff>=1u atVBUSmax5.5V
+C2,10u 10V X5R,CL10A106KP8NNNC,C19702,AnkleSensor:C_0603_1608Metric,REVIEW,Ensure effective capacitance >=1uF at4.5V
+C3,2.2u 25V X5R,CL10A225KA8NNNC,C57895,AnkleSensor:C_0603_1608Metric,REVIEW,Increased from1u; verify Ceff>=1u at4.2V including temperature/aging
+C4,2.2u 16V X5R,CL10A225KO8NNNC,C23630,AnkleSensor:C_0603_1608Metric,REVIEW,Local LDO input; include in effective USB inrush analysis
+C5,10u 10V X5R,CL10A106KP8NNNC,C19702,AnkleSensor:C_0603_1608Metric,REVIEW,"LDO local output; validate DC bias, transient and ESR"
+R6,1M 1%,0402WGF1004TCE,C26083,AnkleSensor:R_0402_1005Metric,REVIEW,
+R7,1M 1%,0402WGF1004TCE,C26083,AnkleSensor:R_0402_1005Metric,REVIEW,
+C6,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,SAADC acquisition >=40us; divider tau50ms
+TP1,VSYS,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+TP2,+3V0,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+TP3,VBAT,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+TP4,GND,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+U3,MDBT50Q-P1MV2,MDBT50Q-P1MV2,C5119772,AnkleSensor:Raytac_MDBT50Q,REVIEW,DCCH31 provisionally NC in normal voltage mode; visually verify8.3. Footprint unresolved. P1.14 HIGH inhibits charging throughQ2
+Y1,32.768kHz CL7pF,ABS07-32.768KHZ-7-T,C276424,AnkleSensor:Crystal_SMD_3215-2Pin_3.2x1.5mm,REVIEW,JLC catalog verified C276424; CL7pF ESR70k max; land pattern and oscillator qualification pending
+C7,10p 50V C0G DRAFT,CL05C100JB5NNNC,C32949,AnkleSensor:C_0402_1005Metric,REVIEW,CL=7pF with assumed2pF stray; tune after parasitic review
+C8,10p 50V C0G DRAFT,CL05C100JB5NNNC,C32949,AnkleSensor:C_0402_1005Metric,REVIEW,Provisional load capacitor; not a verified oscillator design
+C9,4.7u 10V X5R,CL10A475KP8NNNC,C1705,AnkleSensor:C_0603_1608Metric,REVIEW,
+C10,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,
+C11,4.7u 10V X5R,CL10A475KP8NNNC,C1705,AnkleSensor:C_0603_1608Metric,REVIEW,Confirm against Raytac USB reference before release
+R8,10k 1%,0402WGF1002TCE,C25744,AnkleSensor:R_0402_1005Metric,REVIEW,
+TP5,RESET_N,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+U4,LSM6DSV32XTR,LSM6DSV32XTR,C22461202,AnkleSensor:ST_LSM6DSV32X_LGA14_3x2.5mm_P0.5mm,REVIEW,SDO_Aux11 NC permitted by ST main-SPI mode. Disabled Qvar pins2/3 tiedGND perDS; ERC pin-type warnings reviewed
+U5,W25Q01JVZEIQ_128MiB,W25Q01JVZEIQ,C5137036,AnkleSensor:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm,REVIEW,128MiB dual-die. Firmware EN4B+per-die BUSY/state handling required. EP/paste geometry review pending
+C12,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,Within few mm of IMU VDD8
+C13,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,Within few mm of IMU VDD_IO5
+C14,1u 16V X7R,CC0603KRX7R7BB105,C106248,AnkleSensor:C_0603_1608Metric,REVIEW,
+C15,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,Flash VCC local
+C16,4.7u 10V X5R,CL10A475KP8NNNC,C1705,AnkleSensor:C_0603_1608Metric,REVIEW,
+R9,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,
+R10,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,
+R11,22R 1% DRAFT,0402WGF220JTCE,C25092,AnkleSensor:R_0402_1005Metric,REVIEW,Place at MCU source; tune0-33ohm by measurement
+R12,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,
+R13,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,
+TP6,IMU_INT1,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+TP7,IMU_INT2,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+J1,TYPE-C-31-M-12,TYPE-C-31-M-12,C165948,AnkleSensor:USB_C_Receptacle_HRO_TYPE-C-31-M-12,REVIEW,Logical contact names; physical combined pads and anchor mapping not yet verified
+U6,USBLC6-2SC6,USBLC6-2SC6,C7519,AnkleSensor:SOT-23-6,REVIEW,Flow-through protection: do not join across PCB route bypassing package
+R14,5.1k 1%,0402WGF5101TCE,C25905,AnkleSensor:R_0402_1005Metric,REVIEW,
+R15,5.1k 1%,0402WGF5101TCE,C25905,AnkleSensor:R_0402_1005Metric,REVIEW,
+J3,SWD_POGO_6,,,AnkleSensor:SWD_Pogo_2x03_P2.54mm,REVIEW,Project-specific2x3pogo pinout; no TagConnect compatibility claim. VTref sense only
+SW1,SKQGABE010,SKQGABE010,C115351,AnkleSensor:SW_SPST_SKQG_WithStem,REVIEW,"ALPS withstem1.5mm, min10uA; R25 limitsC17 contact discharge"
+R16,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,
+C17,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,
+D1,GREEN_AlGaInP,19-217/G7C-AN1P2/6T,C2986030,AnkleSensor:LED_0603_1608Metric,REVIEW,Everlight lowVf green; R17=2.2k givesabout0.3-0.6mA
+R17,2.2k 1%,0402WGF2201TCE,C25879,AnkleSensor:R_0402_1005Metric,REVIEW,
+TP8,NTC_TS,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+TP9,CHG_ALLOW_H,,,AnkleSensor:TestPoint_Pad_D1.0mm,NOT_ASSEMBLED,
+U7,TLV7042DGKR,TLV7042DGKR,C2760466,AnkleSensor:VSSOP-8_3x3mm_P0.65mm,REVIEW,C number verified atLCSC only; JLC procurement remains open
+Q1,AO3400A,AO3400A,C20917,AnkleSensor:SOT-23,REVIEW,
+R18,100k 0.1%,ERA2AEB104X,C445619,AnkleSensor:R_0402_1005Metric,REVIEW,Includes supply brownout down to supervisor minimum threshold; do not substitute1%
+R19,10k 0.1%,RT0402BRD0710KL,C190095,AnkleSensor:R_0402_1005Metric,REVIEW,
+R20,27.4k 0.1%,RT0402BRD0727K4L,C852679,AnkleSensor:R_0402_1005Metric,LCSC_ONLY_PROCUREMENT_REVIEW,
+R21,10k 0.1%,RT0402BRD0710KL,C190095,AnkleSensor:R_0402_1005Metric,REVIEW,
+R22,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,Gate voltage min>2.5V with1Mdown and valid3V; battery-only bias current~30uA
+R23,1M 1%,0402WGF1004TCE,C26083,AnkleSensor:R_0402_1005Metric,REVIEW,
+C18,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,Comparator local bypass
+U8,TLV803EA26DBZR,TLV803EA26DBZR,C1852119,AnkleSensor:SOT-23,REVIEW,"2.64V supervisor, activeLOW open-drain, nominal200ms delay; check exact suffix/pinout"
+Q2,AO3400A,AO3400A,C20917,AnkleSensor:SOT-23,REVIEW,MCU HIGH inhibits; cannot override comparator/supervisorLOW
+R24,100k 1%,0402WGF1003TCE,C25741,AnkleSensor:R_0402_1005Metric,REVIEW,Q2 defaultsOFF with GPIOHiZ
+C19,100n 16V X7R,CL05B104KO5NNNC,C1525,AnkleSensor:C_0402_1005Metric,REVIEW,Supervisor local bypass
+R25,1k 1%,0402WGF1001TCE,C11702,AnkleSensor:R_0402_1005Metric,REVIEW,Limits current from C17 through closed switch; LOW still~30mV

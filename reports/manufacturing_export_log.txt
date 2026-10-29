@@ -1,0 +1,22 @@
+$ kicad-cli pcb export gerbers --output /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/ --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts --check-zones --use-drill-file-origin --no-protel-ext /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_pcb
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-F_Cu.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-In1_Cu.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-In2_Cu.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-B_Cu.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-F_Paste.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-B_Paste.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-F_Silkscreen.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-B_Silkscreen.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-F_Mask.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-B_Mask.gbr'.
+Narysowano w '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/gerbers/Ankle_Sensor_V1-Edge_Cuts.gbr'.
+
+$ kicad-cli pcb export drill --output /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/drill/ --format excellon --drill-origin plot --excellon-units mm --excellon-separate-th --generate-map --map-format pdf --generate-report --report-path /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/drill/drill_report.txt /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_pcb
+Utworzono plik '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/drill/Ankle_Sensor_V1-PTH.drl'
+Utworzono plik '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/drill/Ankle_Sensor_V1-NPTH.drl'
+Utworzono plik '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/drill/Ankle_Sensor_V1-PTH-drl_map.pdf'.
+Utworzono plik '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/drill/Ankle_Sensor_V1-NPTH-drl_map.pdf'.
+Gotowe.
+
+$ kicad-cli pcb export pos --format csv --units mm --side front --smd-only --exclude-dnp --use-drill-file-origin --output /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/assembly/KiCad_positions_REVIEW.csv /Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_pcb
+Zapisano dane o pozycjach elementów do '/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/manufacturing/review/assembly/KiCad_positions_REVIEW.csv'.

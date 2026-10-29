@@ -1,0 +1,19 @@
+{
+  "project": "Ankle_Sensor_V1",
+  "revision": "A1-WIP",
+  "kicad_version": "10.0.7",
+  "kicad_open_check": "PASS_NATIVE_SCHEMATIC_LOAD_AND_PDF_EXPORT",
+  "erc": "RUN",
+  "drc": "RUN",
+  "fabrication_release": false,
+  "pcb_routing": "CONNECTED_REVIEW_PENDING",
+  "current_counts": {
+    "erc_errors": 0,
+    "erc_warnings": 2,
+    "drc_geometry_errors": 0,
+    "drc_warnings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_findings": 0
+  },
+  "details": "validation_status.json"
+}

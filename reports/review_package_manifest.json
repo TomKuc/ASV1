@@ -1,0 +1,29 @@
+{
+  "status": "A1_REVIEW_NOT_RELEASED_FOR_FABRICATION_OR_ASSEMBLY",
+  "generated_utc": "2026-10-28T14:44:35.951477+00:00",
+  "kicad_version": "10.0.7",
+  "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "native_drc": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "native_erc": {
+    "errors": 0,
+    "warnings": 2,
+    "review": "Intentional grounded IMU pins2/3; see validation_status.json"
+  },
+  "project": "hardware/Ankle_Sensor_V1.kicad_pro",
+  "outputs": {
+    "editable_schematic_and_routed_pcb": true,
+    "jlc_bom_and_cpl_review": true,
+    "gerber_and_excellon_review": true,
+    "native_step": true,
+    "complete_vendor_3d_assembly": false
+  },
+  "open_gates": "docs/release_checklist.md",
+  "step_limitations": "Missing USB-C model, generic Raytac, Flash envelope, IMU height limit; no battery/case",
+  "assembly_limitations": "Native footprint anchors/rotations, JLC translations and procurement unconfirmed",
+  "physical_qualification": "Firmware and physical prototype tests are outstanding",
+  "files_without_manifest_or_checksum_list": 153
+}

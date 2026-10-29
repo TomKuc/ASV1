@@ -1,0 +1,11 @@
+{
+  "removed_unused_IMU_CS_via_uuid": [
+    "b6e6b9e5-26c1-46d2-a2fe-7a477d030d0d"
+  ],
+  "native_drill_place_origin_mm": [
+    50,
+    101.6
+  ],
+  "y1_catalog": "https://jlcpcb.com/partdetail/AbraconLLC-ABS07_32_768KHZ_7T/C276424",
+  "y1_catalog_check_date": "2026-10-28"
+}

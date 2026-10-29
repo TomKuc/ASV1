@@ -1,0 +1,26 @@
+Drill report for Ankle_Sensor_V1.kicad_pcb
+Created on 2026-10-28T15:42:28
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'Ankle_Sensor_V1-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.250mm  0.0098"  (160 holes))
+    T2  0.600mm  0.0236"  (4 holes)  (with 4 slots)
+
+    Total plated holes count 164
+
+
+Drill file 'Ankle_Sensor_V1-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.650mm  0.0256"  (2 holes))
+
+    Total unplated holes count 2

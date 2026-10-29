@@ -1,0 +1,28 @@
+{
+  "source_sha256": "3fb59a5a94875917a6bd976945d85ee06e029f0998ae18f1ae40f5c054e153a7",
+  "output_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "added_tracks": [
+    {
+      "uuid": "699315a4-e5c7-49d0-b342-712824bf66c2",
+      "net": "+3V0",
+      "layer": "B.Cu",
+      "start_mm": [
+        71.75,
+        72.5
+      ],
+      "end_mm": [
+        72.9,
+        73.0
+      ],
+      "width_mm": 0.3
+    }
+  ],
+  "modified_tracks": [],
+  "removed_tracks": [],
+  "changed_footprints": [],
+  "changed_vias": [],
+  "changed_nets": [
+    "+3V0"
+  ],
+  "unconnected_after_refill": 0
+}

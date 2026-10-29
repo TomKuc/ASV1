@@ -1,0 +1,813 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T13:47:59",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "Ankle_Sensor_V1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 5 [+3V0] z U4 na F.Cu",
+                    "pos": {
+                        "x": 55.3,
+                        "y": 77.4125
+                    },
+                    "uuid": "ee68af0b-1228-4dc2-bc17-00eeb537869b"
+                },
+                {
+                    "description": "Pole lutownicze 8 [+3V0] z U4 na F.Cu",
+                    "pos": {
+                        "x": 56.9625,
+                        "y": 77.25
+                    },
+                    "uuid": "f5c5d6af-7c98-4fe9-b6b4-132ccdf9226b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 1 [+3V0] z R9 na F.Cu",
+                    "pos": {
+                        "x": 55.49,
+                        "y": 72.7
+                    },
+                    "uuid": "e0ab8b58-340f-46a0-99d0-61b38b82f310"
+                },
+                {
+                    "description": "Pole lutownicze 1 [+3V0] z R4 na F.Cu",
+                    "pos": {
+                        "x": 54.99,
+                        "y": 69.0
+                    },
+                    "uuid": "dac2738f-ec40-4d46-8d94-02d0a98c5ac3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 10 [+3V0] z U4 na F.Cu",
+                    "pos": {
+                        "x": 56.9625,
+                        "y": 76.25
+                    },
+                    "uuid": "c504433e-bf62-4fc3-bc6c-e7760ba6cf2e"
+                },
+                {
+                    "description": "Pole lutownicze 8 [+3V0] z U4 na F.Cu",
+                    "pos": {
+                        "x": 56.9625,
+                        "y": 77.25
+                    },
+                    "uuid": "f5c5d6af-7c98-4fe9-b6b4-132ccdf9226b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 1 [+3V0] z C12 na F.Cu",
+                    "pos": {
+                        "x": 58.72,
+                        "y": 77.7
+                    },
+                    "uuid": "476edb52-ea37-4133-af1d-e896f1a4ca6b"
+                },
+                {
+                    "description": "Pole lutownicze 8 [+3V0] z U4 na F.Cu",
+                    "pos": {
+                        "x": 56.9625,
+                        "y": 77.25
+                    },
+                    "uuid": "f5c5d6af-7c98-4fe9-b6b4-132ccdf9226b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 2 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 54.6375,
+                        "y": 76.25
+                    },
+                    "uuid": "ca1ed33e-ae89-4183-8dd3-c0920c78edec"
+                },
+                {
+                    "description": "Pole lutownicze 3 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 54.6375,
+                        "y": 76.75
+                    },
+                    "uuid": "3d2ce2ba-7caa-4cb1-a4e2-311abf958365"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 3 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 54.6375,
+                        "y": 76.75
+                    },
+                    "uuid": "3d2ce2ba-7caa-4cb1-a4e2-311abf958365"
+                },
+                {
+                    "description": "Pole lutownicze 6 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 55.8,
+                        "y": 77.4125
+                    },
+                    "uuid": "eb389aa1-84c8-4d46-b9cb-078e7a6be38e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 6 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 55.8,
+                        "y": 77.4125
+                    },
+                    "uuid": "eb389aa1-84c8-4d46-b9cb-078e7a6be38e"
+                },
+                {
+                    "description": "Pole lutownicze 2 [GND] z C13 na F.Cu",
+                    "pos": {
+                        "x": 55.38,
+                        "y": 79.2
+                    },
+                    "uuid": "f370c9e0-73d1-466c-a331-3b6393906b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 7 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 56.3,
+                        "y": 77.4125
+                    },
+                    "uuid": "e762ea65-3713-4507-bc6b-53aa2bd91a90"
+                },
+                {
+                    "description": "Pole lutownicze 6 [GND] z U4 na F.Cu",
+                    "pos": {
+                        "x": 55.8,
+                        "y": 77.4125
+                    },
+                    "uuid": "eb389aa1-84c8-4d46-b9cb-078e7a6be38e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 5 [GND] z U1 na F.Cu",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 93.0
+                    },
+                    "uuid": "5b68047b-04c8-40e4-8f8a-0cb9aed8bfe6"
+                },
+                {
+                    "description": "Ścieżka [GND] na F.Cu, długość 0.7071 mm",
+                    "pos": {
+                        "x": 60.8,
+                        "y": 92.7
+                    },
+                    "uuid": "7c16809d-c569-4823-b7d5-55a3bf358b0f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 11 [GND] z U1 na F.Cu",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 92.2
+                    },
+                    "uuid": "adff22a1-8d0b-4ebb-9f45-d5777fee0247"
+                },
+                {
+                    "description": "Pole lutownicze 5 [GND] z U1 na F.Cu",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 93.0
+                    },
+                    "uuid": "5b68047b-04c8-40e4-8f8a-0cb9aed8bfe6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 2 [GND] z R23 na F.Cu",
+                    "pos": {
+                        "x": 67.41,
+                        "y": 86.0
+                    },
+                    "uuid": "41ce843d-84a3-467e-974b-7737720d9889"
+                },
+                {
+                    "description": "Przelotka [GND] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.9,
+                        "y": 88.4
+                    },
+                    "uuid": "ed86316f-2b3e-4cff-9434-4cc06a93cdd0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [GND] na F.Cu, długość 0.6000 mm",
+                    "pos": {
+                        "x": 67.4,
+                        "y": 81.5
+                    },
+                    "uuid": "f57bd67d-2333-43a6-9ab7-f77cdeb4a96e"
+                },
+                {
+                    "description": "Pole lutownicze 2 [GND] z U2 na F.Cu",
+                    "pos": {
+                        "x": 69.1625,
+                        "y": 82.8
+                    },
+                    "uuid": "f85a3c0d-139b-4ab1-b344-1ded100c53e9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole PTH SH [GND] na J1",
+                    "pos": {
+                        "x": 68.32,
+                        "y": 95.87
+                    },
+                    "uuid": "e29d2ab7-126b-4adb-a2cf-2b46295bc0ff"
+                },
+                {
+                    "description": "Pole lutownicze A12 [GND] z J1 na F.Cu",
+                    "pos": {
+                        "x": 67.25,
+                        "y": 94.955
+                    },
+                    "uuid": "e1c56371-4096-4322-8f2f-5fa337a8e3a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 33 [GND] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 66.15
+                    },
+                    "uuid": "acab8cb5-e10a-4b4b-86b2-3f0baee4448d"
+                },
+                {
+                    "description": "Pole lutownicze 2 [GND] z C11 na F.Cu",
+                    "pos": {
+                        "x": 70.9,
+                        "y": 66.025
+                    },
+                    "uuid": "34d514b9-1f23-4e57-8144-da7047cc8c70"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 2 [GND] z C9 na F.Cu",
+                    "pos": {
+                        "x": 69.375,
+                        "y": 68.0
+                    },
+                    "uuid": "818140d5-7c88-4e9c-a1ed-ea356222a0d2"
+                },
+                {
+                    "description": "Pole lutownicze 33 [GND] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 66.15
+                    },
+                    "uuid": "acab8cb5-e10a-4b4b-86b2-3f0baee4448d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [GND] na B.Cu, długość 0.0671 mm",
+                    "pos": {
+                        "x": 70.73,
+                        "y": 63.54
+                    },
+                    "uuid": "95979f5e-bee8-4201-9688-217b3077bba0"
+                },
+                {
+                    "description": "Pole lutownicze 3 [GND] z J3 na B.Cu",
+                    "pos": {
+                        "x": 73.27,
+                        "y": 61.0
+                    },
+                    "uuid": "dc9f0291-2c63-46b9-a984-0b5bcf5555be"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 4 [USER_BTN_N] z U3 na F.Cu",
+                    "pos": {
+                        "x": 59.35,
+                        "y": 58.75
+                    },
+                    "uuid": "4c9834e7-c3af-4774-a30c-9c95e8946f36"
+                },
+                {
+                    "description": "Ścieżka [USER_BTN_N] na F.Cu, długość 0.2828 mm",
+                    "pos": {
+                        "x": 71.2,
+                        "y": 86.9
+                    },
+                    "uuid": "8ec1822a-7a14-4fef-88fc-b5fd29733805"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [CHG_STAT1_N] na F.Cu, długość 0.1005 mm",
+                    "pos": {
+                        "x": 56.01,
+                        "y": 69.0
+                    },
+                    "uuid": "df45eb4d-c264-4a1c-9c49-331ccc3655c3"
+                },
+                {
+                    "description": "Pole lutownicze 9 [CHG_STAT1_N] z U1 na F.Cu",
+                    "pos": {
+                        "x": 64.05,
+                        "y": 91.8
+                    },
+                    "uuid": "d8f5b944-f666-4693-a14b-1b1975919b40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 2 [CHG_STAT2_N] z R5 na F.Cu",
+                    "pos": {
+                        "x": 53.71,
+                        "y": 69.0
+                    },
+                    "uuid": "4f04e121-6372-4d09-a323-718d0c0ad573"
+                },
+                {
+                    "description": "Pole lutownicze 3 [CHG_STAT2_N] z U1 na F.Cu",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 92.2
+                    },
+                    "uuid": "26edf63b-a462-4c04-b5a8-f48aa2689591"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 6 [CHG_STAT2_N] z U3 na F.Cu",
+                    "pos": {
+                        "x": 59.35,
+                        "y": 59.55
+                    },
+                    "uuid": "cf18bfbf-fadb-4861-bba9-54889d1e9412"
+                },
+                {
+                    "description": "Pole lutownicze 2 [CHG_STAT2_N] z R5 na F.Cu",
+                    "pos": {
+                        "x": 53.71,
+                        "y": 69.0
+                    },
+                    "uuid": "4f04e121-6372-4d09-a323-718d0c0ad573"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 9 [IMU_INT2] z U4 na F.Cu",
+                    "pos": {
+                        "x": 56.9625,
+                        "y": 76.75
+                    },
+                    "uuid": "6b4ad05c-cb6c-46c1-8e26-7847013caf09"
+                },
+                {
+                    "description": "Ścieżka [IMU_INT2] na B.Cu, długość 0.1000 mm",
+                    "pos": {
+                        "x": 59.0,
+                        "y": 76.0
+                    },
+                    "uuid": "844d5823-a690-4e9f-a0fd-7d5783bb7c38"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [VBUS] na F.Cu, długość 0.6000 mm",
+                    "pos": {
+                        "x": 65.7,
+                        "y": 92.1
+                    },
+                    "uuid": "4f3cee15-dc92-4646-89af-bb6f0ee22298"
+                },
+                {
+                    "description": "Pole lutownicze 10 [VBUS] z U1 na F.Cu",
+                    "pos": {
+                        "x": 64.05,
+                        "y": 91.4
+                    },
+                    "uuid": "581c6d7d-455e-40a7-afc5-acc0a2c34300"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze A9 [VBUS] z J1 na F.Cu",
+                    "pos": {
+                        "x": 66.45,
+                        "y": 94.955
+                    },
+                    "uuid": "018a54b2-0ad2-498e-8809-085c771f1b21"
+                },
+                {
+                    "description": "Ścieżka [VBUS] na B.Cu, długość 1.6971 mm",
+                    "pos": {
+                        "x": 68.1,
+                        "y": 94.5
+                    },
+                    "uuid": "33aaf092-664f-4f28-9acd-dc5fea3a53d1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 34 [USB_DN] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.65,
+                        "y": 65.15
+                    },
+                    "uuid": "458f0fd6-c9ba-482f-8a4b-b335205782d5"
+                },
+                {
+                    "description": "Pole lutownicze 4 [USB_DN] z U6 na F.Cu",
+                    "pos": {
+                        "x": 76.9375,
+                        "y": 95.15
+                    },
+                    "uuid": "009a2b4b-cb07-4eac-a000-cd99c9ae0219"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 14 [IMU_MOSI] z U4 na F.Cu",
+                    "pos": {
+                        "x": 55.3,
+                        "y": 75.5875
+                    },
+                    "uuid": "9d91b146-3192-4b82-ac4f-b4f6177fa286"
+                },
+                {
+                    "description": "Pole lutownicze 36 [IMU_MOSI] z U3 na F.Cu",
+                    "pos": {
+                        "x": 67.75,
+                        "y": 63.95
+                    },
+                    "uuid": "1e152c52-32ab-41a7-a4b3-51c6cd7a810a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 38 [IMU_CS_N] z U3 na F.Cu",
+                    "pos": {
+                        "x": 67.75,
+                        "y": 63.15
+                    },
+                    "uuid": "51d91db5-9a51-42cf-9ba1-f973ceafa85b"
+                },
+                {
+                    "description": "Ścieżka [IMU_CS_N] na B.Cu, długość 0.6000 mm",
+                    "pos": {
+                        "x": 56.4,
+                        "y": 72.0
+                    },
+                    "uuid": "24df9b50-d904-4f1f-93cc-4a45170c4979"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 1 [RESET_N] z TP5 na B.Cu",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 65.8
+                    },
+                    "uuid": "dbca7e29-ee58-4af2-827d-418a3ce7b327"
+                },
+                {
+                    "description": "Pole lutownicze 40 [RESET_N] z U3 na F.Cu",
+                    "pos": {
+                        "x": 67.75,
+                        "y": 62.35
+                    },
+                    "uuid": "e3ca198f-5f0b-461d-aa34-0ec0ea0d5c13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [VSYS] na B.Cu, długość 0.2828 mm",
+                    "pos": {
+                        "x": 63.2,
+                        "y": 90.0
+                    },
+                    "uuid": "ba4d85cb-45ee-4c8d-a0d7-feacc6428ddc"
+                },
+                {
+                    "description": "Pole lutownicze 1 [VSYS] z U1 na F.Cu",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 91.4
+                    },
+                    "uuid": "8f3297bf-0645-4867-ac39-df722861027a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 2 [VBAT] z U1 na F.Cu",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 91.8
+                    },
+                    "uuid": "bf2511c0-e985-4dc9-850f-588cfd9ecc18"
+                },
+                {
+                    "description": "Pole lutownicze 1 [VBAT] z C3 na F.Cu",
+                    "pos": {
+                        "x": 57.5,
+                        "y": 92.275
+                    },
+                    "uuid": "35b812f7-9ad8-4937-9bbd-f24bd73e7d31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 1 [CHG_ISET] z R2 na F.Cu",
+                    "pos": {
+                        "x": 59.79,
+                        "y": 90.9
+                    },
+                    "uuid": "bdb46c92-5360-4bc6-8c19-5808c5323357"
+                },
+                {
+                    "description": "Pole lutownicze 8 [CHG_ISET] z U1 na F.Cu",
+                    "pos": {
+                        "x": 64.05,
+                        "y": 92.2
+                    },
+                    "uuid": "06629dcd-caf1-4a85-93b1-91598440a208"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze B5 [USB_CC2] z J1 na F.Cu",
+                    "pos": {
+                        "x": 65.75,
+                        "y": 94.955
+                    },
+                    "uuid": "cced7188-4845-40d4-b2a8-b96442be704c"
+                },
+                {
+                    "description": "Pole lutownicze 1 [USB_CC2] z R15 na F.Cu",
+                    "pos": {
+                        "x": 69.99,
+                        "y": 98.2
+                    },
+                    "uuid": "b6b7ab85-706f-4b57-ad0a-68f86251f029"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Otwory na wylot zbyt blisko siebie (ograniczenia w konfiguracji płytki minimum 0.2500 mm; obecnie 0.0328 mm)",
+            "items": [
+                {
+                    "description": "Przelotka [+3V0] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.8,
+                        "y": 67.0
+                    },
+                    "uuid": "15f48ef1-726a-4dbb-8fc1-ee0983fad519"
+                },
+                {
+                    "description": "Przelotka [+3V0] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.6,
+                        "y": 67.2
+                    },
+                    "uuid": "a445eead-58e3-4756-932d-80957b2e3b28"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Otwory na wylot zbyt blisko siebie (ograniczenia w konfiguracji płytki minimum 0.2500 mm; obecnie 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Przelotka [GND] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 52.5,
+                        "y": 74.4
+                    },
+                    "uuid": "88eb7223-8c31-4be9-9864-5d3942df858d"
+                },
+                {
+                    "description": "Przelotka [GND] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 52.5,
+                        "y": 74.7
+                    },
+                    "uuid": "f454bab8-8c38-4a58-b511-50ee117df48b"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Footprint 'USB_C_Receptacle_HRO_TYPE-C-31-M-12' nie odpowiada jego kopii w bibliotece 'AnkleSensor'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 99.0
+                    },
+                    "uuid": "a3e4afe0-65e4-4f8e-aa92-45ef8bacd951"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

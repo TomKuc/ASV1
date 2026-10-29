@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "date": "2026-10-28T15:41:45",
+    "generator": "KiCad 10.0.7",
+    "project": "Ankle_Sensor_V1",
+    "board_name": "Ankle_Sensor_V1"
+  },
+  "board": {
+    "has_outline": true,
+    "width": "30.0000 mm",
+    "height": "51.6000 mm",
+    "area": "1548.00 mm²",
+    "front_component_density": "41.13",
+    "back_component_density": "4.27",
+    "front_copper_area": "259.636 mm²",
+    "back_copper_area": "120.823 mm²",
+    "min_track_clearance": "0.1500 mm",
+    "min_track_width": "0.1500 mm",
+    "min_drill_diameter": "0.2500 mm",
+    "board_thickness": "1.0000 mm",
+    "front_footprint_area": "636.63 mm²",
+    "back_footprint_area": "66.091 mm²",
+    "front_footprint_density": "41.13",
+    "back_footprint_density": "4.27"
+  },
+  "pads": {
+    "do_montażu_przewlekanego": 4,
+    "smd": 260,
+    "złącze": 0,
+    "npth": 2,
+    "kastelacja": 0,
+    "na_wcisk": 0
+  },
+  "vias": {
+    "przelotek_na": 160,
+    "ślepych": 0,
+    "przelotek": 0,
+    "": 0
+  },
+  "components": {
+    "tht": {
+      "front": 0,
+      "back": 0,
+      "total": 0
+    },
+    "smd": {
+      "front": 59,
+      "back": 0,
+      "total": 59
+    },
+    "nieokreślony": {
+      "front": 0,
+      "back": 10,
+      "total": 10
+    },
+    "total": {
+      "front": 59,
+      "back": 10,
+      "total": 69
+    }
+  },
+  "drill_holes": [
+    {
+      "count": 160,
+      "shape": "Zaokrąglony",
+      "x_size": "0.2500 mm",
+      "y_size": "0.2500 mm",
+      "plated": true,
+      "source": "Przelotka",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 2,
+      "shape": "Zaokrąglony",
+      "x_size": "0.6500 mm",
+      "y_size": "0.6500 mm",
+      "plated": false,
+      "source": "Pole lutownicze",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 2,
+      "shape": "Wycięcie",
+      "x_size": "0.6000 mm",
+      "y_size": "1.7000 mm",
+      "plated": true,
+      "source": "Pole lutownicze",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 2,
+      "shape": "Wycięcie",
+      "x_size": "0.6000 mm",
+      "y_size": "1.2000 mm",
+      "plated": true,
+      "source": "Pole lutownicze",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    }
+  ]
+}

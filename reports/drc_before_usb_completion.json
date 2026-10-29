@@ -1,0 +1,100 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T14:54:41",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "Ankle_Sensor_V1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 34 [USB_DN] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.65,
+                        "y": 65.15
+                    },
+                    "uuid": "b2225726-1e3a-446e-a43a-d264fe7749a2"
+                },
+                {
+                    "description": "Pole lutownicze 4 [USB_DN] z U6 na F.Cu",
+                    "pos": {
+                        "x": 76.9375,
+                        "y": 95.15
+                    },
+                    "uuid": "1f3370b6-0f6a-496c-99c2-634764bb4a0f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 35 [USB_DP] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.65,
+                        "y": 64.35
+                    },
+                    "uuid": "b648a8dd-46f3-4ff0-9c1e-cae41a3046e7"
+                },
+                {
+                    "description": "Pole lutownicze 6 [USB_DP] z U6 na F.Cu",
+                    "pos": {
+                        "x": 76.9375,
+                        "y": 93.25
+                    },
+                    "uuid": "23a86be1-1ecb-4b82-8a41-b84bcd1b08c7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Przelotka [IMU_CS_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.3,
+                        "y": 74.5
+                    },
+                    "uuid": "b6e6b9e5-26c1-46d2-a2fe-7a477d030d0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1188" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<g font-family="Arial, sans-serif">
+<text x="10" y="10" font-size="1.5" text-anchor="start" fill="#a32121">A0 REVIEW / custom SVG renderer / NOT a KiCad export / NOT FOR FABRICATION</text>
+<text x="25.0" y="17.0" font-size="1.05" text-anchor="start" fill="#222">IMU / NOR FLASH - REVIEW DRAFT</text>
+<text x="25.0" y="25.0" font-size="1.05" text-anchor="start" fill="#222">SPI8MHz; INT1 FIFO watermark; INT2 can serve timestamp/ODR-trigger experiments.</text>
+<text x="25.0" y="33.0" font-size="1.05" text-anchor="start" fill="#222">U5 upgraded to128MiB, same8x6mm body. Address32bit and dual-die status handling.</text>
+<path d="M58.49,49.84 L50.87,49.84" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,52.38 L50.87,52.38" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,54.92 L50.87,54.92" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,57.46 L50.87,57.46" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,60.0 L50.87,60.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,62.54 L50.87,62.54" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,65.08 L50.87,65.08" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,67.62 L50.87,67.62" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M58.49,70.16 L50.87,70.16" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M91.51,54.92 L99.13,54.92" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M91.51,57.46 L99.13,57.46" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M91.51,60.0 L99.13,60.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M91.51,62.54 L99.13,62.54" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M91.51,65.08 L99.13,65.08" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M256.03,54.92 L248.41,54.92" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M256.03,57.46 L248.41,57.46" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M256.03,60.0 L248.41,60.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M256.03,62.54 L248.41,62.54" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M256.03,65.08 L248.41,65.08" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M283.97,56.19 L291.59,56.19" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M283.97,58.73 L291.59,58.73" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M283.97,61.27 L291.59,61.27" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M283.97,63.81 L291.59,63.81" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M59.92,115.0 L52.3,115.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M70.08,115.0 L77.7,115.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M159.92,115.0 L152.3,115.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M170.08,115.0 L177.7,115.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M59.92,150.0 L52.3,150.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M70.08,150.0 L77.7,150.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M264.92,115.0 L257.3,115.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M275.08,115.0 L282.7,115.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M264.92,150.0 L257.3,150.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M275.08,150.0 L282.7,150.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M59.92,195.0 L52.3,195.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M70.08,195.0 L77.7,195.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M264.92,195.0 L257.3,195.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M275.08,195.0 L282.7,195.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M264.92,230.0 L257.3,230.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M275.08,230.0 L282.7,230.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M59.92,230.0 L52.3,230.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M70.08,230.0 L77.7,230.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M159.92,230.0 L152.3,230.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M170.08,230.0 L177.7,230.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M61.19,270.0 L53.57,270.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<path d="M161.19,270.0 L153.57,270.0" stroke="#156a4a" stroke-width="0.18" fill="none"/>
+<rect x="61.03" y="47.3" width="27.939999999999998" height="25.400000000000006" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M58.489999999999995,49.84 L61.029999999999994,49.84" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="50.09" font-size="0.8" text-anchor="start" fill="#2b6b69">VDD</text>
+<text x="59.76" y="49.540000000000006" font-size="0.75" text-anchor="middle" fill="#8b1919">8</text>
+<path d="M58.489999999999995,52.38 L61.029999999999994,52.38" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="52.63" font-size="0.8" text-anchor="start" fill="#2b6b69">VDD_IO</text>
+<text x="59.76" y="52.080000000000005" font-size="0.75" text-anchor="middle" fill="#8b1919">5</text>
+<path d="M58.489999999999995,54.92 L61.029999999999994,54.92" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="55.17" font-size="0.8" text-anchor="start" fill="#2b6b69">nCS</text>
+<text x="59.76" y="54.620000000000005" font-size="0.75" text-anchor="middle" fill="#8b1919">12</text>
+<path d="M58.489999999999995,57.46 L61.029999999999994,57.46" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="57.71" font-size="0.8" text-anchor="start" fill="#2b6b69">SCK</text>
+<text x="59.76" y="57.160000000000004" font-size="0.75" text-anchor="middle" fill="#8b1919">13</text>
+<path d="M58.489999999999995,60.0 L61.029999999999994,60.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="60.25" font-size="0.8" text-anchor="start" fill="#2b6b69">SDI</text>
+<text x="59.76" y="59.7" font-size="0.75" text-anchor="middle" fill="#8b1919">14</text>
+<path d="M58.489999999999995,62.54 L61.029999999999994,62.54" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="62.79" font-size="0.8" text-anchor="start" fill="#2b6b69">SDx_Qvar1</text>
+<text x="59.76" y="62.24" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<path d="M58.489999999999995,65.08 L61.029999999999994,65.08" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="65.33" font-size="0.8" text-anchor="start" fill="#2b6b69">SCx_Qvar2</text>
+<text x="59.76" y="64.78" font-size="0.75" text-anchor="middle" fill="#8b1919">3</text>
+<path d="M58.489999999999995,67.62 L61.029999999999994,67.62" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="67.87" font-size="0.8" text-anchor="start" fill="#2b6b69">GND</text>
+<text x="59.76" y="67.32000000000001" font-size="0.75" text-anchor="middle" fill="#8b1919">6</text>
+<path d="M58.489999999999995,70.16 L61.029999999999994,70.16" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="61.529999999999994" y="70.41" font-size="0.8" text-anchor="start" fill="#2b6b69">GND</text>
+<text x="59.76" y="69.86" font-size="0.75" text-anchor="middle" fill="#8b1919">7</text>
+<path d="M91.51,54.92 L88.97,54.92" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="88.47" y="55.17" font-size="0.8" text-anchor="end" fill="#2b6b69">SDO</text>
+<text x="90.24000000000001" y="54.620000000000005" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M91.51,57.46 L88.97,57.46" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="88.47" y="57.71" font-size="0.8" text-anchor="end" fill="#2b6b69">INT1</text>
+<text x="90.24000000000001" y="57.160000000000004" font-size="0.75" text-anchor="middle" fill="#8b1919">4</text>
+<path d="M91.51,60.0 L88.97,60.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="88.47" y="60.25" font-size="0.8" text-anchor="end" fill="#2b6b69">INT2_DEN</text>
+<text x="90.24000000000001" y="59.7" font-size="0.75" text-anchor="middle" fill="#8b1919">9</text>
+<path d="M91.51,62.54 L88.97,62.54" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="88.47" y="62.79" font-size="0.8" text-anchor="end" fill="#2b6b69">OCS_Aux</text>
+<text x="90.24000000000001" y="62.24" font-size="0.75" text-anchor="middle" fill="#8b1919">10</text>
+<path d="M91.51,65.08 L88.97,65.08" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="88.47" y="65.33" font-size="0.8" text-anchor="end" fill="#2b6b69">SDO_Aux</text>
+<text x="90.24000000000001" y="64.78" font-size="0.75" text-anchor="middle" fill="#8b1919">11</text>
+<text x="75.0" y="43.099999999999994" font-size="0.95" text-anchor="middle" fill="#222">U4</text>
+<text x="75.0" y="45.5" font-size="0.95" text-anchor="middle" fill="#222">LSM6DSV32XTR</text>
+<rect x="258.57" y="52.38" width="22.860000000000014" height="15.240000000000002" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M256.03,54.92 L258.57,54.92" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="259.07" y="55.17" font-size="0.8" text-anchor="start" fill="#2b6b69">VCC</text>
+<text x="257.29999999999995" y="54.620000000000005" font-size="0.75" text-anchor="middle" fill="#8b1919">8</text>
+<path d="M256.03,57.46 L258.57,57.46" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="259.07" y="57.71" font-size="0.8" text-anchor="start" fill="#2b6b69">nCS</text>
+<text x="257.29999999999995" y="57.160000000000004" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M256.03,60.0 L258.57,60.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="259.07" y="60.25" font-size="0.8" text-anchor="start" fill="#2b6b69">CLK</text>
+<text x="257.29999999999995" y="59.7" font-size="0.75" text-anchor="middle" fill="#8b1919">6</text>
+<path d="M256.03,62.54 L258.57,62.54" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="259.07" y="62.79" font-size="0.8" text-anchor="start" fill="#2b6b69">IO0</text>
+<text x="257.29999999999995" y="62.24" font-size="0.75" text-anchor="middle" fill="#8b1919">5</text>
+<path d="M256.03,65.08 L258.57,65.08" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="259.07" y="65.33" font-size="0.8" text-anchor="start" fill="#2b6b69">IO1</text>
+<text x="257.29999999999995" y="64.78" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<path d="M283.97,56.19 L281.43,56.19" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="280.93" y="56.44" font-size="0.8" text-anchor="end" fill="#2b6b69">IO2</text>
+<text x="282.70000000000005" y="55.89" font-size="0.75" text-anchor="middle" fill="#8b1919">3</text>
+<path d="M283.97,58.73 L281.43,58.73" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="280.93" y="58.98" font-size="0.8" text-anchor="end" fill="#2b6b69">IO3</text>
+<text x="282.70000000000005" y="58.43" font-size="0.75" text-anchor="middle" fill="#8b1919">7</text>
+<path d="M283.97,61.27 L281.43,61.27" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="280.93" y="61.52" font-size="0.8" text-anchor="end" fill="#2b6b69">GND</text>
+<text x="282.70000000000005" y="60.970000000000006" font-size="0.75" text-anchor="middle" fill="#8b1919">4</text>
+<path d="M283.97,63.81 L281.43,63.81" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="280.93" y="64.06" font-size="0.8" text-anchor="end" fill="#2b6b69">EP</text>
+<text x="282.70000000000005" y="63.510000000000005" font-size="0.75" text-anchor="middle" fill="#8b1919">9</text>
+<text x="270.0" y="48.18" font-size="0.95" text-anchor="middle" fill="#222">U5</text>
+<text x="270.0" y="50.580000000000005" font-size="0.95" text-anchor="middle" fill="#222">W25Q01JVZEIQ_128MiB</text>
+<path d="M62.46,115.0 L64.492,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M65.508,115.0 L67.54,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M64.492,116.524 L64.492,113.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M65.508,116.524 L65.508,113.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M59.92,115.0 L62.46,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="62.96" y="115.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="61.190000000000005" y="114.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M70.08,115.0 L67.53999999999999,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="67.03999999999999" y="115.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="68.81" y="114.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="65.0" y="108.895" font-size="0.95" text-anchor="middle" fill="#222">C12</text>
+<text x="65.0" y="111.295" font-size="0.95" text-anchor="middle" fill="#222">100n 16V X7R</text>
+<path d="M162.46,115.0 L164.492,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M165.508,115.0 L167.54,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M164.492,116.524 L164.492,113.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M165.508,116.524 L165.508,113.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M159.92,115.0 L162.45999999999998,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="162.95999999999998" y="115.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="161.19" y="114.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M170.08,115.0 L167.54000000000002,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="167.04000000000002" y="115.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="168.81" y="114.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="165.0" y="108.895" font-size="0.95" text-anchor="middle" fill="#222">C13</text>
+<text x="165.0" y="111.295" font-size="0.95" text-anchor="middle" fill="#222">100n 16V X7R</text>
+<path d="M62.46,150.0 L64.492,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M65.508,150.0 L67.54,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M64.492,151.524 L64.492,148.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M65.508,151.524 L65.508,148.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M59.92,150.0 L62.46,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="62.96" y="150.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="61.190000000000005" y="149.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M70.08,150.0 L67.53999999999999,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="67.03999999999999" y="150.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="68.81" y="149.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="65.0" y="143.895" font-size="0.95" text-anchor="middle" fill="#222">C14</text>
+<text x="65.0" y="146.295" font-size="0.95" text-anchor="middle" fill="#222">1u 16V X7R</text>
+<path d="M267.46,115.0 L269.492,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M270.508,115.0 L272.54,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M269.492,116.524 L269.492,113.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M270.508,116.524 L270.508,113.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M264.92,115.0 L267.46000000000004,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="267.96000000000004" y="115.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="266.19" y="114.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M275.08,115.0 L272.53999999999996,115.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.03999999999996" y="115.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="273.81" y="114.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="270.0" y="108.895" font-size="0.95" text-anchor="middle" fill="#222">C15</text>
+<text x="270.0" y="111.295" font-size="0.95" text-anchor="middle" fill="#222">100n 16V X7R</text>
+<path d="M267.46,150.0 L269.492,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M270.508,150.0 L272.54,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M269.492,151.524 L269.492,148.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M270.508,151.524 L270.508,148.476" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<path d="M264.92,150.0 L267.46000000000004,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="267.96000000000004" y="150.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="266.19" y="149.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M275.08,150.0 L272.53999999999996,150.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.03999999999996" y="150.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="273.81" y="149.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="270.0" y="143.895" font-size="0.95" text-anchor="middle" fill="#222">C16</text>
+<text x="270.0" y="146.295" font-size="0.95" text-anchor="middle" fill="#222">4.7u 10V X5R</text>
+<rect x="62.46" y="193.73" width="5.080000000000005" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M59.92,195.0 L62.46,195.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="62.96" y="195.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="61.190000000000005" y="194.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M70.08,195.0 L67.53999999999999,195.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="67.03999999999999" y="195.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="68.81" y="194.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="65.0" y="189.53" font-size="0.95" text-anchor="middle" fill="#222">R9</text>
+<text x="65.0" y="191.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">100k 1%</text>
+<rect x="267.46" y="193.73" width="5.080000000000041" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M264.92,195.0 L267.46000000000004,195.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="267.96000000000004" y="195.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="266.19" y="194.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M275.08,195.0 L272.53999999999996,195.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.03999999999996" y="195.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="273.81" y="194.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="270.0" y="189.53" font-size="0.95" text-anchor="middle" fill="#222">R10</text>
+<text x="270.0" y="191.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">100k 1%</text>
+<rect x="267.46" y="228.73" width="5.080000000000041" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M264.92,230.0 L267.46000000000004,230.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="267.96000000000004" y="230.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="266.19" y="229.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M275.08,230.0 L272.53999999999996,230.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="272.03999999999996" y="230.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="273.81" y="229.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="270.0" y="224.53" font-size="0.95" text-anchor="middle" fill="#222">R11</text>
+<text x="270.0" y="226.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">22R 1% DRAFT</text>
+<rect x="62.46" y="228.73" width="5.080000000000005" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M59.92,230.0 L62.46,230.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="62.96" y="230.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="61.190000000000005" y="229.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M70.08,230.0 L67.53999999999999,230.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="67.03999999999999" y="230.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="68.81" y="229.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="65.0" y="224.53" font-size="0.95" text-anchor="middle" fill="#222">R12</text>
+<text x="65.0" y="226.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">100k 1%</text>
+<rect x="162.46" y="228.73" width="5.079999999999984" height="2.5400000000000205" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M159.92,230.0 L162.45999999999998,230.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="162.95999999999998" y="230.25" font-size="0.8" text-anchor="start" fill="#2b6b69"></text>
+<text x="161.19" y="229.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<path d="M170.08,230.0 L167.54000000000002,230.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="167.04000000000002" y="230.25" font-size="0.8" text-anchor="end" fill="#2b6b69"></text>
+<text x="168.81" y="229.7" font-size="0.75" text-anchor="middle" fill="#8b1919">2</text>
+<text x="165.0" y="224.53" font-size="0.95" text-anchor="middle" fill="#222">R13</text>
+<text x="165.0" y="226.92999999999998" font-size="0.95" text-anchor="middle" fill="#222">100k 1%</text>
+<rect x="63.73" y="266.19" width="2.539999999999999" height="7.6200000000000045" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M61.19,270.0 L63.73,270.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="64.22999999999999" y="270.25" font-size="0.8" text-anchor="start" fill="#2b6b69">TP</text>
+<text x="62.46" y="269.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<text x="65.0" y="261.99" font-size="0.95" text-anchor="middle" fill="#222">TP6</text>
+<text x="65.0" y="264.39" font-size="0.95" text-anchor="middle" fill="#222">IMU_INT1</text>
+<rect x="163.73" y="266.19" width="2.5400000000000205" height="7.6200000000000045" fill="#fff9dd" stroke="#8b1919" stroke-width=".18"/>
+<path d="M161.19,270.0 L163.73,270.0" stroke="#8b1919" stroke-width="0.18" fill="none"/>
+<text x="164.23" y="270.25" font-size="0.8" text-anchor="start" fill="#2b6b69">TP</text>
+<text x="162.46" y="269.7" font-size="0.75" text-anchor="middle" fill="#8b1919">1</text>
+<text x="165.0" y="261.99" font-size="0.95" text-anchor="middle" fill="#222">TP7</text>
+<text x="165.0" y="264.39" font-size="0.95" text-anchor="middle" fill="#222">IMU_INT2</text>
+<text x="50.87" y="49.49" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="50.87" y="52.03" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="50.87" y="54.57" font-size="0.9" text-anchor="end" fill="#13663a">IMU_CS_N</text>
+<text x="50.87" y="57.11" font-size="0.9" text-anchor="end" fill="#13663a">IMU_SCK</text>
+<text x="50.87" y="59.65" font-size="0.9" text-anchor="end" fill="#13663a">IMU_MOSI</text>
+<text x="50.87" y="62.19" font-size="0.9" text-anchor="end" fill="#13663a">GND</text>
+<text x="50.87" y="64.73" font-size="0.9" text-anchor="end" fill="#13663a">GND</text>
+<text x="50.87" y="67.27000000000001" font-size="0.9" text-anchor="end" fill="#13663a">GND</text>
+<text x="50.87" y="69.81" font-size="0.9" text-anchor="end" fill="#13663a">GND</text>
+<text x="99.13" y="54.57" font-size="0.9" text-anchor="start" fill="#13663a">IMU_MISO</text>
+<text x="99.13" y="57.11" font-size="0.9" text-anchor="start" fill="#13663a">IMU_INT1</text>
+<text x="99.13" y="59.65" font-size="0.9" text-anchor="start" fill="#13663a">IMU_INT2</text>
+<text x="99.13" y="62.19" font-size="0.9" text-anchor="start" fill="#13663a">+3V0</text>
+<text x="99.13" y="64.73" font-size="0.9" text-anchor="start" fill="#13663a">+3V0</text>
+<text x="248.41" y="54.57" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="248.41" y="57.11" font-size="0.9" text-anchor="end" fill="#13663a">FLASH_CS_N</text>
+<text x="248.41" y="59.65" font-size="0.9" text-anchor="end" fill="#13663a">QSPI_CLK_FLASH</text>
+<text x="248.41" y="62.19" font-size="0.9" text-anchor="end" fill="#13663a">QSPI_IO0</text>
+<text x="248.41" y="64.73" font-size="0.9" text-anchor="end" fill="#13663a">QSPI_IO1</text>
+<text x="291.59" y="55.839999999999996" font-size="0.9" text-anchor="start" fill="#13663a">QSPI_IO2</text>
+<text x="291.59" y="58.379999999999995" font-size="0.9" text-anchor="start" fill="#13663a">QSPI_IO3</text>
+<text x="291.59" y="60.92" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="291.59" y="63.46" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="52.3" y="114.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="77.7" y="114.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="152.3" y="114.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="177.7" y="114.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="52.3" y="149.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="77.7" y="149.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="257.3" y="114.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="282.7" y="114.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="257.3" y="149.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="282.7" y="149.65" font-size="0.9" text-anchor="start" fill="#13663a">GND</text>
+<text x="52.3" y="194.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="77.7" y="194.65" font-size="0.9" text-anchor="start" fill="#13663a">IMU_CS_N</text>
+<text x="257.3" y="194.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="282.7" y="194.65" font-size="0.9" text-anchor="start" fill="#13663a">FLASH_CS_N</text>
+<text x="257.3" y="229.65" font-size="0.9" text-anchor="end" fill="#13663a">QSPI_SCK</text>
+<text x="282.7" y="229.65" font-size="0.9" text-anchor="start" fill="#13663a">QSPI_CLK_FLASH</text>
+<text x="52.3" y="229.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="77.7" y="229.65" font-size="0.9" text-anchor="start" fill="#13663a">QSPI_IO2</text>
+<text x="152.3" y="229.65" font-size="0.9" text-anchor="end" fill="#13663a">+3V0</text>
+<text x="177.7" y="229.65" font-size="0.9" text-anchor="start" fill="#13663a">QSPI_IO3</text>
+<text x="53.57" y="269.65" font-size="0.9" text-anchor="end" fill="#13663a">IMU_INT1</text>
+<text x="153.57" y="269.65" font-size="0.9" text-anchor="end" fill="#13663a">IMU_INT2</text>
+<text x="10" y="295" font-size="1.1" text-anchor="start" fill="#222">sensors.kicad_sch / coordinates and pin labels read from .kicad_sch / review only</text>
+</g></svg>

@@ -1,0 +1,5 @@
+(model "${KIPRJMOD}/3dmodels/W25Q01JVZEIQ_ENVELOPE_MAX.step"
+  (offset (xyz 0 0 -0.000000))
+  (scale (xyz 1 1 1))
+  (rotate (xyz 0 0 0))
+)

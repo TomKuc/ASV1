@@ -1,0 +1,79 @@
+{
+  "kicad_version": "10.0.7",
+  "date": "2026-10-28",
+  "footprints": [
+    {
+      "reference": "U3",
+      "name": "Raytac_MDBT50Q",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/RF_Module.pretty/Raytac_MDBT50Q.kicad_mod",
+      "source_sha256": "ad0d00c8316082dd29a57b169d5eb2e0e03e09d2edc537a8e110bac65fcc551a",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/Raytac_MDBT50Q.kicad_mod",
+      "project_sha256": "93b03eabab519bb6d234bef52a0f9e9ec200adb4296d201dac002efaef980e9f",
+      "pads": 61,
+      "zones": 2,
+      "validation": "Native KiCad FootprintLoad passed; pad numbering matches design.json"
+    },
+    {
+      "reference": "U4",
+      "name": "ST_LSM6DSV32X_LGA14_3x2.5mm_P0.5mm",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Package_LGA.pretty/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y.kicad_mod",
+      "source_sha256": "0484532e7987014dc4fb9505de57868e23da41a6c5f10673c4e221600d489ace",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/ST_LSM6DSV32X_LGA14_3x2.5mm_P0.5mm.kicad_mod",
+      "project_sha256": "b57344539823fc7b38283e7547e778688406c4739ad1e1f215adda0d8e48bbde",
+      "pads": 14,
+      "zones": 1,
+      "validation": "Native KiCad FootprintLoad passed; pad numbering matches design.json"
+    },
+    {
+      "reference": "Y1",
+      "name": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Crystal.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+      "source_sha256": "75b26d09b915972459551bb719397c3b03ad8252006bf74eb7e4977b5ba417e1",
+      "project_path": "hardware/footprints/AnkleSensor.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+      "project_sha256": "28faa27d46d1b7a410aabf99849dabafa77b0426265c9b8f9dcbe904eafdc905",
+      "pads": 2,
+      "zones": 0,
+      "validation": "Native KiCad FootprintLoad passed; pad numbering matches design.json"
+    }
+  ],
+  "models": [
+    {
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/RF_Module.3dshapes/Raytac_MDBT50Q.step",
+      "destination": "hardware/3dmodels/Raytac_MDBT50Q.step",
+      "sha256": "24aec576333a0c2c487689ecdb5d9b3be3861ef684995ffd3a47f484e1828157",
+      "status": "GENERIC_KICAD_MODEL_NOT_VERIFIED_P1MV2_VENDOR_CAD",
+      "selected_mpn": "MDBT50Q-P1MV2",
+      "library_model_bounds_mm": [
+        [
+          -5.25,
+          5.25
+        ],
+        [
+          -7.75,
+          7.75
+        ],
+        [
+          0,
+          2.06
+        ]
+      ],
+      "manufacturer_nominal_body_mm": [
+        10.5,
+        15.5,
+        2.0
+      ],
+      "limitation": "Rendered asset contains a discrete antenna block resembling the chip-antenna variant; selected P1MV2 specifies PCB antenna. Visual inference only. Base outline matches but exact antenna geometry and maximum tolerance envelope are not verified.",
+      "manufacturer_source_url": "https://www.raytac.com/product/ins.php?index_id=47"
+    },
+    {
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_LGA.3dshapes/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y.step",
+      "destination": "hardware/3dmodels/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y.step",
+      "sha256": "135b7bb3b2262aa62b4493c9b0e06504cf329c6e4970fa84d0f8d063763daeb5"
+    },
+    {
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+      "destination": "hardware/3dmodels/Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+      "sha256": "70191ff5204d0ce50e154f75b1186923e3123cfdb58d647b5cce319de5485701"
+    }
+  ]
+}

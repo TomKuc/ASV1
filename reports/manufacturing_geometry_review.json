@@ -1,0 +1,20 @@
+{
+  "status": "PASS_COORDINATE_AND_DRILL_COMPARISON_NOT_CAM_RELEASE",
+  "native_kicad_version": "10.0.7",
+  "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "origin_native_mm": [
+    50.0,
+    101.6
+  ],
+  "profile_centerline_mm": [
+    30,
+    51.6
+  ],
+  "placement_matches_native_parts": 59,
+  "via_drills_match_native": 160,
+  "plated_slots_match_native": 4,
+  "npth_match_native": 2,
+  "excellon_numeric_comparison_tolerance_mm": 0.00051,
+  "maximum_drill_coordinate_or_size_error_mm": 9.999999974752427e-07,
+  "limitations": "Native footprint anchors/angles are compared, not JLC placement translations. Copper/mask/paste Gerbers need independent CAM and DFM review."
+}

@@ -1,0 +1,250 @@
+{
+  "status": "PARTIAL_REQUIRES_KICAD_DRC_AND_REVIEW",
+  "kicad_version": "10.0.7",
+  "settings_mm": {
+    "grid": 0.05,
+    "clearance": 0.15,
+    "width": 0.15,
+    "via_diameter": 0.5,
+    "via_drill": 0.25,
+    "hole_clearance": 0.25,
+    "edge_clearance": 0.5,
+    "via_cost": 2.0,
+    "max_expansions": 500000,
+    "max_seconds": 90
+  },
+  "routing_layers": [
+    "F.Cu",
+    "B.Cu",
+    "In2.Cu"
+  ],
+  "reserved_plane_layer": "In1.Cu",
+  "tracks_added": 33,
+  "vias_added": 0,
+  "connections": [
+    {
+      "net": "LF_XL1",
+      "from": "C7.1",
+      "to": "Y1.1",
+      "reason": "path_found",
+      "expanded": 301,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LF_XL1",
+      "from": "Y1.1",
+      "to": "U3.17",
+      "reason": "path_found",
+      "expanded": 545,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LF_XL2",
+      "from": "Y1.2",
+      "to": "C8.1",
+      "reason": "path_found",
+      "expanded": 345,
+      "result": "tracks_added"
+    },
+    {
+      "net": "LF_XL2",
+      "from": "Y1.2",
+      "to": "U3.18",
+      "reason": "path_found",
+      "expanded": 351,
+      "result": "tracks_added"
+    }
+  ],
+  "preferred_widths_mm": {
+    "VBUS": 0.3,
+    "VSYS": 0.3,
+    "VBAT": 0.3
+  },
+  "connected_via_anchor_uses": [],
+  "new_via_tenting": "front_and_back",
+  "neckdown_length_mm": 0.5,
+  "power_width_fallbacks": [],
+  "track_length_by_net_and_width_mm": {
+    "LF_XL1": {
+      "0.150": 5.075171991630986
+    },
+    "LF_XL2": {
+      "0.150": 4.9509079229190585
+    }
+  },
+  "plane_stubs": [],
+  "warnings": [
+    "No impedance, differential-pair, RF, timing or mechanical qualification.",
+    "GND/other plane stubs require real zones and zone fill before connectivity/DRC.",
+    "Grid router is conservative and incomplete; use KiCad DRC as authority."
+  ],
+  "board_minimums_mm": {
+    "track_width": 0.15,
+    "via_diameter": 0.5,
+    "via_drill": 0.25,
+    "clearance": 0.15,
+    "edge_clearance": 0.5
+  },
+  "net_filter": [
+    "LF_XL1",
+    "LF_XL2"
+  ],
+  "effective_hole_to_hole_mm": 0.25,
+  "loaded_hole_to_copper_mm": 0.25,
+  "native_unconnected_before": 4,
+  "native_unconnected_after_before_zone_refill": 0,
+  "remaining_signal_components": {},
+  "unrouted_plane_pads": [],
+  "plane_zone_presence": {
+    "GND": true,
+    "+3V0": true
+  },
+  "native_unconnected_after_refill": 0,
+  "before": {
+    "LF_XL1": {
+      "track_length_mm": 6.750458146424487,
+      "via_count": 0
+    },
+    "LF_XL2": {
+      "track_length_mm": 48.693653212091,
+      "via_count": 5
+    }
+  },
+  "after": {
+    "LF_XL1": {
+      "track_length_mm": 5.075171991630986,
+      "via_count": 0
+    },
+    "LF_XL2": {
+      "track_length_mm": 4.9509079229190585,
+      "via_count": 0
+    }
+  },
+  "source_sha256": "ad48d9167f5b345f2bf8c33039c49ffc8f62aaac07e429c8bcf9d6d00a91fb31",
+  "Y1": {
+    "rotation_before_deg": 0.0,
+    "rotation_after_deg": 180.0,
+    "position_mm": [
+      61.0,
+      68.5
+    ],
+    "nonpolar_part": true
+  },
+  "removed_uuids": [
+    "00431ec2-2cf0-4019-b0a7-4bd8a6ebb451",
+    "03cff839-fff3-44b2-9640-5706551c6ed2",
+    "04f69e2e-f57d-4ed6-9659-243682b548f7",
+    "08c07ae4-ac24-4027-bd00-33ce5e196e6b",
+    "091dae26-078f-48aa-8601-9f9042169b99",
+    "11334ec1-387a-4b37-886b-e2124e898028",
+    "12c8fa4c-478e-4209-91bf-60b4c9be80dd",
+    "16278ca7-8576-41d1-b640-5cf4148e9535",
+    "1f51a30a-1e84-4141-b26e-3027331c4c0c",
+    "20b0e0b9-a81a-46cb-a29a-70512470db53",
+    "26f94cce-befb-49d0-91a2-ca38a9935343",
+    "2a367f4e-e94c-420b-a5e1-940ccaed229d",
+    "2b3cc117-1322-475b-bbef-2e1f319b791c",
+    "2e40d2af-c809-4a8a-85e7-3131a415e94e",
+    "32df1ee7-ad46-4b9c-9d2d-fd739414b2c2",
+    "357ed7f9-1486-4ee2-bbfa-3658b9b8b0cc",
+    "38eddbee-0044-4656-9380-6a5c7d810bc4",
+    "3ab17be7-95ae-4ea3-86d9-f060c0969e6a",
+    "3d69e61f-78de-4da1-8f01-5bdce7084e6f",
+    "3dfff20c-ea90-4275-8dec-15ae01071bdc",
+    "405a5739-229b-44e7-8d77-a50975a7ec49",
+    "45fb0969-bd7f-45f1-b8e6-f5cc09e81f34",
+    "46636880-3853-4c2c-ab3a-6e7c1d8ac08e",
+    "491c3513-1b8a-48d5-8ee1-8e3847810839",
+    "4fa75d60-79a5-4b42-af26-b53d601e434d",
+    "5132b661-25b5-4377-9e65-e6fb0685992e",
+    "5474f917-3273-4b54-89b1-3fd747e4032b",
+    "56ffb2b7-8388-4751-b285-f71b1f59ada5",
+    "57e5a09b-93ba-47b1-bfc0-703402cc6bd0",
+    "5d5be326-1dd8-4b7f-b26c-396f8730caaa",
+    "5dfbf586-a87d-4e28-a6e2-c90fedd78759",
+    "5f609fae-3c20-4b6e-a5e1-71ea63b6dd3e",
+    "628afa27-1413-4bda-915e-3a9a8d40424f",
+    "64b962e9-aa34-4f2c-8a85-240160809083",
+    "654cb753-4fa0-460b-9173-e63d331c4ae8",
+    "6717cb9a-112d-406f-b4a2-db5e1466482c",
+    "68c451f7-fc60-4dde-abf8-cdf94603d414",
+    "6b21de79-cba6-410e-8719-4183ffd2a54b",
+    "6bdfbccb-e4fb-4d60-9ef8-4aa6e329d157",
+    "732f4b4a-6a3a-46cd-bfd4-0d851b04818f",
+    "74b20d07-de2b-4938-bd6e-aab5d1b698ae",
+    "7e5dd16f-ae54-4173-ad86-0ffd383bea87",
+    "84655d4c-8aef-4962-bf17-00c35ba32f35",
+    "852a018b-fea3-4280-a951-6355e7543cdf",
+    "89f007e2-b52d-4f82-858e-66dbc0a15ea3",
+    "8ab81e01-8f65-4ac3-baf5-afb4e8b56129",
+    "956da79b-af5d-46a8-b82b-c36a966781e8",
+    "99b8a1c2-63cb-4399-92c3-bf32158252dc",
+    "9bd086d9-e9fd-4c21-88d4-a45fb0011320",
+    "9e6f38eb-e8e4-437d-9d2b-99d77bb6580c",
+    "a05b756f-d9f5-41e3-9921-519c52781c4c",
+    "a3570bd4-33c6-4bed-bdfc-97fd8db8d630",
+    "a3fadb3f-bfe1-4b8d-a51b-4361603bf9b6",
+    "a4f87fdf-3c9e-42ae-8892-d3024c7fbf3f",
+    "a6213547-8358-4f3f-823a-343926cc7292",
+    "a9d5bc90-d704-4593-af35-7a131b01782d",
+    "aef29782-045b-49a2-8f31-51e13032312c",
+    "b770138e-5062-4e8e-a5f6-fe6467bd3ef6",
+    "ba785e1a-c1c0-47a3-8d9c-6c3286b757bf",
+    "bb837c46-7aa8-48fa-a7d4-a85d3247911f",
+    "bfa11e17-4db1-47d8-91ae-2aae0ccbb017",
+    "c04f537b-bd69-42b0-8e98-6e0ff30b570b",
+    "c351715a-ffa2-41de-9bac-5dc3c4160c78",
+    "c842222b-2b93-4777-811a-8299718a638e",
+    "cc94dc21-6286-4488-bf4a-f57e9b2490be",
+    "d3a63372-6279-4516-b8cd-30547ad1f279",
+    "d5444668-1dba-46fd-bb7b-63adb7deccf9",
+    "d5749d9b-b6eb-43c0-b65a-b1d7c3324fed",
+    "e3932415-3aa2-45f5-bb27-b83d47e9fa98",
+    "f42ed62f-ca4f-42de-a756-5d58c19f15c3",
+    "f5860e86-b792-4819-8dd6-0d0b85a00325",
+    "f5ebc447-bde1-4a65-9b95-caedcf35caf9",
+    "f66e8ebf-0cd5-4eb3-ad3f-c7efa0b28a28",
+    "f6ba91ef-c18e-44a0-bf6e-f7a05e6b02e8",
+    "fc356859-7df6-41c6-b211-a85cf56ba09c",
+    "fee7d1a7-b9df-4485-b0cc-5ae2bb9e3b65"
+  ],
+  "added_uuids": [
+    "02e0cd24-2812-4e69-bd5a-09ed7f6412da",
+    "1176871d-e201-4aec-a8dc-b3d949fa8844",
+    "2c7eddee-b1fe-49a6-a5c7-bc887b55b441",
+    "3aa5821e-c1e6-4a4e-8511-503cb9146512",
+    "3bcc3790-31b4-43a8-974e-eb01d37b6cd4",
+    "402b5e81-3e7b-4ef7-a75f-3dcb1a9eab84",
+    "48a4eb51-1852-4ee3-a53d-571b9d95a64f",
+    "56a999e9-21d5-4e35-9dae-fcb7d99bdbe5",
+    "599d8b3f-7fc5-44ac-8c91-dc053530e023",
+    "5d4c1dd4-3235-43c3-9103-d7babbc1d36b",
+    "5d8cfc6e-9926-4028-b134-47cea2bf8455",
+    "60edff96-2b1a-4221-82fd-8ec4b3518f96",
+    "67ab3c89-dae0-4a28-8487-3b5d0edf9193",
+    "6a714469-802f-432d-a248-64adf17b702a",
+    "6e93ec85-ea35-4f1a-9ebe-19d098f4b103",
+    "72f69e0c-21c0-4d40-b64c-60c320afe8e3",
+    "74b1165b-5127-47df-bd18-9a12125346f7",
+    "887ae343-03c9-4d17-aeb7-8f8c06c8ebcf",
+    "9431a4e6-a2f5-4459-ab4b-6491a036b355",
+    "978e7aa3-1fc2-4b5a-9e89-6abc0c829905",
+    "98d300fc-661c-4b46-99ca-78b21cf2a456",
+    "9b76054c-88f3-4fd8-a528-485d3b67cdee",
+    "a5634ac5-0754-495c-a049-849456f412fc",
+    "a9fbf93b-e438-4b55-848a-25066d94f803",
+    "ba421869-5096-4eb1-b674-25fef837c8b0",
+    "c20b7fd5-1166-4e1c-9684-99f80bf63512",
+    "d04f1b32-81c4-4a2d-861b-219c9afc4984",
+    "d3a6c49b-3474-40bd-ba92-75850c63fa8c",
+    "ecafa1c7-c1de-4cfe-b405-7db7c52cec22",
+    "ee26dab1-f66a-4ace-960b-5168310a3c94",
+    "ef2ff552-7238-4768-b339-26f53fb93702",
+    "f0d3126d-f896-4397-9f79-815c38f48460",
+    "fb02cf74-d196-4143-a3e4-4d4a0f7c76ad"
+  ],
+  "modified_nets": [
+    "LF_XL1",
+    "LF_XL2"
+  ]
+}

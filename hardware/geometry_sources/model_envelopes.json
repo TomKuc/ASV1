@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-28",
+  "reference": "U5",
+  "mpn": "W25Q01JVZEIQ",
+  "kind": "RECTANGULAR_MAXIMUM_PACKAGE_ENVELOPE_NOT_VENDOR_CAD",
+  "dimensions_mm": [
+    8.1,
+    6.1,
+    0.8
+  ],
+  "source": "Winbond W25Q01JV Rev E, 2024-03-04, package ZE, printed page81",
+  "source_url": "https://www.mouser.com/datasheet/2/949/Winbond_Electronics_Corporation_09_06_2024_W25Q01J-3501286.pdf",
+  "model_path": "hardware/3dmodels/W25Q01JVZEIQ_ENVELOPE_MAX.step",
+  "model_sha256": "87cc4cef6887847976c63fbd1ae775a2af6f559b8beb69b0260f83eee231a15f",
+  "native_exporter": "10.0.7",
+  "construction_board_thickness_mm": 0.89,
+  "native_bounds_mm": [
+    [
+      -4.05,
+      4.05
+    ],
+    [
+      -3.05,
+      3.05
+    ],
+    [
+      0.0,
+      0.8
+    ]
+  ],
+  "recommended_offset_mm": [
+    0,
+    0,
+    -0.0
+  ],
+  "resulting_bounds_above_pcb_top_mm": [
+    0,
+    0.8
+  ],
+  "model_entry": "(model \"${KIPRJMOD}/3dmodels/W25Q01JVZEIQ_ENVELOPE_MAX.step\"\n  (offset (xyz 0 0 -0.000000))\n  (scale (xyz 1 1 1))\n  (rotate (xyz 0 0 0))\n)",
+  "limitations": [
+    "Rectangular maximum package envelope only; no leads, exposed pad, chamfer or manufacturer geometry.",
+    "Component placement and solder joint standoff require separate enclosure allowance.",
+    "The main project PCB and its footprint model associations were not modified."
+  ],
+  "usb_model": {
+    "reference": "J1",
+    "status": "MISSING_EXACT_MODEL",
+    "reason": "Manufacturer page gives nominal8.94x7.35x3.16mm, but maximum dimensions, tolerances and mounting datum were not verified."
+  }
+}

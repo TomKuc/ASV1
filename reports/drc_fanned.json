@@ -1,0 +1,483 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T14:33:12",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "Ankle_Sensor_V1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [VBUS] na B.Cu, długość 0.1414 mm",
+                    "pos": {
+                        "x": 64.6,
+                        "y": 93.8
+                    },
+                    "uuid": "d8147940-a1d4-4c46-83d2-7d2aae800171"
+                },
+                {
+                    "description": "Pole lutownicze A9 [VBUS] z J1 na F.Cu",
+                    "pos": {
+                        "x": 66.45,
+                        "y": 94.955
+                    },
+                    "uuid": "71deb125-a0b1-453b-b2db-dc48061d8b16"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze B5 [USB_CC2] z J1 na F.Cu",
+                    "pos": {
+                        "x": 65.75,
+                        "y": 94.955
+                    },
+                    "uuid": "a8af09e4-c397-43e5-90f8-02a5e6005546"
+                },
+                {
+                    "description": "Pole lutownicze 1 [USB_CC2] z R15 na F.Cu",
+                    "pos": {
+                        "x": 69.99,
+                        "y": 98.2
+                    },
+                    "uuid": "845cb705-8f31-43d6-92f0-fad443661fdd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Ścieżka [RESET_N] na B.Cu, długość 0.0500 mm",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 65.85
+                    },
+                    "uuid": "baa92659-36aa-421a-9635-1f3c1806e68a"
+                },
+                {
+                    "description": "Pole lutownicze 40 [RESET_N] z U3 na F.Cu",
+                    "pos": {
+                        "x": 67.75,
+                        "y": 62.35
+                    },
+                    "uuid": "ccf1f8ac-f92c-451a-81d7-8ceffe837e8e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 34 [USB_DN] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.65,
+                        "y": 65.15
+                    },
+                    "uuid": "b2225726-1e3a-446e-a43a-d264fe7749a2"
+                },
+                {
+                    "description": "Pole lutownicze 4 [USB_DN] z U6 na F.Cu",
+                    "pos": {
+                        "x": 76.9375,
+                        "y": 95.15
+                    },
+                    "uuid": "1f3370b6-0f6a-496c-99c2-634764bb4a0f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 35 [USB_DP] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.65,
+                        "y": 64.35
+                    },
+                    "uuid": "b648a8dd-46f3-4ff0-9c1e-cae41a3046e7"
+                },
+                {
+                    "description": "Pole lutownicze 6 [USB_DP] z U6 na F.Cu",
+                    "pos": {
+                        "x": 76.9375,
+                        "y": 93.25
+                    },
+                    "uuid": "23a86be1-1ecb-4b82-8a41-b84bcd1b08c7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 13 [IMU_SCK] z U4 na F.Cu",
+                    "pos": {
+                        "x": 55.8,
+                        "y": 75.5875
+                    },
+                    "uuid": "ca2bc48a-fd4c-4b5f-b8da-1a814cacabc0"
+                },
+                {
+                    "description": "Pole lutownicze 37 [IMU_SCK] z U3 na F.Cu",
+                    "pos": {
+                        "x": 68.65,
+                        "y": 63.55
+                    },
+                    "uuid": "939b5d49-e6f8-4447-935d-278ca94eaf0a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 4 [CHG_CE_N] z U1 na F.Cu",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 92.6
+                    },
+                    "uuid": "014b3209-df9f-48f8-91b9-319dff42d94e"
+                },
+                {
+                    "description": "Ścieżka [CHG_CE_N] na F.Cu, długość 1.3000 mm",
+                    "pos": {
+                        "x": 62.05,
+                        "y": 89.35
+                    },
+                    "uuid": "7f8b687c-17b4-419d-9a5b-4d040e668479"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pole lutownicze 7 [QSPI_IO3] z U5 na F.Cu",
+                    "pos": {
+                        "x": 71.75,
+                        "y": 74.365
+                    },
+                    "uuid": "e778c01e-2041-4afc-b590-175ec847c909"
+                },
+                {
+                    "description": "Ścieżka [QSPI_IO3] na F.Cu, długość 0.7778 mm",
+                    "pos": {
+                        "x": 75.95,
+                        "y": 61.5
+                    },
+                    "uuid": "988c266c-97d1-4b84-ae82-57af76836e0d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2218 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_CC1] na B.Cu, długość 0.0707 mm",
+                    "pos": {
+                        "x": 66.65,
+                        "y": 97.0
+                    },
+                    "uuid": "7e879116-bec0-4911-9b9b-8dbcd15cad28"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2067 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_DP_CONN] na F.Cu, długość 0.2828 mm",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 97.2
+                    },
+                    "uuid": "3369d564-8318-4440-8564-55c17aeb14f8"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2294 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_CC1] na B.Cu, długość 0.0500 mm",
+                    "pos": {
+                        "x": 66.45,
+                        "y": 96.85
+                    },
+                    "uuid": "b42bc8c6-cfc0-47ba-98cd-0204440b1fe7"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_CC1] na B.Cu, długość 1.1000 mm",
+                    "pos": {
+                        "x": 67.75,
+                        "y": 97.0
+                    },
+                    "uuid": "fb32ea20-da71-462a-8d02-952ec2b77326"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2218 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_DP_CONN] na F.Cu, długość 0.0500 mm",
+                    "pos": {
+                        "x": 66.6,
+                        "y": 96.95
+                    },
+                    "uuid": "3fa7bc29-12bc-4ef7-ab11-4073bc966772"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2218 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_CC1] na B.Cu, długość 0.0500 mm",
+                    "pos": {
+                        "x": 66.6,
+                        "y": 96.95
+                    },
+                    "uuid": "c10d122d-9fe5-4e24-945c-34595f7b3a5f"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2294 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_CC1] na B.Cu, długość 0.1414 mm",
+                    "pos": {
+                        "x": 66.55,
+                        "y": 96.95
+                    },
+                    "uuid": "e08d78f8-a4c5-495f-a141-b1fc17524b3b"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2218 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_DP_CONN] na F.Cu, długość 0.0707 mm",
+                    "pos": {
+                        "x": 66.65,
+                        "y": 97.0
+                    },
+                    "uuid": "f4b658d5-2e29-4547-a5c1-aafdd3f7f6e9"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2293 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_DP_CONN] na F.Cu, długość 1.4142 mm",
+                    "pos": {
+                        "x": 66.55,
+                        "y": 96.95
+                    },
+                    "uuid": "4a95f251-b5a0-4af2-9005-e0abd41947c8"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Naruszenie prześwitu otworów (ograniczenia w konfiguracji płytki dla otworów prześwit 0.2500 mm; obecnie 0.2067 mm)",
+            "items": [
+                {
+                    "description": "Ścieżka [USB_DP_CONN] na F.Cu, długość 0.1500 mm",
+                    "pos": {
+                        "x": 66.8,
+                        "y": 97.0
+                    },
+                    "uuid": "6151bc68-d4cb-4ce4-acb0-1e451c7f87b1"
+                },
+                {
+                    "description": "Pole NPTH z J1",
+                    "pos": {
+                        "x": 66.89,
+                        "y": 96.4
+                    },
+                    "uuid": "17df2b29-8a40-43da-a33b-dcf40552a7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Przelotka [RESET_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.9,
+                        "y": 62.35
+                    },
+                    "uuid": "8a7391dc-dec8-4249-becf-b34fcefb85cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Przelotka [IMU_CS_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.3,
+                        "y": 74.5
+                    },
+                    "uuid": "b6e6b9e5-26c1-46d2-a2fe-7a477d030d0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+  "check_type": "independent_static_schematic_manifest_audit",
+  "status": "STATIC_CHECKS_PASS",
+  "kicad_erc": "NOT_RUN",
+  "kicad_drc": "NOT_RUN",
+  "fabrication_release": false,
+  "scope": "Separate sheet geometry; global labels by name; sheet paths, embedded pins, wire/label connectivity, NC, references, UUIDs and manifest consistency",
+  "limitations": [
+    "This does not validate KiCad syntax or its electrical pin rules",
+    "Does not validate datasheets, footprint geometry, PCB routing, RF or charging safety",
+    "Sheet pins, reused sheet files, buses, inherited and mirrored symbols are outside scope"
+  ],
+  "counts": {
+    "schematic_components": 72,
+    "connected_pins_checked": 223,
+    "nc_pins_checked": 32,
+    "wires": 223,
+    "labels": 223,
+    "manifest_components": 72,
+    "sheets": 6,
+    "nets": 44,
+    "uuids": 839,
+    "errors": 0
+  },
+  "schematic_sources_sha256": {
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_sch": "47069e8b6263cc516afa8a5f9e2c5edb2cb00108c6159cba01a798da6c75bc98",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/power.kicad_sch": "1812990eea6b5c687f8a38e4e6bcf9be1f3b36c38f59dfb2cd73c6ce83db7525",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/mcu.kicad_sch": "d2b879b0fe8095c4e8901bb54dcfe07de242ab60ee28b8af5b5edb2a0334e698",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/sensors.kicad_sch": "b80befadae157abe4404805ef70db95402ddaf2c348c483afc8b89ef9f49fde4",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/io.kicad_sch": "a75a6a460f47e717e305ae65525f1a9a063857cc4037abe4ac869d7da7e7d71b",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/temperature.kicad_sch": "b77565e58ffbe31f346312e293610b7d3443bd861047ca15d8a5606fc21f5f84"
+  },
+  "sheet_counts": {
+    "Ankle_Sensor_V1": {
+      "manifest_components": 0,
+      "schematic_components": 0,
+      "connected_pins_checked": 0,
+      "nc_pins_checked": 0,
+      "nets": 0,
+      "wires": 0,
+      "labels": 0,
+      "uuids": 10,
+      "errors": 0
+    },
+    "power": {
+      "manifest_components": 25,
+      "schematic_components": 25,
+      "connected_pins_checked": 53,
+      "nc_pins_checked": 1,
+      "nets": 13,
+      "wires": 53,
+      "labels": 53,
+      "uuids": 190,
+      "errors": 0
+    },
+    "mcu": {
+      "manifest_components": 9,
+      "schematic_components": 9,
+      "connected_pins_checked": 48,
+      "nc_pins_checked": 28,
+      "nets": 28,
+      "wires": 48,
+      "labels": 48,
+      "uuids": 214,
+      "errors": 0
+    },
+    "sensors": {
+      "manifest_components": 14,
+      "schematic_components": 14,
+      "connected_pins_checked": 44,
+      "nc_pins_checked": 1,
+      "nets": 15,
+      "wires": 44,
+      "labels": 44,
+      "uuids": 152,
+      "errors": 0
+    },
+    "io": {
+      "manifest_components": 11,
+      "schematic_components": 11,
+      "connected_pins_checked": 43,
+      "nc_pins_checked": 2,
+      "nets": 16,
+      "wires": 43,
+      "labels": 43,
+      "uuids": 149,
+      "errors": 0
+    },
+    "temperature": {
+      "manifest_components": 13,
+      "schematic_components": 13,
+      "connected_pins_checked": 35,
+      "nc_pins_checked": 0,
+      "nets": 8,
+      "wires": 35,
+      "labels": 35,
+      "uuids": 124,
+      "errors": 0
+    }
+  },
+  "issues": [],
+  "inputs": {
+    "design": "hardware/design.json",
+    "design_sha256": "3cb06b1b57dce87337a6620411780804c8506a1819f3e2bf22723b92705c1dac",
+    "schematic": "hardware/Ankle_Sensor_V1.kicad_sch",
+    "schematic_sha256": "47069e8b6263cc516afa8a5f9e2c5edb2cb00108c6159cba01a798da6c75bc98"
+  },
+  "generated_at_utc": "2026-10-28T14:12:13.894634+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "MERGED_REQUIRES_NATIVE_DRC",
+  "repairs": [
+    {
+      "repair": ".work/final_repairs/power/Ankle_Sensor_V1.kicad_pcb",
+      "removed": 34,
+      "modified": 25,
+      "added": 40,
+      "moved_footprints": {
+        "C3": [
+          59.35,
+          92.1,
+          180.0
+        ]
+      }
+    },
+    {
+      "repair": ".work/final_repairs/upper/Ankle_Sensor_V1.kicad_pcb",
+      "removed": 6,
+      "modified": 0,
+      "added": 56,
+      "moved_footprints": {}
+    },
+    {
+      "repair": ".work/final_repairs/usb/Ankle_Sensor_V1.kicad_pcb",
+      "removed": 0,
+      "modified": 0,
+      "added": 40,
+      "moved_footprints": {}
+    }
+  ]
+}

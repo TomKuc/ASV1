@@ -1,0 +1,36 @@
+{
+  "source_sha256": "56f6ea2bc3522d62470d0422e1fbf61b5100cb71a9961e947dd0d3ef889e0590",
+  "output_sha256": "3fb59a5a94875917a6bd976945d85ee06e029f0998ae18f1ae40f5c054e153a7",
+  "changed_items": [
+    {
+      "uuid": "6cb3aefd-efb7-4454-9482-584dd6496644",
+      "net": "GND",
+      "kind": "track_end",
+      "from_mm": [
+        58.15,
+        92.1
+      ],
+      "to_mm": [
+        57.8,
+        92.1
+      ]
+    },
+    {
+      "uuid": "a45774fe-ffbf-490f-ad48-a472f429e3ca",
+      "net": "GND",
+      "kind": "via",
+      "from_mm": [
+        58.15,
+        92.1
+      ],
+      "to_mm": [
+        57.8,
+        92.1
+      ]
+    }
+  ],
+  "changed_nets": [
+    "GND"
+  ],
+  "unconnected_after_refill": 0
+}

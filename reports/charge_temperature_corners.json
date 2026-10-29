@@ -1,0 +1,74 @@
+{
+  "status": "calculation_only_physical_validation_required",
+  "hot": {
+    "name": "hot_supervised",
+    "divider_top_ohm": 100000,
+    "divider_bottom_ohm": 10000,
+    "nominal_reference_V": 0.2727272727272727,
+    "effective_threshold_min_V": 0.21107052965142603,
+    "effective_threshold_max_V": 0.3013450479233227,
+    "beta_model_trip_min_C": 29.105462439355904,
+    "beta_model_trip_max_C": 43.6004917126225
+  },
+  "cold": {
+    "name": "cold_supervised",
+    "divider_top_ohm": 27400,
+    "divider_bottom_ohm": 10000,
+    "nominal_reference_V": 0.8021390374331551,
+    "effective_threshold_min_V": 0.6647084589324299,
+    "effective_threshold_max_V": 0.8421498137378393,
+    "beta_model_trip_min_C": 3.5455680171619406,
+    "beta_model_trip_max_C": 13.156014602314656
+  },
+  "hot_regulated_3V": {
+    "name": "hot_regulated",
+    "divider_top_ohm": 100000,
+    "divider_bottom_ohm": 10000,
+    "nominal_reference_V": 0.2727272727272727,
+    "effective_threshold_min_V": 0.24420416478044368,
+    "effective_threshold_max_V": 0.3013450479233227,
+    "beta_model_trip_min_C": 29.105462439355904,
+    "beta_model_trip_max_C": 39.26985715251942
+  },
+  "cold_regulated_3V": {
+    "name": "cold_regulated",
+    "divider_top_ohm": 27400,
+    "divider_bottom_ohm": 10000,
+    "nominal_reference_V": 0.8021390374331551,
+    "effective_threshold_min_V": 0.7623319017259317,
+    "effective_threshold_max_V": 0.8421498137378393,
+    "beta_model_trip_min_C": 3.5455680171619406,
+    "beta_model_trip_max_C": 10.015980949961772
+  },
+  "endpoint_limits": {
+    "minimum_R_at_0C_to_force_cold_fault_ohm": 23072.597636653132,
+    "maximum_R_at_45C_to_force_hot_fault_ohm": 5343.55771269433,
+    "pack_acceptance_min_R_at_0C_ohm": 24000,
+    "pack_acceptance_max_R_at_45C_ohm": 5200
+  },
+  "assumptions": {
+    "LDO_V": [
+      2.955,
+      3.045
+    ],
+    "supervised_reference_V": [
+      2.5872,
+      3.045
+    ],
+    "supervisor": "TLV803EA26DBZR; 2.64V +/-2%, excludes transient propagation sag",
+    "reference_resistor_tolerance": 0.005,
+    "TS_current_A": [
+      3.65e-05,
+      3.95e-05
+    ],
+    "comparator_error_allowance_V": 0.022,
+    "R25_ohm": [
+      9700.0,
+      10300.0
+    ],
+    "beta_K": [
+      3331.95,
+      3538.05
+    ]
+  }
+}
