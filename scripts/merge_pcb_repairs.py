@@ -50,7 +50,9 @@ def load(path):
             props={p[1]:p[2] for p in children(node,'property')}
             ref=props.get('Reference')
             if not ref:raise ValueError('Footprint missing reference')
-            footprints[ref]=(raw,(norm(child(node,'at')),norm(child(node,'layer'))))
+            # A repair can change a pad net or a property without moving the
+            # part. Preserve those edits too; conflicting full edits fail.
+            footprints[ref]=(raw,norm(node))
         elif node[0]=='net':nets[node[1]]=node[2]
     return {'text':text,'blocks':blocks,'copper':copper,'footprints':footprints,'nets':nets}
 
@@ -79,15 +81,18 @@ def main():
         for uid in added:
             if uid in copper and copper[uid][1]!=repair['copper'][uid][1]:raise ValueError('New UUID conflict '+uid)
             copper[uid]=repair['copper'][uid]
-        moved={}
+        moved={};changed_footprints=[]
         for ref,item in repair['footprints'].items():
             original=base['footprints'][ref]
             if item[1]==original[1]:continue
             if fps[ref][1]!=original[1] and fps[ref][1]!=item[1]:raise ValueError('Placement conflict '+ref)
             fps[ref]=item
             node=parse_sexpr(item[0]);at=child(node,'at')
-            moved[ref]=[float(x) for x in at[1:]]
-        audit.append({'repair':path,'removed':len(removed),'modified':len(modified),'added':len(added),'moved_footprints':moved})
+            changed_footprints.append(ref)
+            original_node=parse_sexpr(original[0])
+            if norm(at)!=norm(child(original_node,'at')) or norm(child(node,'layer'))!=norm(child(original_node,'layer')):
+                moved[ref]=[float(x) for x in at[1:]]
+        audit.append({'repair':path,'removed':len(removed),'modified':len(modified),'added':len(added),'moved_footprints':moved,'changed_footprints':changed_footprints})
     first=base['blocks'][0][0];last=base['blocks'][-1][1]
     out=[base['text'][:first]];written=set()
     for _,_,raw,node in base['blocks']:

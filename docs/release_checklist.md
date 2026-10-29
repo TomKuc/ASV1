@@ -1,8 +1,8 @@
 # Warunki ukończenia i zwolnienia A1
 
-Stan: **A1 REVIEW / NOT FOR FABRICATION**, 2026-10-28. Istnieją rzeczywisty schemat, PCB, routing i natywne raporty KiCad 10.0.7. Projekt nie jest jeszcze zwolniony do zamówienia PCBA. Odhaczenie czynności przeglądu nie zastępuje końcowej kontroli plików ani prób prototypu. Zamknięcie elektryki, DFM i zaopatrzenia pozwala osobno zwolnić prototypy; kwalifikacja właściwości urządzenia wymaga dopiero ich badań.
+Stan: **A1 AUDIT REVIEW / NOT FOR FABRICATION**, 2026-10-29. Istnieją rzeczywisty schemat, PCB, routing i natywne raporty KiCad 10.0.7. Projekt nie jest jeszcze zwolniony do zamówienia PCBA. Odhaczenie czynności przeglądu nie zastępuje końcowej kontroli plików ani prób prototypu. Zamknięcie elektryki, DFM i zaopatrzenia pozwala osobno zwolnić prototypy; kwalifikacja właściwości urządzenia wymaga dopiero ich badań.
 
-Końcowy [DRC](../reports/drc_final.json) po scaleniu, poprawkach LFXO/C3/odsprzęgania Flash i ponownym wypełnieniu stref: **0 naruszeń, 0 niepołączonych elementów, 0 rozbieżności schemat–PCB**. [Raport walidacji](../reports/validation_status.json) i [manifest eksportu](../manufacturing/review/export_manifest.json) identyfikują ten sam PCB hash. Wcześniejsze raporty są historią, nie bieżącym wynikiem.
+Końcowy [DRC](../reports/drc_final.json) po audycie, lokalnych poprawkach via/R24/USB i ponownym wypełnieniu stref: **0 naruszeń, 0 niepołączonych elementów, 0 rozbieżności schemat–PCB**. [Raport walidacji](../reports/validation_status.json) i [manifest eksportu](../manufacturing/review/export_manifest.json) identyfikują ten sam PCB hash. Wcześniejsze raporty są historią, nie bieżącym wynikiem.
 
 ## Schemat i części
 
@@ -17,10 +17,15 @@ Końcowy [DRC](../reports/drc_final.json) po scaleniu, poprawkach LFXO/C3/odsprz
 - [ ] Zamknięcie LFXO: land-pattern dokładnego ABS07, ESR, CL, tolerancja i obciążenie z pasożytami PCB; model biblioteczny nie stanowi CAD producenta.
 - [ ] Minimalna pojemność efektywna i ESR krytycznych MLCC po DC-bias, tolerancji, temperaturze i starzeniu; pełny budżet prądu i termiki LDO/ładowarki.
 - [ ] Konkretny chroniony pakiet LiPo 1S/4.2 V, preferowane 300 mAh: MPN, PCM, dopuszczalny prąd/temperatura ładowania, wymiary, wiązka i NTC fizycznie na ogniwie. JST: 1 PACK+, 2 NTC, 3 PACK−.
-- [ ] Pełny cykl ładowania docelowego pakietu przy limicie wejścia BQ 100 mA i timerze 360 min. Dla 500 mAh pełne ładowanie nie jest zagwarantowane. Nie przyjęto detekcji źródła ani szybkiego ładowania.
+- [ ] Pełny cykl ładowania docelowego pakietu przy limicie wejścia BQ 100 mA i timerze 360 min typowo. Dla 500 mAh pełne ładowanie nie jest zagwarantowane. Nie przyjęto detekcji źródła ani szybkiego ładowania.
 - [ ] USB: kwalifikacja **całego prądu z portu**, rozruchu/inrush i suspend. Bezpośrednia gałąź VBUS modułu omija BQ.IN; sam ILIM nie zamyka budżetu płytki. Wymagania w `firmware_contract.md`.
 - [ ] Ocena ochrony CC/VBUS, mapowania zdublowanych padów, połączenia ekranu i rysunku mechanicznego aktualnej dostawy USB-C.
 - [ ] Akceptacja rzeczywistego BOM przez JLCPCB, zakup/rezerwacja exact MPN i sprawdzenie zamienników. Numer C nie potwierdza dostępności ani rezerwacji.
+
+- [x] Wszystkie wcześniej ignorowane klasy ERC/DRC włączono. Jedenaście ostrzeżeń końców ścieżek poprawiono lokalnie.
+- [x] Pinmapa IMU uzgodniona: INT1=P0.11, INT2=P0.12, bez zmiany połączeń.
+- [x] R24=100k zmieniono na pull-up do 3V0: HIGH/HiZ/reset inhibituje ładowanie; LOW zwalnia okno U7/U8. Brak autonomicznego ładowania bez firmware jest jawny.
+- [ ] Wyjaśnienie Winbond AN0000035/statusów obu dies oraz przypięty SDK i własna warstwa Flash; testy [F01–F20](flash_firmware_test_plan_A1.md) po wykonaniu prototypów.
 
 ## PCB
 
@@ -33,7 +38,8 @@ Końcowy [DRC](../reports/drc_final.json) po scaleniu, poprawkach LFXO/C3/odsprz
 - [ ] Kwalifikacja czasowa/SI QSPI/SPI i całego USB, uwzględniająca odcinki B.Cu nad mieszaną In2 oraz przejścia warstw.
 - [ ] Konkretny stos 4L/1.0 mm z oferty JLCPCB i przegląd geometrii/impedancji USB dla tego stosu; obecne trasowanie nie dowodzi 90 Ω.
 - [ ] Końcowa kontrola EP/pasty/maski WSON, LGA IMU, pinów wewnętrznych modułu, wyjść IMU na zewnątrz oraz niedozwolonej miedzi/vias pod sensorem.
-- [ ] Akceptacja JLC DFM najmniejszego nominalnego odstępu otworu przelotki od SMD i pasty: **0.090 mm przy U5.7**, QSPI_IO3 via (71.85,73.9). Globalny audyt nie wykazał przecięć; tolerancje wykonania i rejestracji maski/szablonu wymagają osobnej oceny.
+- [x] Odstęp otwór–SMD/pasta przy U5.7 poprawiono 0.090→0.230 mm i przy J1 0.105→0.175 mm. Globalne minimum wynosi 0.150 mm; brak nominalnych przecięć.
+- [ ] Akceptacja aktualnych zbliżeń, tentingu, maski i szablonu przez JLCPCB z tolerancjami procesu.
 - [x] Kontrola keepout na końcowych natywnych wypełnieniach: 0 mm² Cu w zabronionym obszarze obu warstw wewnętrznych.
 - [ ] Niezależny przegląd keepout na Gerberach oraz potwierdzenie baterii/metalu poza anteną.
 - [ ] Dostęp USB/SWD/przycisku, przewodów i baterii; podparcie oraz brak docisku i naprężeń IMU. Obudowa i pakiet nie należą do obecnego zespołu STEP.
@@ -44,12 +50,12 @@ Końcowy [DRC](../reports/drc_final.json) po scaleniu, poprawkach LFXO/C3/odsprz
 - [x] Robocze BOM i CPL istnieją w `reports/assembly_review/`; nie zatwierdzono rotacji JLC ani zamówienia montażu.
 - [x] Natywny STEP płytki i render KiCad istnieją w `reports/`. Ograniczenia: **brak USB-C**, model Raytac jest ogólny, Flash ma jawny model gabarytowy, a IMU w CAD ma 0.80 mm zamiast maksymalnych 0.86 mm ST.
 - [ ] Modele/rysunki i maksymalne gabaryty umożliwiające zamknięcie obudowy; uzupełnienie USB-C i potwierdzenie wariantu Raytac. Obecny STEP służy przeglądowi.
-- [x] Rzeczywiste 11 Gerberów i Excellon PTH/NPTH z końcowego PCB, po 0 DRC/opens; wspólny aux origin **(50,101.6) mm**. Porównano obrys, 59 pozycji, 160 otworów via, 4 sloty PTH i 2 NPTH z natywnym PCB (`manufacturing_geometry_review.json`).
+- [x] Rzeczywiste 11 Gerberów i Excellon PTH/NPTH z końcowego PCB, po 0 DRC/opens; wspólny aux origin **(50,101.6) mm**. Porównano obrys, 59 pozycji, 164 otworów via, 4 sloty PTH i 2 NPTH z natywnym PCB (`manufacturing_geometry_review.json`).
 - [ ] Niezależny przegląd CAM całej miedzi/maski/pasty i drill-map. Gerber Job ma ogólny stos KiCad, nie wybrany stos JLCPCB.
 - [ ] Finalne BOM/PnP z exact MPN, numerami C, warstwą, jednostkami, wspólnym origin i rotacją sprawdzoną w JLCPCB. Zweryfikować osobny zespół baterii.
 - [x] Raporty ERC/DRC, RF, dróg powrotnych i eksportu zidentyfikowane hashami końcowego PCB; świadome wyjątki ERC i nierozwiązane ograniczenia opisane.
-- [x] Globalny audyt otworów 160 przelotek względem 255 padów SMD Cu i 243 apertur pasty: brak przecięć po poprawce C3.
-- [ ] DFM marginesu otwór–pad/pasta: minimum geometryczne 0.090 mm przy QSPI_IO3/U5.7; uwzględnić tolerancję wiercenia i rejestrację maski. Brak przecięcia nominalnego nie kwalifikuje procesu.
+- [x] Globalny audyt otworów 164 przelotek względem 255 padów SMD Cu i 243 apertur pasty: brak przecięć po poprawce C3.
+- [ ] DFM marginesu otwór–pad/pasta: minimum geometryczne 0.150 mm; uwzględnić tolerancję wiercenia, maski i pasty. Audyt nominalny nie kwalifikuje procesu.
 - [ ] Akceptacja DFM, footprintów, pasty, polaryzacji, rotacji i zaopatrzenia w podglądzie JLCPCB; dopiero potem świadome zwolnienie prototypów do zamówienia.
 
 ## Weryfikacja fizyczna

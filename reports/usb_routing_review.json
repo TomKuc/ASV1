@@ -1,9 +1,78 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "canonical_board": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "canonical_board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "canonical_board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
   "status": "GEOMETRY_MEASURED_USB_IMPEDANCE_AND_SIGNAL_INTEGRITY_UNQUALIFIED",
-  "verified_mcu_proposal": {
+  "canonical_nets": {
+    "USB_DP": {
+      "trace_length_mm": 31.231504885042447,
+      "trace_length_by_layer_mm": {
+        "F.Cu": 1.4758028890321493,
+        "In2.Cu": 29.7557019960103
+      },
+      "via_count": 2,
+      "native_projection_gnd_coverage_pct": 94.77714756163083,
+      "max_missing_component_trace_length_sum_mm": 0.8254608091291198
+    },
+    "USB_DN": {
+      "trace_length_mm": 32.957220528161045,
+      "trace_length_by_layer_mm": {
+        "F.Cu": 8.009556274847712,
+        "In2.Cu": 24.947664253313334
+      },
+      "via_count": 2,
+      "native_projection_gnd_coverage_pct": 95.02004037465275,
+      "max_missing_component_trace_length_sum_mm": 0.8564134339433862
+    },
+    "USB_DP_CONN": {
+      "trace_length_mm": 12.996637802864843,
+      "trace_length_by_layer_mm": {
+        "F.Cu": 7.803134918610404,
+        "In2.Cu": 5.19350288425444
+      },
+      "via_count": 2,
+      "native_projection_gnd_coverage_pct": 83.99836028903381,
+      "max_missing_component_trace_length_sum_mm": 1.4328427124746188
+    },
+    "USB_DN_CONN": {
+      "trace_length_mm": 15.552121202458748,
+      "trace_length_by_layer_mm": {
+        "F.Cu": 7.423084412271569,
+        "In2.Cu": 8.129036790187179
+      },
+      "via_count": 2,
+      "native_projection_gnd_coverage_pct": 89.78817549731818,
+      "max_missing_component_trace_length_sum_mm": 0.8521320343559645
+    }
+  },
+  "mcu_nominal_trace_width_mm": 0.15,
+  "mcu_via_diameter_drill_mm": [
+    0.5,
+    0.25
+  ],
+  "whole_path_via_esd_to_connector": {
+    "DP": {
+      "trace_length_only_mm": 44.228142687907294,
+      "via_count": 4
+    },
+    "DN": {
+      "trace_length_only_mm": 48.509341730619795,
+      "via_count": 4
+    }
+  },
+  "whole_path_planar_trace_length_difference_mm": 4.281199042712501,
+  "length_exclusions": [
+    "Via barrel lengths",
+    "Internal U6 package paths",
+    "Internal module paths and USB-C contact paths"
+  ],
+  "limits": [
+    "Historical pre-relocation proposal is preserved only as provenance; current lengths come from actual native tracks.",
+    "Only the retained MCU-side In2 trunk has the original nominal0.15mm gap; replacement tails,endpoint fanouts and connector-side geometry are not a qualified controlled-impedance pair.",
+    "Actual JLC dielectric stackup and Er are undefined; no90ohm or USB compliance claim.",
+    "Current whole-path via counts are DP4 and DN4; equal counts do not establish impedance or signal quality."
+  ],
+  "historical_mcu_proposal": {
     "source_file": ".work/final_repairs/usb/usb_verification.json",
     "proposal_board_sha256": "3697fea7682a8ce5a59a0b46a4a1c93c062109ab1e88b004285ab9d0a5d096df",
     "trace_length_only_mm": {
@@ -11,124 +80,78 @@
       "USB_DN": 36.136257318348406
     },
     "trace_length_skew_mm": 0.46622632601515335,
-    "equal_vias_per_net": 2
+    "equal_vias_per_net": 2,
+    "common_centerline_before_esd_move_mm": [
+      [
+        70.3,
+        65.2
+      ],
+      [
+        70.6,
+        65.2
+      ],
+      [
+        70.9,
+        65.5
+      ],
+      [
+        70.9,
+        72.7
+      ],
+      [
+        71.1,
+        72.9
+      ],
+      [
+        71.1,
+        74.3
+      ],
+      [
+        71.3,
+        74.5
+      ],
+      [
+        71.3,
+        75.3
+      ],
+      [
+        73.6,
+        77.6
+      ],
+      [
+        73.6,
+        87.3
+      ],
+      [
+        78.3,
+        92.0
+      ],
+      [
+        78.3,
+        92.3
+      ]
+    ],
+    "historical_only": true,
+    "context": "Frozen pre-ESD-relocation MCU proposal. Its lengths and complete centreline are not expected to match the current board."
   },
-  "canonical_nets": {
-    "USB_DP": {
-      "trace_length_mm": 35.67003099233325,
-      "trace_length_by_layer_mm": {
-        "F.Cu": 2.7160533905932738,
-        "In2.Cu": 32.95397760173998
-      },
-      "via_count": 2,
-      "native_projection_gnd_coverage_pct": 95.48986983446078,
-      "max_missing_component_trace_length_sum_mm": 0.8254608091291198
-    },
-    "USB_DN": {
-      "trace_length_mm": 36.136257318348406,
-      "trace_length_by_layer_mm": {
-        "F.Cu": 2.324632034355964,
-        "In2.Cu": 33.81162528399244
-      },
-      "via_count": 2,
-      "native_projection_gnd_coverage_pct": 95.47915732229266,
-      "max_missing_component_trace_length_sum_mm": 0.8564134339433862
-    },
-    "USB_DP_CONN": {
-      "trace_length_mm": 18.717067288000823,
-      "trace_length_by_layer_mm": {
-        "F.Cu": 18.717067288000823
-      },
-      "via_count": 0,
-      "native_projection_gnd_coverage_pct": 99.99999027759995,
-      "max_missing_component_trace_length_sum_mm": 0
-    },
-    "USB_DN_CONN": {
-      "trace_length_mm": 20.56303390593274,
-      "trace_length_by_layer_mm": {
-        "F.Cu": 11.741713562373096,
-        "In2.Cu": 8.821320343559645
-      },
-      "via_count": 2,
-      "native_projection_gnd_coverage_pct": 91.70617367202263,
-      "max_missing_component_trace_length_sum_mm": 0.8390220105419317
-    }
-  },
-  "mcu_common_centerline_mm": [
-    [
-      70.3,
-      65.2
+  "current_mcu_trace_length_skew_mm": 1.7257156431185976,
+  "current_footprint_positions_mm": {
+    "J1": [
+      64.0,
+      99.0
     ],
-    [
-      70.6,
-      65.2
+    "R25": [
+      74.8,
+      92.2
     ],
-    [
-      70.9,
-      65.5
-    ],
-    [
-      70.9,
-      72.7
-    ],
-    [
-      71.1,
-      72.9
-    ],
-    [
-      71.1,
-      74.3
-    ],
-    [
-      71.3,
-      74.5
-    ],
-    [
-      71.3,
-      75.3
-    ],
-    [
-      73.6,
-      77.6
-    ],
-    [
-      73.6,
-      87.3
-    ],
-    [
-      78.3,
-      92.0
-    ],
-    [
-      78.3,
-      92.3
+    "U6": [
+      71.6,
+      93.3
     ]
-  ],
-  "mcu_nominal_trace_width_mm": 0.15,
-  "mcu_nominal_pair_gap_mm": 0.15,
-  "mcu_via_diameter_drill_mm": [
-    0.5,
-    0.25
-  ],
-  "whole_path_via_esd_to_connector": {
-    "DP": {
-      "trace_length_only_mm": 54.38709828033407,
-      "via_count": 2
-    },
-    "DN": {
-      "trace_length_only_mm": 56.69929122428115,
-      "via_count": 4
-    }
   },
-  "whole_path_planar_trace_length_difference_mm": 2.3121929439470748,
-  "length_exclusions": [
-    "Via barrel lengths",
-    "Internal U6 package paths",
-    "Internal module paths and USB-C contact paths"
-  ],
-  "limits": [
-    "Only the MCU-side main In2 trunk was deliberately paired at nominal 0.15 mm gap. Endpoint fanouts and connector-side geometry are not qualified as a controlled-impedance differential pair.",
-    "Actual JLC dielectric stackup and Er are not defined; no 90 ohm or USB compliance claim.",
-    "Whole-path DP/DN via count differs (2 versus 4); equal MCU-side via counts do not establish whole-path matching."
+  "main_paired_trunk_scope": "Original shared In2 trunk retained to y86.8mm; replacement tails and connector-side paths are separately routed and unqualified.",
+  "retained_trunk_nominal_pair_gap_mm": 0.15,
+  "measured_usb_trace_widths_mm": [
+    0.15
   ]
 }

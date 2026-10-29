@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-28",
-  "board_sha256_at_read": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "date": "2026-10-29",
+  "board_sha256_at_read": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
   "board_size_mm": [
     30,
     51.6
@@ -102,30 +102,30 @@
     },
     "R25": {
       "position_mm": [
-        71.2,
+        74.8,
         92.2
       ],
       "angle_deg": 0.0,
       "layer": "F.Cu",
       "fab_aabb_including_stroke_mm": [
-        70.625,
+        74.225,
         91.88,
-        71.775,
+        75.375,
         92.52
       ]
     },
     "U6": {
       "position_mm": [
-        75.8,
-        94.2
+        71.6,
+        93.3
       ],
       "angle_deg": 0.0,
       "layer": "F.Cu",
       "fab_aabb_including_stroke_mm": [
-        74.95,
-        92.7,
-        76.65,
-        95.7
+        70.75,
+        91.8,
+        72.45,
+        94.8
       ]
     },
     "R14": {

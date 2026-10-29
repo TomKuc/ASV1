@@ -1,0 +1,32 @@
+{
+  "status": "REAL_COMMIT_DELIVERED_AS_VERIFIED_GIT_BUNDLE",
+  "created_utc": "2026-10-29T13:19:08.760349+00:00",
+  "commit": "20dd2667e387eb77d9bdd5fab164d46931be15db",
+  "parent_commit": "c3536966d15fab3ada32515650615b947dce1349",
+  "branch": "audit/a1-2026-10-29",
+  "tree": "3d787012a810f0cb8adb8fe3cb654d935b806ccb",
+  "commit_signed": false,
+  "changed_paths": 113,
+  "changed_files_inventory": "reports/audit_changed_files.txt",
+  "bundle": "reports/ASV1_A1_AUDIT_2026-10-29.bundle",
+  "bundle_sha256": "e5418533ff512ce583b4e3c6e0c58685cea304b833011998542a39d2f1983efd",
+  "bundle_bytes": 3795923,
+  "bundle_verify": "PASS",
+  "independent_import_into_base_clone": "PASS",
+  "imported_tree_matches_delivery": "PASS",
+  "git_fsck": "PASS",
+  "board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "review_archive": "Ankle_Sensor_V1_A1_AUDIT_REVIEW.zip",
+  "review_archive_sha256": "2d1f44b377ce44e99eda7bc005749c2fa89186583e9078d7047b47192f7284d3",
+  "main_repository_head_unchanged": true,
+  "main_repository_git_directory_writable_in_session": false,
+  "main_repository_history_integrated": false,
+  "pushed_to_github": false,
+  "delivery_files_outside_own_commit": [
+    "reports/ASV1_A1_AUDIT_2026-10-29.bundle",
+    "reports/commit_delivery.json"
+  ],
+  "import_instructions": "docs/git_delivery_A1.md",
+  "hardware_tests_performed": false,
+  "fabrication_release": false
+}

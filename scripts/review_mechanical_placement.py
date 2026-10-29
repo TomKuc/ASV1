@@ -57,7 +57,7 @@ def main():
         a,b=data['U4'],data[ref]
         distances[ref] = {'center_distance_mm': round(math.dist(a['position_mm'],b['position_mm']),6),
             'fab_aabb_min_gap_mm': rectangle_gap(a['fab_aabb_including_stroke_mm'],b['fab_aabb_including_stroke_mm'])}
-    result = {'date': '2026-10-28', 'board_sha256_at_read': hashlib.sha256(board_bytes).hexdigest(),
+    result = {'date': '2026-10-29', 'board_sha256_at_read': hashlib.sha256(board_bytes).hexdigest(),
         'board_size_mm': [30,51.6], 'method': 'Native KiCad footprint positions and same-side courtyard polygon collision; nominal FAB AABB distances.',
         'limitations': 'No 3D solid interference test; battery, housing, screws, cables and connector plug absent.',
         'imu_distances': distances, 'same_side_populated_courtyard_overlaps': overlaps,

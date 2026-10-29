@@ -1,29 +1,29 @@
 {
-  "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
   "nets": {
     "USB_DP": {
-      "length_mm": 35.67003099233325,
-      "gnd_coverage_pct": 95.48986983446078,
-      "missing_centerline_mm": 1.6238565310542534,
+      "length_mm": 31.231504885042447,
+      "gnd_coverage_pct": 94.77714756163083,
+      "missing_centerline_mm": 1.6461714872477748,
       "max_component_trace_mm": 0.8254608091291198
     },
     "USB_DN": {
-      "length_mm": 36.136257318348406,
-      "gnd_coverage_pct": 95.47915732229266,
-      "missing_centerline_mm": 1.6525558161513667,
+      "length_mm": 32.957220528161045,
+      "gnd_coverage_pct": 95.02004037465275,
+      "missing_centerline_mm": 1.6564134339433862,
       "max_component_trace_mm": 0.8564134339433862
     },
     "USB_DP_CONN": {
-      "length_mm": 18.717067288000823,
-      "gnd_coverage_pct": 99.99999027759995,
-      "missing_centerline_mm": 0,
-      "max_component_trace_mm": 0
+      "length_mm": 12.996637802864843,
+      "gnd_coverage_pct": 83.99836028903381,
+      "missing_centerline_mm": 2.232842712474619,
+      "max_component_trace_mm": 1.4328427124746188
     },
     "USB_DN_CONN": {
-      "length_mm": 20.56303390593274,
-      "gnd_coverage_pct": 91.70617367202263,
-      "missing_centerline_mm": 1.6718647230165509,
-      "max_component_trace_mm": 0.8390220105419317
+      "length_mm": 15.552121202458748,
+      "gnd_coverage_pct": 89.78817549731818,
+      "missing_centerline_mm": 1.6489460484199612,
+      "max_component_trace_mm": 0.8521320343559645
     },
     "IMU_SCK": {
       "length_mm": 22.033147000666524,
@@ -32,10 +32,10 @@
       "max_component_trace_mm": 0.8270368862987781
     },
     "IMU_MOSI": {
-      "length_mm": 17.766031726798843,
-      "gnd_coverage_pct": 91.15673390683445,
-      "missing_centerline_mm": 1.4570780541555446,
-      "max_component_trace_mm": 0.4
+      "length_mm": 17.907453083036152,
+      "gnd_coverage_pct": 91.13766368752172,
+      "missing_centerline_mm": 1.596992641760953,
+      "max_component_trace_mm": 0.798622624191067
     },
     "IMU_MISO": {
       "length_mm": 21.389258856322748,
@@ -44,9 +44,9 @@
       "max_component_trace_mm": 0.8202060347212241
     },
     "IMU_CS_N": {
-      "length_mm": 18.12450923281626,
-      "gnd_coverage_pct": 91.19758748986213,
-      "missing_centerline_mm": 1.546475314704192,
+      "length_mm": 18.195219910934913,
+      "gnd_coverage_pct": 91.1882303304224,
+      "missing_centerline_mm": 1.6159419152715437,
       "max_component_trace_mm": 0.8164921501504698
     },
     "IMU_INT1": {
@@ -92,10 +92,10 @@
       "max_component_trace_mm": 0.8270224890060245
     },
     "QSPI_IO3": {
-      "length_mm": 25.241904755831214,
-      "gnd_coverage_pct": 90.21730298854328,
-      "missing_centerline_mm": 2.8205046455852387,
-      "max_component_trace_mm": 0.8396306314021078
+      "length_mm": 25.340300292296607,
+      "gnd_coverage_pct": 90.41813479787851,
+      "missing_centerline_mm": 2.846598510585257,
+      "max_component_trace_mm": 1.2389735898131746
     },
     "FLASH_CS_N": {
       "length_mm": 22.33500358937499,

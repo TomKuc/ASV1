@@ -1,5 +1,5 @@
 {
-  "status": "A1-WIP_NOT_FOR_FABRICATION",
+  "status": "A1-AUDIT_NOT_FOR_FABRICATION",
   "components": [
     {
       "ref": "U1",
@@ -1498,7 +1498,7 @@
       "value": "100k 1%",
       "pins": {
         "1": "CHG_INHIBIT",
-        "2": "GND"
+        "2": "+3V0"
       },
       "sheet": "temperature",
       "x": 165.1,
@@ -1507,7 +1507,7 @@
       "jlcpcb": "C25741",
       "footprint": "AnkleSensor:R_0402_1005Metric",
       "status": "REVIEW",
-      "note": "Q2 defaultsOFF with GPIOHiZ",
+      "note": "100k pull-up: Q2 inhibits charging during MCU reset/HiZ; LOW releases hardware window",
       "populate": true,
       "uuid": "bda5f1dc-9c8d-5e67-8f70-8f2d93b022e1",
       "datasheet": ""

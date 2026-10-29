@@ -1,6 +1,6 @@
 # Architektura i założenia A1
 
-Stan: **A1 REVIEW / NOT FOR FABRICATION**, 2026-10-28. Istnieje edytowalny projekt KiCad 10.0.7: schemat z 72 symbolami, PCB z 69 footprintami i routingiem, natywne raporty oraz eksport PDF/STEP. Nie wykonano prototypu ani firmware. Routing jest kompletny; przegląd elektryczny/produkcyjny i kwalifikacja pozostają otwarte.
+Stan: **A1 AUDIT REVIEW / NOT FOR FABRICATION**, 2026-10-29. Istnieje edytowalny projekt KiCad 10.0.7: schemat z 72 symbolami, PCB z 69 footprintami i routingiem, natywne raporty oraz eksport PDF/STEP. Nie wykonano prototypu ani firmware. Routing jest kompletny; przegląd elektryczny/produkcyjny i kwalifikacja pozostają otwarte.
 
 [Raport walidacji](../reports/validation_status.json) wskazuje wejścia i hashe. Końcowy [natywny DRC](../reports/drc_final.json) ma 0 naruszeń, 0 brakujących połączeń i 0 rozbieżności schemat–PCB po ponownym wypełnieniu stref. ERC ma 0 błędów i 2 świadome ostrzeżenia U4.2/3. To nie zamyka osobnej [listy kontroli](release_checklist.md) przed zamówieniem prototypów. Wcześniejsze raporty DRC zachowano jako historię.
 
@@ -28,7 +28,7 @@ Moduły obu nóg są identyczne i pracują niezależnie. UID oraz jawna konfigur
 
 Jedna regulowana szyna ma 3.0 V. VDD i VDDH modułu są razem w normal voltage mode; USB VBUS trafia osobno na dedykowany pin. SYS ładowarki może mieć około 4.5 V i nie zasila GPIO/Flash. TPS7A2030PDBVR ma znamionowo 300 mA; pełny budżet prądu i cieplny trzeba sprawdzić dla pamięci 128 MiB i trybów BLE. Przy przykładowym obciążeniu 100 mA strata LDO z SYS=4.5 V wynosi 0.15 W — to obliczenie, nie zmierzony pik.
 
-BQ25185 ma ustawiony nominalny limit wejścia 100 mA i prąd ładowania 150 mA, ograniczany dostępnym prądem po zasileniu systemu. Preferowany pakiet ma 300 mAh. Dla 500 mAh nie potwierdzono pełnego cyklu w timerze 360 min. Nie ma detekcji prądu źródła ani przełączania na szybsze ładowanie. C1/C3 mają 2.2 µF/25 V; minimalne pojemności efektywne i termika pozostają do kwalifikacji.
+BQ25185 ma ustawiony nominalny limit wejścia 100 mA i prąd ładowania 150 mA, ograniczany dostępnym prądem po zasileniu systemu. Preferowany pakiet ma 300 mAh. Dla 500 mAh nie potwierdzono pełnego cyklu w timerze 360 min typowo. CE restartuje timer, dlatego firmware nie może cyklicznie go zerować. R24=100k jest pull-up do 3V0: HIGH/HiZ/reset blokuje ładowanie, LOW zwalnia sprzętowe okno temperatury; przy niesprawnym MCU ładowanie pozostaje zablokowane. Nie ma detekcji prądu źródła ani przełączania na szybsze ładowanie. C1/C3 mają 2.2 µF/25 V; minimalne pojemności efektywne i termika pozostają do kwalifikacji.
 
 Limit BQ obejmuje jego IN, a nie cały pobór z portu. Osobna gałąź USB VBUS do modułu omija BQ; nRF52840 ma z niej regulator interfejsu USB. Wymagane są budżet i pomiar całego portu podczas rozruchu, transferu i suspend. CHG_INHIBIT wyłącza ładowanie, ale nie odłącza SYS ani VBUS modułu. [Nordic: POWER, USB supply](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/power.html), [TI BQ25185](https://www.ti.com/lit/ds/symlink/bq25185.pdf). Szczegóły są w `firmware_contract.md`; zgodności USB nie potwierdzono.
 
@@ -63,3 +63,7 @@ Roboczy STEP jest natywnym eksportem KiCad. **Brakuje modelu USB-C**, Raytac jes
 Gerber/Drill/CPL wyeksportowano natywnie z połączonego PCB po 0 błędów DRC i 0 opens, ze wspólnym aux origin **(50,101.6) mm**. Pliki i manifest są w `manufacturing/review/`. Trzeba jeszcze sprawdzić CAM i rotacje/przesunięcia elementów w JLCPCB. Pliki mają status REVIEW; nie zwalniają projektu do zamówienia.
 
 Dla JLCPCB Standard przewidzieć szyny panelu **co najmniej 5 mm** z fiducjalami: zalecane 3–4 znaczniki, Cu 1 mm, otwarcie maski 2 mm i odstęp od krawędzi według [wytycznych JLCPCB](https://jlcpcb.com/help/article/how-to-add-edge-rails-fiducials-for-pcb-assembly-order). Nie dodano teraz fiducjali do ciasnego modułu. Geometrię szyn/mostków uzgodnić w DFM tak, żeby panel i jego metal nie naruszały obszaru anteny; potwierdzić sposób oddzielania bez obciążania IMU. Zaopatrzenie exact MPN, ochrona pakietu i NTC na ogniwie pozostają osobnymi warunkami.
+
+## Ustalenia audytu 29.10.2026
+
+[Raport A1](audit_A1_2026-10-29.md) jest punktem wejścia do oceny zmian. INT1=P0.11 i INT2=P0.12 są ostateczną pinmapą. [Flash](flash_compatibility_A1.md) wymaga jawnej polityki dwóch dies, QE stałego 1 dla IQ i kwalifikacji resetu/DPD. Wszystkie klasy ERC/DRC są aktywne. Via U5.7 odsunięto do (71.85,73.76); U6/R25 przesunięto lokalnie, zachowując główny routing. Minimum otwór–Cu/pasta wynosi nominalnie 0.150 mm. Żaden z tych wyników CAD nie jest testem sprzętu.

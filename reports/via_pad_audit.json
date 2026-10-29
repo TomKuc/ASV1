@@ -1,94 +1,54 @@
 {
   "source": "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_pcb",
-  "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
   "kicad_version": "10.0.7",
-  "vias_checked": 160,
+  "vias_checked": 164,
   "SMD_copper_shapes": 255,
   "paste_apertures": 243,
   "paste_positive_margin_shapes": [],
   "method": "All through-via circular drill holes versus every SMD copper and paste shape on both sides, including same-net. Native rounded/custom pad shapes; paste uses ClonePad resized by loaded GetSolderPasteMargin(layer), including ratio. Includes standalone EP paste apertures. Uses native Collide(point, drillradius) for overlap and binary search of Collide(point, drillradius+gap) to 1nm for nominal edge clearance; SHAPE.Distance is deliberately not used. All loaded paste margins are zero or negative; holes are also checked against the unshrunk native copper/aperture envelope, so no conclusion depends on assuming a reduced corner radius. Nominal CAD geometry only; fabrication/registration tolerances are separate.",
   "copper": {
     "minimum_clearance": {
-      "ref": "U5",
-      "pin": "7",
-      "net": "QSPI_IO3",
-      "pad_uuid": "e778c01e-2041-4afc-b590-175ec847c909",
+      "ref": "U6",
+      "pin": "2",
+      "net": "GND",
+      "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
       "side": "front",
       "pad_center_mm": [
-        71.75,
-        74.365
+        70.4625,
+        93.3
       ],
-      "via_uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
-      "via_net": "QSPI_IO3",
+      "via_uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+      "via_net": "GND",
       "via_xy_mm": [
-        71.85,
-        73.9
+        71.4,
+        93.3
       ],
       "hole_diameter_mm": 0.25,
-      "hole_to_shape_edge_mm": 0.090001,
+      "hole_to_shape_edge_mm": 0.150001,
       "same_net": true
     },
     "overlap_count": 0,
     "overlaps": [],
     "pairs_below_0_25mm": [
       {
-        "ref": "U5",
-        "pin": "7",
-        "net": "QSPI_IO3",
-        "pad_uuid": "e778c01e-2041-4afc-b590-175ec847c909",
+        "ref": "U6",
+        "pin": "2",
+        "net": "GND",
+        "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
         "side": "front",
         "pad_center_mm": [
-          71.75,
-          74.365
+          70.4625,
+          93.3
         ],
-        "via_uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
-        "via_net": "QSPI_IO3",
+        "via_uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+        "via_net": "GND",
         "via_xy_mm": [
-          71.85,
-          73.9
+          71.4,
+          93.3
         ],
         "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.090001,
-        "same_net": true
-      },
-      {
-        "ref": "J1",
-        "pin": "A9",
-        "net": "VBUS",
-        "pad_uuid": "71deb125-a0b1-453b-b2db-dc48061d8b16",
-        "side": "front",
-        "pad_center_mm": [
-          66.45,
-          94.955
-        ],
-        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
-        "via_net": "VBUS",
-        "via_xy_mm": [
-          66.45,
-          94.0
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.105001,
-        "same_net": true
-      },
-      {
-        "ref": "J1",
-        "pin": "B4",
-        "net": "VBUS",
-        "pad_uuid": "98e95658-9696-419d-ad67-40a6372035ef",
-        "side": "front",
-        "pad_center_mm": [
-          66.45,
-          94.955
-        ],
-        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
-        "via_net": "VBUS",
-        "via_xy_mm": [
-          66.45,
-          94.0
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.105001,
+        "hole_to_shape_edge_mm": 0.150001,
         "same_net": true
       },
       {
@@ -129,6 +89,126 @@
         ],
         "hole_diameter_mm": 0.25,
         "hole_to_shape_edge_mm": 0.150001,
+        "same_net": true
+      },
+      {
+        "ref": "R25",
+        "pin": "2",
+        "net": "GND",
+        "pad_uuid": "4bc41eb9-aeb1-4708-8d06-e450d9f91d7f",
+        "side": "front",
+        "pad_center_mm": [
+          75.31,
+          92.2
+        ],
+        "via_uuid": "5392b4f6-cbd1-41f1-bfcc-4f14158c9035",
+        "via_net": "GND",
+        "via_xy_mm": [
+          75.3,
+          92.8
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.155001,
+        "same_net": true
+      },
+      {
+        "ref": "J1",
+        "pin": "A9",
+        "net": "VBUS",
+        "pad_uuid": "71deb125-a0b1-453b-b2db-dc48061d8b16",
+        "side": "front",
+        "pad_center_mm": [
+          66.45,
+          94.955
+        ],
+        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
+        "via_net": "VBUS",
+        "via_xy_mm": [
+          66.45,
+          93.93
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "J1",
+        "pin": "B4",
+        "net": "VBUS",
+        "pad_uuid": "98e95658-9696-419d-ad67-40a6372035ef",
+        "side": "front",
+        "pad_center_mm": [
+          66.45,
+          94.955
+        ],
+        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
+        "via_net": "VBUS",
+        "via_xy_mm": [
+          66.45,
+          93.93
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "SW1",
+        "pin": "2",
+        "net": "SW_RETURN",
+        "pad_uuid": "192e2bca-6046-4dc6-99b1-3e8e65f3c08c",
+        "side": "front",
+        "pad_center_mm": [
+          70.9,
+          90.45
+        ],
+        "via_uuid": "dbd50967-d859-4413-bb71-34152c370190",
+        "via_net": "SW_RETURN",
+        "via_xy_mm": [
+          71.7,
+          91.3
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "U6",
+        "pin": "6",
+        "net": "USB_DP",
+        "pad_uuid": "23a86be1-1ecb-4b82-8a41-b84bcd1b08c7",
+        "side": "front",
+        "pad_center_mm": [
+          72.7375,
+          92.35
+        ],
+        "via_uuid": "0bf10a01-2db4-4311-b808-15173c9a0319",
+        "via_net": "USB_DP",
+        "via_xy_mm": [
+          72.8,
+          91.75
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "R25",
+        "pin": "1",
+        "net": "SW_RETURN",
+        "pad_uuid": "55d984ac-610b-4d31-8c73-72905204be5d",
+        "side": "front",
+        "pad_center_mm": [
+          74.29,
+          92.2
+        ],
+        "via_uuid": "72993636-6e60-4425-b17e-a1b53404a81c",
+        "via_net": "SW_RETURN",
+        "via_xy_mm": [
+          74.0,
+          91.6
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.183002,
         "same_net": true
       },
       {
@@ -1072,26 +1152,6 @@
         "same_net": true
       },
       {
-        "ref": "U6",
-        "pin": "2",
-        "net": "GND",
-        "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
-        "side": "front",
-        "pad_center_mm": [
-          74.6625,
-          94.2
-        ],
-        "via_uuid": "cb15018a-d831-4966-85fc-604f68538dac",
-        "via_net": "GND",
-        "via_xy_mm": [
-          73.65,
-          94.2
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.225001,
-        "same_net": true
-      },
-      {
         "ref": "U3",
         "pin": "1",
         "net": "GND",
@@ -1432,6 +1492,26 @@
         "same_net": true
       },
       {
+        "ref": "U5",
+        "pin": "7",
+        "net": "QSPI_IO3",
+        "pad_uuid": "e778c01e-2041-4afc-b590-175ec847c909",
+        "side": "front",
+        "pad_center_mm": [
+          71.75,
+          74.365
+        ],
+        "via_uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
+        "via_net": "QSPI_IO3",
+        "via_xy_mm": [
+          71.85,
+          73.76
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.230001,
+        "same_net": true
+      },
+      {
         "ref": "TP9",
         "pin": "1",
         "net": "CHG_ALLOW_H",
@@ -1572,26 +1652,6 @@
         "same_net": true
       },
       {
-        "ref": "R24",
-        "pin": "2",
-        "net": "GND",
-        "pad_uuid": "bda4557e-318f-4cc6-a2b7-8d936f8f613c",
-        "side": "front",
-        "pad_center_mm": [
-          73.91,
-          85.0
-        ],
-        "via_uuid": "4e4e5cd0-c7b9-4dda-8cee-e6072b8662a1",
-        "via_net": "GND",
-        "via_xy_mm": [
-          74.55,
-          85.0
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.245001,
-        "same_net": true
-      },
-      {
         "ref": "R15",
         "pin": "2",
         "net": "GND",
@@ -1692,26 +1752,6 @@
         "same_net": true
       },
       {
-        "ref": "R25",
-        "pin": "2",
-        "net": "GND",
-        "pad_uuid": "4bc41eb9-aeb1-4708-8d06-e450d9f91d7f",
-        "side": "front",
-        "pad_center_mm": [
-          71.71,
-          92.2
-        ],
-        "via_uuid": "e94714fa-4029-4d2c-8734-2e5a014acbae",
-        "via_net": "GND",
-        "via_xy_mm": [
-          72.35,
-          92.2
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.245001,
-        "same_net": true
-      },
-      {
         "ref": "R14",
         "pin": "1",
         "net": "USB_CC1",
@@ -1766,6 +1806,26 @@
         "via_xy_mm": [
           74.35,
           61.5
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.245001,
+        "same_net": true
+      },
+      {
+        "ref": "R24",
+        "pin": "2",
+        "net": "+3V0",
+        "pad_uuid": "bda4557e-318f-4cc6-a2b7-8d936f8f613c",
+        "side": "front",
+        "pad_center_mm": [
+          73.91,
+          85.0
+        ],
+        "via_uuid": "4e4e5cd0-c7b9-4dda-8cee-e6072b8662a1",
+        "via_net": "+3V0",
+        "via_xy_mm": [
+          74.55,
+          85.0
         ],
         "hole_diameter_mm": 0.25,
         "hole_to_shape_edge_mm": 0.245001,
@@ -1955,106 +2015,56 @@
   },
   "paste": {
     "minimum_clearance": {
-      "ref": "U5",
-      "pin": "7",
-      "net": "QSPI_IO3",
-      "pad_uuid": "e778c01e-2041-4afc-b590-175ec847c909",
+      "ref": "U6",
+      "pin": "2",
+      "net": "GND",
+      "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
       "side": "front",
       "pad_center_mm": [
-        71.75,
-        74.365
+        70.4625,
+        93.3
       ],
       "paste_margin_mm": [
         0.0,
         0.0
       ],
       "standalone_paste_aperture": false,
-      "via_uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
-      "via_net": "QSPI_IO3",
+      "via_uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+      "via_net": "GND",
       "via_xy_mm": [
-        71.85,
-        73.9
+        71.4,
+        93.3
       ],
       "hole_diameter_mm": 0.25,
-      "hole_to_shape_edge_mm": 0.090001,
+      "hole_to_shape_edge_mm": 0.150001,
       "same_net": true
     },
     "overlap_count": 0,
     "overlaps": [],
     "pairs_below_0_25mm": [
       {
-        "ref": "U5",
-        "pin": "7",
-        "net": "QSPI_IO3",
-        "pad_uuid": "e778c01e-2041-4afc-b590-175ec847c909",
+        "ref": "U6",
+        "pin": "2",
+        "net": "GND",
+        "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
         "side": "front",
         "pad_center_mm": [
-          71.75,
-          74.365
+          70.4625,
+          93.3
         ],
         "paste_margin_mm": [
           0.0,
           0.0
         ],
         "standalone_paste_aperture": false,
-        "via_uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
-        "via_net": "QSPI_IO3",
+        "via_uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+        "via_net": "GND",
         "via_xy_mm": [
-          71.85,
-          73.9
+          71.4,
+          93.3
         ],
         "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.090001,
-        "same_net": true
-      },
-      {
-        "ref": "J1",
-        "pin": "A9",
-        "net": "VBUS",
-        "pad_uuid": "71deb125-a0b1-453b-b2db-dc48061d8b16",
-        "side": "front",
-        "pad_center_mm": [
-          66.45,
-          94.955
-        ],
-        "paste_margin_mm": [
-          0.0,
-          0.0
-        ],
-        "standalone_paste_aperture": false,
-        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
-        "via_net": "VBUS",
-        "via_xy_mm": [
-          66.45,
-          94.0
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.105001,
-        "same_net": true
-      },
-      {
-        "ref": "J1",
-        "pin": "B4",
-        "net": "VBUS",
-        "pad_uuid": "98e95658-9696-419d-ad67-40a6372035ef",
-        "side": "front",
-        "pad_center_mm": [
-          66.45,
-          94.955
-        ],
-        "paste_margin_mm": [
-          0.0,
-          0.0
-        ],
-        "standalone_paste_aperture": false,
-        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
-        "via_net": "VBUS",
-        "via_xy_mm": [
-          66.45,
-          94.0
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.105001,
+        "hole_to_shape_edge_mm": 0.150001,
         "same_net": true
       },
       {
@@ -2105,6 +2115,156 @@
         ],
         "hole_diameter_mm": 0.25,
         "hole_to_shape_edge_mm": 0.150001,
+        "same_net": true
+      },
+      {
+        "ref": "R25",
+        "pin": "2",
+        "net": "GND",
+        "pad_uuid": "4bc41eb9-aeb1-4708-8d06-e450d9f91d7f",
+        "side": "front",
+        "pad_center_mm": [
+          75.31,
+          92.2
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "5392b4f6-cbd1-41f1-bfcc-4f14158c9035",
+        "via_net": "GND",
+        "via_xy_mm": [
+          75.3,
+          92.8
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.155001,
+        "same_net": true
+      },
+      {
+        "ref": "J1",
+        "pin": "A9",
+        "net": "VBUS",
+        "pad_uuid": "71deb125-a0b1-453b-b2db-dc48061d8b16",
+        "side": "front",
+        "pad_center_mm": [
+          66.45,
+          94.955
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
+        "via_net": "VBUS",
+        "via_xy_mm": [
+          66.45,
+          93.93
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "J1",
+        "pin": "B4",
+        "net": "VBUS",
+        "pad_uuid": "98e95658-9696-419d-ad67-40a6372035ef",
+        "side": "front",
+        "pad_center_mm": [
+          66.45,
+          94.955
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
+        "via_net": "VBUS",
+        "via_xy_mm": [
+          66.45,
+          93.93
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "SW1",
+        "pin": "2",
+        "net": "SW_RETURN",
+        "pad_uuid": "192e2bca-6046-4dc6-99b1-3e8e65f3c08c",
+        "side": "front",
+        "pad_center_mm": [
+          70.9,
+          90.45
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "dbd50967-d859-4413-bb71-34152c370190",
+        "via_net": "SW_RETURN",
+        "via_xy_mm": [
+          71.7,
+          91.3
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "U6",
+        "pin": "6",
+        "net": "USB_DP",
+        "pad_uuid": "23a86be1-1ecb-4b82-8a41-b84bcd1b08c7",
+        "side": "front",
+        "pad_center_mm": [
+          72.7375,
+          92.35
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "0bf10a01-2db4-4311-b808-15173c9a0319",
+        "via_net": "USB_DP",
+        "via_xy_mm": [
+          72.8,
+          91.75
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.175001,
+        "same_net": true
+      },
+      {
+        "ref": "R25",
+        "pin": "1",
+        "net": "SW_RETURN",
+        "pad_uuid": "55d984ac-610b-4d31-8c73-72905204be5d",
+        "side": "front",
+        "pad_center_mm": [
+          74.29,
+          92.2
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "72993636-6e60-4425-b17e-a1b53404a81c",
+        "via_net": "SW_RETURN",
+        "via_xy_mm": [
+          74.0,
+          91.6
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.183002,
         "same_net": true
       },
       {
@@ -3008,31 +3168,6 @@
         "same_net": true
       },
       {
-        "ref": "U6",
-        "pin": "2",
-        "net": "GND",
-        "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
-        "side": "front",
-        "pad_center_mm": [
-          74.6625,
-          94.2
-        ],
-        "paste_margin_mm": [
-          0.0,
-          0.0
-        ],
-        "standalone_paste_aperture": false,
-        "via_uuid": "cb15018a-d831-4966-85fc-604f68538dac",
-        "via_net": "GND",
-        "via_xy_mm": [
-          73.65,
-          94.2
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.225001,
-        "same_net": true
-      },
-      {
         "ref": "U3",
         "pin": "1",
         "net": "GND",
@@ -3383,6 +3518,31 @@
         "same_net": true
       },
       {
+        "ref": "U5",
+        "pin": "7",
+        "net": "QSPI_IO3",
+        "pad_uuid": "e778c01e-2041-4afc-b590-175ec847c909",
+        "side": "front",
+        "pad_center_mm": [
+          71.75,
+          74.365
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
+        "via_net": "QSPI_IO3",
+        "via_xy_mm": [
+          71.85,
+          73.76
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.230001,
+        "same_net": true
+      },
+      {
         "ref": "U3",
         "pin": "42",
         "net": "QSPI_SCK",
@@ -3477,31 +3637,6 @@
         "via_xy_mm": [
           68.05,
           86.0
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.245001,
-        "same_net": true
-      },
-      {
-        "ref": "R24",
-        "pin": "2",
-        "net": "GND",
-        "pad_uuid": "bda4557e-318f-4cc6-a2b7-8d936f8f613c",
-        "side": "front",
-        "pad_center_mm": [
-          73.91,
-          85.0
-        ],
-        "paste_margin_mm": [
-          0.0,
-          0.0
-        ],
-        "standalone_paste_aperture": false,
-        "via_uuid": "4e4e5cd0-c7b9-4dda-8cee-e6072b8662a1",
-        "via_net": "GND",
-        "via_xy_mm": [
-          74.55,
-          85.0
         ],
         "hole_diameter_mm": 0.25,
         "hole_to_shape_edge_mm": 0.245001,
@@ -3633,31 +3768,6 @@
         "same_net": true
       },
       {
-        "ref": "R25",
-        "pin": "2",
-        "net": "GND",
-        "pad_uuid": "4bc41eb9-aeb1-4708-8d06-e450d9f91d7f",
-        "side": "front",
-        "pad_center_mm": [
-          71.71,
-          92.2
-        ],
-        "paste_margin_mm": [
-          0.0,
-          0.0
-        ],
-        "standalone_paste_aperture": false,
-        "via_uuid": "e94714fa-4029-4d2c-8734-2e5a014acbae",
-        "via_net": "GND",
-        "via_xy_mm": [
-          72.35,
-          92.2
-        ],
-        "hole_diameter_mm": 0.25,
-        "hole_to_shape_edge_mm": 0.245001,
-        "same_net": true
-      },
-      {
         "ref": "R14",
         "pin": "1",
         "net": "USB_CC1",
@@ -3727,6 +3837,31 @@
         "via_xy_mm": [
           74.35,
           61.5
+        ],
+        "hole_diameter_mm": 0.25,
+        "hole_to_shape_edge_mm": 0.245001,
+        "same_net": true
+      },
+      {
+        "ref": "R24",
+        "pin": "2",
+        "net": "+3V0",
+        "pad_uuid": "bda4557e-318f-4cc6-a2b7-8d936f8f613c",
+        "side": "front",
+        "pad_center_mm": [
+          73.91,
+          85.0
+        ],
+        "paste_margin_mm": [
+          0.0,
+          0.0
+        ],
+        "standalone_paste_aperture": false,
+        "via_uuid": "4e4e5cd0-c7b9-4dda-8cee-e6072b8662a1",
+        "via_net": "+3V0",
+        "via_xy_mm": [
+          74.55,
+          85.0
         ],
         "hole_diameter_mm": 0.25,
         "hole_to_shape_edge_mm": 0.245001,

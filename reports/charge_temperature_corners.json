@@ -1,5 +1,13 @@
 {
-  "status": "calculation_only_physical_validation_required",
+  "status": "engineering_corner_model_only_error_budget_requires_qualification",
+  "evidence": {
+    "hardware_tested": false,
+    "spice_simulation_run": false,
+    "arithmetic_assertions_checked": true,
+    "covers_dynamic_startup_or_supply_sag": false,
+    "guaranteed_CMRR_PSRR_worst_case_bound": false,
+    "limitation": "22mV combines datasheet values at their specified test conditions with an assumed1.5mV margin. It does not certify a0..45C charging window for every device/common-mode/supply condition. See docs/power_audit_A1.md."
+  },
   "hot": {
     "name": "hot_supervised",
     "divider_top_ohm": 100000,

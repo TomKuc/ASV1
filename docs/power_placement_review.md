@@ -93,7 +93,7 @@ Wynik `reports/drc_power_fanout_proposal.json`: **0 błędów geometrii**, jedno
 
 ## Niezależny przegląd rzeczywistego routingu A1
 
-Powyższe sekcje opisują wcześniejsze propozycje i klony. Poniższe ustalenia dotyczą **rzeczywistego końcowego PCB** o SHA256 **`b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678`**, po przyjęciu napraw C3 i lokalnej gałęzi Flash. Szczegóły i współrzędne rzeczywistych ścieżek: `reports/power_routing_review.json`. Natywne DRC po refill/save ma 0 naruszeń, 0 niepołączonych elementów i 0 rozbieżności schemat–PCB. To przegląd geometrii, nie kwalifikacja elektryczna/termiczna prototypu.
+Powyższe sekcje opisują wcześniejsze propozycje i klony. Poniższe ustalenia odświeżono **29.10.2026 na rzeczywistym końcowym PCB** o SHA256 **`38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`**, po naprawach C3/Flash, R24 pull-up, relokacji U6 i poprawkach geometrii. Wcześniejszy odczyt `b5487d09…` jest historyczny. Ponownie odczytano 17 par IC–kondensator i wszystkie 17 padów GND/EP U1–U8. Szczegóły i współrzędne rzeczywistych ścieżek: `reports/power_routing_review.json`. Natywne DRC po refill/save ma 0 naruszeń, 0 niepołączonych elementów i 0 rozbieżności schemat–PCB. To przegląd geometrii, nie kwalifikacja elektryczna/termiczna prototypu.
 
 Sprawdzono sąsiedztwo elementów i ścieżek przez natywną łączność KiCad, połączenia vias z In1/In2 oraz zapisane wielokąty wypełnień. Wspólny polygon zasilania nie został uznany automatycznie za krótki obwód: dla gałęzi bez bezpośredniego F.Cu wyszukano lokalną drogę w rzeczywiście zapisanej miedzi z krokiem 0.05 mm. Wagi grafu natywnej łączności nie są długością ścieżki — kontakt może zachodzić wewnątrz pada lub na krawędziach szerszych odcinków. Raport rozdziela te wagi od jawnych polilinii i dokładnych odległości środków.
 
@@ -111,8 +111,9 @@ Sprawdzono sąsiedztwo elementów i ścieżek przez natywną łączność KiCad,
 | U5 bulk C16 | Od lokalnego węzła C15 do via C16 po In2 3.578 mm; cała gałąź od U5 około 6.28 mm XY | 0.850 mm |
 | U7 / C18 | Krótkie stuby i lokalne In2 między vias 1.390 mm | 0.620 mm |
 | U8 / C19 | Krótkie stuby i lokalne In2 między vias 1.450 mm | 0.622 mm |
+| U6 po relokacji | Gałąź VBUS krótsza; C11 nadal przy module U3, bez nowego lokalnego bypass U6 | 0.9375 mm F.Cu do via (71.4,93.3), przed zmianą 1.0125 mm |
 
-Odległości GND w tabeli są odległościami środków pada i lokalnej via, a nie deklaracją całkowitej indukcyjności pętli. Długości XY nie obejmują pionowych przejść przez przelotki. Każda sprawdzona via GND ma natywne połączenie z In1; osiem próbek pierścienia na promieniu 0.20 mm trafia w zapisane wypełnienie. Nie znaleziono odległej odnogi GND zastępującej lokalny powrót kondensatora.
+Odległości GND w tabeli są odległościami środków pada i lokalnej via, a nie deklaracją całkowitej indukcyjności pętli. Długości XY nie obejmują pionowych przejść przez przelotki. Każda sprawdzona via GND kontaktuje In1; ponownie sprawdzono osiem próbek pierścienia między krawędzią otworu i krawędzią miedzi (dla 0.5/0.25 mm promień 0.1875 mm). Nie znaleziono odległej odnogi GND zastępującej lokalny powrót kondensatora.
 
 ### Wykryta i usunięta długa odnoga Flash
 
@@ -130,7 +131,7 @@ Nie stwierdzono braku masy EP. Wąskie mostki termiczne i brak górnej powierzch
 
 Po przesunięciu C3 jego stara via GND (58.15,92.1) weszła otworem w pole SMD/pastę. Naprawiono tylko tę via, przesuwając ją do **(57.8,92.1)** i przedłużając jeden istniejący odcinek F.Cu GND. Otwór ma teraz **0.200 mm nominalnego zapasu** do miedzi i pasty C3. Jest to późniejsza rzeczywista korekta, niezależna od wcześniejszych propozycji placementu.
 
-Trwały audytor `scripts/audit_vias.py` sprawdza **160 przelotek, 255 kształtów miedzi SMD i 243 apertury pasty**, obie strony i również pary tej samej sieci, w tym osobne apertury EP. Używa natywnego `Collide`, rzeczywistego promienia otworu i marginesów pasty; kontrola dodatnia wykrywa dawną kolizję C3. **Brak przecięć otworów z miedzią SMD i brak przecięć z pastą** po poprawce. Raport: `reports/via_pad_audit.json`.
+Trwały audytor `scripts/audit_vias.py` w finalnym raporcie sprawdza **164 przelotki, 255 kształtów miedzi SMD i 243 apertury pasty**, obie strony i również pary tej samej sieci, w tym osobne apertury EP. Używa natywnego `Collide`, rzeczywistego promienia otworu i marginesów pasty; kontrola dodatnia wykrywa dawną kolizję C3. **Brak przecięć otworów z miedzią SMD i brak przecięć z pastą** po poprawce. Raport: `reports/via_pad_audit.json`, source hash `38545441…`.
 
-Najmniejszy nominalny odstęp wynosi **0.090 mm przy U5.7 / QSPI_IO3**, via (71.85,73.9), zarówno do miedzi, jak i pasty. Otwór leży poza nimi; jest to ciasny margines wymagający akceptacji JLC DFM z tolerancjami wykonania i rejestracji maski/szablonu. Wynik CAD nie jest gwarancją tego marginesu na wykonanym egzemplarzu. Ten punkt dopisano do listy zwolnienia. Skrypt nie zmienia PCB.
+Historyczne minimum **0.090 mm przy U5.7 / QSPI_IO3**, via (71.85,73.9), zostało naprawione: obecna via (71.85,73.76) ma **0.230001 mm** do miedzi i pasty U5.7. Bieżące minimum całego PCB to **0.150001 mm**, przy U6.2 oraz C4.2/C5.2. Otwory leżą poza miedzią i pastą. Nadal wymagana jest akceptacja JLC DFM z tolerancjami wykonania i rejestracji maski/szablonu; wynik CAD nie gwarantuje zachowania nominalnego marginesu na egzemplarzu. Skrypt nie zmienia PCB.
 

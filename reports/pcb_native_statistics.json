@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "date": "2026-10-28T15:41:45",
+    "date": "2026-10-29T14:06:33",
     "generator": "KiCad 10.0.7",
     "project": "Ankle_Sensor_V1",
     "board_name": "Ankle_Sensor_V1"
@@ -12,8 +12,8 @@
     "area": "1548.00 mm²",
     "front_component_density": "41.13",
     "back_component_density": "4.27",
-    "front_copper_area": "259.636 mm²",
-    "back_copper_area": "120.823 mm²",
+    "front_copper_area": "257.546 mm²",
+    "back_copper_area": "121.591 mm²",
     "min_track_clearance": "0.1500 mm",
     "min_track_width": "0.1500 mm",
     "min_drill_diameter": "0.2500 mm",
@@ -32,7 +32,7 @@
     "na_wcisk": 0
   },
   "vias": {
-    "przelotek_na": 160,
+    "przelotek_na": 164,
     "ślepych": 0,
     "przelotek": 0,
     "": 0
@@ -61,7 +61,7 @@
   },
   "drill_holes": [
     {
-      "count": 160,
+      "count": 164,
       "shape": "Zaokrąglony",
       "x_size": "0.2500 mm",
       "y_size": "0.2500 mm",

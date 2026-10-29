@@ -23,12 +23,12 @@
     "errors": 0
   },
   "schematic_sources_sha256": {
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_sch": "47069e8b6263cc516afa8a5f9e2c5edb2cb00108c6159cba01a798da6c75bc98",
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/power.kicad_sch": "1812990eea6b5c687f8a38e4e6bcf9be1f3b36c38f59dfb2cd73c6ce83db7525",
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/mcu.kicad_sch": "d2b879b0fe8095c4e8901bb54dcfe07de242ab60ee28b8af5b5edb2a0334e698",
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/sensors.kicad_sch": "b80befadae157abe4404805ef70db95402ddaf2c348c483afc8b89ef9f49fde4",
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/io.kicad_sch": "a75a6a460f47e717e305ae65525f1a9a063857cc4037abe4ac869d7da7e7d71b",
-    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/temperature.kicad_sch": "b77565e58ffbe31f346312e293610b7d3443bd861047ca15d8a5606fc21f5f84"
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/Ankle_Sensor_V1.kicad_sch": "2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/power.kicad_sch": "ce5ceb0873ef98f1d9e39f209bac262d1f518d0ce3e85cbe88cc1f8cbdee4f3a",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/mcu.kicad_sch": "6eae1d86edbd75923d2cdd866f55f62c45e9d96627e1b84cf7cb32c0d95baf08",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/sensors.kicad_sch": "70bb1dad3b54466debf7525c5ad7328d7e8abdb34ae568c528a25dfb03a58736",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/io.kicad_sch": "4b8bf8c423e7a9c4f42c575419ad87159e8ac2fe70c78fbcf4287e5850217ea0",
+    "/Users/tomaszkuczynski/Desktop/private/Ankle_Sensor_V1/hardware/temperature.kicad_sch": "03d02986db171a22f57094ce84d75739af78391f52a57f316fffa8e29c8ec63b"
   },
   "sheet_counts": {
     "Ankle_Sensor_V1": {
@@ -101,9 +101,9 @@
   "issues": [],
   "inputs": {
     "design": "hardware/design.json",
-    "design_sha256": "3cb06b1b57dce87337a6620411780804c8506a1819f3e2bf22723b92705c1dac",
+    "design_sha256": "0ddf06dc25c816a0e1abe627489c19fa6fd5ea9597cbe5be74579baac34a0203",
     "schematic": "hardware/Ankle_Sensor_V1.kicad_sch",
-    "schematic_sha256": "47069e8b6263cc516afa8a5f9e2c5edb2cb00108c6159cba01a798da6c75bc98"
+    "schematic_sha256": "2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d"
   },
-  "generated_at_utc": "2026-10-28T14:12:13.894634+00:00"
+  "generated_at_utc": "2026-10-29T13:05:42.997328+00:00"
 }

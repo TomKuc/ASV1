@@ -2,6 +2,7 @@
 """Package the editable project and current evidence, excluding old checkpoints."""
 from pathlib import Path
 from datetime import datetime, timezone
+import argparse
 import hashlib
 import json
 import zipfile
@@ -21,6 +22,14 @@ REPORTS=(
     'repair_merge_final.json','repair_merge_lfxo.json','repair_merge_c3_via.json',
     'repair_merge_flash_power.json','flash_decoupling_repair.json',
     'lfxo_repair_report.json','c3_via_repair.json','final_board_metadata.json',
+    'audit_geometry_changes_A1.json','audit_charge_default_A1.json',
+    'audit_merge_root_A1.json','audit_merge_final_A1.json',
+    'drc_audit_all_checks_before.json','erc_audit_all_checks_before.json',
+    'drc_audit_geometry_candidate.json','drc_audit_charge_candidate.json',
+    'erc_audit_charge_candidate.json','via_pad_audit_A1_candidate.json',
+    'flash_compatibility_A1.json','power_audit_A1.json','usb_raytac_audit_A1.json',
+    'audit_changed_files.txt','baselines/A1_before_audit_manifest.json',
+    'baselines/A1_routed_before_audit_2026-10-29.zip',
 )
 
 
@@ -29,6 +38,13 @@ def sha(p):
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--archive', default='Ankle_Sensor_V1_A1_AUDIT_REVIEW.zip')
+    args=parser.parse_args()
+    archive=ROOT/args.archive
+    preserved={'Ankle_Sensor_V1_A0_REVIEW.zip','Ankle_Sensor_V1_A1_REVIEW.zip'}
+    if archive.name in preserved:
+        raise SystemExit('Refusing to overwrite a preserved A0/A1 baseline archive')
     validation=json.loads((ROOT/'reports/validation_status.json').read_text())
     board=ROOT/'hardware/Ankle_Sensor_V1.kicad_pcb'
     board_hash=sha(board)
@@ -52,7 +68,7 @@ def main():
         data=json.loads((ROOT/'reports'/filename).read_text())
         assert data[key]==board_hash,filename
     files={ROOT/'README.md',ROOT/'.gitignore'}
-    for folder in ('hardware','docs','scripts','manufacturing'):
+    for folder in ('hardware','docs','scripts','manufacturing','reports/guide'):
         files.update(p for p in (ROOT/folder).rglob('*') if p.is_file()
                      and '__pycache__' not in p.parts and not p.name.startswith('.')
                      and not any(part.endswith('-backups') for part in p.parts)
@@ -62,7 +78,7 @@ def main():
         assert p.is_file(),str(p)
         files.add(p)
     metadata={
-        'status':'A1_REVIEW_NOT_RELEASED_FOR_FABRICATION_OR_ASSEMBLY',
+        'status':'A1_AUDIT_REVIEW_NOT_RELEASED_FOR_FABRICATION_OR_ASSEMBLY',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
         'kicad_version':validation['kicad_version'],'board_sha256':board_hash,
         'native_drc':{'violations':0,'unconnected_items':0,'schematic_parity':0},
@@ -74,6 +90,11 @@ def main():
         'step_limitations':'Missing USB-C model, generic Raytac, Flash envelope, IMU height limit; no battery/case',
         'assembly_limitations':'Native footprint anchors/rotations, JLC translations and procurement unconfirmed',
         'physical_qualification':'Firmware and physical prototype tests are outstanding',
+        'audit_report':'docs/audit_A1_2026-10-29.md',
+        'ignored_check_classes':{'erc':validation['erc_ignored_checks'],
+                                 'drc':validation['drc_ignored_checks']},
+        'preserved_baseline':'reports/baselines/A1_routed_before_audit_2026-10-29.zip',
+        'commit_delivery':'Git bundle and commit_delivery.json are delivered beside the archive after committing; not recursively included',
         'files_without_manifest_or_checksum_list':len(files)
     }
     manifest=ROOT/'reports/review_package_manifest.json'
@@ -81,10 +102,9 @@ def main():
     checksums=ROOT/'reports/source_hashes.sha256'
     checksums.write_text(''.join(sha(p)+'  '+str(p.relative_to(ROOT))+'\n' for p in sorted(files)))
     files.add(checksums)
-    archive=ROOT/'Ankle_Sensor_V1_A1_REVIEW.zip'
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted(files):
-            z.write(p,str(Path('Ankle_Sensor_V1_A1_REVIEW')/p.relative_to(ROOT)))
+            z.write(p,str(Path(archive.stem)/p.relative_to(ROOT)))
     with zipfile.ZipFile(archive) as z:
         assert z.testzip() is None
         assert len(z.namelist())==len(files)

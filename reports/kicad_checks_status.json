@@ -1,6 +1,6 @@
 {
   "project": "Ankle_Sensor_V1",
-  "revision": "A1-WIP",
+  "revision": "A1-AUDIT",
   "kicad_version": "10.0.7",
   "kicad_open_check": "PASS_NATIVE_SCHEMATIC_LOAD_AND_PDF_EXPORT",
   "erc": "RUN",

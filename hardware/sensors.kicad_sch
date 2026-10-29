@@ -1,5 +1,5 @@
 (kicad_sch (version 20231120) (generator "ankle_sensor_review_generator") (uuid "f410f797-9ce2-506f-9260-519d036da3f3") (paper "A3")
-(title_block (title "Ankle Sensor V1 / sensors") (date "2026-10-28") (rev "A1-WIP") (comment 1 "WORK IN PROGRESS - SEE CURRENT ERC/DRC REPORTS"))
+(title_block (title "Ankle Sensor V1 / sensors") (date "2026-10-29") (rev "A1-AUDIT") (comment 1 "AUDIT REVIEW - SEE CURRENT ERC/DRC REPORTS"))
 (lib_symbols
 (symbol "AnkleSensor:C" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
 (property "Reference" "U" (at 0 4.445 0) (effects (font (size 1 1))))

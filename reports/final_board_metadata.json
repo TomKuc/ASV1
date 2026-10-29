@@ -7,5 +7,12 @@
     101.6
   ],
   "y1_catalog": "https://jlcpcb.com/partdetail/AbraconLLC-ABS07_32_768KHZ_7T/C276424",
-  "y1_catalog_check_date": "2026-10-28"
+  "y1_catalog_check_date": "2026-10-28",
+  "audit_date": "2026-10-29",
+  "audit_board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "audit_notes": [
+    "Preserved earlier removal of unused IMU_CS via; this audit did not reroute the whole board.",
+    "R24 is a 3V0 pull-up; U6/R25 positions and two drill clearances corrected locally.",
+    "See audit_merge_final_A1.json and audit_geometry_changes_A1.json for object deltas."
+  ]
 }

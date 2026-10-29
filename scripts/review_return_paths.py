@@ -138,12 +138,35 @@ def main():
    if tracks:nets[name]=net_geometry(board,tracks,vias,gnd,pwr)
  assert hashlib.sha256(path.read_bytes()).hexdigest()==before
  stable_usb_report=json.loads((ROOT/'reports/usb_routing_review.json').read_text())
- stable_usb=stable_usb_report['verified_mcu_proposal']
- usbsource={'board_sha256':stable_usb['proposal_board_sha256'],'native_connectivity':{n:{'trace_length_total_mm':v} for n,v in stable_usb['trace_length_only_mm'].items()},'trace_length_skew_mm':stable_usb['trace_length_skew_mm']}
- out={'date':'2026-10-28','board':'hardware/Ankle_Sensor_V1.kicad_pcb','board_sha256':before,'board_unchanged_after_read':True,'native_kicad_version':pcbnew.GetBuildVersion(),'status':'READ_ONLY_GEOMETRY_SURVEY_NO_IMPEDANCE_OR_USB_CERTIFICATION','method':{'native_fill':'Stored filled In1.Cu GND SHAPE_POLY_SET, preserving antipad voids; no refill/edit in this audit','area':'Native TransformShapeToPolygon/BooleanAdd/BooleanIntersection/BooleanSubtract; actual trace widths and fixed 0.50mm survey bands','poly_error_mm':POLY_ERROR,'centerline':'Native Contains at segment midpoints; missing intervals joined through same-net through-via endpoints','centerline_max_step_mm':STEP,'sampling_uncertainty_per_run_boundary_mm':STEP,'gap_component_metric':'Sum of absent-GND trace lengths connected at track/via endpoints; branches can overestimate one path. Component bboxes are XY extents, not field-solver results.','band_limitation':'0.50mm survey width is a repeatable geometric probe, not a derived return-current requirement.'},'stackup':{'order':['F.Cu','In1.Cu GND','In2.Cu +3V0 and signals','B.Cu'],'board_nominal_thickness_mm':mm(board.GetDesignSettings().GetBoardThickness()),'explicit_dielectric_stackup_in_pcb':False,'consequence':'No verified dielectric separations, Er or 90ohm differential impedance. B.Cu is adjacent to mixed In2, not directly to In1 ground.'},'ground_fill':{'outline_count':gnd.OutlineCount(),'area_mm2':area(gnd),'warning':'Stored fractured polygons can encode holes as cutouts; OutlineCount is not proof that return paths are electrically adequate.'},'groups':GROUPS,'nets':nets,'usb_lengths_copied_from_verified_proposal':{'source_file':'.work/final_repairs/usb/usb_verification.json','proposal_board_sha256':usbsource['board_sha256'],'trace_length_only_mm':{n:usbsource['native_connectivity'][n]['trace_length_total_mm'] for n in ['USB_DP','USB_DN']},'trace_length_skew_mm':usbsource['trace_length_skew_mm'],'equal_vias_per_net':2,'canonical_trace_lengths_match_proposal_within_0p001mm':all(abs(nets[n]['trace_length_mm']-usbsource['native_connectivity'][n]['trace_length_total_mm'])<.001 for n in ['USB_DP','USB_DN'])},'limitations':['Native DRC/parity do not qualify impedance, edge rates, return-current distribution, crosstalk or USB eye/EMC.','Own non-ground via antipads necessarily remove In1 copper directly below the layer transition; nearby ground stitching and actual reference geometry must be assessed against verified stackup.','Coverage of In1 ground below B.Cu does not prove the adjacent mixed In2 reference is continuous or adequately decoupled.']}
- out['usb_lengths_copied_from_verified_proposal']['source_file']='reports/usb_routing_review.json (verified_mcu_proposal)'
- out['method']['own_via_probe']='0.42mm radius around each target-net 0.50mm via: nominal0.25mm copper radius +0.15mm plane clearance +0.02mm geometric margin. Small residual edge slivers are listed separately.'
- out['stackup']['explicit_dielectric_stackup_in_pcb']='(stackup' in path.read_text()
+ historical=stable_usb_report.pop('verified_mcu_proposal',stable_usb_report.get('historical_mcu_proposal',{}))
+ if 'mcu_common_centerline_mm' in stable_usb_report:historical['common_centerline_before_esd_move_mm']=stable_usb_report.pop('mcu_common_centerline_mm')
+ historical['historical_only']=True
+ historical['context']='Frozen pre-ESD-relocation MCU proposal. Its lengths and complete centreline are not expected to match the current board.'
+ stable_usb_report['historical_mcu_proposal']=historical
+ current_lengths={n:nets[n]['trace_length_mm'] for n in ['USB_DP','USB_DN','USB_DP_CONN','USB_DN_CONN']}
+ out={
+  'date':'2026-10-29','board':'hardware/Ankle_Sensor_V1.kicad_pcb','board_sha256':before,
+  'board_unchanged_after_read':True,'native_kicad_version':pcbnew.GetBuildVersion(),
+  'status':'READ_ONLY_GEOMETRY_SURVEY_NO_IMPEDANCE_OR_USB_CERTIFICATION',
+  'method':{
+   'native_fill':'Stored filled In1.Cu GND SHAPE_POLY_SET, preserving antipad voids; no refill/edit in this audit',
+   'area':'Native TransformShapeToPolygon/BooleanAdd/BooleanIntersection/BooleanSubtract; actual trace widths and fixed0.50mm survey bands',
+   'poly_error_mm':POLY_ERROR,'centerline':'Native Contains at segment midpoints; missing intervals joined through same-net through-via endpoints',
+   'centerline_max_step_mm':STEP,'sampling_uncertainty_per_run_boundary_mm':STEP,
+   'gap_component_metric':'Sum of absent-GND trace lengths connected at track/via endpoints; branches can overestimate one path. Component bboxes are XY extents, not field-solver results.',
+   'band_limitation':'0.50mm survey width is a geometric probe, not a derived return-current requirement.',
+   'own_via_probe':'0.42mm radius around each target-net0.50mm via: nominal0.25mm copper radius+0.15mm plane clearance+0.02mm margin; residual edge slivers listed separately.'},
+  'stackup':{'order':['F.Cu','In1.Cu GND','In2.Cu +3V0 and signals','B.Cu'],
+   'board_nominal_thickness_mm':mm(board.GetDesignSettings().GetBoardThickness()),
+   'explicit_dielectric_stackup_in_pcb':'(stackup' in path.read_text(),
+   'consequence':'No verified dielectric separations,Er or90ohm differential impedance. B.Cu is adjacent to mixed In2, not directly to In1 ground.'},
+  'ground_fill':{'outline_count':gnd.OutlineCount(),'area_mm2':area(gnd),'warning':'Stored fractured polygons can encode holes as cutouts; outline count does not prove adequate return paths.'},
+  'groups':GROUPS,'nets':nets,'current_usb_trace_lengths_mm':current_lengths,
+  'current_mcu_trace_length_skew_mm':abs(current_lengths['USB_DP']-current_lengths['USB_DN']),
+  'historical_usb_mcu_proposal_reference':{'source_file':'reports/usb_routing_review.json (historical_mcu_proposal)','historical_only':True,'proposal_board_sha256':historical.get('proposal_board_sha256')},
+  'limitations':['Native DRC/parity do not qualify impedance,edge rates,return-current distribution,crosstalk or USB eye/EMC.',
+   'Own non-ground via antipads remove In1 copper below layer transitions; actual reference geometry and stitching require assessment against verified stackup.',
+   'In1 ground under B.Cu does not prove adjacent mixed In2 is a continuous or adequately decoupled reference.']}
  gpads=[p for p in board.GetPads() if p.GetNetname()=='GND'];todo=[gpads[0]];seen=set();conn=board.GetConnectivity()
  while todo:
   item=todo.pop();u=item.m_Uuid.AsString()
@@ -153,12 +176,21 @@ def main():
  out['ground_fill']['all_gnd_pads_in_one_native_component']=all(p.m_Uuid.AsString() in seen for p in gpads)
  assert hashlib.sha256(path.read_bytes()).hexdigest()==before
  (ROOT/'reports/return_path_review.json').write_text(json.dumps(out,indent=2,allow_nan=False)+'\n')
+ stable_usb_report['date']='2026-10-29'
+ stable_usb_report['retained_trunk_nominal_pair_gap_mm']=stable_usb_report.pop('mcu_nominal_pair_gap_mm',stable_usb_report.get('retained_trunk_nominal_pair_gap_mm',.15))
+ stable_usb_report['measured_usb_trace_widths_mm']=sorted({float(w) for n in ['USB_DP','USB_DN','USB_DP_CONN','USB_DN_CONN'] for w in nets[n]['trace_width_segment_counts_mm']})
  stable_usb_report['canonical_board_sha256']=before
  stable_usb_report['canonical_nets']={n:{k:nets[n][k] for k in ['trace_length_mm','trace_length_by_layer_mm','via_count','native_projection_gnd_coverage_pct','max_missing_component_trace_length_sum_mm']} for n in ['USB_DP','USB_DN','USB_DP_CONN','USB_DN_CONN']}
- end={side:{'trace_length_only_mm':nets['USB_'+side]['trace_length_mm']+nets['USB_'+side+'_CONN']['trace_length_mm'],'via_count':nets['USB_'+side]['via_count']+nets['USB_'+side+'_CONN']['via_count']} for side in ['DP','DN']}
+ end={side:{'trace_length_only_mm':current_lengths['USB_'+side]+current_lengths['USB_'+side+'_CONN'],'via_count':nets['USB_'+side]['via_count']+nets['USB_'+side+'_CONN']['via_count']} for side in ['DP','DN']}
  stable_usb_report['whole_path_via_esd_to_connector']=end
  stable_usb_report['whole_path_planar_trace_length_difference_mm']=abs(end['DP']['trace_length_only_mm']-end['DN']['trace_length_only_mm'])
- stable_usb_report['limits']=['Only the MCU-side main In2 trunk was deliberately paired at nominal 0.15 mm gap. Endpoint fanouts and connector-side geometry are not qualified as a controlled-impedance differential pair.','Actual JLC dielectric stackup and Er are not defined; no 90 ohm or USB compliance claim.','Whole-path DP/DN via count differs (2 versus 4); equal MCU-side via counts do not establish whole-path matching.']
+ stable_usb_report['current_mcu_trace_length_skew_mm']=out['current_mcu_trace_length_skew_mm']
+ stable_usb_report['current_footprint_positions_mm']={f.GetReference():[mm(f.GetPosition().x),mm(f.GetPosition().y)] for f in board.Footprints() if f.GetReference() in ['U6','R25','J1']}
+ stable_usb_report['main_paired_trunk_scope']='Original shared In2 trunk retained to y86.8mm; replacement tails and connector-side paths are separately routed and unqualified.'
+ stable_usb_report['limits']=['Historical pre-relocation proposal is preserved only as provenance; current lengths come from actual native tracks.',
+  'Only the retained MCU-side In2 trunk has the original nominal0.15mm gap; replacement tails,endpoint fanouts and connector-side geometry are not a qualified controlled-impedance pair.',
+  'Actual JLC dielectric stackup and Er are undefined; no90ohm or USB compliance claim.',
+  'Current whole-path via counts are DP'+str(end['DP']['via_count'])+' and DN'+str(end['DN']['via_count'])+'; equal counts do not establish impedance or signal quality.']
  (ROOT/'reports/usb_routing_review.json').write_text(json.dumps(stable_usb_report,indent=2,allow_nan=False)+'\n')
  print(json.dumps({'board_sha256':before,'nets':{n:{'length_mm':d['trace_length_mm'],'gnd_coverage_pct':d['native_projection_gnd_coverage_pct'],'missing_centerline_mm':d['estimated_centerline_without_gnd_total_mm'],'max_component_trace_mm':d['max_missing_component_trace_length_sum_mm']} for n,d in nets.items()}},indent=2))
 

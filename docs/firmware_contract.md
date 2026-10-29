@@ -10,6 +10,8 @@ Przechwytywać INT przez GPIOTE/PPI do TIMER, a nie czas wejścia do ISR. Używa
 
 ## Flash
 
+Wiążący plan kwalifikacji128MiB: [audyt zgodności](flash_compatibility_A1.md) i [20 prób firmware](flash_firmware_test_plan_A1.md). Status wszystkich prób sprzętowych to NOT_RUN. IQ ma QE stałe1; nie używać domyślnego S1B6 ani zapisu SR do jego ustawienia. Osobna warstwa musi rozróżniać gotowość kontrolera od zakończenia operacji na obu dies.
+
 W25Q01JVZEIQ128 MiB ma dwa dies. Sam ADDRMODE32 nie wystarcza: potrzebny sprawdzony sterownik z obsługą stanów obu dies, EN4B i sekwencji resetowania. Pozyskać AN0000035 albo równoważne kompletne wyjaśnienie producenta. Sprawdzić QE/ADS, JEDEC/SFDP, BUSY/SUS/WEL oraz granice matryc. Obsługa deep power-down musi zachować spójność sterownika. Nie przełączać globalnych statusów w środku sesji.
 
 Skasować wymaganą przestrzeń przed startem. Kasowanie bloków w ścieżce rejestracji może trwać sekundy i przekroczyć pojemność FIFO/RAM. Rejestrator musi odmówić rozpoczęcia sesji, jeśli nie ma wystarczającej wolnej skasowanej przestrzeni. RAM obejmuje oddzielne bufory DMA/FIFO i kolejkę stron Flash, a budżet musi uwzględniać BLE oraz najgorsze czasy zapisu z aktualnej dokumentacji128 MiB.
@@ -26,7 +28,11 @@ Pobieranie: UUID sesji+offset+długość+CRC bloku, potwierdzenie trwałego zapi
 
 ## Zasilanie i temperatura
 
-P1.14/CHG_INHIBIT: HIGH włącza Q2 i blokuje ładowanie; LOW albo HiZ umożliwia decyzję sprzętowemu oknu. GPIO steruje osobnym tranzystorem i nie może nadpisać alarmu U7/U8. Ochrona temperatury ma działać bez MCU; supervisor blokuje zezwolenie przed ustaleniem odniesień. Przy USB suspend firmware blokuje ładowanie i ogranicza obciążenie; zgodność wymaga także rozwiązania poboru samej ładowarki i systemu. Zatrzymanie zapisu przy niskim napięciu, watchdog i POF nie zastępują odpornego dziennika.
+P1.14/CHG_INHIBIT po audycie A1: **HIGH, HiZ lub reset MCU blokuje ładowanie** przez Q2 i R24=100k do +3V0. **LOW zwalnia blokadę MCU i pozostawia decyzję niezależnemu oknu U7/U8.** Nie wolno nadpisać alarmu sprzętowego. Zmieniono domyślny stan: ładowanie wymaga działającego firmware. Układ nie powinien samoczynnie wznowić ładowania po resecie procesora podczas USB suspend. Rozruch i zapady +3V0 nadal wymagają prób fizycznych.
+
+Inicjalizacja: pozostawić HIGH/HiZ, wykonać właściwą sekwencję VBUS/USBPWRRDY/USBD, określić przyznany budżet i dopiero wtedy zezwalać LOW. USB suspend lub nieznany stan źródła wymaga HIGH/HiZ i redukcji poboru całego systemu; CE nie odłącza SYS ani regulatora VBUS modułu. Przy nieznanym źródle profil USB host nie zezwala na ładowanie. **Timeout/brak enumeracji nie jest detekcją ładowarki DCP/BC1.2.** Profil samego adaptera wymaga jawnie zweryfikowanego źródła i budżetu albo późniejszego sprzętu detekcji. Nie używać PWM /CE ani okresowego resetowania timera do zwiększania czasu ładowania. Timer360min jest typowy; przełączenia /CE mogą restartować licznik i nie gwarantują6h łącznej ekspozycji.
+
+Zatrzymanie zapisu przy niskim napięciu, watchdog i POF nie zastępują odpornego dziennika. Programowanie/erase Flash ma pozostawać w zakresie VCC≥2.7V; kondensatory i niski próg resetu MCU nie gwarantują dokończenia zapisu.
 
 ### USB: budżet całego portu
 

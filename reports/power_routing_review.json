@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "source": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
   "source_unchanged_during_read": true,
   "kicad_version": "10.0.7",
   "native_unconnected_count": 0,
-  "method": "Read-only native connectivity adjacency on F.Cu with no zone shortcuts; records explicit track coordinates. F_connectivity_track_weight is a topology search weight, NOT physical centreline length: native copper can touch at pad interiors or overlapping track edges. Pad/via centre distances are exact geometry. Rail continuity on In2 separately checked by saved filled polygon and a local 0.05mm grid search. No PDN or thermal simulation.",
+  "method": "Read-only native pcbnew10.0.7. Fresh F.Cu graph from actual copper-shape intersections, no zone shortcuts; path weights sum complete entered track lengths and are topology weights, not pad-centre electrical lengths. Fresh GND/+3V via annulus samples in stored In1/In2 fills. Local In2 path search uses8-neighbour0.05mm grid and bounding-box margin1mm. No PDN, transient, thermal or SPICE simulation.",
   "zones": [
     {
       "net": "GND",
@@ -13,7 +13,7 @@
         "In1.Cu"
       ],
       "filled": true,
-      "filled_area_mm2": 1355.17024
+      "filled_area_mm2": 1352.639245578828
     },
     {
       "net": "+3V0",
@@ -21,7 +21,7 @@
         "In2.Cu"
       ],
       "filled": true,
-      "filled_area_mm2": 1278.117
+      "filled_area_mm2": 1279.450591045742
     }
   ],
   "loops": [
@@ -38,9 +38,9 @@
         65.5,
         90.775
       ],
-      "straight_pad_distance_mm": 1.57896,
+      "straight_pad_distance_mm": 1.5789632674638128,
       "F_only_native_connected": true,
-      "F_connectivity_track_weight_mm": 0.58284,
+      "F_connectivity_track_weight_mm": 0.582842712474619,
       "F_only_path": [
         {
           "uuid": "20a4e3c3-df1d-4e49-85a2-54beea4036ec",
@@ -66,7 +66,7 @@
             91.2
           ],
           "width_mm": 0.15,
-          "segment_length_mm": 0.28284,
+          "segment_length_mm": 0.28284271247461906,
           "layer": "F.Cu"
         },
         {
@@ -109,8 +109,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.825,
         "F_native_track_weight_mm": 0.8,
@@ -153,8 +153,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -172,8 +172,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.92229,
-        "F_native_track_weight_mm": 0.99497,
+        "pad_to_via_centre_mm": 0.9222933372848359,
+        "F_native_track_weight_mm": 0.9949747468305833,
         "path": [
           {
             "uuid": "facbc291-103d-4610-aa25-467442a8c9db",
@@ -199,7 +199,7 @@
               91.55
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.49497,
+            "segment_length_mm": 0.4949747468305833,
             "layer": "F.Cu"
           },
           {
@@ -247,8 +247,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 1.95576,
-        "F_native_track_weight_mm": 1.57782,
+        "pad_to_via_centre_mm": 1.9557607215607946,
+        "F_native_track_weight_mm": 1.5778174593052023,
         "path": [
           {
             "uuid": "20a4e3c3-df1d-4e49-85a2-54beea4036ec",
@@ -274,7 +274,7 @@
               91.2
             ],
             "width_mm": 0.15,
-            "segment_length_mm": 0.28284,
+            "segment_length_mm": 0.28284271247461906,
             "layer": "F.Cu"
           },
           {
@@ -306,7 +306,7 @@
               91.55
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.49497,
+            "segment_length_mm": 0.4949747468305833,
             "layer": "F.Cu"
           },
           {
@@ -354,9 +354,9 @@
         61.6,
         90.175
       ],
-      "straight_pad_distance_mm": 1.27402,
+      "straight_pad_distance_mm": 1.2740192306240907,
       "F_only_native_connected": true,
-      "F_connectivity_track_weight_mm": 1.575,
+      "F_connectivity_track_weight_mm": 1.5750000000000002,
       "F_only_path": [
         {
           "uuid": "1bda738f-7573-4e90-b7c6-b202e764b0f8",
@@ -425,10 +425,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -469,8 +469,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -488,7 +488,7 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.87928,
+        "pad_to_via_centre_mm": 0.8792752697534487,
         "F_native_track_weight_mm": 0.55,
         "path": [
           {
@@ -547,7 +547,7 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 1.56205,
+        "pad_to_via_centre_mm": 1.562049935181331,
         "F_native_track_weight_mm": 2.125,
         "path": [
           {
@@ -638,7 +638,7 @@
         60.125,
         92.1
       ],
-      "straight_pad_distance_mm": 1.84949,
+      "straight_pad_distance_mm": 1.8494931738181681,
       "F_only_native_connected": true,
       "F_connectivity_track_weight_mm": 1.525,
       "F_only_path": [
@@ -693,8 +693,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.775,
         "F_native_track_weight_mm": 1.1,
@@ -737,8 +737,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -756,8 +756,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 2.15015,
-        "F_native_track_weight_mm": 1.62009,
+        "pad_to_via_centre_mm": 2.150145343924452,
+        "F_native_track_weight_mm": 1.620087712549569,
         "path": [
           {
             "uuid": "d2ee252f-95e6-490c-b6c4-febefc8c4ef4",
@@ -783,7 +783,7 @@
               92.35
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.57009,
+            "segment_length_mm": 0.5700877125495689,
             "layer": "F.Cu"
           },
           {
@@ -831,8 +831,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 3.9702,
-        "F_native_track_weight_mm": 3.14509,
+        "pad_to_via_centre_mm": 3.970201506221063,
+        "F_native_track_weight_mm": 3.145087712549569,
         "path": [
           {
             "uuid": "744e93b9-6f73-406e-9355-addac5c63311",
@@ -885,7 +885,7 @@
               92.35
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.57009,
+            "segment_length_mm": 0.5700877125495689,
             "layer": "F.Cu"
           },
           {
@@ -933,9 +933,9 @@
         69.15,
         80.575
       ],
-      "straight_pad_distance_mm": 1.47505,
+      "straight_pad_distance_mm": 1.4750529651507434,
       "F_only_native_connected": true,
-      "F_connectivity_track_weight_mm": 1.47505,
+      "F_connectivity_track_weight_mm": 1.4750529651507434,
       "F_only_path": [
         {
           "uuid": "2f2af1d2-b1fb-491c-95ba-b8d20fbdd83d",
@@ -961,7 +961,7 @@
             80.575
           ],
           "width_mm": 0.3,
-          "segment_length_mm": 1.47505,
+          "segment_length_mm": 1.4750529651507434,
           "layer": "F.Cu"
         },
         {
@@ -988,8 +988,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.725,
         "F_native_track_weight_mm": 0.725,
@@ -1032,8 +1032,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -1051,8 +1051,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 3.42427,
-        "F_native_track_weight_mm": 4.58755,
+        "pad_to_via_centre_mm": 3.4242699951960565,
+        "F_native_track_weight_mm": 4.587552965150744,
         "path": [
           {
             "uuid": "0eb72926-be3f-46dc-ba40-d589bff66fca",
@@ -1078,7 +1078,7 @@
               80.575
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 1.47505,
+            "segment_length_mm": 1.4750529651507434,
             "layer": "F.Cu"
           },
           {
@@ -1142,7 +1142,7 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 2.06522,
+        "pad_to_via_centre_mm": 2.0652254719521546,
         "F_native_track_weight_mm": 3.1125,
         "path": [
           {
@@ -1217,9 +1217,9 @@
         71.45,
         80.575
       ],
-      "straight_pad_distance_mm": 1.47505,
+      "straight_pad_distance_mm": 1.4750529651507434,
       "F_only_native_connected": true,
-      "F_connectivity_track_weight_mm": 1.47505,
+      "F_connectivity_track_weight_mm": 1.4750529651507434,
       "F_only_path": [
         {
           "uuid": "cd5babfa-4c31-4e04-badd-c84f85502281",
@@ -1245,7 +1245,7 @@
             80.575
           ],
           "width_mm": 0.3,
-          "segment_length_mm": 1.47505,
+          "segment_length_mm": 1.4750529651507434,
           "layer": "F.Cu"
         },
         {
@@ -1272,8 +1272,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.725,
         "F_native_track_weight_mm": 0.725,
@@ -1316,8 +1316,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -1333,9 +1333,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -1376,7 +1377,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -1392,10 +1394,11 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 1.71797,
-        "F_native_track_weight_mm": 2.27505,
+        "pad_to_via_centre_mm": 1.7179657301587827,
+        "F_native_track_weight_mm": 2.2750529651507434,
         "path": [
           {
             "uuid": "cd5babfa-4c31-4e04-badd-c84f85502281",
@@ -1421,7 +1424,7 @@
               80.575
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 1.47505,
+            "segment_length_mm": 1.4750529651507434,
             "layer": "F.Cu"
           },
           {
@@ -1451,18 +1454,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
         "via_centre_separation_mm": 0.0,
         "local_native_filled_polygon_grid_path_mm": 0.0,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -1478,7 +1482,7 @@
         65.52,
         68.0
       ],
-      "straight_pad_distance_mm": 1.85173,
+      "straight_pad_distance_mm": 1.851728921845744,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -1494,10 +1498,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.65031,
+        "pad_to_via_centre_mm": 0.6503076195155644,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -1538,8 +1542,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -1555,7 +1559,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -1598,7 +1603,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -1614,7 +1620,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.65,
         "F_native_track_weight_mm": 0.6,
@@ -1657,18 +1664,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.38924,
-        "local_native_filled_polygon_grid_path_mm": 1.48995,
+        "via_centre_separation_mm": 1.3892443989449805,
+        "local_native_filled_polygon_grid_path_mm": 1.4899494936611668,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -1684,7 +1692,7 @@
         67.825,
         68.0
       ],
-      "straight_pad_distance_mm": 2.89364,
+      "straight_pad_distance_mm": 2.893635256904367,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -1700,10 +1708,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -1744,8 +1752,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -1761,9 +1769,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -1804,7 +1813,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -1820,7 +1830,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.65,
         "F_native_track_weight_mm": 0.6,
@@ -1863,18 +1874,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 2.27706,
-        "local_native_filled_polygon_grid_path_mm": 2.39497,
+        "via_centre_separation_mm": 2.27705950734714,
+        "local_native_filled_polygon_grid_path_mm": 2.3949747468305826,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -1890,7 +1902,7 @@
         65.52,
         68.0
       ],
-      "straight_pad_distance_mm": 2.04863,
+      "straight_pad_distance_mm": 2.0486336910243375,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -1906,10 +1918,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.65031,
+        "pad_to_via_centre_mm": 0.6503076195155644,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -1950,8 +1962,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -1967,7 +1979,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -2010,7 +2023,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -2026,7 +2040,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.65,
         "F_native_track_weight_mm": 0.6,
@@ -2069,18 +2084,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.92094,
-        "local_native_filled_polygon_grid_path_mm": 1.99706,
+        "via_centre_separation_mm": 1.9209372712298547,
+        "local_native_filled_polygon_grid_path_mm": 1.997056274847715,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -2096,7 +2112,7 @@
         67.825,
         68.0
       ],
-      "straight_pad_distance_mm": 2.33519,
+      "straight_pad_distance_mm": 2.3351927115336757,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -2112,10 +2128,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -2156,8 +2172,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -2173,9 +2189,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -2216,7 +2233,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -2232,7 +2250,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.65,
         "F_native_track_weight_mm": 0.6,
@@ -2275,18 +2294,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.49164,
-        "local_native_filled_polygon_grid_path_mm": 1.59497,
+        "via_centre_separation_mm": 1.4916433890176295,
+        "local_native_filled_polygon_grid_path_mm": 1.5949747468305835,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -2302,9 +2322,9 @@
         70.9,
         67.575
       ],
-      "straight_pad_distance_mm": 3.2312,
+      "straight_pad_distance_mm": 3.231195599155211,
       "F_only_native_connected": true,
-      "F_connectivity_track_weight_mm": 4.69203,
+      "F_connectivity_track_weight_mm": 4.692031021678297,
       "F_only_path": [
         {
           "uuid": "af6aedd5-6030-4932-81b7-1739dfe7805a",
@@ -2346,7 +2366,7 @@
             66.65
           ],
           "width_mm": 0.3,
-          "segment_length_mm": 0.42426,
+          "segment_length_mm": 0.42426406871192857,
           "layer": "F.Cu"
         },
         {
@@ -2394,7 +2414,7 @@
             68.45
           ],
           "width_mm": 0.3,
-          "segment_length_mm": 0.35355,
+          "segment_length_mm": 0.3535533905932738,
           "layer": "F.Cu"
         },
         {
@@ -2426,7 +2446,7 @@
             68.55
           ],
           "width_mm": 0.3,
-          "segment_length_mm": 0.42426,
+          "segment_length_mm": 0.42426406871192857,
           "layer": "F.Cu"
         },
         {
@@ -2442,7 +2462,7 @@
             68.3
           ],
           "width_mm": 0.3,
-          "segment_length_mm": 0.98995,
+          "segment_length_mm": 0.9899494936611666,
           "layer": "F.Cu"
         },
         {
@@ -2469,10 +2489,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -2513,8 +2533,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -2532,8 +2552,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 4.48839,
-        "F_native_track_weight_mm": 4.41421,
+        "pad_to_via_centre_mm": 4.488387795188825,
+        "F_native_track_weight_mm": 4.414213562373096,
         "path": [
           {
             "uuid": "397b44fe-8b96-42c1-b673-730d58bb2409",
@@ -2559,7 +2579,7 @@
               68.3
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.98995,
+            "segment_length_mm": 0.9899494936611666,
             "layer": "F.Cu"
           },
           {
@@ -2575,7 +2595,7 @@
               68.55
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.42426,
+            "segment_length_mm": 0.42426406871192857,
             "layer": "F.Cu"
           },
           {
@@ -2639,8 +2659,8 @@
           "In1_connected": false,
           "In2_connected": false
         },
-        "pad_to_via_centre_mm": 5.99604,
-        "F_native_track_weight_mm": 6.27782,
+        "pad_to_via_centre_mm": 5.996040360104325,
+        "F_native_track_weight_mm": 6.2778174593052025,
         "path": [
           {
             "uuid": "af6aedd5-6030-4932-81b7-1739dfe7805a",
@@ -2682,7 +2702,7 @@
               66.65
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.42426,
+            "segment_length_mm": 0.42426406871192857,
             "layer": "F.Cu"
           },
           {
@@ -2730,7 +2750,7 @@
               68.45
             ],
             "width_mm": 0.3,
-            "segment_length_mm": 0.35355,
+            "segment_length_mm": 0.3535533905932738,
             "layer": "F.Cu"
           },
           {
@@ -2810,7 +2830,7 @@
         58.72,
         77.7
       ],
-      "straight_pad_distance_mm": 1.8142,
+      "straight_pad_distance_mm": 1.8141957584560713,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -2826,8 +2846,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -2870,8 +2890,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -2887,7 +2907,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -2930,7 +2951,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -2946,9 +2968,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.55014,
+        "pad_to_via_centre_mm": 0.5501420271166348,
         "F_native_track_weight_mm": 0.5,
         "path": [
           {
@@ -2989,18 +3012,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.15434,
-        "local_native_filled_polygon_grid_path_mm": 1.19142,
+        "via_centre_separation_mm": 1.1543396380615196,
+        "local_native_filled_polygon_grid_path_mm": 1.1914213562373097,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -3016,7 +3040,7 @@
         55.62,
         79.2
       ],
-      "straight_pad_distance_mm": 1.81592,
+      "straight_pad_distance_mm": 1.8159174678382277,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -3032,8 +3056,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -3076,8 +3100,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -3093,7 +3117,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -3136,7 +3161,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -3152,10 +3178,11 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.6306,
-        "F_native_track_weight_mm": 0.42426,
+        "pad_to_via_centre_mm": 0.6305999127814719,
+        "F_native_track_weight_mm": 0.42426406871192857,
         "path": [
           {
             "uuid": "9ad5998a-8492-4393-9897-079a65bb63eb",
@@ -3181,7 +3208,7 @@
               77.9
             ],
             "width_mm": 0.15,
-            "segment_length_mm": 0.42426,
+            "segment_length_mm": 0.42426406871192857,
             "layer": "F.Cu"
           },
           {
@@ -3195,18 +3222,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.30384,
-        "local_native_filled_polygon_grid_path_mm": 1.34142,
+        "via_centre_separation_mm": 1.3038404810405297,
+        "local_native_filled_polygon_grid_path_mm": 1.3414213562373098,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -3222,7 +3250,7 @@
         57.825,
         80.2
       ],
-      "straight_pad_distance_mm": 3.0735,
+      "straight_pad_distance_mm": 3.0735006507238616,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -3238,10 +3266,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -3282,8 +3310,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -3299,7 +3327,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.825,
         "F_native_track_weight_mm": 0.8,
@@ -3342,7 +3371,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -3358,9 +3388,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.55014,
+        "pad_to_via_centre_mm": 0.5501420271166348,
         "F_native_track_weight_mm": 0.5,
         "path": [
           {
@@ -3401,18 +3432,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 2.40052,
-        "local_native_filled_polygon_grid_path_mm": 2.5864,
+        "via_centre_separation_mm": 2.4005207768315606,
+        "local_native_filled_polygon_grid_path_mm": 2.5863961030678917,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -3428,7 +3460,7 @@
         73.52,
         73.0
       ],
-      "straight_pad_distance_mm": 1.77255,
+      "straight_pad_distance_mm": 1.7725476016175137,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -3444,8 +3476,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -3488,8 +3520,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -3505,7 +3537,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -3548,7 +3581,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -3564,7 +3598,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.595,
         "F_native_track_weight_mm": 0.55,
@@ -3607,18 +3642,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.25399,
+        "via_centre_separation_mm": 1.253993620398445,
         "local_native_filled_polygon_grid_path_mm": null,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "The In2-only source-via detour remains in the polygons, but accepted B.Cu bridge shunts it locally. The original plane-only path must not be described as local."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       },
       "pre_fix_plane_only_route_mm": 28.02193,
       "pre_fix_status": "FIXED_WITH_LOCAL_B_CU_BRIDGE",
@@ -3653,7 +3689,7 @@
         74.3,
         76.375
       ],
-      "straight_pad_distance_mm": 4.15462,
+      "straight_pad_distance_mm": 4.154623930032656,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -3669,10 +3705,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -3713,8 +3749,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -3730,9 +3766,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.85037,
+        "pad_to_via_centre_mm": 0.8503675675847475,
         "F_native_track_weight_mm": 0.8,
         "path": [
           {
@@ -3773,7 +3810,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -3789,7 +3827,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.595,
         "F_native_track_weight_mm": 0.55,
@@ -3832,18 +3871,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 4.20862,
+        "via_centre_separation_mm": 4.208622102303793,
         "local_native_filled_polygon_grid_path_mm": null,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "The In2-only source-via detour remains in the polygons, but accepted B.Cu bridge shunts it locally. The original plane-only path must not be described as local."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       },
       "pre_fix_plane_only_route_mm": 31.14411,
       "pre_fix_status": "FIXED_WITH_LOCAL_B_CU_BRIDGE",
@@ -3878,7 +3918,7 @@
         58.48,
         81.9
       ],
-      "straight_pad_distance_mm": 1.40506,
+      "straight_pad_distance_mm": 1.4050556038819246,
       "F_only_native_connected": false,
       "F_connectivity_track_weight_mm": null,
       "F_only_path": [],
@@ -3894,8 +3934,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -3938,8 +3978,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -3955,7 +3995,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
         "pad_to_via_centre_mm": 0.62,
         "F_native_track_weight_mm": 0.55,
@@ -3998,7 +4039,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -4014,9 +4056,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.62513,
+        "pad_to_via_centre_mm": 0.6251249875024993,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -4057,18 +4100,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
-        "via_centre_separation_mm": 1.30384,
-        "local_native_filled_polygon_grid_path_mm": 1.38995,
+        "via_centre_separation_mm": 1.3038404810405295,
+        "local_native_filled_polygon_grid_path_mm": 1.3899494936611667,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     },
     {
@@ -4100,10 +4144,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.62201,
+        "pad_to_via_centre_mm": 0.6220128616033593,
         "F_native_track_weight_mm": 0.5,
         "path": [
           {
@@ -4144,8 +4188,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       },
@@ -4161,9 +4205,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.65031,
+        "pad_to_via_centre_mm": 0.6503076195155644,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -4204,7 +4249,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
@@ -4220,9 +4266,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": false,
-          "In2_connected": true
+          "In2_connected": true,
+          "In2_annulus_samples_in_fill": 8
         },
-        "pad_to_via_centre_mm": 0.65012,
+        "pad_to_via_centre_mm": 0.6501201811972922,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -4263,18 +4310,19 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": false,
-            "In2_connected": true
+            "In2_connected": true,
+            "In2_annulus_samples_in_fill": 8
           }
         ]
       },
       "plane_join": {
         "layer": "In2.Cu",
-        "same_single_filled_island": true,
         "via_centre_separation_mm": 1.45,
-        "local_native_filled_polygon_grid_path_mm": 1.45,
+        "local_native_filled_polygon_grid_path_mm": 1.4500000000000006,
         "grid_mm": 0.05,
         "search_bbox_extra_mm": 1.0,
-        "note": "Shortest 8-neighbour point path inside saved filled copper within local bounding box; confirms local continuity, not PDN impedance or trace-width/thermal qualification."
+        "both_via_annuli_contact_saved_fill": true,
+        "note": "Local 8-neighbour point path in stored filled copper; no PDN impedance, noise or finite current-width qualification. None means no path in this local search box."
       }
     }
   ],
@@ -4298,11 +4346,11 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 1.12361,
-        "F_native_track_weight_mm": 1.01569,
+        "pad_to_via_centre_mm": 1.1236102527122116,
+        "F_native_track_weight_mm": 1.0156854249492382,
         "path": [
           {
             "uuid": "ae2bb1ee-dc20-4fa9-be12-8776ff18f731",
@@ -4344,7 +4392,7 @@
               93.4
             ],
             "width_mm": 0.2,
-            "segment_length_mm": 0.56569,
+            "segment_length_mm": 0.5656854249492381,
             "layer": "F.Cu"
           },
           {
@@ -4358,8 +4406,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4383,8 +4431,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 1.2,
         "F_native_track_weight_mm": 1.2,
@@ -4427,8 +4475,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4452,8 +4500,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 1.1375,
         "F_native_track_weight_mm": 1.1375,
@@ -4496,8 +4544,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4521,8 +4569,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.55,
         "F_native_track_weight_mm": 0.5,
@@ -4565,8 +4613,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4590,8 +4638,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.55,
         "F_native_track_weight_mm": 0.5,
@@ -4634,8 +4682,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4659,8 +4707,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.55,
         "F_native_track_weight_mm": 0.5,
@@ -4703,8 +4751,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4728,8 +4776,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.55,
         "F_native_track_weight_mm": 0.5,
@@ -4772,8 +4820,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4797,10 +4845,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.65192,
+        "pad_to_via_centre_mm": 0.6519202405202649,
         "F_native_track_weight_mm": 0.55,
         "path": [
           {
@@ -4841,8 +4889,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4866,8 +4914,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.6375,
         "F_native_track_weight_mm": 0.6,
@@ -4910,8 +4958,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -4935,8 +4983,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.6375,
         "F_native_track_weight_mm": 0.6,
@@ -4979,8 +5027,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5004,8 +5052,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.6375,
         "F_native_track_weight_mm": 0.6,
@@ -5048,8 +5096,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5073,8 +5121,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.6375,
         "F_native_track_weight_mm": 0.6,
@@ -5117,8 +5165,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5142,8 +5190,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 0.595,
         "F_native_track_weight_mm": 0.55,
@@ -5186,8 +5234,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5211,8 +5259,8 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
         "pad_to_via_centre_mm": 2.05,
         "F_native_track_weight_mm": 2.0,
@@ -5255,8 +5303,77 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
+          }
+        ]
+      }
+    },
+    {
+      "ic": "U6",
+      "pin": "2",
+      "xy_mm": [
+        70.4625,
+        93.3
+      ],
+      "nearest_In1_via": {
+        "via": {
+          "uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            71.4,
+            93.3
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
+        },
+        "pad_to_via_centre_mm": 0.9375,
+        "F_native_track_weight_mm": 0.9,
+        "path": [
+          {
+            "uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
+            "class": "PAD",
+            "net": "GND",
+            "ref": "U6",
+            "pin": "2",
+            "xy_mm": [
+              70.4625,
+              93.3
+            ]
+          },
+          {
+            "uuid": "93239ae9-a2c6-4506-b352-41baf677ab47",
+            "class": "PCB_TRACK",
+            "net": "GND",
+            "start_mm": [
+              70.5,
+              93.3
+            ],
+            "end_mm": [
+              71.4,
+              93.3
+            ],
+            "width_mm": 0.15,
+            "segment_length_mm": 0.9,
+            "layer": "F.Cu"
+          },
+          {
+            "uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+            "class": "PCB_VIA",
+            "net": "GND",
+            "xy_mm": [
+              71.4,
+              93.3
+            ],
+            "diameter_mm": 0.5,
+            "drill_mm": 0.25,
+            "In1_connected": true,
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5280,10 +5397,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.62513,
+        "pad_to_via_centre_mm": 0.6251249875024993,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -5324,8 +5441,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5349,10 +5466,10 @@
           "diameter_mm": 0.5,
           "drill_mm": 0.25,
           "In1_connected": true,
-          "In2_connected": false,
-          "In1_annulus_samples_in_fill": 8
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
         },
-        "pad_to_via_centre_mm": 0.65012,
+        "pad_to_via_centre_mm": 0.6501201811972922,
         "F_native_track_weight_mm": 0.6,
         "path": [
           {
@@ -5393,8 +5510,8 @@
             "diameter_mm": 0.5,
             "drill_mm": 0.25,
             "In1_connected": true,
-            "In2_connected": false,
-            "In1_annulus_samples_in_fill": 8
+            "In1_annulus_samples_in_fill": 8,
+            "In2_connected": false
           }
         ]
       }
@@ -5450,8 +5567,8 @@
         "diameter_mm": 0.5,
         "drill_mm": 0.25,
         "In1_connected": true,
-        "In2_connected": false,
-        "In1_annulus_samples_in_fill": 8
+        "In1_annulus_samples_in_fill": 8,
+        "In2_connected": false
       },
       {
         "uuid": "f997792a-30b4-4f9f-9fef-8eeb88e93ee3",
@@ -5464,28 +5581,51 @@
         "diameter_mm": 0.5,
         "drill_mm": 0.25,
         "In1_connected": true,
-        "In2_connected": false,
-        "In1_annulus_samples_in_fill": 8
+        "In1_annulus_samples_in_fill": 8,
+        "In2_connected": false
       }
     ],
     "F_Cu_ground_pour_count": 0,
-    "assessment": "Two external tented GND vias and 0.30mm F.Cu links contact filled In1 plane. No local F.Cu GND pour exists. Electrical ground continuity confirmed; narrow thermal paths and enclosure temperature require physical qualification, no datasheet JEDEC thermal resistance is assumed."
+    "assessment": "Two external tented GND vias and 0.30mm F.Cu links contact filled In1 plane. No local F.Cu GND pour exists. Electrical ground continuity confirmed; narrow thermal paths and enclosure temperature require physical qualification, no datasheet JEDEC thermal resistance is assumed.",
+    "thermal_vias_outside_EP_paste_and_tented_front_back": true,
+    "tenting_evidence": "Native .kicad_pcb via UUID50716e6b… and f997792a… explicitly contain front yes/back yes; global hole-to-paste audit zero overlaps."
   },
   "via_smd_paste_audit": {
     "report": "reports/via_pad_audit.json",
-    "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+    "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
     "C3_fixed_via_xy_mm": [
       57.8,
       92.1
     ],
-    "C3_hole_to_copper_paste_mm": 0.2,
-    "global_min_hole_to_copper_paste_mm": 0.09,
-    "global_min_location": "U5.7 / QSPI_IO3 via (71.85,73.9)",
+    "C3_hole_to_copper_paste_mm": 0.200001,
+    "global_min_hole_to_copper_paste_mm": 0.150001,
+    "global_min_location": {
+      "ref": "U6",
+      "pin": "2",
+      "net": "GND",
+      "pad_uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
+      "side": "front",
+      "pad_center_mm": [
+        70.4625,
+        93.3
+      ],
+      "via_uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+      "via_net": "GND",
+      "via_xy_mm": [
+        71.4,
+        93.3
+      ],
+      "hole_diameter_mm": 0.25,
+      "hole_to_shape_edge_mm": 0.150001,
+      "same_net": true
+    },
     "copper_overlaps": 0,
     "paste_overlaps": 0,
     "nominal_geometry_only": true,
-    "audit_method": "Native Collide with actual drill radius, same-net included, native paste margins, no SHAPE.Distance",
-    "auditor": "scripts/audit_vias.py"
+    "audit_method": "All through-via circular drill holes versus every SMD copper and paste shape on both sides, including same-net. Native rounded/custom pad shapes; paste uses ClonePad resized by loaded GetSolderPasteMargin(layer), including ratio. Includes standalone EP paste apertures. Uses native Collide(point, drillradius) for overlap and binary search of Collide(point, drillradius+gap) to 1nm for nominal edge clearance; SHAPE.Distance is deliberately not used. All loaded paste margins are zero or negative; holes are also checked against the unshrunk native copper/aperture envelope, so no conclusion depends on assuming a reduced corner radius. Nominal CAD geometry only; fabrication/registration tolerances are separate.",
+    "auditor": "scripts/audit_vias.py",
+    "historical_min_before_A1_repairs_mm": 0.090001,
+    "historical_0p09_location_repaired": true
   },
   "findings": [
     {
@@ -5496,7 +5636,7 @@
     {
       "id": "PWR-02",
       "status": "FIXED_IN_CANONICAL_AND_NATIVE_DRC_CHECKED",
-      "detail": "Original U5 via\u2192C15/C16 In2-only routes were28.02193/31.14411mm via y59.55 despite sharing one plane island. Accepted one0.30mm B.Cu bridge between existing power vias closes a local U5\u2013C15 bypass in2.469mm XY plus two existing vias. C15\u2013C16 has a3.57782mm local In2 route. U3/U4/U7/U8 local saved-copper routes separately verified."
+      "detail": "Original U5 via→C15/C16 In2-only routes were28.02193/31.14411mm via y59.55 despite sharing one plane island. Accepted one0.30mm B.Cu bridge between existing power vias closes a local U5–C15 bypass in2.469mm XY plus two existing vias. C15–C16 has a3.57782mm local In2 route. U3/U4/U7/U8 local saved-copper routes separately verified."
     },
     {
       "id": "PWR-03",
@@ -5505,8 +5645,8 @@
     },
     {
       "id": "PWR-04",
-      "status": "JLC_DFM_ACCEPTANCE_OPEN",
-      "detail": "Minimum nominal drill-edge gap to SMD copper and paste is0.090mm at U5.7. Hole lies outside both; fabrication/mask/stencil registration tolerances require JLC DFM acceptance."
+      "status": "NOMINAL_MARGIN_INCREASED_JLC_DFM_OPEN",
+      "detail": "Historical0.090mm QSPI_IO3 drill-edge gap was increased by root. Final whole-board minimum is0.150001mm at U6.2/C4.2/C5.2; zero Cu/paste overlaps including same net. Nominal geometry does not replace JLC acceptance of drilling, mask and stencil registration tolerances."
     }
   ],
   "flash_decoupling_repair": {
@@ -5517,7 +5657,7 @@
     "original_detour_min_y_mm": 59.55,
     "B_bridge_length_mm": 1.25399,
     "U5_pin_to_C15_signal_local_centre_path_mm": 2.46899,
-    "C15via_to_C16via_local_In2_grid_path_mm": 3.57782,
+    "C15via_to_C16via_local_In2_grid_path_mm": 3.5778174593051983,
     "grid_mm": 0.05,
     "via_or_placement_changes": false,
     "native_drc": "0 violations,0 opens,0 schematic parity findings",
@@ -5527,7 +5667,25 @@
     "XY_lengths_exclude_vertical_via_barrels": true,
     "bridge_track_uuid": "699315a4-e5c7-49d0-b342-712824bf66c2",
     "C16_effective_XY_path_via_local_C15_junction_mm": 6.27718,
-    "other_nets_changed": false
+    "other_nets_changed": false,
+    "latest_native_revalidation_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "latest_native_revalidation_date": "2026-10-29",
+    "bridge_current_native": {
+      "uuid": "699315a4-e5c7-49d0-b342-712824bf66c2",
+      "class": "PCB_TRACK",
+      "net": "+3V0",
+      "start_mm": [
+        71.75,
+        72.5
+      ],
+      "end_mm": [
+        72.9,
+        73.0
+      ],
+      "width_mm": 0.3,
+      "segment_length_mm": 1.2539936203984452,
+      "layer": "B.Cu"
+    }
   },
   "revision": "A1_REVIEW_NOT_FOR_FABRICATION",
   "explicit_primary_connections": [
@@ -5653,8 +5811,102 @@
     }
   ],
   "thermal_and_DFM_release_gates": [
-    "Qualify U1/LDO/battery temperatures in the real enclosure; no F.Cu ground heat-spreader pour exists.",
-    "Obtain JLC DFM acceptance for minimum nominal0.090mm drill-edge gap to U5.7 copper/paste, including manufacturing and mask/stencil registration tolerance.",
-    "Electrical connectivity and local copper paths do not qualify PDN impedance, noise, effective capacitance or lifetime."
-  ]
+    "Qualify U1/LDO/battery temperatures in real enclosure; no F.Cu ground heat-spreader pour exists.",
+    "Obtain JLC DFM acceptance for current minimum nominal0.150001mm drill-edge gap to SMD copper/paste including registration tolerances; historical0.09mm location repaired.",
+    "Electrical/local copper continuity does not qualify PDN impedance, supply transients, noise, Ceff or lifetime."
+  ],
+  "historical_measurement_source": {
+    "date": "2026-10-28",
+    "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+    "scope": "Previous record before USB U6 relocation, R24 default-inhibit correction, endpoint and drill-margin repairs. All current loops below re-read from final native geometry."
+  },
+  "fresh_readback_counts": {
+    "IC_cap_loops": 17,
+    "IC_GND_returns": 17,
+    "all_caps_have_local_In1_return": true,
+    "all_IC_GND_returns_found": true,
+    "IC_GND_pin_scope": "All17GND/EP pads of U1/U2/U3/U4/U5/U6/U7/U8 including unused IMU mode pads tied to GND."
+  },
+  "USB_U6_current_ground_return": {
+    "ic": "U6",
+    "pin": "2",
+    "xy_mm": [
+      70.4625,
+      93.3
+    ],
+    "nearest_In1_via": {
+      "via": {
+        "uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+        "class": "PCB_VIA",
+        "net": "GND",
+        "xy_mm": [
+          71.4,
+          93.3
+        ],
+        "diameter_mm": 0.5,
+        "drill_mm": 0.25,
+        "In1_connected": true,
+        "In1_annulus_samples_in_fill": 8,
+        "In2_connected": false
+      },
+      "pad_to_via_centre_mm": 0.9375,
+      "F_native_track_weight_mm": 0.9,
+      "path": [
+        {
+          "uuid": "64c930c5-dd41-4f13-a193-dd8b6d1fcbc8",
+          "class": "PAD",
+          "net": "GND",
+          "ref": "U6",
+          "pin": "2",
+          "xy_mm": [
+            70.4625,
+            93.3
+          ]
+        },
+        {
+          "uuid": "93239ae9-a2c6-4506-b352-41baf677ab47",
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start_mm": [
+            70.5,
+            93.3
+          ],
+          "end_mm": [
+            71.4,
+            93.3
+          ],
+          "width_mm": 0.15,
+          "segment_length_mm": 0.9,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "0000186c-eba4-42e1-b568-6e74e683c917",
+          "class": "PCB_VIA",
+          "net": "GND",
+          "xy_mm": [
+            71.4,
+            93.3
+          ],
+          "diameter_mm": 0.5,
+          "drill_mm": 0.25,
+          "In1_connected": true,
+          "In1_annulus_samples_in_fill": 8,
+          "In2_connected": false
+        }
+      ]
+    }
+  },
+  "USB_U6_relocation_review": {
+    "position_mm": [
+      71.6,
+      93.3
+    ],
+    "ground_pad_to_via_mm": 0.9375,
+    "old_ground_pad_to_via_mm": 1.0125,
+    "ground_F_width_mm": 0.15,
+    "In1_annulus_samples": 8,
+    "C11_and_VBUS_geometry_y_below90_unchanged_against_b548": true,
+    "C11_not_local_U6_bypass": true,
+    "qualification": "Shorter exposed signal routes and no degradation of GND loop documented; notESD/SI qualification."
+  }
 }

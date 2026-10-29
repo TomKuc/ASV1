@@ -71,7 +71,7 @@ def main():
                 'front_strip_samples':35,'sample_copper_hits':hits})
             checked.add(layer)
     assert keepouts and checked=={pcbnew.In1_Cu,pcbnew.In2_Cu}
-    result={'date':'2026-10-28','board_sha256_at_read':digest,
+    result={'date':'2026-10-29','board_sha256_at_read':digest,
         'native_kicad_version':pcbnew.GetBuildVersion(),
         'method':'Native SHAPE_POLY_SET BooleanIntersection of stored fill including holes; independent Contains samples.',
         'status':'PASS_FOR_CURRENT_STORED_FILL_NOT_RF_QUALIFICATION_OR_FABRICATION_RELEASE',

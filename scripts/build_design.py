@@ -165,7 +165,7 @@ resistor('1M 1%','CHG_ALLOW_H','GND','temperature',275,165)
 cap('100n 10V X7R','+3V0','GND','temperature',275,210,note='Comparator local bypass')
 add('U8','TLV803EA26DBZR','TLV803EA26DBZR',{3:'+3V0',1:'GND',2:'CHG_ALLOW_H'},'temperature',75,210,'TLV803EA26DBZR','C1852119','Package_TO_SOT_SMD:SOT-23',note='2.64V supervisor, activeLOW open-drain, nominal200ms delay; check exact suffix/pinout')
 add('Q2','AO3400A','AO3400A',{1:'CHG_INHIBIT',3:'CHG_ALLOW_H',2:'GND'},'temperature',365,65,'AO3400A','C20917','Package_TO_SOT_SMD:SOT-23',note='MCU HIGH inhibits; cannot override comparator/supervisorLOW')
-resistor('100k 1%','CHG_INHIBIT','GND','temperature',165,250,note='Q2 defaultsOFF with GPIOHiZ')
+resistor('100k 1%','CHG_INHIBIT','+3V0','temperature',165,250,note='100k pull-up: Q2 inhibits charging during MCU reset/HiZ; LOW releases hardware window')
 cap('100n 10V X7R','+3V0','GND','temperature',165,210,note='Supervisor local bypass')
 resistor('1k 1%','SW_RETURN','GND','io',165,250,note='Limits current from C17 through closed switch; LOW still~30mV')
 
@@ -226,7 +226,7 @@ NOTES={
  'mcu': [('MCU / RADIO / CLOCK - REVIEW DRAFT',25,17),('Normal voltage: VDD=VDDH=3V0. DCCH reference wiring is a release blocker.',25,25),('QSPI/SPI on fast P0 GPIO. See pinmap.csv. No antenna geometry has been guessed.',25,33),('LFXO loads and USB bypass capacitors are provisional pending reference circuit review.',185,235)],
  'sensors': [('IMU / NOR FLASH - REVIEW DRAFT',25,17),('SPI8MHz; INT1 FIFO watermark; INT2 can serve timestamp/ODR-trigger experiments.',25,25),('U5 upgraded to128MiB, same8x6mm body. Address32bit and dual-die status handling.',25,33)],
  'io': [('USB2 / USER INTERFACE / SWD - REVIEW DRAFT',25,17),('Two independent Rd5.1k. USB optional data path is physically connected.',25,25),('USB contact-to-footprint mapping, CC/VBUS protection and inrush analysis remain open.',25,33),('SWD pogo pin numbering is project-specific; VTref is not a power input.',195,260)],
- 'temperature': [('INDEPENDENT BATTERY NTC WINDOW - REVIEW DRAFT',25,17),('NTC103AT-2 /10k B3435 must be on CELL. No10k bypass resistor is permitted.',25,25),('Firmware P1.14 HIGH=inhibit viaQ2; LOW/HiZ permits hardware control.',25,33),('U8 holdsALLOWlow during reference startup. See tolerance calculation and tests.',25,281),('Pack acceptance: R0C>=24k, R45C<=5.20k, monotonic. Physical qualification required.',25,289)]
+ 'temperature': [('INDEPENDENT BATTERY NTC WINDOW - REVIEW DRAFT',25,17),('NTC103AT-2 /10k B3435 must be on CELL. No10k bypass resistor is permitted.',25,25),('P1.14 HIGH/HiZ/reset=inhibit via Q2; LOW releases to hardware window.',25,33),('U8 holdsALLOWlow during reference startup. See tolerance calculation and tests.',25,281),('Pack acceptance: R0C>=24k, R45C<=5.20k, monotonic. Physical qualification required.',25,289)]
 }
 
 def library_symbol(s, name=None):
@@ -255,7 +255,7 @@ def placed(c,root_uuid):
 
 def draw_sheet(name, root_uuid):
     cs=[c for c in COMPONENTS if c['sheet']==name]
-    out=[f'(kicad_sch (version 20231120) (generator "ankle_sensor_review_generator") (uuid {q(uid("file/"+name))}) (paper "A3")',f'(title_block (title {q("Ankle Sensor V1 / "+name)}) (date "2026-10-28") (rev "A1-WIP") (comment 1 "WORK IN PROGRESS - SEE CURRENT ERC/DRC REPORTS"))','(lib_symbols']
+    out=[f'(kicad_sch (version 20231120) (generator "ankle_sensor_review_generator") (uuid {q(uid("file/"+name))}) (paper "A3")',f'(title_block (title {q("Ankle Sensor V1 / "+name)}) (date "2026-10-29") (rev "A1-AUDIT") (comment 1 "AUDIT REVIEW - SEE CURRENT ERC/DRC REPORTS"))','(lib_symbols']
     for sn in sorted(set(c['symbol'] for c in cs)):out.append(library_symbol(SYMS[sn], 'AnkleSensor:'+sn))
     out.append(')')
     for text,x,y in NOTES[name]:out.append(f'(text {q(text)} (at {x} {y} 0) {effects(1.05,"left")} (uuid {q(uid(name+text))}))')
@@ -277,7 +277,7 @@ def main():
     project_path=HW/(PROJECT+'.kicad_pro')
     previous_project=json.loads(project_path.read_text()) if project_path.exists() else {}
     root_uuid=uid('root')
-    root=[f'(kicad_sch (version 20231120) (generator "ankle_sensor_review_generator") (uuid {q(root_uuid)}) (paper "A3") (title_block (title "Ankle Sensor V1 - WORK IN PROGRESS") (date "2026-10-28") (rev "A1-WIP") (comment 1 "NOT FOR FABRICATION - SEE CHECK REPORTS")) (lib_symbols)']
+    root=[f'(kicad_sch (version 20231120) (generator "ankle_sensor_review_generator") (uuid {q(root_uuid)}) (paper "A3") (title_block (title "Ankle Sensor V1 - AUDIT REVIEW") (date "2026-10-29") (rev "A1-AUDIT") (comment 1 "NOT FOR FABRICATION - SEE CHECK REPORTS")) (lib_symbols)']
     titles=['POWER PATH / BATTERY','MCU / RADIO / CLOCK','IMU / MEMORY','USB / CONTROLS / SWD','BATTERY TEMPERATURE']
     for idx, name in enumerate(NOTES):
         x=45+(idx%2)*125; y=55+(idx//2)*65; path=uid('sheet/'+name)
@@ -291,9 +291,9 @@ def main():
     (HW/'sym-lib-table').write_text('(sym_lib_table (version 7) (lib (name "AnkleSensor") (type "KiCad") (uri "${KIPRJMOD}/symbols/AnkleSensor.kicad_sym") (options "") (descr "Project symbols; independent library review required")))\n')
     previous_project.update({'meta':{'filename':PROJECT+'.kicad_pro','version':1}})
     previous_project.setdefault('net_settings',{'meta':{'version':3},'classes':[{'name':'Default','clearance':0.15,'track_width':0.2,'via_diameter':0.6,'via_drill':0.3,'microvia_diameter':0.3,'microvia_drill':0.1,'diff_pair_width':0.2,'diff_pair_gap':0.2,'diff_pair_via_gap':0.25}],'netclass_assignments':{},'netclass_patterns':[]})
-    previous_project.setdefault('text_variables',{})['DESIGN_STATUS']='A1 WORK IN PROGRESS - NOT FOR FABRICATION'
+    previous_project.setdefault('text_variables',{})['DESIGN_STATUS']='A1 AUDIT REVIEW - NOT FOR FABRICATION'
     project_path.write_text(json.dumps(previous_project,indent=2)+'\n')
-    (HW/'design.json').write_text(json.dumps({'status':'A1-WIP_NOT_FOR_FABRICATION','components':COMPONENTS,'open_nets':[],'test_nets':[],'notes':['Independent NTC window and128MiB selected; physical validation pending. See actual KiCad ERC/DRC reports.']},indent=2,ensure_ascii=False)+'\n')
+    (HW/'design.json').write_text(json.dumps({'status':'A1-AUDIT_NOT_FOR_FABRICATION','components':COMPONENTS,'open_nets':[],'test_nets':[],'notes':['Independent NTC window and128MiB selected; physical validation pending. See actual KiCad ERC/DRC reports.']},indent=2,ensure_ascii=False)+'\n')
     with (ROOT/'reports'/'bom_draft.csv').open('w',newline='') as f:
         fields=['ref','value','mpn','jlcpcb','footprint','status','note']
         w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader()

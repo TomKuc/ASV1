@@ -1,68 +1,93 @@
 # Przegląd geometrii QSPI, SPI, LFXO i odniesienia GND
 
-Stan odczytu: **2026-10-28T14:41:32.784683+00:00**, KiCad 10.0.7. Plik: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA256:
+Stan odczytu: **2026-10-29T13:06:49.406547+00:00**, KiCad 10.0.7. Plik: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA256:
 
-`b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678`
+`38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`
 
-Raport opisuje geometrię prototypu. **QSPI 32 MHz, SPI IMU 8 MHz oraz LFXO wymagają fizycznej kwalifikacji.** Z samej długości ścieżek i wyniku DRC nie wyznaczono maksymalnej działającej częstotliwości. Przegląd wykonano bez zmiany PCB. Szczegółowe współrzędne, dane przelotek i próbkowania są w [raporcie JSON](../reports/signal_geometry_review.json).
+Raport przeliczono z rzeczywistych obiektów i zapisanych wypełnień PCB, bez zmiany pliku ani ponownego fill. **QSPI 32 MHz, SPI IMU 8 MHz i LFXO wymagają fizycznej kwalifikacji.** Z geometrii ani DRC nie wyznaczono maksymalnej działającej częstotliwości.
+
+Audytor: [review_signal_geometry.py](../scripts/review_signal_geometry.py), metoda v2, SHA256 `6ede0e3c1082661ab2b4b88c667a4e244738f1bdf7172d5464146f1b7a26d1b3`. Szczegóły i fingerprints: [JSON](../reports/signal_geometry_review.json).
 
 ## Długości i przelotki
 
-Długość oznacza sumę natywnego `GetLength()` wszystkich odcinków danej sieci. Uwzględnia gałęzie do rezystorów podciągających i pól testowych. Obejmuje także fragmenty ścieżek nachodzące na pady; geometria padów nie dodaje osobnej długości. Nie dolicza połączeń w pakietach/modułach ani długości beczek przelotek. Do obliczenia opóźnienia i skew potrzebne są odrębne ścieżki MCU–układ i dane elektryczne pakietów. Wszystkie poniższe sieci mają pady w jednym natywnym komponencie łączności.
+Długości są sumami natywnego `GetLength()` wszystkich ścieżek sieci, z gałęziami i częściami nachodzącymi na pady. Geometria padów nie dodaje osobnej długości. Pominięto połączenia wewnątrz modułów/pakietów i beczki przelotek. To nie pomiar drogi MCU–układ ani obliczenie skew.
 
-| Sieć | Razem [mm] | F.Cu [mm] | B.Cu [mm] | In2.Cu [mm] | Przelotki |
-|---|---:|---:|---:|---:|---:|
-| FLASH_CS_N | 22.34 | 8.50 | 13.84 | — | 3 |
-| IMU_CS_N | 18.12 | 6.87 | 11.25 | — | 2 |
-| IMU_INT1 | 20.41 | 4.99 | 15.42 | — | 4 |
-| IMU_INT2 | 29.24 | 3.32 | 25.92 | — | 2 |
-| IMU_MISO | 21.39 | 1.24 | 20.15 | — | 2 |
-| IMU_MOSI | 17.77 | 1.94 | 15.83 | — | 2 |
-| IMU_SCK | 22.03 | 5.03 | — | 17.00 | 2 |
-| LF_XL1 | 5.08 | 5.08 | — | — | 0 |
-| LF_XL2 | 4.95 | 4.95 | — | — | 0 |
-| QSPI_CLK_FLASH | 14.53 | 14.53 | — | — | 0 |
-| QSPI_IO0 | 18.28 | 18.28 | — | — | 0 |
-| QSPI_IO1 | 16.06 | 12.56 | 3.50 | — | 2 |
-| QSPI_IO2 | 28.03 | 16.62 | 11.41 | — | 2 |
-| QSPI_IO3 | 25.24 | 4.26 | 6.45 | 14.53 | 3 |
-| QSPI_SCK | 3.92 | 2.40 | 1.53 | — | 2 |
+| Sieć | Razem [mm] | F.Cu | B.Cu | In2.Cu | Przelotki | Pady w jednym komponencie |
+|---|---:|---:|---:|---:|---:|---|
+| FLASH_CS_N | 22.335 | 8.500 | 13.835 | — | 3 | tak |
+| IMU_CS_N | 18.195 | 6.871 | 11.324 | — | 2 | tak |
+| IMU_INT1 | 20.415 | 4.994 | 15.421 | — | 4 | tak |
+| IMU_INT2 | 29.239 | 3.315 | 25.923 | — | 2 | tak |
+| IMU_MISO | 21.389 | 1.243 | 20.146 | — | 2 | tak |
+| IMU_MOSI | 17.907 | 1.938 | 15.970 | — | 2 | tak |
+| IMU_SCK | 22.033 | 5.030 | — | 17.003 | 2 | tak |
+| LF_XL1 | 5.075 | 5.075 | — | — | 0 | tak |
+| LF_XL2 | 4.951 | 4.951 | — | — | 0 | tak |
+| QSPI_CLK_FLASH | 14.529 | 14.529 | — | — | 0 | tak |
+| QSPI_IO0 | 18.283 | 18.283 | — | — | 0 | tak |
+| QSPI_IO1 | 16.064 | 12.560 | 3.504 | — | 2 | tak |
+| QSPI_IO2 | 28.034 | 16.622 | 11.412 | — | 2 | tak |
+| QSPI_IO3 | 25.340 | 4.398 | 6.450 | 14.492 | 3 | tak |
+| QSPI_SCK | 3.923 | 2.396 | 1.528 | — | 2 | tak |
 
-## QSPI i SPI — ocena ograniczeń
+## QSPI i SPI
 
-Zegar QSPI ma łącznie **18,45 mm** ścieżek: od wyprowadzenia modułu do R11 **3,92 mm i dwie przelotki**, od R11 do Flash **14,53 mm na F.Cu, bez przelotek**. R11=22 Ω jest elementem do strojenia tłumienia; jego skuteczności nie zmierzono. Odcinek przed R11 oraz wewnętrzna trasa modułu pozostają częścią obwodu sterownika.
+Zegar QSPI ma łącznie **18.453 mm**: moduł→R11 3.923 mm / 2 przelotek; R11→Flash 14.529 mm / 0 przelotek. R11=22 Ω pozostaje wartością do strojenia, bez pomiaru skuteczności. Trasa wewnętrzna modułu nie jest znana z PCB.
 
-IO0 biegnie w całości na F.Cu. IO1/IO2 korzystają również z B.Cu, a IO3 z F.Cu/B.Cu/In2.Cu i trzech przelotek. Gałęzie pull-up są zawarte w tabeli. Taka geometria wymaga oceny odbić, obciążenia i czasów przy odczycie; różnica sum długości sieci nie jest obliczonym skew magistrali. Brak szczegółowego stosu dielektryków, modelu wyjść/wejść i analizy czasowej ogranicza wnioski dotyczące szybkości.
+Zmiany warstw, gałęzie i obciążenia wymagają oceny odbić oraz marginesów czasowych. Różnice sum długości sieci nie są obliczonym skew. Brakuje kwalifikowanego stosu dielektryków i pełnego budżetu czasowego pakiet–PCB–odbiornik. Nordic dopuszcza do 32 MHz i wymaga właściwej konfiguracji pinów/high-drive; nie kwalifikuje to automatycznie tej płytki. [Nordic QSPI](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/qspi.html), [Winbond W25Q01JV Rev E](https://www.mouser.com/datasheet/2/949/Winbond_Electronics_Corporation_09_06_2024_W25Q01J-3501286.pdf).
 
-Nordic podaje konfigurowalny zegar QSPI do **32 MHz** i wymóg właściwej konfiguracji pinów/high-drive. Wartość katalogowa dotyczy interfejsu układu; kwalifikacja tej PCB musi objąć pamięć, połączenia i warunki zasilania/temperatury. Przy 32 MHz okres wynosi 31,25 ns, a użyteczne okno danych zależy od czasów wyjścia Flash, setup/hold odbiornika, opóźnień i zboczy. Nie wykonano pełnego budżetu czasowego. [Nordic — QSPI](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/qspi.html), [Winbond W25Q01JV Rev E](https://www.mouser.com/datasheet/2/949/Winbond_Electronics_Corporation_09_06_2024_W25Q01J-3501286.pdf).
+IMU_SCK: **22.033 mm / 2 przelotek**; MISO 21.389 mm, MOSI 17.907 mm. Planowane 8 MHz wymaga prób CS, duty cycle, setup/hold i integralności odczytów pod obciążeniem. Użyty limit katalogowy IMU: 10 MHz. [ST LSM6DSV32X, tabela SPI](https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf).
 
-IMU_SCK ma **22,03 mm i dwie przelotki**, głównie na In2.Cu. MISO ma **21,39 mm**, z czego 20,15 mm na B.Cu; MOSI 17,77 mm z 15,83 mm na B.Cu. Katalog LSM6DSV32X ogranicza SPI do **10 MHz**; planowane 8 MHz pozostaje nastawą do prób. Pomiary powinny potwierdzić czasy CS, duty cycle, setup/hold i odczyt SDO w wymaganych warunkach. [ST — DS13511 Rev 2, tabela 7](https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf).
+## GND i drogi powrotne
 
-## Płaszczyzna GND i drogi powrotne
+In1.Cu: 1 stref GND, 1 zapisanych obrysów fill, pole **1352.639 mm²**, 0 ścieżek na In1 i **52 przelotek przelotowych GND**. Liczba obrysów/pole nie opisują impedancji drogi powrotnej.
 
-In1.Cu ma **jeden wypełniony obszar GND, około 1355,17 mm²**, bez ścieżek sygnałowych. Na płytce są **53 przelotki GND**. Spójność obszaru nie opisuje impedancji lokalnej drogi powrotnej ani wpływu skupisk antypadów.
+Próbkowano środki prostych ścieżek co najwyżej 0.050 mm. Sprawdzono zapisany fill In1 i miedź GND padów/przelotek z wyłączeniem wnętrz otworów. Odległość ≤0.6 mm od otworu jest tylko klasyfikacją pomocniczą. Arc projection jest jawnie pomijane/flagowane, jeśli występuje. To kontrola rzutu, bez symulacji pól/prądu powrotnego.
 
-Sprawdzono rzut środka ścieżki na rzeczywistą wypełnioną In1.Cu, z próbkami oddalonymi o najwyżej 0,05 mm i z uwzględnieniem miedzi padów/przelotek GND. LFXO, QSPI_IO0 i odcinek zegara R11→Flash mają **100% pokrycia próbek**. Dla pozostałych sieci wykryte braki pokrycia występowały wyłącznie w pobliżu otworów, według pomocniczej klasyfikacji odległości ≤0,6 mm od kształtu otworu. Najdłuższy ciąg takich próbek w jednym prostym odcinku wynosi około **0,422 mm**. To kontrola projekcji geometrii; nie symuluje przepływu prądu wokół antypadów i nie potwierdza impedancji.
+| Sieć | Brak In1 w rzucie [mm] | Z tego dalej od otworów [mm] | Najdłuższy ciąg w jednym odcinku [mm] | Brak In2 +3V pod B.Cu [mm] |
+|---|---:|---:|---:|---:|
+| FLASH_CS_N | 2.787 | 0.000 | 0.400 | 4.746 |
+| IMU_CS_N | 1.629 | 0.000 | 0.400 | 0.783 |
+| IMU_INT1 | 3.194 | 0.000 | 0.400 | 1.636 |
+| IMU_INT2 | 1.633 | 0.000 | 0.400 | 3.960 |
+| IMU_MISO | 1.619 | 0.000 | 0.400 | 7.033 |
+| IMU_MOSI | 1.585 | 0.000 | 0.400 | 1.439 |
+| IMU_SCK | 1.639 | 0.000 | 0.421 | 0.000 |
+| LF_XL1 | 0.000 | 0.000 | 0.000 | 0.000 |
+| LF_XL2 | 0.000 | 0.000 | 0.000 | 0.000 |
+| QSPI_CLK_FLASH | 0.000 | 0.000 | 0.000 | 0.000 |
+| QSPI_IO0 | 0.000 | 0.000 | 0.000 | 0.000 |
+| QSPI_IO1 | 1.707 | 0.000 | 0.400 | 1.333 |
+| QSPI_IO2 | 1.621 | 0.000 | 0.397 | 2.281 |
+| QSPI_IO3 | 2.810 | 0.000 | 0.400 | 0.800 |
+| QSPI_SCK | 1.647 | 0.000 | 0.394 | 0.812 |
 
-**Odcinki B.Cu wymagają szczególnej uwagi:** bezpośrednio sąsiaduje z nimi mieszana warstwa In2.Cu z +3V0 i sygnałami. In1 GND znajduje się dalej. Przykładowo około **7,03 mm** przebiegu IMU_MISO na B.Cu nie ma w swoim rzucie miedzi +3V0 na In2.Cu. Nie oznacza to przerwania elektrycznego GND; wskazuje zmianę najbliższego odniesienia i potrzebę oceny drogi powrotnej przy rzeczywistym stosie warstw. TI opisuje wpływ szczelin odniesienia na indukcyjność pętli i emisję. [TI — High-Speed Layout Guidelines, SCAA082A](https://www.ti.com/lit/an/scaa082a/scaa082a.pdf).
+Największa odległość od przelotki QSPI do najbliższej przelotki GND: **4.785 mm (QSPI_IO3)**. Nie jest to samodzielne kryterium zaliczenia drogi powrotnej.
 
-Najbliższa przelotka GND przy niektórych przelotkach QSPI jest oddalona o kilka milimetrów, maksymalnie około **4,79 mm dla IO3**. Współrzędne są w JSON. Sama odległość do najbliższej przelotki nie dowodzi poprawności ani błędu powrotu; istotne są warstwy odniesienia i połączenia zasilanie–GND. W kolejnej optymalizacji warto preferować F.Cu/In2.Cu nad GND i ocenić lokalne połączenia odniesienia przy zmianach na B.Cu.
+B.Cu sąsiaduje z mieszaną In2 (+3V0 i sygnały); In1 GND leży dalej. Pokrycie rzutu In1 nie dowodzi ciągłego najbliższego odniesienia na In2. Należy ocenić połączenia odniesienia przy przejściach warstw i wpływ antypadów według rzeczywistego stosu. [TI SCAA082A](https://www.ti.com/lit/an/scaa082a/scaa082a.pdf).
 
-PCB deklaruje cztery warstwy i nominalnie **1.0 mm** grubości, lecz nie zawiera szczegółowego bloku stackup dielektryków. Grubości izolacji, epsilon, rzeczywista miedź i impedancje muszą zostać uzgodnione z fabryką. Nie wyliczono kontrolowanej impedancji ani opóźnień ze stałych domyślnych KiCad.
+Nominalna grubość PCB: 1.000 mm. Szczegółowy blok dielektryków w pliku: **brak**. Parametry fabryczne, Er i impedancje nie zostały zakwalifikowane; skrypt nie wyznacza impedancji ze stałych domyślnych KiCad.
 
-## LFXO po korekcie
+## LFXO
 
-Y1 obrócono o 180° bez przesuwania środka, dzięki czemu XL1 i XL2 nie wymagają krzyżowania. LF_XL1 ma **5,075 mm**, LF_XL2 **4,951 mm**, wliczając gałęzie do C7/C8. Obie sieci są wyłącznie na F.Cu i mają **zero przelotek**. Odległości proste pad MCU→pad Y1 wynoszą około **2,57/2,44 mm**, a Y1→kondensator około **2,14/2,17 mm**. Pady masy C7/C8 mają najbliższe przelotki GND w odległości **0,62 mm**. Obie sieci mają pełne pokrycie próbek projekcji GND.
+LF_XL1: **5.075 mm / 0 przelotek**, warstwy F.Cu; odległość prosta MCU→Y1 2.574 mm, Y1→C 2.144 mm; najbliższa przelotka GND od pada kondensatora: 0.620 mm.
 
-To poprawia geometrię oscylatora względem wcześniejszego LF_XL2 o długości 48,69 mm z pięcioma przelotkami. C7/C8=10 pF pozostają wartościami początkowymi: CL obejmuje pojemność pinów i PCB według równania Nordic. ABS07 w opcji „7” jest kryształem CL=7 pF; ESR, drive level, rozruch i częstotliwość trzeba potwierdzić dla rzeczywistej partii i temperatury. Próbkowanie LFCLK przez buforowany sygnał pozwala oceniać częstotliwość bez obciążania węzłów kwarcu sondą. [Nordic — CLOCK/LFXO](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/clock.html), [Abracon — ABS07](https://abracon.com/Resonators/ABS07.pdf).
+LF_XL2: **4.951 mm / 0 przelotek**, warstwy F.Cu; odległość prosta MCU→Y1 2.438 mm, Y1→C 2.166 mm; najbliższa przelotka GND od pada kondensatora: 0.620 mm.
 
-## Zakres kwalifikacji prototypu
+C7/C8=10 pF to wartości początkowe. Kryształ ABS07 w wybranej opcji ma CL=7 pF; pojemności pinów/PCB, ESR, drive, start i temperaturę należy ocenić fizycznie. Nie obciążać węzłów kwarcu zwykłą sondą podczas oceny częstotliwości; użyć buforowanego sygnału LFCLK. [Nordic CLOCK](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/clock.html), [Abracon ABS07](https://abracon.com/Resonators/ABS07.pdf).
 
-Wymagane przed deklaracją parametrów użytkowych:
+## Porównanie z bazą
 
-- QSPI: pomiar SCK/IO przy układach, przeregulowań, dzwonienia i marginesów czasowych; próby niższych częstotliwości oraz docelowych 32 MHz, strojenie R11/drive z zachowaniem specyfikacji Nordic/Winbond.
-- Pamięć: długie testy wzorców i CRC przy zapisie/odczycie obu matryc, zmianach napięcia/temperatury, resetach i power-cycle; test granic adresowania zgodnie z kontraktem firmware.
-- IMU: odczyty przy planowanym 8 MHz, kontrola FIFO/overrun i integralności surowych próbek, pomiary przy aktywnym BLE i zapisie Flash.
-- LFXO: start i dokładność zegara w temperaturze, ocena CL/ESR/drive oraz dryftu dwóch modułów; sam poprawny routing nie synchronizuje zegarów nóg.
+Bazowy PCB SHA256: `b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678`. Zmienione metryki sieci: **IMU_CS_N, IMU_MOSI, QSPI_IO3**. Wszystkie wartości bieżące przeliczono ponownie; nie podmieniono jedynie hasha.
 
-Natywny [DRC końcowy](../reports/drc_final.json) dla odczytanego stanu ma **0 naruszeń, 0 niepołączonych elementów i 0 problemów parity** w zakresie aktywnych kontroli. DRC nie jest wynikiem pomiaru SI, kwalifikacją 32 MHz ani potwierdzeniem dokładności oscylatora.
+Pełna identyczność geometrii według fingerprints: **nie**.
+
+Bazową PCB i bieżącą PCB odczytano natywnie tym samym audytorem; porównano geometrie wszystkich badanych ścieżek, przelotek i padów. Nie korzystano wyłącznie z historycznych sum długości.
+
+Metoda v2 dodatkowo usuwa wnętrza otworów z kształtów miedzi padów/przelotek; może to zmienić wyniki projekcji względem historycznej metody v1.
+
+## Kontrole i kwalifikacja
+
+Dostarczony [DRC](../reports/drc_final.json) (`81cdc6852f60b4648b08fc18e265c4abad76232f300d82ff8e2eb10cacc2d477`): **0 naruszeń / 0 niepołączonych / 0 parity**, 0 ignorowanych kontroli. Skrypt nie uruchamia DRC i nie potwierdza niezależnie związania tego JSON z hashem PCB; źródło DRC musi wskazać prowadzący audyt.
+
+Wymagane pozostają pomiary QSPI/SPI, strojenie zboczy i R11, testy CRC pełnych 128 MiB i obu dies po resetach/zanikach oraz kwalifikacja LFXO. [Plan prób Flash A1](flash_firmware_test_plan_A1.md). Poprawny DRC i długości ścieżek nie są certyfikacją SI ani dokładności/synchronizacji zegarów.

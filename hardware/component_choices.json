@@ -224,7 +224,8 @@
     "footprint": "AnkleSensor:SOT-23"
   },
   "R24": {
-    "footprint": "AnkleSensor:R_0402_1005Metric"
+    "footprint": "AnkleSensor:R_0402_1005Metric",
+    "note": "100k pull-up: Q2 inhibits charging during MCU reset/HiZ; LOW releases hardware window"
   },
   "C19": {
     "footprint": "AnkleSensor:C_0402_1005Metric"

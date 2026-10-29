@@ -1,6 +1,6 @@
-# IMU i moduł radiowy — przegląd do schematu
+# IMU i moduł radiowy — aktualny przegląd A1
 
-Data weryfikacji: 2026-10-27. Status: dane wejściowe do projektu; nie jest to raport ERC/DRC.
+Aktualizacja: **2026-10-29**. Połączenia niżej uzgodniono ze świeżym natywnym eksportem schematu i aktualnym PCB A1, SHA-256 `38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`. To dokumentacja połączeń i ograniczeń, nie potwierdzenie fizycznego działania. Kompletny aktualny przydział: [pin_assignment_A1.md](pin_assignment_A1.md); szczegółowy audyt USB/RF: [usb_raytac_audit_A1.md](usb_raytac_audit_A1.md).
 
 ## LSM6DSV32XTR
 
@@ -13,13 +13,13 @@ Pinout dla SPI 4-przewodowego, mode 1 połączeń:
 | 1 | SDO/SA0 | MISO |
 | 2 | SDx/AH1/Qvar1 | GND |
 | 3 | SCx/AH2/Qvar2 | GND |
-| 4 | INT1 | GPIO/GPIOTE |
+| 4 | INT1 | IMU_INT1 → U3.27 = P0.11 / GPIOTE |
 | 5 | VDD_IO | 3V0, 100 nF |
 | 6,7 | GND | GND |
 | 8 | VDD | 3V0, 100 nF |
-| 9 | INT2/DEN | GPIO/GPIOTE; możliwe wyjście MCU |
-| 10 | OCS_Aux | 3V0 lub NC |
-| 11 | SDO_Aux | 3V0 lub NC |
+| 9 | INT2/DEN | IMU_INT2 → U3.29 = P0.12; wejście MCU, wyjście tylko po świadomym wyborze DEN |
+| 10 | OCS_Aux | Aktualnie +3V0; ST dopuszcza też NC w mode 1 |
+| 11 | SDO_Aux | Aktualnie NC; pole lutowane do PCB zgodnie z ST |
 | 12 | CS | CS_N, pull-up |
 | 13 | SCL/SPC | SCK |
 | 14 | SDA/SDI | MOSI |
@@ -27,6 +27,8 @@ Pinout dla SPI 4-przewodowego, mode 1 połączeń:
 SPI: tryb 0/3, maks. 10 MHz; propozycja startowa 8 MHz. VDD 1.71–3.6 V; VDD_IO 1.08–3.6 V. Timestamp: **32 bity, 21.75 µs/LSB typowo**, nie 25 µs. ±4000 °/s wymaga wyłączonego OIS żyroskopu. Wymagane ODR 120/240/480/960/1920 Hz są dostępne w high-performance. HAODR wprowadza osobne zestawy częstotliwości (§6.5); zmiana trybu HAODR w power-down.
 
 Propozycja firmware: INT1 obsługuje watermark FIFO, INT2 służy do eksperymentów synchronizacji. GPIOTE/PPI przechwytuje czas zbocza do TIMER bez opóźnienia ISR. Rejestrować natywne tagi FIFO, timestamp, zdarzenia overrun, liczniki bloków i pełny zestaw rejestrów konfiguracyjnych w nagłówku sesji. Nie deklarować dokładnej liczby utraconych próbek na podstawie samej flagi przepełnienia. Temperaturę zapisywać wolniej niż ruch. Trzeba wyznaczyć doświadczalnie zależność zegara IMU od zegara MCU i temperatury.
+
+ST tabela 2 i §7.1 wyraźnie dopuszcza GND na pinach 2/3 przy wyłączonych analog hub i Qvar w mode 1. Dwa ostrzeżenia ERC bidirectional-to-power dotyczą tych dwóch pinów i pozostają jawne. Nie są dowodem błędu tego połączenia. Nie wolno bez ponownej analizy sprzętu włączać alternatywnych trybów wykorzystujących piny 2/3. Piny 6/7 są przyłączone do GND i lutowane.
 
 ## Mechanika IMU
 
@@ -36,7 +38,7 @@ Decyzja projektowa: nie tworzyć sprężystej wyspy ani nacięć wokół IMU bez
 
 ## MDBT50Q-P1MV2
 
-[Oficjalna strona Raytac](https://www.raytac.com/product/ins.php?index_id=47) wskazuje dokument **Ver. L** oraz pakiet **Footprint/Design Guide 230606**. Moduł ma antenę drukowaną, wymiary 10.5 × 15.5 × 2.0 mm i nRF52840 revision 2. Dokument producenta Ver. L odczytano początkowo z kopii dystrybutora, następnie odnaleziono działający **[oficjalny PDF Ver. L,2023/05/24](https://www.raytac.com/tw/download/index.php?index_id=24)**. Nie zarchiwizowano lokalnego PDF.
+[Oficjalna strona Raytac](https://www.raytac.com/product/ins.php?index_id=47) wskazuje dokument **Ver. L** oraz pakiet **Footprint/Design Guide 230606**. Moduł ma antenę drukowaną, wymiary 10.5 × 15.5 × 2.0 mm i nRF52840 revision 2. Podczas aktualizacji ponownie odczytano **[oficjalny PDF Ver. L, 2023/05/24](https://www.raytac.com/download/index.php?index_id=43)**. Ograniczenie dostępu do obrazów schematów §8.3 opisano w audycie; nie deklarowano ich wizualnego odczytu.
 
 Tabela poniżej pochodzi z §2.5 Ver. L. **Nie używać tabeli z Ver. B: część numerów dolnej krawędzi różni się.**
 
@@ -66,18 +68,20 @@ Tabela poniżej pochodzi z §2.5 Ver. L. **Nie używać tabeli z Ver. B: częś�
 
 ## Zasilanie i przydział sygnałów
 
-[Nordic POWER](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/power.html) definiuje normal voltage mode przez wspólne zasilanie VDD i VDDH; zakres 1.7–3.6 V, poziomy GPIO odnoszą się do VDD. Dla 3V0 użyć kompletnej konfiguracji normal voltage z Raytac §8.3. **Połączenie DCCH oraz lokalne pojemności należy potwierdzić wizualnie na schemacie referencyjnym przed zatwierdzeniem schematu**: warstwa tekstowa PDF nie oddaje przewodów. Nie interpretować DCCH jako zwykłego wyjścia 3V0. VBUS dla USB wymaga 4.35–5.5 V; D+/D− nie są GPIO. SWD wymaga VTref=3V0, GND, SWDIO i SWDCLK; reset jest konfigurowalną funkcją P0.18.
+[Nordic POWER](https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/power.html) definiuje normal voltage mode przez wspólne zasilanie VDD i VDDH; zakres 1.7–3.6 V, poziomy GPIO odnoszą się do VDD, a REG0 jest automatycznie wyłączony. W aktualnym A1 U3.28=U3.30=+3V0, U3.31 DCCH=NC, U3.32=VBUS z USB-C. **NC na DCCH przy nieużywanym REG0 potwierdza [wsparcie Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/108362/vdd-vddh-and-dcch-mistake).** Pełne porównanie rysunku Raytac §8.3 i pojemności pozostaje otwarte z powodu niedostępnych obrazów. Aktualne hostowe C9/C10 to 4.7µF/100nF na +3V0, C11=4.7µF na VBUS; wymagają oceny pojemności efektywnej. VBUS dla USB wymaga 4.35–5.5 V. SWD ma VTref=3V0, GND, SWDIO51 i SWDCLK53; reset jest konfigurowalną funkcją P0.18/pad40.
 
-Propozycja przydziału (do pogodzenia z routingiem): QSPI SCK=P0.19, IO0=P0.20, IO1=P0.21, IO2=P0.22, IO3=P0.23, CS=P0.17; P0.18 pozostaje resetem. IMU: SCK=P0.13, MOSI=P0.14, MISO=P0.15, CS=P0.16, INT1=P0.24, INT2=P0.25. Przycisk/LED i ADC mogą korzystać z wolniejszych GPIO.
+**Aktualny przydział A1:** QSPI SCK=P0.19, IO0=P0.20, IO1=P0.21, IO2=P0.22, IO3=P0.23, CS=P0.17; P0.18 pozostaje resetem. IMU: SCK=P0.13, MOSI=P0.14, MISO=P0.15, CS=P0.16, **INT1=P0.11, INT2=P0.12**. P0.24/P0.25 są NC. Wcześniejsza propozycja INT na P0.24/P0.25 nie opisuje poprowadzonej płytki. Pełną tabelę GPIO i sygnałów pomocniczych zapisano w [pin_assignment_A1.md](pin_assignment_A1.md).
+
+Nie ma obowiązku dodawania zewnętrznych rezystorów szeregowych USB D+/D−: [Nordic potwierdza ich obecność wewnątrz USB PHY nRF52840](https://devzone.nordicsemi.com/f/nordic-q-a/94955/resistors-for-d-and-d-). Nie dodano rezystorów bez uzasadnienia. Otwarta pozostaje kwalifikacja impedancji i całej geometrii USB oraz ochrony ESD.
 
 Raytac §2.6 ogranicza do standard-drive i ≤10 kHz: P0.02/03/09/10/28/29/30/31 oraz P1.01/02/03/04/05/06/07/10/11/12/13/14/15. Nie przydzielać im SPI, QSPI, UART ani szybkiego PWM.
 
 ## RF i sprawy otwarte
 
-Raytac §2.3 wymaga keepout anteny na **każdej warstwie** i umieszczenia modułu przy krawędzi. Dokładny wymiar i położenie granicy anteny należy odczytać z rysunku footprintu Ver. L/Design Guide, zanim powstanie PCB. Nie wpisano tu zgadywanej geometrii padów. Footprint musi obejmować także wewnętrzne pady 56–61 i mieć zweryfikowaną orientację TOP.
+Raytac §2.3 wymaga keepout anteny na **każdej warstwie** i umieszczenia modułu przy krawędzi. Aktualny footprint ma 61 padów, także wewnętrzne 56–61; projektowy keepout x=57.8…70.2mm, y=49.8…55.0mm dochodzi poza krawędź PCB. Nowy natywny odczyt potwierdził brak przecięć z miedzią ścieżek, padów, vias i wypełnień. Jest to kontrola zadeklarowanej strefy projektu; wymiarowany rysunek RF producenta i docelowy montaż nadal wymagają osobnego zatwierdzenia.
 
 Decyzje projektowe: bateria, metal, śruby i przewody poza obszarem anteny; testy zasięgu wykonywać w docelowej obudowie na nodze. Preferowany kwarc 32.768 kHz ze względu na stabilność zegara BLE/synchronizacji; wartości kondensatorów wynikają z CL wybranego kwarcu i pojemności pasożytniczych. Sam kryształ nie synchronizuje dwóch niezależnych modułów. Potrzebny protokół wymiany znaczników, estymacja offsetu/dryftu i pomiar niepewności synchronizacji.
 
-Nierozwiązane: dokładny zweryfikowany footprint i STEP Raytac, połączenie DCCH z §8.3, pojemności modułu i USB, dostępność PCBA dokładnego P1MV2. Dostępność katalogowa u dystrybutora nie jest dowodem dostępności JLCPCB.
+Nierozwiązane: wizualne porównanie pełnego rysunku §8.3/pojemności, wybór rzeczywistego stackupu 4L/1.0mm i kwalifikacja USB, rozmieszczenie/kwalifikacja ESD, dokładny STEP wariantu P1MV2, montaż baterii/obudowy i testy naprężeń/RF. Biblioteczny STEP U3 jest generyczny; model USB J1 nadal jest brakujący. Dostępność PCBA dokładnego P1MV2 wymaga osobnego potwierdzenia; dostępność dystrybutora nie jest dowodem zasobów JLCPCB. Firmware nie zostało jeszcze napisane.
 
-Dodatkowa przesłanka do przeglądu DCCH: [odpowiedź inżyniera Nordic dla dokładnego MDBT50Q-1MV2](https://devzone.nordicsemi.com/f/nordic-q-a/62718/custom-pcb-with-nrf52840) zatwierdza rysunek przy deklaracji użytkownika DCCH/D+/D− unconnected oraz VDD=VDDH. Ten sam wpis zawiera jednak sprzeczną linijkę o DCCH=GND (możliwa literówka zamiast VBUS), dlatego tekst bez widoku rysunku nie zamyka weryfikacji.
+Nowsza, jednoznaczna przesłanka dla DCCH: [odpowiedź wsparcia Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/108362/vdd-vddh-and-dcch-mistake) opisuje pin jako niepodłączony przy wyłączonym REG0. Nie oparto decyzji na starszym, niejednoznacznym wątku zawierającym sprzeczne wzmianki DCCH/GND.

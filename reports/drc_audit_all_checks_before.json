@@ -1,0 +1,270 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T13:21:21",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "Ankle_Sensor_V1.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [RESET_N] na In2.Cu, długość 1.6263 mm",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 64.9
+                    },
+                    "uuid": "18a772ff-f58a-4f41-9c7b-9e0bbabb8e73"
+                },
+                {
+                    "description": "Przelotka [RESET_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.55,
+                        "y": 64.95
+                    },
+                    "uuid": "2a4e2632-f2c8-4e89-95b7-e7aafc95ad46"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [RESET_N] na In2.Cu, długość 0.8500 mm",
+                    "pos": {
+                        "x": 67.8,
+                        "y": 62.4
+                    },
+                    "uuid": "915f1991-2397-4024-a5bc-8ec7d7170c9d"
+                },
+                {
+                    "description": "Przelotka [RESET_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.9,
+                        "y": 62.35
+                    },
+                    "uuid": "8a7391dc-dec8-4249-becf-b34fcefb85cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [IMU_CS_N] na B.Cu, długość 6.9296 mm",
+                    "pos": {
+                        "x": 61.95,
+                        "y": 68.1
+                    },
+                    "uuid": "3287b9e2-c846-4cb4-8a08-9f8e04588fe2"
+                },
+                {
+                    "description": "Przelotka [IMU_CS_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.9,
+                        "y": 63.15
+                    },
+                    "uuid": "85cf903f-15fb-4f7b-92af-28841d4636bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [IMU_MOSI] na B.Cu, długość 1.3435 mm",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 64.0
+                    },
+                    "uuid": "0eab6590-e5ec-44aa-b038-47a9a57791a0"
+                },
+                {
+                    "description": "Przelotka [IMU_MOSI] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.9,
+                        "y": 63.95
+                    },
+                    "uuid": "f17d42a5-3b30-4121-9d12-076569e6d550"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [IMU_MOSI] na B.Cu, długość 7.0711 mm",
+                    "pos": {
+                        "x": 60.35,
+                        "y": 69.45
+                    },
+                    "uuid": "dc9012e1-065d-4365-a8f7-4073bd5b937b"
+                },
+                {
+                    "description": "Przelotka [IMU_MOSI] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 55.3,
+                        "y": 74.5
+                    },
+                    "uuid": "12fe63e0-2b2f-45c7-b842-4ab199d7f2ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [USER_BTN_N] na B.Cu, długość 0.8500 mm",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 58.7
+                    },
+                    "uuid": "c61b1cce-3021-442f-af34-961ea3638766"
+                },
+                {
+                    "description": "Przelotka [USER_BTN_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 58.75
+                    },
+                    "uuid": "dbd75f38-79a2-44d7-9dfb-9c4cad39af68"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [CHG_STAT1_N] na B.Cu, długość 5.4447 mm",
+                    "pos": {
+                        "x": 60.9,
+                        "y": 87.75
+                    },
+                    "uuid": "f1feb0ef-0885-438a-a254-53d34263327b"
+                },
+                {
+                    "description": "Przelotka [CHG_STAT1_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 64.8,
+                        "y": 91.65
+                    },
+                    "uuid": "aa9a3151-bfa8-44f5-bec9-119972a9decf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [CHG_STAT2_N] na B.Cu, długość 1.4142 mm",
+                    "pos": {
+                        "x": 57.45,
+                        "y": 60.6
+                    },
+                    "uuid": "b90ae092-7451-421f-b6b1-e1bf63bb9b72"
+                },
+                {
+                    "description": "Przelotka [CHG_STAT2_N] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 59.55
+                    },
+                    "uuid": "0f26cd3e-4373-4f77-a7a6-9f9de70750da"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [VBAT_ADC] na B.Cu, długość 7.4953 mm",
+                    "pos": {
+                        "x": 55.75,
+                        "y": 66.9
+                    },
+                    "uuid": "1eca7d84-0338-4b9f-aae1-0fcfaf919f19"
+                },
+                {
+                    "description": "Przelotka [VBAT_ADC] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 61.1,
+                        "y": 61.55
+                    },
+                    "uuid": "ee4779f9-ba7c-4e43-a4d6-a55277cadc19"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [QSPI_IO3] na In2.Cu, długość 5.9000 mm",
+                    "pos": {
+                        "x": 73.5,
+                        "y": 60.05
+                    },
+                    "uuid": "fca973cd-915b-42a8-8e72-aa220cba50fd"
+                },
+                {
+                    "description": "Przelotka [QSPI_IO3] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.55,
+                        "y": 60.0
+                    },
+                    "uuid": "fb1cc1db-a9fd-4695-ad9f-341fff2b2013"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Ścieżka [SWCLK] na B.Cu, długość 1.6263 mm",
+                    "pos": {
+                        "x": 70.7,
+                        "y": 57.55
+                    },
+                    "uuid": "58d6b30e-0ea7-450a-b7d1-76a0cfedd646"
+                },
+                {
+                    "description": "Przelotka [SWCLK] na F.Cu - B.Cu",
+                    "pos": {
+                        "x": 69.5,
+                        "y": 56.35
+                    },
+                    "uuid": "0961c96b-0c65-4ae9-a7c2-d5b6212fb0af"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        }
+    ]
+}

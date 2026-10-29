@@ -1,11 +1,11 @@
-A1 REVIEW - NOT FOR FABRICATION OR ASSEMBLY ORDER
-Updated: 2026-10-28. Electrical connectivity is complete; design release gates remain open.
+A1 AUDIT REVIEW - NOT FOR FABRICATION OR ASSEMBLY ORDER
+Updated: 2026-10-29. Electrical connectivity is complete; design release gates remain open.
 
 Editable KiCad 10.0.7 project: 4 layers, profile centreline 30 x 51.6 mm,
 working thickness 1.0 mm, 69 footprints, 59 Top-side assembled parts.
 Memory: W25Q01JVZEIQ, 128 MiB, dual die.
 
-Final native DRC after refill/save and LFXO/C3 repairs:
+Final native DRC after audit local via/R24/USB repairs and refill/save:
 0 violations, 0 unconnected items, 0 schematic-parity findings.
 Native ERC: 0 errors, 2 documented intentional warnings at U4 pins 2/3.
 See ../reports/validation_status.json for report paths and exact source hashes.
@@ -15,7 +15,7 @@ BOM/CPL, native positions, an export manifest and a Gerber/Drill REVIEW ZIP.
 Common native drill/place origin: (50,101.6) mm, bottom-left board corner.
 The exported profile is 30 x 51.6 mm at its centreline; the .05 mm plotting
 stroke makes the automatic Gerber Job bounding box .05 mm larger.
-All 59 placement positions, 160 via drills, 4 plated slots and 2 NPTH holes
+All 59 placement positions, 164 via drills, 4 plated slots and 2 NPTH holes
 were compared with the native PCB. This is not independent CAM DRC.
 
 IMPORTANT: Gerber Job stackup is the automatic generic KiCad stack, not a
@@ -33,7 +33,8 @@ Open pre-order gates: exact stackup and USB geometry, Raytac reference circuit,
 USB-C/crystal mechanical and land-pattern review, effective MLCC capacitance,
 whole-port USB input budget/suspend/inrush, exact procurement, placement
 translations, panelization, stencil/mask/thermal DFM and CAM/JLC review.
-Minimum nominal drill-to-SMD/paste gap found is .090 mm at U5.7; fabrication
+U5.7 hole-to-SMD/paste gap improved .090 to .230 mm; global minimum is
+.150 mm. J1 gap improved .105 to .175 mm. Fabrication
 registration tolerance requires DFM. No via holes intersect SMD/paste nominally.
 
 Battery/on-cell NTC qualification, charging/thermal behavior, acquisition,
@@ -41,3 +42,9 @@ QSPI addressing/data integrity, timing/synchronization and firmware tests are
 required on prototypes. Firmware is specified, not implemented.
 See ../README.md and ../docs/release_checklist.md. Do not order from this
 REVIEW package until the unresolved design/manufacturing gates are closed.
+
+All formerly ignored ERC/DRC classes enabled. INT1=P0.11; INT2=P0.12.
+R24 pulls CHG_INHIBIT high at MCU reset/HiZ; no autonomous charging without
+working firmware. USB source policy/budget remain open. Both Flash dies need
+a qualified driver; no F01-F20 hardware tests have been run.
+Audit report: ../docs/audit_A1_2026-10-29.md.

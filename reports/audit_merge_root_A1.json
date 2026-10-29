@@ -1,0 +1,15 @@
+{
+  "status": "MERGED_REQUIRES_NATIVE_DRC",
+  "repairs": [
+    {
+      "repair": ".work/charge_default_A1/Ankle_Sensor_V1.kicad_pcb",
+      "removed": 0,
+      "modified": 20,
+      "added": 0,
+      "moved_footprints": {},
+      "changed_footprints": [
+        "R24"
+      ]
+    }
+  ]
+}

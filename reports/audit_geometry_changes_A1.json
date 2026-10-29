@@ -1,0 +1,214 @@
+{
+  "status": "LOCAL_REPAIR_REQUIRES_NATIVE_DRC_AND_FAB_REVIEW",
+  "source_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "source_unchanged": true,
+  "changes": [
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "18a772ff-f58a-4f41-9c7b-9e0bbabb8e73",
+      "net": "RESET_N",
+      "layer": "In2.Cu",
+      "from_mm": [
+        72.5,
+        64.9
+      ],
+      "to_mm": [
+        72.55,
+        64.95
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "915f1991-2397-4024-a5bc-8ec7d7170c9d",
+      "net": "RESET_N",
+      "layer": "In2.Cu",
+      "from_mm": [
+        66.95,
+        62.4
+      ],
+      "to_mm": [
+        66.9,
+        62.35
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "3287b9e2-c846-4cb4-8a08-9f8e04588fe2",
+      "net": "IMU_CS_N",
+      "layer": "B.Cu",
+      "from_mm": [
+        66.85,
+        63.2
+      ],
+      "to_mm": [
+        66.9,
+        63.15
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "0eab6590-e5ec-44aa-b038-47a9a57791a0",
+      "net": "IMU_MOSI",
+      "layer": "B.Cu",
+      "from_mm": [
+        66.85,
+        64.0
+      ],
+      "to_mm": [
+        66.9,
+        63.95
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "dc9012e1-065d-4365-a8f7-4073bd5b937b",
+      "net": "IMU_MOSI",
+      "layer": "B.Cu",
+      "from_mm": [
+        55.35,
+        74.45
+      ],
+      "to_mm": [
+        55.3,
+        74.5
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "c61b1cce-3021-442f-af34-961ea3638766",
+      "net": "USER_BTN_N",
+      "layer": "B.Cu",
+      "from_mm": [
+        58.55,
+        58.7
+      ],
+      "to_mm": [
+        58.5,
+        58.75
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "f1feb0ef-0885-438a-a254-53d34263327b",
+      "net": "CHG_STAT1_N",
+      "layer": "B.Cu",
+      "from_mm": [
+        64.75,
+        91.6
+      ],
+      "to_mm": [
+        64.8,
+        91.65
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "b90ae092-7451-421f-b6b1-e1bf63bb9b72",
+      "net": "CHG_STAT2_N",
+      "layer": "B.Cu",
+      "from_mm": [
+        58.45,
+        59.6
+      ],
+      "to_mm": [
+        58.5,
+        59.55
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "1eca7d84-0338-4b9f-aae1-0fcfaf919f19",
+      "net": "VBAT_ADC",
+      "layer": "B.Cu",
+      "from_mm": [
+        61.05,
+        61.6
+      ],
+      "to_mm": [
+        61.1,
+        61.55
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "fca973cd-915b-42a8-8e72-aa220cba50fd",
+      "net": "QSPI_IO3",
+      "layer": "In2.Cu",
+      "from_mm": [
+        73.5,
+        60.05
+      ],
+      "to_mm": [
+        73.55,
+        60.0
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "center_track_endpoint",
+      "uuid": "58d6b30e-0ea7-450a-b7d1-76a0cfedd646",
+      "net": "SWCLK",
+      "layer": "B.Cu",
+      "from_mm": [
+        69.55,
+        56.4
+      ],
+      "to_mm": [
+        69.5,
+        56.35
+      ],
+      "delta_mm": 0.07071067811865477
+    },
+    {
+      "kind": "move_via_and_connected_endpoints",
+      "uuid": "27c06751-dc7e-4f8a-98b2-642af9d67607",
+      "net": "QSPI_IO3",
+      "from_mm": [
+        71.85,
+        73.9
+      ],
+      "to_mm": [
+        71.85,
+        73.76
+      ],
+      "connected_tracks": [
+        "7e9fe4da-2c9b-4bc1-901e-47d8b3929bf2",
+        "6045bbb1-e7fb-43e2-829a-3f392de1c69c"
+      ],
+      "diameter_mm": 0.5,
+      "drill_mm": 0.25
+    },
+    {
+      "kind": "move_via_and_connected_endpoints",
+      "uuid": "e15f9505-7ea1-41f9-b959-971b30f8a11f",
+      "net": "VBUS",
+      "from_mm": [
+        66.45,
+        94.0
+      ],
+      "to_mm": [
+        66.45,
+        93.93
+      ],
+      "connected_tracks": [
+        "c942a406-6ef0-4c6d-a23a-81579683d61d",
+        "4620fad1-4a8a-4375-bd58-c18ba67df7b8"
+      ],
+      "diameter_mm": 0.5,
+      "drill_mm": 0.25
+    }
+  ],
+  "footprints_moved": 0,
+  "vias_added_or_removed": 0,
+  "tracks_added_or_removed": 0,
+  "routing_strategy": "Only bounded endpoint adjustments and two existing via positions; no autorouter"
+}

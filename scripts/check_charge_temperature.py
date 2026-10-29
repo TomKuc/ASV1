@@ -16,7 +16,9 @@ SUPERVISED_REFERENCE_V = (SUPERVISOR_LOWEST_TRIP_V, SUPPLY_V[1])
 RESISTOR_TOL = 0.005
 CURRENT_A = (36.5e-6, 39.5e-6)
 # 8 mV offset + half of 25 mV max hysteresis + 1.5 mV extra allowance
-# for CMRR, reference/PCB errors. These terms are added conservatively.
+# for CMRR, reference/PCB errors. The extra allowance is an engineering
+# assumption, NOT a guaranteed CMRR/PSRR maximum over the actual common mode.
+# Published offset/hysteresis limits use the stated datasheet test conditions.
 COMPARATOR_ERROR_V = 0.022
 R25_OHM = (9700.0, 10300.0)
 BETA_K = (3435 * .97, 3435 * 1.03)
@@ -65,7 +67,15 @@ endpoint_limits = {
     "pack_acceptance_max_R_at_45C_ohm": 5200,
 }
 result = {
-    "status": "calculation_only_physical_validation_required",
+    "status": "engineering_corner_model_only_error_budget_requires_qualification",
+    "evidence": {
+        "hardware_tested": False,
+        "spice_simulation_run": False,
+        "arithmetic_assertions_checked": True,
+        "covers_dynamic_startup_or_supply_sag": False,
+        "guaranteed_CMRR_PSRR_worst_case_bound": False,
+        "limitation": "22mV combines datasheet values at their specified test conditions with an assumed1.5mV margin. It does not certify a0..45C charging window for every device/common-mode/supply condition. See docs/power_audit_A1.md."
+    },
     "hot": hot,
     "cold": cold,
     "hot_regulated_3V": hot_regulated,

@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.7"
     },
-    "CreationDate": "2026-10-28T15:42:28+01:00"
+    "CreationDate": "2026-10-29T14:06:31+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "Ankle_Sensor_V1",
       "GUID": "416e6b6c-655f-4536-956e-736f725f5631",
-      "Revision": "A1-WIP"
+      "Revision": "A1-AUDIT"
     },
     "Size": {
       "X": 30.05,

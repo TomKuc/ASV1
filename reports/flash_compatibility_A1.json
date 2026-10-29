@@ -1,0 +1,644 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-29",
+  "repository": {
+    "url": "https://github.com/TomKuc/ASV1",
+    "base_commit": "c3536966d15fab3ada32515650615b947dce1349",
+    "revision_under_review": "A1",
+    "firmware_sdk_commit": null,
+    "pcb_or_schematic_modified_by_this_audit": false
+  },
+  "part": {
+    "mpn": "W25Q01JVZEIQ",
+    "technology": "SPI NOR, stacked two dies, non-DTR IQ",
+    "capacity_bytes": 134217728,
+    "capacity_mib": 128,
+    "die_count": 2,
+    "die_capacity_bytes": 67108864,
+    "page_size_bytes": 256,
+    "jedec_id_hex": "EF4021",
+    "address_range_hex_inclusive": [
+      "00000000",
+      "07FFFFFF"
+    ],
+    "die_boundary_hex": "04000000",
+    "end_exclusive_hex": "08000000",
+    "operating_vcc_min_v": 2.7,
+    "operating_vcc_max_v": 3.6,
+    "capacity_bits": 1073741824
+  },
+  "overall_result": "CONDITIONAL_PROTOCOL_FIT_FIRMWARE_COMPATIBILITY_NOT_CLOSED",
+  "hardware_tested": false,
+  "firmware_implemented_or_executed_by_this_audit": false,
+  "application_note_full_text_obtained": false,
+  "status_definitions": {
+    "confirmed": "Supported by inspected manufacturer documentation or named primary code; not a hardware PASS.",
+    "open": "Insufficient exact-part documentation, pinned target code, implementation, or physical evidence.",
+    "contradicted": "The explicitly quoted assumption is rejected by the named evidence; not a claim of inconsistent vendor documents."
+  },
+  "sources": [
+    {
+      "id": "W1",
+      "title": "Winbond W25Q01JV non-DTR datasheet",
+      "url": "https://www.mouser.com/datasheet/2/949/Winbond_Electronics_Corporation_09_06_2024_W25Q01J-3501286.pdf",
+      "authority": "Manufacturer document hosted by authorized distributor",
+      "version": "Revision E, 2024-03-04",
+      "accessed": "2026-10-29",
+      "locator_convention": "Body section numbers and printed page numbers; table of contents numbering differs.",
+      "latest_revision_for_future_lot_confirmed": false
+    },
+    {
+      "id": "W2",
+      "title": "Winbond application-note catalog for W25Q01JV",
+      "url": "https://www.winbond.com/hq/support/documentation/?__locale=fr&category=%2F.categories%2Fresources%2Fapplication-note%2F&family=%2Fproduct%2Fcode-storage-flash-memory%2Fserial-nor-flash%2Findex.html&line=%2Fproduct%2Fcode-storage-flash-memory%2Findex.html&pno=W25Q01JV",
+      "authority": "Manufacturer catalog; AN listing also present in indexed official catalog result",
+      "version": "AN0000035 v1.0 listed 2023-08-03, contact us",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "W3",
+      "title": "Official AN0000035 download endpoint",
+      "url": "https://www.winbond.com/hq/support/documentation/downloadV2022.jsp?__locale=en&xmlPath=/support/resources/.content/item/DA01-AN0000035.html&level=4",
+      "authority": "Manufacturer",
+      "accessed": "2026-10-29",
+      "retrieval_result": "HTML only; full application-note text not obtained or read"
+    },
+    {
+      "id": "W4",
+      "title": "Winbond Technical FAQ",
+      "url": "https://www.winbond.com/hq/support/faq/technical/index.html",
+      "authority": "Manufacturer",
+      "accessed": "2026-10-29",
+      "scope_caution": "General Serial NOR answers are not a complete W25Q01JV two-die protocol."
+    },
+    {
+      "id": "N1",
+      "title": "Nordic nRF52840 Product Specification, QSPI",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/qspi.html",
+      "authority": "Manufacturer",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "Z1",
+      "title": "Zephyr nrf_qspi_nor.c",
+      "url": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/drivers/flash/nrf_qspi_nor.c",
+      "authority": "Primary source code",
+      "version": "main, mutable, web representation inspected 2026-10-29, 1401 lines",
+      "commit_sha": null,
+      "target_firmware_selection": false,
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "Z2",
+      "title": "Zephyr nordic,qspi-nor binding",
+      "url": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/dts/bindings/mtd/nordic,qspi-nor.yaml",
+      "authority": "Primary source code",
+      "version": "main, mutable, 92 lines inspected",
+      "commit_sha": null,
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "Z3",
+      "title": "Zephyr jedec,spi-nor-common binding",
+      "url": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/dts/bindings/mtd/jedec,spi-nor-common.yaml",
+      "authority": "Primary source code",
+      "version": "main, mutable, 129 lines inspected",
+      "commit_sha": null,
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "N2",
+      "title": "Nordic nrfx_qspi.c",
+      "url": "https://raw.githubusercontent.com/NordicSemiconductor/nrfx/master/drivers/src/nrfx_qspi.c",
+      "authority": "Manufacturer primary source code",
+      "version": "master, mutable, web representation inspected 2026-10-29, 944 lines",
+      "commit_sha": null,
+      "target_firmware_selection": false,
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "L1",
+      "title": "Linux winbond.c",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.17/drivers/mtd/spi-nor/winbond.c",
+      "authority": "Primary source code, other controller platform",
+      "version": "v6.17, 431 lines inspected",
+      "accessed": "2026-10-29",
+      "scope_caution": "Corroborates a real multi-die implementation; not nRF52840 validation or a replacement for Winbond AN."
+    },
+    {
+      "id": "Z4",
+      "title": "Zephyr jedec,jesd216 common binding",
+      "url": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/dts/bindings/mtd/jedec,jesd216.yaml",
+      "authority": "Primary source code",
+      "version": "main, mutable, 87 lines inspected",
+      "commit_sha": null,
+      "accessed": "2026-10-29"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "status": "confirmed",
+      "subject": "Linear 128 MiB organization",
+      "finding": "Two 64 MiB dies expose linear byte addresses 00000000 through 07FFFFFF; die boundary 04000000 is derived from organization.",
+      "basis": "manufacturer_fact_and_arithmetic",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "section 1, printed page 4"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "status": "confirmed",
+      "subject": "JEDEC and IQ identity",
+      "finding": "Selected non-DTR IQ device ID is EF4021; IQ has fixed QE=1. This is not the IM/DTR policy.",
+      "basis": "manufacturer_fact",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.3.1 page 22; 6.1.9 page 16"
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "status": "confirmed",
+      "subject": "Compatible opcode path",
+      "finding": "In flash 4-byte mode, 6B/32/20/D8 carry four address bytes and match the nRF QSPI hardware opcode family; B7 enables that flash mode.",
+      "basis": "cross_document_comparison",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.3.5 page 25; 6.4.6 page 31"
+        },
+        {
+          "source": "N1",
+          "locator": "Instruction set; IFCONFIG0.ADDRMODE"
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "status": "confirmed",
+      "subject": "ADDRCONF can transmit EN4B",
+      "finding": "Controller ADDRCONF supports an address-mode instruction and optional WIPWAIT/WREN. Reset opcode B7 does not mean it is sent: reset MODE is NoInstr.",
+      "basis": "manufacturer_fact",
+      "evidence": [
+        {
+          "source": "N1",
+          "locator": "ADDRCONF OPCODE, MODE, WIPWAIT, WREN"
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "status": "contradicted",
+      "kind": "rejected_assumption",
+      "subject": "Setting controller 32-bit addressing alone qualifies all 128 MiB",
+      "finding": "Address-mode coherence and dual-die state handling remain separate requirements; a controller address-width setting is not evidence of either firmware correctness or hardware qualification.",
+      "basis": "cross_document_and_primary_code_analysis",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.1 page 13; 6.3.2-3 page 23"
+        },
+        {
+          "source": "N1",
+          "locator": "Configuring peripheral; ADDRCONF"
+        },
+        {
+          "source": "L1",
+          "locator": "winbond_nor_multi_die_ready; EF4021 part fixups"
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "status": "confirmed",
+      "subject": "Per-die state and command classes",
+      "finding": "BUSY/SUS are independent. SR1/SR2/SR3, UID and SFDP follow die context. Several addressless commands are common to both dies; concurrent SR writes require both idle.",
+      "basis": "manufacturer_fact",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "section 1 page 4; 6.1 page 13; 6.3.2-3 page 23"
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "status": "confirmed",
+      "subject": "C2 instruction existence and transport shape",
+      "finding": "Datasheet lists C2 plus a Die ID byte. Linux v6.17 emits C2 with one output byte, no address or dummy phase, and uses indices 0 and 1 for this two-die capacity; select_die adds no WREN.",
+      "basis": "manufacturer_opcode_plus_primary_code_behavior",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.3.3 page 23; note 12 page 26"
+        },
+        {
+          "source": "L1",
+          "locator": "WINBOND_NOR_SELDIE_OP lines 18-22; winbond_nor_select_die 81-102; multi_die_ready 104-118"
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "status": "open",
+      "subject": "Complete C2 and WEL semantics",
+      "finding": "Exact-part vendor rules for die selection during BUSY/SUS, selection persistence, inter-command timing, and WEL effects on both dies have not been obtained. Linux behavior is useful corroboration, not the missing complete specification.",
+      "remaining_action": "Obtain/read AN0000035 or equivalent complete written Winbond clarification and validate the pinned implementation.",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.1.2 page 14; 6.3 note 12 page 26"
+        },
+        {
+          "source": "W2",
+          "locator": "AN0000035 listing"
+        },
+        {
+          "source": "W3",
+          "locator": "retrieval returned HTML only"
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "status": "open",
+      "subject": "AN0000035 full text",
+      "finding": "Official catalog/search listing confirms title, v1.0, 2023-08-03 and contact-us access. Searches and official endpoint did not yield the full note in this audit; it was not read.",
+      "remaining_action": "Secure the exact applicable note; do not claim it is globally unavailable merely because retrieval failed.",
+      "evidence": [
+        {
+          "source": "W2",
+          "locator": "AN0000035 listing"
+        },
+        {
+          "source": "W3",
+          "locator": "download endpoint"
+        },
+        {
+          "source": "W4",
+          "locator": "Two Die Stack Operations FAQ"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "status": "confirmed",
+      "subject": "Linux independent ready polling",
+      "finding": "For EF4021, Linux installs a readiness callback that selects each die and polls SR, with n_dice derived as capacity divided by 64 MiB.",
+      "basis": "primary_code_behavior",
+      "evidence": [
+        {
+          "source": "L1",
+          "locator": "multi_die_ready 104-118; multi_die_post_sfdp_fixups 120-135; part entry 217-219"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "status": "open",
+      "subject": "Target SDK and dual-die policy",
+      "finding": "No target SDK/driver SHA is pinned in the project. Inspected Zephyr main polls one SR1 in qspi_wait_while_writing and lacks an explicit die loop/C2 implementation; nrfx busy_check also polls one status.",
+      "remaining_action": "Pin SDK/bootloader commits and implement/review explicit dual-die control under one lock before hardware qualification.",
+      "evidence": [
+        {
+          "source": "Z1",
+          "locator": "qspi_wait_while_writing 467-485; configure_chip 611-683; no die or 0xc2 text found"
+        },
+        {
+          "source": "N2",
+          "locator": "nrfx_qspi_mem_busy_check 643-669"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "status": "contradicted",
+      "kind": "rejected_assumption",
+      "subject": "Default Zephyr QE configuration is automatically correct for IQ",
+      "finding": "Binding default S1B6 is not IQ's fixed SR2.QE policy. Configuration must be explicit and must not write an unrelated status bit.",
+      "remaining_action": "Evaluate explicit NONE for automatic QE mutation, separately assert both SR2.QE values, and verify pinned driver behavior. Do not persistently write status as a workaround.",
+      "evidence": [
+        {
+          "source": "Z2",
+          "locator": "quad-enable-requirements lines 28-30"
+        },
+        {
+          "source": "Z1",
+          "locator": "QER options 152-172; configure_chip 611-665"
+        },
+        {
+          "source": "W1",
+          "locator": "6.1.9 page 16"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "status": "confirmed",
+      "subject": "C2 is transportable on nRF52840",
+      "finding": "Opcode plus one data byte fits normal single-line custom instruction. Long-frame mode also exists; transport capability does not implement dual-die state policy.",
+      "basis": "manufacturer_interface_capability",
+      "evidence": [
+        {
+          "source": "N1",
+          "locator": "Sending custom instructions; Long frame mode; CINSTRCONF.LENGTH"
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "status": "confirmed",
+      "subject": "Page and read alignment constraints",
+      "finding": "Selected datasheet has 256-byte pages and a 4-byte-aligned read-start note. DMA buffer constraints must also be satisfied in the chosen SDK.",
+      "basis": "manufacturer_fact_and_driver_requirement",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.3 note 3 page 26; 7.6 note 6 page 79"
+        },
+        {
+          "source": "N2",
+          "locator": "qspi_xfer DMA-accessible and word-aligned buffer checks 105-119"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "status": "open",
+      "subject": "Continuous read through die boundary",
+      "finding": "W1 describes sequential access to the entire memory, and no explicit 64 MiB read-termination mandate was found. Split reads may be a conservative first-driver policy, not a proven mandatory chip limit.",
+      "remaining_action": "Compare split and continuous reads through 04000000 with full-address patterns and native transfer limits; enable only qualified behavior.",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.4.8 page 32"
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "status": "confirmed",
+      "subject": "ADS versus ADP",
+      "finding": "ADS reports current address mode; nonvolatile ADP determines power-up/reset mode and defaults to zero. EN4B and controller configuration need a coherent initialization and warm-reset contract.",
+      "basis": "manufacturer_fact",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.1.10-11 page 17; 6.4.6-7 page 31"
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "status": "contradicted",
+      "kind": "rejected_assumption",
+      "subject": "Resetting the MCU proves that external Flash has returned to POR state",
+      "finding": "An MCU-only reset does not establish a Flash supply cycle or a Flash reset command. WSON8 IQ has no independent dedicated RESET line to provide that guarantee.",
+      "remaining_action": "Boot must discover BUSY/SUS/DPD/address mode and safely synchronize without destructive reset of an ongoing operation.",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "package/pin descriptions; 6.4.50 page 73"
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "status": "confirmed",
+      "subject": "Software-reset sequence and data risk",
+      "finding": "66 then 99, with no intervening command, resets volatile settings. Datasheet warns that resetting ongoing/suspended program or erase can corrupt data and calls for BUSY/SUS checks first.",
+      "basis": "manufacturer_fact",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.4.50 page 73"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "status": "confirmed",
+      "subject": "DPD is distinct from POR",
+      "finding": "B9 enters deep power-down; AB releases it after its timing requirement. Winbond's Serial NOR FAQ says status registers remain unchanged after AB. AB must not be treated as resetting ADS to its POR default.",
+      "basis": "manufacturer_fact_with_general_FAQ_scope",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.4.34-35 pages 58-59"
+        },
+        {
+          "source": "W4",
+          "locator": "Status Register values after Release Power-down ABh"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "status": "open",
+      "subject": "Complete two-die DPD and reset behavior",
+      "finding": "Exact selector/context behavior after DPD/wake, reset, mixed-busy broadcasts and incomplete POR remains unqualified for the target firmware.",
+      "remaining_action": "Resolve vendor semantics and run warm-reset, DPD and measured power-fault cases on both dies.",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.3 note 12 page 26; 6.4.34-35; 6.4.50; 7.3"
+        },
+        {
+          "source": "W3",
+          "locator": "full AN not obtained"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "status": "contradicted",
+      "kind": "rejected_assumption",
+      "subject": "QSPI READY after erase means durable data/session completion",
+      "finding": "Nordic documents erase READY as operation-start notification. Completion of both dies and application-level record commit must be handled separately; DMA completion is not a session durability guarantee.",
+      "evidence": [
+        {
+          "source": "N1",
+          "locator": "Erase operation; STATUS.SREG"
+        },
+        {
+          "source": "Z1",
+          "locator": "qspi_erase 554-608 includes a separate status wait"
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "status": "open",
+      "subject": "QSPI signal integrity and supported speed",
+      "finding": "nRF52840 offers up to 32 MHz, but neither this audit nor DRC qualifies A1 signal integrity, supply transients or timing margin. No operating clock is declared physically qualified.",
+      "remaining_action": "Run full-image CRC and electrical measurements across chosen clocks and supported supply/temperature conditions under acquisition/BLE load.",
+      "evidence": [
+        {
+          "source": "N1",
+          "locator": "QSPI main features; high-drive GPIO configuration"
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "status": "open",
+      "subject": "UID dummy-byte ambiguity in extracted text",
+      "finding": "The extracted instruction table and detailed UID description do not give an unambiguous matching dummy-field count. No vendor-document contradiction is asserted without checking the original rendered figure.",
+      "remaining_action": "Inspect original figure and applicable revision, obtain clarification if needed, and capture the actual UID transaction on the prototype.",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "6.3.2 page 23 versus 6.4.39 page 63"
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "status": "open",
+      "subject": "Recovery and journal correctness",
+      "finding": "Append-only blocks, CRC and separate commits are proposed architecture, not implemented or proven protection against interruption. Flash timeout means outcome uncertain until verified.",
+      "remaining_action": "Implement the memory layer and journal, define repeated-page-program rules, and run both-die power-cut tests through every data/metadata/erase phase.",
+      "evidence": []
+    },
+    {
+      "id": "C25",
+      "status": "open",
+      "subject": "Valid Flash voltage throughout write/erase and power-fail recovery",
+      "finding": "The selected part requires 2.7–3.6V operating VCC. Nominal 3.0V supply, MCU reset threshold or lower internal write-inhibit VWI do not prove that VCC stays valid through an ongoing operation.",
+      "remaining_action": "Qualify actual Flash-pin voltage, power-fail policy and interrupted-operation journal behavior together with the power audit.",
+      "evidence": [
+        {
+          "source": "W1",
+          "locator": "7.2 page 74; 7.3 page 75"
+        }
+      ]
+    }
+  ],
+  "datasheet_timing_reference": {
+    "source": "W1",
+    "locator": "7.3 page 75 and 7.6 page 79; recheck for actual supply lot revision before implementation",
+    "tvsl_min_us": 20,
+    "tpuw_max_ms": 5,
+    "tdp_max_us": 3,
+    "tres1_max_us": 3,
+    "tres2_max_us": 1.8,
+    "trst_reference_us": 30,
+    "page_program_max_ms": 3.5,
+    "erase_4k_max_ms": 400,
+    "erase_32k_max_ms": 1600,
+    "erase_64k_max_ms": 2000,
+    "chip_erase_max_s": 1000,
+    "measured_on_hardware": false
+  },
+  "proposed_architecture_not_implemented": {
+    "single_controller_owner": true,
+    "serialize_die_selection_and_operations": true,
+    "xip_during_acquisition": false,
+    "initial_automatic_dpd": false,
+    "initial_suspend_resume": false,
+    "explicit_both_die_status_policy_required": true,
+    "bounds_check": "offset <= capacity && length <= capacity - offset, before narrowing types",
+    "page_program_split_bytes": 256,
+    "split_reads_at_die_boundary": "conservative initial policy; not asserted mandatory by datasheet",
+    "nonvolatile_adp_programming_as_workaround": false,
+    "application_journal": "append-only, CRC32C, separate commit and redundant metadata; needs implementation and power-cut qualification"
+  },
+  "test_plan": {
+    "path": "docs/flash_firmware_test_plan_A1.md",
+    "status": "NOT_RUN",
+    "test_ids": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F19",
+      "F20"
+    ],
+    "boundary_bytes": [
+      16777216,
+      33554432,
+      67108864,
+      134217728
+    ],
+    "coverage": [
+      "full 128 MiB CRC and no aliasing",
+      "both-die erase and busy polling",
+      "page/read/DMA alignment",
+      "out-of-range rejection",
+      "MCU-only reset versus Flash POR",
+      "software reset",
+      "DPD/wake",
+      "power-cut journal recovery",
+      "signal-integrity and throughput qualification"
+    ],
+    "passed_test_count": 0,
+    "failed_test_count": 0,
+    "not_run_test_count": 20
+  },
+  "release_blockers": [
+    "Obtain AN0000035 or equivalent exact-part vendor clarification for all unresolved two-die control semantics.",
+    "Pin actual SDK, driver and bootloader revisions and review their code/configuration and applicable errata.",
+    "Implement coherent 4-byte addressing and explicit dual-die status/recovery policy without default QE misconfiguration.",
+    "Execute and record full 128 MiB boundary/CRC/erase/reset/DPD/power-cut/electrical qualification."
+  ],
+  "configuration_capacity_units": {
+    "status": "DOCUMENTED_BINDING_OPTIONS_NOT_TESTED_TARGET_DTS",
+    "api_capacity_bytes": 134217728,
+    "nordic_qspi_nor_binding": {
+      "size": {
+        "value": 1073741824,
+        "unit": "bits"
+      },
+      "size-in-bytes": {
+        "value": 134217728,
+        "unit": "bytes",
+        "only_if_pinned_sdk_supports_property": true
+      },
+      "choose_exactly_one": true,
+      "evidence": [
+        {
+          "source": "Z2",
+          "locator": "size and size-in-bytes lines19-26"
+        },
+        {
+          "source": "Z1",
+          "locator": "INST_0_BYTES and exclusivity assertion lines65-76"
+        }
+      ]
+    },
+    "jedec_spi_nor_transport": {
+      "size": {
+        "value": 1073741824,
+        "unit": "bits"
+      },
+      "do_not_assume_nordic_size_in_bytes_extension": true,
+      "evidence": [
+        {
+          "source": "Z4",
+          "locator": "size lines22-24"
+        }
+      ]
+    },
+    "pinned_target_sdk_and_configuration_not_yet_selected": true
+  }
+}

@@ -1,20 +1,20 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "board": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "board_sha256": "b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678",
+  "board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
   "board_unchanged_after_read": true,
   "native_kicad_version": "10.0.7",
   "status": "READ_ONLY_GEOMETRY_SURVEY_NO_IMPEDANCE_OR_USB_CERTIFICATION",
   "method": {
     "native_fill": "Stored filled In1.Cu GND SHAPE_POLY_SET, preserving antipad voids; no refill/edit in this audit",
-    "area": "Native TransformShapeToPolygon/BooleanAdd/BooleanIntersection/BooleanSubtract; actual trace widths and fixed 0.50mm survey bands",
+    "area": "Native TransformShapeToPolygon/BooleanAdd/BooleanIntersection/BooleanSubtract; actual trace widths and fixed0.50mm survey bands",
     "poly_error_mm": 0.001,
     "centerline": "Native Contains at segment midpoints; missing intervals joined through same-net through-via endpoints",
     "centerline_max_step_mm": 0.01,
     "sampling_uncertainty_per_run_boundary_mm": 0.01,
     "gap_component_metric": "Sum of absent-GND trace lengths connected at track/via endpoints; branches can overestimate one path. Component bboxes are XY extents, not field-solver results.",
-    "band_limitation": "0.50mm survey width is a repeatable geometric probe, not a derived return-current requirement.",
-    "own_via_probe": "0.42mm radius around each target-net 0.50mm via: nominal0.25mm copper radius +0.15mm plane clearance +0.02mm geometric margin. Small residual edge slivers are listed separately."
+    "band_limitation": "0.50mm survey width is a geometric probe, not a derived return-current requirement.",
+    "own_via_probe": "0.42mm radius around each target-net0.50mm via: nominal0.25mm copper radius+0.15mm plane clearance+0.02mm margin; residual edge slivers listed separately."
   },
   "stackup": {
     "order": [
@@ -25,13 +25,13 @@
     ],
     "board_nominal_thickness_mm": 1.0,
     "explicit_dielectric_stackup_in_pcb": false,
-    "consequence": "No verified dielectric separations, Er or 90ohm differential impedance. B.Cu is adjacent to mixed In2, not directly to In1 ground."
+    "consequence": "No verified dielectric separations,Er or90ohm differential impedance. B.Cu is adjacent to mixed In2, not directly to In1 ground."
   },
   "ground_fill": {
     "outline_count": 1,
-    "area_mm2": 1355.1702364265534,
-    "warning": "Stored fractured polygons can encode holes as cutouts; OutlineCount is not proof that return paths are electrically adequate.",
-    "gnd_pad_count": 60,
+    "area_mm2": 1352.639245578828,
+    "warning": "Stored fractured polygons can encode holes as cutouts; outline count does not prove adequate return paths.",
+    "gnd_pad_count": 59,
     "all_gnd_pads_in_one_native_component": true
   },
   "groups": {
@@ -63,20 +63,20 @@
   },
   "nets": {
     "USB_DP": {
-      "track_count": 19,
-      "trace_length_mm": 35.67003099233325,
+      "track_count": 23,
+      "trace_length_mm": 31.231504885042447,
       "trace_length_by_layer_mm": {
-        "F.Cu": 2.7160533905932738,
-        "In2.Cu": 32.95397760173998
+        "F.Cu": 1.4758028890321493,
+        "In2.Cu": 29.7557019960103
       },
       "trace_width_segment_counts_mm": {
-        "0.150": 19
+        "0.150": 23
       },
       "via_count": 2,
-      "native_projection_area_mm2": 5.364512989451,
-      "native_projection_over_gnd_mm2": 5.1225664708795,
-      "native_projection_without_gnd_mm2": 0.2419465856385,
-      "native_projection_gnd_coverage_pct": 95.48986983446078,
+      "native_projection_area_mm2": 4.6995643868725,
+      "native_projection_over_gnd_mm2": 4.4541130737,
+      "native_projection_without_gnd_mm2": 0.2454513802395,
+      "native_projection_gnd_coverage_pct": 94.77714756163083,
       "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0001552715565,
       "projection_without_gnd_outside_own_via_probe_components": [
         {
@@ -101,10 +101,10 @@
       "missing_centerline_max_distance_to_own_via_mm": 0.40215046935195786,
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 17.9956385566475,
-      "native_survey_band_over_gnd_mm2": 17.081845609205,
-      "native_survey_band_gnd_coverage_pct": 94.92214213701826,
-      "estimated_centerline_without_gnd_total_mm": 1.6238565310542534,
+      "native_survey_band_area_mm2": 15.7855254864785,
+      "native_survey_band_over_gnd_mm2": 14.746671341938,
+      "native_survey_band_gnd_coverage_pct": 93.41894480845534,
+      "estimated_centerline_without_gnd_total_mm": 1.6461714872477748,
       "max_missing_component_trace_length_sum_mm": 0.8254608091291198,
       "centerline_missing_components": [
         {
@@ -139,21 +139,21 @@
           ]
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.7983957219251338,
+          "estimated_missing_trace_length_sum_mm": 0.8207106781186548,
           "bbox_mm": [
-            78.401604,
-            92.85,
-            78.8,
-            93.25
+            72.8,
+            91.35,
+            72.85,
+            92.15
           ],
-          "bbox_diagonal_mm": 0.5645523649901729,
+          "bbox_diagonal_mm": 0.8015609770940811,
           "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
               "net": "USB_DP",
               "xy_mm": [
-                78.8,
-                93.25
+                72.8,
+                91.75
               ],
               "diameter_mm": 0.5,
               "distance_to_gap_bbox_mm": 0.0
@@ -172,12 +172,12 @@
           ]
         },
         {
-          "area_mm2": 0.1187024987995,
+          "area_mm2": 0.1222072934005,
           "bbox_mm": [
-            78.3995,
-            92.8495,
-            78.875,
-            93.325
+            72.725,
+            91.3495,
+            72.925,
+            92.1505
           ]
         }
       ],
@@ -196,17 +196,17 @@
           "estimated_length_mm": 0.3535533905932738
         },
         {
-          "track_uuid": "6e3bef1e-94ae-4d17-8ef0-e7fed56e41f8",
+          "track_uuid": "36521f3c-5da8-4589-9a31-97332a2a1bdc",
           "layer": "F.Cu",
           "start_mm": [
-            78.8,
-            93.25
+            72.8,
+            91.75
           ],
           "end_mm": [
-            78.401604,
-            93.25
+            72.8,
+            92.15
           ],
-          "estimated_length_mm": 0.39839572192513373
+          "estimated_length_mm": 0.4
         },
         {
           "track_uuid": "d0e69835-3aee-47a7-a57c-8b59c859db97",
@@ -235,17 +235,30 @@
           "estimated_length_mm": 0.12335380711190069
         },
         {
-          "track_uuid": "cd419864-0acc-4308-9c19-64efce56cfbd",
+          "track_uuid": "7d98b71e-8655-40fc-ad0a-aab59e01592a",
           "layer": "In2.Cu",
           "start_mm": [
-            78.8,
-            92.85
+            72.85,
+            91.35
           ],
           "end_mm": [
-            78.8,
-            93.25
+            72.85,
+            91.7
           ],
-          "estimated_length_mm": 0.4
+          "estimated_length_mm": 0.35000000000000003
+        },
+        {
+          "track_uuid": "ba16bbf7-3a3e-4782-8b50-c64315430187",
+          "layer": "In2.Cu",
+          "start_mm": [
+            72.85,
+            91.7
+          ],
+          "end_mm": [
+            72.8,
+            91.75
+          ],
+          "estimated_length_mm": 0.07071067811865477
         },
         {
           "track_uuid": "f1afa352-5247-47d3-9ede-5b330ae22780",
@@ -263,29 +276,29 @@
       ]
     },
     "USB_DN": {
-      "track_count": 17,
-      "trace_length_mm": 36.136257318348406,
+      "track_count": 32,
+      "trace_length_mm": 32.957220528161045,
       "trace_length_by_layer_mm": {
-        "F.Cu": 2.324632034355964,
-        "In2.Cu": 33.81162528399244
+        "F.Cu": 8.009556274847712,
+        "In2.Cu": 24.947664253313334
       },
       "trace_width_segment_counts_mm": {
-        "0.150": 17
+        "0.150": 32
       },
       "via_count": 2,
-      "native_projection_area_mm2": 5.435729639991,
-      "native_projection_over_gnd_mm2": 5.1899888545815,
-      "native_projection_without_gnd_mm2": 0.245740949861,
-      "native_projection_gnd_coverage_pct": 95.47915732229266,
+      "native_projection_area_mm2": 4.9583229921725,
+      "native_projection_over_gnd_mm2": 4.711400509068,
+      "native_projection_without_gnd_mm2": 0.246922647556,
+      "native_projection_gnd_coverage_pct": 95.02004037465275,
       "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
       "projection_without_gnd_outside_own_via_probe_components": [],
       "missing_centerline_max_distance_to_own_via_mm": 0.40178426166414233,
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 18.2360390988085,
-      "native_survey_band_over_gnd_mm2": 17.4514268316405,
-      "native_survey_band_gnd_coverage_pct": 95.69746334213954,
-      "estimated_centerline_without_gnd_total_mm": 1.6525558161513667,
+      "native_survey_band_area_mm2": 16.6397249690695,
+      "native_survey_band_over_gnd_mm2": 15.745387320052,
+      "native_survey_band_gnd_coverage_pct": 94.62528587053015,
+      "estimated_centerline_without_gnd_total_mm": 1.6564134339433862,
       "max_missing_component_trace_length_sum_mm": 0.8564134339433862,
       "centerline_missing_components": [
         {
@@ -311,21 +324,21 @@
           ]
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.7961423822079805,
+          "estimated_missing_trace_length_sum_mm": 0.7999999999999998,
           "bbox_mm": [
-            77.752459,
-            94.751399,
-            78.15,
-            95.15
+            73.25,
+            87.75,
+            73.25,
+            88.55
           ],
-          "bbox_diagonal_mm": 0.5629579059592312,
+          "bbox_diagonal_mm": 0.7999999999999972,
           "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
               "net": "USB_DN",
               "xy_mm": [
-                78.15,
-                95.15
+                73.25,
+                88.15
               ],
               "diameter_mm": 0.5,
               "distance_to_gap_bbox_mm": 0.0
@@ -344,28 +357,28 @@
           ]
         },
         {
-          "area_mm2": 0.1187024563625,
+          "area_mm2": 0.1198841540575,
           "bbox_mm": [
-            77.7495,
-            94.7495,
-            78.225,
-            95.225
+            73.175,
+            87.7495,
+            73.325,
+            88.5505
           ]
         }
       ],
       "centerline_missing_runs": [
         {
-          "track_uuid": "3b1d86ce-988f-405b-9ceb-5ce10bb22d7c",
+          "track_uuid": "36bc79b8-7abc-4fc5-b953-1f38f4fe47c6",
           "layer": "F.Cu",
           "start_mm": [
-            78.15,
-            95.15
+            73.25,
+            88.15
           ],
           "end_mm": [
-            77.752459,
-            95.15
+            73.25,
+            88.55
           ],
-          "estimated_length_mm": 0.3975409836065574
+          "estimated_length_mm": 0.4
         },
         {
           "track_uuid": "950d6ba2-629b-4150-82b2-dda910a939e7",
@@ -394,19 +407,6 @@
           "estimated_length_mm": 0.22
         },
         {
-          "track_uuid": "020b5308-dcf9-4f77-9b66-8428703c5d98",
-          "layer": "In2.Cu",
-          "start_mm": [
-            78.15,
-            94.751399
-          ],
-          "end_mm": [
-            78.15,
-            95.15
-          ],
-          "estimated_length_mm": 0.39860139860142313
-        },
-        {
           "track_uuid": "7fffbe26-72fd-4153-9ef4-94f0a38e971b",
           "layer": "In2.Cu",
           "start_mm": [
@@ -431,79 +431,64 @@
             65.349999
           ],
           "estimated_length_mm": 0.07070997101540913
+        },
+        {
+          "track_uuid": "e435db15-319b-4ae8-b581-550423560b2b",
+          "layer": "In2.Cu",
+          "start_mm": [
+            73.25,
+            87.75
+          ],
+          "end_mm": [
+            73.25,
+            88.15
+          ],
+          "estimated_length_mm": 0.3999999999999999
         }
       ]
     },
     "USB_DP_CONN": {
-      "track_count": 63,
-      "trace_length_mm": 18.717067288000823,
+      "track_count": 45,
+      "trace_length_mm": 12.996637802864843,
       "trace_length_by_layer_mm": {
-        "F.Cu": 18.717067288000823
+        "F.Cu": 7.803134918610404,
+        "In2.Cu": 5.19350288425444
       },
       "trace_width_segment_counts_mm": {
-        "0.150": 63
-      },
-      "via_count": 0,
-      "native_projection_area_mm2": 2.777446907234,
-      "native_projection_over_gnd_mm2": 2.7774466371995,
-      "native_projection_without_gnd_mm2": 0.0,
-      "native_projection_gnd_coverage_pct": 99.99999027759995,
-      "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
-      "projection_without_gnd_outside_own_via_probe_components": [],
-      "missing_centerline_max_distance_to_own_via_mm": 0,
-      "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
-      "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 9.1496672006175,
-      "native_survey_band_over_gnd_mm2": 9.032422460812,
-      "native_survey_band_gnd_coverage_pct": 98.71859011661553,
-      "estimated_centerline_without_gnd_total_mm": 0,
-      "max_missing_component_trace_length_sum_mm": 0,
-      "centerline_missing_components": [],
-      "projection_missing_area_components": [],
-      "centerline_missing_runs": []
-    },
-    "USB_DN_CONN": {
-      "track_count": 31,
-      "trace_length_mm": 20.56303390593274,
-      "trace_length_by_layer_mm": {
-        "F.Cu": 11.741713562373096,
-        "In2.Cu": 8.821320343559645
-      },
-      "trace_width_segment_counts_mm": {
-        "0.150": 31
+        "0.150": 45
       },
       "via_count": 2,
-      "native_projection_area_mm2": 2.99530324307,
-      "native_projection_over_gnd_mm2": 2.7468779940935,
-      "native_projection_without_gnd_mm2": 0.2484252489765,
-      "native_projection_gnd_coverage_pct": 91.70617367202263,
+      "native_projection_area_mm2": 1.8910989863065,
+      "native_projection_over_gnd_mm2": 1.58849213994,
+      "native_projection_without_gnd_mm2": 0.3026069962425,
+      "native_projection_gnd_coverage_pct": 83.99836028903381,
       "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
       "projection_without_gnd_outside_own_via_probe_components": [],
-      "missing_centerline_max_distance_to_own_via_mm": 0.4012144888934097,
+      "missing_centerline_max_distance_to_own_via_mm": 0.39877938763180826,
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 9.7507447491345,
-      "native_survey_band_over_gnd_mm2": 8.92275948756,
-      "native_survey_band_gnd_coverage_pct": 91.50849209084267,
-      "estimated_centerline_without_gnd_total_mm": 1.6718647230165509,
-      "max_missing_component_trace_length_sum_mm": 0.8390220105419317,
+      "native_survey_band_area_mm2": 6.071356933825,
+      "native_survey_band_over_gnd_mm2": 5.0734755178845,
+      "native_survey_band_gnd_coverage_pct": 83.56411216113715,
+      "estimated_centerline_without_gnd_total_mm": 2.232842712474619,
+      "max_missing_component_trace_length_sum_mm": 1.4328427124746188,
       "centerline_missing_components": [
         {
-          "estimated_missing_trace_length_sum_mm": 0.8390220105419317,
+          "estimated_missing_trace_length_sum_mm": 1.4328427124746188,
           "bbox_mm": [
-            69.130986,
-            94.030986,
-            69.3,
-            94.8
+            64.9,
+            95.7,
+            65.55,
+            96.1
           ],
-          "bbox_diagonal_mm": 0.7873679345718869,
+          "bbox_diagonal_mm": 0.7632168761236757,
           "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
-              "net": "USB_DN_CONN",
+              "net": "USB_DP_CONN",
               "xy_mm": [
-                69.3,
-                94.4
+                65.25,
+                96.1
               ],
               "diameter_mm": 0.5,
               "distance_to_gap_bbox_mm": 0.0
@@ -511,21 +496,21 @@
           ]
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.8328427124746189,
+          "estimated_missing_trace_length_sum_mm": 0.8,
           "bbox_mm": [
-            62.4,
-            93.4,
-            62.75,
-            94.0
+            67.2,
+            92.7,
+            68.0,
+            92.7
           ],
-          "bbox_diagonal_mm": 0.694622199472486,
+          "bbox_diagonal_mm": 0.7999999999999972,
           "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
-              "net": "USB_DN_CONN",
+              "net": "USB_DP_CONN",
               "xy_mm": [
-                62.4,
-                93.8
+                67.6,
+                92.7
               ],
               "diameter_mm": 0.5,
               "distance_to_gap_bbox_mm": 0.0
@@ -535,102 +520,339 @@
       ],
       "projection_missing_area_components": [
         {
-          "area_mm2": 0.124539401092,
+          "area_mm2": 0.182722816931,
           "bbox_mm": [
-            69.066364,
-            94.008313,
-            69.375,
-            94.8005
+            64.870343,
+            95.6995,
+            65.625,
+            96.175
           ]
         },
         {
-          "area_mm2": 0.1238858478845,
+          "area_mm2": 0.1198841793115,
           "bbox_mm": [
-            62.325,
-            93.3995,
-            62.781135,
-            94.075
+            67.1995,
+            92.625,
+            68.0005,
+            92.775
           ]
         }
       ],
       "centerline_missing_runs": [
         {
-          "track_uuid": "22d8742f-59d5-41f7-8aa2-41aacf453054",
+          "track_uuid": "186aae3f-e7a6-49a6-9884-23c9d1bcd1fd",
           "layer": "F.Cu",
           "start_mm": [
-            69.3,
-            94.4
+            65.55,
+            95.95
           ],
           "end_mm": [
-            69.3,
-            94.8
+            65.0,
+            95.95
+          ],
+          "estimated_length_mm": 0.55
+        },
+        {
+          "track_uuid": "3fb87938-eded-466c-a25c-2110df4a7251",
+          "layer": "F.Cu",
+          "start_mm": [
+            65.4,
+            96.1
+          ],
+          "end_mm": [
+            65.55,
+            95.95
+          ],
+          "estimated_length_mm": 0.21213203435596428
+        },
+        {
+          "track_uuid": "724a68cd-c38d-479a-91c0-4fa2cdc13e38",
+          "layer": "F.Cu",
+          "start_mm": [
+            65.0,
+            95.95
+          ],
+          "end_mm": [
+            64.95,
+            95.9
+          ],
+          "estimated_length_mm": 0.07071067811865477
+        },
+        {
+          "track_uuid": "7f6483de-f9e3-4773-b969-550457318349",
+          "layer": "F.Cu",
+          "start_mm": [
+            68.0,
+            92.7
+          ],
+          "end_mm": [
+            67.6,
+            92.7
           ],
           "estimated_length_mm": 0.4
         },
         {
-          "track_uuid": "66975c64-5c77-4aaf-9095-9822c05ac1c2",
+          "track_uuid": "8fa3d6f2-fe02-4512-bcdc-2244a362f8fc",
           "layer": "F.Cu",
           "start_mm": [
-            62.75,
-            94.0
+            65.25,
+            96.1
           ],
           "end_mm": [
-            62.6,
-            94.0
+            65.4,
+            96.1
           ],
           "estimated_length_mm": 0.15
         },
         {
-          "track_uuid": "a18f9d92-7f1a-4977-959d-f8ffee70643e",
+          "track_uuid": "d216927e-5a69-48a3-9b24-b6774cb12001",
           "layer": "F.Cu",
           "start_mm": [
-            62.6,
-            94.0
+            64.95,
+            95.9
           ],
           "end_mm": [
-            62.4,
-            93.8
+            64.9,
+            95.9
           ],
-          "estimated_length_mm": 0.28284271247461906
+          "estimated_length_mm": 0.05
         },
         {
-          "track_uuid": "397802cd-05fe-476e-8bc8-2eb1ee64ba34",
+          "track_uuid": "0fff0a63-92ab-46c3-8294-d053eb2b2128",
           "layer": "In2.Cu",
           "start_mm": [
-            69.3,
-            94.2
+            67.6,
+            92.7
           ],
           "end_mm": [
-            69.3,
-            94.4
-          ],
-          "estimated_length_mm": 0.2
-        },
-        {
-          "track_uuid": "a1a451e9-0a91-40ac-854d-45188527835e",
-          "layer": "In2.Cu",
-          "start_mm": [
-            62.4,
-            93.8
-          ],
-          "end_mm": [
-            62.4,
-            93.4
+            67.2,
+            92.7
           ],
           "estimated_length_mm": 0.4
         },
         {
-          "track_uuid": "bb9ba22a-55ab-4061-a4cc-e78609aa6103",
+          "track_uuid": "1fff1f2c-9588-43de-905c-e71cdc37947c",
           "layer": "In2.Cu",
           "start_mm": [
-            69.130986,
-            94.030986
+            65.25,
+            95.7
           ],
           "end_mm": [
-            69.3,
-            94.2
+            65.25,
+            96.1
           ],
-          "estimated_length_mm": 0.23902201054193162
+          "estimated_length_mm": 0.4
+        }
+      ]
+    },
+    "USB_DN_CONN": {
+      "track_count": 48,
+      "trace_length_mm": 15.552121202458748,
+      "trace_length_by_layer_mm": {
+        "F.Cu": 7.423084412271569,
+        "In2.Cu": 8.129036790187179
+      },
+      "trace_width_segment_counts_mm": {
+        "0.150": 48
+      },
+      "via_count": 2,
+      "native_projection_area_mm2": 2.0074441603375,
+      "native_projection_over_gnd_mm2": 1.8024474856945,
+      "native_projection_without_gnd_mm2": 0.204996674643,
+      "native_projection_gnd_coverage_pct": 89.78817549731818,
+      "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
+      "projection_without_gnd_outside_own_via_probe_components": [],
+      "missing_centerline_max_distance_to_own_via_mm": 0.3981519810323691,
+      "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
+      "survey_band_width_mm": 0.5,
+      "native_survey_band_area_mm2": 6.6352741483665,
+      "native_survey_band_over_gnd_mm2": 5.7621837927125,
+      "native_survey_band_gnd_coverage_pct": 86.84168376269817,
+      "estimated_centerline_without_gnd_total_mm": 1.6489460484199612,
+      "max_missing_component_trace_length_sum_mm": 0.8521320343559645,
+      "centerline_missing_components": [
+        {
+          "estimated_missing_trace_length_sum_mm": 0.8521320343559645,
+          "bbox_mm": [
+            62.5,
+            93.85,
+            62.9,
+            93.95
+          ],
+          "bbox_diagonal_mm": 0.41231056256176674,
+          "max_graph_degree": 2,
+          "nearby_non_ground_through_vias": [
+            {
+              "net": "USB_DN_CONN",
+              "xy_mm": [
+                62.5,
+                93.85
+              ],
+              "diameter_mm": 0.5,
+              "distance_to_gap_bbox_mm": 0.0
+            }
+          ]
+        },
+        {
+          "estimated_missing_trace_length_sum_mm": 0.7968140140639965,
+          "bbox_mm": [
+            68.618447,
+            92.918447,
+            69.181879,
+            93.481879
+          ],
+          "bbox_diagonal_mm": 0.796813175874996,
+          "max_graph_degree": 2,
+          "nearby_non_ground_through_vias": [
+            {
+              "net": "USB_DN_CONN",
+              "xy_mm": [
+                68.9,
+                93.2
+              ],
+              "diameter_mm": 0.5,
+              "distance_to_gap_bbox_mm": 0.0
+            }
+          ]
+        }
+      ],
+      "projection_missing_area_components": [
+        {
+          "area_mm2": 0.1198843144125,
+          "bbox_mm": [
+            68.56799,
+            92.86799,
+            69.232009,
+            93.532009
+          ]
+        },
+        {
+          "area_mm2": 0.0851123602305,
+          "bbox_mm": [
+            62.425,
+            93.775,
+            62.9005,
+            94.025
+          ]
+        }
+      ],
+      "centerline_missing_runs": [
+        {
+          "track_uuid": "545e2d1e-8d68-4ff4-a803-d063c59f8b43",
+          "layer": "F.Cu",
+          "start_mm": [
+            62.7,
+            93.85
+          ],
+          "end_mm": [
+            62.75,
+            93.9
+          ],
+          "estimated_length_mm": 0.07071067811865477
+        },
+        {
+          "track_uuid": "570f86da-b35e-4ba3-a6c5-2bf3bbec39ca",
+          "layer": "F.Cu",
+          "start_mm": [
+            69.181879,
+            93.481879
+          ],
+          "end_mm": [
+            68.9,
+            93.2
+          ],
+          "estimated_length_mm": 0.3986373799977852
+        },
+        {
+          "track_uuid": "62f5f0da-7abf-4368-80c9-943217789122",
+          "layer": "F.Cu",
+          "start_mm": [
+            62.8,
+            93.9
+          ],
+          "end_mm": [
+            62.85,
+            93.95
+          ],
+          "estimated_length_mm": 0.07071067811865477
+        },
+        {
+          "track_uuid": "8ff9807a-fd54-44e8-ab0f-1ce21137142b",
+          "layer": "F.Cu",
+          "start_mm": [
+            62.5,
+            93.85
+          ],
+          "end_mm": [
+            62.7,
+            93.85
+          ],
+          "estimated_length_mm": 0.2
+        },
+        {
+          "track_uuid": "b8751a38-2cec-4827-8cab-efa61f2cf9cb",
+          "layer": "F.Cu",
+          "start_mm": [
+            62.85,
+            93.95
+          ],
+          "end_mm": [
+            62.89,
+            93.95
+          ],
+          "estimated_length_mm": 0.039999999999999994
+        },
+        {
+          "track_uuid": "c55c0ed0-ba6c-4aee-89e5-4cf730c898b9",
+          "layer": "F.Cu",
+          "start_mm": [
+            62.75,
+            93.9
+          ],
+          "end_mm": [
+            62.8,
+            93.9
+          ],
+          "estimated_length_mm": 0.05
+        },
+        {
+          "track_uuid": "15e3cb53-2af2-418a-a906-2b49467dc337",
+          "layer": "In2.Cu",
+          "start_mm": [
+            68.9,
+            93.2
+          ],
+          "end_mm": [
+            68.618447,
+            92.918447
+          ],
+          "estimated_length_mm": 0.3981766340662113
+        },
+        {
+          "track_uuid": "88693eea-fd41-44e7-9e9f-7b3a0cd8607d",
+          "layer": "In2.Cu",
+          "start_mm": [
+            62.9,
+            93.9
+          ],
+          "end_mm": [
+            62.55,
+            93.9
+          ],
+          "estimated_length_mm": 0.35000000000000003
+        },
+        {
+          "track_uuid": "c05621e3-6211-4b3a-8627-ee3aed0e553b",
+          "layer": "In2.Cu",
+          "start_mm": [
+            62.55,
+            93.9
+          ],
+          "end_mm": [
+            62.5,
+            93.85
+          ],
+          "estimated_length_mm": 0.07071067811865477
         }
       ]
     },
@@ -808,62 +1030,40 @@
     },
     "IMU_MOSI": {
       "track_count": 9,
-      "trace_length_mm": 17.766031726798843,
+      "trace_length_mm": 17.907453083036152,
       "trace_length_by_layer_mm": {
         "F.Cu": 1.9375,
-        "B.Cu": 15.828531726798843
+        "B.Cu": 15.969953083036152
       },
       "trace_width_segment_counts_mm": {
         "0.150": 9
       },
       "via_count": 2,
-      "native_projection_area_mm2": 2.702457511905,
+      "native_projection_area_mm2": 2.703022991152,
       "native_projection_over_gnd_mm2": 2.4634720030725,
-      "native_projection_without_gnd_mm2": 0.2389862499565,
-      "native_projection_gnd_coverage_pct": 91.15673390683445,
+      "native_projection_without_gnd_mm2": 0.2395517261705,
+      "native_projection_gnd_coverage_pct": 91.13766368752172,
       "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
       "projection_without_gnd_outside_own_via_probe_components": [],
-      "missing_centerline_max_distance_to_own_via_mm": 0.39530097495452754,
+      "missing_centerline_max_distance_to_own_via_mm": 0.395,
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 9.1402545079405,
-      "native_survey_band_over_gnd_mm2": 8.331571566801,
-      "native_survey_band_gnd_coverage_pct": 91.1525117770302,
-      "estimated_centerline_without_gnd_total_mm": 1.4570780541555446,
-      "max_missing_component_trace_length_sum_mm": 0.4,
+      "native_survey_band_area_mm2": 9.140337463052,
+      "native_survey_band_over_gnd_mm2": 8.3315760095265,
+      "native_survey_band_gnd_coverage_pct": 91.15173310838077,
+      "estimated_centerline_without_gnd_total_mm": 1.596992641760953,
+      "max_missing_component_trace_length_sum_mm": 0.798622624191067,
       "centerline_missing_components": [
         {
-          "estimated_missing_trace_length_sum_mm": 0.4,
-          "bbox_mm": [
-            66.9,
-            63.95,
-            67.3,
-            63.95
-          ],
-          "bbox_diagonal_mm": 0.3999999999999915,
-          "max_graph_degree": 1,
-          "nearby_non_ground_through_vias": [
-            {
-              "net": "IMU_MOSI",
-              "xy_mm": [
-                66.9,
-                63.95
-              ],
-              "diameter_mm": 0.5,
-              "distance_to_gap_bbox_mm": 0.0
-            }
-          ]
-        },
-        {
-          "estimated_missing_trace_length_sum_mm": 0.3990825688073394,
+          "estimated_missing_trace_length_sum_mm": 0.798622624191067,
           "bbox_mm": [
             55.3,
-            74.5,
-            55.3,
+            74.217483,
+            55.582517,
             74.899083
           ],
-          "bbox_diagonal_mm": 0.3990830000000045,
-          "max_graph_degree": 1,
+          "bbox_diagonal_mm": 0.7378308852908012,
+          "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
               "net": "IMU_MOSI",
@@ -877,37 +1077,15 @@
           ]
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.3295836691971196,
+          "estimated_missing_trace_length_sum_mm": 0.7983700175698859,
           "bbox_mm": [
-            55.35,
-            74.216949,
-            55.583051,
-            74.45
+            66.61831,
+            63.95,
+            67.3,
+            64.23169
           ],
-          "bbox_diagonal_mm": 0.3295838849246117,
-          "max_graph_degree": 1,
-          "nearby_non_ground_through_vias": [
-            {
-              "net": "IMU_MOSI",
-              "xy_mm": [
-                55.3,
-                74.5
-              ],
-              "diameter_mm": 0.5,
-              "distance_to_gap_bbox_mm": 0.07071067811865575
-            }
-          ]
-        },
-        {
-          "estimated_missing_trace_length_sum_mm": 0.32841181615108545,
-          "bbox_mm": [
-            66.617778,
-            64.0,
-            66.85,
-            64.232222
-          ],
-          "bbox_diagonal_mm": 0.32841150188139506,
-          "max_graph_degree": 1,
+          "bbox_diagonal_mm": 0.7375977983969333,
+          "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
               "net": "IMU_MOSI",
@@ -916,14 +1094,14 @@
                 63.95
               ],
               "diameter_mm": 0.5,
-              "distance_to_gap_bbox_mm": 0.07071067811866077
+              "distance_to_gap_bbox_mm": 0.0
             }
           ]
         }
       ],
       "projection_missing_area_components": [
         {
-          "area_mm2": 0.1194931297535,
+          "area_mm2": 0.1197758713515,
           "bbox_mm": [
             66.56799,
             63.875,
@@ -932,7 +1110,7 @@
           ]
         },
         {
-          "area_mm2": 0.119493120203,
+          "area_mm2": 0.119775854819,
           "bbox_mm": [
             55.225,
             74.16799,
@@ -972,58 +1150,58 @@
           "track_uuid": "0eab6590-e5ec-44aa-b038-47a9a57791a0",
           "layer": "B.Cu",
           "start_mm": [
-            66.85,
-            64.0
+            66.9,
+            63.95
           ],
           "end_mm": [
-            66.617778,
-            64.232222
+            66.61831,
+            64.23169
           ],
-          "estimated_length_mm": 0.32841181615108545
+          "estimated_length_mm": 0.39837001756988594
         },
         {
           "track_uuid": "dc9012e1-065d-4365-a8f7-4073bd5b937b",
           "layer": "B.Cu",
           "start_mm": [
-            55.583051,
-            74.216949
+            55.582517,
+            74.217483
           ],
           "end_mm": [
-            55.35,
-            74.45
+            55.3,
+            74.5
           ],
-          "estimated_length_mm": 0.3295836691971196
+          "estimated_length_mm": 0.39954005538372755
         }
       ],
-      "b_cu_adjacent_in2_power_projection_coverage_pct": 91.13006052348256,
+      "b_cu_adjacent_in2_power_projection_coverage_pct": 90.3287877192419,
       "b_cu_adjacent_in2_power_missing_centerline_components": [
         {
-          "estimated_missing_trace_length_sum_mm": 0.6391925705641108,
+          "estimated_missing_trace_length_sum_mm": 0.6392640886139641,
           "bbox_mm": [
-            57.624011,
-            71.724011,
-            58.075989,
-            72.175989
+            57.623706,
+            71.724266,
+            58.075734,
+            72.176294
           ],
           "max_graph_degree": 1
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.3295836691971197,
+          "estimated_missing_trace_length_sum_mm": 0.3995400553837276,
           "bbox_mm": [
-            55.35,
-            74.216949,
-            55.583051,
-            74.45
+            55.3,
+            74.217483,
+            55.582517,
+            74.5
           ],
           "max_graph_degree": 1
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.32841181615108545,
+          "estimated_missing_trace_length_sum_mm": 0.39837001756988594,
           "bbox_mm": [
-            66.617778,
-            64.0,
-            66.85,
-            64.232222
+            66.61831,
+            63.95,
+            66.9,
+            64.23169
           ],
           "max_graph_degree": 1
         }
@@ -1223,28 +1401,28 @@
     },
     "IMU_CS_N": {
       "track_count": 19,
-      "trace_length_mm": 18.12450923281626,
+      "trace_length_mm": 18.195219910934913,
       "trace_length_by_layer_mm": {
         "F.Cu": 6.871460905611318,
-        "B.Cu": 11.253048327204938
+        "B.Cu": 11.323759005323595
       },
       "trace_width_segment_counts_mm": {
         "0.150": 19
       },
       "via_count": 2,
-      "native_projection_area_mm2": 2.755257749369,
+      "native_projection_area_mm2": 2.7555404764925,
       "native_projection_over_gnd_mm2": 2.512728596552,
-      "native_projection_without_gnd_mm2": 0.2425287966195,
-      "native_projection_gnd_coverage_pct": 91.19758748986213,
+      "native_projection_without_gnd_mm2": 0.2428115382175,
+      "native_projection_gnd_coverage_pct": 91.1882303304224,
       "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
       "projection_without_gnd_outside_own_via_probe_components": [],
-      "missing_centerline_max_distance_to_own_via_mm": 0.3956941263248673,
+      "missing_centerline_max_distance_to_own_via_mm": 0.395,
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 9.308365585409,
-      "native_survey_band_over_gnd_mm2": 8.3529993077255,
-      "native_survey_band_gnd_coverage_pct": 89.73647662505812,
-      "estimated_centerline_without_gnd_total_mm": 1.546475314704192,
+      "native_survey_band_area_mm2": 9.308402135252,
+      "native_survey_band_over_gnd_mm2": 8.3529988793265,
+      "native_survey_band_gnd_coverage_pct": 89.73611966862416,
+      "estimated_centerline_without_gnd_total_mm": 1.6159419152715437,
       "max_missing_component_trace_length_sum_mm": 0.8164921501504698,
       "centerline_missing_components": [
         {
@@ -1270,15 +1448,15 @@
           ]
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.4,
+          "estimated_missing_trace_length_sum_mm": 0.799449765121074,
           "bbox_mm": [
-            66.9,
+            66.617546,
             63.15,
             67.3,
-            63.15
+            63.432454
           ],
-          "bbox_diagonal_mm": 0.3999999999999915,
-          "max_graph_degree": 1,
+          "bbox_diagonal_mm": 0.7385957786448492,
+          "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
               "net": "IMU_CS_N",
@@ -1288,28 +1466,6 @@
               ],
               "diameter_mm": 0.5,
               "distance_to_gap_bbox_mm": 0.0
-            }
-          ]
-        },
-        {
-          "estimated_missing_trace_length_sum_mm": 0.32998316455372223,
-          "bbox_mm": [
-            66.616667,
-            63.2,
-            66.85,
-            63.433333
-          ],
-          "bbox_diagonal_mm": 0.3299826931491889,
-          "max_graph_degree": 1,
-          "nearby_non_ground_through_vias": [
-            {
-              "net": "IMU_CS_N",
-              "xy_mm": [
-                66.9,
-                63.15
-              ],
-              "diameter_mm": 0.5,
-              "distance_to_gap_bbox_mm": 0.07071067811866581
             }
           ]
         }
@@ -1325,7 +1481,7 @@
           ]
         },
         {
-          "area_mm2": 0.1194931424735,
+          "area_mm2": 0.1197758840715,
           "bbox_mm": [
             66.56799,
             63.075,
@@ -1378,14 +1534,14 @@
           "track_uuid": "3287b9e2-c846-4cb4-8a08-9f8e04588fe2",
           "layer": "B.Cu",
           "start_mm": [
-            66.616667,
-            63.433333
+            66.617546,
+            63.432454
           ],
           "end_mm": [
-            66.85,
-            63.2
+            66.9,
+            63.15
           ],
-          "estimated_length_mm": 0.32998316455372223
+          "estimated_length_mm": 0.399449765121074
         },
         {
           "track_uuid": "aa373f86-6e8a-4959-beee-e8f4809c8d5b",
@@ -1401,8 +1557,18 @@
           "estimated_length_mm": 0.3965084754317089
         }
       ],
-      "b_cu_adjacent_in2_power_projection_coverage_pct": 92.54680056264566,
+      "b_cu_adjacent_in2_power_projection_coverage_pct": 91.97451964787176,
       "b_cu_adjacent_in2_power_missing_centerline_components": [
+        {
+          "estimated_missing_trace_length_sum_mm": 0.399449765121074,
+          "bbox_mm": [
+            66.617546,
+            63.15,
+            66.9,
+            63.432454
+          ],
+          "max_graph_degree": 1
+        },
         {
           "estimated_missing_trace_length_sum_mm": 0.3965084754317089,
           "bbox_mm": [
@@ -1410,16 +1576,6 @@
             70.169626,
             58.880374,
             70.45
-          ],
-          "max_graph_degree": 1
-        },
-        {
-          "estimated_missing_trace_length_sum_mm": 0.3299831645537222,
-          "bbox_mm": [
-            66.616667,
-            63.2,
-            66.85,
-            63.433333
           ],
           "max_graph_degree": 1
         }
@@ -1446,8 +1602,8 @@
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
       "native_survey_band_area_mm2": 9.9789683362715,
-      "native_survey_band_over_gnd_mm2": 8.6197130328185,
-      "native_survey_band_gnd_coverage_pct": 86.37879931422985,
+      "native_survey_band_over_gnd_mm2": 8.6197129628185,
+      "native_survey_band_gnd_coverage_pct": 86.37879861275454,
       "estimated_centerline_without_gnd_total_mm": 3.2430132712023005,
       "max_missing_component_trace_length_sum_mm": 0.8517206743750909,
       "centerline_missing_components": [
@@ -1982,7 +2138,7 @@
           "estimated_length_mm": 0.15
         }
       ],
-      "b_cu_adjacent_in2_power_projection_coverage_pct": 84.00997472444789,
+      "b_cu_adjacent_in2_power_projection_coverage_pct": 83.91693562307461,
       "b_cu_adjacent_in2_power_missing_centerline_components": [
         {
           "estimated_missing_trace_length_sum_mm": 2.6467896206512274,
@@ -1995,10 +2151,10 @@
           "max_graph_degree": 2
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.4788944443027283,
+          "estimated_missing_trace_length_sum_mm": 0.4986934341759517,
           "bbox_mm": [
-            67.523,
-            62.173,
+            67.509,
+            62.159,
             67.97,
             62.25
           ],
@@ -2298,8 +2454,8 @@
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
       "native_survey_band_area_mm2": 8.189671266893,
-      "native_survey_band_over_gnd_mm2": 7.1739883087745,
-      "native_survey_band_gnd_coverage_pct": 87.59800088405953,
+      "native_survey_band_over_gnd_mm2": 7.173988282489,
+      "native_survey_band_gnd_coverage_pct": 87.59800056310037,
       "estimated_centerline_without_gnd_total_mm": 1.690356989268695,
       "max_missing_component_trace_length_sum_mm": 0.8614979769697749,
       "centerline_missing_components": [
@@ -2516,8 +2672,8 @@
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
       "native_survey_band_area_mm2": 14.167151536878,
-      "native_survey_band_over_gnd_mm2": 13.3358743430635,
-      "native_survey_band_gnd_coverage_pct": 94.1323618114013,
+      "native_survey_band_over_gnd_mm2": 13.3358749681475,
+      "native_survey_band_gnd_coverage_pct": 94.13236622360795,
       "estimated_centerline_without_gnd_total_mm": 1.6259022312787734,
       "max_missing_component_trace_length_sum_mm": 0.8270224890060245,
       "centerline_missing_components": [
@@ -2653,7 +2809,7 @@
           "estimated_length_mm": 0.39938438567017964
         }
       ],
-      "b_cu_adjacent_in2_power_projection_coverage_pct": 79.38200452394058,
+      "b_cu_adjacent_in2_power_projection_coverage_pct": 79.38200474603474,
       "b_cu_adjacent_in2_power_missing_centerline_components": [
         {
           "estimated_missing_trace_length_sum_mm": 0.7599999999999999,
@@ -2699,41 +2855,41 @@
     },
     "QSPI_IO3": {
       "track_count": 27,
-      "trace_length_mm": 25.241904755831214,
+      "trace_length_mm": 25.340300292296607,
       "trace_length_by_layer_mm": {
-        "F.Cu": 4.258452377915607,
+        "F.Cu": 4.398452377915607,
         "B.Cu": 6.45,
-        "In2.Cu": 14.533452377915609
+        "In2.Cu": 14.491847914381001
       },
       "trace_width_segment_counts_mm": {
         "0.150": 27
       },
       "via_count": 3,
-      "native_projection_area_mm2": 3.7124277674365,
-      "native_projection_over_gnd_mm2": 3.349252207179,
-      "native_projection_without_gnd_mm2": 0.3631755617675,
-      "native_projection_gnd_coverage_pct": 90.21730298854328,
+      "native_projection_area_mm2": 3.715696662088,
+      "native_projection_over_gnd_mm2": 3.359663616607,
+      "native_projection_without_gnd_mm2": 0.3560327803565,
+      "native_projection_gnd_coverage_pct": 90.41813479787851,
       "native_projection_without_gnd_outside_own_via_0p42mm_probe_mm2": 0.0,
       "projection_without_gnd_outside_own_via_probe_components": [],
-      "missing_centerline_max_distance_to_own_via_mm": 0.40184849081214674,
+      "missing_centerline_max_distance_to_own_via_mm": 0.4026537114941324,
       "missing_centerline_samples_outside_own_via_0p42mm_probe": 0,
       "survey_band_width_mm": 0.5,
-      "native_survey_band_area_mm2": 12.441795609947,
-      "native_survey_band_over_gnd_mm2": 11.064019028495,
-      "native_survey_band_gnd_coverage_pct": 88.92622395797522,
-      "estimated_centerline_without_gnd_total_mm": 2.8205046455852387,
-      "max_missing_component_trace_length_sum_mm": 0.8396306314021078,
+      "native_survey_band_area_mm2": 12.458187147138,
+      "native_survey_band_over_gnd_mm2": 11.0868203233785,
+      "native_survey_band_gnd_coverage_pct": 88.99224415588795,
+      "estimated_centerline_without_gnd_total_mm": 2.846598510585257,
+      "max_missing_component_trace_length_sum_mm": 1.2389735898131746,
       "centerline_missing_components": [
         {
-          "estimated_missing_trace_length_sum_mm": 0.8396306314021078,
+          "estimated_missing_trace_length_sum_mm": 1.2389735898131746,
           "bbox_mm": [
             73.15,
             60.0,
             73.919444,
-            60.169444
+            60.399329
           ],
-          "bbox_diagonal_mm": 0.787880281687509,
-          "max_graph_degree": 2,
+          "bbox_diagonal_mm": 0.8668954489308329,
+          "max_graph_degree": 3,
           "nearby_non_ground_through_vias": [
             {
               "net": "QSPI_IO3",
@@ -2747,21 +2903,21 @@
           ]
         },
         {
-          "estimated_missing_trace_length_sum_mm": 0.830874014183131,
+          "estimated_missing_trace_length_sum_mm": 0.8076249207720825,
           "bbox_mm": [
-            71.756667,
-            73.617949,
-            72.132051,
-            74.293333
+            71.85,
+            73.516377,
+            72.176812,
+            74.16
           ],
-          "bbox_diagonal_mm": 0.7726944382561708,
+          "bbox_diagonal_mm": 0.7218425378661132,
           "max_graph_degree": 2,
           "nearby_non_ground_through_vias": [
             {
               "net": "QSPI_IO3",
               "xy_mm": [
                 71.85,
-                73.9
+                73.76
               ],
               "diameter_mm": 0.5,
               "distance_to_gap_bbox_mm": 0.0
@@ -2789,47 +2945,25 @@
               "distance_to_gap_bbox_mm": 0.0
             }
           ]
-        },
-        {
-          "estimated_missing_trace_length_sum_mm": 0.35000000000000003,
-          "bbox_mm": [
-            73.5,
-            60.05,
-            73.5,
-            60.4
-          ],
-          "bbox_diagonal_mm": 0.3500000000000014,
-          "max_graph_degree": 1,
-          "nearby_non_ground_through_vias": [
-            {
-              "net": "QSPI_IO3",
-              "xy_mm": [
-                73.55,
-                60.0
-              ],
-              "diameter_mm": 0.5,
-              "distance_to_gap_bbox_mm": 0.07071067811865074
-            }
-          ]
         }
       ],
       "projection_missing_area_components": [
         {
-          "area_mm2": 0.170876083829,
+          "area_mm2": 0.1675846218525,
           "bbox_mm": [
             73.1495,
-            59.925,
+            59.92492,
             73.941686,
             60.4005
           ]
         },
         {
-          "area_mm2": 0.1234708705715,
+          "area_mm2": 0.119619551137,
           "bbox_mm": [
-            71.683002,
-            73.56799,
-            72.182009,
-            74.3005
+            71.77436,
+            73.464508,
+            72.211067,
+            74.1605
           ]
         },
         {
@@ -2857,30 +2991,17 @@
           "estimated_length_mm": 0.14142135623730953
         },
         {
-          "track_uuid": "72c6fc5b-403e-4f4a-9fa3-11f7132d4a03",
-          "layer": "F.Cu",
-          "start_mm": [
-            71.85,
-            74.2
-          ],
-          "end_mm": [
-            71.756667,
-            74.293333
-          ],
-          "estimated_length_mm": 0.1319932658214889
-        },
-        {
           "track_uuid": "7e9fe4da-2c9b-4bc1-901e-47d8b3929bf2",
           "layer": "F.Cu",
           "start_mm": [
             71.85,
-            73.9
+            73.76
           ],
           "end_mm": [
             71.85,
-            74.2
+            74.16
           ],
-          "estimated_length_mm": 0.3
+          "estimated_length_mm": 0.4
         },
         {
           "track_uuid": "84200349-0050-43fe-ba0f-53d658408ab0",
@@ -2951,27 +3072,27 @@
           "track_uuid": "6045bbb1-e7fb-43e2-829a-3f392de1c69c",
           "layer": "In2.Cu",
           "start_mm": [
-            72.132051,
-            73.617949
+            72.176812,
+            73.516377
           ],
           "end_mm": [
             71.85,
-            73.9
+            73.76
           ],
-          "estimated_length_mm": 0.3988807483616422
+          "estimated_length_mm": 0.4076249207720825
         },
         {
           "track_uuid": "fca973cd-915b-42a8-8e72-aa220cba50fd",
           "layer": "In2.Cu",
           "start_mm": [
-            73.5,
-            60.05
+            73.55,
+            60.0
           ],
           "end_mm": [
-            73.5,
-            60.4
+            73.546644,
+            60.399329
           ],
-          "estimated_length_mm": 0.35000000000000003
+          "estimated_length_mm": 0.3993429584110668
         }
       ],
       "b_cu_adjacent_in2_power_projection_coverage_pct": 86.02851600068631,
@@ -3362,20 +3483,21 @@
       ]
     }
   },
-  "usb_lengths_copied_from_verified_proposal": {
-    "source_file": "reports/usb_routing_review.json (verified_mcu_proposal)",
-    "proposal_board_sha256": "3697fea7682a8ce5a59a0b46a4a1c93c062109ab1e88b004285ab9d0a5d096df",
-    "trace_length_only_mm": {
-      "USB_DP": 35.67003099233325,
-      "USB_DN": 36.136257318348406
-    },
-    "trace_length_skew_mm": 0.46622632601515335,
-    "equal_vias_per_net": 2,
-    "canonical_trace_lengths_match_proposal_within_0p001mm": true
+  "current_usb_trace_lengths_mm": {
+    "USB_DP": 31.231504885042447,
+    "USB_DN": 32.957220528161045,
+    "USB_DP_CONN": 12.996637802864843,
+    "USB_DN_CONN": 15.552121202458748
+  },
+  "current_mcu_trace_length_skew_mm": 1.7257156431185976,
+  "historical_usb_mcu_proposal_reference": {
+    "source_file": "reports/usb_routing_review.json (historical_mcu_proposal)",
+    "historical_only": true,
+    "proposal_board_sha256": "3697fea7682a8ce5a59a0b46a4a1c93c062109ab1e88b004285ab9d0a5d096df"
   },
   "limitations": [
-    "Native DRC/parity do not qualify impedance, edge rates, return-current distribution, crosstalk or USB eye/EMC.",
-    "Own non-ground via antipads necessarily remove In1 copper directly below the layer transition; nearby ground stitching and actual reference geometry must be assessed against verified stackup.",
-    "Coverage of In1 ground below B.Cu does not prove the adjacent mixed In2 reference is continuous or adequately decoupled."
+    "Native DRC/parity do not qualify impedance,edge rates,return-current distribution,crosstalk or USB eye/EMC.",
+    "Own non-ground via antipads remove In1 copper below layer transitions; actual reference geometry and stitching require assessment against verified stackup.",
+    "In1 ground under B.Cu does not prove adjacent mixed In2 is a continuous or adequately decoupled reference."
   ]
 }

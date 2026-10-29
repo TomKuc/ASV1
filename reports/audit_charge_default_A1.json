@@ -1,0 +1,18 @@
+{
+  "source_sha256": "65893edadd435f5431a8da5548a7617e93dbe30bf7f5ef1ddc4626445deef6a0",
+  "part": "R24",
+  "pad": "2",
+  "net_before": "GND",
+  "net_after": "+3V0",
+  "value_unchanged": "100k 1%",
+  "converted_copper_uuids": [
+    "0aaa08a9-7bf2-442f-8487-eafa68f4fb47",
+    "3c60f072-3d89-4f74-8d60-06a889c931a3",
+    "4e4e5cd0-c7b9-4dda-8cee-e6072b8662a1"
+  ],
+  "rule": "HIGH/HiZ/reset inhibits charging; LOW permits independent hardware window",
+  "tracks_added_or_removed": 0,
+  "vias_added_or_removed": 0,
+  "placement_changed": false,
+  "hardware_tested": false
+}

@@ -18,8 +18,8 @@
 <g class="part" data-key="Q2"><rect class="body" x="441.59999999999997" y="446.80000000000007" width="16.800000000000068" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
 <g class="part" data-key="C2"><rect class="body" x="553.8" y="562.5999999999999" width="10.799999999999955" height="20.40000000000009" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
 <g class="part" data-key="R8"><rect class="body" x="671.0999999999999" y="198.16" width="13.800000000000182" height="7.680000000000007" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
-<g class="part" data-key="R25"><rect class="body" x="667.5" y="602.56" width="13.800000000000068" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
-<g class="part" data-key="U6"><rect class="body" x="719.4000000000001" y="612.4000000000001" width="20.399999999999977" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="R25"><rect class="body" x="710.6999999999999" y="602.56" width="13.800000000000068" height="7.680000000000064" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
+<g class="part" data-key="U6"><rect class="body" x="669.0" y="601.5999999999999" width="20.40000000000009" height="36.0" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
 <g class="part" data-key="R14"><rect class="body" x="659.0999999999999" y="652.96" width="13.800000000000182" height="7.67999999999995" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
 <g class="part" data-key="U7"><rect class="body" x="472.20000000000005" y="491.80000000000007" width="37.19999999999999" height="37.19999999999993" rx="1.2" fill="#aab8b0" stroke="#65776c" stroke-width="0.7"/></g>
 <text x="490.80000000000007" y="487.80000000000007" font-size="12" fill="#172d3d" text-anchor="middle" font-weight="400">U7</text>

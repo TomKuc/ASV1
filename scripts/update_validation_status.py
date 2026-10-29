@@ -16,7 +16,7 @@ def main():
     ev=[v for sheet in erc['sheets'] for v in sheet['violations']]
     dv=drc['violations']
     report={
-        'revision':'A1-WIP','kicad_version':erc.get('kicad_version'),
+        'revision':'A1-AUDIT','kicad_version':erc.get('kicad_version'),
         'erc_report':args.erc,'erc_errors':sum(v['severity']=='error' for v in ev),
         'erc_warnings':sum(v['severity']=='warning' for v in ev),
         'erc_review':'U4 pins2/3 intentionally grounded in documented primary-SPI mode with Qvar/sensorhub disabled. Native ERC warnings remain visible.',
@@ -24,6 +24,8 @@ def main():
         'drc_warnings':sum(v['severity']=='warning' for v in dv),
         'unconnected_items':len(drc['unconnected_items']),
         'schematic_parity_findings':len(drc.get('schematic_parity',[])),
+        'erc_ignored_checks':erc.get('ignored_checks',[]),
+        'drc_ignored_checks':drc.get('ignored_checks',[]),
         'fabrication_release':False,
         'release_note':'Electrical completion, manufacturing DFM, RF/USB review, parts sourcing and physical verification are separate gates. This script cannot release the design.',
         'inputs':{}
@@ -36,7 +38,7 @@ def main():
         report['inputs'][name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
     (ROOT/'reports/validation_status.json').write_text(json.dumps(report,indent=2)+'\n')
     compatibility={
-        'project':'Ankle_Sensor_V1','revision':'A1-WIP','kicad_version':report['kicad_version'],
+        'project':'Ankle_Sensor_V1','revision':'A1-AUDIT','kicad_version':report['kicad_version'],
         'kicad_open_check':'PASS_NATIVE_SCHEMATIC_LOAD_AND_PDF_EXPORT',
         'erc':'RUN','drc':'RUN','fabrication_release':False,
         'pcb_routing':'CONNECTED_REVIEW_PENDING' if report['unconnected_items']==0 else 'PARTIAL',
