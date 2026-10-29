@@ -14,5 +14,7 @@
     "Preserved earlier removal of unused IMU_CS via; this audit did not reroute the whole board.",
     "R24 is a 3V0 pull-up; U6/R25 positions and two drill clearances corrected locally.",
     "See audit_merge_final_A1.json and audit_geometry_changes_A1.json for object deltas."
-  ]
+  ],
+  "final_review_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "final_width_correction": "reports/usb_width_correction_A1.json"
 }

@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-29T16:40:35.762485+00:00",
+  "remote": "https://github.com/TomKuc/ASV1.git",
+  "branch": "master",
+  "expected_commit": "28d88f22a6a9c0c0e1feb639546009518a6b5f8e",
+  "status": "NOT_VERIFIED_NETWORK_OR_ACCESS_ERROR",
+  "pushed_by_this_script": false,
+  "main_checkout_modified": false,
+  "git_exit_code": 128,
+  "local_origin_tracking_ref": "28d88f22a6a9c0c0e1feb639546009518a6b5f8e",
+  "tracking_ref_is_not_live_server_proof": true,
+  "public_browse_observations": [
+    {
+      "url": "https://github.com/TomKuc/ASV1",
+      "result": "CACHED_HISTORICAL_VIEW_ONE_COMMIT_NOT_CURRENT_REF_PROOF"
+    },
+    {
+      "url": "https://github.com/TomKuc/ASV1/commit/20dd2667e387eb77d9bdd5fab164d46931be15db",
+      "result": "404_NOT_FOUND_OBSERVED_NOT_SUFFICIENT_TO_PROVE_ALL_REMOTE_REFS_ABSENT"
+    },
+    {
+      "url": "https://github.com/TomKuc/ASV1/commit/28d88f22a6a9c0c0e1feb639546009518a6b5f8e",
+      "result": "CACHE_MISS_NOT_VERIFIED"
+    }
+  ],
+  "upcoming_delivery_branch": "final/a1-prototype-2026-10-29",
+  "current_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "new_commit_pushed_by_this_session": false
+}

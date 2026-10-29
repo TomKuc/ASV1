@@ -1,0 +1,55 @@
+{
+  "revision": "A1_FINAL_PROTOTYPE_REVIEW",
+  "status": "CONDITIONAL READY",
+  "quantity": [
+    3,
+    5
+  ],
+  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "report": "docs/final_verification_A1.md",
+  "gate_A": [
+    {
+      "id": "A01",
+      "status": "OPEN",
+      "condition": "Literal Raytac8.3 and manufacturer drawings for Raytac/J1/Y1 reviewed and accepted"
+    },
+    {
+      "id": "A02",
+      "status": "OPEN",
+      "condition": "JLC confirms selected JLC7628 4L1.0mm pressed stack, Dk/Cu definitions and USB geometry acceptance"
+    },
+    {
+      "id": "A03",
+      "status": "OPEN",
+      "condition": "Standard PCBA exact33BOMgroups/59TOP parts, procurement incl U7/R1/R20, CPL pin1/rotation and XrayU3/U4 accepted"
+    },
+    {
+      "id": "A04",
+      "status": "OPEN",
+      "condition": "CAM/panel/rails/fiducials/mask/stencil/tenting/drill-clearance DFM accepted"
+    }
+  ],
+  "confirmed_corrections": [
+    "18USBtrunk widths0.15to0.17mm, same centrelines; explicit0.125mm pair-only rule",
+    "Firmware contract clarified for hangLOW/SystemOFF and no-reset-loop charging policy",
+    "One current source/export index; historical hashes/deliveries labelled",
+    "Generic KiCad GerberJob moved outside fabrication upload ZIP"
+  ],
+  "native_checks": {
+    "erc_errors": 0,
+    "erc_warnings": 2,
+    "drc_geometry_errors": 0,
+    "drc_warnings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_findings": 0,
+    "erc_ignored_checks": [],
+    "drc_ignored_checks": []
+  },
+  "group_B": "Physical Flash20tests, acquisition/timing, IMU/BLE/USB, power/startup/charging/thermal and pack qualification after prototypes; before real LiPo use",
+  "group_C": "Standby/size/ergonomics, dedicated QSPI TP or Flash isolation, MCU cell-temperature reading/heartbeat",
+  "hardware_tests_performed": false,
+  "firmware_implemented": false,
+  "order_placed": false,
+  "fabrication_release": false,
+  "github_current_commit_verified": false
+}

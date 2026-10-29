@@ -2,17 +2,18 @@
   "date": "2026-10-29",
   "status": "A1_AUDIT_NOT_FOR_FABRICATION_RELEASE",
   "source_hashes_sha256": {
-    "hardware/Ankle_Sensor_V1.kicad_pcb": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "hardware/Ankle_Sensor_V1.kicad_pcb": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "hardware/Ankle_Sensor_V1.kicad_pro": "b13938ac04f08e4c3a4d19e5a498f7d05a37e9c54622fbafd04f8b3624df1346",
     "hardware/Ankle_Sensor_V1.kicad_sch": "2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d",
     "hardware/io.kicad_sch": "4b8bf8c423e7a9c4f42c575419ad87159e8ac2fe70c78fbcf4287e5850217ea0",
     "hardware/mcu.kicad_sch": "6eae1d86edbd75923d2cdd866f55f62c45e9d96627e1b84cf7cb32c0d95baf08",
     "hardware/power.kicad_sch": "ce5ceb0873ef98f1d9e39f209bac262d1f518d0ce3e85cbe88cc1f8cbdee4f3a",
     "hardware/sensors.kicad_sch": "70bb1dad3b54466debf7525c5ad7328d7e8abdb34ae568c528a25dfb03a58736",
-    "hardware/temperature.kicad_sch": "03d02986db171a22f57094ce84d75739af78391f52a57f316fffa8e29c8ec63b"
+    "hardware/temperature.kicad_sch": "03d02986db171a22f57094ce84d75739af78391f52a57f316fffa8e29c8ec63b",
+    "hardware/Ankle_Sensor_V1.kicad_dru": "000b24e75b73068c5c85957ba071bc6e26098209cd6f7cb3cfee39cbdb7284ae"
   },
   "native_kicad_version": "10.0.7",
-  "fresh_netlist": ".work/audit_imu_rf_A1/native_current.net.xml",
+  "fresh_netlist": "reports/usb_audit_netlist_A1.xml",
   "schematic_vs_pcb_pin_mismatches": [],
   "u3_pinmap": {
     "1": {
@@ -480,7 +481,15 @@
           "pinfunction": "IO1_6",
           "pintype": "passive"
         }
-      ]
+      ],
+      "native_trace_width_segment_counts_mm": {
+        "0.150": 14,
+        "0.170": 9
+      },
+      "native_length_by_layer_mm": {
+        "F.Cu": 1.4758028890321493,
+        "In2.Cu": 29.7557019960103
+      }
     },
     "USB_DN": {
       "track_length_mm": 32.957220528161045,
@@ -498,10 +507,18 @@
           "pinfunction": "IO2_4",
           "pintype": "passive"
         }
-      ]
+      ],
+      "native_trace_width_segment_counts_mm": {
+        "0.150": 23,
+        "0.170": 9
+      },
+      "native_length_by_layer_mm": {
+        "F.Cu": 8.009556274847712,
+        "In2.Cu": 24.947664253313334
+      }
     },
     "USB_DP_CONN": {
-      "track_length_mm": 12.996637802864846,
+      "track_length_mm": 12.996637802864843,
       "via_count": 2,
       "nodes": [
         {
@@ -522,10 +539,17 @@
           "pinfunction": "IO1_1",
           "pintype": "passive"
         }
-      ]
+      ],
+      "native_trace_width_segment_counts_mm": {
+        "0.150": 45
+      },
+      "native_length_by_layer_mm": {
+        "F.Cu": 7.803134918610404,
+        "In2.Cu": 5.19350288425444
+      }
     },
     "USB_DN_CONN": {
-      "track_length_mm": 15.55212120245875,
+      "track_length_mm": 15.552121202458748,
       "via_count": 2,
       "nodes": [
         {
@@ -546,7 +570,14 @@
           "pinfunction": "IO2_3",
           "pintype": "passive"
         }
-      ]
+      ],
+      "native_trace_width_segment_counts_mm": {
+        "0.150": 48
+      },
+      "native_length_by_layer_mm": {
+        "F.Cu": 7.423084412271569,
+        "In2.Cu": 8.129036790187179
+      }
     }
   },
   "esd_connector_center_distance_mm": 9.499999999999996,
@@ -563,7 +594,7 @@
   "actual_all_cu_track_via_pad_intersections": [],
   "native_fill_rf_check": {
     "date": "2026-10-29",
-    "board_sha256_at_read": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "board_sha256_at_read": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "native_kicad_version": "10.0.7",
     "method": "Native SHAPE_POLY_SET BooleanIntersection of stored fill including holes; independent Contains samples.",
     "status": "PASS_FOR_CURRENT_STORED_FILL_NOT_RF_QUALIFICATION_OR_FABRICATION_RELEASE",
@@ -610,7 +641,7 @@
         "layer": "In2.Cu",
         "net": "+3V0",
         "stored_fill_outline_count": 1,
-        "stored_fill_area_mm2": 1279.450591,
+        "stored_fill_area_mm2": 1278.995931,
         "full_keepout_copper_intersection_mm2": 0.0,
         "antenna_front_strip_copper_intersection_mm2": 0.0,
         "positive_control_copper_area_mm2": 23.993396374,
@@ -674,7 +705,7 @@
   },
   "mechanical_placement": {
     "date": "2026-10-29",
-    "board_sha256_at_read": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "board_sha256_at_read": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "board_size_mm": [
       30,
       51.6
@@ -1698,14 +1729,17 @@
     "selected_stackup_id": null,
     "jlc_stated_thickness_tolerance_for_1mm": "±10% (nominal0.9…1.1mm)",
     "jlc_stated_controlled_impedance_tolerance": "±10%; only applies to ordered controlled impedance, not this unqualified layout",
-    "jlc_page_default_table_warning": "Static page tables currently default1.6mm; no1.0mm dielectric values inferred from them."
+    "jlc_page_default_table_warning": "CurrentSSRpage1.6mm is not used. Officiallegacytable exposes1.0mm7628 geometry, combined with currentEr; current exact order template still requires confirmation.",
+    "selected_analysis_stackup": "JLC7628 4L1.0mm outer1oz inner0.5oz",
+    "current_order_template_confirmed": false,
+    "nominal_analysis_report": "reports/usb_stackup_final_A1.json"
   },
   "findings": [
     {
       "id": "USB01",
-      "status": "OPEN",
+      "status": "IMPROVED_LOCAL_WIDTH_OPEN_FAB_AND_PHYSICAL_QUALIFICATION",
       "severity": "production_qualification",
-      "finding": "No selected dielectric stackup; PCB contains only4Cu layers and1.0mm total thickness. 0.15mm width/gap does not prove90ohm differential impedance.",
+      "finding": "Selected nominal JLC7628 4L1mm: retained In2 trunk18segments widened to0.17mm with0.13mm gap; no centreline/via/footprint change. QuasiTEM2.5um estimates94.139ohm In1-only and87.162ohm conditional coplanarAC0. Actual order stack and complete-path impedance/FS eye remain unqualified.",
       "source_keys": [
         "jlc_stackups",
         "jlc_capabilities"
@@ -1802,7 +1836,7 @@
     "jlc_stackups": "https://jlcpcb.com/impedance",
     "jlc_capabilities": "https://jlcpcb.com/capabilities/pcb-capabilities/"
   },
-  "changes": "Documentation/report only; noPCB/schematic/component/resistor changes.",
+  "changes": "Read-only report refresh on current canonical after root accepted18USB width-only edits; this audit changed noPCB/schematic/components/resistors. Geometry and models are documented in reports/usb_width_correction_A1.json and reports/usb_stackup_final_A1.json.",
   "u6_gnd_nearest_via_straight_distance_mm": 0.9375,
   "linked_models_current": {
     "U3": [

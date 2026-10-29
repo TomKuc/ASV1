@@ -1,6 +1,6 @@
 # IMU i moduł radiowy — aktualny przegląd A1
 
-Aktualizacja: **2026-10-29**. Połączenia niżej uzgodniono ze świeżym natywnym eksportem schematu i aktualnym PCB A1, SHA-256 `38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`. To dokumentacja połączeń i ograniczeń, nie potwierdzenie fizycznego działania. Kompletny aktualny przydział: [pin_assignment_A1.md](pin_assignment_A1.md); szczegółowy audyt USB/RF: [usb_raytac_audit_A1.md](usb_raytac_audit_A1.md).
+Aktualizacja: **2026-10-29**. Połączenia niżej uzgodniono ze świeżym natywnym eksportem schematu i aktualnym PCB A1, SHA-256 `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`. To dokumentacja połączeń i ograniczeń, nie potwierdzenie fizycznego działania. Kompletny aktualny przydział: [pin_assignment_A1.md](pin_assignment_A1.md); szczegółowy audyt USB/RF: [usb_raytac_audit_A1.md](usb_raytac_audit_A1.md).
 
 ## LSM6DSV32XTR
 
@@ -82,6 +82,8 @@ Raytac §2.3 wymaga keepout anteny na **każdej warstwie** i umieszczenia moduł
 
 Decyzje projektowe: bateria, metal, śruby i przewody poza obszarem anteny; testy zasięgu wykonywać w docelowej obudowie na nodze. Preferowany kwarc 32.768 kHz ze względu na stabilność zegara BLE/synchronizacji; wartości kondensatorów wynikają z CL wybranego kwarcu i pojemności pasożytniczych. Sam kryształ nie synchronizuje dwóch niezależnych modułów. Potrzebny protokół wymiany znaczników, estymacja offsetu/dryftu i pomiar niepewności synchronizacji.
 
-Nierozwiązane: wizualne porównanie pełnego rysunku §8.3/pojemności, wybór rzeczywistego stackupu 4L/1.0mm i kwalifikacja USB, rozmieszczenie/kwalifikacja ESD, dokładny STEP wariantu P1MV2, montaż baterii/obudowy i testy naprężeń/RF. Biblioteczny STEP U3 jest generyczny; model USB J1 nadal jest brakujący. Dostępność PCBA dokładnego P1MV2 wymaga osobnego potwierdzenia; dostępność dystrybutora nie jest dowodem zasobów JLCPCB. Firmware nie zostało jeszcze napisane.
+Nierozwiązane: wizualne porównanie pełnego rysunku §8.3/pojemności, potwierdzenie wybranego JLC7628 4L/1.0mm i kwalifikacja USB, rozmieszczenie/kwalifikacja ESD, dokładny STEP wariantu P1MV2, montaż baterii/obudowy i testy naprężeń/RF. Biblioteczny STEP U3 jest generyczny; model USB J1 nadal jest brakujący. Dostępność PCBA dokładnego P1MV2 wymaga osobnego potwierdzenia; dostępność dystrybutora nie jest dowodem zasobów JLCPCB. Firmware nie zostało jeszcze napisane.
 
 Nowsza, jednoznaczna przesłanka dla DCCH: [odpowiedź wsparcia Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/108362/vdd-vddh-and-dcch-mistake) opisuje pin jako niepodłączony przy wyłączonym REG0. Nie oparto decyzji na starszym, niejednoznacznym wątku zawierającym sprzeczne wzmianki DCCH/GND.
+
+Aktualizacja końcowa: netlista `reports/usb_audit_netlist_A1.xml` i raport USB potwierdzają tę samą pinmapę po zmianie wyłącznie18 szerokości USB. [Aktualny przekrój i wyniki modelu](usb_stackup_final_A1.md); nie zmieniono przerwań IMU.

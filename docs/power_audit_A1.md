@@ -1,8 +1,12 @@
 # Audyt zasilania A1 — ASV1
 
-Data: **29.10.2026**. Audyt porównuje bazowy PCB `b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678` z końcowym odczytem `38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`. W tym stanie prowadzący projekt wdrożył R24 pull-up do +3V0, relokację USB ESD U6 oraz poprawki geometrii. Odczyt `da211523…` był wcześniejszym stanem po R24, przed relokacją U6; zachowano go jako historię. Końcowy odczyt, skróty wejść i historia są w [power_audit_A1.json](../reports/power_audit_A1.json). W ramach tego przeglądu nie regenerowano projektu, nie edytowano PCB/schematu i nie przeprowadzono prób sprzętowych.
+Data: **29.10.2026**. Audyt porównuje bazowy PCB `b5487d09753bbf0490bf91bda6c803934609b778283ef87c044309bc1514f678` z końcowym odczytem `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`. W tym stanie prowadzący projekt wdrożył R24 pull-up do +3V0, relokację USB ESD U6 oraz poprawki geometrii. Odczyt `da211523…` był wcześniejszym stanem po R24, przed relokacją U6; zachowano go jako historię. Końcowy odczyt, skróty wejść i historia są w [power_audit_A1.json](../reports/power_audit_A1.json). W ramach tego przeglądu nie regenerowano projektu, nie edytowano PCB/schematu i nie przeprowadzono prób sprzętowych.
 
 **Wniosek:** zachować BQ25185, chroniony pakiet i niezależne okno U7/U8/Q1/Q2. R24 pull-up domyślnie blokuje ładowanie po resecie MCU przy poprawnym +3V0. Odsprzęganie IMU i naprawiona lokalna gałąź Flash mają udokumentowaną ciągłość. Nie potwierdzono jeszcze zgodności całego USB, bezwarunkowych granic ochrony temperatury, czasu ładowania konkretnego pakietu ani temperatur w obudowie. Są to oddzielne warunki kwalifikacji; audyt nie jest zwolnieniem do produkcji.
+
+Końcowe odświeżenie `cdcbd234…` obejmuje przyjęte poszerzenie 18 istniejących odcinków USB na In2 z 0.15 do 0.17 mm. Ponowny odczyt padów, przecięć miedzi i zapisanych fill potwierdził **identyczne wyniki wszystkich 17 pętli i 17 powrotów GND**, w tym lokalnych dróg In2. Połączenia zasilania i mostek Flash zachowano. Bieżący profil DRC zawiera jawną regułę pary USB: minimum 0.125 mm, optimum 0.13 mm; zerowy wynik geometryczny w tym profilu nie jest kwalifikacją SI.
+
+Określenie „reset blokuje” w tym raporcie dotyczy resetu zwalniającego GPIO do HiZ. Retencję GPIO przy System OFF oraz hang z pozostawionym LOW rozróżnia [końcowa tabela rozruchu](charge_startup_final_A1.md); nie są one równoważne HiZ.
 
 ## Findings
 
@@ -28,9 +32,9 @@ Native PCB, eksport netlisty i raporty są porównywane jako oddzielne źródła
 - J2: 1=PACK+, 2=NTC_TS, 3=PACK−/GND. NTC_TS nie jest połączony z ADC MCU.
 - /CE ma tylko U1.4, Q1.3 i R3; MCU dochodzi do bramki odrębnego Q2. Nie ma ścieżki GPIO wymuszającej zezwolenie wbrew U7/U8.
 
-Odczyt KiCad 10.0.7 potwierdził R24.1=CHG_INHIBIT oraz R24.2=+3V0 w PCB i wyeksportowanym schemacie. Nienazwane/niepodłączone elektrycznie pola mocujące J2 nie są węzłami netlisty. Raport integracyjny z 29.10 o 14:05:36 ma **DRC 0 naruszeń, 0 opens, 0 parity**; ERC z 14:05:42 ma 0 błędów i 2 jawne ostrzeżenia dla U4.2/3. Są to kontrole połączeń i geometrii, a nie badanie działania.
+Odczyt KiCad 10.0.7 potwierdził R24.1=CHG_INHIBIT oraz R24.2=+3V0 w PCB i wyeksportowanym schemacie. Nienazwane/niepodłączone elektrycznie pola mocujące J2 nie są węzłami netlisty. Raport integracyjny z 29.10 o 17:52:55 ma **DRC 0 naruszeń, 0 opens, 0 parity**; ERC z 17:38:42 ma 0 błędów i 2 jawne ostrzeżenia dla U4.2/3. Są to kontrole połączeń i geometrii, a nie badanie działania.
 
-[Raport rzeczywistego routingu](../reports/power_routing_review.json) odświeżono z finalnego `38545441…`: ponownie wyznaczono 17 par pin–kondensator z natywnych przecięć miedzi F.Cu, lokalnych wielokątów In2 oraz 17 powrotów padów GND/EP do In1. Fizycznie odczytano mostek `699315a4-e5c7-49d0-b342-712824bf66c2`: +3V0, B.Cu, 0.30 mm, (71.75,72.5)→(72.9,73.0). Usuwa dawny objazd In2 długości około28 mm. U5→C15 ma około2.469 mm odcinków XY i dwa istniejące przejścia przez warstwy; C16 korzysta z lokalnego węzła C15 i około3.578 mm zapisanej In2. Nie mylić XY z długością trójwymiarową ani symulacją impedancji zasilania.
+[Raport rzeczywistego routingu](../reports/power_routing_review.json) odświeżono z finalnego `cdcbd234…`: ponownie wyznaczono 17 par pin–kondensator z natywnych przecięć miedzi F.Cu, lokalnych wielokątów In2 oraz 17 powrotów padów GND/EP do In1. Fizycznie odczytano mostek `699315a4-e5c7-49d0-b342-712824bf66c2`: +3V0, B.Cu, 0.30 mm, (71.75,72.5)→(72.9,73.0). Usuwa dawny objazd In2 długości około28 mm. U5→C15 ma około2.469 mm odcinków XY i dwa istniejące przejścia przez warstwy; C16 korzysta z lokalnego węzła C15 i około3.578 mm zapisanej In2. Nie mylić XY z długością trójwymiarową ani symulacją impedancji zasilania.
 
 IMU ma osobne C12/C13 100 nF; lokalne odcinki zapisanej In2 między vias wynoszą około1.191/1.341 mm, a nie drogę przez resztę szyny. C14 jest dodatkowym bulk. Vias GND tych kondensatorów są około0.62 mm od środków padów i kontaktują In1. Nie zastąpiono odsprzęgania samym odległym kondensatorem zbiorczym. Parametry szumu i minima napięć nadal wymagają pomiaru.
 

@@ -1,0 +1,271 @@
+{
+  "status": "ADOPTED_LOCAL_WIDTH_ONLY_NATIVE_DRC_PASS",
+  "source_board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "reason": "Selected JLC7628 4L1.0mm model: 0.15/0.15 about102ohm, 0.17/0.13 about94.5ohm ground-only and87.5ohm conditional AC coplanar",
+  "tracks_changed": [
+    {
+      "uuid": "6a2046df-91e3-4bcd-8d30-d7c0e2c533e1",
+      "net": "USB_DN",
+      "start_mm": [
+        70.537867,
+        65.35
+      ],
+      "end_mm": [
+        70.75,
+        65.562132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "7e771659-a24d-40d6-8e30-af3d20097af1",
+      "net": "USB_DN",
+      "start_mm": [
+        70.3,
+        65.35
+      ],
+      "end_mm": [
+        70.537867,
+        65.35
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "8c3a3a3b-cbc9-46a1-bcc2-81f5876d7e57",
+      "net": "USB_DN",
+      "start_mm": [
+        70.75,
+        65.562132
+      ],
+      "end_mm": [
+        70.75,
+        72.762132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "a7ddcf8c-03e1-40ec-b703-651eb14ba0c3",
+      "net": "USB_DN",
+      "start_mm": [
+        70.75,
+        72.762132
+      ],
+      "end_mm": [
+        70.949999,
+        72.962132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "a9b552e7-0711-4c6e-9a39-8b4323776eb4",
+      "net": "USB_DN",
+      "start_mm": [
+        73.449999,
+        77.662132
+      ],
+      "end_mm": [
+        73.449999,
+        86.8
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "c4fade26-d4cc-4090-86ee-0b508febe09f",
+      "net": "USB_DN",
+      "start_mm": [
+        70.949999,
+        72.962132
+      ],
+      "end_mm": [
+        70.949999,
+        74.362132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "c9cf9381-53fa-48d0-950c-b2f782852b94",
+      "net": "USB_DN",
+      "start_mm": [
+        71.149999,
+        75.362132
+      ],
+      "end_mm": [
+        73.449999,
+        77.662132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "e6867bb0-5be3-4500-83ff-20a597c0cc3a",
+      "net": "USB_DN",
+      "start_mm": [
+        70.949999,
+        74.362132
+      ],
+      "end_mm": [
+        71.149999,
+        74.562132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "ec71ed7f-5765-4a77-9a55-f218159d1ec7",
+      "net": "USB_DN",
+      "start_mm": [
+        71.149999,
+        74.562132
+      ],
+      "end_mm": [
+        71.149999,
+        75.362132
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "01e52aee-e793-4fdc-8d1d-88eeae273c49",
+      "net": "USB_DP",
+      "start_mm": [
+        71.45,
+        75.237867
+      ],
+      "end_mm": [
+        73.75,
+        77.537867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "1ee8aea3-0231-4a6d-9291-6d29ad028f64",
+      "net": "USB_DP",
+      "start_mm": [
+        73.75,
+        77.537867
+      ],
+      "end_mm": [
+        73.75,
+        86.8
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "236f859f-485a-43d2-b8f2-ff2ab0f131ce",
+      "net": "USB_DP",
+      "start_mm": [
+        71.05,
+        65.437867
+      ],
+      "end_mm": [
+        71.05,
+        72.637867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "2a05b493-9eeb-4970-ae52-bd9b310ec0a4",
+      "net": "USB_DP",
+      "start_mm": [
+        71.25,
+        72.837867
+      ],
+      "end_mm": [
+        71.25,
+        74.237867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "3f06a220-81cf-4c22-886f-2c67b13beb57",
+      "net": "USB_DP",
+      "start_mm": [
+        71.25,
+        74.237867
+      ],
+      "end_mm": [
+        71.45,
+        74.437867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "4263e76c-95aa-4024-b16b-5741dae35455",
+      "net": "USB_DP",
+      "start_mm": [
+        70.3,
+        65.05
+      ],
+      "end_mm": [
+        70.662132,
+        65.05
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "808081eb-7c48-4e04-8da7-895dc56137eb",
+      "net": "USB_DP",
+      "start_mm": [
+        71.05,
+        72.637867
+      ],
+      "end_mm": [
+        71.25,
+        72.837867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "ebb2bd77-52cd-4488-bb8b-642de184b929",
+      "net": "USB_DP",
+      "start_mm": [
+        70.662132,
+        65.05
+      ],
+      "end_mm": [
+        71.05,
+        65.437867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    },
+    {
+      "uuid": "f93748b1-8069-4f2d-a0fe-dc9f1f3c582b",
+      "net": "USB_DP",
+      "start_mm": [
+        71.45,
+        74.437867
+      ],
+      "end_mm": [
+        71.45,
+        75.237867
+      ],
+      "width_before_mm": 0.15,
+      "width_after_mm": 0.17
+    }
+  ],
+  "track_centreline_changed": false,
+  "tracks_added_removed": 0,
+  "vias_changed": 0,
+  "footprints_changed": 0,
+  "pair_specific_clearance_mm": 0.125,
+  "global_other_clearance_mm": 0.15,
+  "final_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "unchanged_track_uuid_set": true,
+  "unchanged_track_centrelines_layers_nets": true,
+  "unchanged_footprints_vias_pads": true,
+  "native_drc": "reports/drc_final.json",
+  "hardware_tested": false
+}

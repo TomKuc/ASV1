@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "source": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "source_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
   "source_unchanged_during_read": true,
   "kicad_version": "10.0.7",
   "native_unconnected_count": 0,
@@ -21,7 +21,7 @@
         "In2.Cu"
       ],
       "filled": true,
-      "filled_area_mm2": 1279.450591045742
+      "filled_area_mm2": 1278.995931385186
     }
   ],
   "loops": [
@@ -5592,7 +5592,7 @@
   },
   "via_smd_paste_audit": {
     "report": "reports/via_pad_audit.json",
-    "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "source_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "C3_fixed_via_xy_mm": [
       57.8,
       92.1
@@ -5668,7 +5668,7 @@
     "bridge_track_uuid": "699315a4-e5c7-49d0-b342-712824bf66c2",
     "C16_effective_XY_path_via_local_C15_junction_mm": 6.27718,
     "other_nets_changed": false,
-    "latest_native_revalidation_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "latest_native_revalidation_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "latest_native_revalidation_date": "2026-10-29",
     "bridge_current_native": {
       "uuid": "699315a4-e5c7-49d0-b342-712824bf66c2",
@@ -5908,5 +5908,22 @@
     "C11_and_VBUS_geometry_y_below90_unchanged_against_b548": true,
     "C11_not_local_U6_bypass": true,
     "qualification": "Shorter exposed signal routes and no degradation of GND loop documented; notESD/SI qualification."
-  }
+  },
+  "source_revision_history": [
+    {
+      "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+      "description": "Prior fresh readback before USB In2 width-only0.15to0.17mm delta; now superseded."
+    }
+  ],
+  "width_only_USB_refresh": {
+    "source_before": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "source_after": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "change": "18 existing In2 USB tracks widened0.15to0.17mm; no centreline/via/pad/placement/net changes by root",
+    "all_17_fresh_loop_records_numerically_unchanged": true,
+    "all_17_fresh_ground_records_numerically_unchanged": true,
+    "In2_local_grid_paths_rerun": true,
+    "PDN_impedance_or_noise_tested": false
+  },
+  "input_project_sha256": "b13938ac04f08e4c3a4d19e5a498f7d05a37e9c54622fbafd04f8b3624df1346",
+  "input_custom_rules_sha256": "000b24e75b73068c5c85957ba071bc6e26098209cd6f7cb3cfee39cbdb7284ae"
 }

@@ -1,0 +1,1206 @@
+{
+  "date": "2026-10-29",
+  "status": "NOMINAL_2D_ESTIMATE_NOT_USB_COMPLIANCE_OR_FAB_RELEASE",
+  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "board_changed": false,
+  "selected_design_basis": {
+    "name": "JLC7628, 4-layer, nominal1.0mm, outer1oz, inner0.5oz",
+    "selection_scope": "Selected for this engineering analysis and recommended order confirmation. No order or board stackup was modified.",
+    "current_order_template_id_verified": false,
+    "explicit_stackup_in_native_pcb": false,
+    "layers_top_to_bottom": [
+      {
+        "name": "F.Cu",
+        "cu_mm": 0.035
+      },
+      {
+        "name": "prepreg7628x1",
+        "dielectric_mm": 0.2104,
+        "er": 4.4
+      },
+      {
+        "name": "In1.Cu GND",
+        "cu_mm": 0.0152
+      },
+      {
+        "name": "core",
+        "dielectric_mm": 0.4,
+        "er": 4.6
+      },
+      {
+        "name": "In2.Cu signals/+3V0",
+        "cu_mm": 0.0152
+      },
+      {
+        "name": "prepreg7628x1",
+        "dielectric_mm": 0.2104,
+        "er": 4.4
+      },
+      {
+        "name": "B.Cu signals",
+        "cu_mm": 0.035
+      }
+    ],
+    "sum_without_mask_mm": 1.0212,
+    "older_table_pp_er": 4.6,
+    "current_jlc_pp_er": 4.4,
+    "source_uncertainty": "Official legacy static table exposes1.0mm geometry. Current page exposes material parameters but only SSR1.6mm geometry; live1mm POST API could not be fetched. Exact current order stack/template/material must be confirmed by JLC before production.",
+    "mask_above_substrate_mm": 0.03048,
+    "mask_above_trace_mm": 0.01524,
+    "mask_er": 3.8
+  },
+  "native_usb_nets": {
+    "USB_DP": {
+      "trace_length_mm": 31.231504885042447,
+      "length_by_layer_mm": {
+        "F.Cu": 1.4758028890321493,
+        "In2.Cu": 29.7557019960103
+      },
+      "via_count": 2,
+      "widths_mm": [
+        0.15,
+        0.17
+      ]
+    },
+    "USB_DN": {
+      "trace_length_mm": 32.957220528161045,
+      "length_by_layer_mm": {
+        "F.Cu": 8.009556274847712,
+        "In2.Cu": 24.947664253313334
+      },
+      "via_count": 2,
+      "widths_mm": [
+        0.15,
+        0.17
+      ]
+    },
+    "USB_DP_CONN": {
+      "trace_length_mm": 12.996637802864843,
+      "length_by_layer_mm": {
+        "F.Cu": 7.803134918610404,
+        "In2.Cu": 5.19350288425444
+      },
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ]
+    },
+    "USB_DN_CONN": {
+      "trace_length_mm": 15.552121202458748,
+      "length_by_layer_mm": {
+        "F.Cu": 7.423084412271569,
+        "In2.Cu": 8.129036790187179
+      },
+      "via_count": 2,
+      "widths_mm": [
+        0.15
+      ]
+    }
+  },
+  "native_raytac_pad_nets": {
+    "28": "+3V0",
+    "30": "+3V0",
+    "31": "unconnected-(U3-DCCH-Pad31)",
+    "32": "VBUS",
+    "34": "USB_DN",
+    "35": "USB_DP"
+  },
+  "native_cross_sections": [
+    {
+      "y_mm": 68,
+      "pair_mid_x_mm": 70.9,
+      "pair_centres_x_mm": [
+        70.75,
+        71.05000000000001
+      ],
+      "in1_gnd_intervals": [
+        {
+          "x_mm": [
+            68.8975,
+            72.4975
+          ],
+          "nets": [
+            "GND"
+          ]
+        },
+        {
+          "x_mm": [
+            72.6025,
+            72.9
+          ],
+          "nets": [
+            "GND"
+          ]
+        }
+      ],
+      "in2_power_intervals": [
+        {
+          "x_mm": [
+            68.8975,
+            70.5125
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        },
+        {
+          "x_mm": [
+            71.2875,
+            72.4975
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        },
+        {
+          "x_mm": [
+            72.6025,
+            72.8125
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        }
+      ],
+      "b_cu_intervals": [
+        {
+          "x_mm": [
+            72.0925,
+            72.2725
+          ],
+          "nets": [
+            "FLASH_CS_N"
+          ]
+        }
+      ]
+    },
+    {
+      "y_mm": 71,
+      "pair_mid_x_mm": 70.9,
+      "pair_centres_x_mm": [
+        70.75,
+        71.05000000000001
+      ],
+      "in1_gnd_intervals": [
+        {
+          "x_mm": [
+            68.8975,
+            72.9
+          ],
+          "nets": [
+            "GND"
+          ]
+        }
+      ],
+      "in2_power_intervals": [
+        {
+          "x_mm": [
+            68.8975,
+            70.5125
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        },
+        {
+          "x_mm": [
+            71.2875,
+            72.7725
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        }
+      ],
+      "b_cu_intervals": [
+        {
+          "x_mm": [
+            72.2425,
+            72.4575
+          ],
+          "nets": [
+            "QSPI_IO2"
+          ]
+        }
+      ]
+    },
+    {
+      "y_mm": 73.5,
+      "pair_mid_x_mm": 71.1,
+      "pair_centres_x_mm": [
+        70.94999999999999,
+        71.25
+      ],
+      "in1_gnd_intervals": [
+        {
+          "x_mm": [
+            69.0975,
+            71.5425
+          ],
+          "nets": [
+            "GND"
+          ]
+        },
+        {
+          "x_mm": [
+            72.1575,
+            73.1
+          ],
+          "nets": [
+            "GND"
+          ]
+        }
+      ],
+      "in2_power_intervals": [
+        {
+          "x_mm": [
+            69.0975,
+            70.7125
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        },
+        {
+          "x_mm": [
+            72.5725,
+            73.1
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        }
+      ],
+      "b_cu_intervals": [
+        {
+          "x_mm": [
+            69.5475,
+            69.8475
+          ],
+          "nets": [
+            "VBUS"
+          ]
+        }
+      ]
+    },
+    {
+      "y_mm": 80,
+      "pair_mid_x_mm": 73.6,
+      "pair_centres_x_mm": [
+        73.44999999999999,
+        73.75
+      ],
+      "in1_gnd_intervals": [
+        {
+          "x_mm": [
+            71.5975,
+            74.0825
+          ],
+          "nets": [
+            "GND"
+          ]
+        },
+        {
+          "x_mm": [
+            74.6175,
+            75.6
+          ],
+          "nets": [
+            "GND"
+          ]
+        }
+      ],
+      "in2_power_intervals": [
+        {
+          "x_mm": [
+            71.5975,
+            73.2125
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        },
+        {
+          "x_mm": [
+            73.9875,
+            75.6
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        }
+      ],
+      "b_cu_intervals": []
+    },
+    {
+      "y_mm": 84,
+      "pair_mid_x_mm": 73.6,
+      "pair_centres_x_mm": [
+        73.44999999999999,
+        73.75
+      ],
+      "in1_gnd_intervals": [
+        {
+          "x_mm": [
+            71.5975,
+            75.6
+          ],
+          "nets": [
+            "GND"
+          ]
+        }
+      ],
+      "in2_power_intervals": [
+        {
+          "x_mm": [
+            71.5975,
+            73.2125
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        },
+        {
+          "x_mm": [
+            73.9875,
+            75.6
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        }
+      ],
+      "b_cu_intervals": [
+        {
+          "x_mm": [
+            72.9225,
+            73.0775
+          ],
+          "nets": [
+            "+3V0"
+          ]
+        }
+      ]
+    }
+  ],
+  "native_cross_section_sample_step_mm": 0.005,
+  "model": {
+    "solver": "scripts/usb_cross_section_fd.cpp, finite-volume electrostatics with harmonic dielectric interfaces; PCG residual<1e-9",
+    "equations": [
+      "div(epsilon grad V)=0",
+      "odd mode Vplus=+1V,Vminus=-1V; symmetry plane0V",
+      "Codd=Qplus/1V; repeat same geometry in vacuum to obtain Codd0",
+      "Zdiff=2/(c*sqrt(Codd*Codd0))"
+    ],
+    "geometry": "Perfect rectangular copper; In1 idealGND. In2 trace thickness rounds to0.015mm at grids5/2.5um. Air above B and0.03048mm mask on unplated substrate; F mask0.03048mm between traces/0.01524mm over trace. No actual B signal conductors in base model.",
+    "coplanar_case": "Ideal equipotential AC0 conductor outside both pair edges by0.15mm on In2. Conditional lower estimate: real+3V0 is not automaticallyGND, especially common mode or asymmetric gaps.",
+    "b_ground_case": "Hypothetical continuous grounded B strip/plane0.2104mm from In2 copper. Not present in canonical.",
+    "tails": "Not continuously parallel. front model is hypothetical paired F geometry; single cases estimate isolated traceZ0, not a Zdiff for separately routed tails.",
+    "not_modelled": [
+      "frequency-dependentEr/loss/copperroughness/trapezoid",
+      "full3D bends/vias/antipads/module/ESD/pins/connector/cable",
+      "nonuniform+3V0 return impedance",
+      "manufacturing dimensional distributions",
+      "transienteye/ESD/EMC"
+    ],
+    "validation_scope": "Analytic parallel-plate sanity check, mesh and box convergence. Not independently calibrated against a commercial field solver or impedance coupon."
+  },
+  "calculations": [
+    {
+      "mode": "in2",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.36212625368e-10,
+      "C_odd_vacuum_F_per_m": 3.13149110329e-11,
+      "Z_diff_ohm": 102.146859739,
+      "iterations": [
+        1428,
+        1469
+      ],
+      "relative_residual": [
+        9.83236267261e-10,
+        9.99769184923e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2",
+      "pitch_mm": 0.0025,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.36696168201e-10,
+      "C_odd_vacuum_F_per_m": 3.14257119354e-11,
+      "Z_diff_ohm": 101.786119995,
+      "iterations": [
+        2786,
+        2863
+      ],
+      "relative_residual": [
+        9.93595614042e-10,
+        9.97943923168e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "in2",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 5,
+      "box_height_mm": 3.6,
+      "b_ground_half_width_mm": 5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.36179002869e-10,
+      "C_odd_vacuum_F_per_m": 3.12969235208e-11,
+      "Z_diff_ohm": 102.188822171,
+      "iterations": [
+        2655,
+        2836
+      ],
+      "relative_residual": [
+        9.97594958066e-10,
+        9.9588013237e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "in2",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.6,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.39181373782e-10,
+      "C_odd_vacuum_F_per_m": 3.13149110329e-11,
+      "Z_diff_ohm": 101.051587879,
+      "iterations": [
+        1429,
+        1469
+      ],
+      "relative_residual": [
+        9.9615220667e-10,
+        9.99769184923e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2_coplanar",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.48650270006e-10,
+      "C_odd_vacuum_F_per_m": 3.36289842126e-11,
+      "Z_diff_ohm": 94.3560098114,
+      "iterations": [
+        1178,
+        1300
+      ],
+      "relative_residual": [
+        9.97215107468e-10,
+        9.78559044911e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2_coplanar",
+      "pitch_mm": 0.0025,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.49251108044e-10,
+      "C_odd_vacuum_F_per_m": 3.37629503898e-11,
+      "Z_diff_ohm": 93.9788909127,
+      "iterations": [
+        2308,
+        2518
+      ],
+      "relative_residual": [
+        9.98274524458e-10,
+        9.94546006734e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "in2_b_ground",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.51373031635e-10,
+      "C_odd_vacuum_F_per_m": 3.37421224153e-11,
+      "Z_diff_ohm": 93.3466721879,
+      "iterations": [
+        803,
+        802
+      ],
+      "relative_residual": [
+        9.55630446925e-10,
+        9.53908612451e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2_b_ground",
+      "pitch_mm": 0.0025,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.51927660376e-10,
+      "C_odd_vacuum_F_per_m": 3.38644659818e-11,
+      "Z_diff_ohm": 93.0076672865,
+      "iterations": [
+        1575,
+        1572
+      ],
+      "relative_residual": [
+        9.99984132708e-10,
+        9.91216713718e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "in2_b_ground",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 0.75,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.51354965055e-10,
+      "C_odd_vacuum_F_per_m": 3.3739321423e-11,
+      "Z_diff_ohm": 93.3561181211,
+      "iterations": [
+        1364,
+        1372
+      ],
+      "relative_residual": [
+        9.94657053099e-10,
+        9.97750131288e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2_b_ground_coplanar",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.57216661107e-10,
+      "C_odd_vacuum_F_per_m": 3.50381528699e-11,
+      "Z_diff_ohm": 89.8854520348,
+      "iterations": [
+        637,
+        637
+      ],
+      "relative_residual": [
+        9.81773761207e-10,
+        9.67485662254e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "front",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.0841283841e-10,
+      "C_odd_vacuum_F_per_m": 3.67042507786e-11,
+      "Z_diff_ohm": 105.757397109,
+      "iterations": [
+        1355,
+        1465
+      ],
+      "relative_residual": [
+        9.85849073511e-10,
+        9.96168295956e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "front",
+      "pitch_mm": 0.0025,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 1.08668899231e-10,
+      "C_odd_vacuum_F_per_m": 3.68015057583e-11,
+      "Z_diff_ohm": 105.493053835,
+      "iterations": [
+        2650,
+        2860
+      ],
+      "relative_residual": [
+        9.87218790372e-10,
+        9.95848805837e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "single_front",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 5,
+      "box_height_mm": 3.6,
+      "b_ground_half_width_mm": 5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 8.30822585132e-11,
+      "C_odd_vacuum_F_per_m": 2.57782007085e-11,
+      "Z_single_ohm": 72.0773564329,
+      "iterations": [
+        2704,
+        2875
+      ],
+      "relative_residual": [
+        9.93098218844e-10,
+        9.99528476515e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "single_in2",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 5,
+      "box_height_mm": 3.6,
+      "b_ground_half_width_mm": 5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 7.98285782517e-11,
+      "C_odd_vacuum_F_per_m": 1.95440908191e-11,
+      "Z_single_ohm": 84.4485824177,
+      "iterations": [
+        2690,
+        2880
+      ],
+      "relative_residual": [
+        9.98134544515e-10,
+        9.95965473935e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "in2",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.17,
+      "gap_mm": 0.13,
+      "C_odd_F_per_m": 1.47239268141e-10,
+      "C_odd_vacuum_F_per_m": 3.38626147027e-11,
+      "Z_diff_ohm": 94.4794210009,
+      "iterations": [
+        1426,
+        1468
+      ],
+      "relative_residual": [
+        9.86039358952e-10,
+        9.85424823674e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2_coplanar",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.17,
+      "gap_mm": 0.13,
+      "C_odd_F_per_m": 1.6021286393e-10,
+      "C_odd_vacuum_F_per_m": 3.62716752238e-11,
+      "Z_diff_ohm": 87.5138507162,
+      "iterations": [
+        1178,
+        1299
+      ],
+      "relative_residual": [
+        9.85761265858e-10,
+        9.92215400091e-10
+      ],
+      "nx": 500,
+      "ny": 360
+    },
+    {
+      "mode": "in2",
+      "pitch_mm": 0.0025,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.17,
+      "gap_mm": 0.13,
+      "C_odd_F_per_m": 1.47773765652e-10,
+      "C_odd_vacuum_F_per_m": 3.39846116722e-11,
+      "Z_diff_ohm": 94.1389752853,
+      "iterations": [
+        2782,
+        2859
+      ],
+      "relative_residual": [
+        9.99985670479e-10,
+        9.93713080458e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "in2_coplanar",
+      "pitch_mm": 0.0025,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 1.8,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.17,
+      "gap_mm": 0.13,
+      "C_odd_F_per_m": 1.60864853813e-10,
+      "C_odd_vacuum_F_per_m": 3.64169114157e-11,
+      "Z_diff_ohm": 87.161993306,
+      "iterations": [
+        2306,
+        2518
+      ],
+      "relative_residual": [
+        9.99128401276e-10,
+        9.97812857386e-10
+      ],
+      "nx": 1000,
+      "ny": 720
+    },
+    {
+      "mode": "parallel_plate",
+      "pitch_mm": 0.005,
+      "half_box_width_mm": 2.5,
+      "box_height_mm": 0.6,
+      "b_ground_half_width_mm": 2.5,
+      "er_pp": 4.4,
+      "er_core": 4.6,
+      "width_mm": 0.15,
+      "gap_mm": 0.15,
+      "C_odd_F_per_m": 2.54557899618e-10,
+      "C_odd_vacuum_F_per_m": 5.533867383e-11,
+      "Z_single_ohm": 28.1042263123,
+      "iterations": [
+        469,
+        469
+      ],
+      "relative_residual": [
+        9.8073061355e-10,
+        9.80730613552e-10
+      ],
+      "nx": 500,
+      "ny": 120
+    }
+  ],
+  "analytic_parallel_plate_sanity_check": {
+    "model": "Ground0V atz=0; signal1V atz=0.4mm; sideNeumann boundaries; width2.5mm; homogeneousEr4.6",
+    "C_F_per_m": 2.54557899618e-10,
+    "Z_ohm": 28.104226312423332,
+    "scope": "Checks potential/charge extraction, units and quasiTEM factor against analytic parallel plate; does not validate actual heterogeneous cross sections."
+  },
+  "rejected_b_ground_proposal": {
+    "source": "Root native read of .work/usb_reference_candidate, not merged",
+    "rectangle_mm": [
+      68.5,
+      64,
+      74.6,
+      89
+    ],
+    "native_axis_coverage_pct": {
+      "USB_DP": 69.3,
+      "USB_DN": 73.5
+    },
+    "reason": "B signals interrupt candidate fill. Ideal continuous93ohm cannot be assigned to this discontinuous geometry; no demonstrated net benefit."
+  },
+  "raytac_8p3": {
+    "text_verified": true,
+    "visual_schematic_verified": false,
+    "pdf_pages_zero_indexed": [
+      39,
+      40
+    ],
+    "normal_mode": "U3.28VDD and.30VDDH on3V0, .31DCCH NC, .32VBUS5V consistent with Nordic normal mode; host C11 is VBUS decoupling, not exposedDECUSB.",
+    "remaining_check": "Literal external capacitor values/placement and module internal decoupling from Raytac section8.3 drawing still require visual comparison.",
+    "access_attempts": [
+      "OfficialPDF text retrieved from primaryRaytacURL",
+      "web screenshot returned references only",
+      "raw MCP screenshot result content contained text only: ImageDisplayed; no image blocks",
+      "shell DNS fails; no localPDF retrieved",
+      "officialRaytacblog reference image found but is MDBT50Q-RX dongle, not exactsection8.3; not substituted"
+    ]
+  },
+  "gate_A_before_fabrication": [
+    "Confirm exact current JLC1mm7628 template/material/Cu/dielectrics and acceptable trace geometry; bind to fabrication instruction. Current nominal model alone is not90ohm qualification.",
+    "Complete visual Raytac8.3 comparison; no inferred capacitor/resistor changes."
+  ],
+  "gate_B_physical_qualification": [
+    "USB fullspeed12Mbps firmware, both connector orientations, long transfer/CRC/reconnect tests",
+    "MeasureFS signal quality with correctfixture/cable; compareeye and edges, notHS480Mbps mask",
+    "ESD/protection return testing and power/RF/thermal prototype tests"
+  ],
+  "sources_primary": {
+    "jlc_1mm_legacy_table": "https://cart.jlcpcb.com/client/template/placeOrder/impedance.html",
+    "jlc_current_material_parameters": "https://jlcpcb.com/impedance",
+    "jlc_capabilities": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "raytac_ver_L": "https://www.raytac.com/download/index.php?index_id=43",
+    "nordic_power": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/power.html",
+    "nordic_dcch": "https://devzone.nordicsemi.com/f/nordic-q-a/108362/vdd-vddh-and-dcch-mistake",
+    "nordic_usb_resistors": "https://devzone.nordicsemi.com/f/nordic-q-a/94955/resistors-for-d-and-d-",
+    "quasi_tem_method": "https://www.comsol.com/support/learning-center/article/modeling-tem-and-quasi-tem-transmission-lines-21971",
+    "quasi_tem_rlgc": "https://doc.comsol.com/6.4/doc/com.comsol.help.models.rf.transmission_line_coaxial/transmission_line_coaxial.html",
+    "usb_fs_edges": "https://compliance.usb.org/index.asp?UpdateFile=Electrical",
+    "usb_fs_vs_hs": "https://www.usb.org/node/214",
+    "nordic_12Mbps": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/keyfeatures_html5.html"
+  },
+  "model_sources_sha256": {
+    "scripts/usb_cross_section_fd.cpp": "5f2cbe79ec5bbb563c5b11e56c2cc3bc974ee2d57588f1e7542892c529b7b28b",
+    "scripts/review_usb_stackup.py": "dc439e949815ab4477a6629205d7b8d589eeb065cb058d09cc34575ba9b86d4f"
+  },
+  "accepted_width_correction": {
+    "status": "ADOPTED_LOCAL_WIDTH_ONLY_NATIVE_DRC_PASS",
+    "source_board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "reason": "Selected JLC7628 4L1.0mm model: 0.15/0.15 about102ohm, 0.17/0.13 about94.5ohm ground-only and87.5ohm conditional AC coplanar",
+    "tracks_changed": [
+      {
+        "uuid": "6a2046df-91e3-4bcd-8d30-d7c0e2c533e1",
+        "net": "USB_DN",
+        "start_mm": [
+          70.537867,
+          65.35
+        ],
+        "end_mm": [
+          70.75,
+          65.562132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "7e771659-a24d-40d6-8e30-af3d20097af1",
+        "net": "USB_DN",
+        "start_mm": [
+          70.3,
+          65.35
+        ],
+        "end_mm": [
+          70.537867,
+          65.35
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "8c3a3a3b-cbc9-46a1-bcc2-81f5876d7e57",
+        "net": "USB_DN",
+        "start_mm": [
+          70.75,
+          65.562132
+        ],
+        "end_mm": [
+          70.75,
+          72.762132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "a7ddcf8c-03e1-40ec-b703-651eb14ba0c3",
+        "net": "USB_DN",
+        "start_mm": [
+          70.75,
+          72.762132
+        ],
+        "end_mm": [
+          70.949999,
+          72.962132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "a9b552e7-0711-4c6e-9a39-8b4323776eb4",
+        "net": "USB_DN",
+        "start_mm": [
+          73.449999,
+          77.662132
+        ],
+        "end_mm": [
+          73.449999,
+          86.8
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "c4fade26-d4cc-4090-86ee-0b508febe09f",
+        "net": "USB_DN",
+        "start_mm": [
+          70.949999,
+          72.962132
+        ],
+        "end_mm": [
+          70.949999,
+          74.362132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "c9cf9381-53fa-48d0-950c-b2f782852b94",
+        "net": "USB_DN",
+        "start_mm": [
+          71.149999,
+          75.362132
+        ],
+        "end_mm": [
+          73.449999,
+          77.662132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "e6867bb0-5be3-4500-83ff-20a597c0cc3a",
+        "net": "USB_DN",
+        "start_mm": [
+          70.949999,
+          74.362132
+        ],
+        "end_mm": [
+          71.149999,
+          74.562132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "ec71ed7f-5765-4a77-9a55-f218159d1ec7",
+        "net": "USB_DN",
+        "start_mm": [
+          71.149999,
+          74.562132
+        ],
+        "end_mm": [
+          71.149999,
+          75.362132
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "01e52aee-e793-4fdc-8d1d-88eeae273c49",
+        "net": "USB_DP",
+        "start_mm": [
+          71.45,
+          75.237867
+        ],
+        "end_mm": [
+          73.75,
+          77.537867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "1ee8aea3-0231-4a6d-9291-6d29ad028f64",
+        "net": "USB_DP",
+        "start_mm": [
+          73.75,
+          77.537867
+        ],
+        "end_mm": [
+          73.75,
+          86.8
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "236f859f-485a-43d2-b8f2-ff2ab0f131ce",
+        "net": "USB_DP",
+        "start_mm": [
+          71.05,
+          65.437867
+        ],
+        "end_mm": [
+          71.05,
+          72.637867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "2a05b493-9eeb-4970-ae52-bd9b310ec0a4",
+        "net": "USB_DP",
+        "start_mm": [
+          71.25,
+          72.837867
+        ],
+        "end_mm": [
+          71.25,
+          74.237867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "3f06a220-81cf-4c22-886f-2c67b13beb57",
+        "net": "USB_DP",
+        "start_mm": [
+          71.25,
+          74.237867
+        ],
+        "end_mm": [
+          71.45,
+          74.437867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "4263e76c-95aa-4024-b16b-5741dae35455",
+        "net": "USB_DP",
+        "start_mm": [
+          70.3,
+          65.05
+        ],
+        "end_mm": [
+          70.662132,
+          65.05
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "808081eb-7c48-4e04-8da7-895dc56137eb",
+        "net": "USB_DP",
+        "start_mm": [
+          71.05,
+          72.637867
+        ],
+        "end_mm": [
+          71.25,
+          72.837867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "ebb2bd77-52cd-4488-bb8b-642de184b929",
+        "net": "USB_DP",
+        "start_mm": [
+          70.662132,
+          65.05
+        ],
+        "end_mm": [
+          71.05,
+          65.437867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      },
+      {
+        "uuid": "f93748b1-8069-4f2d-a0fe-dc9f1f3c582b",
+        "net": "USB_DP",
+        "start_mm": [
+          71.45,
+          74.437867
+        ],
+        "end_mm": [
+          71.45,
+          75.237867
+        ],
+        "width_before_mm": 0.15,
+        "width_after_mm": 0.17
+      }
+    ],
+    "track_centreline_changed": false,
+    "tracks_added_removed": 0,
+    "vias_changed": 0,
+    "footprints_changed": 0,
+    "pair_specific_clearance_mm": 0.125,
+    "global_other_clearance_mm": 0.15,
+    "final_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "unchanged_track_uuid_set": true,
+    "unchanged_track_centrelines_layers_nets": true,
+    "unchanged_footprints_vias_pads": true,
+    "native_drc": "reports/drc_final.json",
+    "hardware_tested": false
+  },
+  "model_scenario_classification": {
+    "historical_trunk_geometry": "0.15mm width/0.15mm gap",
+    "current_trunk_geometry": "0.17mm width/0.13mm nominal gap",
+    "current_tails": "0.15mm, nonuniform coupling; no single whole-path Zdiff"
+  }
+}

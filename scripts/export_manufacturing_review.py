@@ -51,6 +51,13 @@ def main():
     cli('pcb', 'export', 'gerbers', '--output', str(OUT/'gerbers')+'/',
         '--layers', 'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts',
         '--check-zones', '--use-drill-file-origin', '--no-protel-ext', PCB)
+    # KiCad has no qualified fabrication stack recorded in the native PCB.
+    # Keep its automatic job as an explicitly non-order reference, outside upload ZIP.
+    reference = OUT/'reference'
+    reference.mkdir(exist_ok=True)
+    for job in (OUT/'gerbers').glob('*.gbrjob'):
+        job.replace(reference/'KiCad_generic_stackup_NOT_FOR_ORDER.json')
+
     cli('pcb', 'export', 'drill', '--output', str(OUT/'drill')+'/',
         '--format', 'excellon', '--drill-origin', 'plot', '--excellon-units', 'mm',
         '--excellon-separate-th', '--generate-map', '--map-format', 'pdf',
@@ -103,19 +110,27 @@ def main():
             raise SystemExit('Incomplete Excellon: ' + p.name)
     package = OUT/'Ankle_Sensor_V1_A1_GERBERS_DRILL_REVIEW.zip'
     (OUT/'README.txt').write_text(
-        'A1 REVIEW - NOT FOR FABRICATION OR ASSEMBLY ORDER\n'
+        'A1 FINAL REVIEW - CONDITIONAL READY; NOT AN ASSEMBLY ORDER RELEASE\n'
         'Real KiCad 10.0.7 exports from the PCB hash in export_manifest.json.\n'
         'Shared drill/place origin: native (50,101.6) mm, bottom-left board corner.\n'
         'Gerber/drill/CPL: mm, X right, Y up. Profile centreline: 30 x 51.6 mm.\n'
         'Four copper layers: F.Cu, In1.Cu(GND), In2.Cu(mixed), B.Cu.\n'
-        'Working thickness 1.0 mm. Gerber job stackup is an automatically generated\n'
-        'generic KiCad stack (0.28 mm dielectrics), NOT a selected JLC stackup.\n'
-        'No qualified 90-ohm USB impedance or material/finish specification.\n'
+        'Requested profile: JLC7628, 4L/1.0 mm nominal, outer1oz/inner0.5oz, green/ENIG.\n'
+        'Published: pp0.2104 / core0.400 / pp0.2104 mm; Cu0.035/0.0152/0.0152/0.035.\n'
+        'JLC must confirm current pressed stack/Dk and exact order compatibility.\n'
+        'See hardware/manufacturing_profile_A1.json and docs/usb_stackup_final_A1.md.\n'
+        'Native generic Gerber Job is in reference/, explicitly NOT FOR ORDER;\n'
+        'it is excluded from this Gerber/Drill upload ZIP.\n'
+        'USB retained In2 trunk0.17/0.13 mm: nominal2D model about94 ohm ground-only,\n'
+        'about87 ohm conditional coplanar3V0. Full-route90 ohm/USB eye unqualified.\n'
         'B.Paste is intentionally empty; 59 components assembled on Top only.\n'
         'Drill tool sizes, hole counts and plated slots: see drill/drill_report.txt.\n'
         'CPL preserves native rotations: JLC translations/pin1 preview unapproved.\n'
-        'Panel rails/fiducials, exact sourcing, MLCC Ceff, RF/USB, connector/clock\n'
-        'land patterns and JLC DFM must be closed before prototype ordering.\n'
+        'Before order: literal Raytac8.3, current stack/full USB geometry and JLC\n'
+        'BOM/CPL orientation/sourcing/panel/mask/stencil DFM confirmation.\n'
+        'Standard PCBA; X-ray for Raytac U3 and IMU U4. Battery/harness not fitted.\n'
+        'Physical Flash/IMU/BLE/USB/charging/thermal qualification follows prototypes;\n'
+        'start with limited bench supply, not an unqualified real LiPo.\n'
         'See ../../docs/release_checklist.md in the full project package.\n')
     with zipfile.ZipFile(package, 'w', zipfile.ZIP_DEFLATED) as z:
         z.write(OUT/'README.txt', 'README.txt')

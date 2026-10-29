@@ -31,3 +31,7 @@ U4.2 `SDx_Qvar1` i U4.3 `SCx_Qvar2` mają w uniwersalnym symbolu typ dwukierunko
 Wykonano rzeczywisty KiCad10.0.7: native ERC, DRC po refill/save z `--schematic-parity`, odczyt sieci schematu i padów PCB, statyczne porównanie manifestu i hierarchii. Lokalny dziennik zmian UUID: `reports/audit_geometry_changes_A1.json`, zmiana domyślnego ładowania: `reports/audit_charge_default_A1.json`.
 
 Wynik0 DRC dotyczy zadeklarowanych reguł. Sam poziom `error` dla par różnicowych nie ustanawia brakujących wymagań geometrycznych. Nie wykonano elektrycznej symulacji oka USB, pól elektromagnetycznych, testu anteny, prób MEMS ani testów ładowania na urządzeniu. [KiCad — DRC](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html#design-rule-checking).
+
+## Końcowe reguły USB
+
+W końcowej weryfikacji dodano jawny plik `.kicad_dru`: tylko między USB_DP i USB_DN minclearance/diffgap0.125mm, optimumgap0.13mm. Uzasadnienie:18 poszerzonych segmentów0.17mm i rzeczywisty model JLC7628; [raport](usb_stackup_final_A1.md). Nie jest to ignorowanie klasy kontroli; pozostałe sieci zachowują0.15mm i końcowy natywny DRC ma0naruszeń. Reguła musi być dołączona do przenoszonego projektu.

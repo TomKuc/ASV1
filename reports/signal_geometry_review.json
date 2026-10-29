@@ -1,9 +1,9 @@
 {
   "status": "GEOMETRY_REVIEW_ONLY_PHYSICAL_SI_AND_LFXO_QUALIFICATION_REQUIRED",
-  "as_of_utc": "2026-10-29T13:06:49.406547+00:00",
+  "as_of_utc": "2026-10-29T16:55:12.700093+00:00",
   "board_file": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
-  "board_bytes": 865741,
+  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+  "board_bytes": 865022,
   "board_unchanged_after_read": true,
   "kicad_version": "10.0.7",
   "auditor": {
@@ -32,8 +32,8 @@
   "stackup_not_fabricator_qualified": true,
   "drc": {
     "file": "reports/drc_final.json",
-    "sha256": "81cdc6852f60b4648b08fc18e265c4abad76232f300d82ff8e2eb10cacc2d477",
-    "date": "2026-10-29T14:05:36",
+    "sha256": "2302169c712377678652945ecb0fae17b8ff5bb997d69eba0bc678dcf7d1a629",
+    "date": "2026-10-29T17:52:55",
     "violations": 0,
     "unconnected": 0,
     "schematic_parity": 0,

@@ -1,8 +1,8 @@
 {
-  "status": "A1_AUDIT_REVIEW_NOT_RELEASED_FOR_FABRICATION_OR_ASSEMBLY",
-  "generated_utc": "2026-10-29T13:17:51.660051+00:00",
+  "status": "A1_FINAL_REVIEW_CONDITIONAL_READY_NOT_ORDER_RELEASE",
+  "generated_utc": "2026-10-29T17:22:58.001364+00:00",
   "kicad_version": "10.0.7",
-  "board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
   "native_drc": {
     "violations": 0,
     "unconnected_items": 0,
@@ -21,16 +21,18 @@
     "native_step": true,
     "complete_vendor_3d_assembly": false
   },
+  "prototype_status": "CONDITIONAL READY",
   "open_gates": "docs/release_checklist.md",
   "step_limitations": "Missing USB-C model, generic Raytac, Flash envelope, IMU height limit; no battery/case",
   "assembly_limitations": "Native footprint anchors/rotations, JLC translations and procurement unconfirmed",
   "physical_qualification": "Firmware and physical prototype tests are outstanding",
-  "audit_report": "docs/audit_A1_2026-10-29.md",
+  "audit_report": "docs/final_verification_A1.md",
   "ignored_check_classes": {
     "erc": [],
     "drc": []
   },
   "preserved_baseline": "reports/baselines/A1_routed_before_audit_2026-10-29.zip",
-  "commit_delivery": "Git bundle and commit_delivery.json are delivered beside the archive after committing; not recursively included",
-  "files_without_manifest_or_checksum_list": 185
+  "current_source_manifest": "reports/current_A1_manifest.json",
+  "commit_delivery": "Final Git bundle and final_commit_delivery_A1.json are delivered beside this archive after committing; not recursively included",
+  "files_without_manifest_or_checksum_list": 209
 }

@@ -28,5 +28,9 @@
   ],
   "import_instructions": "docs/git_delivery_A1.md",
   "hardware_tests_performed": false,
-  "fabrication_release": false
+  "fabrication_release": false,
+  "record_role": "HISTORICAL_DELIVERY_OF_PREVIOUS_AUDIT_NOT_CURRENT_REMOTE_STATE",
+  "later_local_commit": "28d88f22a6a9c0c0e1feb639546009518a6b5f8e",
+  "later_content_readback": "All paths from the old audit commit match the later checkout; commit identity/ancestry differs.",
+  "current_delivery_record": "reports/final_commit_delivery_A1.json"
 }

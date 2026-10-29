@@ -15,3 +15,5 @@ Aktualny [BOM](../manufacturing/review/assembly/BOM_REVIEW_NOT_RELEASED.csv) ma3
 Przed zamówieniem wykonać pełny import BOM/CPL do Standard PCBA, uzyskać potwierdzenie dokładnych MPN, ilości, MSL/reflow/X-ray oraz podglądu montażu. Nie składano zamówienia ani nie kontaktowano się z dostawcą w imieniu użytkownika.
 
 Akumulator nie jest pozycją SMT: wymagany oddzielnie dobrany i chroniony LiPo1S4.2V z NTC fizycznie na ogniwie. Nadal brak kwalifikowanego MPN pakietu/wiązki/NTC. Nie przyjęto, że dowolne złącze3-pin ma zgodną kolejność PACK+/NTC/PACK−.
+
+Aktualizacja końcowa: obowiązuje [macierz33grup](pcba_testability_final_A1.md). X-ray jest wymagane także dla Raytac U3, nie wyłącznie U4. U7/R1/R20 mają potwierdzone exactMPN/C w LCSC, lecz nieodczytaną ofertę JLC — zakup/akceptacja w zleceniu nadal wymagane.

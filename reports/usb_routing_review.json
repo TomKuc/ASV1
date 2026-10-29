@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "canonical_board": "hardware/Ankle_Sensor_V1.kicad_pcb",
-  "canonical_board_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+  "canonical_board_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
   "status": "GEOMETRY_MEASURED_USB_IMPEDANCE_AND_SIGNAL_INTEGRITY_UNQUALIFIED",
   "canonical_nets": {
     "USB_DP": {
@@ -10,8 +10,12 @@
         "F.Cu": 1.4758028890321493,
         "In2.Cu": 29.7557019960103
       },
+      "trace_width_segment_counts_mm": {
+        "0.150": 14,
+        "0.170": 9
+      },
       "via_count": 2,
-      "native_projection_gnd_coverage_pct": 94.77714756163083,
+      "native_projection_gnd_coverage_pct": 95.25077742013241,
       "max_missing_component_trace_length_sum_mm": 0.8254608091291198
     },
     "USB_DN": {
@@ -20,8 +24,12 @@
         "F.Cu": 8.009556274847712,
         "In2.Cu": 24.947664253313334
       },
+      "trace_width_segment_counts_mm": {
+        "0.150": 23,
+        "0.170": 9
+      },
       "via_count": 2,
-      "native_projection_gnd_coverage_pct": 95.02004037465275,
+      "native_projection_gnd_coverage_pct": 95.44187188976457,
       "max_missing_component_trace_length_sum_mm": 0.8564134339433862
     },
     "USB_DP_CONN": {
@@ -29,6 +37,9 @@
       "trace_length_by_layer_mm": {
         "F.Cu": 7.803134918610404,
         "In2.Cu": 5.19350288425444
+      },
+      "trace_width_segment_counts_mm": {
+        "0.150": 45
       },
       "via_count": 2,
       "native_projection_gnd_coverage_pct": 83.99836028903381,
@@ -40,12 +51,14 @@
         "F.Cu": 7.423084412271569,
         "In2.Cu": 8.129036790187179
       },
+      "trace_width_segment_counts_mm": {
+        "0.150": 48
+      },
       "via_count": 2,
       "native_projection_gnd_coverage_pct": 89.78817549731818,
       "max_missing_component_trace_length_sum_mm": 0.8521320343559645
     }
   },
-  "mcu_nominal_trace_width_mm": 0.15,
   "mcu_via_diameter_drill_mm": [
     0.5,
     0.25
@@ -68,8 +81,8 @@
   ],
   "limits": [
     "Historical pre-relocation proposal is preserved only as provenance; current lengths come from actual native tracks.",
-    "Only the retained MCU-side In2 trunk has the original nominal0.15mm gap; replacement tails,endpoint fanouts and connector-side geometry are not a qualified controlled-impedance pair.",
-    "Actual JLC dielectric stackup and Er are undefined; no90ohm or USB compliance claim.",
+    "Only the retained MCU-side In2 trunk has nominal 0.13mm pair gap; tails,endpoint fanouts and connector-side geometry are not a uniform qualified controlled-impedance pair.",
+    "Nominal JLC7628 models are in reports/usb_stackup_final_A1.json; current order stackup must be confirmed. No whole-path90ohm or USB compliance claim.",
     "Current whole-path via counts are DP4 and DN4; equal counts do not establish impedance or signal quality."
   ],
   "historical_mcu_proposal": {
@@ -132,7 +145,8 @@
       ]
     ],
     "historical_only": true,
-    "context": "Frozen pre-ESD-relocation MCU proposal. Its lengths and complete centreline are not expected to match the current board."
+    "context": "Frozen pre-ESD-relocation MCU proposal. Its lengths and complete centreline are not expected to match the current board.",
+    "pre_width_correction_nominal_trace_width_mm": 0.15
   },
   "current_mcu_trace_length_skew_mm": 1.7257156431185976,
   "current_footprint_positions_mm": {
@@ -149,9 +163,11 @@
       93.3
     ]
   },
-  "main_paired_trunk_scope": "Original shared In2 trunk retained to y86.8mm; replacement tails and connector-side paths are separately routed and unqualified.",
-  "retained_trunk_nominal_pair_gap_mm": 0.15,
+  "main_paired_trunk_scope": "Shared In2 trunk retained to y86.8mm; width 0.17mm, nominal pair gap 0.13mm. Tails0.15mm and connector-side paths are separately routed and unqualified.",
+  "retained_trunk_nominal_pair_gap_mm": 0.13,
   "measured_usb_trace_widths_mm": [
-    0.15
-  ]
+    0.15,
+    0.17
+  ],
+  "retained_trunk_nominal_trace_width_mm": 0.17
 }

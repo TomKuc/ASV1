@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "date": "2026-10-29T14:06:33",
+    "date": "2026-10-29T18:00:31",
     "generator": "KiCad 10.0.7",
     "project": "Ankle_Sensor_V1",
     "board_name": "Ankle_Sensor_V1"
@@ -14,7 +14,7 @@
     "back_component_density": "4.27",
     "front_copper_area": "257.546 mm²",
     "back_copper_area": "121.591 mm²",
-    "min_track_clearance": "0.1500 mm",
+    "min_track_clearance": "0.1300 mm",
     "min_track_width": "0.1500 mm",
     "min_drill_diameter": "0.2500 mm",
     "board_thickness": "1.0000 mm",

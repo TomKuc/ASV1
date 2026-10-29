@@ -93,9 +93,11 @@ Wynik `reports/drc_power_fanout_proposal.json`: **0 błędów geometrii**, jedno
 
 ## Niezależny przegląd rzeczywistego routingu A1
 
-Powyższe sekcje opisują wcześniejsze propozycje i klony. Poniższe ustalenia odświeżono **29.10.2026 na rzeczywistym końcowym PCB** o SHA256 **`38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`**, po naprawach C3/Flash, R24 pull-up, relokacji U6 i poprawkach geometrii. Wcześniejszy odczyt `b5487d09…` jest historyczny. Ponownie odczytano 17 par IC–kondensator i wszystkie 17 padów GND/EP U1–U8. Szczegóły i współrzędne rzeczywistych ścieżek: `reports/power_routing_review.json`. Natywne DRC po refill/save ma 0 naruszeń, 0 niepołączonych elementów i 0 rozbieżności schemat–PCB. To przegląd geometrii, nie kwalifikacja elektryczna/termiczna prototypu.
+Powyższe sekcje opisują wcześniejsze propozycje i klony. Poniższe ustalenia odświeżono **29.10.2026 na rzeczywistym końcowym PCB** o SHA256 **`cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`**, po naprawach C3/Flash, R24 pull-up, relokacji U6 i poprawkach geometrii. Wcześniejszy odczyt `b5487d09…` jest historyczny. Ponownie odczytano 17 par IC–kondensator i wszystkie 17 padów GND/EP U1–U8. Szczegóły i współrzędne rzeczywistych ścieżek: `reports/power_routing_review.json`. Natywne DRC po refill/save ma 0 naruszeń, 0 niepołączonych elementów i 0 rozbieżności schemat–PCB. To przegląd geometrii, nie kwalifikacja elektryczna/termiczna prototypu.
 
 Sprawdzono sąsiedztwo elementów i ścieżek przez natywną łączność KiCad, połączenia vias z In1/In2 oraz zapisane wielokąty wypełnień. Wspólny polygon zasilania nie został uznany automatycznie za krótki obwód: dla gałęzi bez bezpośredniego F.Cu wyszukano lokalną drogę w rzeczywiście zapisanej miedzi z krokiem 0.05 mm. Wagi grafu natywnej łączności nie są długością ścieżki — kontakt może zachodzić wewnątrz pada lub na krawędziach szerszych odcinków. Raport rozdziela te wagi od jawnych polilinii i dokładnych odległości środków.
+
+Końcowa korekta 18 szerokości USB In2 0.15→0.17 mm nie zmieniła położeń padów, przelotek ani osi tras. Ponowny pomiar na `cdcbd234…` potwierdził identyczne 17 lokalnych pętli i 17 powrotów GND, również po sprawdzeniu zapisanej In2; poniższe liczby pozostają aktualne.
 
 | Obwód | Rzeczywista lokalna droga zasilania | Powrót kondensatora do In1 |
 |---|---|---|
@@ -131,7 +133,7 @@ Nie stwierdzono braku masy EP. Wąskie mostki termiczne i brak górnej powierzch
 
 Po przesunięciu C3 jego stara via GND (58.15,92.1) weszła otworem w pole SMD/pastę. Naprawiono tylko tę via, przesuwając ją do **(57.8,92.1)** i przedłużając jeden istniejący odcinek F.Cu GND. Otwór ma teraz **0.200 mm nominalnego zapasu** do miedzi i pasty C3. Jest to późniejsza rzeczywista korekta, niezależna od wcześniejszych propozycji placementu.
 
-Trwały audytor `scripts/audit_vias.py` w finalnym raporcie sprawdza **164 przelotki, 255 kształtów miedzi SMD i 243 apertury pasty**, obie strony i również pary tej samej sieci, w tym osobne apertury EP. Używa natywnego `Collide`, rzeczywistego promienia otworu i marginesów pasty; kontrola dodatnia wykrywa dawną kolizję C3. **Brak przecięć otworów z miedzią SMD i brak przecięć z pastą** po poprawce. Raport: `reports/via_pad_audit.json`, source hash `38545441…`.
+Trwały audytor `scripts/audit_vias.py` w finalnym raporcie sprawdza **164 przelotki, 255 kształtów miedzi SMD i 243 apertury pasty**, obie strony i również pary tej samej sieci, w tym osobne apertury EP. Używa natywnego `Collide`, rzeczywistego promienia otworu i marginesów pasty; kontrola dodatnia wykrywa dawną kolizję C3. **Brak przecięć otworów z miedzią SMD i brak przecięć z pastą** po poprawce. Raport: `reports/via_pad_audit.json`, source hash `cdcbd234…`.
 
 Historyczne minimum **0.090 mm przy U5.7 / QSPI_IO3**, via (71.85,73.9), zostało naprawione: obecna via (71.85,73.76) ma **0.230001 mm** do miedzi i pasty U5.7. Bieżące minimum całego PCB to **0.150001 mm**, przy U6.2 oraz C4.2/C5.2. Otwory leżą poza miedzią i pastą. Nadal wymagana jest akceptacja JLC DFM z tolerancjami wykonania i rejestracji maski/szablonu; wynik CAD nie gwarantuje zachowania nominalnego marginesu na egzemplarzu. Skrypt nie zmienia PCB.
 

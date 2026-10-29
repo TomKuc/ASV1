@@ -1,8 +1,8 @@
 # Przegląd geometrii QSPI, SPI, LFXO i odniesienia GND
 
-Stan odczytu: **2026-10-29T13:06:49.406547+00:00**, KiCad 10.0.7. Plik: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA256:
+Stan odczytu: **2026-10-29T16:55:12.700093+00:00**, KiCad 10.0.7. Plik: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA256:
 
-`38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`
+`cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`
 
 Raport przeliczono z rzeczywistych obiektów i zapisanych wypełnień PCB, bez zmiany pliku ani ponownego fill. **QSPI 32 MHz, SPI IMU 8 MHz i LFXO wymagają fizycznej kwalifikacji.** Z geometrii ani DRC nie wyznaczono maksymalnej działającej częstotliwości.
 
@@ -88,6 +88,6 @@ Metoda v2 dodatkowo usuwa wnętrza otworów z kształtów miedzi padów/przelote
 
 ## Kontrole i kwalifikacja
 
-Dostarczony [DRC](../reports/drc_final.json) (`81cdc6852f60b4648b08fc18e265c4abad76232f300d82ff8e2eb10cacc2d477`): **0 naruszeń / 0 niepołączonych / 0 parity**, 0 ignorowanych kontroli. Skrypt nie uruchamia DRC i nie potwierdza niezależnie związania tego JSON z hashem PCB; źródło DRC musi wskazać prowadzący audyt.
+Dostarczony [DRC](../reports/drc_final.json) (`2302169c712377678652945ecb0fae17b8ff5bb997d69eba0bc678dcf7d1a629`): **0 naruszeń / 0 niepołączonych / 0 parity**, 0 ignorowanych kontroli. Skrypt nie uruchamia DRC i nie potwierdza niezależnie związania tego JSON z hashem PCB; źródło DRC musi wskazać prowadzący audyt.
 
 Wymagane pozostają pomiary QSPI/SPI, strojenie zboczy i R11, testy CRC pełnych 128 MiB i obu dies po resetach/zanikach oraz kwalifikacja LFXO. [Plan prób Flash A1](flash_firmware_test_plan_A1.md). Poprawny DRC i długości ścieżek nie są certyfikacją SI ani dokładności/synchronizacji zegarów.

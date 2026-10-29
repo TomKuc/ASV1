@@ -1,50 +1,35 @@
-A1 AUDIT REVIEW - NOT FOR FABRICATION OR ASSEMBLY ORDER
-Updated: 2026-10-29. Electrical connectivity is complete; design release gates remain open.
+A1 FINAL REVIEW — CONDITIONAL READY for 3–5 prototype PCBA, not an order release.
+Current source index: ../reports/current_A1_manifest.json.
+Current project package: ../Ankle_Sensor_V1_A1_FINAL_REVIEW.zip.
+Old A0/A1/AUDIT ZIP packages are historical.
 
-Editable KiCad 10.0.7 project: 4 layers, profile centreline 30 x 51.6 mm,
-working thickness 1.0 mm, 69 footprints, 59 Top-side assembled parts.
-Memory: W25Q01JVZEIQ, 128 MiB, dual die.
+Current board SHA256:
+cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40
+4L, nominal1.0mm, profile30x51.6mm. W25Q01JVZEIQ128MiB retained.
+Only18 existing USB In2 widths changed .15 to .17mm; no centreline/via/part moves.
+USB .13mm gap, explicit pair-only .125mm minimum rule; other nets .15mm.
+Keep hardware/Ankle_Sensor_V1.kicad_dru with the editable project.
 
-Final native DRC after audit local via/R24/USB repairs and refill/save:
-0 violations, 0 unconnected items, 0 schematic-parity findings.
-Native ERC: 0 errors, 2 documented intentional warnings at U4 pins 2/3.
-See ../reports/validation_status.json for report paths and exact source hashes.
+Selected order basis: JLC7628 4L1.0mm, outer1oz inner0.5oz, green/ENIG.
+pp.2104 / core.400 / pp.2104 mm, publishedCu.035/.0152/.0152/.035 mm.
+Confirm current JLC pressed-stack/Dk/thickness definitions before order.
+Quasi-static2D USB trunk estimate94.14ohm, conditional coplanar87.16ohm.
+No complete-route90ohm or physical USB compliance is claimed.
+Generic KiCad Gerber Job is reference/KiCad_generic_stackup_NOT_FOR_ORDER.json,
+excluded from the Gerber/Drill upload ZIP; it is NOT an order instruction.
 
-review/ contains 11 real Gerber layers, PTH/NPTH Excellon, drill maps,
-BOM/CPL, native positions, an export manifest and a Gerber/Drill REVIEW ZIP.
-Common native drill/place origin: (50,101.6) mm, bottom-left board corner.
-The exported profile is 30 x 51.6 mm at its centreline; the .05 mm plotting
-stroke makes the automatic Gerber Job bounding box .05 mm larger.
-All 59 placement positions, 164 via drills, 4 plated slots and 2 NPTH holes
-were compared with the native PCB. This is not independent CAM DRC.
+Native KiCad10.0.7: ERC0errors/2documented IMU warnings;
+DRC0violations/0opens/0schematic-parity, no ignored classes.
+59fittedTOP parts/33BOMgroups,164vias,4PTHslots,2NPTH.
+Export coordinate comparison passed, no nominal drill/SMD/paste overlaps;
+minimum gap.150001mm. CPL native rotations await JLC preview approval.
+Standard PCBA, X-ray required for both RaytacU3 and IMUU4.
+Battery/NTCharness and SWDfixture are external; J3/TP pads are not fitted parts.
 
-IMPORTANT: Gerber Job stackup is the automatic generic KiCad stack, not a
-selected JLCPCB stackup or material/finish instruction. USB 90 ohm impedance
-and signal quality are unqualified. CPL retains native KiCad footprint
-anchors/rotations; JLC component translations and pin-1 preview are unapproved.
-JLCPCB Standard needs a qualified panel with rails/fiducials preserving RF
-keepout. Review the entire copper/mask/paste/drill package independently.
-
-STEP/render are in ../reports/. USB-C 3D model is missing, Raytac is generic,
-Flash is a documented maximum envelope, IMU CAD is .80 mm versus ST max .86.
-Battery, cables, plug and enclosure are absent from the model.
-
-Open pre-order gates: exact stackup and USB geometry, Raytac reference circuit,
-USB-C/crystal mechanical and land-pattern review, effective MLCC capacitance,
-whole-port USB input budget/suspend/inrush, exact procurement, placement
-translations, panelization, stencil/mask/thermal DFM and CAM/JLC review.
-U5.7 hole-to-SMD/paste gap improved .090 to .230 mm; global minimum is
-.150 mm. J1 gap improved .105 to .175 mm. Fabrication
-registration tolerance requires DFM. No via holes intersect SMD/paste nominally.
-
-Battery/on-cell NTC qualification, charging/thermal behavior, acquisition,
-QSPI addressing/data integrity, timing/synchronization and firmware tests are
-required on prototypes. Firmware is specified, not implemented.
-See ../README.md and ../docs/release_checklist.md. Do not order from this
-REVIEW package until the unresolved design/manufacturing gates are closed.
-
-All formerly ignored ERC/DRC classes enabled. INT1=P0.11; INT2=P0.12.
-R24 pulls CHG_INHIBIT high at MCU reset/HiZ; no autonomous charging without
-working firmware. USB source policy/budget remain open. Both Flash dies need
-a qualified driver; no F01-F20 hardware tests have been run.
-Audit report: ../docs/audit_A1_2026-10-29.md.
+A before order: manufacturer drawings incl Raytac8.3/J1/Y1;
+current JLC stack/full USB geometry acceptance; exact procurement/BOM/CPL
+orientation incl U7C2760466/R1C25769/R20C852679; CAM/panel/stencil/mask DFM.
+B after prototypes: Flash20tests, boot/power/USB/charging/thermal/IMU/BLE.
+Use limited bench power and battery/NTC simulator before a real LiPo.
+Read ../docs/final_verification_A1.md and release_checklist.md.
+No order, physical tests or GitHub push performed.

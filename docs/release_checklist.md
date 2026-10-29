@@ -1,63 +1,35 @@
-# Warunki ukończenia i zwolnienia A1
+# A1 — warunki zamówienia prototypów
 
-Stan: **A1 AUDIT REVIEW / NOT FOR FABRICATION**, 2026-10-29. Istnieją rzeczywisty schemat, PCB, routing i natywne raporty KiCad 10.0.7. Projekt nie jest jeszcze zwolniony do zamówienia PCBA. Odhaczenie czynności przeglądu nie zastępuje końcowej kontroli plików ani prób prototypu. Zamknięcie elektryki, DFM i zaopatrzenia pozwala osobno zwolnić prototypy; kwalifikacja właściwości urządzenia wymaga dopiero ich badań.
+Stan: **CONDITIONAL READY**, 29.10.2026. Obowiązuje [raport końcowy](final_verification_A1.md) i [manifest bieżących plików](../reports/current_A1_manifest.json). Dawne raporty bazowe i paczki A0/A1/AUDIT zachowano jako historię.
 
-Końcowy [DRC](../reports/drc_final.json) po audycie, lokalnych poprawkach via/R24/USB i ponownym wypełnieniu stref: **0 naruszeń, 0 niepołączonych elementów, 0 rozbieżności schemat–PCB**. [Raport walidacji](../reports/validation_status.json) i [manifest eksportu](../manufacturing/review/export_manifest.json) identyfikują ten sam PCB hash. Wcześniejsze raporty są historią, nie bieżącym wynikiem.
+## A — zamknąć przed zamówieniem 3–5 PCBA
 
-## Schemat i części
+- [ ] **A01 — rysunki producentów:** literalne porównanie Raytac VerL§8.3 i kondensatorów/zasilania; akceptacja wymiarowanych rysunków footprintów Raytac, USB-C J1 i ABS07 Y1 wskazanych w przeglądzie PCBA. Brak bitmap w narzędziach nie oznacza wykonanego przeglądu.
+- [ ] **A02 — laminacja i USB:** JLC potwierdza wybrany JLC7628 4L/1.0mm, Dk/Cu/grubości oraz geometrię0.17/0.13mm. Własny model nominalny94.14/87.16Ω dotyczy przekrojów trunku, nie pełnego toru/padów/vias/ESD. Nie zamawiać na podstawie ogólnego Gerber Job KiCad; znajduje się w reference/, poza ZIP do uploadu.
+- [ ] **A03 — Standard PCBA:** wszystkie33 grupy/59TOP zaakceptowane w BOM/CPL, szczególnie U7 C2760466, R1 C25769 i R20 C852679; exact MPN, procurement, rotacje/pin1 i przesunięcia zatwierdzone. X-ray U3 Raytac i U4 IMU; IMU Standard Only.
+- [ ] **A04 — CAM/DFM:** maska/pasta LGA/WSON, tenting i nominalne minimum otwór→Cu/pasta0.150mm, panel/szyny/fiducjale oraz oddzielenie bez naruszenia RF i naprężeń IMU. Akceptacja pliku w formularzu nie jest tym przeglądem.
 
-- [x] Przegląd oficjalnych dokumentów podstawowych IC i pinmap: Raytac 61 pinów, IMU, Flash, ładowarka, LDO i okno temperatury.
-- [x] Edytowalny projekt KiCad, pięć arkuszy funkcjonalnych i główny arkusz hierarchii; 72 symbole. Odczyt i eksport PDF wykonane przez KiCad 10.0.7.
-- [x] Schemat zasilania, USB, SWD, SPI z dwoma przerwaniami, QSPI, LFXO i UI; konkretne wartości oraz MPN w roboczym BOM.
-- [x] Wybrana pamięć **W25Q01JVZEIQ / C5137036, 128 MiB**, korpus 8×6 mm. Obsługa obu matryc jest wymaganiem firmware.
-- [x] Sprzętowe okno NTC U7/U8/Q1/Q2; obliczenia tolerancji i warunki odbioru pakietu zapisane w raportach.
-- [x] Natywny ERC: **0 błędów, 2 świadome ostrzeżenia** dla uziemionych pinów 2/3 U4 w udokumentowanym trybie głównego SPI. Ostrzeżenia pozostają widoczne.
-- [x] Dobór MPN UI i pasywów; C1/C3 mają 2.2 µF/25 V, R25 1 kΩ ogranicza rozładowanie C17 przez przycisk.
-- [ ] Końcowe porównanie Raytac §8.3 i zasilania USB/DCCH z aktualnym schematem oraz pojemnościami.
-- [ ] Zamknięcie LFXO: land-pattern dokładnego ABS07, ESR, CL, tolerancja i obciążenie z pasożytami PCB; model biblioteczny nie stanowi CAD producenta.
-- [ ] Minimalna pojemność efektywna i ESR krytycznych MLCC po DC-bias, tolerancji, temperaturze i starzeniu; pełny budżet prądu i termiki LDO/ładowarki.
-- [ ] Konkretny chroniony pakiet LiPo 1S/4.2 V, preferowane 300 mAh: MPN, PCM, dopuszczalny prąd/temperatura ładowania, wymiary, wiązka i NTC fizycznie na ogniwie. JST: 1 PACK+, 2 NTC, 3 PACK−.
-- [ ] Pełny cykl ładowania docelowego pakietu przy limicie wejścia BQ 100 mA i timerze 360 min typowo. Dla 500 mAh pełne ładowanie nie jest zagwarantowane. Nie przyjęto detekcji źródła ani szybkiego ładowania.
-- [ ] USB: kwalifikacja **całego prądu z portu**, rozruchu/inrush i suspend. Bezpośrednia gałąź VBUS modułu omija BQ.IN; sam ILIM nie zamyka budżetu płytki. Wymagania w `firmware_contract.md`.
-- [ ] Ocena ochrony CC/VBUS, mapowania zdublowanych padów, połączenia ekranu i rysunku mechanicznego aktualnej dostawy USB-C.
-- [ ] Akceptacja rzeczywistego BOM przez JLCPCB, zakup/rezerwacja exact MPN i sprawdzenie zamienników. Numer C nie potwierdza dostępności ani rezerwacji.
+## Kontrole wykonane na obecnej A1
 
-- [x] Wszystkie wcześniej ignorowane klasy ERC/DRC włączono. Jedenaście ostrzeżeń końców ścieżek poprawiono lokalnie.
-- [x] Pinmapa IMU uzgodniona: INT1=P0.11, INT2=P0.12, bez zmiany połączeń.
-- [x] R24=100k zmieniono na pull-up do 3V0: HIGH/HiZ/reset inhibituje ładowanie; LOW zwalnia okno U7/U8. Brak autonomicznego ładowania bez firmware jest jawny.
-- [ ] Wyjaśnienie Winbond AN0000035/statusów obu dies oraz przypięty SDK i własna warstwa Flash; testy [F01–F20](flash_firmware_test_plan_A1.md) po wykonaniu prototypów.
+- [x] Routing zachowany. Tylko18 szerokości USB In2 zmieniono0.15→0.17mm; centra, warstwy, UUID, nety, vias, footprinty i pady bez zmian względem poprzedniej A1.
+- [x] Natywne KiCad10.0.7: ERC0errors/2 widoczne uzasadnione ostrzeżenia U4.2/3; DRC0 naruszeń/ostrzeżeń,0opens,0schematic-parity. Brak ignorowanych klas.
+- [x] Jawna reguła USB minclearance/diffgap0.125mm, optimumgap0.13mm; poza parą pozostaje0.15mm. Plik.kicad_dru jest częścią źródeł i paczki.
+- [x] Spójne BOM/CPL/PCB:59 pozycji TOP,33 grupy,69 footprintów; SWD i9TP nie są brakującymi częściami do montażu.
+- [x] Ponowny audyt164vias/255CuSMD/243paste:0 nominalnych przecięć, minimum0.150001mm. Antena:0mm² Cu w zadeklarowanym keepout.
+- [x] Po zmianie źródła odświeżono rzeczywiste Gerbery/Drill/BOM/CPL/PDF/STEP/render; współrzędne59CPL,164vias,4sloty PTH,2NPTH porównano z PCB.
+- [x] Stan HiZ ładowarki sprawdzony z netlistą; nie odwrócono ponownie R24. Udokumentowano hang LOW, System OFF, USB boot bez baterii i PCM-open.
 
-## PCB
+## B — próby po otrzymaniu prototypów
 
-- [x] Natywne PCB z **69 footprintami**, obrysem **30×51.6 mm**, czterema warstwami i roboczą grubością 1.0 mm. Roboczy CPL zawiera 59 pozycji montażowych; pozostałe footprinty to pola/przyłącza bez montażu.
-- [x] Projektowe symbole i footprinty oraz dostępne modele są lokalne; opisano źródła, numerację i geometrię Raytac/IMU/Flash. Ograniczenia pozostają jawne w raportach footprintów.
-- [x] Rozmieszczenie odsprzęgania i lokalne połączenia zasilania poprawione; ładowarka ma przelotki termiczne poza EP, bez zakładania procesu via-in-pad.
-- [x] Keepout anteny przedłużony do krawędzi na wszystkich warstwach. Kontrola zapisanych wypełnień wykazała 0 mm² miedzi w zakazanym obszarze dla sprawdzonego snapshotu.
-- [x] Wszystkie połączenia, w tym USB, ukończone. Poprawiono LFXO i odsunięto otwór przelotki od pada C3. Końcowy natywny DRC z `--schematic-parity`, po refill/save: 0 naruszeń, 0 braków, 0 rozbieżności.
-- [x] Pomierzono geometrię SPI/QSPI/LFXO/USB i zapisane drogi odniesienia. Raporty `signal_geometry_review.json` oraz `return_path_review.json` opisują lokalne antypady i odległą referencję GND dla B.Cu. In1 jest GND, In2 mieszaną warstwą zasilania/sygnałów; to nie kwalifikacja SI.
-- [ ] Kwalifikacja czasowa/SI QSPI/SPI i całego USB, uwzględniająca odcinki B.Cu nad mieszaną In2 oraz przejścia warstw.
-- [ ] Konkretny stos 4L/1.0 mm z oferty JLCPCB i przegląd geometrii/impedancji USB dla tego stosu; obecne trasowanie nie dowodzi 90 Ω.
-- [ ] Końcowa kontrola EP/pasty/maski WSON, LGA IMU, pinów wewnętrznych modułu, wyjść IMU na zewnątrz oraz niedozwolonej miedzi/vias pod sensorem.
-- [x] Odstęp otwór–SMD/pasta przy U5.7 poprawiono 0.090→0.230 mm i przy J1 0.105→0.175 mm. Globalne minimum wynosi 0.150 mm; brak nominalnych przecięć.
-- [ ] Akceptacja aktualnych zbliżeń, tentingu, maski i szablonu przez JLCPCB z tolerancjami procesu.
-- [x] Kontrola keepout na końcowych natywnych wypełnieniach: 0 mm² Cu w zabronionym obszarze obu warstw wewnętrznych.
-- [ ] Niezależny przegląd keepout na Gerberach oraz potwierdzenie baterii/metalu poza anteną.
-- [ ] Dostęp USB/SWD/przycisku, przewodów i baterii; podparcie oraz brak docisku i naprężeń IMU. Obudowa i pakiet nie należą do obecnego zespołu STEP.
-- [ ] Panelizacja dla JLCPCB Standard: **szyny co najmniej 5 mm**, fiducjale na szynach, zalecane 3–4 znaczniki z padem Cu 1 mm i otwarciem maski 2 mm; minimum 3.35 mm od krawędzi z uwzględnieniem obszaru keepout według rysunku wykonawcy. [Wymagania JLCPCB](https://jlcpcb.com/help/article/how-to-add-edge-rails-fiducials-for-pcb-assembly-order). Szyny, mostki i ich metal nie mogą naruszyć obszaru anteny; panel i oddzielanie wymagają DFM. Nie dodano teraz ciasno rozmieszczonych fiducjali do modułu.
+- [ ] Pierwsze zasilanie ograniczonym bench supply, symulatorem baterii/NTC, bez niezamierzonego USB/SWD backpower. Start bez baterii, przy niskim VBAT i PCM-open; rampy, CE, inrush i cały prąd USB.
+- [ ] Firmware inhibit przy boot, przed System OFF, po awarii/WDT; brak pętli restartów CE/timera. Suspend/resume i źródło USB zgodnie z przyznanym budżetem.
+- [ ] Przed ładowaniem rzeczywistego pakietu: jego MPN/PCM/recovery/NTC odniesiony do PACK−, wiązka i polaryzacja; progi/rampy, open/short/factory recovery, pełny cykl i termika. Brak baterii w BOM nie blokuje wykonania samej PCBA.
+- [ ] F01–F20 Flash128MiB: wszystkie NOT_RUN; oba dies,32-bit,16/32/64/128MiB, BUSY/WEL, CRC, reset/DPD/power-cut. Przypięty SDK i kontrakt AN0000035 do kwalifikacji firmware.
+- [ ] Cały USB: funkcjonalny transfer, eye/ESD; ripple/zasilanie/Ceff/termika; IMU ODR/FS/FIFO/szum/temperatura/luki; BLE i synchronizacja obu nóg.
+- [ ] Obudowa i bateria poza anteną, podparcie PCB bez docisku IMU, naprężenia/reflow/kalibracja. Niekompletny STEP nie stanowi finalnej geometrii obudowy.
 
-## Paczka do przeglądu i produkcji
+## C — dalsza rewizja
 
-- [x] Robocze BOM i CPL istnieją w `reports/assembly_review/`; nie zatwierdzono rotacji JLC ani zamówienia montażu.
-- [x] Natywny STEP płytki i render KiCad istnieją w `reports/`. Ograniczenia: **brak USB-C**, model Raytac jest ogólny, Flash ma jawny model gabarytowy, a IMU w CAD ma 0.80 mm zamiast maksymalnych 0.86 mm ST.
-- [ ] Modele/rysunki i maksymalne gabaryty umożliwiające zamknięcie obudowy; uzupełnienie USB-C i potwierdzenie wariantu Raytac. Obecny STEP służy przeglądowi.
-- [x] Rzeczywiste 11 Gerberów i Excellon PTH/NPTH z końcowego PCB, po 0 DRC/opens; wspólny aux origin **(50,101.6) mm**. Porównano obrys, 59 pozycji, 164 otworów via, 4 sloty PTH i 2 NPTH z natywnym PCB (`manufacturing_geometry_review.json`).
-- [ ] Niezależny przegląd CAM całej miedzi/maski/pasty i drill-map. Gerber Job ma ogólny stos KiCad, nie wybrany stos JLCPCB.
-- [ ] Finalne BOM/PnP z exact MPN, numerami C, warstwą, jednostkami, wspólnym origin i rotacją sprawdzoną w JLCPCB. Zweryfikować osobny zespół baterii.
-- [x] Raporty ERC/DRC, RF, dróg powrotnych i eksportu zidentyfikowane hashami końcowego PCB; świadome wyjątki ERC i nierozwiązane ograniczenia opisane.
-- [x] Globalny audyt otworów 164 przelotek względem 255 padów SMD Cu i 243 apertur pasty: brak przecięć po poprawce C3.
-- [ ] DFM marginesu otwór–pad/pasta: minimum geometryczne 0.150 mm; uwzględnić tolerancję wiercenia, maski i pasty. Audyt nominalny nie kwalifikuje procesu.
-- [ ] Akceptacja DFM, footprintów, pasty, polaryzacji, rotacji i zaopatrzenia w podglądzie JLCPCB; dopiero potem świadome zwolnienie prototypów do zamówienia.
+Optymalizacja138µA przy zachowaniu ochrony, mniejszy obrys, ergonomia, dedykowane QSPI TP/odłączany rail i ewentualny termiczny odczyt ogniwa przez MCU lub niezależny heartbeat. Nie są samodzielnymi blockerami tej partii prototypowej.
 
-## Weryfikacja fizyczna
-
-Próby z `firmware_contract.md` i `power_review.md` obejmują zasilanie i termikę pakietu, NTC i brownout, cały budżet USB/suspend/inrush, zapis po odcięciach, obie matryce Flash, przepustowość, synchronizację i niepewność czasu dwóch nóg, szum/filtrację/saturację IMU oraz wpływ obudowy i naprężeń. Firmware nie został zaimplementowany ani uruchomiony. Natywny ERC/DRC nie zastępuje tych prób.
+Nie wykonano testów fizycznych. Nie złożono zamówienia. Po zamknięciu A01–A04 decyzję i zlecenie podejmuje użytkownik; B pozostaje planem uruchomienia.

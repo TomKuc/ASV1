@@ -16,7 +16,7 @@ def main():
     ev=[v for sheet in erc['sheets'] for v in sheet['violations']]
     dv=drc['violations']
     report={
-        'revision':'A1-AUDIT','kicad_version':erc.get('kicad_version'),
+        'revision':'A1-FINAL-REVIEW','kicad_version':erc.get('kicad_version'),
         'erc_report':args.erc,'erc_errors':sum(v['severity']=='error' for v in ev),
         'erc_warnings':sum(v['severity']=='warning' for v in ev),
         'erc_review':'U4 pins2/3 intentionally grounded in documented primary-SPI mode with Qvar/sensorhub disabled. Native ERC warnings remain visible.',
@@ -32,13 +32,15 @@ def main():
     }
     names=['hardware/Ankle_Sensor_V1.kicad_pcb','hardware/Ankle_Sensor_V1.kicad_pro',
            'hardware/design.json','hardware/component_choices.json',
+           'hardware/placement.json','hardware/manufacturing_profile_A1.json',
            'hardware/fp-lib-table','hardware/sym-lib-table',args.erc,args.drc]
     names.extend(str(p.relative_to(ROOT)) for p in sorted((ROOT/'hardware').glob('*.kicad_sch')))
+    names.extend(str(p.relative_to(ROOT)) for p in sorted((ROOT/'hardware').glob('*.kicad_dru')))
     for name in names:
         report['inputs'][name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
     (ROOT/'reports/validation_status.json').write_text(json.dumps(report,indent=2)+'\n')
     compatibility={
-        'project':'Ankle_Sensor_V1','revision':'A1-AUDIT','kicad_version':report['kicad_version'],
+        'project':'Ankle_Sensor_V1','revision':'A1-FINAL-REVIEW','kicad_version':report['kicad_version'],
         'kicad_open_check':'PASS_NATIVE_SCHEMATIC_LOAD_AND_PDF_EXPORT',
         'erc':'RUN','drc':'RUN','fabrication_release':False,
         'pcb_routing':'CONNECTED_REVIEW_PENDING' if report['unconnected_items']==0 else 'PARTIAL',

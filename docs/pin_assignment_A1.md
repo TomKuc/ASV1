@@ -1,6 +1,6 @@
 # Przydział pinów Ankle Sensor V1 — A1
 
-Odczyt aktualnego schematu i PCB: 29.10.2026. PCB SHA-256 `38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`. Świeży eksport natywnej netlisty porównano ze wszystkimi padami U3/U4/U6/J1: **zero rozbieżności nazw sieci**. Numery poniżej są numerami padów **modułu Raytac**, nie obudowy samego nRF52840.
+Odczyt aktualnego schematu i PCB: 29.10.2026. PCB SHA-256 `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`. Świeży eksport natywnej netlisty porównano ze wszystkimi padami U3/U4/U6/J1: **zero rozbieżności nazw sieci**. Numery poniżej są numerami padów **modułu Raytac**, nie obudowy samego nRF52840.
 
 Nazwy pinów: [Raytac Ver. L, §2.5](https://www.raytac.com/download/index.php?index_id=43); połączenia: bieżący projekt. **INT1=P0.11, INT2=P0.12**; wcześniejsza propozycja P0.24/P0.25 nie opisuje A1.
 
@@ -86,3 +86,5 @@ P1.10/11/12/13/14 oraz P0.02 należą do pinów ograniczonych przez Raytac do st
 Aktualny R24 podciąga CHG_INHIBIT do +3V0: domyślny stan wysoki blokuje ładowanie do świadomego zwolnienia przez firmware. Nie włączać TRACE na P0.11/P0.12 zajętych przez przerwania IMU; SWD korzysta z oddzielnych padów 51 i 53.
 
 Pełny wynik audytu i źródła: [usb_raytac_audit_A1.md](usb_raytac_audit_A1.md), [JSON](../reports/usb_raytac_audit_A1.json).
+
+Aktualizacja końcowa: netlista `reports/usb_audit_netlist_A1.xml` i raport USB potwierdzają tę samą pinmapę po zmianie wyłącznie18 szerokości USB. [Aktualny przekrój i wyniki modelu](usb_stackup_final_A1.md); nie zmieniono przerwań IMU.

@@ -1,6 +1,6 @@
 # USB i drogi powrotne — przegląd rzeczywistego routingu
 
-Odczyt z 29.10.2026 po scaleniu poprawek root, domyślnej blokady ładowania R24 i lokalnego przesunięcia U6/R25: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA-256 `38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`. Przegląd był wyłącznie odczytem; nie zmieniał PCB ani wypełnień. Natywny KiCad 10.0.7 sprawdził zapisane wypełnienie In1.Cu przez `Contains`, `BooleanIntersection` i `BooleanSubtract` oraz geometrię rzeczywistych ścieżek. Dane i lokalizacje wszystkich ubytków są w [return_path_review.json](../reports/return_path_review.json); metoda jest odtwarzalna skryptem [review_return_paths.py](../scripts/review_return_paths.py).
+Odczyt z 29.10.2026 po lokalnym poszerzeniu 18 odcinków wspólnego trunku USB przez root: `hardware/Ankle_Sensor_V1.kicad_pcb`, SHA-256 `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`. Przegląd był wyłącznie odczytem; nie zmieniał PCB ani wypełnień. Natywny KiCad 10.0.7 sprawdził zapisane wypełnienie In1.Cu przez `Contains`, `BooleanIntersection` i `BooleanSubtract` oraz geometrię rzeczywistych ścieżek. Dane i lokalizacje wszystkich ubytków są w [return_path_review.json](../reports/return_path_review.json); metoda jest odtwarzalna skryptem [review_return_paths.py](../scripts/review_return_paths.py).
 
 Warstwa In1.Cu ma jedno zapisane wypełnienie GND o powierzchni 1352,639 mm². Wszystkie 59 padów GND należy do jednej natywnej składowej połączeń. Wypełnienie zawiera antypady; liczba obrysów nie oznacza braku otworów w płaszczyźnie.
 
@@ -8,12 +8,12 @@ Pod badanymi osiami USB, IMU i QSPI każda próbka bez GND nadal znajduje się w
 
 | Sieć USB | Długość ścieżek [mm] | Warstwy i długości [mm] | Via | Rzut miedzi nad In1 GND |
 |---|---:|---|---:|---:|
-| USB_DP: MCU–U6 | 31,232 | F 1,476; In2 29,756 | 2 | 94,777% |
-| USB_DN: MCU–U6 | 32,957 | F 8,010; In2 24,948 | 2 | 95,020% |
+| USB_DP: MCU–U6 | 31,232 | F 1,476; In2 29,756 | 2 | 95,251% |
+| USB_DN: MCU–U6 | 32,957 | F 8,010; In2 24,948 | 2 | 95,442% |
 | USB_DP_CONN: U6–USB-C | 12,997 | F 7,803; In2 5,194 | 2 | 83,998% |
 | USB_DN_CONN: U6–USB-C | 15,552 | F 7,423; In2 8,129 | 2 | 89,788% |
 
-Zachowano część wspólnego trunku MCU na In2.Cu do y=86,8 mm, z szerokością 0,15 mm i nominalnym odstępem 0,15 mm. Nowe końcówki do U6 są prowadzone osobno; deklaracja stałego sprzężenia nie obejmuje całej drogi. Każda sieć MCU ma dwa via 0,50/0,25 mm. Aktualna różnica sum długości MCU wynosi 1,725716 mm. Stare wartości 35,670/36,136 mm i różnica 0,466226 mm dotyczą wcześniejszego położenia U6. W JSON są wyłącznie jako jawne dane historyczne, bez warunku zgodności z aktualną płytką.
+Zachowano część wspólnego trunku MCU na In2.Cu do y=86,8 mm. Po dziewięć odcinków DP/DN ma teraz szerokość 0,17 mm i nominalny odstęp 0,13 mm. Pozostałe końcówki mają 0,15 mm i są prowadzone osobno; deklaracja stałego sprzężenia nie obejmuje całej drogi. Długości, środki tras i po dwa via 0,50/0,25 mm na sieć MCU są niezmienione. Aktualna różnica sum długości MCU wynosi 1,725716 mm. Stare wartości 35,670/36,136 mm i różnica 0,466226 mm dotyczą wcześniejszego położenia U6. W JSON są wyłącznie jako jawne dane historyczne, bez warunku zgodności z aktualną płytką.
 
 Natywne przecięcie rzutu pełnej szerokości USB_DP ujawniło ponadto dwa małe ubytki jego krawędzi poza przyjętym promieniem 0,42 mm własnej przelotki: łącznie 0,000155 mm², w okolicy `(69,74; 64,85)` i `(69,80; 64,73)` mm. Ich obwiednie mają najwyżej około 0,018 mm. Sąsiednie antypady zawężają tam miedź GND. Oś ścieżki poza własnym obszarem via nadal leży nad GND; wynik nie uzasadnia określenia całej szerokości ścieżek jako pokrytej masą w 100%.
 
@@ -33,4 +33,4 @@ Pod tymi odcinkami występuje dalsza In1 GND. Przegląd nie symuluje rozkładu p
 
 Próbkowanie osi ma krok najwyżej 0,01 mm; granice pojedynczego przedziału są przybliżone z taką rozdzielczością. Natywne rzuty ścieżek mają błąd aproksymacji łuków 0,001 mm. Dodatkowy pas badania o szerokości 0,50 mm jest powtarzalną sondą geometryczną, a nie obliczoną szerokością prądu powrotnego. W PCB zapisano grubość całkowitą 1,0 mm, bez jawnego stackupu dielektryków, ich grubości i Er.
 
-**Impedancja 90 Ω, jakość oka USB i integralność SPI/QSPI pozostają niezakwalifikowane.** Przed zatwierdzeniem tych torów trzeba ustalić rzeczywisty stackup JLCPCB i na nim ocenić pełną geometrię USB, przejścia referencji B.Cu oraz przebiegi na prototypie przy docelowych częstotliwościach. Pomiary powinny objąć USB w całym torze i bezbłędny transfer oraz zapis/odczyt SPI/QSPI z kontrolą integralności. Natywne DRC, łączność i zgodność ze schematem nie zastępują tej kwalifikacji.
+**Impedancja całego toru 90 Ω, jakość oka USB i integralność SPI/QSPI pozostają niezakwalifikowane.** Wybrany nominalny przekrój JLC7628 4L/1,0 mm i modele 2D są w [usb_stackup_final_A1.md](usb_stackup_final_A1.md): obecny trunk 0,17/0,13 daje około 94,14 Ω względem In1 oraz 87,16 Ω przy idealnym coplanar AC=0. Nie przypisano +3V0 automatycznie roli masy. Przed produkcją trzeba potwierdzić bieżący wariant fabryki i powiązać go z plikami; pełny tor i przejścia referencji wymagają prób USB full speed 12 Mb/s oraz SPI/QSPI przy docelowych częstotliwościach, z kontrolą integralności. Natywne DRC, łączność i zgodność ze schematem nie zastępują tej kwalifikacji.

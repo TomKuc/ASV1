@@ -1,0 +1,85 @@
+{
+  "revision": "A1_FINAL_PROTOTYPE_REVIEW",
+  "status": "SELECTED_ORDER_PROFILE_REQUIRES_JLC_CONFIRMATION",
+  "fabricator": "JLCPCB",
+  "assembly_service": "Standard PCBA",
+  "board_nominal_thickness_mm": 1.0,
+  "board_outline_xy_mm": [
+    30,
+    51.6
+  ],
+  "stackup_name": "JLC7628 / 4 layers / 1.0 mm / outer1oz inner0.5oz",
+  "official_stackup_source": "https://cart.jlcpcb.com/client/template/placeOrder/impedance.html",
+  "layers": [
+    {
+      "name": "F.Cu",
+      "copper_mm": 0.035
+    },
+    {
+      "type": "prepreg",
+      "material": "7628x1",
+      "thickness_mm": 0.2104,
+      "epsilon_r_model": 4.4,
+      "epsilon_r_legacy_table": 4.6
+    },
+    {
+      "name": "In1.Cu",
+      "copper_mm": 0.0152,
+      "function": "GND"
+    },
+    {
+      "type": "core",
+      "thickness_mm": 0.4,
+      "epsilon_r_model": 4.6
+    },
+    {
+      "name": "In2.Cu",
+      "copper_mm": 0.0152,
+      "function": "mixed3V0/signals; USB trunk"
+    },
+    {
+      "type": "prepreg",
+      "material": "7628x1",
+      "thickness_mm": 0.2104,
+      "epsilon_r_model": 4.4,
+      "epsilon_r_legacy_table": 4.6
+    },
+    {
+      "name": "B.Cu",
+      "copper_mm": 0.035
+    }
+  ],
+  "published_layer_sum_excluding_mask_mm": 1.0212,
+  "published_copper_core_note_mm": 0.45,
+  "interpretation": "Published values are nominal; do not silently force their sum to1.0mm. JLC must confirm current pressed stack, Dk and copper definition. Native PCB keeps nominal1.0mm, no invented dielectric thicknesses.",
+  "finish_requested": "ENIG",
+  "mask_requested": "green",
+  "usb": {
+    "type": "USB2 Full Speed 12Mbit/s",
+    "coupled_trunk_layer": "In2.Cu",
+    "trunk_width_mm": 0.17,
+    "trunk_gap_mm": 0.13,
+    "reference": "In1.Cu GND; nearby3V0 has conditional AC behavior, B is not a full plane",
+    "tails_width_mm": 0.15,
+    "target_differential_ohm": 90,
+    "calculation_scope": "quasi-static2D cross-sections, not full-route guarantee/eye/EMC; see reports/usb_stackup_final_A1.json"
+  },
+  "assembly": {
+    "populated_top_parts": 59,
+    "populated_bottom_parts": 0,
+    "xray_required_parts": [
+      "U3",
+      "U4"
+    ],
+    "manual_or_fixture": [
+      "external protected battery and NTC harness",
+      "SWD/debug pogo fixture; J3 and TP pads are not fitted components"
+    ]
+  },
+  "requires_before_order": [
+    "JLC confirms this exact stackup/process and full USB geometry",
+    "BOM/CPL exact MPN availability, orientation and panel DFM approval",
+    "Literal Raytac section8.3 schematic comparison remains to be closed"
+  ],
+  "fabrication_release": false
+}

@@ -1,6 +1,6 @@
 # Architektura i założenia A1
 
-Stan: **A1 AUDIT REVIEW / NOT FOR FABRICATION**, 2026-10-29. Istnieje edytowalny projekt KiCad 10.0.7: schemat z 72 symbolami, PCB z 69 footprintami i routingiem, natywne raporty oraz eksport PDF/STEP. Nie wykonano prototypu ani firmware. Routing jest kompletny; przegląd elektryczny/produkcyjny i kwalifikacja pozostają otwarte.
+Stan: **A1 FINAL REVIEW / CONDITIONAL READY**, 2026-10-29. Istnieje edytowalny projekt KiCad 10.0.7: schemat z 72 symbolami, PCB z 69 footprintami i routingiem, natywne raporty oraz eksport PDF/STEP. Nie wykonano prototypu ani firmware. Routing jest kompletny; przegląd elektryczny/produkcyjny i kwalifikacja pozostają otwarte.
 
 [Raport walidacji](../reports/validation_status.json) wskazuje wejścia i hashe. Końcowy [natywny DRC](../reports/drc_final.json) ma 0 naruszeń, 0 brakujących połączeń i 0 rozbieżności schemat–PCB po ponownym wypełnieniu stref. ERC ma 0 błędów i 2 świadome ostrzeżenia U4.2/3. To nie zamyka osobnej [listy kontroli](release_checklist.md) przed zamówieniem prototypów. Wcześniejsze raporty DRC zachowano jako historię.
 
@@ -67,3 +67,7 @@ Dla JLCPCB Standard przewidzieć szyny panelu **co najmniej 5 mm** z fiducjalami
 ## Ustalenia audytu 29.10.2026
 
 [Raport A1](audit_A1_2026-10-29.md) jest punktem wejścia do oceny zmian. INT1=P0.11 i INT2=P0.12 są ostateczną pinmapą. [Flash](flash_compatibility_A1.md) wymaga jawnej polityki dwóch dies, QE stałego 1 dla IQ i kwalifikacji resetu/DPD. Wszystkie klasy ERC/DRC są aktywne. Via U5.7 odsunięto do (71.85,73.76); U6/R25 przesunięto lokalnie, zachowując główny routing. Minimum otwór–Cu/pasta wynosi nominalnie 0.150 mm. Żaden z tych wyników CAD nie jest testem sprzętu.
+
+## Końcowa wersja prototypów
+
+Obowiązuje [raport końcowy](final_verification_A1.md) i manifest bieżących plików. Wybrano JLC7628 4L1.0mm do potwierdzenia w zamówieniu;18 szerokości USB In2 zmieniono na0.17mm przy0.13mmgap, bez zmiany przebiegu. R24 oraz power-path pozostają. Doprecyzowano hangLOW/SystemOFF w firmware. Testy fizyczne są klasąB; warunki zamówienia A01–A04 są osobne.

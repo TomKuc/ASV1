@@ -4,7 +4,11 @@ Status: dane do schematu; **dodatkowy sprzętowy komparator temperatury i nadzó
 
 **Aktualizacja audytu A1, 29.10.2026:** zaakceptowano zmianę R24 100 kΩ z pull-down do GND na **pull-up do +3V0**. Reset/HiZ MCU ma odtąd blokować ładowanie, a jawny LOW jedynie zwalniać inhibit przy poprawnym sprzętowym oknie. Poprzednia wersja umożliwiała ładowanie przy HiZ. Jest to świadoma zmiana: urządzenie bez działającego firmware nie ładuje akumulatora, choć USB nadal zasila SYS i umożliwia programowanie. Nie zmniejsza ochrony U7/U8. Ślad końcowej weryfikacji i findings: `docs/power_audit_A1.md`, `reports/power_audit_A1.json`.
 
-**Bieżący odczyt native:** PCB `38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b`, po R24 i relokacji U6. Ponownie sprawdzono 35 referencji względem netlisty, 17 par IC–kondensator i wszystkie 17 padów GND/EP U1–U8. DRC/opens/parity 0/0/0; ERC 0 błędów i 2 jawne ostrzeżenia U4.2/3. [Raport routingu](../reports/power_routing_review.json) jest odświeżony na ten sam hash: IMU i Flash zachowują lokalne gałęzie, EP U1 ma dwa zewnętrzne via 0.5/0.25 mm i mostki F.Cu 0.30 mm do In1, bez górnej wylewki GND. Powrót GND U6 skrócono do 0.9375 mm; U3–C11 pozostał niezmieniony. Są to wyniki geometrii; kwalifikacja PDN, Ceff, termiki, USB i bezpieczeństwa pakietu pozostaje otwarta.
+**Bieżący odczyt native:** PCB `cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40`, po R24 i relokacji U6. Ponownie sprawdzono 35 referencji względem netlisty, 17 par IC–kondensator i wszystkie 17 padów GND/EP U1–U8. DRC/opens/parity 0/0/0; ERC 0 błędów i 2 jawne ostrzeżenia U4.2/3. [Raport routingu](../reports/power_routing_review.json) jest odświeżony na ten sam hash: IMU i Flash zachowują lokalne gałęzie, EP U1 ma dwa zewnętrzne via 0.5/0.25 mm i mostki F.Cu 0.30 mm do In1, bez górnej wylewki GND. Powrót GND U6 skrócono do 0.9375 mm; U3–C11 pozostał niezmieniony. Są to wyniki geometrii; kwalifikacja PDN, Ceff, termiki, USB i bezpieczeństwa pakietu pozostaje otwarta.
+
+Po ostatniej zmianie wyłącznie szerokości 18 odcinków USB In2 0.15→0.17 mm ponownie odczytano fill i lokalne drogi zasilania. Wyniki wszystkich 17 pętli oraz 17 powrotów GND są identyczne z poprzednim odczytem; nie podmieniono wyłącznie hasha starego raportu.
+
+Skrót „reset blokuje” oznacza reset zwalniający GPIO do HiZ. System OFF z retencją LOW i hang LOW wymagają odrębnej obsługi, zgodnie z [końcową tabelą rozruchu](charge_startup_final_A1.md).
 
 ## Ładowarka
 

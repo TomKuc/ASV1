@@ -6,17 +6,19 @@
   "schematic_changed": false,
   "hardware_tested": false,
   "inputs": {
-    "hardware/Ankle_Sensor_V1.kicad_pcb": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "hardware/Ankle_Sensor_V1.kicad_pcb": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "hardware/Ankle_Sensor_V1.kicad_sch": "2da343b592b4ed98f85ab6a3ca2d0258b9378b2b7e69cf85c11982da26a46f8d",
     "hardware/power.kicad_sch": "ce5ceb0873ef98f1d9e39f209bac262d1f518d0ce3e85cbe88cc1f8cbdee4f3a",
     "hardware/temperature.kicad_sch": "03d02986db171a22f57094ce84d75739af78391f52a57f316fffa8e29c8ec63b",
-    "reports/Ankle_Sensor_V1.net.xml": "bca5d37b6d6ed278f2138b477f2791a2f0f81574970e9fb4c81f1940ca473f44",
+    "reports/Ankle_Sensor_V1.net.xml": "4ae60511429602e56e29f3505b0b870e24a8fad8611bb68859fad85968f14050",
     "reports/charge_temperature_corners.json": "9c96a9db018f8f254c29739b1e80e7e34071cc794581df689ef75056f7dff902",
-    "reports/power_routing_review.json": "f2838802d82701cff5422e3abdacb91fde12f5bd466cab15a7399ba01333c93b",
-    "reports/drc_final.json": "81cdc6852f60b4648b08fc18e265c4abad76232f300d82ff8e2eb10cacc2d477",
-    "reports/erc_current.json": "c384af3b1d8b1b0d2b62f2effdab5c409463abe3654a41ff4aea7350396b2858",
+    "reports/power_routing_review.json": "171a3764a853ad6870add03ff63005c1897b471da213d7c030cb4aae6083501f",
+    "reports/drc_final.json": "2302169c712377678652945ecb0fae17b8ff5bb997d69eba0bc678dcf7d1a629",
+    "reports/erc_current.json": "5ccd97af5a04293f44e875f6a7fdea0cc4f3e1cf7d4170972e3fb9ef7a3cb140",
     "reports/audit_charge_default_A1.json": "5f43b6ffee91883d8edcffcf6aecec5b6b03134fea739f0f9ce12756618e066a",
-    "reports/via_pad_audit.json": "0a119f6c5ec6c6ba8e0bc407ecdb4a0120f000018b84fc2344ec4f4fdd9efdee"
+    "reports/via_pad_audit.json": "3419f5543fea639f7b1ae3f2dca5cfdd8aab53664c47c6b9f56326c2e7e13bd4",
+    "hardware/Ankle_Sensor_V1.kicad_pro": "b13938ac04f08e4c3a4d19e5a498f7d05a37e9c54622fbafd04f8b3624df1346",
+    "hardware/Ankle_Sensor_V1.kicad_dru": "000b24e75b73068c5c85957ba071bc6e26098209cd6f7cb3cfee39cbdb7284ae"
   },
   "native_readback": {
     "kicad": "10.0.7",
@@ -25,127 +27,126 @@
     "netlist_comparison_mismatches": [],
     "excluded_unconnected_mechanical_pads": [
       {
-        "ref": "J2",
-        "pad": "MP"
-      },
-      {
-        "ref": "J2",
-        "pad": "MP"
-      },
-      {
-        "ref": "U5",
-        "pad": ""
-      },
-      {
-        "ref": "U5",
-        "pad": ""
-      },
-      {
-        "ref": "U5",
-        "pad": ""
-      },
-      {
-        "ref": "U5",
-        "pad": ""
-      },
-      {
-        "ref": "J1",
-        "pad": ""
-      },
-      {
-        "ref": "J1",
-        "pad": ""
-      },
-      {
         "ref": "U1",
+        "pad": ""
+      },
+      {
+        "ref": "J1",
+        "pad": ""
+      },
+      {
+        "ref": "J1",
+        "pad": ""
+      },
+      {
+        "ref": "J2",
+        "pad": "MP"
+      },
+      {
+        "ref": "J2",
+        "pad": "MP"
+      },
+      {
+        "ref": "U5",
+        "pad": ""
+      },
+      {
+        "ref": "U5",
+        "pad": ""
+      },
+      {
+        "ref": "U5",
+        "pad": ""
+      },
+      {
+        "ref": "U5",
         "pad": ""
       }
     ],
     "components": {
-      "U7": {
-        "value": "TLV7042DGKR",
+      "R20": {
+        "value": "27.4k 0.1%",
         "pads": {
           "1": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
           },
           "2": {
-            "pcb_net": "NTC_REF_HOT",
-            "exported_schematic_net": "NTC_REF_HOT"
-          },
-          "3": {
-            "pcb_net": "NTC_TS",
-            "exported_schematic_net": "NTC_TS"
-          },
-          "4": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          },
-          "5": {
             "pcb_net": "NTC_REF_COLD",
             "exported_schematic_net": "NTC_REF_COLD"
+          }
+        }
+      },
+      "C14": {
+        "value": "1u 16V X7R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "R22": {
+        "value": "100k 1%",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
+          }
+        }
+      },
+      "U1": {
+        "value": "BQ25185DLHR",
+        "pads": {
+          "1": {
+            "pcb_net": "VSYS",
+            "exported_schematic_net": "VSYS"
+          },
+          "2": {
+            "pcb_net": "VBAT",
+            "exported_schematic_net": "VBAT"
+          },
+          "3": {
+            "pcb_net": "CHG_STAT2_N",
+            "exported_schematic_net": "CHG_STAT2_N"
+          },
+          "4": {
+            "pcb_net": "CHG_CE_N",
+            "exported_schematic_net": "CHG_CE_N"
+          },
+          "5": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
           },
           "6": {
             "pcb_net": "NTC_TS",
             "exported_schematic_net": "NTC_TS"
           },
           "7": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
+            "pcb_net": "CHG_ILIM",
+            "exported_schematic_net": "CHG_ILIM"
           },
           "8": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          }
-        }
-      },
-      "C18": {
-        "value": "100n 16V X7R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
+            "pcb_net": "CHG_ISET",
+            "exported_schematic_net": "CHG_ISET"
           },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "C3": {
-        "value": "2.2u 25V X5R",
-        "pads": {
-          "1": {
-            "pcb_net": "VBAT",
-            "exported_schematic_net": "VBAT"
+          "9": {
+            "pcb_net": "CHG_STAT1_N",
+            "exported_schematic_net": "CHG_STAT1_N"
           },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "C12": {
-        "value": "100n 16V X7R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
+          "10": {
+            "pcb_net": "VBUS",
+            "exported_schematic_net": "VBUS"
           },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "R23": {
-        "value": "1M 1%",
-        "pads": {
-          "1": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
-          },
-          "2": {
+          "11": {
             "pcb_net": "GND",
             "exported_schematic_net": "GND"
           }
@@ -164,136 +165,12 @@
           }
         }
       },
-      "U2": {
-        "value": "TPS7A2030PDBVR",
-        "pads": {
-          "1": {
-            "pcb_net": "VSYS",
-            "exported_schematic_net": "VSYS"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          },
-          "3": {
-            "pcb_net": "VSYS",
-            "exported_schematic_net": "VSYS"
-          },
-          "4": {
-            "pcb_net": "unconnected-(U2-NC-Pad4)",
-            "exported_schematic_net": "unconnected-(U2-NC-Pad4)"
-          },
-          "5": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          }
-        }
-      },
-      "C1": {
-        "value": "2.2u 25V X5R",
-        "pads": {
-          "1": {
-            "pcb_net": "VBUS",
-            "exported_schematic_net": "VBUS"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "J2": {
-        "value": "JST_SH_3P_PACK_NTC",
-        "pads": {
-          "1": {
-            "pcb_net": "VBAT",
-            "exported_schematic_net": "VBAT"
-          },
-          "2": {
-            "pcb_net": "NTC_TS",
-            "exported_schematic_net": "NTC_TS"
-          },
-          "3": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "R3": {
-        "value": "100k 1%",
-        "pads": {
-          "1": {
-            "pcb_net": "VSYS",
-            "exported_schematic_net": "VSYS"
-          },
-          "2": {
-            "pcb_net": "CHG_CE_N",
-            "exported_schematic_net": "CHG_CE_N"
-          }
-        }
-      },
-      "R22": {
-        "value": "100k 1%",
+      "C12": {
+        "value": "100n 16V X7R",
         "pads": {
           "1": {
             "pcb_net": "+3V0",
             "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
-          }
-        }
-      },
-      "R21": {
-        "value": "10k 0.1%",
-        "pads": {
-          "1": {
-            "pcb_net": "NTC_REF_COLD",
-            "exported_schematic_net": "NTC_REF_COLD"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "R24": {
-        "value": "100k 1%",
-        "pads": {
-          "1": {
-            "pcb_net": "CHG_INHIBIT",
-            "exported_schematic_net": "CHG_INHIBIT"
-          },
-          "2": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          }
-        }
-      },
-      "U8": {
-        "value": "TLV803EA26DBZR",
-        "pads": {
-          "1": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          },
-          "2": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
-          },
-          "3": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          }
-        }
-      },
-      "R1": {
-        "value": "24k 1%",
-        "pads": {
-          "1": {
-            "pcb_net": "CHG_ILIM",
-            "exported_schematic_net": "CHG_ILIM"
           },
           "2": {
             "pcb_net": "GND",
@@ -327,142 +204,6 @@
           "6": {
             "pcb_net": "USB_DP",
             "exported_schematic_net": "USB_DP"
-          }
-        }
-      },
-      "R18": {
-        "value": "100k 0.1%",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "NTC_REF_HOT",
-            "exported_schematic_net": "NTC_REF_HOT"
-          }
-        }
-      },
-      "C19": {
-        "value": "100n 16V X7R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "C2": {
-        "value": "10u 10V X5R",
-        "pads": {
-          "1": {
-            "pcb_net": "VSYS",
-            "exported_schematic_net": "VSYS"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "U5": {
-        "value": "W25Q01JVZEIQ_128MiB",
-        "pads": {
-          "1": {
-            "pcb_net": "FLASH_CS_N",
-            "exported_schematic_net": "FLASH_CS_N"
-          },
-          "2": {
-            "pcb_net": "QSPI_IO1",
-            "exported_schematic_net": "QSPI_IO1"
-          },
-          "3": {
-            "pcb_net": "QSPI_IO2",
-            "exported_schematic_net": "QSPI_IO2"
-          },
-          "4": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          },
-          "5": {
-            "pcb_net": "QSPI_IO0",
-            "exported_schematic_net": "QSPI_IO0"
-          },
-          "6": {
-            "pcb_net": "QSPI_CLK_FLASH",
-            "exported_schematic_net": "QSPI_CLK_FLASH"
-          },
-          "7": {
-            "pcb_net": "QSPI_IO3",
-            "exported_schematic_net": "QSPI_IO3"
-          },
-          "8": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "9": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "Q1": {
-        "value": "AO3400A",
-        "pads": {
-          "1": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          },
-          "3": {
-            "pcb_net": "CHG_CE_N",
-            "exported_schematic_net": "CHG_CE_N"
-          }
-        }
-      },
-      "C5": {
-        "value": "10u 10V X5R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "C13": {
-        "value": "100n 16V X7R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "C14": {
-        "value": "1u 16V X7R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
           }
         }
       },
@@ -539,6 +280,325 @@
           }
         }
       },
+      "C11": {
+        "value": "4.7u 10V X5R",
+        "pads": {
+          "1": {
+            "pcb_net": "VBUS",
+            "exported_schematic_net": "VBUS"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "R23": {
+        "value": "1M 1%",
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C16": {
+        "value": "4.7u 10V X5R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C5": {
+        "value": "10u 10V X5R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C15": {
+        "value": "100n 16V X7R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C3": {
+        "value": "2.2u 25V X5R",
+        "pads": {
+          "1": {
+            "pcb_net": "VBAT",
+            "exported_schematic_net": "VBAT"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "U8": {
+        "value": "TLV803EA26DBZR",
+        "pads": {
+          "1": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "2": {
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
+          },
+          "3": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          }
+        }
+      },
+      "R21": {
+        "value": "10k 0.1%",
+        "pads": {
+          "1": {
+            "pcb_net": "NTC_REF_COLD",
+            "exported_schematic_net": "NTC_REF_COLD"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C19": {
+        "value": "100n 16V X7R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "Q1": {
+        "value": "AO3400A",
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "3": {
+            "pcb_net": "CHG_CE_N",
+            "exported_schematic_net": "CHG_CE_N"
+          }
+        }
+      },
+      "U2": {
+        "value": "TPS7A2030PDBVR",
+        "pads": {
+          "1": {
+            "pcb_net": "VSYS",
+            "exported_schematic_net": "VSYS"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "3": {
+            "pcb_net": "VSYS",
+            "exported_schematic_net": "VSYS"
+          },
+          "4": {
+            "pcb_net": "unconnected-(U2-NC-Pad4)",
+            "exported_schematic_net": "unconnected-(U2-NC-Pad4)"
+          },
+          "5": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          }
+        }
+      },
+      "U4": {
+        "value": "LSM6DSV32XTR",
+        "pads": {
+          "1": {
+            "pcb_net": "IMU_MISO",
+            "exported_schematic_net": "IMU_MISO"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "3": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "4": {
+            "pcb_net": "IMU_INT1",
+            "exported_schematic_net": "IMU_INT1"
+          },
+          "5": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "6": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "7": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          },
+          "8": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "9": {
+            "pcb_net": "IMU_INT2",
+            "exported_schematic_net": "IMU_INT2"
+          },
+          "10": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "11": {
+            "pcb_net": "unconnected-(U4-SDO_Aux-Pad11)",
+            "exported_schematic_net": "unconnected-(U4-SDO_Aux-Pad11)"
+          },
+          "12": {
+            "pcb_net": "IMU_CS_N",
+            "exported_schematic_net": "IMU_CS_N"
+          },
+          "13": {
+            "pcb_net": "IMU_SCK",
+            "exported_schematic_net": "IMU_SCK"
+          },
+          "14": {
+            "pcb_net": "IMU_MOSI",
+            "exported_schematic_net": "IMU_MOSI"
+          }
+        }
+      },
+      "R24": {
+        "value": "100k 1%",
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_INHIBIT",
+            "exported_schematic_net": "CHG_INHIBIT"
+          },
+          "2": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          }
+        }
+      },
+      "J2": {
+        "value": "JST_SH_3P_PACK_NTC",
+        "pads": {
+          "1": {
+            "pcb_net": "VBAT",
+            "exported_schematic_net": "VBAT"
+          },
+          "2": {
+            "pcb_net": "NTC_TS",
+            "exported_schematic_net": "NTC_TS"
+          },
+          "3": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "R2": {
+        "value": "2k 1%",
+        "pads": {
+          "1": {
+            "pcb_net": "CHG_ISET",
+            "exported_schematic_net": "CHG_ISET"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "R18": {
+        "value": "100k 0.1%",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "NTC_REF_HOT",
+            "exported_schematic_net": "NTC_REF_HOT"
+          }
+        }
+      },
+      "C18": {
+        "value": "100n 16V X7R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C13": {
+        "value": "100n 16V X7R",
+        "pads": {
+          "1": {
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C1": {
+        "value": "2.2u 25V X5R",
+        "pads": {
+          "1": {
+            "pcb_net": "VBUS",
+            "exported_schematic_net": "VBUS"
+          },
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
+          }
+        }
+      },
       "R19": {
         "value": "10k 0.1%",
         "pads": {
@@ -552,20 +612,29 @@
           }
         }
       },
-      "Q2": {
-        "value": "AO3400A",
+      "R1": {
+        "value": "24k 1%",
         "pads": {
           "1": {
-            "pcb_net": "CHG_INHIBIT",
-            "exported_schematic_net": "CHG_INHIBIT"
+            "pcb_net": "CHG_ILIM",
+            "exported_schematic_net": "CHG_ILIM"
           },
           "2": {
             "pcb_net": "GND",
             "exported_schematic_net": "GND"
+          }
+        }
+      },
+      "C2": {
+        "value": "10u 10V X5R",
+        "pads": {
+          "1": {
+            "pcb_net": "VSYS",
+            "exported_schematic_net": "VSYS"
           },
-          "3": {
-            "pcb_net": "CHG_ALLOW_H",
-            "exported_schematic_net": "CHG_ALLOW_H"
+          "2": {
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
           }
         }
       },
@@ -818,178 +887,111 @@
           }
         }
       },
-      "C11": {
-        "value": "4.7u 10V X5R",
+      "Q2": {
+        "value": "AO3400A",
         "pads": {
           "1": {
-            "pcb_net": "VBUS",
-            "exported_schematic_net": "VBUS"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "R2": {
-        "value": "2k 1%",
-        "pads": {
-          "1": {
-            "pcb_net": "CHG_ISET",
-            "exported_schematic_net": "CHG_ISET"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
-          }
-        }
-      },
-      "U4": {
-        "value": "LSM6DSV32XTR",
-        "pads": {
-          "1": {
-            "pcb_net": "IMU_MISO",
-            "exported_schematic_net": "IMU_MISO"
+            "pcb_net": "CHG_INHIBIT",
+            "exported_schematic_net": "CHG_INHIBIT"
           },
           "2": {
             "pcb_net": "GND",
             "exported_schematic_net": "GND"
           },
           "3": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
+          }
+        }
+      },
+      "U5": {
+        "value": "W25Q01JVZEIQ_128MiB",
+        "pads": {
+          "1": {
+            "pcb_net": "FLASH_CS_N",
+            "exported_schematic_net": "FLASH_CS_N"
+          },
+          "2": {
+            "pcb_net": "QSPI_IO1",
+            "exported_schematic_net": "QSPI_IO1"
+          },
+          "3": {
+            "pcb_net": "QSPI_IO2",
+            "exported_schematic_net": "QSPI_IO2"
           },
           "4": {
-            "pcb_net": "IMU_INT1",
-            "exported_schematic_net": "IMU_INT1"
+            "pcb_net": "GND",
+            "exported_schematic_net": "GND"
           },
           "5": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
+            "pcb_net": "QSPI_IO0",
+            "exported_schematic_net": "QSPI_IO0"
           },
           "6": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
+            "pcb_net": "QSPI_CLK_FLASH",
+            "exported_schematic_net": "QSPI_CLK_FLASH"
           },
           "7": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
+            "pcb_net": "QSPI_IO3",
+            "exported_schematic_net": "QSPI_IO3"
           },
           "8": {
             "pcb_net": "+3V0",
             "exported_schematic_net": "+3V0"
           },
           "9": {
-            "pcb_net": "IMU_INT2",
-            "exported_schematic_net": "IMU_INT2"
-          },
-          "10": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "11": {
-            "pcb_net": "unconnected-(U4-SDO_Aux-Pad11)",
-            "exported_schematic_net": "unconnected-(U4-SDO_Aux-Pad11)"
-          },
-          "12": {
-            "pcb_net": "IMU_CS_N",
-            "exported_schematic_net": "IMU_CS_N"
-          },
-          "13": {
-            "pcb_net": "IMU_SCK",
-            "exported_schematic_net": "IMU_SCK"
-          },
-          "14": {
-            "pcb_net": "IMU_MOSI",
-            "exported_schematic_net": "IMU_MOSI"
-          }
-        }
-      },
-      "C15": {
-        "value": "100n 16V X7R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
             "pcb_net": "GND",
             "exported_schematic_net": "GND"
           }
         }
       },
-      "U1": {
-        "value": "BQ25185DLHR",
+      "U7": {
+        "value": "TLV7042DGKR",
         "pads": {
           "1": {
-            "pcb_net": "VSYS",
-            "exported_schematic_net": "VSYS"
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
           },
           "2": {
-            "pcb_net": "VBAT",
-            "exported_schematic_net": "VBAT"
+            "pcb_net": "NTC_REF_HOT",
+            "exported_schematic_net": "NTC_REF_HOT"
           },
           "3": {
-            "pcb_net": "CHG_STAT2_N",
-            "exported_schematic_net": "CHG_STAT2_N"
+            "pcb_net": "NTC_TS",
+            "exported_schematic_net": "NTC_TS"
           },
           "4": {
-            "pcb_net": "CHG_CE_N",
-            "exported_schematic_net": "CHG_CE_N"
-          },
-          "5": {
             "pcb_net": "GND",
             "exported_schematic_net": "GND"
+          },
+          "5": {
+            "pcb_net": "NTC_REF_COLD",
+            "exported_schematic_net": "NTC_REF_COLD"
           },
           "6": {
             "pcb_net": "NTC_TS",
             "exported_schematic_net": "NTC_TS"
           },
           "7": {
-            "pcb_net": "CHG_ILIM",
-            "exported_schematic_net": "CHG_ILIM"
+            "pcb_net": "CHG_ALLOW_H",
+            "exported_schematic_net": "CHG_ALLOW_H"
           },
           "8": {
-            "pcb_net": "CHG_ISET",
-            "exported_schematic_net": "CHG_ISET"
-          },
-          "9": {
-            "pcb_net": "CHG_STAT1_N",
-            "exported_schematic_net": "CHG_STAT1_N"
-          },
-          "10": {
-            "pcb_net": "VBUS",
-            "exported_schematic_net": "VBUS"
-          },
-          "11": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
+            "pcb_net": "+3V0",
+            "exported_schematic_net": "+3V0"
           }
         }
       },
-      "R20": {
-        "value": "27.4k 0.1%",
+      "R3": {
+        "value": "100k 1%",
         "pads": {
           "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
+            "pcb_net": "VSYS",
+            "exported_schematic_net": "VSYS"
           },
           "2": {
-            "pcb_net": "NTC_REF_COLD",
-            "exported_schematic_net": "NTC_REF_COLD"
-          }
-        }
-      },
-      "C16": {
-        "value": "4.7u 10V X5R",
-        "pads": {
-          "1": {
-            "pcb_net": "+3V0",
-            "exported_schematic_net": "+3V0"
-          },
-          "2": {
-            "pcb_net": "GND",
-            "exported_schematic_net": "GND"
+            "pcb_net": "CHG_CE_N",
+            "exported_schematic_net": "CHG_CE_N"
           }
         }
       }
@@ -2079,18 +2081,20 @@
     "tradeoff": "No autonomous charging without working firmware; USB can still power SYS",
     "does_not_certify_USB_compliance": true,
     "evidence": "reports/audit_charge_default_A1.json",
-    "last_native_verified_pcb_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b"
+    "last_native_verified_pcb_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "reset_scope": "GPIO-resetting reset only; System OFF wakeup retains GPIO and a hung LOW is not HiZ. See docs/charge_startup_final_A1.md."
   },
   "reported_native_checks": {
     "report_author": "root/integration; report files read by power reviewer",
-    "drc_date": "2026-10-29T14:05:36",
+    "drc_date": "2026-10-29T17:52:55",
     "drc_violations": 0,
     "unconnected_items": 0,
     "schematic_parity": 0,
-    "erc_date": "2026-10-29T14:05:42",
+    "erc_date": "2026-10-29T17:55:19",
     "erc_errors": 0,
     "erc_warnings": 2,
-    "erc_warning_context": "intentional U4 pins2/3 to GND power flag; not suppressed"
+    "erc_warning_context": "intentional U4 pins2/3 to GND power flag; not suppressed",
+    "profile_note": "Final project includes explicit USBpair min0.125mm and opt0.13mm rule; report is native geometry/connectivity, not SI qualification."
   },
   "current_estimates": {
     "kind": "nominal resistors plus typical IC values; not measured, not maximum",
@@ -2361,11 +2365,15 @@
     {
       "pcb_sha256": "da21152386b1bf7ba68d7c7eb9acc58853daa9a16db64f16fd58e28ece9f742b",
       "description": "Previous verified R24 pull-up state, before accepted USB U6 relocation; now superseded by fresh native readback."
+    },
+    {
+      "pcb_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+      "description": "Before final USB width-only correction; fresh PDN readback below supersedes this state."
     }
   ],
   "PDN_thermal_native_readback": {
     "report": "reports/power_routing_review.json",
-    "source_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "source_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
     "fresh_IC_cap_loops": 17,
     "fresh_IC_GND_returns": 17,
     "all_caps_have_local_In1_return": true,
@@ -2439,9 +2447,7 @@
         }
       ],
       "F_Cu_ground_pour_count": 0,
-      "assessment": "Two external tented GND vias and 0.30mm F.Cu links contact filled In1 plane. No local F.Cu GND pour exists. Electrical ground continuity confirmed; narrow thermal paths and enclosure temperature require physical qualification, no datasheet JEDEC thermal resistance is assumed.",
-      "thermal_vias_outside_EP_paste_and_tented_front_back": true,
-      "tenting_evidence": "Native .kicad_pcb via UUID50716e6b… and f997792a… explicitly contain front yes/back yes; global hole-to-paste audit zero overlaps."
+      "assessment": "Two external tented GND vias and 0.30mm F.Cu links contact filled In1 plane. No local F.Cu GND pour exists. Electrical ground continuity confirmed; narrow thermal paths and enclosure temperature require physical qualification, no datasheet JEDEC thermal resistance is assumed."
     },
     "USB_U6_ground_return": {
       "ic": "U6",
@@ -2533,5 +2539,14 @@
     "U6_GND_pad_via_mm": 0.9375,
     "VBUS_module_C11_branch_preserved": true,
     "physical_ESD_or_SI_qualified": false
+  },
+  "width_only_USB_refresh": {
+    "source_before": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+    "source_after": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "change": "18 existing In2 USB tracks widened0.15to0.17mm; no centreline/via/pad/placement/net changes by root",
+    "all_17_fresh_loop_records_numerically_unchanged": true,
+    "all_17_fresh_ground_records_numerically_unchanged": true,
+    "In2_local_grid_paths_rerun": true,
+    "PDN_impedance_or_noise_tested": false
   }
 }

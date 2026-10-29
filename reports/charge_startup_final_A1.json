@@ -1,0 +1,816 @@
+{
+  "date": "2026-10-29",
+  "scope": "Final independent P1/P4 charge-inhibit, USB self-start and protected-pack safety review",
+  "git_HEAD_reviewed": "28d88f22a6a9c0c0e1feb639546009518a6b5f8e",
+  "status": "REVIEW_COMPLETE_NO_NEW_P1_P4_HARDWARE_BLOCKER_IDENTIFIED_FOR_3_TO_5_CONTROLLED_PCBA_PROTOTYPES",
+  "prototype_quantity": [
+    3,
+    5
+  ],
+  "inputs_sha256": {
+    "hardware/Ankle_Sensor_V1.kicad_pcb": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "hardware/temperature.kicad_sch": "03d02986db171a22f57094ce84d75739af78391f52a57f316fffa8e29c8ec63b",
+    "hardware/power.kicad_sch": "ce5ceb0873ef98f1d9e39f209bac262d1f518d0ce3e85cbe88cc1f8cbdee4f3a",
+    "reports/Ankle_Sensor_V1.net.xml": "4ae60511429602e56e29f3505b0b870e24a8fad8611bb68859fad85968f14050",
+    "docs/firmware_contract.md": "c0d45d1c5144b9d08e3b67c407003778306b776b0ae688d629bb543c05c3e2ca",
+    "docs/power_audit_A1.md": "69ca9a604825946353601b4d9984eec75e8e8850be7318e3d8227eaa0a53858b",
+    "reports/charge_temperature_corners.json": "9c96a9db018f8f254c29739b1e80e7e34071cc794581df689ef75056f7dff902"
+  },
+  "reviewer_edits": {
+    "PCB": false,
+    "schematic": false,
+    "shared_documentation": false,
+    "new_owned_files": [
+      "docs/charge_startup_final_A1.md",
+      "reports/charge_startup_final_A1.json"
+    ]
+  },
+  "hardware_tested": false,
+  "SPICE_simulated": false,
+  "native_readback": {
+    "pcb_sha256": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "source_unchanged": true,
+    "native": "KiCad10.0.7 pcbnew read-only",
+    "opens": 0,
+    "netlist_mismatches": [],
+    "components": {
+      "Q2": {
+        "value": "AO3400A",
+        "footprint": "SOT-23",
+        "pads": {
+          "1": "CHG_INHIBIT",
+          "2": "GND",
+          "3": "CHG_ALLOW_H"
+        }
+      },
+      "U7": {
+        "value": "TLV7042DGKR",
+        "footprint": "VSSOP-8_3x3mm_P0.65mm",
+        "pads": {
+          "1": "CHG_ALLOW_H",
+          "2": "NTC_REF_HOT",
+          "3": "NTC_TS",
+          "4": "GND",
+          "5": "NTC_REF_COLD",
+          "6": "NTC_TS",
+          "7": "CHG_ALLOW_H",
+          "8": "+3V0"
+        }
+      },
+      "Q1": {
+        "value": "AO3400A",
+        "footprint": "SOT-23",
+        "pads": {
+          "1": "CHG_ALLOW_H",
+          "2": "GND",
+          "3": "CHG_CE_N"
+        }
+      },
+      "U3": {
+        "value": "MDBT50Q-P1MV2",
+        "footprint": "Raytac_MDBT50Q",
+        "pads": {
+          "1": "GND",
+          "2": "GND",
+          "3": "LED_K",
+          "4": "USER_BTN_N",
+          "5": "CHG_STAT1_N",
+          "6": "CHG_STAT2_N",
+          "7": "CHG_INHIBIT",
+          "8": "unconnected-(U3-P1.15-Pad8)",
+          "9": "unconnected-(U3-P0.03-Pad9)",
+          "10": "unconnected-(U3-P0.29-Pad10)",
+          "11": "VBAT_ADC",
+          "12": "unconnected-(U3-P0.31-Pad12)",
+          "13": "unconnected-(U3-P0.28-Pad13)",
+          "14": "unconnected-(U3-P0.30-Pad14)",
+          "15": "GND",
+          "16": "unconnected-(U3-P0.27-Pad16)",
+          "17": "LF_XL1",
+          "18": "LF_XL2",
+          "19": "unconnected-(U3-P0.26-Pad19)",
+          "20": "unconnected-(U3-P0.04-Pad20)",
+          "21": "unconnected-(U3-P0.05-Pad21)",
+          "22": "unconnected-(U3-P0.06-Pad22)",
+          "23": "unconnected-(U3-P0.07-Pad23)",
+          "24": "unconnected-(U3-P0.08-Pad24)",
+          "25": "unconnected-(U3-P1.08-Pad25)",
+          "26": "unconnected-(U3-P1.09-Pad26)",
+          "27": "IMU_INT1",
+          "28": "+3V0",
+          "29": "IMU_INT2",
+          "30": "+3V0",
+          "31": "unconnected-(U3-DCCH-Pad31)",
+          "32": "VBUS",
+          "33": "GND",
+          "34": "USB_DN",
+          "35": "USB_DP",
+          "36": "IMU_MOSI",
+          "37": "IMU_SCK",
+          "38": "IMU_CS_N",
+          "39": "IMU_MISO",
+          "40": "RESET_N",
+          "41": "FLASH_CS_N",
+          "42": "QSPI_SCK",
+          "43": "QSPI_IO1",
+          "44": "QSPI_IO0",
+          "45": "QSPI_IO3",
+          "46": "QSPI_IO2",
+          "47": "unconnected-(U3-P1.00-Pad47)",
+          "48": "unconnected-(U3-P0.24-Pad48)",
+          "49": "unconnected-(U3-P0.25-Pad49)",
+          "50": "unconnected-(U3-P1.02-Pad50)",
+          "51": "SWDIO",
+          "52": "unconnected-(U3-P0.09_NFC1-Pad52)",
+          "53": "SWCLK",
+          "54": "unconnected-(U3-P0.10_NFC2-Pad54)",
+          "55": "GND",
+          "56": "unconnected-(U3-P1.04-Pad56)",
+          "57": "unconnected-(U3-P1.06-Pad57)",
+          "58": "unconnected-(U3-P1.07-Pad58)",
+          "59": "unconnected-(U3-P1.05-Pad59)",
+          "60": "unconnected-(U3-P1.03-Pad60)",
+          "61": "unconnected-(U3-P1.01-Pad61)"
+        }
+      },
+      "U1": {
+        "value": "BQ25185DLHR",
+        "footprint": "BQ25185DLHR_DLH0010A_TILandPattern",
+        "pads": {
+          "1": "VSYS",
+          "2": "VBAT",
+          "3": "CHG_STAT2_N",
+          "4": "CHG_CE_N",
+          "5": "GND",
+          "6": "NTC_TS",
+          "7": "CHG_ILIM",
+          "8": "CHG_ISET",
+          "9": "CHG_STAT1_N",
+          "10": "VBUS",
+          "11": "GND"
+        }
+      },
+      "R19": {
+        "value": "10k 0.1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "NTC_REF_HOT",
+          "2": "GND"
+        }
+      },
+      "U8": {
+        "value": "TLV803EA26DBZR",
+        "footprint": "SOT-23",
+        "pads": {
+          "1": "GND",
+          "2": "CHG_ALLOW_H",
+          "3": "+3V0"
+        }
+      },
+      "R1": {
+        "value": "24k 1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "CHG_ILIM",
+          "2": "GND"
+        }
+      },
+      "J2": {
+        "value": "JST_SH_3P_PACK_NTC",
+        "footprint": "JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal",
+        "pads": {
+          "1": "VBAT",
+          "2": "NTC_TS",
+          "3": "GND"
+        }
+      },
+      "R18": {
+        "value": "100k 0.1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "+3V0",
+          "2": "NTC_REF_HOT"
+        }
+      },
+      "R23": {
+        "value": "1M 1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "CHG_ALLOW_H",
+          "2": "GND"
+        }
+      },
+      "R3": {
+        "value": "100k 1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "VSYS",
+          "2": "CHG_CE_N"
+        }
+      },
+      "R22": {
+        "value": "100k 1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "+3V0",
+          "2": "CHG_ALLOW_H"
+        }
+      },
+      "U2": {
+        "value": "TPS7A2030PDBVR",
+        "footprint": "SOT-23-5",
+        "pads": {
+          "1": "VSYS",
+          "2": "GND",
+          "3": "VSYS",
+          "4": "unconnected-(U2-NC-Pad4)",
+          "5": "+3V0"
+        }
+      },
+      "R20": {
+        "value": "27.4k 0.1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "+3V0",
+          "2": "NTC_REF_COLD"
+        }
+      },
+      "R21": {
+        "value": "10k 0.1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "NTC_REF_COLD",
+          "2": "GND"
+        }
+      },
+      "SW1": {
+        "value": "SKQGABE010",
+        "footprint": "SW_SPST_SKQG_WithStem",
+        "pads": {
+          "1": "USER_BTN_N",
+          "2": "SW_RETURN"
+        }
+      },
+      "R24": {
+        "value": "100k 1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "CHG_INHIBIT",
+          "2": "+3V0"
+        }
+      },
+      "R2": {
+        "value": "2k 1%",
+        "footprint": "R_0402_1005Metric",
+        "pads": {
+          "1": "CHG_ISET",
+          "2": "GND"
+        }
+      }
+    }
+  },
+  "dynamic_startup_certified": false,
+  "actual_firmware_implemented_or_run": false,
+  "decisions": {
+    "HiZ_allows_charge_claim_applies_to_current_HEAD": false,
+    "R24_is_actual_pullup": true,
+    "CE_is_only_battery_charge_control_not_SYS_disconnect": true,
+    "USB_IN_to_SYS_to_LDO_to_MCU_requires_charge_enable": false,
+    "intrinsic_MCU_charge_startup_deadlock_identified": false,
+    "hardware_change_required_before_controlled_prototype_order_in_P1_P4_scope": false,
+    "standalone_charge_without_running_control_firmware_promised": false,
+    "GPIO_LOW_hang_is_equivalent_to_reset_or_HiZ": false,
+    "all_reset_sources_reset_GPIO": false,
+    "System_OFF_wakeup_retains_GPIO": true,
+    "low_temperature_high_temperature_hardware_veto_retained_during_GPIO_LOW_hang": true,
+    "battery_pack_MPN_missing_is_PCBA_connection_or_footprint_error": false,
+    "compatible_pack_PCM_recovery_already_guaranteed": false,
+    "acceptance_scope": "Controlled prototype PCBA bring-up, initially current-limited supply plus battery/NTC simulator. No body use or unqualified real-cell charging approval."
+  },
+  "logic_at_valid_3V": {
+    "HIGH_or_HiZ": {
+      "Q2": "ON",
+      "ALLOW_H": "LOW",
+      "Q1": "OFF",
+      "CE_N": "HIGH",
+      "battery_charge": "inhibited",
+      "IN_to_SYS": "available subject to valid source/current/fault limits"
+    },
+    "LOW_and_U7_U8_release": {
+      "Q2": "OFF",
+      "ALLOW_H": "HIGH",
+      "Q1": "ON",
+      "CE_N": "LOW",
+      "battery_charge": "permitted subject to BQ state and source"
+    },
+    "LOW_and_U7_or_U8_fault": {
+      "Q2": "OFF",
+      "ALLOW_H": "LOW",
+      "Q1": "OFF",
+      "CE_N": "HIGH",
+      "battery_charge": "hardware inhibited"
+    },
+    "ramp_or_brownout": "not a truth-table valid-rail guarantee; output thresholds and transient propagation must be tested"
+  },
+  "state_table": [
+    {
+      "state": "MCU HiZ, valid3V",
+      "charge": "inhibited by R24/Q2",
+      "SYS": "can run from validIN",
+      "evidence": "native connectivity + static circuit inference"
+    },
+    {
+      "state": "Power-on/brownout/pin/watchdog/soft/CPU-lockup reset with GPIO reset",
+      "charge": "inhibited at valid3V",
+      "caveat": "Debug and reset-source behavior must be respected"
+    },
+    {
+      "state": "Erased or absent control firmware leaves GPIO at reset configuration",
+      "charge": "inhibited",
+      "caveat": "Corrupt firmware that actively drivesLOW is a separate case"
+    },
+    {
+      "state": "MCU activelyHIGH",
+      "charge": "inhibited"
+    },
+    {
+      "state": "MCU LOW, hardwarewindow valid",
+      "charge": "enabled byCE; actualcurrent governed byBQ/source"
+    },
+    {
+      "state": "MCU LOW, HOT/COLD/U8 fault",
+      "charge": "inhibited independent of MCU"
+    },
+    {
+      "state": "Application hangs while output remainsLOW",
+      "charge": "may continue until actual reset or hardware fault",
+      "hazard": "No MCU-alive detector; USB policy can stop being serviced"
+    },
+    {
+      "state": "SystemOFF entered or woken with priorLOW",
+      "charge": "may remain enabled until code explicitly inhibits",
+      "hazard": "GPIO retained through SystemOFF wakeup reset"
+    },
+    {
+      "state": "ValidUSB, batteryabsent/NTCopen",
+      "SYS": "self-start path independent ofCE",
+      "charge": "NTC cold/open fault and no physical pack"
+    },
+    {
+      "state": "ValidUSB, PCMopen, NTC valid toPACKminus",
+      "SYS": "self-start path independent ofCE",
+      "charge": "defaultinhibit; firmware can allow only qualified recovery",
+      "caveat": "pack charge-FET/body-diode/release behavior not yet specified"
+    },
+    {
+      "state": "ValidUSB, weak/depletedcell within pack recovery specification",
+      "SYS": "draws fromIN rather than needing prior recharge",
+      "caveat": "No guarantee for rawcell at0V or arbitrary externalshort"
+    },
+    {
+      "state": "USBremoved, pack aboveBUVLO, normal mode",
+      "SYS": "battery-only independent ofCE",
+      "charge": "none"
+    },
+    {
+      "state": "USBabsent and battery absent/depleted/PCMdisconnected/factorymode",
+      "SYS": "may beOFF; validIN required for recovery"
+    }
+  ],
+  "Nordic_reset_and_watchdog": {
+    "GPIO_reset_value_PIN_CNF": "0x00000002:input,inputbufferdisconnected,nopull",
+    "GPIO_reset_sources": [
+      "power-on",
+      "brownout",
+      "pin",
+      "watchdog",
+      "soft",
+      "CPU lockup except debug limitation"
+    ],
+    "System_OFF_wakeup_resets_CPU_but_not_GPIO": true,
+    "ordinary_infinite_loop_is_not_necessarily_CPU_lockup_reset": true,
+    "watchdog_requires_explicit_START": true,
+    "watchdog_timeout_causes_reset": true,
+    "watchdog_cannot_cover_System_OFF": true,
+    "debug_halt_or_sleep_pause_configuration_must_be_checked": true,
+    "watchdog_feeding_from_unconditional_interrupt_proves_application_health": false,
+    "watchdog_alone_proves_USB_suspend_timing": false
+  },
+  "startup_analysis": {
+    "hardware_path": [
+      "J1VBUS",
+      "U1IN10",
+      "U1SYS1",
+      "U2IN1_EN3",
+      "U2OUT5_3V0",
+      "U3VDD28_VDDH30"
+    ],
+    "CE_not_in_series_with_this_path": true,
+    "BQ6_1_explicitly_supports_SYS_from_IN_with_empty_battery": true,
+    "absent_battery_or_PCM_open_self_start_is_topology_inference_not_hardware_result": true,
+    "system_boot_does_not_require_BAT_to_reach_3V": true,
+    "limits": [
+      "validIN above applicableUVLO/sleep/VINDPM and belowOVP",
+      "correct RILIM24k/ISET2k and no systemshort",
+      "input-current headroom and startup capacitance",
+      "no battery supplement during batteryabsent or PCMopen"
+    ],
+    "ILIM_at_VIN5V_mA_min_typ_max": [
+      80,
+      90,
+      98
+    ],
+    "whole_USB_budget_includes_direct_module_VBUS": true,
+    "timeout_or_no_enumeration_identifies_DCP": false,
+    "unknown_source_policy_can_intentionally_prevent_walladapter_charging": true,
+    "periodic_CE_reset_to_extend_chargetimer_allowed": false
+  },
+  "pack_and_NTC": {
+    "final_pack_MPN_qualified": false,
+    "missing_MPN_scope": "Final assembly BOM/procurement and qualification, not evidence of an erroneous PCBA footprint/net",
+    "required_pack": "Protected1S4.2V LiPo nominal300mAh, ownPCM and on-cellNTC;500mAh remains chargecycle qualification",
+    "NTC_reference_required": "NTC return PACKminus/boardGND, electrically valid also whilePCM disconnects the cell; no unintended protection bypass throughNTC",
+    "PCM_recovery_required_information": [
+      "charge allowed after undervoltage trip",
+      "charger-release voltage/current and charge-FET behavior",
+      "applicable deep-discharge prohibition",
+      "NTC behavior inPCMopen state",
+      "OV/UV/OCP/short thresholds and allowable currents"
+    ],
+    "possible_pack_specific_deadlock": "NTC referenced to disconnected rawBminus may appearopen/fault and prevent charge-assistedPCMrecovery; select compatiblepack rather than bypasswindow",
+    "raw_cell_at_0V_charge_approved": false,
+    "Semitec_candidate": "103AT-2",
+    "Semitec_R25_ohm_tol": [
+      10000,
+      0.01
+    ],
+    "Semitec_B25_85_K_tol": [
+      3435,
+      0.01
+    ],
+    "Semitec_air_timeconstant_s_approx": 15,
+    "Semitec_air_tau_is_bonded_pack_response_guarantee": false,
+    "pack_endpoint_resistance_requirements_ohm": {
+      "at0C_min": 24000,
+      "at45C_max": 5200
+    },
+    "conditional_temperature_model_reference": "docs/power_audit_A1.md PWR-A1-04; reports/charge_temperature_corners.json",
+    "TS_to_MCU_ADC_connected": false,
+    "temperature_sensing_active_in_BQ_battery_only": false,
+    "NTC_based_thermal_discharge_disconnect_provided": false,
+    "numerical_cell_temperature_available_to_current_FW": false
+  },
+  "NTC_short_factory_mode": {
+    "short_inhibits_charging": true,
+    "VIN_present_TS_LOW_after_typ_s_arms_factory": 10,
+    "removing_VIN_after_arming_can_disable_SYS": true,
+    "CE_toggling_restarts_longpress_timer": true,
+    "periodic_CE_toggle_workaround_recommended": false,
+    "valid_VIN_wakes_factory_mode": true,
+    "pushbutton_wakes_factory_mode": false,
+    "SW1_is_separate_MCU_GPIO": true,
+    "recovery": "RemoveNTCfault and reconnectvalidUSB; do not bypass protection",
+    "physical_fault_sequence_tested": false
+  },
+  "minimum_firmware_changes": [
+    {
+      "id": "FW-CS-01",
+      "requirement": "At earliest application and bootloader entry set output latch HIGH before output direction, or use HiZ without pull-down. Do not assign P1.14 to another peripheral."
+    },
+    {
+      "id": "FW-CS-02",
+      "requirement": "Set inhibit HIGH/HiZ before every System OFF; repeat at every entry. Do not rely on GPIO reset at System OFF wakeup."
+    },
+    {
+      "id": "FW-CS-03",
+      "requirement": "Start and configure WDT before first LOW. Feed only on actual application and USB-policy health; verify Sleep/Halt behavior. WDT is not proof of USB compliance."
+    },
+    {
+      "id": "FW-CS-04",
+      "requirement": "Release LOW only with authorized source and whole-port budget; inhibit on suspend, source uncertainty, errors and updates. No DCP inference from timeout or Rd."
+    },
+    {
+      "id": "FW-CS-05",
+      "requirement": "Do not make charge-control startup depend on Flash erase/IMU readiness or wait for healthy VBAT caused by charging which is still inhibited. Recovery must follow the qualified pack specification."
+    },
+    {
+      "id": "FW-CS-06",
+      "requirement": "Handle TS faults, factory mode and status ambiguity; do not periodically toggle CE or reset the safety timer."
+    },
+    {
+      "id": "FW-CS-07",
+      "requirement": "Bound recovery attempts and latch a fault after watchdog/brownout/repeated restarts. Do not automatically repeat LOW on every boot; CE toggles can reset the safety timer."
+    }
+  ],
+  "gates": {
+    "definitions": {
+      "A": "Critical before PCB order: electrical errors, incorrect connections/footprints, confirmed safety defects and material DFM issues.",
+      "B": "Resolve during controlled prototype bring-up; close cell safety and pack qualification before actual cell charging.",
+      "C": "Next revision optimization or additional requirements."
+    },
+    "A": {
+      "new_confirmed_hardware_blockers_in_P1_P4": [],
+      "decision": "No new PCB change is required for controlled 3-to-5 PCBA prototypes within P1/P4 scope. Preserve the protective architecture; this is not a whole-project release decision."
+    },
+    "B": [
+      "Implement and test early inhibit, System OFF retention, WDT, hung LOW and reset paths.",
+      "Measure USB startup, inrush, SYS/+3V0, CE and BAT current with absent battery, low simulated VBAT, PCM-open and source current limits.",
+      "Qualify the whole USB port, suspend and configured-source policy; VBUS alone does not identify a DCP.",
+      "Select exact pack/PCM/NTC/harness and qualify permitted recovery and protection before connecting a real cell.",
+      "Test NTC open/short/endpoints/HOT/COLD and factory entry/recovery; close conditional static-window and thermal-response assumptions.",
+      "Measure complete charge cycle, timer behavior and BQ/LDO/pack temperatures in the enclosure; do not apply JEDEC thermal data as a board result.",
+      "Test repeated watchdog/brownout boot loops and verify inhibit/fault latching; record CE and aggregate charge behavior without timer-workaround retries."
+    ],
+    "C": [
+      "Reduce approximately138uA standby while preserving protection.",
+      "Add numeric cell-temperature or NTC-based discharge thermal control only if required.",
+      "Consider independent timed hardware permission if every MCU hang must revoke charging without relying on watchdog."
+    ]
+  },
+  "not_tested": [
+    "USB selfstart without battery",
+    "startup with PCMopen",
+    "ramp/brownout transientchargecurrent",
+    "actualhangLOW/WDT/SystemOFFwake",
+    "real pack PCMrecovery",
+    "TSshortfactoryentry/recovery",
+    "cell/charger/enclosuretemperatures",
+    "real0..45Cchargingboundaries",
+    "USBcompliance/inrush/suspend"
+  ],
+  "sources": [
+    {
+      "id": "TI_BQ_OVERVIEW",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-F2E2312A-E20A-42CA-9CF8-12D968292ACC",
+      "revision": "SLUSF65B August2026",
+      "section": "6.1",
+      "supports": "SYSfromINwithemptybattery,systempriority",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_CE",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-700B7F6C-B49B-4E66-958F-2A03B14355EA",
+      "section": "6.1.1",
+      "supports": "CEdisableBATcharge;supplementindependent;inputpowergoodwithlowBAT",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_DPPM",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-DE20B6E0-9164-469A-B63E-10EDCEDAFC8D",
+      "section": "6.3.2",
+      "supports": "systemandchargeshareinput,reducechargeonload",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_PDF",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "revision": "SLUSF65B August2026",
+      "section": "5.5electrical;4pinfunctions",
+      "supports": "ILIM80/90/98mAat5V,CEactiveLOW,BATUVLOandchargecurrentstatedconditions",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_FACTORY",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-326346F3-CE8C-4ED3-AD2D-0C7FDEBDEDB6",
+      "section": "6.3.8",
+      "supports": "TSLOWarmsfactory,removeVINenters,validVINwakes,pushbuttoncannotwake",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_TS",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-280153BD-C63E-49AE-A394-DC5C2FF07171",
+      "section": "6.3.9.1",
+      "supports": "hotcoldfaultsuspendchargingincludingtrickle,floatingTSclamp",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_MODES",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-0FDC3E18-D31F-471E-BD0C-B4C23AD9F27C",
+      "section": "6.4",
+      "supports": "TSmeasurementonlyadaptermode,factorySYSdisabled",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "NORDIC_GPIO",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/gpio.html",
+      "supports": "PIN_CNFreset0x02andretainedconfiguration",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "NORDIC_RESET",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/power.html",
+      "section": "Resetbehavior",
+      "supports": "SystemOFFwake resetsCPU butnotGPIO; resettypes distinction",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "NORDIC_WDT",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/wdt.html",
+      "supports": "explicitSTART,timeoutcausesreset,CONFIGSleep/Halt behavior",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "SEM_TEC_AT",
+      "url": "https://www.semitec-global.com/uploads/2022/01/P12-13-AT-Thermistor.pdf",
+      "supports": "103AT-2R25/Btol;timeconstantmeasurementinair;notcompletepackqualification",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "AOS_FET",
+      "url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+      "revision": "Rev3.1 July2023",
+      "supports": "VGS2.5VspecifiedONresistance;pinGSDmapping",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_TERMINATION",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-B926C400-1BF7-47AF-B78B-C33124DDFE3D",
+      "section": "6.1.1.5",
+      "supports": "CV termination, inhibition by other active regulation loops, automatic recharge threshold",
+      "browsed_on": "2026-10-29"
+    },
+    {
+      "id": "TI_BQ_TIMER",
+      "url": "https://www.ti.com/document-viewer/BQ25185/datasheet/GUID-F91448CC-01A7-4312-A893-4B2E9FC88D89",
+      "section": "6.3.7.7",
+      "supports": "CE or input toggle clears safety timer; repeated reset loop can restart cycles",
+      "browsed_on": "2026-10-29"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CS-01",
+      "status": "VERIFIED",
+      "result": "Current R24 is a 100k pull-up to +3V0. HIGH or HiZ inhibits charge at valid rails. The opposite-polarity allegation is stale."
+    },
+    {
+      "id": "CS-02",
+      "status": "FIRMWARE_QUALIFICATION_B",
+      "result": "A hung LOW output can retain permission. System OFF wakeup resets CPU while retaining GPIO; explicit pre-sleep and early-entry inhibit is required."
+    },
+    {
+      "id": "CS-03",
+      "status": "NO_INTRINSIC_STARTUP_DEADLOCK_IDENTIFIED",
+      "result": "Valid IN can supply SYS and the always-enabled LDO without first enabling BAT charging. Absent/depleted battery or PCM-open startup is untested and must remain within source/load limits."
+    },
+    {
+      "id": "CS-04",
+      "status": "FAULT_RECOVERY_TEST_B",
+      "result": "NTC short inhibits charging but can arm factory mode. USB removal can then turn SYS off; recovery requires valid IN, not SW1."
+    },
+    {
+      "id": "CS-05",
+      "status": "FINAL_ASSEMBLY_QUALIFICATION_B",
+      "result": "Select protected pack, PCM recovery and NTC harness. NTC must remain valid relative to PACK- while PCM is open. No numeric cell-temperature reading or NTC-based discharge cutoff is provided."
+    },
+    {
+      "id": "CS-06",
+      "status": "UNIMPLEMENTED_FIRMWARE_REQUIREMENTS_B",
+      "result": "Early inhibit, System OFF handling, health-based watchdog, authorized-source budget and charge recovery independent of Flash readiness need implementation and fault tests."
+    }
+  ],
+  "state_axes_table": {
+    "conditions": "USB yes means valid IN and sufficient current. LOW rows assume U7/U8 released. Reset groups require GPIO-resetting reset and valid rails; System OFF wakeup with retained LOW follows LOW rows. Normal BQ mode unless noted.",
+    "rows": [
+      {
+        "USB": true,
+        "BAT": "charged",
+        "MCU": [
+          "LOW"
+        ],
+        "SYS": "from IN",
+        "charge": "BQ CV/termination/recharge according to conditions; CE LOW does not force continuous charge"
+      },
+      {
+        "USB": true,
+        "BAT": "charged",
+        "MCU": [
+          "HIGH",
+          "HiZ",
+          "GPIO-resetting reset"
+        ],
+        "SYS": "from IN",
+        "charge": "inhibited"
+      },
+      {
+        "USB": true,
+        "BAT": "low, within permitted pack recovery",
+        "MCU": [
+          "LOW"
+        ],
+        "SYS": "from IN",
+        "charge": "appropriate BQ phase subject to source/fault limits"
+      },
+      {
+        "USB": true,
+        "BAT": "low",
+        "MCU": [
+          "HIGH",
+          "HiZ",
+          "GPIO-resetting reset"
+        ],
+        "SYS": "can boot from IN without prior battery charge",
+        "charge": "inhibited"
+      },
+      {
+        "USB": true,
+        "BAT": "PCM-open",
+        "MCU": [
+          "LOW"
+        ],
+        "SYS": "from IN",
+        "charge": "recovery only if compatible PCM and NTC; not guaranteed for arbitrary pack"
+      },
+      {
+        "USB": true,
+        "BAT": "PCM-open",
+        "MCU": [
+          "HIGH",
+          "HiZ",
+          "GPIO-resetting reset"
+        ],
+        "SYS": "can boot from IN without prior PCM recovery",
+        "charge": "inhibited"
+      },
+      {
+        "USB": false,
+        "BAT": "charged, normal BQ mode",
+        "MCU": [
+          "LOW",
+          "HIGH",
+          "HiZ",
+          "GPIO-resetting reset"
+        ],
+        "SYS": "from BAT if sufficient voltage/current; valid3V remains condition-dependent",
+        "charge": "none"
+      },
+      {
+        "USB": false,
+        "BAT": "low but above BUVLO",
+        "MCU": [
+          "LOW",
+          "HIGH",
+          "HiZ",
+          "GPIO-resetting reset"
+        ],
+        "SYS": "may exist; valid3V not guaranteed at dropout/brownout",
+        "charge": "none",
+        "Q2_logic_valid_only_if_3V_valid": true
+      },
+      {
+        "USB": false,
+        "BAT": "below BUVLO or pack cutoff",
+        "MCU_requested": [
+          "LOW",
+          "HIGH",
+          "HiZ",
+          "reset"
+        ],
+        "SYS": "not guaranteed; no valid MCU/Q2 logic levels",
+        "charge": "none"
+      },
+      {
+        "USB": false,
+        "BAT": "PCM-open",
+        "MCU_requested": [
+          "LOW",
+          "HIGH",
+          "HiZ",
+          "reset"
+        ],
+        "SYS": "no usable battery path; MCU/Q2 logic not defined without rails",
+        "charge": "none"
+      }
+    ],
+    "factory_mode_exception": "SYS can be off even with charged battery; valid IN required for recovery."
+  },
+  "watchdog_restart_loop": {
+    "hazard": "Repeated WDT reset -> CE HIGH -> automatic LOW -> crash can reset the charger safety timer and extend aggregate charging beyond one cycle.",
+    "periodic_or_unlimited_auto_retry_permitted": false,
+    "minimum_policy": [
+      "Read reset reason; retain inhibit after watchdog/brownout/repeated resets pending diagnosis.",
+      "Use a finite recovery policy and latched error; do not unconditionally release LOW on every boot.",
+      "Never use resets to work around timer or low-current charge duration."
+    ],
+    "physical_fault_injection_tested": false
+  },
+  "contract_documentation_review": {
+    "HIGH_HiZ_logic_already_correct_at_initial_review": true,
+    "root_current_worktree_now_documents_hang_LOW_SystemOFF_and_watchdog_restarts": true,
+    "existing_contract_is_implemented_firmware": false
+  },
+  "source_revision_history": [
+    {
+      "pcb_sha256": "38545441d19c70f355dd06a2539d2aa0937b113d92569c9b4798a1a04e08c45b",
+      "description": "Previous native readback before USB trunk width-only correction."
+    }
+  ],
+  "width_only_USB_refresh": {
+    "PCB": "cdcbd23449ce12977567ecdd061c598cc0dc2830e28d7cea8fada4b1bcea9e40",
+    "fresh_electrical_refs": 19,
+    "netlist_mismatches": 0,
+    "opens": 0,
+    "R24_Q2_Q1_CE_or_startup_topology_changed": false,
+    "dynamic_startup_retested": false
+  }
+}

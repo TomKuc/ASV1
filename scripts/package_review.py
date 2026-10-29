@@ -30,6 +30,13 @@ REPORTS=(
     'flash_compatibility_A1.json','power_audit_A1.json','usb_raytac_audit_A1.json',
     'audit_changed_files.txt','baselines/A1_before_audit_manifest.json',
     'baselines/A1_routed_before_audit_2026-10-29.zip',
+    'baselines/A1_before_final_verification_2026-10-29.zip',
+    'baselines/A1_before_final_verification_manifest.json',
+    'charge_startup_final_A1.json','pcba_testability_final_A1.json','usb_stackup_final_A1.json',
+    'usb_width_correction_A1.json','usb_audit_netlist_A1.xml','provenance_final_A1.json',
+    'github_verification_final_A1.json','final_verification_A1.json','current_A1_manifest.json',
+    'package_native_validation_A1.json',
+    'final_changed_files_A1.txt',
 )
 
 
@@ -39,10 +46,10 @@ def sha(p):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--archive', default='Ankle_Sensor_V1_A1_AUDIT_REVIEW.zip')
+    parser.add_argument('--archive', default='Ankle_Sensor_V1_A1_FINAL_REVIEW.zip')
     args=parser.parse_args()
     archive=ROOT/args.archive
-    preserved={'Ankle_Sensor_V1_A0_REVIEW.zip','Ankle_Sensor_V1_A1_REVIEW.zip'}
+    preserved={'Ankle_Sensor_V1_A0_REVIEW.zip','Ankle_Sensor_V1_A1_REVIEW.zip','Ankle_Sensor_V1_A1_AUDIT_REVIEW.zip'}
     if archive.name in preserved:
         raise SystemExit('Refusing to overwrite a preserved A0/A1 baseline archive')
     validation=json.loads((ROOT/'reports/validation_status.json').read_text())
@@ -67,6 +74,10 @@ def main():
     ):
         data=json.loads((ROOT/'reports'/filename).read_text())
         assert data[key]==board_hash,filename
+    current=json.loads((ROOT/'reports/current_A1_manifest.json').read_text())
+    assert current['board_sha256']==board_hash
+    for rel,expected in current['files_sha256'].items():
+        assert sha(ROOT/rel)==expected,rel
     files={ROOT/'README.md',ROOT/'.gitignore'}
     for folder in ('hardware','docs','scripts','manufacturing','reports/guide'):
         files.update(p for p in (ROOT/folder).rglob('*') if p.is_file()
@@ -78,7 +89,7 @@ def main():
         assert p.is_file(),str(p)
         files.add(p)
     metadata={
-        'status':'A1_AUDIT_REVIEW_NOT_RELEASED_FOR_FABRICATION_OR_ASSEMBLY',
+        'status':'A1_FINAL_REVIEW_CONDITIONAL_READY_NOT_ORDER_RELEASE',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
         'kicad_version':validation['kicad_version'],'board_sha256':board_hash,
         'native_drc':{'violations':0,'unconnected_items':0,'schematic_parity':0},
@@ -86,15 +97,17 @@ def main():
         'project':'hardware/Ankle_Sensor_V1.kicad_pro',
         'outputs':{'editable_schematic_and_routed_pcb':True,'jlc_bom_and_cpl_review':True,
                    'gerber_and_excellon_review':True,'native_step':True,'complete_vendor_3d_assembly':False},
+        'prototype_status':'CONDITIONAL READY',
         'open_gates':'docs/release_checklist.md',
         'step_limitations':'Missing USB-C model, generic Raytac, Flash envelope, IMU height limit; no battery/case',
         'assembly_limitations':'Native footprint anchors/rotations, JLC translations and procurement unconfirmed',
         'physical_qualification':'Firmware and physical prototype tests are outstanding',
-        'audit_report':'docs/audit_A1_2026-10-29.md',
+        'audit_report':'docs/final_verification_A1.md',
         'ignored_check_classes':{'erc':validation['erc_ignored_checks'],
                                  'drc':validation['drc_ignored_checks']},
         'preserved_baseline':'reports/baselines/A1_routed_before_audit_2026-10-29.zip',
-        'commit_delivery':'Git bundle and commit_delivery.json are delivered beside the archive after committing; not recursively included',
+        'current_source_manifest':'reports/current_A1_manifest.json',
+        'commit_delivery':'Final Git bundle and final_commit_delivery_A1.json are delivered beside this archive after committing; not recursively included',
         'files_without_manifest_or_checksum_list':len(files)
     }
     manifest=ROOT/'reports/review_package_manifest.json'

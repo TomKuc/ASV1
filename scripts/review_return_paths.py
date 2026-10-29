@@ -159,7 +159,7 @@ def main():
   'stackup':{'order':['F.Cu','In1.Cu GND','In2.Cu +3V0 and signals','B.Cu'],
    'board_nominal_thickness_mm':mm(board.GetDesignSettings().GetBoardThickness()),
    'explicit_dielectric_stackup_in_pcb':'(stackup' in path.read_text(),
-   'consequence':'No verified dielectric separations,Er or90ohm differential impedance. B.Cu is adjacent to mixed In2, not directly to In1 ground.'},
+   'consequence':'Nominal JLC7628 model is in reports/usb_stackup_final_A1.json; current fabrication stackup confirmation and full-path90ohm qualification remain open. B.Cu is adjacent to mixed In2, not directly to In1 ground.'},
   'ground_fill':{'outline_count':gnd.OutlineCount(),'area_mm2':area(gnd),'warning':'Stored fractured polygons can encode holes as cutouts; outline count does not prove adequate return paths.'},
   'groups':GROUPS,'nets':nets,'current_usb_trace_lengths_mm':current_lengths,
   'current_mcu_trace_length_skew_mm':abs(current_lengths['USB_DP']-current_lengths['USB_DN']),
@@ -178,18 +178,23 @@ def main():
  (ROOT/'reports/return_path_review.json').write_text(json.dumps(out,indent=2,allow_nan=False)+'\n')
  stable_usb_report['date']='2026-10-29'
  stable_usb_report['retained_trunk_nominal_pair_gap_mm']=stable_usb_report.pop('mcu_nominal_pair_gap_mm',stable_usb_report.get('retained_trunk_nominal_pair_gap_mm',.15))
+ stable_usb_report.pop('mcu_nominal_pair_gap_mm',None)
+ if 'mcu_nominal_trace_width_mm' in stable_usb_report:historical['pre_width_correction_nominal_trace_width_mm']=stable_usb_report.pop('mcu_nominal_trace_width_mm')
+ trunk_width=max(mm(t.GetWidth()) for t in board.Tracks() if t.Type()!=pcbnew.PCB_VIA_T and t.GetNetname() in ['USB_DP','USB_DN'] and t.GetLayer()==pcbnew.In2_Cu)
+ stable_usb_report['retained_trunk_nominal_trace_width_mm']=trunk_width
+ stable_usb_report['retained_trunk_nominal_pair_gap_mm']=round(.30-trunk_width,6)
  stable_usb_report['measured_usb_trace_widths_mm']=sorted({float(w) for n in ['USB_DP','USB_DN','USB_DP_CONN','USB_DN_CONN'] for w in nets[n]['trace_width_segment_counts_mm']})
  stable_usb_report['canonical_board_sha256']=before
- stable_usb_report['canonical_nets']={n:{k:nets[n][k] for k in ['trace_length_mm','trace_length_by_layer_mm','via_count','native_projection_gnd_coverage_pct','max_missing_component_trace_length_sum_mm']} for n in ['USB_DP','USB_DN','USB_DP_CONN','USB_DN_CONN']}
+ stable_usb_report['canonical_nets']={n:{k:nets[n][k] for k in ['trace_length_mm','trace_length_by_layer_mm','trace_width_segment_counts_mm','via_count','native_projection_gnd_coverage_pct','max_missing_component_trace_length_sum_mm']} for n in ['USB_DP','USB_DN','USB_DP_CONN','USB_DN_CONN']}
  end={side:{'trace_length_only_mm':current_lengths['USB_'+side]+current_lengths['USB_'+side+'_CONN'],'via_count':nets['USB_'+side]['via_count']+nets['USB_'+side+'_CONN']['via_count']} for side in ['DP','DN']}
  stable_usb_report['whole_path_via_esd_to_connector']=end
  stable_usb_report['whole_path_planar_trace_length_difference_mm']=abs(end['DP']['trace_length_only_mm']-end['DN']['trace_length_only_mm'])
  stable_usb_report['current_mcu_trace_length_skew_mm']=out['current_mcu_trace_length_skew_mm']
  stable_usb_report['current_footprint_positions_mm']={f.GetReference():[mm(f.GetPosition().x),mm(f.GetPosition().y)] for f in board.Footprints() if f.GetReference() in ['U6','R25','J1']}
- stable_usb_report['main_paired_trunk_scope']='Original shared In2 trunk retained to y86.8mm; replacement tails and connector-side paths are separately routed and unqualified.'
+ stable_usb_report['main_paired_trunk_scope']='Shared In2 trunk retained to y86.8mm; width '+str(trunk_width)+'mm, nominal pair gap '+str(round(.30-trunk_width,6))+'mm. Tails0.15mm and connector-side paths are separately routed and unqualified.'
  stable_usb_report['limits']=['Historical pre-relocation proposal is preserved only as provenance; current lengths come from actual native tracks.',
-  'Only the retained MCU-side In2 trunk has the original nominal0.15mm gap; replacement tails,endpoint fanouts and connector-side geometry are not a qualified controlled-impedance pair.',
-  'Actual JLC dielectric stackup and Er are undefined; no90ohm or USB compliance claim.',
+  'Only the retained MCU-side In2 trunk has nominal '+str(round(.30-trunk_width,6))+'mm pair gap; tails,endpoint fanouts and connector-side geometry are not a uniform qualified controlled-impedance pair.',
+  'Nominal JLC7628 models are in reports/usb_stackup_final_A1.json; current order stackup must be confirmed. No whole-path90ohm or USB compliance claim.',
   'Current whole-path via counts are DP'+str(end['DP']['via_count'])+' and DN'+str(end['DN']['via_count'])+'; equal counts do not establish impedance or signal quality.']
  (ROOT/'reports/usb_routing_review.json').write_text(json.dumps(stable_usb_report,indent=2,allow_nan=False)+'\n')
  print(json.dumps({'board_sha256':before,'nets':{n:{'length_mm':d['trace_length_mm'],'gnd_coverage_pct':d['native_projection_gnd_coverage_pct'],'missing_centerline_mm':d['estimated_centerline_without_gnd_total_mm'],'max_component_trace_mm':d['max_missing_component_trace_length_sum_mm']} for n,d in nets.items()}},indent=2))
